@@ -5,7 +5,7 @@ summary: "AI agents that browse at scale get blocked when they use one IP. Why I
 category: "proxy"
 tags: ["openclaw", "IP rotation", "residential proxy", "AI agent", "rotating proxy"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## Why AI Agents Like OpenClaw Need IP Rotation

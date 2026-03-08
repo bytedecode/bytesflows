@@ -5,7 +5,7 @@ summary: "Scrapy framework guide: spiders, pipelines, middleware, proxies. Build
 category: "framework"
 tags: ["Scrapy", "Python", "web scraping", "framework", "crawler"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2000"
 ---
 
 ## What is Scrapy?

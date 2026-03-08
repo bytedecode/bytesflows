@@ -5,7 +5,7 @@ summary: "Guide to headless browser frameworks: practical tips and how it fits i
 category: "framework"
 tags: ["framework", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
 ---
 
 ## Introduction

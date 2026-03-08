@@ -5,7 +5,7 @@ summary: "How to use proxies with Playwright: HTTP and SOCKS, per-browser config
 category: "playwright"
 tags: ["Playwright", "proxy", "residential proxy", "browser automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
 ---
 
 ## Using Proxies with Playwright

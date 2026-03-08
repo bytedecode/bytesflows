@@ -5,7 +5,7 @@ summary: "A practical developer guide about proxy rotation strategies and modern
 category: "proxy"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1504384308090-c894fd59dc04?q=80&w=2000"
 ---
 
 ## Introduction

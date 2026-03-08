@@ -5,7 +5,7 @@ summary: "Use OpenClaw AI agent for lead generation research, qualification, and
 category: "use-cases"
 tags: ["openclaw", "lead generation", "residential proxy", "AI agent", "research"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## OpenClaw for Lead Gen, Research, and Outreach (With Proxies)

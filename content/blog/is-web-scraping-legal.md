@@ -5,7 +5,7 @@ summary: "Is web scraping legal? A developer-focused guide to legality, ToS, CFA
 category: "web-scraping"
 tags: ["web scraping", "legal", "compliance", "ToS", "GDPR"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000"
 ---
 
 ## Is Web Scraping Legal? Short Answer

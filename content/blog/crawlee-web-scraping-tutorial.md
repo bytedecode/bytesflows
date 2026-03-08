@@ -5,7 +5,7 @@ summary: "A practical developer guide about crawlee web scraping tutorial and mo
 category: "crawlee"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2000"
 ---
 
 ## Introduction

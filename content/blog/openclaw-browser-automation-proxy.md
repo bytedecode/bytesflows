@@ -5,7 +5,7 @@ summary: "Combine OpenClaw browser automation with residential proxies for relia
 category: "playwright"
 tags: ["openclaw", "browser automation", "residential proxy", "playwright", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## OpenClaw Browser Automation with Residential Proxies

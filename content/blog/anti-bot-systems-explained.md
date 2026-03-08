@@ -5,7 +5,7 @@ summary: "Anti-bot systems explained: IP checks, fingerprinting, behavior, CAPTC
 category: "anti-bot"
 tags: ["anti-bot", "bot detection", "Cloudflare", "fingerprinting"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1563983496-7c4d1c8c5b5a?q=80&w=2000"
 ---
 
 ## What Are Anti-Bot Systems?

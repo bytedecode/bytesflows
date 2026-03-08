@@ -5,7 +5,7 @@ summary: "A practical developer guide about scraping e‑commerce websites and m
 category: "use-cases"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1607083200269-8d2a4c0a8a8a?q=80&w=2000"
 ---
 
 ## Introduction

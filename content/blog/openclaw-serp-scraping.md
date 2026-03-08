@@ -5,7 +5,7 @@ summary: "Use OpenClaw AI agent to scrape SERP and search results. Combine with 
 category: "use-cases"
 tags: ["openclaw", "SERP scraping", "search results", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## OpenClaw for SERP and Search Data Extraction

@@ -5,7 +5,7 @@ summary: "Using Python Requests for web scraping: GET, headers, sessions, proxie
 category: "python"
 tags: ["Requests", "Python", "HTTP", "web scraping", "proxy"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2000"
 ---
 
 ## Using Requests for Web Scraping

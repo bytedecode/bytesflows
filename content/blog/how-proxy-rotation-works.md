@@ -5,7 +5,7 @@ summary: "How proxy rotation works: per-request vs per-session, sticky sessions,
 category: "proxy"
 tags: ["proxy rotation", "rotating proxy", "IP rotation", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1504384308090-c894fd59dc04?q=80&w=2000"
 ---
 
 ## How Proxy Rotation Works

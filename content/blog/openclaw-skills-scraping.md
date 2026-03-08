@@ -5,7 +5,7 @@ summary: "Use and extend OpenClaw skills for web scraping. How to add proxy supp
 category: "web-scraping"
 tags: ["openclaw", "openclaw skills", "scraping", "proxy", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## OpenClaw Skills for Scraping and Proxy Integration

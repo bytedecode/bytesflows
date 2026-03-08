@@ -5,7 +5,7 @@ summary: "How to avoid IP bans and anti-bot blocks when using OpenClaw AI agents
 category: "anti-bot"
 tags: ["openclaw", "openclaw scraping", "anti-bot", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## Avoiding Blocks When Using OpenClaw for Scraping

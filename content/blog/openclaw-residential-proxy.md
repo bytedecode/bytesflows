@@ -5,7 +5,7 @@ summary: "Learn why OpenClaw AI agents need rotating residential proxies to avoi
 category: "proxy"
 tags: ["openclaw", "openclaw proxy", "residential proxy", "AI agent", "web automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## Why OpenClaw Agents Need Residential Proxies

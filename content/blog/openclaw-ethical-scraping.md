@@ -5,7 +5,7 @@ summary: "Use OpenClaw AI agent for web scraping in an ethical way: robots.txt, 
 category: "web-scraping"
 tags: ["openclaw", "ethical scraping", "robots.txt", "AI agent", "best practices"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 
 ## Ethical Scraping with OpenClaw: Best Practices

@@ -5,7 +5,7 @@ summary: "Guide to handling datadome bot protection: practical tips and how it f
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1563986768609-322dc135aade?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1563983496-7c4d1c8c5b5a?q=80&w=2000"
 ---
 
 ## Introduction

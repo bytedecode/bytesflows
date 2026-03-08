@@ -5,7 +5,7 @@ summary: "Guide to python scraping framework comparison: practical tips and how 
 category: "framework"
 tags: ["framework", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2000"
 ---
 
 ## Introduction

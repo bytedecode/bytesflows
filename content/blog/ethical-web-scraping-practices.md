@@ -5,7 +5,7 @@ summary: "Ethical web scraping practices: respect robots.txt, rate limits, and t
 category: "web-scraping"
 tags: ["ethical", "web scraping", "robots.txt", "legal", "best practices"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000"
 ---
 
 ## Why Ethical Web Scraping Matters
