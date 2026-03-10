@@ -5,7 +5,7 @@ summary: "Proxy pools for web scraping: what they are, how to size them, rotatio
 category: "proxy"
 tags: ["proxy pool", "web scraping", "residential proxy", "rotation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1504384308090-c894fd59dc04?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
 ---
 
 ## What Is a Proxy Pool?

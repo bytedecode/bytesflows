@@ -5,7 +5,7 @@ summary: "Guide to using proxies with python scrapers: practical tips and how it
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1504384308090-c894fd59dc04?q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
 ---
 
 ## Introduction
