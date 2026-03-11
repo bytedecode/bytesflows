@@ -5,7 +5,7 @@ summary: "Guide to ethical web scraping practices: practical tips and how it fit
 category: "web-scraping"
 tags: ["web-scraping", "automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/ethical-web-scraping-best-practices-2025/2000/1000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "OpenClaw Gateway runs on your machine; browser traffic from agents can
 category: "proxy"
 tags: ["openclaw", "openclaw gateway", "proxy", "trusted proxy", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-gateway-proxy/2000/1000"
 ---
 
 ## OpenClaw Gateway and Proxy: Traffic and Browser Proxy

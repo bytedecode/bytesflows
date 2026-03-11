@@ -5,7 +5,7 @@ summary: "Web scraping architecture explained: queues, workers, proxy pools, sto
 category: "web-scraping"
 tags: ["architecture", "scraping", "scale", "proxy", "queue"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/web-scraping-architecture-explained/2000/1000"
 ---
 
 ## What Is Web Scraping Architecture?

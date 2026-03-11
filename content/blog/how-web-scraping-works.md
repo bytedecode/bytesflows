@@ -5,7 +5,7 @@ summary: "How web scraping works: HTTP requests, HTML parsing, JavaScript render
 category: "web-scraping"
 tags: ["web scraping", "how it works", "HTTP", "parsing", "architecture"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/how-web-scraping-works/2000/1000"
 ---
 
 ## How Web Scraping Works: Overview

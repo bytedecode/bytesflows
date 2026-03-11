@@ -4,7 +4,7 @@ slug: "openclaw-linkedin-scraping-proxy"
 summary: "How the Scrapling service builds long‑running LinkedIn lead‑gen agents on top of OpenClaw, and where residential proxies like Bytesflows come into the picture."
 category: "openclaw-scraping"
 tags: ["openclaw", "linkedin scraping", "residential proxy", "bytesflows", "b2b leads","anguage: "en"]
-coverImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-linkedin-scraping-proxy/2000/1000"
 published: "2026-03-07"
 ---
 

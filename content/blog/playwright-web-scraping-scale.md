@@ -5,7 +5,7 @@ summary: "Guide to playwright web scraping at scale: practical tips and how it f
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/playwright-web-scraping-scale/2000/1000"
 ---
 
 ## Introduction

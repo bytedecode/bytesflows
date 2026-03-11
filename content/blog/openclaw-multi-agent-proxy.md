@@ -5,7 +5,7 @@ summary: "Run multiple OpenClaw agents or skills that scrape; how to route each 
 category: "architecture"
 tags: ["openclaw", "multi-agent", "proxy", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-multi-agent-proxy/2000/1000"
 ---
 
 ## Multi-Agent OpenClaw and Proxy Routing

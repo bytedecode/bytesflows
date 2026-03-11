@@ -5,7 +5,7 @@ summary: "Web scraping vs web crawling: definitions, differences, and when to us
 category: "web-scraping"
 tags: ["web scraping", "web crawling", "crawler", "scraper", "difference"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/web-scraping-vs-web-crawling/2000/1000"
 ---
 
 ## Web Scraping vs Web Crawling: Definitions

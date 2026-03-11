@@ -5,7 +5,7 @@ summary: "Guide to async python scraping with aiohttp: practical tips and how it
 category: "python"
 tags: ["python", "web-scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/async-python-scraping-aiohttp/2000/1000"
 ---
 
 ## Introduction

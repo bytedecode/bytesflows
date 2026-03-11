@@ -5,7 +5,7 @@ summary: "Best practices for web scraping at scale: proxy rotation, concurrency,
 category: "web-scraping"
 tags: ["web-scraping", "scale", "proxy", "architecture"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/web-scraping-at-scale-best-practices/2000/1000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "A practical developer guide about ai web scraping with agents and mode
 category: "ai-scraping"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/ai-web-scraping-agents/2000/1000"
 ---
 
 ## Introduction

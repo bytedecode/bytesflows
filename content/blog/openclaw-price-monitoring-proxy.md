@@ -5,7 +5,7 @@ summary: "How Scrapling builds OpenClaw‑based agents for e‑commerce, airline
 category: "openclaw-scraping"
 tags: ["openclaw", "price monitoring", "ecommerce scraping", "flight scraping", "residential proxy"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-price-monitoring-proxy/2000/1000"
 published: "2026-03-07"
 ---
 

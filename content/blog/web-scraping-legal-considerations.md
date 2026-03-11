@@ -5,7 +5,7 @@ summary: "A practical developer guide about web scraping legal considerations an
 category: "legal"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/web-scraping-legal-considerations/2000/1000"
 ---
 
 ## Introduction

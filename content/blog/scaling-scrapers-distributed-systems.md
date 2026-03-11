@@ -5,7 +5,7 @@ summary: "A practical developer guide about scaling scrapers with distributed sy
 category: "architecture"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/scaling-scrapers-distributed-systems/2000/1000"
 ---
 
 ## Introduction

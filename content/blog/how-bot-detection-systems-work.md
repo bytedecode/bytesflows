@@ -5,7 +5,7 @@ summary: "Guide to how bot detection systems work: practical tips and how it fit
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/how-bot-detection-systems-work/2000/1000"
 ---
 
 ## Introduction

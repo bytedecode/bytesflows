@@ -5,7 +5,7 @@ summary: "What is web scraping? A complete beginner guide: definition, how it wo
 category: "web-scraping"
 tags: ["web scraping", "beginner", "tutorial", "data extraction", "automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/what-is-web-scraping-beginner-guide/2000/1000"
 ---
 
 ## What is Web Scraping?

@@ -5,7 +5,7 @@ summary: "How to scrape Amazon product data: prices, reviews, rankings. Legal co
 category: "use-cases"
 tags: ["Amazon", "e-commerce", "product data", "scraping", "proxy"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/scraping-amazon-product-data/2000/1000"
 ---
 
 ## Why Scrape Amazon Product Data?

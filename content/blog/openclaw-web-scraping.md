@@ -5,7 +5,7 @@ summary: "Use OpenClaw AI agent for web scraping and data extraction. Combine wi
 category: "web-scraping"
 tags: ["openclaw", "openclaw scraping", "web scraping", "AI agent", "data extraction"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-web-scraping/2000/1000"
 ---
 
 ## OpenClaw for Web Scraping and Data Extraction

@@ -5,7 +5,7 @@ summary: "Guide to browser stealth techniques: practical tips and how it fits in
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/browser-stealth-techniques-scraping/2000/1000"
 ---
 
 ## Introduction

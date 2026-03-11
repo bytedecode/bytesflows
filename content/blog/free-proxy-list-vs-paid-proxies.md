@@ -5,7 +5,7 @@ summary: "Compare free proxy lists with paid residential proxies. When to use fr
 category: "proxy"
 tags: ["free proxy", "proxy list", "web-scraping", "residential proxy", "iprobe"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/free-proxy-list-vs-paid-proxies/2000/1000"
 ---
 
 ## Introduction

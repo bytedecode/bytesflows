@@ -5,7 +5,7 @@ summary: "Guide to how many proxies do you need: practical tips and how it fits 
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/how-many-proxies-need-scraping/2000/1000"
 ---
 
 ## Introduction

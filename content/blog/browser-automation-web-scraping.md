@@ -5,7 +5,7 @@ summary: "Guide to browser automation for web scraping: practical tips and how i
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/browser-automation-web-scraping/2000/1000"
 ---
 
 ## Introduction

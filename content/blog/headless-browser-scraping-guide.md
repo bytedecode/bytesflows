@@ -5,7 +5,7 @@ summary: "A practical developer guide about headless browser scraping guide and 
 category: "web-scraping"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/headless-browser-scraping-guide/2000/1000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "A practical developer guide about scraping apis vs websites and modern
 category: "web-scraping"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/scraping-apis-vs-websites/2000/1000"
 ---
 
 ## Introduction

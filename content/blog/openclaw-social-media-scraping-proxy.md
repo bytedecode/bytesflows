@@ -5,7 +5,7 @@ summary: "How the Scrapling service uses OpenClaw agents to monitor brand conver
 category: "openclaw-scraping"
 tags: ["openclaw","social media scraping","twitter scraping","reddit scraping","residential proxy"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-social-media-scraping-proxy/2000/1000"
 published: "2026-03-07"
 ---
 

@@ -5,7 +5,7 @@ summary: "Why and how to use rotating residential proxies with OpenClaw AI agent
 category: "proxy"
 tags: ["openclaw", "openclaw rotating proxy", "rotating proxy", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-rotating-proxy/2000/1000"
 ---
 
 ## Rotating Residential Proxies for OpenClaw Agents

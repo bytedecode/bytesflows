@@ -5,7 +5,7 @@ summary: "Use OpenClaw AI agent to browse Cloudflare-protected sites. Why reside
 category: "anti-bot"
 tags: ["openclaw", "cloudflare", "residential proxy", "bypass", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-cloudflare-bypass/2000/1000"
 ---
 
 ## Bypassing Cloudflare with OpenClaw and Residential Proxies

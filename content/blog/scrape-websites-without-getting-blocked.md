@@ -5,7 +5,7 @@ summary: "A practical developer guide about how to scrape websites without getti
 category: "web-scraping"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/scrape-websites-without-getting-blocked/2000/1000"
 ---
 
 ## Introduction

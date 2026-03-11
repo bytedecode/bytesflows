@@ -5,7 +5,7 @@ summary: "Guide to python proxy scraping guide: practical tips and how it fits i
 category: "python"
 tags: ["python", "web-scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/python-proxy-scraping-guide/2000/1000"
 ---
 
 ## Introduction

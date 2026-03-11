@@ -5,7 +5,7 @@ summary: "How to scrape Google and SERP data legally and technically. Proxies, r
 category: "use-cases"
 tags: ["scrape google", "SERP scraping", "search results", "proxy", "legal"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/how-to-scrape-google/2000/1000"
 ---
 
 ## Introduction

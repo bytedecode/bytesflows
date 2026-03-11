@@ -5,7 +5,7 @@ summary: "Step-by-step guide to build your first web scraper: choose target, pic
 category: "web-scraping"
 tags: ["first scraper", "tutorial", "Python", "Playwright", "beginner"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/how-to-build-first-web-scraper/2000/1000"
 ---
 
 ## How to Build Your First Web Scraper

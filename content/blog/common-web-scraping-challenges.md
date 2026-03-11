@@ -5,7 +5,7 @@ summary: "Common web scraping challenges: blocks, JavaScript, rate limits, CAPTC
 category: "web-scraping"
 tags: ["web scraping", "challenges", "blocks", "JavaScript", "solutions"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/common-web-scraping-challenges/2000/1000"
 ---
 
 ## Common Web Scraping Challenges

@@ -5,7 +5,7 @@ summary: "From URL discovery to storage: how a typical web scraping workflow wor
 category: "web-scraping"
 tags: ["web-scraping", "workflow", "architecture", "pipeline"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/web-scraping-workflow-explained/2000/1000"
 ---
 
 ## Introduction

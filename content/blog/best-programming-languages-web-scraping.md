@@ -5,7 +5,7 @@ summary: "Best programming languages for web scraping: Python, Node.js, Go. Comp
 category: "web-scraping"
 tags: ["programming languages", "Python", "Node.js", "web scraping", "comparison"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/best-programming-languages-web-scraping/2000/1000"
 ---
 
 ## Best Programming Languages for Web Scraping

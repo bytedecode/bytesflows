@@ -5,7 +5,7 @@ summary: "Deploy OpenClaw on a VPS and route agent browser traffic through resid
 category: "architecture"
 tags: ["openclaw", "VPS", "residential proxy", "deployment", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-vps-proxy/2000/1000"
 ---
 
 ## Running OpenClaw on a VPS with Residential Proxies

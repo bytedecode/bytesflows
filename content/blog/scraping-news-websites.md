@@ -5,7 +5,7 @@ summary: "A practical developer guide about scraping news websites and modern sc
 category: "use-cases"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/scraping-news-websites/2000/1000"
 ---
 
 ## Introduction

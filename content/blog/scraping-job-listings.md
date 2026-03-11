@@ -5,7 +5,7 @@ summary: "How to scrape job listings: job boards, LinkedIn-style sites. Use Play
 category: "use-cases"
 tags: ["job listings", "job scraping", "recruitment", "scraping", "proxy"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/scraping-job-listings/2000/1000"
 ---
 
 ## Scraping Job Listings

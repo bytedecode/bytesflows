@@ -5,7 +5,7 @@ summary: "Use OpenClaw AI agent for market intelligence: competitor prices, revi
 category: "use-cases"
 tags: ["openclaw", "market intelligence", "competitor", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-market-intelligence/2000/1000"
 ---
 
 ## OpenClaw for Market Intelligence and Competitor Monitoring

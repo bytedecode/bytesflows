@@ -5,7 +5,7 @@ summary: "Guide to proxy management for large scrapers: practical tips and how i
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/proxy-management-large-scrapers/2000/1000"
 ---
 
 ## Introduction

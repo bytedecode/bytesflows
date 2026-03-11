@@ -5,7 +5,7 @@ summary: "How websites detect web scrapers: IP reputation, fingerprinting, behav
 category: "anti-bot"
 tags: ["bot detection", "scraper detection", "fingerprinting", "anti-bot"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/how-websites-detect-scrapers/2000/1000"
 ---
 
 ## How Websites Detect Web Scrapers

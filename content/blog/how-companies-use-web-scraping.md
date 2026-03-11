@@ -5,7 +5,7 @@ summary: "How companies use web scraping for market intelligence, pricing, lead 
 category: "web-scraping"
 tags: ["web-scraping", "use-cases", "business", "automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/how-companies-use-web-scraping/2000/1000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "Guide to scraping price comparison data: practical tips and how it fit
 category: "use-cases"
 tags: ["use-cases", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/scraping-price-comparison-data/2000/1000"
 ---
 
 ## Introduction

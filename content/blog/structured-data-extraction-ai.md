@@ -5,7 +5,7 @@ summary: "Guide to structured data extraction with ai: practical tips and how it
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/structured-data-extraction-ai/2000/1000"
 ---
 
 ## Introduction

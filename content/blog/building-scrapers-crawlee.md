@@ -5,7 +5,7 @@ summary: "Guide to building scrapers with crawlee: practical tips and how it fit
 category: "framework"
 tags: ["framework", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/building-scrapers-crawlee/2000/1000"
 ---
 
 ## Introduction

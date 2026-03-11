@@ -5,7 +5,7 @@ summary: "Web scraping vs API: when to use each, pros and cons, and how to combi
 category: "web-scraping"
 tags: ["web scraping", "API", "comparison", "data collection"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/web-scraping-vs-api/2000/1000"
 ---
 
 ## Web Scraping vs API: Overview

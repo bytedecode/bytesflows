@@ -5,7 +5,7 @@ summary: "Guide to using llms to extract web data: practical tips and how it fit
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/using-llms-extract-web-data/2000/1000"
 ---
 
 ## Introduction

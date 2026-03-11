@@ -5,7 +5,7 @@ summary: "Why residential proxies are best for web scraping: lower block rates, 
 category: "proxy"
 tags: ["residential proxies", "web scraping", "proxy", "anti-block"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/why-residential-proxies-best-scraping/2000/1000"
 ---
 
 ## Why Residential Proxies Are Best for Scraping

@@ -5,7 +5,7 @@ summary: "A beginner-friendly guide to web scraping tools: browser extensions, P
 category: "web-scraping"
 tags: ["web-scraping", "beginners", "tools", "tutorial"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/web-scraping-tools-beginners/2000/1000"
 ---
 
 ## Introduction

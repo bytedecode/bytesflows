@@ -5,7 +5,7 @@ summary: "Step-by-step guide to configure residential or rotating proxy with Ope
 category: "proxy"
 tags: ["openclaw", "openclaw proxy setup", "proxy configuration", "AI agent"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/openclaw-proxy-setup/2000/1000"
 ---
 
 ## How to Set Up Proxy with OpenClaw

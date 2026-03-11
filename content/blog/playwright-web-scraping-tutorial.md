@@ -5,7 +5,7 @@ summary: "A practical developer guide about playwright web scraping tutorial and
 category: "playwright"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/playwright-web-scraping-tutorial/2000/1000"
 ---
 
 ## Introduction

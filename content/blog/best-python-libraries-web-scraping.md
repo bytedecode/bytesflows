@@ -5,7 +5,7 @@ summary: "A practical developer guide about best python libraries for web scrapi
 category: "python"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=2000"
+coverImage: "https://picsum.photos/seed/best-python-libraries-web-scraping/2000/1000"
 ---
 
 ## Introduction
