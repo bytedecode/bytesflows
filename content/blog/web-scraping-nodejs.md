@@ -5,7 +5,7 @@ summary: "Building industrial-grade Node.js scrapers in 2026. Master high-perfor
 category: "nodejs"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/web-scraping-nodejs/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

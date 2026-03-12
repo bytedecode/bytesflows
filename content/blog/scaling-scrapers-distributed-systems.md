@@ -5,7 +5,7 @@ summary: "Scaling web scrapers with distributed systems in 2026. Master microser
 category: "architecture"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scaling-scrapers-distributed-systems/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

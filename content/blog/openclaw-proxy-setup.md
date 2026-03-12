@@ -5,7 +5,7 @@ summary: "The definitive 2026 guide to OpenClaw proxy integration. Step-by-step 
 category: "proxy"
 tags: ["openclaw", "openclaw proxy setup", "proxy configuration", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-proxy-setup/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## How to Set Up Proxy with OpenClaw

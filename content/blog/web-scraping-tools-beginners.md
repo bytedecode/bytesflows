@@ -5,7 +5,7 @@ summary: "The 2026 starter guide to web scraping tools. Navigate from simple bro
 category: "web-scraping"
 tags: ["web-scraping", "beginners", "tools", "tutorial"]
 language: "en"
-coverImage: "https://picsum.photos/seed/web-scraping-tools-beginners/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

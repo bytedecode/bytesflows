@@ -5,7 +5,7 @@ summary: "深入剖析现代反爬系统如何利用浏览器硬件细节、Canv
 category: "anti-bot"
 tags: ["web-scraping","automation","browser-fingerprinting","privacy","security"]
 language: "zh"
-coverImage: "https://picsum.photos/seed/browser-fingerprinting-explained/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## 导言：超越 IP 地址的追踪

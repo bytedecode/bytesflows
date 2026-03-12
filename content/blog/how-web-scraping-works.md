@@ -5,7 +5,7 @@ summary: "A deep dive into the technical mechanics of 2026 web scraping. From HT
 category: "web-scraping"
 tags: ["web scraping", "how it works", "HTTP", "parsing", "architecture"]
 language: "en"
-coverImage: "https://picsum.photos/seed/how-web-scraping-works/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## How Web Scraping Works: Overview

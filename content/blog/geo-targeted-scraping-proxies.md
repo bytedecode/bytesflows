@@ -5,7 +5,7 @@ summary: "Unlock location-based data insights with geo-targeted scraping. Master
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/geo-targeted-scraping-proxies/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

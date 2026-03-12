@@ -5,7 +5,7 @@ summary: "Optimize your Playwright scrapers for peak performance in 2026. Learn 
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"
-coverImage: "https://picsum.photos/seed/playwright-scraping-performance-tips/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

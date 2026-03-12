@@ -5,7 +5,7 @@ summary: "Industrial-grade 2026 guide to scraping search engine results (SERP). 
 category: "use-cases"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-serp-data/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

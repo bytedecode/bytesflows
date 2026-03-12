@@ -5,7 +5,7 @@ summary: "Empower your OpenClaw agents with unshakeable resilience. Learn to nav
 category: "anti-bot"
 tags: ["openclaw", "openclaw scraping", "anti-bot", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-ai-agent-anti-bot/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Avoiding Blocks When Using OpenClaw for Scraping

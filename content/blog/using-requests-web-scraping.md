@@ -5,7 +5,7 @@ summary: "2026 Requests scraping masterclass. Learn to optimize HTTP sessions, m
 category: "python"
 tags: ["Requests", "Python", "HTTP", "web scraping", "proxy"]
 language: "en"
-coverImage: "https://picsum.photos/seed/using-requests-web-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Using Requests for Web Scraping

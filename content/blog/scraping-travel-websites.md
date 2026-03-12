@@ -5,7 +5,7 @@ summary: "2026 technical guide for scraping travel and hospitality data. Master 
 category: "use-cases"
 tags: ["use-cases", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-travel-websites/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

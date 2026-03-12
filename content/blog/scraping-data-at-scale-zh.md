@@ -5,7 +5,7 @@ summary: "2026 大规模数据采集蓝图。从分布式架构到海量住宅 I
 category: "architecture"
 tags: ["web-scraping","architecture","scaling","proxy","big-data"]
 language: "zh"
-coverImage: "https://picsum.photos/seed/scraping-data-at-scale/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## 导言：从脚本到系统的飞跃

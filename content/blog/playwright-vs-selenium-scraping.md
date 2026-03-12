@@ -5,7 +5,7 @@ summary: "Modernizing your scraping stack: Playwright vs. Selenium in 2026. Disc
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"
-coverImage: "https://picsum.photos/seed/playwright-vs-selenium-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

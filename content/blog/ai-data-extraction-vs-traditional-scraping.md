@@ -5,7 +5,7 @@ summary: "Guide to ai data extraction vs traditional: practical tips and how it 
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/ai-data-extraction-vs-traditional-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

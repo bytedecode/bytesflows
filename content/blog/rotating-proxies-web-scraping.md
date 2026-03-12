@@ -5,7 +5,7 @@ summary: "2026 guide to rotating proxies for web scraping. Learn automated rotat
 category: "proxy"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/rotating-proxies-web-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

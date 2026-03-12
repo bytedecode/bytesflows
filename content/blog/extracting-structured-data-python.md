@@ -5,7 +5,7 @@ summary: "Master the art of turning messy web pages into clean, structured data.
 category: "python"
 tags: ["python", "web-scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/extracting-structured-data-python/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

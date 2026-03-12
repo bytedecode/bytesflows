@@ -5,7 +5,7 @@ summary: "Architecting high-performance scraping systems in 2026. Master the des
 category: "architecture"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/web-scraping-architecture-design/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

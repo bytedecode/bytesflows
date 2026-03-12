@@ -5,7 +5,7 @@ summary: "Architecting large-scale Playwright scrapers in 2026. Master distribut
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"
-coverImage: "https://picsum.photos/seed/playwright-web-scraping-scale/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

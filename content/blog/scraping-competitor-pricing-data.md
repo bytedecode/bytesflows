@@ -5,7 +5,7 @@ summary: "Strategic competitor pricing extraction in 2026. Learn how to use resi
 category: "use-cases"
 tags: ["use-cases", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-competitor-pricing-data/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

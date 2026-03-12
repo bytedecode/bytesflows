@@ -5,7 +5,7 @@ summary: "Harness the power of Crawlee for sophisticated web crawling. Discover 
 category: "framework"
 tags: ["framework", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/building-scrapers-crawlee/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

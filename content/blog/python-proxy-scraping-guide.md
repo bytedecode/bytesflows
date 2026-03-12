@@ -5,7 +5,7 @@ summary: "Complete 2026 guide to Python proxy scraping. Master residential IP in
 category: "python"
 tags: ["python", "web-scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/python-proxy-scraping-guide/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

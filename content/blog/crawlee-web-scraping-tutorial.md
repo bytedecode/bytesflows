@@ -5,7 +5,7 @@ summary: "Step into the future of enterprise web scraping with Crawlee. Explore 
 category: "crawlee"
 tags: ["web-scraping","crawlee","playwright","typescript","automation","proxy"]
 language: "en"
-coverImage: "https://picsum.photos/seed/crawlee-web-scraping-tutorial/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: Why Crawlee is the Game Changer

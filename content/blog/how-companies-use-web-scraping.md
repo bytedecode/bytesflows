@@ -5,7 +5,7 @@ summary: "Explore how global enterprises leverage web scraping for market intell
 category: "web-scraping"
 tags: ["web-scraping", "use-cases", "business", "automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/how-companies-use-web-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

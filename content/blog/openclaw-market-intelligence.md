@@ -5,7 +5,7 @@ summary: "Real-time market intelligence with OpenClaw agents. Monitor competitor
 category: "use-cases"
 tags: ["openclaw", "market intelligence", "competitor", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-market-intelligence/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## OpenClaw for Market Intelligence and Competitor Monitoring

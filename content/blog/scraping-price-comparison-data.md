@@ -5,7 +5,7 @@ summary: "Building high-performance price comparison engines in 2026. Learn how 
 category: "use-cases"
 tags: ["use-cases", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-price-comparison-data/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

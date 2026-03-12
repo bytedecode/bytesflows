@@ -5,7 +5,7 @@ summary: "Master the art of 'not triggering' CAPTCHAs in your scraping pipeline.
 category: "anti-bot"
 tags: ["web-scraping","proxy","automation","anti-bot","captcha"]
 language: "en"
-coverImage: "https://picsum.photos/seed/handling-captchas-in-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: The "Last Mile" of Scraping Defense

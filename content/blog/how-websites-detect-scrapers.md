@@ -5,7 +5,7 @@ summary: "Stay one step ahead of website security. Explore the advanced detectio
 category: "anti-bot"
 tags: ["bot detection", "scraper detection", "fingerprinting", "anti-bot"]
 language: "en"
-coverImage: "https://picsum.photos/seed/how-websites-detect-scrapers/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## How Websites Detect Web Scrapers

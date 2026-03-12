@@ -5,7 +5,7 @@ summary: "Stop detection with 2026 browser fingerprinting prevention techniques.
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"
-coverImage: "https://picsum.photos/seed/preventing-scraper-fingerprinting/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

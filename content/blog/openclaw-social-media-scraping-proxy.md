@@ -5,7 +5,7 @@ summary: "Building social listening engines with OpenClaw in 2026. Master the us
 category: "openclaw-scraping"
 tags: ["openclaw","social media scraping","twitter scraping","reddit scraping","residential proxy"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-social-media-scraping-proxy/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=2000"
 published: "2026-03-07"
 ---
 

@@ -5,7 +5,7 @@ summary: "Architecting a professional-grade proxy layer for large-scale crawling
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/building-proxy-infrastructure-crawlers/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

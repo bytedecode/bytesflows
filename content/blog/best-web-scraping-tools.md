@@ -5,7 +5,7 @@ summary: "Compare the best web scraping tools: Playwright, Puppeteer, Scrapy, Cr
 category: "web-scraping"
 tags: ["web-scraping", "scraping tools", "playwright", "python", "automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/best-web-scraping-tools/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

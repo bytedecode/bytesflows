@@ -5,7 +5,7 @@ summary: "Managing multi-agent OpenClaw deployments in 2026. Learn to route para
 category: "architecture"
 tags: ["openclaw", "multi-agent", "proxy", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-multi-agent-proxy/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Multi-Agent OpenClaw and Proxy Routing

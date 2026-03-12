@@ -5,7 +5,7 @@ summary: "Master OpenClaw Playwright proxy integration in 2026. Learn best pract
 category: "playwright"
 tags: ["openclaw", "playwright", "proxy", "openclaw proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-playwright-proxy/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## OpenClaw Playwright Proxy Configuration

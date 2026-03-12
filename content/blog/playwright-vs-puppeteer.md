@@ -5,7 +5,7 @@ summary: "The 2026 showdown: Playwright vs. Puppeteer for modern web scraping. C
 category: "playwright"
 tags: ["playwright", "puppeteer", "web scraping", "headless browser", "automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/playwright-vs-puppeteer/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

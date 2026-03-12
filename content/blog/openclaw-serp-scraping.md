@@ -5,7 +5,7 @@ summary: "Master SERP and search data extraction with OpenClaw in 2026. Combine 
 category: "use-cases"
 tags: ["openclaw", "SERP scraping", "search results", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-serp-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## OpenClaw for SERP and Search Data Extraction

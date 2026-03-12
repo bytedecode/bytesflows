@@ -5,7 +5,7 @@ summary: "Unlock the power of conversational web scraping with OpenClaw in 2026.
 category: "web-scraping"
 tags: ["openclaw", "openclaw scraping", "web scraping", "AI agent", "data extraction"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-web-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## OpenClaw for Web Scraping and Data Extraction

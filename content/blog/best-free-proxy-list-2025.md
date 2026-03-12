@@ -5,7 +5,7 @@ summary: "Free proxy list for testing and development. IProbe.io free pulse prox
 category: "proxy"
 tags: ["free proxy", "proxy list", "iprobe", "web-scraping", "developer"]
 language: "en"
-coverImage: "https://picsum.photos/seed/best-free-proxy-list-2025/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "Choosing between free proxy lists and paid residential networks in 202
 category: "proxy"
 tags: ["free proxy", "proxy list", "web-scraping", "residential proxy", "iprobe"]
 language: "en"
-coverImage: "https://picsum.photos/seed/free-proxy-list-vs-paid-proxies/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

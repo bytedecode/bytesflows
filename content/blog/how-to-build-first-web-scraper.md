@@ -5,7 +5,7 @@ summary: "Embark on your data extraction journey in 2026. This comprehensive sta
 category: "web-scraping"
 tags: ["first-scraper", "tutorial", "Python", "Playwright", "beginner-guide"]
 language: "en"
-coverImage: "https://picsum.photos/seed/how-to-build-first-web-scraper/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: Your Data Journey Starts Here

@@ -5,7 +5,7 @@ summary: "Selecting the right tool for the job. From lightweight parsers to full
 category: "python"
 tags: ["web-scraping","python","libraries","scrapy","playwright","data-extraction"]
 language: "en"
-coverImage: "https://picsum.photos/seed/best-python-libraries-web-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: The Python Advantage

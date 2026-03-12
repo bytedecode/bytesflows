@@ -5,7 +5,7 @@ summary: "Navigating the complexities of Google SERP data collection in 2026. Di
 category: "use-cases"
 tags: ["scrape google", "SERP scraping", "search results", "proxy", "legal"]
 language: "en"
-coverImage: "https://picsum.photos/seed/how-to-scrape-google/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

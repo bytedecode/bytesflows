@@ -5,7 +5,7 @@ summary: "AI web scraping explained: how AI agents and LLMs extract web data, vs
 category: "ai-scraping"
 tags: ["AI", "web scraping", "LLM", "agents", "data extraction"]
 language: "en"
-coverImage: "https://picsum.photos/seed/ai-web-scraping-explained/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## What is AI Web Scraping?

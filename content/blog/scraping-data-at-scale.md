@@ -5,7 +5,7 @@ summary: "The 2026 blueprint for large-scale data harvesting. Master distributed
 category: "architecture"
 tags: ["web-scraping","architecture","scaling","proxy","big-data"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-data-at-scale/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: The Leap from Script to System

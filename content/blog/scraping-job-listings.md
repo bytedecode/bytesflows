@@ -5,7 +5,7 @@ summary: "The complete 2026 guide for scraping job listings. Master the extracti
 category: "use-cases"
 tags: ["job-listings", "recruitment-data", "market-intelligence", "scraping", "proxy"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-job-listings/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: The Value of Job Data

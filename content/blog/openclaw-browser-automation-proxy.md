@@ -5,7 +5,7 @@ summary: "Master browser automation with OpenClaw in 2026. Learn to integrate re
 category: "playwright"
 tags: ["openclaw", "browser automation", "residential proxy", "playwright", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-browser-automation-proxy/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## OpenClaw Browser Automation with Residential Proxies

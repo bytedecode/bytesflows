@@ -5,7 +5,7 @@ summary: "The 2026 lifecycle of a professional web scraper. Master the end-to-en
 category: "web-scraping"
 tags: ["web-scraping", "workflow", "architecture", "pipeline"]
 language: "en"
-coverImage: "https://picsum.photos/seed/web-scraping-workflow-explained/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

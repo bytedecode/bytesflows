@@ -5,7 +5,7 @@ summary: "2026 Blueprint for web scraping at scale. Master the best practices of
 category: "web-scraping"
 tags: ["web-scraping", "scale", "proxy", "architecture"]
 language: "en"
-coverImage: "https://picsum.photos/seed/web-scraping-at-scale-best-practices/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "2026 Playwright web scraping tutorial for modern apps. Learn to captur
 category: "playwright"
 tags: ["web-scraping","playwright","automation","tutorial","javascript"]
 language: "en"
-coverImage: "https://picsum.photos/seed/playwright-web-scraping-tutorial/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: Why Playwright in 2026?

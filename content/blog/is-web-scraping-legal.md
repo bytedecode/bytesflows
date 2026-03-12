@@ -5,7 +5,7 @@ summary: "The definitive 2026 developer's guide to the legal landscape of web sc
 category: "web-scraping"
 tags: ["web scraping", "legal", "compliance", "ToS", "GDPR"]
 language: "en"
-coverImage: "https://picsum.photos/seed/is-web-scraping-legal/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Is Web Scraping Legal? Short Answer

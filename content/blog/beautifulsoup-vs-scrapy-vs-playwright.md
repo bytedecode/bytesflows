@@ -5,7 +5,7 @@ summary: "Compare BeautifulSoup, Scrapy, and Playwright for web scraping: static
 category: "python"
 tags: ["BeautifulSoup", "Scrapy", "Playwright", "Python", "comparison"]
 language: "en"
-coverImage: "https://picsum.photos/seed/beautifulsoup-vs-scrapy-vs-playwright/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## BeautifulSoup vs Scrapy vs Playwright

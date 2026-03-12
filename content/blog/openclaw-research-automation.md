@@ -5,7 +5,7 @@ summary: "Empower your 2026 research workflows with OpenClaw. Learn when and how
 category: "use-cases"
 tags: ["openclaw", "research", "drafting", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-research-automation/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## OpenClaw for Research and Drafting with Proxies

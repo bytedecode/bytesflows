@@ -5,7 +5,7 @@ summary: "Guide to ai-powered scraping pipelines: practical tips and how it fits
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/ai-powered-scraping-pipelines/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

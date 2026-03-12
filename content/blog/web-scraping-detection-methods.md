@@ -5,7 +5,7 @@ summary: "Anatomy of 2026 web scraping detection. Learn how modern anti-bot syst
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"
-coverImage: "https://picsum.photos/seed/web-scraping-detection-methods/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "Architecting large-scale data collection on OpenClaw. Learn 2026 best 
 category: "architecture"
 tags: ["openclaw", "data collection", "scale", "residential proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-data-collection-scale/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Large-Scale Data Collection with OpenClaw and Proxies

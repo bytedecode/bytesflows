@@ -5,7 +5,7 @@ summary: "Master the art of browser automation in 2026. Explore why headless bro
 category: "web-scraping"
 tags: ["web-scraping","headless-browser","automation","playwright","puppeteer","proxy"]
 language: "en"
-coverImage: "https://picsum.photos/seed/headless-browser-scraping-guide/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: The Evolution of Web Extraction

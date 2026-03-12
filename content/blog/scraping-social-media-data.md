@@ -5,7 +5,7 @@ summary: "Professional 2026 social media scraping strategies. Learn to harvest p
 category: "use-cases"
 tags: ["web-scraping","proxy","automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-social-media-data/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

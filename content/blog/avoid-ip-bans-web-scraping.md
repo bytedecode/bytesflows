@@ -5,7 +5,7 @@ summary: "IP bans are the number one enemy of web scrapers. Learn the behavioral
 category: "proxy"
 tags: ["web-scraping","proxy","anti-bot","automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/avoid-ip-bans-web-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: The Constant War of Attrition

@@ -5,7 +5,7 @@ summary: "Beyond IP addresses: understanding how Canvas, WebGL, and Audio finger
 category: "anti-bot"
 tags: ["web-scraping","automation","browser-fingerprinting","privacy","security"]
 language: "en"
-coverImage: "https://picsum.photos/seed/browser-fingerprinting-explained/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction: Beyond the IP Address

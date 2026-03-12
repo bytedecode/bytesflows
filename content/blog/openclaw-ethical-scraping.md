@@ -5,7 +5,7 @@ summary: "The developer's guide to ethical data harvesting with OpenClaw in 2026
 category: "web-scraping"
 tags: ["openclaw", "ethical scraping", "robots.txt", "AI agent", "best practices"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-ethical-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Ethical Scraping with OpenClaw: Best Practices

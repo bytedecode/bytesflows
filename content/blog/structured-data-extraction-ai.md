@@ -5,7 +5,7 @@ summary: "Harnessing AI for structured data extraction in 2026. Learn to transfo
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/structured-data-extraction-ai/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

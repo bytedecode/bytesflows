@@ -5,7 +5,7 @@ summary: "The future of data collection: building autonomous AI scraping agents.
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/building-ai-scraping-agent/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

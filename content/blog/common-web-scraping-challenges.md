@@ -5,7 +5,7 @@ summary: "A comprehensive guide to overcoming the five biggest hurdles in modern
 category: "web-scraping"
 tags: ["web scraping", "challenges", "blocks", "JavaScript", "solutions"]
 language: "en"
-coverImage: "https://picsum.photos/seed/common-web-scraping-challenges/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Common Web Scraping Challenges

@@ -5,7 +5,7 @@ summary: "Advanced 2026 guide to Playwright proxy integration. Master the config
 category: "playwright"
 tags: ["Playwright", "proxy", "residential proxy", "browser automation"]
 language: "en"
-coverImage: "https://picsum.photos/seed/using-proxies-playwright/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Using Proxies with Playwright

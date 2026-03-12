@@ -5,7 +5,7 @@ summary: "Building sustainable data pipelines through ethical scraping. Learn be
 category: "web-scraping"
 tags: ["ethical", "web scraping", "robots.txt", "legal", "best practices"]
 language: "en"
-coverImage: "https://picsum.photos/seed/ethical-web-scraping-practices/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Why Ethical Web Scraping Matters

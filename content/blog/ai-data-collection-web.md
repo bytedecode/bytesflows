@@ -5,7 +5,7 @@ summary: "AI data collection from the web: LLMs, agents, and pipelines. Extract 
 category: "ai-scraping"
 tags: ["AI", "data collection", "web", "LLM", "agents"]
 language: "en"
-coverImage: "https://picsum.photos/seed/ai-data-collection-web/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## What Is AI Data Collection from the Web?

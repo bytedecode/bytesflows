@@ -5,7 +5,7 @@ summary: "The 2026 developer's blueprint for using LLMs in web scraping. Master 
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/using-llms-extract-web-data/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "Clarifying OpenClaw's proxy architecture. Understand the critical diff
 category: "proxy"
 tags: ["openclaw", "openclaw gateway", "proxy", "trusted proxy", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-gateway-proxy/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## OpenClaw Gateway and Proxy: Traffic and Browser Proxy

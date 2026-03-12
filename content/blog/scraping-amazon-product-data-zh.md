@@ -5,7 +5,7 @@ summary: "2026 亚马逊产品数据抓取手册。攻克 Amazon 复杂的反爬
 category: "use-cases"
 tags: ["Amazon", "e-commerce", "product data", "scraping", "proxy","automation"]
 language: "zh"
-coverImage: "https://picsum.photos/seed/scraping-amazon-product-data/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## 导言：亚马逊的数据宝库

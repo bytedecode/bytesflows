@@ -5,7 +5,7 @@ summary: "Host OpenClaw on a VPS for 24/7 availability in 2026. Learn to route b
 category: "architecture"
 tags: ["openclaw", "VPS", "residential proxy", "deployment", "AI agent"]
 language: "en"
-coverImage: "https://picsum.photos/seed/openclaw-vps-proxy/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Running OpenClaw on a VPS with Residential Proxies

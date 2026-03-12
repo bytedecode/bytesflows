@@ -5,7 +5,7 @@ summary: "Comprehensive 2026 guide to Playwright proxy configuration. Learn to i
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"
-coverImage: "https://picsum.photos/seed/playwright-proxy-configuration-guide/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "Avoid costly errors in your scraping infrastructure. Learn about commo
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/common-proxy-mistakes-scraping/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

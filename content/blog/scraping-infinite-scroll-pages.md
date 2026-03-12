@@ -5,7 +5,7 @@ summary: "Conquering infinite scroll in 2026. Master Playwright and specialized 
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"
-coverImage: "https://picsum.photos/seed/scraping-infinite-scroll-pages/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## Introduction

@@ -5,7 +5,7 @@ summary: "Demystifying IP rotation for modern web scraping. Understand the techn
 category: "proxy"
 tags: ["proxy rotation", "rotating proxy", "IP rotation", "scraping"]
 language: "en"
-coverImage: "https://picsum.photos/seed/how-proxy-rotation-works/2000/1000"
+coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---
 
 ## How Proxy Rotation Works
