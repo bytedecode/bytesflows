@@ -1,7 +1,7 @@
 ---
 title: "Web Scraping Architecture Design"
 slug: "web-scraping-architecture-design"
-summary: "A practical developer guide about web scraping architecture design and modern scraping infrastructure."
+summary: "Architecting high-performance scraping systems in 2026. Master the design of distributed crawlers, proxy pools, and resilient data pipelines for industrial-grade extraction."
 category: "architecture"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

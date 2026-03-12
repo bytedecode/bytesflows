@@ -1,7 +1,7 @@
 ---
 title: "Scraping APIs vs Websites"
 slug: "scraping-apis-vs-websites"
-summary: "A practical developer guide about scraping apis vs websites and modern scraping infrastructure."
+summary: "APIs vs. Web Scraping in 2026: Choosing the right path. Learn when to use official endpoints and when to deploy residential proxies for full-site data harvesting."
 category: "web-scraping"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

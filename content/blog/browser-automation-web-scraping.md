@@ -1,7 +1,7 @@
 ---
 title: "Browser Automation for Web Scraping (2026)"
 slug: "browser-automation-web-scraping"
-summary: "Guide to browser automation for web scraping: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scrapin"
+summary: "A technical overview of browser automation in 2026. Learn how to integrate Playwright into your scraping pipeline, manage headless environments, and combine automation with residential proxies to overcome modern anti-bot challenges."
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"

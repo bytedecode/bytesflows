@@ -1,7 +1,7 @@
 ---
 title: "Web Scraping Legal Considerations"
 slug: "web-scraping-legal-considerations"
-summary: "A practical developer guide about web scraping legal considerations and modern scraping infrastructure."
+summary: "Navigating web scraping legality in 2026. A developer's guide to compliance, ethics, and best practices in the era of new AI regulations and global data privacy laws."
 category: "legal"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

@@ -1,7 +1,7 @@
 ---
 title: "Why OpenClaw Agents Need Residential Proxies (Complete Guide)"
 slug: "openclaw-residential-proxy"
-summary: "Learn why OpenClaw AI agents need rotating residential proxies to avoid blocks, bypass anti-bot systems, and run reliable large-scale web automation."
+summary: "Why residential proxies are the backbone of 2026 OpenClaw deployments. Understand the mechanics of IP reputation, geo-targeting, and anti-bot bypass for reliable web automation."
 category: "proxy"
 tags: ["openclaw", "openclaw proxy", "residential proxy", "AI agent", "web automation"]
 language: "en"

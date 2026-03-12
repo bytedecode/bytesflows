@@ -1,7 +1,7 @@
 ---
 title: "Web Scraping Proxy Architecture (2026)"
 slug: "web-scraping-proxy-architecture"
-summary: "Guide to web scraping proxy architecture: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Optimizing web scraping proxy architecture for 2026. Learn to design resilient IP rotation layers and gateway systems for mission-critical data collection at global scale."
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"

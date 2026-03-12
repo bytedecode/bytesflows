@@ -1,7 +1,7 @@
 ---
 title: "Headless Browser Frameworks (2026)"
 slug: "headless-browser-frameworks"
-summary: "Guide to headless browser frameworks: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Navigating the 2026 landscape of headless browser frameworks. Compare Playwright, Puppeteer, and Selenium for modern web scraping, and learn to architect high-performance automation pipelines with residential proxy integration."
 category: "framework"
 tags: ["framework", "scraping"]
 language: "en"

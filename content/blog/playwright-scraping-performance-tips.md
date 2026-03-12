@@ -1,7 +1,7 @@
 ---
 title: "Playwright Scraping Performance Tips (2026)"
 slug: "playwright-scraping-performance-tips"
-summary: "Guide to playwright scraping performance tips: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scrapi"
+summary: "Optimize your Playwright scrapers for peak performance in 2026. Learn best practices for resource management, concurrency, and proxy integration to scale your data collection."
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"

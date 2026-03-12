@@ -1,7 +1,7 @@
 ---
 title: "Web Scraping Workflow Explained"
 slug: "web-scraping-workflow-explained"
-summary: "From URL discovery to storage: how a typical web scraping workflow works. Crawl strategy, fetch, parse, validate, and store—with proxies and error handling."
+summary: "The 2026 lifecycle of a professional web scraper. Master the end-to-end workflow from seed discovery to AI-driven parsing and distributed storage using residential proxies."
 category: "web-scraping"
 tags: ["web-scraping", "workflow", "architecture", "pipeline"]
 language: "en"

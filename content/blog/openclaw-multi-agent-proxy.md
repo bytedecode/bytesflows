@@ -1,7 +1,7 @@
 ---
 title: "Multi-Agent OpenClaw and Proxy Routing"
 slug: "openclaw-multi-agent-proxy"
-summary: "Run multiple OpenClaw agents or skills that scrape; how to route each through residential proxies and avoid IP overlap."
+summary: "Managing multi-agent OpenClaw deployments in 2026. Learn to route parallel agent sessions through centralized residential proxy gateways without IP overlap or performance bottlenecks."
 category: "architecture"
 tags: ["openclaw", "multi-agent", "proxy", "residential proxy", "AI agent"]
 language: "en"

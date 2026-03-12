@@ -1,7 +1,7 @@
 ---
 title: "Python Proxy Scraping Guide (2026)"
 slug: "python-proxy-scraping-guide"
-summary: "Guide to python proxy scraping guide: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Complete 2026 guide to Python proxy scraping. Master residential IP integration in Requests, Scrapy, and Playwright to build undetectable Pythonic scrapers."
 category: "python"
 tags: ["python", "web-scraping"]
 language: "en"

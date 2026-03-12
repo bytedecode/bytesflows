@@ -1,7 +1,7 @@
 ---
 title: "Proxy Pools for Web Scraping (2026)"
 slug: "proxy-pools-web-scraping"
-summary: "Proxy pools for web scraping: what they are, how to size them, rotation strategies. Use residential proxy pools with workers and queues."
+summary: "Building high-performance proxy pools for 2026 web scraping. Optimize concurrency and rotation strategies using residential gateways to ensure zero-downtime data collection."
 category: "proxy"
 tags: ["proxy pool", "web scraping", "residential proxy", "rotation"]
 language: "en"

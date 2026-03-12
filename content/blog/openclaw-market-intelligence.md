@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw for Market Intelligence and Competitor Monitoring"
 slug: "openclaw-market-intelligence"
-summary: "Use OpenClaw AI agent for market intelligence: competitor prices, reviews, and signals. Residential proxies for reliable automation."
+summary: "Real-time market intelligence with OpenClaw agents. Monitor competitor prices, reviews, and signals in 2026 using automated browser flows backed by geo-targeted residential proxies."
 category: "use-cases"
 tags: ["openclaw", "market intelligence", "competitor", "residential proxy", "AI agent"]
 language: "en"

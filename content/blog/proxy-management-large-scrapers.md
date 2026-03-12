@@ -1,7 +1,7 @@
 ---
 title: "Proxy Management for Large Scrapers (2026)"
 slug: "proxy-management-large-scrapers"
-summary: "Guide to proxy management for large scrapers: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scrapin"
+summary: "Professional proxy management for large-scale scrapers in 2026. Master pool sizing, failover logic, and residential IP rotation for industrial-grade data pipelines."
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"

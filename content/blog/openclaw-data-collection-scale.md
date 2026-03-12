@@ -1,7 +1,7 @@
 ---
 title: "Large-Scale Data Collection with OpenClaw and Proxies"
 slug: "openclaw-data-collection-scale"
-summary: "Use OpenClaw AI agent for large-scale data collection across many sites. Rotating residential proxies and best practices for reliability."
+summary: "Architecting large-scale data collection on OpenClaw. Learn 2026 best practices for managing high-volume requests using rotating residential proxy pools and intelligent throttling logic."
 category: "architecture"
 tags: ["openclaw", "data collection", "scale", "residential proxy", "AI agent"]
 language: "en"

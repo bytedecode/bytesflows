@@ -1,7 +1,7 @@
 ---
 title: "Using Requests for Web Scraping (2026)"
 slug: "using-requests-web-scraping"
-summary: "Using Python Requests for web scraping: GET, headers, sessions, proxies. When to add Beautiful Soup and residential proxies for scale."
+summary: "2026 Requests scraping masterclass. Learn to optimize HTTP sessions, manage headers, and integrate rotating residential proxies for high-trust data collection in Python."
 category: "python"
 tags: ["Requests", "Python", "HTTP", "web scraping", "proxy"]
 language: "en"

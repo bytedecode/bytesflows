@@ -1,7 +1,7 @@
 ---
 title: "Scraping Social Media Data"
 slug: "scraping-social-media-data"
-summary: "A practical developer guide about scraping social media data and modern scraping infrastructure."
+summary: "Professional 2026 social media scraping strategies. Learn to harvest public profile and trending data across platforms using high-trust residential proxies and automated session management."
 category: "use-cases"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

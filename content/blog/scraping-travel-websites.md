@@ -1,7 +1,7 @@
 ---
 title: "Scraping Travel Websites (2026)"
 slug: "scraping-travel-websites"
-summary: "Guide to scraping travel websites: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "2026 technical guide for scraping travel and hospitality data. Master the navigation of airline and hotel portals using high-trust residential proxies and automated session management."
 category: "use-cases"
 tags: ["use-cases", "scraping"]
 language: "en"

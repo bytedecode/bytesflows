@@ -1,7 +1,7 @@
 ---
 title: "Scraping Price Comparison Data (2026)"
 slug: "scraping-price-comparison-data"
-summary: "Guide to scraping price comparison data: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Building high-performance price comparison engines in 2026. Learn how to leverage global residential proxy networks to monitor competitive pricing without detection or rate limiting."
 category: "use-cases"
 tags: ["use-cases", "scraping"]
 language: "en"

@@ -1,7 +1,7 @@
 ---
 title: "Playwright vs Crawlee for Web Scraping (2026)"
 slug: "playwright-vs-crawlee-comparison"
-summary: "Playwright vs Crawlee: compare browser automation and crawler features. When to use Crawlee's queues and storage with Playwright."
+summary: "Playwright vs. Crawlee: Choosing the right stack for 2026 web scraping. Understand how to combine fine-grained browser control with industrial-grade crawling infrastructure and proxy rotation."
 category: "framework"
 tags: ["Playwright", "Crawlee", "comparison", "web scraping", "framework"]
 language: "en"

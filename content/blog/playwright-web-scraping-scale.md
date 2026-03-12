@@ -1,7 +1,7 @@
 ---
 title: "Playwright Web Scraping at Scale (2026)"
 slug: "playwright-web-scraping-scale"
-summary: "Guide to playwright web scraping at scale: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Architecting large-scale Playwright scrapers in 2026. Master distributed crawling, session management, and residential proxy rotation to handle millions of requests without detection."
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"

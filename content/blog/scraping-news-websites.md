@@ -1,7 +1,7 @@
 ---
 title: "Scraping News Websites"
 slug: "scraping-news-websites"
-summary: "A practical developer guide about scraping news websites and modern scraping infrastructure."
+summary: "2026 news scraping masterclass. Learn to build resilient pipelines for real-time news aggregation using rotating residential proxies and high-speed data extraction protocols."
 category: "use-cases"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

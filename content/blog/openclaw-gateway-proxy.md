@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw Gateway and Proxy: Traffic and Browser Proxy"
 slug: "openclaw-gateway-proxy"
-summary: "OpenClaw Gateway runs on your machine; browser traffic from agents can use a separate proxy. How gateway and browser proxy differ and when to use each."
+summary: "Clarifying OpenClaw's proxy architecture. Understand the critical difference between incoming gateway proxies and outgoing browser proxies for web scraping in 2026."
 category: "proxy"
 tags: ["openclaw", "openclaw gateway", "proxy", "trusted proxy", "AI agent"]
 language: "en"

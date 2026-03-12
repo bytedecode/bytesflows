@@ -1,7 +1,7 @@
 ---
 title: "Preventing Scraper Fingerprinting (2026)"
 slug: "preventing-scraper-fingerprinting"
-summary: "Guide to preventing scraper fingerprinting: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Stop detection with 2026 browser fingerprinting prevention techniques. Learn how to patch automation leaks and use residential proxies to blend in with real user traffic."
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"

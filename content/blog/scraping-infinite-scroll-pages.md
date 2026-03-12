@@ -1,7 +1,7 @@
 ---
 title: "Scraping Infinite Scroll Pages (2026)"
 slug: "scraping-infinite-scroll-pages"
-summary: "Guide to scraping infinite scroll pages: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Conquering infinite scroll in 2026. Master Playwright and specialized crawling techniques to capture endless content from modern web apps while maintaining high performance and low block rates."
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"

@@ -1,7 +1,7 @@
 ---
 title: "Building Proxy Infrastructure (2026)"
 slug: "building-proxy-infrastructure-crawlers"
-summary: "Guide to building proxy infrastructure: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Architecting a professional-grade proxy layer for large-scale crawling. Explore strategies for proxy rotation, pool management, and the integration of dynamic residential proxies to ensure high success rates and link reliability in 2026."
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"

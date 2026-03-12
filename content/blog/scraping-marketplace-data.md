@@ -1,7 +1,7 @@
 ---
 title: "Scraping Marketplace Data (2026)"
 slug: "scraping-marketplace-data"
-summary: "Guide to scraping marketplace data: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Technical 2026 strategies for harvesting structured data from online marketplaces. Learn to navigate complex layouts and bypass sophisticated anti-bot systems with precision."
 category: "use-cases"
 tags: ["use-cases", "scraping"]
 language: "en"

@@ -1,7 +1,7 @@
 ---
 title: "Scaling Scrapers with Distributed Systems"
 slug: "scaling-scrapers-distributed-systems"
-summary: "A practical developer guide about scaling scrapers with distributed systems and modern scraping infrastructure."
+summary: "Scaling web scrapers with distributed systems in 2026. Master microservices architecture, task queues, and global residential proxy networks for industrial-scale data ops."
 category: "architecture"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

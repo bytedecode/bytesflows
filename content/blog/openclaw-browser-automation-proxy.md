@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw Browser Automation with Residential Proxies"
 slug: "openclaw-browser-automation-proxy"
-summary: "Combine OpenClaw browser automation with residential proxies for reliable web tasks, form filling, and data extraction at scale."
+summary: "Master browser automation with OpenClaw in 2026. Learn to integrate residential proxies into Playwright-based agents to perform complex web tasks while maintaining a low detection profile."
 category: "playwright"
 tags: ["openclaw", "browser automation", "residential proxy", "playwright", "AI agent"]
 language: "en"

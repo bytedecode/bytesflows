@@ -1,7 +1,7 @@
 ---
 title: "Distributed Crawlers with Scrapy (2026)"
 slug: "distributed-crawlers-scrapy"
-summary: "Guide to distributed crawlers with scrapy: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Scaling data collection with distributed Scrapy architectures. Learn to coordinate multiple crawler nodes, manage shared proxy pools, and integrate dynamic residential proxies for massive-scale, resilient harvesting in 2026."
 category: "framework"
 tags: ["framework", "scraping"]
 language: "en"

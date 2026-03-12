@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw for Lead Gen, Research, and Outreach (With Proxies)"
 slug: "openclaw-lead-generation-proxy"
-summary: "Use OpenClaw AI agent for lead generation research, qualification, and drafting. Why residential proxies help and how to stay compliant."
+summary: "Supercharge your lead generation engine with OpenClaw. Learn to use 2026 AI agents for automated research and drafting while staying anonymous with rotating residential proxies."
 category: "use-cases"
 tags: ["openclaw", "lead generation", "residential proxy", "AI agent", "research"]
 language: "en"

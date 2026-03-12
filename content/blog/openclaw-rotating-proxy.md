@@ -1,7 +1,7 @@
 ---
 title: "Rotating Residential Proxies for OpenClaw Agents"
 slug: "openclaw-rotating-proxy"
-summary: "Why and how to use rotating residential proxies with OpenClaw AI agents for scalable web automation and scraping."
+summary: "Unlocking scalable automation with OpenClaw rotating proxies in 2026. Learn to distribute traffic across massive residential IP pools to emulate organic human behavior at scale."
 category: "proxy"
 tags: ["openclaw", "openclaw rotating proxy", "rotating proxy", "residential proxy", "AI agent"]
 language: "en"

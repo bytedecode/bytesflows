@@ -1,7 +1,7 @@
 ---
 title: "Playwright vs Selenium (2026)"
 slug: "playwright-vs-selenium-scraping"
-summary: "Guide to playwright vs selenium: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Modernizing your scraping stack: Playwright vs. Selenium in 2026. Discover why Playwright's auto-wait and multi-context architecture outperform legacy frameworks when paired with residential proxies."
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"

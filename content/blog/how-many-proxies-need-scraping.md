@@ -1,7 +1,7 @@
 ---
 title: "How Many Proxies Do You Need (2026)"
 slug: "how-many-proxies-need-scraping"
-summary: "Guide to how many proxies do you need: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Strategic capacity planning for your scraping infrastructure. Learn how to calculate the optimal number of proxies for your 2026 projects based on target difficulty, request volume, and desired success rates."
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"

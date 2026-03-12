@@ -1,114 +1,92 @@
 ---
-title: "Playwright Web Scraping Tutorial"
+title: "Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery"
 slug: "playwright-web-scraping-tutorial"
-summary: "A practical developer guide about playwright web scraping tutorial and modern scraping infrastructure."
+summary: "2026 Playwright web scraping tutorial for modern apps. Learn to capture React/Next.js content, manage infinite scrolls, and master stealth techniques with residential proxies."
 category: "playwright"
-tags: ["web-scraping","proxy","automation"]
+tags: ["web-scraping","playwright","automation","tutorial","javascript"]
 language: "en"
 coverImage: "https://picsum.photos/seed/playwright-web-scraping-tutorial/2000/1000"
 ---
 
-## Introduction
+## Introduction: Why Playwright in 2026?
 
-Web scraping has become a critical technique for developers, data
-engineers, and AI teams. Companies collect large volumes of public web
-data to power analytics, automation systems, and machine learning
-models.
+The era of "simple" scraping is over. Modern web applications built with React, Vue, and Next.js rely heavily on client-side rendering. For developers, this means old-school HTTP libraries like `requests` or `axios` often return nothing but a skeleton HTML file.
 
-However, modern websites deploy sophisticated anti‑bot protections.
-Without the right architecture and proxy infrastructure, scraping
-projects often fail due to IP bans, CAPTCHAs, or fingerprint detection.
+**Playwright**. Developed by Microsoft, Playwright has rapidly overtaken Selenium and Puppeteer as the gold standard for browser automation. It’s faster, more reliable (thanks to auto-waiting), and handles complex multi-context scenarios out of the box. In this guide, we’ll move beyond the "Hello World" and build a production-ready scraper.
 
-This guide explains practical strategies to build reliable scraping
-systems. For the big picture, read the [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026); for proxy choice, see [best proxies for scraping](/en/blog/best-proxies-for-web-scraping).
+## Core Concepts: Contexts vs. Pages
 
-## Why Web Scraping Gets Blocked
+In Playwright, a **BrowserContext** is like an isolated incognito window. Each context has its own cookies, storage, and cache. This is a game-changer for scale:
 
-Most websites implement multiple layers of bot protection:
+-   **Isolation:** You can run hundreds of parallel scrapers without them leaking data to each other.
+-   **Performance:** You only launch the browser instance once but create multiple contexts for different tasks.
 
--   Rate limiting
--   IP reputation scoring
--   Browser fingerprinting
--   JavaScript challenges
--   CAPTCHA verification
--   Behavioral detection
+## Solving the "Bot" Problem
 
-When a crawler sends too many requests from a single IP address, the
-website may temporarily or permanently block that address.
+If you use Playwright "out of the box," you will get caught. Sites use [browser fingerprinting](/en/blog/browser-fingerprinting-explained) to detect the `navigator.webdriver` flag and other automation leaks.
 
-## The Role of Proxies in Scraping
+### The Stealth Requirement
+To stay under the radar, you must use a stealth plugin or manually patch your browser context. This ensures that even advanced systems like [Cloudflare](/en/blog/bypass-cloudflare-web-scraping) or DataDome see you as a legitimate user.
 
-Proxies are a core component of large‑scale scraping infrastructure.
+### The Proxy Necessity
+High-volume scraping requires [rotating residential proxies](/en/blog/residential-proxies). They provide the IP diversity needed to prevent rate-limiting and geo-blocking.
 
-A proxy server acts as an intermediary between the scraper and the
-target website. Instead of sending requests directly from your server
-IP, traffic is routed through a proxy network.
+## Real-World Case: Scraping a Dynamic Marketplace
 
-Benefits include:
+Let's look at a practical script that handles common e-commerce challenges like infinite scroll and lazy loading.
 
--   IP rotation
--   geographic targeting
--   anonymity
--   reduced block rates
+```python
+import asyncio
+from playwright.async_api import async_playwright
 
-Residential proxies are particularly effective because they originate
-from real household IP addresses. Websites treat them as legitimate
-users rather than datacenter traffic. Use a [rotating residential proxy](/en/blog/residential-proxies) with Playwright for heavy scraping.
+async def scrape_dynamic_store():
+    async with async_playwright() as p:
+        # 1. Launch with a high-trust residential proxy
+        browser = await p.chromium.launch(
+            headless=True,
+            proxy={
+                "server": "http://p1.bytesflows.com:8001",
+                "username": "your_user",
+                "password": "your_password"
+            }
+        )
 
-## Example: Using a Proxy in Python
+        # 2. Setup a realistic environment
+        context = await browser.new_context(
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+            viewport={'width': 1280, 'height': 800}
+        )
 
-``` python
-import requests
+        page = await context.new_page()
+        await page.goto("https://example-shop.com/products")
 
-proxies = {
-    "http": "http://username:password@p1.bytesflows.com:8001",
-    "https": "http://username:password@p1.bytesflows.com:8001"
-}
+        # 3. Handle Infinite Scroll
+        for _ in range(5):
+            await page.mouse.wheel(0, 500)
+            await asyncio.sleep(1) # Wait for lazy-loaded images/items
 
-response = requests.get("https://example.com", proxies=proxies)
-print(response.status_code)
+        # 4. Smart Waiting for content
+        # Locators are better than simple selectors because of auto-waiting
+        items = page.locator(".product-card")
+        count = await items.count()
+
+        for i in range(count):
+            title = await items.nth(i).locator(".title").inner_text()
+            price = await items.nth(i).locator(".price").inner_text()
+            print(f"Product: {title} | Price: {price}")
+
+        await browser.close()
+
+if __name__ == "__main__":
+    asyncio.run(scrape_dynamic_store())
 ```
 
-## Example: Using a Proxy in Playwright
+## Best Practices for Scaling
 
-``` python
-from playwright.sync_api import sync_playwright
-
-with sync_playwright() as p:
-    browser = p.chromium.launch(
-        proxy={
-            "server": "http://p1.bytesflows.com:8001",
-            "username": "username",
-            "password": "password"
-        }
-    )
-
-    page = browser.new_page()
-    page.goto("https://example.com")
-    print(page.title())
-```
-
-## Best Practices for Reliable Scraping
-
-To maintain stable scraping operations, consider these best practices:
-
-1.  Rotate IP addresses frequently
-2.  Use headless browsers for dynamic sites
-3.  Randomize request timing
-4.  Store cookies and session data
-5.  Monitor block rates and errors
-6.  Combine scraping with AI‑driven parsing
-
-A well‑designed scraper should include crawler workers, proxy pools, and
-queue‑based task scheduling.
+1.  **Use Locators, not Selectors:** Playwright's `locator` API handles dynamic shifts in the DOM automatically.
+2.  **Monitor Memory:** Browser instances are heavy. Always ensure you close pages and contexts properly to avoid zombie processes. 
+3.  **Handle Challenges Gracefully:** If you hit a [CAPTCHA](/en/blog/handling-captchas-in-scraping), log the occurrence and rotate your proxy immediately.
 
 ## Conclusion
 
-Web scraping remains one of the most powerful techniques for collecting
-open data on the internet. With the right combination of proxy networks,
-browser automation, and intelligent crawling strategies, developers can
-build scalable and resilient scraping systems.
-
-If you're building a production‑level scraping infrastructure, investing
-in high‑quality rotating residential proxies is often the most important
-factor in long‑term success.
+Playwright is the most powerful tool in a scraper's arsenal, but it's only half the battle. To truly succeed at scale, you must combine it with [proactive stealth strategies](/en/blog/scrape-websites-without-getting-blocked) and [premium residential proxies](/en/blog/best-proxies-for-web-scraping).

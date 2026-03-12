@@ -1,7 +1,7 @@
 ---
 title: "Ethical Scraping with OpenClaw: Best Practices"
 slug: "openclaw-ethical-scraping"
-summary: "Use OpenClaw AI agent for web scraping in an ethical way: robots.txt, rate limiting, and legal considerations."
+summary: "The developer's guide to ethical data harvesting with OpenClaw in 2026. Respect site boundaries and legal requirements while leveraging residential proxies for responsible load distribution."
 category: "web-scraping"
 tags: ["openclaw", "ethical scraping", "robots.txt", "AI agent", "best practices"]
 language: "en"

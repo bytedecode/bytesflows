@@ -1,7 +1,7 @@
 ---
 title: "Playwright Proxy Configuration Guide (2026)"
 slug: "playwright-proxy-configuration-guide"
-summary: "Guide to playwright proxy configuration guide: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scrapi"
+summary: "Comprehensive 2026 guide to Playwright proxy configuration. Learn to integrate residential proxies and rotation strategies to build resilient, undetectable scraping pipelines."
 category: "playwright"
 tags: ["playwright", "browser"]
 language: "en"

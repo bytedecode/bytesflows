@@ -1,7 +1,7 @@
 ---
 title: "Structured Data Extraction with AI (2026)"
 slug: "structured-data-extraction-ai"
-summary: "Guide to structured data extraction with ai: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping"
+summary: "Harnessing AI for structured data extraction in 2026. Learn to transform messy web content into clean JSON using LLMs and high-concurrency scraping infrastructure."
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"

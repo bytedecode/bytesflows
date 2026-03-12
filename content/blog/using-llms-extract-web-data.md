@@ -1,7 +1,7 @@
 ---
 title: "Using LLMs to Extract Web Data (2026)"
 slug: "using-llms-extract-web-data"
-summary: "Guide to using llms to extract web data: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "The 2026 developer's blueprint for using LLMs in web scraping. Master the art of automated data extraction and parsing using advanced AI agents and residential proxy networks."
 category: "ai-scraping"
 tags: ["ai", "scraping"]
 language: "en"

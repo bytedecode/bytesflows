@@ -1,7 +1,7 @@
 ---
 title: "Web Scraping Detection Methods (2026)"
 slug: "web-scraping-detection-methods"
-summary: "Guide to web scraping detection methods: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Anatomy of 2026 web scraping detection. Learn how modern anti-bot systems track fingerprints and behaviors, and discover stealth strategies using high-trust residential IPs."
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"

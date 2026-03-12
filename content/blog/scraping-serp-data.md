@@ -1,7 +1,7 @@
 ---
 title: "Scraping Search Engine Results"
 slug: "scraping-serp-data"
-summary: "A practical developer guide about scraping search engine results and modern scraping infrastructure."
+summary: "Industrial-grade 2026 guide to scraping search engine results (SERP). Master the art of high-volume data collection while maintaining zero-footprint stealth with residential proxies."
 category: "use-cases"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

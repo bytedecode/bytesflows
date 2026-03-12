@@ -1,7 +1,7 @@
 ---
 title: "How Bot Detection Systems Work (2026)"
 slug: "how-bot-detection-systems-work"
-summary: "Guide to how bot detection systems work: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Peek behind the curtain of modern anti-bot technology. Learn how detection systems analyze IPs, fingerprints, and behavior in 2026, and how to build resilient scrapers that mirror legitimate human sessions."
 category: "anti-bot"
 tags: ["anti-bot", "detection"]
 language: "en"

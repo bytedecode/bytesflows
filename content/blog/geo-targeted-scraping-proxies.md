@@ -1,7 +1,7 @@
 ---
 title: "Geo-Targeted Scraping with Proxies (2026)"
 slug: "geo-targeted-scraping-proxies"
-summary: "Guide to geo-targeted scraping with proxies: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping"
+summary: "Unlock location-based data insights with geo-targeted scraping. Master the use of high-trust residential proxies to bypass regional restrictions and collect accurate market intelligence from any corner of the globe in 2026."
 category: "proxy"
 tags: ["proxy", "scraping"]
 language: "en"

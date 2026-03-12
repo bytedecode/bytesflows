@@ -1,7 +1,7 @@
 ---
 title: "AI Web Scraping with Agents"
 slug: "ai-web-scraping-agents"
-summary: "A practical developer guide about ai web scraping with agents and modern scraping infrastructure."
+summary: "Explore the evolution of web scraping with AI agents. This developer guide focuses on integrating AI-driven parsing with modern proxy infrastructure, emphasizing the importance of residential proxies and intelligent crawling strategies to overcome complex anti-bot defenses."
 category: "ai-scraping"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

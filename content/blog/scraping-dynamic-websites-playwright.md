@@ -1,7 +1,7 @@
 ---
 title: "Scraping Dynamic Websites with Playwright"
 slug: "scraping-dynamic-websites-playwright"
-summary: "A practical developer guide about scraping dynamic websites with playwright and modern scraping infrastructure."
+summary: "Mastering dynamic web scraping with Playwright in 2026. Learn to handle single-page applications (SPAs), manage JS execution, and integrate residential proxies for reliable data collection."
 category: "playwright"
 tags: ["web-scraping","proxy","automation"]
 language: "en"

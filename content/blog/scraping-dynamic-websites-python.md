@@ -1,7 +1,7 @@
 ---
 title: "Scraping Dynamic Websites with Python (2026)"
 slug: "scraping-dynamic-websites-python"
-summary: "Guide to scraping dynamic websites with python: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scrap"
+summary: "Comprehensive 2026 guide to scraping dynamic websites using Python. Explore Selenium, Playwright, and async patterns paired with residential proxies to bypass modern anti-bot systems."
 category: "python"
 tags: ["python", "web-scraping"]
 language: "en"

@@ -1,7 +1,7 @@
 ---
 title: "How to Scrape Google - SERP Scraping Guide (Legal & Technical)"
 slug: "how-to-scrape-google"
-summary: "How to scrape Google and SERP data legally and technically. Proxies, rate limits, and alternatives to direct scraping."
+summary: "Navigating the complexities of Google SERP data collection in 2026. Discover technical strategies for high-volume rank tracking and market research while maintaining ethical and legal compliance through residential proxy rotation."
 category: "use-cases"
 tags: ["scrape google", "SERP scraping", "search results", "proxy", "legal"]
 language: "en"

@@ -1,7 +1,7 @@
 ---
 title: "Web Scraping Architecture Explained (2026)"
 slug: "web-scraping-architecture-explained"
-summary: "Web scraping architecture explained: queues, workers, proxy pools, storage. Design scalable scrapers with residential proxies and best practices."
+summary: "Deep dive into 2026 web scraping architecture. Understand the synergy between job queues, headless workers, and residential proxy networks for building world-class scrapers."
 category: "web-scraping"
 tags: ["architecture", "scraping", "scale", "proxy", "queue"]
 language: "en"

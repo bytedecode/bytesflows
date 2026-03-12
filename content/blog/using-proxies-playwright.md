@@ -1,7 +1,7 @@
 ---
 title: "Using Proxies with Playwright - Configuration Guide (2026)"
 slug: "using-proxies-playwright"
-summary: "How to use proxies with Playwright: HTTP and SOCKS, per-browser config, rotating residential proxies. Code examples and best practices."
+summary: "Advanced 2026 guide to Playwright proxy integration. Master the configuration of rotating residential IPs across Python and Node.js environments for high-performance browser automation."
 category: "playwright"
 tags: ["Playwright", "proxy", "residential proxy", "browser automation"]
 language: "en"

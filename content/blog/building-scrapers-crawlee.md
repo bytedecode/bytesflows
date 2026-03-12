@@ -1,7 +1,7 @@
 ---
 title: "Building Scrapers with Crawlee (2026)"
 slug: "building-scrapers-crawlee"
-summary: "Guide to building scrapers with crawlee: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
+summary: "Harness the power of Crawlee for sophisticated web crawling. Discover how to leverage its built-in request management, autoscaling, and proxy rotation capabilities along with residential proxies to build enterprise-grade scrapers."
 category: "framework"
 tags: ["framework", "scraping"]
 language: "en"

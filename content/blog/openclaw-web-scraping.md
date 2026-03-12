@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw for Web Scraping and Data Extraction"
 slug: "openclaw-web-scraping"
-summary: "Use OpenClaw AI agent for web scraping and data extraction. Combine with residential proxies for scale and reliability."
+summary: "Unlock the power of conversational web scraping with OpenClaw in 2026. Master data extraction workflows using AI agents backed by residential proxies for maximum reliability."
 category: "web-scraping"
 tags: ["openclaw", "openclaw scraping", "web scraping", "AI agent", "data extraction"]
 language: "en"

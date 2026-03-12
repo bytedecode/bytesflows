@@ -1,7 +1,7 @@
 ---
 title: "Scraping Search Results with Python (2026)"
 slug: "scraping-search-results-python"
-summary: "Guide to scraping search results with python: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scrapin"
+summary: "2026 guide to scraping SERP data with Python. Learn to capture high-value search engine results using advanced request headers and rotating residential IP addresses."
 category: "python"
 tags: ["python", "web-scraping"]
 language: "en"

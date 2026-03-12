@@ -1,7 +1,7 @@
 ---
 title: "Scrapling Social Listening on OpenClaw: Twitter, Reddit and TikTok"
 slug: "openclaw-social-media-scraping-proxy"
-summary: "How the Scrapling service uses OpenClaw agents to monitor brand conversations across Twitter/X, Reddit and short‑video platforms, and why residential proxies like Bytesflows are part of the stack."
+summary: "Building social listening engines with OpenClaw in 2026. Master the use of residential proxies to monitor Twitter, Reddit, and TikTok without triggering login walls or access blocks."
 category: "openclaw-scraping"
 tags: ["openclaw","social media scraping","twitter scraping","reddit scraping","residential proxy"]
 language: "en"

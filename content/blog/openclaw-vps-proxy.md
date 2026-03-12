@@ -1,7 +1,7 @@
 ---
 title: "Running OpenClaw on a VPS with Residential Proxies"
 slug: "openclaw-vps-proxy"
-summary: "Deploy OpenClaw on a VPS and route agent browser traffic through residential proxies for 24/7 scraping and automation."
+summary: "Host OpenClaw on a VPS for 24/7 availability in 2026. Learn to route browser traffic through residential proxies to bypass datacenter IP blocks and maintain high success rates."
 category: "architecture"
 tags: ["openclaw", "VPS", "residential proxy", "deployment", "AI agent"]
 language: "en"

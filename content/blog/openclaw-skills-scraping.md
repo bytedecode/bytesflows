@@ -1,7 +1,7 @@
 ---
 title: "OpenClaw Skills for Scraping and Proxy Integration"
 slug: "openclaw-skills-scraping"
-summary: "Use and extend OpenClaw skills for web scraping. How to add proxy support and integrate with residential proxies."
+summary: "Developing stealthy OpenClaw scraping skills in 2026. Learn to architect proxy-aware browser modules that integrate seamlessly with residential network gateways."
 category: "web-scraping"
 tags: ["openclaw", "openclaw skills", "scraping", "proxy", "AI agent"]
 language: "en"
