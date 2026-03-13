@@ -2,8 +2,8 @@
 title: "Is Web Scraping Legal? What Developers Need to Know (2026)"
 slug: "is-web-scraping-legal"
 summary: "The definitive 2026 developer's guide to the legal landscape of web scraping. Understand the boundaries of ToS, CFAA, and GDPR, and learn to build a sustainable, compliant data operation using ethical residential proxy practices."
-category: "web-scraping"
-tags: ["web scraping", "legal", "compliance", "ToS", "GDPR"]
+category: "Legal & Compliance"
+tags: ["Compliance", "Gdpr", "Legal", "Tos", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=2000"
 ---

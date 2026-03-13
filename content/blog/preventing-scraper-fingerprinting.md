@@ -2,8 +2,8 @@
 title: "Preventing Scraper Fingerprinting (2026)"
 slug: "preventing-scraper-fingerprinting"
 summary: "Stop detection with 2026 browser fingerprinting prevention techniques. Learn how to patch automation leaks and use residential proxies to blend in with real user traffic."
-category: "anti-bot"
-tags: ["anti-bot", "detection"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Bot Detection", "Detection"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Web Scraping Proxy Architecture (2026)"
 slug: "web-scraping-proxy-architecture"
 summary: "Optimizing web scraping proxy architecture for 2026. Learn to design resilient IP rotation layers and gateway systems for mission-critical data collection at global scale."
-category: "proxy"
-tags: ["proxy", "scraping"]
+category: "Proxy Services"
+tags: ["Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---

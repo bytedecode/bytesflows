@@ -2,8 +2,8 @@
 title: "The Ultimate Guide to Headless Browser Scraping in 2026"
 slug: "headless-browser-scraping-guide"
 summary: "Master the art of browser automation in 2026. Explore why headless browsers are essential for interactive web data extraction and learn to manage high-performance clusters using stealth techniques and premium residential proxies."
-category: "web-scraping"
-tags: ["web-scraping","headless-browser","automation","playwright","puppeteer","proxy"]
+category: "AI & Automation"
+tags: ["Browser automation", "Playwright", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

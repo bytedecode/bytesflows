@@ -2,8 +2,8 @@
 title: "BeautifulSoup vs Scrapy vs Playwright for Web Scraping (2026)"
 slug: "beautifulsoup-vs-scrapy-vs-playwright"
 summary: "Compare BeautifulSoup, Scrapy, and Playwright for web scraping: static vs dynamic, scale, and when to use each. Python scraping guide."
-category: "python"
-tags: ["BeautifulSoup", "Scrapy", "Playwright", "Python", "comparison"]
+category: "Web Scraping"
+tags: ["Beautifulsoup", "Comparison", "Playwright", "Python", "Scrapy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=2000"
 ---

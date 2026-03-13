@@ -2,8 +2,8 @@
 title: "Scrapling Social Listening on OpenClaw: Twitter, Reddit and TikTok"
 slug: "openclaw-social-media-scraping-proxy"
 summary: "Building social listening engines with OpenClaw in 2026. Master the use of residential proxies to monitor Twitter, Reddit, and TikTok without triggering login walls or access blocks."
-category: "openclaw-scraping"
-tags: ["openclaw","social media scraping","twitter scraping","reddit scraping","residential proxy"]
+category: "Proxy Services"
+tags: ["OpenClaw", "Residential Proxy", "Social media scraping", "Twitter scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=2000"
 published: "2026-03-07"

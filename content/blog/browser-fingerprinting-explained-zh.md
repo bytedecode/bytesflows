@@ -2,8 +2,8 @@
 title: "浏览器指纹深度解析：隐藏的追踪器"
 slug: "browser-fingerprinting-explained"
 summary: "深入剖析现代反爬系统如何利用浏览器硬件细节、Canvas/WebGL 渲染及音频上下文创建唯一 ID。学习如何通过 Stealth 插件、指纹随机化和高质量住宅代理应对浏览器指纹识别，降低机器行为被检测的风险。"
-category: "anti-bot"
-tags: ["web-scraping","automation","browser-fingerprinting","privacy","security"]
+category: "AI & Automation"
+tags: ["Automation", "Browser-fingerprinting", "Privacy", "Security", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---

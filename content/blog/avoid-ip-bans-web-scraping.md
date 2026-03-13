@@ -2,8 +2,8 @@
 title: "Avoid IP Bans in Web Scraping: The Ultimate Survival Guide"
 slug: "avoid-ip-bans-web-scraping"
 summary: "IP bans are the number one enemy of web scrapers. Learn the behavioral and infrastructure strategies to stay under the radar and keep your data flowing."
-category: "proxy"
-tags: ["web-scraping","proxy","anti-bot","automation"]
+category: "AI & Automation"
+tags: ["Anti-Bot", "Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
 ---

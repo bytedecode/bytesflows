@@ -2,8 +2,8 @@
 title: "Web Scraping with Node.js"
 slug: "web-scraping-nodejs"
 summary: "Building industrial-grade Node.js scrapers in 2026. Master high-performance data extraction using headless browsers, async patterns, and rotating residential IP infrastructure."
-category: "nodejs"
-tags: ["web-scraping","proxy","automation"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

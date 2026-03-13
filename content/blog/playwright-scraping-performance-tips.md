@@ -2,8 +2,8 @@
 title: "Playwright Scraping Performance Tips (2026)"
 slug: "playwright-scraping-performance-tips"
 summary: "Optimize your Playwright scrapers for peak performance in 2026. Learn best practices for resource management, concurrency, and proxy integration to scale your data collection."
-category: "playwright"
-tags: ["playwright", "browser"]
+category: "Web Scraping"
+tags: ["Browser", "Playwright"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Scraping Dynamic Websites with Python (2026)"
 slug: "scraping-dynamic-websites-python"
 summary: "Comprehensive 2026 guide to scraping dynamic websites using Python. Explore Selenium, Playwright, and async patterns paired with residential proxies to bypass modern anti-bot systems."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

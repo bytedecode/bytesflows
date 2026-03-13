@@ -2,8 +2,8 @@
 title: "Scraping Data at Scale: Building the Modern Data Pipeline"
 slug: "scraping-data-at-scale"
 summary: "The 2026 blueprint for large-scale data harvesting. Master distributed scraping architectures and global residential proxy pools for high-volume, reliable data operations."
-category: "architecture"
-tags: ["web-scraping","architecture","scaling","proxy","big-data"]
+category: "Proxy Services"
+tags: ["Architecture", "Proxy", "Residential Proxy", "Scaling", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---

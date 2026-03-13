@@ -2,8 +2,8 @@
 title: "Web Scraping Architecture Explained (2026)"
 slug: "web-scraping-architecture-explained"
 summary: "Deep dive into 2026 web scraping architecture. Understand the synergy between job queues, headless workers, and residential proxy networks for building world-class scrapers."
-category: "web-scraping"
-tags: ["architecture", "scraping", "scale", "proxy", "queue"]
+category: "AI & Automation"
+tags: ["Architecture", "Proxy", "Residential Proxy", "Scale", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Playwright vs Selenium (2026)"
 slug: "playwright-vs-selenium-scraping"
 summary: "Modernizing your scraping stack: Playwright vs. Selenium in 2026. Discover why Playwright's auto-wait and multi-context architecture outperform legacy frameworks when paired with residential proxies."
-category: "playwright"
-tags: ["playwright", "browser"]
+category: "Web Scraping"
+tags: ["Browser", "Playwright", "Selenium"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---

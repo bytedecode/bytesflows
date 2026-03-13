@@ -2,8 +2,8 @@
 title: "如何实现网页抓取而不被封禁：2026 年隐身实战手册"
 slug: "scrape-websites-without-getting-blocked"
 summary: "2026 防止爬虫被封的实战指南。掌握请求头优化、智能延迟和住宅代理轮换技术，让你的桌面和服务器爬虫隐身运行。"
-category: "web-scraping"
-tags: ["web-scraping","anti-bot","stealth-scraping","proxy-rotation","browser-fingerprinting"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Proxy-rotation", "Residential Proxy", "Stealth-scraping", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Scraping Infinite Scroll Pages (2026)"
 slug: "scraping-infinite-scroll-pages"
 summary: "Conquering infinite scroll in 2026. Master Playwright and specialized crawling techniques to capture endless content from modern web apps while maintaining high performance and low block rates."
-category: "playwright"
-tags: ["playwright", "browser"]
+category: "Web Scraping"
+tags: ["Browser", "Playwright"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

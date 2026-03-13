@@ -2,8 +2,8 @@
 title: "Ethical Web Scraping Practices (2026)"
 slug: "ethical-web-scraping-practices"
 summary: "Building sustainable data pipelines through ethical scraping. Learn best practices for 2026, including respecting robots.txt, implementing responsible rate limiting, and using residential proxies to distribute load without disrupting services."
-category: "web-scraping"
-tags: ["ethical", "web scraping", "robots.txt", "legal", "best practices"]
+category: "Legal & Compliance"
+tags: ["Best practices", "Ethical", "Legal", "Robots.txt", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80&w=2000"
 ---

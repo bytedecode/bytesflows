@@ -2,8 +2,8 @@
 title: "Ethical Web Scraping Practices (2026)"
 slug: "ethical-web-scraping-best-practices-2025"
 summary: "Guide to ethical web scraping practices: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
-category: "web-scraping"
-tags: ["web-scraping", "automation"]
+category: "AI & Automation"
+tags: ["Automation", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=2000"
 ---

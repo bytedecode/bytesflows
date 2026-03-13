@@ -2,8 +2,8 @@
 title: "Scraping Amazon Product Data: The Developer's Playbook (2026)"
 slug: "scraping-amazon-product-data"
 summary: "Mastering Amazon product data extraction in 2026. Learn to bypass complex anti-bot measures and leverage residential proxies to collect pricing, reviews, and stock data."
-category: "use-cases"
-tags: ["Amazon", "e-commerce", "product data", "scraping", "proxy","automation"]
+category: "AI & Automation"
+tags: ["Amazon", "E-commerce", "Product data", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

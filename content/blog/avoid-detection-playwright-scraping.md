@@ -2,8 +2,8 @@
 title: "How to Avoid Detection in Playwright Scraping (2026)"
 slug: "avoid-detection-playwright-scraping"
 summary: "Avoid detection in Playwright scraping: stealth settings, headers, fingerprint, and proxies. Reduce bot signals and blocks with best practices."
-category: "playwright"
-tags: ["Playwright", "detection", "stealth", "anti-bot", "proxy"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Detection", "Playwright", "Residential Proxy", "Stealth"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---

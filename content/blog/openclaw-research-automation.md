@@ -2,8 +2,8 @@
 title: "OpenClaw for Research and Drafting with Proxies"
 slug: "openclaw-research-automation"
 summary: "Empower your 2026 research workflows with OpenClaw. Learn when and how to leverage residential proxies for multi-site research, automated summarization, and draft generation."
-category: "use-cases"
-tags: ["openclaw", "research", "drafting", "residential proxy", "AI agent"]
+category: "AI & Automation"
+tags: ["Drafting", "OpenClaw", "Research", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

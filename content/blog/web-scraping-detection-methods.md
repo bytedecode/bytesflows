@@ -2,8 +2,8 @@
 title: "Web Scraping Detection Methods (2026)"
 slug: "web-scraping-detection-methods"
 summary: "Anatomy of 2026 web scraping detection. Learn how modern anti-bot systems track fingerprints and behaviors, and discover stealth strategies using high-trust residential IPs."
-category: "anti-bot"
-tags: ["anti-bot", "detection"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Bot Detection", "Detection"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=2000"
 ---

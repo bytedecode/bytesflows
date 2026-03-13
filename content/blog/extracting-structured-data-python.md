@@ -2,8 +2,8 @@
 title: "Extracting Structured Data with Python (2026)"
 slug: "extracting-structured-data-python"
 summary: "Master the art of turning messy web pages into clean, structured data. Explore the best Python libraries for 2026—from BeautifulSoup to Playwright—and learn to architect resilient pipelines with integrated residential proxy rotation."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---

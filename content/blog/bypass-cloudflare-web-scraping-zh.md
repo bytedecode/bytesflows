@@ -2,8 +2,8 @@
 title: "2026 绕过 Cloudflare 验证全指南"
 slug: "bypass-cloudflare-web-scraping"
 summary: "深陷 Cloudflare '正在检查浏览器' 循环？本文揭秘 2026 年绕过 Cloudflare Bot Management 的核心技术：从 JA3 TLS 指纹对齐、Stealth 插件配置到高质量住宅代理的实战应用，助你突破‘隐形之墙’。"
-category: "anti-bot"
-tags: ["web-scraping","proxy","cloudflare","bypass","anti-bot"]
+category: "Anti-Bot & Security"
+tags: ["Cloudflare", "Cloudflare Bypass", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---

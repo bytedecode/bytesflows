@@ -2,8 +2,8 @@
 title: "Playwright vs Puppeteer for Web Scraping in 2026"
 slug: "playwright-vs-puppeteer"
 summary: "The 2026 showdown: Playwright vs. Puppeteer for modern web scraping. Compare multi-browser support, API stability, and anti-bot bypass capabilities in production environments."
-category: "playwright"
-tags: ["playwright", "puppeteer", "web scraping", "headless browser", "automation"]
+category: "AI & Automation"
+tags: ["Browser automation", "Headless browser", "Playwright", "Puppeteer", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

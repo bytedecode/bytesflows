@@ -2,8 +2,8 @@
 title: "规模化数据抓取：构建现代数据流水线"
 slug: "scraping-data-at-scale"
 summary: "2026 大规模数据采集蓝图。从分布式架构到海量住宅 IP 池管理，教你如何构建每分钟处理百万级请求的工业级爬虫系统。"
-category: "architecture"
-tags: ["web-scraping","architecture","scaling","proxy","big-data"]
+category: "Proxy Services"
+tags: ["Architecture", "Proxy", "Residential Proxy", "Scaling", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

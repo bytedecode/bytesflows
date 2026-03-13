@@ -2,8 +2,8 @@
 title: "Scraping Real Estate Data: Strategies for Market Prediction (2026)"
 slug: "scraping-real-estate-data"
 summary: "Strategic 2026 blueprint for scraping real estate data. Master the navigation of geofenced portals and dynamic content using specialized residential proxy infrastructure."
-category: "use-cases"
-tags: ["real-estate-data", "property-scraping", "investment-analysis", "zillow-scraping", "residential-proxies"]
+category: "Proxy Services"
+tags: ["Investment-analysis", "Property-scraping", "Real-estate-data", "Residential-proxies", "Zillow-scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000"
 ---

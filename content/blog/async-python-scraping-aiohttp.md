@@ -2,8 +2,8 @@
 title: "Async Python Scraping with aiohttp (2026)"
 slug: "async-python-scraping-aiohttp"
 summary: "Guide to async python scraping with aiohttp: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping"
-category: "python"
-tags: ["python", "web-scraping"]
+category: "AI & Automation"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

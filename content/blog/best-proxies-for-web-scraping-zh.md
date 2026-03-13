@@ -2,8 +2,8 @@
 title: "2026 年最佳网页抓取代理：深度对比与选型指南"
 slug: "best-proxies-for-web-scraping"
 summary: "并非所有代理都是平等的。对比机房代理、住宅代理、移动代理和 ISP 代理，为你的抓取项目在成本、速度和成功率之间找到完美平衡。"
-category: "proxy"
-tags: ["web-scraping","proxy-networks","residential-proxies","mobile-proxies","data-extraction"]
+category: "Proxy Services"
+tags: ["Mobile-proxies", "Proxy-networks", "Residential Proxy", "Residential-proxies", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---

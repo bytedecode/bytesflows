@@ -2,8 +2,8 @@
 title: "2026 年网页抓取终极指南：从自动化脚本到 AI Agent"
 slug: "ultimate-guide-web-scraping-2026"
 summary: "2026 网页抓取权威指南。深入探讨从传统自动化脚本向 AI 驱动的自主 Agent 的转变，学习如何构建支撑百万级请求的高韧性数据基础设施。"
-category: "web-scraping"
-tags: ["web-scraping","data-extraction","ai-scraping","proxy-networks","automation","2026-trends"]
+category: "AI & Automation"
+tags: ["Ai-scraping", "Data-extraction", "Proxy-networks", "Residential Proxy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=2000"
 ---

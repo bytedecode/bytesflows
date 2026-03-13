@@ -2,8 +2,8 @@
 title: "Scrapling on OpenClaw: Running LinkedIn Agents at Scale"
 slug: "openclaw-linkedin-scraping-proxy"
 summary: "Scrapling case study: Building resilient LinkedIn lead-gen agents on OpenClaw. Master 2026 techniques for profile extraction and org-chart mapping using specialized residential proxies."
-category: "openclaw-scraping"
-tags: ["openclaw", "linkedin scraping", "residential proxy", "bytesflows", "b2b leads","anguage: "en"]
+category: "AI & Automation"
+tags: ["Linkedin scraping", "OpenClaw", "Residential Proxy"]
 coverImage: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&q=80&w=2000"
 published: "2026-03-07"
 ---

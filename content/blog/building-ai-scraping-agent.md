@@ -2,8 +2,8 @@
 title: "Building an AI Scraping Agent (2026)"
 slug: "building-ai-scraping-agent"
 summary: "The future of data collection: building autonomous AI scraping agents. Learn how to architect agents that handle dynamic layouts, manage proxy pools, and utilize residential proxies for resilient, self-healing scraping operations."
-category: "ai-scraping"
-tags: ["ai", "scraping"]
+category: "AI & Automation"
+tags: ["AI Scraping", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000"
 ---

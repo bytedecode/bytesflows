@@ -2,8 +2,8 @@
 title: "Scraping Search Results with Python (2026)"
 slug: "scraping-search-results-python"
 summary: "2026 guide to scraping SERP data with Python. Learn to capture high-value search engine results using advanced request headers and rotating residential IP addresses."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=2000"
 ---

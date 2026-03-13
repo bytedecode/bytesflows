@@ -1,8 +1,9 @@
 ---
+tags: ["OpenClaw"]
 title: "OpenClaw 做电商价格监控：如何用住宅代理绕过反爬与地区差价"
 slug: "openclaw-price-monitoring-proxy"
 summary: "2026 专家指南：使用 OpenClaw 和住宅代理构建全球价格情报系统。攻克电商、机票与酒店平台的动态定价策略，实现稳定、高频的自动化监控。"
-category: "openclaw-scraping"
+category: "Web Scraping"
 tags:
   - openclaw
   - price monitoring

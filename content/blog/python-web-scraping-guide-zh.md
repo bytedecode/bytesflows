@@ -2,8 +2,8 @@
 title: "2026 年 Python 网页抓取全指南"
 slug: "python-web-scraping-guide"
 summary: "2026 Python 网页爬虫全攻略。从基础库选择到高级反爬突破，教你如何利用住宅代理构建高效、稳定的自动化数据采集系统。"
-category: "python"
-tags: ["web-scraping","python","scrapy","playwright","httpx","data-science"]
+category: "Web Scraping"
+tags: ["Httpx", "Playwright", "Python", "Scrapy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

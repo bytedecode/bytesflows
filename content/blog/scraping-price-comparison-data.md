@@ -2,8 +2,8 @@
 title: "Scraping Price Comparison Data (2026)"
 slug: "scraping-price-comparison-data"
 summary: "Building high-performance price comparison engines in 2026. Learn how to leverage global residential proxy networks to monitor competitive pricing without detection or rate limiting."
-category: "use-cases"
-tags: ["use-cases", "scraping"]
+category: "Web Scraping"
+tags: ["Use-cases", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

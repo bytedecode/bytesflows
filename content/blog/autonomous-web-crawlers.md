@@ -2,8 +2,8 @@
 title: "Autonomous Web Crawlers (2026)"
 slug: "autonomous-web-crawlers"
 summary: "Guide to autonomous web crawlers: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
-category: "ai-scraping"
-tags: ["ai", "scraping"]
+category: "AI & Automation"
+tags: ["AI Scraping", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---

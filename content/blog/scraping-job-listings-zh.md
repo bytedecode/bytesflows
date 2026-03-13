@@ -2,8 +2,8 @@
 title: "2026 年招聘信息抓取全指南：从行业洞察到自动化实战"
 slug: "scraping-job-listings"
 summary: "2026 年招聘信息抓取全指南。掌握提取职位、薪资和市场情报的艺术，教你如何利用住宅代理应对复杂的招聘网站反爬机制。"
-category: "use-cases"
-tags: ["job-listings", "recruitment-data", "market-intelligence", "scraping", "proxy"]
+category: "Proxy Services"
+tags: ["Job-listings", "Market-intelligence", "Recruitment-data", "Residential Proxy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---

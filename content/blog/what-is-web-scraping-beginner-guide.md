@@ -2,8 +2,8 @@
 title: "What is Web Scraping? Complete Beginner Guide (2026)"
 slug: "what-is-web-scraping-beginner-guide"
 summary: "The definitive 2026 introduction to web scraping. Master the fundamental mechanics of data extraction, ethics, and modern anti-bot bypass strategies using residential proxies."
-category: "web-scraping"
-tags: ["web scraping", "beginner", "tutorial", "data extraction", "automation"]
+category: "AI & Automation"
+tags: ["Beginner", "Data extraction", "Tutorial", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---

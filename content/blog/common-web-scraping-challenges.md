@@ -2,8 +2,8 @@
 title: "Common Web Scraping Challenges and How to Solve Them (2026)"
 slug: "common-web-scraping-challenges"
 summary: "A comprehensive guide to overcoming the five biggest hurdles in modern web scraping: IP blocks, JavaScript rendering, CAPTCHAs, structure changes, and scaling. Discover practical solutions using Playwright and residential proxy rotation."
-category: "web-scraping"
-tags: ["web scraping", "challenges", "blocks", "JavaScript", "solutions"]
+category: "Web Scraping"
+tags: ["Blocks", "Challenges", "Javascript", "Solutions", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=2000"
 ---

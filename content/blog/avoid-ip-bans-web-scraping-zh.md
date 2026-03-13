@@ -2,8 +2,8 @@
 title: "如何避免爬虫 IP 被封：终极生存指南"
 slug: "avoid-ip-bans-web-scraping"
 summary: "IP 封禁是爬虫的第一大敌。学习如何通过行为和基础设施策略保持低调，确保数据流稳定。"
-category: "proxy"
-tags: ["web-scraping","proxy","anti-bot","automation"]
+category: "AI & Automation"
+tags: ["Anti-Bot", "Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=2000"
 ---

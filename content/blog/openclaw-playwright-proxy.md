@@ -2,8 +2,8 @@
 title: "OpenClaw Playwright Proxy Configuration"
 slug: "openclaw-playwright-proxy"
 summary: "Master OpenClaw Playwright proxy integration in 2026. Learn best practices for browser launch configuration, environment variable management, and residential IP validation."
-category: "playwright"
-tags: ["openclaw", "playwright", "proxy", "openclaw proxy", "AI agent"]
+category: "AI & Automation"
+tags: ["OpenClaw", "Playwright", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2000"
 ---

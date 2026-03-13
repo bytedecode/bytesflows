@@ -2,8 +2,8 @@
 title: "Python Web Scraping Best Practices (2026)"
 slug: "python-web-scraping-best-practices"
 summary: "2026 Best Practices for Python Web Scraping. Master ethical data collection, robust error handling, and residential proxy rotation for production-grade Python scrapers."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Building a Python Scraping API (2026)"
 slug: "building-python-scraping-api"
 summary: "A practical guide to developing robust Python-based scraping APIs. Learn to build scalable endpoints with integrated proxy rotation, error handling, and high-performance residential networks for production-ready data services."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

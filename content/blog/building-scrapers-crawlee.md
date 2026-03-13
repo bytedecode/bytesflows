@@ -2,8 +2,8 @@
 title: "Building Scrapers with Crawlee (2026)"
 slug: "building-scrapers-crawlee"
 summary: "Harness the power of Crawlee for sophisticated web crawling. Discover how to leverage its built-in request management, autoscaling, and proxy rotation capabilities along with residential proxies to build enterprise-grade scrapers."
-category: "framework"
-tags: ["framework", "scraping"]
+category: "Web Scraping"
+tags: ["Framework", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---

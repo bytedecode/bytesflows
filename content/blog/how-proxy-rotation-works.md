@@ -2,8 +2,8 @@
 title: "How Proxy Rotation Works for Web Scraping (2026)"
 slug: "how-proxy-rotation-works"
 summary: "Demystifying IP rotation for modern web scraping. Understand the technical difference between per-request and sticky sessions, and learn how to implement robust rotation gateways using residential proxy pools in 2026."
-category: "proxy"
-tags: ["proxy rotation", "rotating proxy", "IP rotation", "scraping"]
+category: "Proxy Services"
+tags: ["Ip rotation", "Proxy rotation", "Residential Proxy", "Rotating Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---

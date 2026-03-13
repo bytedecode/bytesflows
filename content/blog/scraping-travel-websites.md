@@ -2,8 +2,8 @@
 title: "Scraping Travel Websites (2026)"
 slug: "scraping-travel-websites"
 summary: "2026 technical guide for scraping travel and hospitality data. Master the navigation of airline and hotel portals using high-trust residential proxies and automated session management."
-category: "use-cases"
-tags: ["use-cases", "scraping"]
+category: "Web Scraping"
+tags: ["Use-cases", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---

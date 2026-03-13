@@ -2,8 +2,8 @@
 title: "AI-Powered Scraping Pipelines (2026)"
 slug: "ai-powered-scraping-pipelines"
 summary: "Guide to ai-powered scraping pipelines: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
-category: "ai-scraping"
-tags: ["ai", "scraping"]
+category: "AI & Automation"
+tags: ["AI Scraping", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&q=80&w=2000"
 ---

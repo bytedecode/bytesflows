@@ -2,8 +2,8 @@
 title: "Python Scraping Performance Optimization (2026)"
 slug: "python-scraping-performance-optimization"
 summary: "Peak Performance: Optimizing Python scrapers for 2026 requirements. Learn async patterns, memory management, and proxy load balancing for ultra-fast data extraction."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

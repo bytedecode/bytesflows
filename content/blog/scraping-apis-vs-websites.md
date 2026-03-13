@@ -2,8 +2,8 @@
 title: "Scraping APIs vs Websites"
 slug: "scraping-apis-vs-websites"
 summary: "APIs vs. Web Scraping in 2026: Choosing the right path. Learn when to use official endpoints and when to deploy residential proxies for full-site data harvesting."
-category: "web-scraping"
-tags: ["web-scraping","proxy","automation"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---

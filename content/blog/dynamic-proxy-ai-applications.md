@@ -2,8 +2,8 @@
 title: "Dynamic Proxy in AI Applications (2024–2025)"
 slug: "dynamic-proxy-ai-applications"
 summary: "How rotating residential proxies fuel the AI revolution. Explore real-world applications in training data collection and agent-based workflows, and learn to build resilient web data pipelines for RAG and market intelligence in 2026."
-category: "ai-scraping"
-tags: ["dynamic proxy", "AI", "residential proxy", "rotating proxy", "AI training data", "web scraping"]
+category: "AI & Automation"
+tags: ["Dynamic proxy", "Residential Proxy", "Rotating Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 published: "2026-03-11"

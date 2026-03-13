@@ -2,8 +2,8 @@
 title: "AI Data Collection from the Web (2026)"
 slug: "ai-data-collection-web"
 summary: "AI data collection from the web: LLMs, agents, and pipelines. Extract and structure web data with AI and residential proxies for scale."
-category: "ai-scraping"
-tags: ["AI", "data collection", "web", "LLM", "agents"]
+category: "AI & Automation"
+tags: ["Agents", "Data collection", "Llm", "Web"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000"
 ---

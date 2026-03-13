@@ -2,8 +2,8 @@
 title: "Apify Scraping Platform Overview (2026)"
 slug: "apify-scraping-platform-overview"
 summary: "Guide to apify scraping platform overview: practical tips and how it fits into web scraping. Use residential proxies and the right tools for reliable scraping."
-category: "framework"
-tags: ["framework", "scraping"]
+category: "Web Scraping"
+tags: ["Framework", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

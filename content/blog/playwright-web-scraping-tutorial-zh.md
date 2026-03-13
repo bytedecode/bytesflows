@@ -2,8 +2,8 @@
 title: "Playwright 爬虫实战教程：从入门到反爬精通"
 slug: "playwright-web-scraping-tutorial"
 summary: "2026 全方位 Playwright 爬虫教程：从零构建生产级系统。深入探讨 React/Next.js 站点抓取、无限滚动处理及住宅代理集成，攻克现代反爬挑战。"
-category: "playwright"
-tags: ["web-scraping","playwright","automation","tutorial","javascript"]
+category: "AI & Automation"
+tags: ["Automation", "Javascript", "Playwright", "Tutorial", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---

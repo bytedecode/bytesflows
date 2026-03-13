@@ -2,8 +2,8 @@
 title: "2026 年新手教程：如何构建你的第一个网页爬虫"
 slug: "how-to-build-first-web-scraper"
 summary: "开启你的 2026 数据采集之旅。本教程通过 Python 实战带你快速跨越从环境搭建到第一个自动化提取脚本的全过程，并深入讲解规避反爬封禁的核心隐身技巧。"
-category: "web-scraping"
-tags: ["first-scraper", "tutorial", "Python", "Playwright", "beginner-guide"]
+category: "Web Scraping"
+tags: ["Beginner-guide", "First-scraper", "Playwright", "Python", "Tutorial"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "精通 Crawlee：2026 年最全的网页抓取实战教程"
 slug: "crawlee-web-scraping-tutorial"
 summary: "超越基础脚本，掌握 2026 年企业级爬虫框架 Crawlee。深入学习统一接口管理、自动伸缩机制以及如何通过内置指纹和动态住宅代理技术规避现代反爬封禁。"
-category: "crawlee"
-tags: ["web-scraping","crawlee","playwright","typescript","automation","proxy"]
+category: "AI & Automation"
+tags: ["Crawlee", "Playwright", "Residential Proxy", "Typescript", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=2000"
 ---

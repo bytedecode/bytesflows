@@ -2,8 +2,8 @@
 title: "The Ultimate Guide to Web Scraping in 2026: From Scripts to AI Agents"
 slug: "ultimate-guide-web-scraping-2026"
 summary: "The definitive 2026 manual for web scraping. Explore the evolution from simple scripts to AI-powered autonomous agents and master the architecture of resilient scraping at industrial scale."
-category: "web-scraping"
-tags: ["web-scraping","data-extraction","ai-scraping","proxy-networks","automation","2026-trends"]
+category: "AI & Automation"
+tags: ["Ai-scraping", "Data-extraction", "Proxy-networks", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Structured Data Extraction with AI (2026)"
 slug: "structured-data-extraction-ai"
 summary: "Harnessing AI for structured data extraction in 2026. Learn to transform messy web content into clean JSON using LLMs and high-concurrency scraping infrastructure."
-category: "ai-scraping"
-tags: ["ai", "scraping"]
+category: "AI & Automation"
+tags: ["AI Scraping", "Data extraction", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=2000"
 ---

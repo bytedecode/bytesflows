@@ -2,8 +2,8 @@
 title: "How Companies Use Web Scraping"
 slug: "how-companies-use-web-scraping"
 summary: "Explore how global enterprises leverage web scraping for market intelligence, real-time pricing, and lead generation. Learn to architect professional data pipelines in 2026 using rotating residential proxies and distributed worker clusters."
-category: "web-scraping"
-tags: ["web-scraping", "use-cases", "business", "automation"]
+category: "AI & Automation"
+tags: ["Automation", "Business", "Use-cases", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000"
 ---

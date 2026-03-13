@@ -2,8 +2,8 @@
 title: "Scraping E‑commerce Websites"
 slug: "scraping-ecommerce-websites"
 summary: "2026 E-commerce scraping blueprint. Learn professional strategies for extracting product data, pricing, and availability from global marketplaces using high-trust residential proxy networks."
-category: "use-cases"
-tags: ["web-scraping","proxy","automation"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

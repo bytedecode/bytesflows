@@ -2,8 +2,8 @@
 title: "Browser Fingerprinting Explained: The Hidden Tracker"
 slug: "browser-fingerprinting-explained"
 summary: "Beyond IP addresses: understanding how Canvas, WebGL, and Audio fingerprints identify you. Learn to implement fingerprint randomization and stealth browser techniques with residential proxies to remain undetectable in 2026."
-category: "anti-bot"
-tags: ["web-scraping","automation","browser-fingerprinting","privacy","security"]
+category: "AI & Automation"
+tags: ["Automation", "Browser-fingerprinting", "Privacy", "Security", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---

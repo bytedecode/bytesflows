@@ -2,8 +2,8 @@
 title: "Using Requests for Web Scraping (2026)"
 slug: "using-requests-web-scraping"
 summary: "2026 Requests scraping masterclass. Learn to optimize HTTP sessions, manage headers, and integrate rotating residential proxies for high-trust data collection in Python."
-category: "python"
-tags: ["Requests", "Python", "HTTP", "web scraping", "proxy"]
+category: "Proxy Services"
+tags: ["Http", "Python", "Requests", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---

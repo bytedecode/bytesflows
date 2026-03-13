@@ -2,8 +2,8 @@
 title: "爬虫开发者的验证码绕过全攻略"
 slug: "handling-captchas-in-scraping"
 summary: "深入探讨 2026 年现代验证码的防御机制，从指纹分析到行为轨迹。学习如何利用高质量动态住宅代理和 Playwright 隐身技术，构建‘不触发验证码’的高信任度爬虫架构，攻克反爬防御的最后一公里。"
-category: "anti-bot"
-tags: ["web-scraping","proxy","automation","anti-bot","captcha"]
+category: "AI & Automation"
+tags: ["Automation", "CAPTCHA", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---

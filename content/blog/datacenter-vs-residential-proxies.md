@@ -2,8 +2,8 @@
 title: "Datacenter vs Residential Proxies"
 slug: "datacenter-vs-residential-proxies"
 summary: "The definitive 2026 guide to choosing the right proxy source. Understand the technical differences between datacenter and residential IPs, and why high-trust residential networks are essential for bypassing modern anti-bot layers like Cloudflare."
-category: "proxy"
-tags: ["web-scraping","proxy","automation"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000"
 ---

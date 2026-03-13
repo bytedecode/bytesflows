@@ -2,8 +2,8 @@
 title: "Playwright Web Scraping at Scale (2026)"
 slug: "playwright-web-scraping-scale"
 summary: "Architecting large-scale Playwright scrapers in 2026. Master distributed crawling, session management, and residential proxy rotation to handle millions of requests without detection."
-category: "playwright"
-tags: ["playwright", "browser"]
+category: "Web Scraping"
+tags: ["Browser", "Playwright"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

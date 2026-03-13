@@ -2,8 +2,8 @@
 title: "Using LLMs to Extract Web Data (2026)"
 slug: "using-llms-extract-web-data"
 summary: "The 2026 developer's blueprint for using LLMs in web scraping. Master the art of automated data extraction and parsing using advanced AI agents and residential proxy networks."
-category: "ai-scraping"
-tags: ["ai", "scraping"]
+category: "AI & Automation"
+tags: ["AI Scraping", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&q=80&w=2000"
 ---

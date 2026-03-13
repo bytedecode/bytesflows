@@ -2,8 +2,8 @@
 title: "Anti-Bot Systems Explained - How Sites Block Scrapers (2026)"
 slug: "anti-bot-systems-explained"
 summary: "Anti-bot systems explained: IP checks, fingerprinting, behavior, CAPTCHA. How they work and how to scrape with proxies and browsers."
-category: "anti-bot"
-tags: ["anti-bot", "bot detection", "Cloudflare", "fingerprinting"]
+category: "AI & Automation"
+tags: ["Anti-Bot", "Bot Detection", "Cloudflare", "Fingerprinting"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

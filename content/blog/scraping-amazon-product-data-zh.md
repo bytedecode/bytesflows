@@ -2,8 +2,8 @@
 title: "抓取亚马逊商品数据：开发者权威指南"
 slug: "scraping-amazon-product-data"
 summary: "2026 亚马逊产品数据抓取手册。攻克 Amazon 复杂的反爬机制，利用住宅代理稳定获取价格、评论和库存信息的专业策略。"
-category: "use-cases"
-tags: ["Amazon", "e-commerce", "product data", "scraping", "proxy","automation"]
+category: "AI & Automation"
+tags: ["Amazon", "E-commerce", "Product data", "Residential Proxy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

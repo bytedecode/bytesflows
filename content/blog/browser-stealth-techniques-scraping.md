@@ -2,8 +2,8 @@
 title: "Browser Stealth Techniques (2026)"
 slug: "browser-stealth-techniques-scraping"
 summary: "Master the art of 'looking human' while scraping. Explore essential browser stealth techniques for 2026, including environment spoofing, fingerprint randomization, and the critical role of high-trust residential proxy networks."
-category: "anti-bot"
-tags: ["anti-bot", "detection"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Bot Detection", "Detection"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

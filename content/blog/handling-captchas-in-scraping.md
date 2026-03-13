@@ -2,8 +2,8 @@
 title: "Handling CAPTCHAs in Scraping: A Developer’s Guide to Anti-Bot Resilience"
 slug: "handling-captchas-in-scraping"
 summary: "Master the art of 'not triggering' CAPTCHAs in your scraping pipeline. Explore the technical landscape of JS challenges and behavioral analysis, and learn how to use residential proxies and stealth browser automation to maintain high success rates at any scale."
-category: "anti-bot"
-tags: ["web-scraping","proxy","automation","anti-bot","captcha"]
+category: "AI & Automation"
+tags: ["Automation", "CAPTCHA", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&q=80&w=2000"
 ---

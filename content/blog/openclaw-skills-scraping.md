@@ -2,8 +2,8 @@
 title: "OpenClaw Skills for Scraping and Proxy Integration"
 slug: "openclaw-skills-scraping"
 summary: "Developing stealthy OpenClaw scraping skills in 2026. Learn to architect proxy-aware browser modules that integrate seamlessly with residential network gateways."
-category: "web-scraping"
-tags: ["openclaw", "openclaw skills", "scraping", "proxy", "AI agent"]
+category: "AI & Automation"
+tags: ["OpenClaw", "Openclaw skills", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---

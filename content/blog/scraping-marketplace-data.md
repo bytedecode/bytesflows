@@ -2,8 +2,8 @@
 title: "Scraping Marketplace Data (2026)"
 slug: "scraping-marketplace-data"
 summary: "Technical 2026 strategies for harvesting structured data from online marketplaces. Learn to navigate complex layouts and bypass sophisticated anti-bot systems with precision."
-category: "use-cases"
-tags: ["use-cases", "scraping"]
+category: "Web Scraping"
+tags: ["Use-cases", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

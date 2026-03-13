@@ -2,8 +2,8 @@
 title: "代理轮换策略：决定爬虫生死的关键"
 slug: "proxy-rotation-strategies"
 summary: "2026 代理轮换深度解析：从粘性会话到单请求轮换。掌握智能代理管理艺术，配合住宅网络构建具备反爬弹性的生产级基础设施。"
-category: "proxy"
-tags: ["web-scraping","proxy","automation","rotation","devops"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Rotation", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---

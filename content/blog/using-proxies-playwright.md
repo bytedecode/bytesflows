@@ -2,8 +2,8 @@
 title: "Using Proxies with Playwright - Configuration Guide (2026)"
 slug: "using-proxies-playwright"
 summary: "Advanced 2026 guide to Playwright proxy integration. Master the configuration of rotating residential IPs across Python and Node.js environments for high-performance browser automation."
-category: "playwright"
-tags: ["Playwright", "proxy", "residential proxy", "browser automation"]
+category: "AI & Automation"
+tags: ["Browser automation", "Playwright", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---

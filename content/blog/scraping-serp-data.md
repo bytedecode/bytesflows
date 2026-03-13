@@ -2,8 +2,8 @@
 title: "Scraping Search Engine Results"
 slug: "scraping-serp-data"
 summary: "Industrial-grade 2026 guide to scraping search engine results (SERP). Master the art of high-volume data collection while maintaining zero-footprint stealth with residential proxies."
-category: "use-cases"
-tags: ["web-scraping","proxy","automation"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=2000"
 ---

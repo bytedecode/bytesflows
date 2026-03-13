@@ -2,8 +2,8 @@
 title: "住宅代理如何提升爬虫成功率：信任的科学"
 slug: "residential-proxies-improve-scraping"
 summary: "住宅代理如何彻底改变您的爬虫效率。深入探讨 2026 年住宅 IP 的优势，教你如何避开数据中心黑名单并模拟真实用户行为。"
-category: "proxy"
-tags: ["web-scraping","proxy","automation","residential-proxies","business-intelligence"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Residential-proxies", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---

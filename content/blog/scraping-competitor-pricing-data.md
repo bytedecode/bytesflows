@@ -2,8 +2,8 @@
 title: "Scraping Competitor Pricing Data (2026)"
 slug: "scraping-competitor-pricing-data"
 summary: "Strategic competitor pricing extraction in 2026. Learn how to use residential proxies to monitor global market trends and dynamic pricing without detection."
-category: "use-cases"
-tags: ["use-cases", "scraping"]
+category: "Web Scraping"
+tags: ["Use-cases", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---

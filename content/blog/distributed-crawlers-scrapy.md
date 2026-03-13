@@ -2,8 +2,8 @@
 title: "Distributed Crawlers with Scrapy (2026)"
 slug: "distributed-crawlers-scrapy"
 summary: "Scaling data collection with distributed Scrapy architectures. Learn to coordinate multiple crawler nodes, manage shared proxy pools, and integrate dynamic residential proxies for massive-scale, resilient harvesting in 2026."
-category: "framework"
-tags: ["framework", "scraping"]
+category: "Web Scraping"
+tags: ["Framework", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000"
 ---

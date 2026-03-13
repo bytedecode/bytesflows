@@ -2,8 +2,8 @@
 title: "Future of AI Web Scraping"
 slug: "future-of-ai-web-scraping"
 summary: "Explore the next frontier of data collection in the age of AI. Learn to build resilient scraping systems for 2026 by combining intelligent proxy infrastructure, browser automation, and AI-driven parsing to overcome advanced anti-bot layers."
-category: "ai-scraping"
-tags: ["web-scraping","proxy","automation"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&q=80&w=2000"
 ---

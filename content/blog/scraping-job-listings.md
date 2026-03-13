@@ -2,8 +2,8 @@
 title: "Scraping Job Listings: The Complete Guide for Recruitment & Market Intelligence (2026)"
 slug: "scraping-job-listings"
 summary: "The complete 2026 guide for scraping job listings. Master the extraction of recruitment data and market intelligence using browser automation and geo-targeted residential proxies."
-category: "use-cases"
-tags: ["job-listings", "recruitment-data", "market-intelligence", "scraping", "proxy"]
+category: "Proxy Services"
+tags: ["Job-listings", "Market-intelligence", "Recruitment-data", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

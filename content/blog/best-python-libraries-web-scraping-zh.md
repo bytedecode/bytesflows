@@ -2,8 +2,8 @@
 title: "2026 年 7 个最佳 Python 网页抓取库：性能评测与深度对比"
 slug: "best-python-libraries-web-scraping"
 summary: "工欲善其事，必先利其器。从轻量级解析器到全功能异步框架，探索驱动现代数据提取的 Python 库生态系统。"
-category: "python"
-tags: ["web-scraping","python","libraries","scrapy","playwright","data-extraction"]
+category: "Web Scraping"
+tags: ["Libraries", "Playwright", "Python", "Scrapy", "Web Scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Web Scraping Tools for Beginners"
 slug: "web-scraping-tools-beginners"
 summary: "The 2026 starter guide to web scraping tools. Navigate from simple browser extensions to professional Python and Node.js frameworks with integrated residential proxies."
-category: "web-scraping"
-tags: ["web-scraping", "beginners", "tools", "tutorial"]
+category: "Web Scraping"
+tags: ["Beginners", "Tools", "Tutorial", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Python Scraping Framework Comparison (2026)"
 slug: "python-scraping-framework-comparison"
 summary: "Python Scraping Frameworks in 2026: Scrapy vs. BeautifulSoup vs. Playwright. Choose the best tool for your project and learn to integrate residential proxies for scale."
-category: "framework"
-tags: ["framework", "scraping"]
+category: "Web Scraping"
+tags: ["Framework", "Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

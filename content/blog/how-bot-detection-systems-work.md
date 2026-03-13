@@ -2,8 +2,8 @@
 title: "How Bot Detection Systems Work (2026)"
 slug: "how-bot-detection-systems-work"
 summary: "Peek behind the curtain of modern anti-bot technology. Learn how detection systems analyze IPs, fingerprints, and behavior in 2026, and how to build resilient scrapers that mirror legitimate human sessions."
-category: "anti-bot"
-tags: ["anti-bot", "detection"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Bot Detection", "Detection"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "How Web Scraping Works Behind the Scenes (2026)"
 slug: "how-web-scraping-works"
 summary: "A deep dive into the technical mechanics of 2026 web scraping. From HTTP request lifecycle and DOM parsing to sophisticated JavaScript rendering and residential proxy infrastructure—learn how data flows from the web to your database."
-category: "web-scraping"
-tags: ["web scraping", "how it works", "HTTP", "parsing", "architecture"]
+category: "Web Scraping"
+tags: ["Architecture", "How it works", "Http", "Parsing", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&q=80&w=2000"
 ---

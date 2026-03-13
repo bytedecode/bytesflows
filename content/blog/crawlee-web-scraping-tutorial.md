@@ -2,8 +2,8 @@
 title: "Mastering Crawlee: The Ultimate Web Scraping Tutorial for 2026"
 slug: "crawlee-web-scraping-tutorial"
 summary: "Step into the future of enterprise web scraping with Crawlee. Explore its unified interface for Cheerio and Playwright, intelligent request queuing, and built-in stealth features powered by high-trust residential proxies."
-category: "crawlee"
-tags: ["web-scraping","crawlee","playwright","typescript","automation","proxy"]
+category: "AI & Automation"
+tags: ["Playwright", "Residential Proxy", "Web scraping tutorial"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=2000"
 ---

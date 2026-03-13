@@ -2,8 +2,8 @@
 title: "OpenClaw for SERP and Search Data Extraction"
 slug: "openclaw-serp-scraping"
 summary: "Master SERP and search data extraction with OpenClaw in 2026. Combine rotating residential proxies with intelligent throttling to navigate search engine rate limits and geo-restrictions."
-category: "use-cases"
-tags: ["openclaw", "SERP scraping", "search results", "residential proxy", "AI agent"]
+category: "AI & Automation"
+tags: ["Data extraction", "OpenClaw", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1562577309-4932fdd64cd1?auto=format&fit=crop&q=80&w=2000"
 ---

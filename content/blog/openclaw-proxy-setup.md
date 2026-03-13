@@ -2,8 +2,8 @@
 title: "How to Set Up Proxy with OpenClaw (Step-by-Step)"
 slug: "openclaw-proxy-setup"
 summary: "The definitive 2026 guide to OpenClaw proxy integration. Step-by-step instructions for configuring residential proxies in browser-based skills to maximize anonymity and success rates."
-category: "proxy"
-tags: ["openclaw", "openclaw proxy setup", "proxy configuration", "AI agent"]
+category: "AI & Automation"
+tags: ["OpenClaw", "Openclaw proxy setup", "Proxy configuration", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=2000"
 ---

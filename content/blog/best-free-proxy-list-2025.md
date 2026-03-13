@@ -2,8 +2,8 @@
 title: "Best Free Proxy List for Developers (2025)"
 slug: "best-free-proxy-list-2025"
 summary: "Free proxy list for testing and development. IProbe.io free pulse proxies, how to use them, and when to upgrade to BytesFlows residential proxies."
-category: "proxy"
-tags: ["free proxy", "proxy list", "iprobe", "web-scraping", "developer"]
+category: "Proxy Services"
+tags: ["Free proxy", "Iprobe", "Proxy list", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---

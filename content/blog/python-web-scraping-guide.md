@@ -2,8 +2,8 @@
 title: "The Comprehensive Python Web Scraping Guide for 2026"
 slug: "python-web-scraping-guide"
 summary: "Comprehensive 2026 guide to Python web scraping. Master library selection, anti-bot bypass, and residential proxy integration for high-performance data harvesting."
-category: "python"
-tags: ["web-scraping","python","scrapy","playwright","httpx","data-science"]
+category: "Web Scraping"
+tags: ["Httpx", "Playwright", "Python", "Scrapy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

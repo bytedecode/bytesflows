@@ -2,8 +2,8 @@
 title: "How to Build Your First Web Scraper in 2026: A Step-by-Step Guide"
 slug: "how-to-build-first-web-scraper"
 summary: "Embark on your data extraction journey in 2026. This comprehensive starter guide walks you through setting up a Python environment, writing your first scraper, and mastering essential stealth techniques to bypass common web blocks."
-category: "web-scraping"
-tags: ["first-scraper", "tutorial", "Python", "Playwright", "beginner-guide"]
+category: "Web Scraping"
+tags: ["Beginner-guide", "First-scraper", "Playwright", "Python", "Tutorial"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=2000"
 ---

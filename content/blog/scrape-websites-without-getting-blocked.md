@@ -2,8 +2,8 @@
 title: "How to Scrape Websites Without Getting Blocked: The 2026 Stealth Playbook"
 slug: "scrape-websites-without-getting-blocked"
 summary: "Ultimate 2026 guide to scraping without getting blocked. Master header customization, smart throttling, and residential proxy rotation for undetectable automated browsing."
-category: "web-scraping"
-tags: ["web-scraping","anti-bot","stealth-scraping","proxy-rotation","browser-fingerprinting"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Proxy-rotation", "Residential Proxy", "Stealth-scraping", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---

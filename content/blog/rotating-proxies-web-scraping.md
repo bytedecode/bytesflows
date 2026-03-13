@@ -2,8 +2,8 @@
 title: "Rotating Proxies for Web Scraping"
 slug: "rotating-proxies-web-scraping"
 summary: "2026 guide to rotating proxies for web scraping. Learn automated rotation techniques and residential IP management to ensure uninterrupted data collection at scale."
-category: "proxy"
-tags: ["web-scraping","proxy","automation"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---

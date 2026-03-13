@@ -2,8 +2,8 @@
 title: "Bypassing Cloudflare with OpenClaw and Residential Proxies"
 slug: "openclaw-cloudflare-bypass"
 summary: "Outsmart Cloudflare with OpenClaw. This 2026 guide explores how combining high-trust residential proxies with real browser automation creates the ultimate formula for bypassing strict security layers."
-category: "anti-bot"
-tags: ["openclaw", "cloudflare", "residential proxy", "bypass", "AI agent"]
+category: "AI & Automation"
+tags: ["Cloudflare", "OpenClaw", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---

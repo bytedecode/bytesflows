@@ -2,8 +2,8 @@
 title: "Solving CAPTCHAs Automatically (2026)"
 slug: "solving-captchas-automatically"
 summary: "Mastering automated CAPTCHA solving in 2026. Explore AI-driven vision techniques and best practices to minimize detection while maintaining high throughput with residential proxies."
-category: "anti-bot"
-tags: ["anti-bot", "detection"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Bot Detection", "CAPTCHA", "Detection"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&q=80&w=2000"
 ---

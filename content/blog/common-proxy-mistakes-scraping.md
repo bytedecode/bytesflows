@@ -2,8 +2,8 @@
 title: "Common Proxy Mistakes in Scraping (2026)"
 slug: "common-proxy-mistakes-scraping"
 summary: "Avoid costly errors in your scraping infrastructure. Learn about common proxy pitfalls in 2026—from using low-trust IPs to improper rotation—and how to build a resilient system using high-quality residential networks."
-category: "proxy"
-tags: ["proxy", "scraping"]
+category: "Proxy Services"
+tags: ["Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&q=80&w=2000"
 ---

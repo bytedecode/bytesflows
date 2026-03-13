@@ -2,8 +2,8 @@
 title: "Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery"
 slug: "playwright-web-scraping-tutorial"
 summary: "2026 Playwright web scraping tutorial for modern apps. Learn to capture React/Next.js content, manage infinite scrolls, and master stealth techniques with residential proxies."
-category: "playwright"
-tags: ["web-scraping","playwright","automation","tutorial","javascript"]
+category: "AI & Automation"
+tags: ["Automation", "Playwright", "Tutorial", "Web Scraping", "Web scraping tutorial"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---

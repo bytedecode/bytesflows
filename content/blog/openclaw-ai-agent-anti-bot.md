@@ -2,8 +2,8 @@
 title: "Avoiding Blocks When Using OpenClaw for Scraping"
 slug: "openclaw-ai-agent-anti-bot"
 summary: "Empower your OpenClaw agents with unshakeable resilience. Learn to navigate 2026's anti-bot landscape by integrating rotating residential proxies, implementing smart throttling, and maintaining a high-trust browser fingerprint."
-category: "anti-bot"
-tags: ["openclaw", "openclaw scraping", "anti-bot", "residential proxy", "AI agent"]
+category: "AI & Automation"
+tags: ["Anti-Bot", "OpenClaw", "Openclaw scraping", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

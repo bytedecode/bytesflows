@@ -2,8 +2,8 @@
 title: "Proxy Rotation Strategies: Why Your Scraper Lives or Dies by the IP"
 slug: "proxy-rotation-strategies"
 summary: "2026 Proxy Rotation Mastery: From sticky sessions to per-request rotation. Build resilient scraping infrastructure using smart failovers and high-trust residential networks."
-category: "proxy"
-tags: ["web-scraping","proxy","automation","rotation","devops"]
+category: "AI & Automation"
+tags: ["Automation", "Proxy", "Residential Proxy", "Rotation", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---

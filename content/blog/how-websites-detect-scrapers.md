@@ -2,8 +2,8 @@
 title: "How Websites Detect Web Scrapers (2026)"
 slug: "how-websites-detect-scrapers"
 summary: "Stay one step ahead of website security. Explore the advanced detection vectors used by modern anti-bot systems in 2026—including TLS fingerprints and behavioral analysis—and how to build virtually invisible scraping agents."
-category: "anti-bot"
-tags: ["bot detection", "scraper detection", "fingerprinting", "anti-bot"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Bot Detection", "Fingerprinting", "Scraper detection"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---

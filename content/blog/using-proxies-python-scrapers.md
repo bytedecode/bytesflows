@@ -2,8 +2,8 @@
 title: "Using Proxies with Python Scrapers (2026)"
 slug: "using-proxies-python-scrapers"
 summary: "Professional 2026 guide for using proxies with Python scrapers. Master rotating residential IP integration with Requests, Scrapy, and Playwright to bypass global anti-bot defenses."
-category: "proxy"
-tags: ["proxy", "scraping"]
+category: "Proxy Services"
+tags: ["Proxy", "Python", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---

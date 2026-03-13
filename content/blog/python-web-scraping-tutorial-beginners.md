@@ -2,8 +2,8 @@
 title: "Python Web Scraping Tutorial for Beginners (2026)"
 slug: "python-web-scraping-tutorial-beginners"
 summary: "The ultimate 2026 beginner's guide to Python web scraping. Learn the fundamentals of HTML parsing, request handling, and proxy basics to start your data journey."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping", "Web scraping tutorial"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

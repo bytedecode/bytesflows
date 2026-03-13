@@ -2,8 +2,8 @@
 title: "Headless Browser Frameworks (2026)"
 slug: "headless-browser-frameworks"
 summary: "Navigating the 2026 landscape of headless browser frameworks. Compare Playwright, Puppeteer, and Selenium for modern web scraping, and learn to architect high-performance automation pipelines with residential proxy integration."
-category: "framework"
-tags: ["framework", "scraping"]
+category: "Web Scraping"
+tags: ["Framework", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---

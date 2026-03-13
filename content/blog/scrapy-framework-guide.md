@@ -2,8 +2,8 @@
 title: "Scrapy Framework Guide for Web Scraping (2026)"
 slug: "scrapy-framework-guide"
 summary: "Comprehensive 2026 Scrapy framework guide for industrial data extraction. Learn to build advanced Spiders, optimize middleware pipelines, and manage distributed proxy rotation at scale."
-category: "framework"
-tags: ["Scrapy", "Python", "web scraping", "framework", "crawler"]
+category: "Web Scraping"
+tags: ["Crawler", "Framework", "Python", "Scrapy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---

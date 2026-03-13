@@ -2,8 +2,8 @@
 title: "OpenClaw Gateway and Proxy: Traffic and Browser Proxy"
 slug: "openclaw-gateway-proxy"
 summary: "Clarifying OpenClaw's proxy architecture. Understand the critical difference between incoming gateway proxies and outgoing browser proxies for web scraping in 2026."
-category: "proxy"
-tags: ["openclaw", "openclaw gateway", "proxy", "trusted proxy", "AI agent"]
+category: "AI & Automation"
+tags: ["OpenClaw", "Openclaw gateway", "Proxy", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
 ---

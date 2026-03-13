@@ -2,8 +2,8 @@
 title: "2026 年无头浏览器爬虫终极指南"
 slug: "headless-browser-scraping-guide"
 summary: "掌握 2026 年浏览器自动化的核心艺术。深入了解为什么无头浏览器是现代动态网页提取的必然选择，以及如何利用 Stealth 策略和动态住宅代理实现大规模、无感知的隐身抓取。"
-category: "web-scraping"
-tags: ["web-scraping","headless-browser","automation","playwright","puppeteer","proxy"]
+category: "AI & Automation"
+tags: ["Browser automation", "Playwright", "Residential Proxy"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=format&fit=crop&q=80&w=2000"
 ---

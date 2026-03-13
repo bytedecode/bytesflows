@@ -2,8 +2,8 @@
 title: "AI Web Scraping Explained - Agents, LLMs & Data Extraction (2026)"
 slug: "ai-web-scraping-explained"
 summary: "AI web scraping explained: how AI agents and LLMs extract web data, vs traditional scraping. Build AI scraping pipelines with proxies and best practices."
-category: "ai-scraping"
-tags: ["AI", "web scraping", "LLM", "agents", "data extraction"]
+category: "AI & Automation"
+tags: ["Agents", "Data extraction", "Llm", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1507146426996-ef05306b995a?auto=format&fit=crop&q=80&w=2000"
 ---

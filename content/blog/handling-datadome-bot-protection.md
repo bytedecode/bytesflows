@@ -2,8 +2,8 @@
 title: "Handling DataDome Bot Protection (2026)"
 slug: "handling-datadome-bot-protection"
 summary: "Outsmarting high-end anti-bot systems like DataDome. Discover technical strategies for 2026—from advanced fingerprint management to rotating residential proxies—to ensure your scrapers remain undetected at enterprise scale."
-category: "anti-bot"
-tags: ["anti-bot", "detection"]
+category: "Anti-Bot & Security"
+tags: ["Anti-Bot", "Bot Detection", "Detection"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---

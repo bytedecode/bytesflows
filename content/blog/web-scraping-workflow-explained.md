@@ -2,8 +2,8 @@
 title: "Web Scraping Workflow Explained"
 slug: "web-scraping-workflow-explained"
 summary: "The 2026 lifecycle of a professional web scraper. Master the end-to-end workflow from seed discovery to AI-driven parsing and distributed storage using residential proxies."
-category: "web-scraping"
-tags: ["web-scraping", "workflow", "architecture", "pipeline"]
+category: "AI & Automation"
+tags: ["Architecture", "Pipeline", "Web Scraping", "Workflow"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---

@@ -2,8 +2,8 @@
 title: "Scrapling Price Intelligence on OpenClaw: E‑commerce, Flights and Hotels"
 slug: "openclaw-price-monitoring-proxy"
 summary: "Scale price intelligence on OpenClaw in 2026. Master techniques for monitoring e-commerce, flights, and hotels using residential proxies to bypass regional pricing and high-frequency blocks."
-category: "openclaw-scraping"
-tags: ["openclaw", "price monitoring", "ecommerce scraping", "flight scraping", "residential proxy"]
+category: "Proxy Services"
+tags: ["Ecommerce", "OpenClaw", "Residential Proxy"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=2000"
 published: "2026-03-07"

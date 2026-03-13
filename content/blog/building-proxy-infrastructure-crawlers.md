@@ -2,8 +2,8 @@
 title: "Building Proxy Infrastructure (2026)"
 slug: "building-proxy-infrastructure-crawlers"
 summary: "Architecting a professional-grade proxy layer for large-scale crawling. Explore strategies for proxy rotation, pool management, and the integration of dynamic residential proxies to ensure high success rates and link reliability in 2026."
-category: "proxy"
-tags: ["proxy", "scraping"]
+category: "Proxy Services"
+tags: ["Proxy", "Residential Proxy", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000"
 ---

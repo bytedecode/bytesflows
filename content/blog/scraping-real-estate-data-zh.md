@@ -2,8 +2,8 @@
 title: "2026 年房地产数据抓取全指南：洞察房产市场的自动化策"
 slug: "scraping-real-estate-data"
 summary: "2026 年房地产数据抓取权威指南。探索绕过地理围栏和动态地图的技术，利用地理定位住宅代理精准获取全球房产市场数据。"
-category: "use-cases"
-tags: ["real-estate-data", "property-scraping", "investment-analysis", "zillow-scraping", "residential-proxies"]
+category: "Proxy Services"
+tags: ["Investment-analysis", "Property-scraping", "Real-estate-data", "Residential-proxies", "Zillow-scraping"]
 language: "zh"
 coverImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000"
 ---

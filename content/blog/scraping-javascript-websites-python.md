@@ -2,8 +2,8 @@
 title: "Scraping JavaScript Websites with Python (2026)"
 slug: "scraping-javascript-websites-python"
 summary: "Professional 2026 guide for scraping JS-heavy websites with Python. Learn to navigate complex DOM structures and utilize residential proxies to ensure stable data extraction from protected sites."
-category: "python"
-tags: ["python", "web-scraping"]
+category: "Web Scraping"
+tags: ["Python", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---
