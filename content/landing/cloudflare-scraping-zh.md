@@ -39,7 +39,7 @@ Cloudflare 会综合评估：
 - JavaScript 执行行为
 - Header 一致性与请求时序
 
-背景阅读： [反爬系统解析](/zh/blog/anti-bot-systems-explained)、[浏览器指纹详解](/zh/blog/browser-fingerprinting-explained)、[不被封抓取实践](/zh/blog/scrape-websites-without-getting-blocked)。
+背景阅读： [绕过 Cloudflare 抓取指南](/zh/blog/bypass-cloudflare-web-scraping)、[浏览器指纹详解](/zh/blog/browser-fingerprinting-explained)、[不被封抓取实践](/zh/blog/scrape-websites-without-getting-blocked)。
 
 ### 推荐配置流程
 

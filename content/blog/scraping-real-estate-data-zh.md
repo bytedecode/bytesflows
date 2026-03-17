@@ -30,7 +30,7 @@ coverImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=form
 
 ### 绕过地理围栏 (Geofencing)
 像 Zillow 这样的站点会根据你的 IP 地理位置展示不同的数据，甚至直接封锁非本地流量。
--   **解决方案:** [具备地理位置定位能力的住宅代理](/zh/blog/geo-targeted-scraping-proxies) 是必须的。如果你在抓取纽约的房源，请使用纽约市出口节点的代理。这能让你看起来像是一个本地的潜在买家，显著降低被封风险。
+-   **解决方案:** [具备地理位置定位能力的住宅代理](/en/blog/geo-targeted-scraping-proxies) 是必须的。如果你在抓取纽约的房源，请使用纽约市出口节点的代理。这能让你看起来像是一个本地的潜在买家，显著降低被封风险。
 
 ### 图片与虚拟看房数据的采集
 房产图片对于 AI 视觉模型非常有价值。

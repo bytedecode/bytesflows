@@ -73,7 +73,7 @@ print(response.status_code)
 4. 若遇 JS 挑战页，从 Requests 切换到 Playwright。
 5. 复核并发、重试、轮换与会话策略。
 
-更多思路： [常见抓取挑战](/zh/blog/common-web-scraping-challenges)、[浏览器指纹详解](/zh/blog/browser-fingerprinting-explained)、[不被封抓取实践](/zh/blog/scrape-websites-without-getting-blocked)。
+更多思路： [大规模抓取指南](/zh/blog/scraping-data-at-scale)、[浏览器指纹详解](/zh/blog/browser-fingerprinting-explained)、[不被封抓取实践](/zh/blog/scrape-websites-without-getting-blocked)。
 
 ### Python 工具代理配置速查
 

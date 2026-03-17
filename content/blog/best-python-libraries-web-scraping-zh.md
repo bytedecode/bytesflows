@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=f
 
 ## 导言：Python 的生态优势
 
-进入 2026 年，得益于庞大的第三方库生态，Python 依然是网页抓取领域的首选语言。然而，面对繁多的选择——`Requests`, `HTTPX`, `BeautifulSoup`, `Scrapy`, `Playwright`——“正确的选择”完全取决于你的项目规模、网站复杂度以及[反爬虫的严密程度](/zh/blog/anti-bot-systems-explained)。
+进入 2026 年，得益于庞大的第三方库生态，Python 依然是网页抓取领域的首选语言。然而，面对繁多的选择——`Requests`, `HTTPX`, `BeautifulSoup`, `Scrapy`, `Playwright`——“正确的选择”完全取决于你的项目规模、网站复杂度以及[反爬虫的严密程度](/en/blog/anti-bot-systems-explained)。
 
 在本指南中，我们将把最佳 Python 库分为三个核心层级：网络请求层、解析层和浏览器自动化层。
 
@@ -70,6 +70,6 @@ Scrapy 不仅仅是一个库，它是一个完整的工程化体系。
 
 ## 总结
 
-选择正确的 Python 库是在开发效率与执行性能之间寻找平衡。从 [Requests](/zh/blog/using-requests-web-scraping) 开始探索，但当你准备构建生产级基础设施时，请转向 [HTTPX 和 Playwright](/zh/blog/playwright-web-scraping-tutorial)。
+选择正确的 Python 库是在开发效率与执行性能之间寻找平衡。从 [Requests](/en/blog/using-requests-web-scraping) 开始探索，但当你准备构建生产级基础设施时，请转向 [HTTPX 和 Playwright](/zh/blog/playwright-web-scraping-tutorial)。
 
 想了解更多？阅读我们的 [2026 年 Python 网页抓取权威指南](/zh/blog/python-web-scraping-guide)。

@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 
 ## 导言：“猫鼠游戏”的演变
 
-网页抓取已经演变成一场复杂的猫鼠游戏。一方面，开发者试图提取公开数据；另一方面，市值数直亿的公司正在使用像 Cloudflare、PerimeterX 和 Akamai 这样的顶级 [反爬虫系统](/zh/blog/anti-bot-systems-explained)。
+网页抓取已经演变成一场复杂的猫鼠游戏。一方面，开发者试图提取公开数据；另一方面，市值数直亿的公司正在使用像 Cloudflare、PerimeterX 和 Akamai 这样的顶级 [反爬虫系统](/en/blog/anti-bot-systems-explained)。
 
 如果你经常被封锁，那是因为你的爬虫留下了明显的“数字脚印”，在大声宣告：“我是一个机器人！” 本指南将教你如何抹去这些脚印，实现完全无感的抓取。
 

@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=form
 
 ## 导言：现代抓取的脊梁
 
-在 2026 年，网页抓取项目的成功更多取决于你的网络层，而非代码本身。随着 [反爬虫系统](/zh/blog/anti-bot-systems-explained) 变得越来越智能化，你的 IP 地址的“信任度”已成为 [避免封锁](/zh/blog/scrape-websites-without-getting-blocked) 的最关键因素。
+在 2026 年，网页抓取项目的成功更多取决于你的网络层，而非代码本身。随着 [反爬虫系统](/en/blog/anti-bot-systems-explained) 变得越来越智能化，你的 IP 地址的“信任度”已成为 [避免封锁](/zh/blog/scrape-websites-without-getting-blocked) 的最关键因素。
 
 但面对如此多类型的代理——机房、住宅、移动、ISP——你该如何选择？本指南将为你拆解每种场景的最佳选择。
 

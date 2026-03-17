@@ -21,7 +21,7 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=20
 - **更安全的扩展能力**：轮换把压力分散到更多 IP。
 - **更高通过率**：与浏览器自动化结合时效果明显。
 
-延伸阅读：[为什么住宅代理更适合抓取](/zh/blog/why-residential-proxies-best-scraping)、[最佳网页抓取代理](/zh/blog/best-proxies-for-web-scraping)。
+延伸阅读：[住宅代理如何提升抓取成功率](/zh/blog/residential-proxies-improve-scraping)、[最佳网页抓取代理](/zh/blog/best-proxies-for-web-scraping)。
 
 ### 哪些场景最需要住宅代理
 

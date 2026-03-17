@@ -73,7 +73,7 @@ When your OpenClaw agent scrapes more than a few pages or touches protected site
 
 **How do I set up the proxy?** In the OpenClaw skill that uses the browser (Playwright), add proxy options to the browser launch and use env vars for credentials. [OpenClaw Playwright Proxy](/en/blog/openclaw-playwright-proxy) and [OpenClaw Proxy Setup](/en/blog/openclaw-proxy-setup).
 
-**Can OpenClaw scrape JavaScript-heavy sites?** Yes; OpenClaw uses browser automation (e.g. Playwright), so JS-rendered content is in scope. [OpenClaw Browser Automation with Proxies](/en/blog/openclaw-browser-automation-proxy) and [Scraping JavaScript Websites](/en/blog/scraping-javascript-websites).
+**Can OpenClaw scrape JavaScript-heavy sites?** Yes; OpenClaw uses browser automation (e.g. Playwright), so JS-rendered content is in scope. [OpenClaw Browser Automation with Proxies](/en/blog/openclaw-browser-automation-proxy) and [Scraping JavaScript Websites](/en/blog/scraping-javascript-websites-python).
 
 ---
 

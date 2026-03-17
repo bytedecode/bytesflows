@@ -35,7 +35,7 @@ coverImage: "https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=f
 -   **糟糕的目标:** Twitter (由于需要登录、强 JS 加载和极其激进的封锁)。
 -   **理想的目标:** 新闻网站、公共分类目录或静态的商品展示页。
 
-在开工前，查看一下 `robots.txt` 文件（例如 `example.com/robots.txt`）以了解该站点的采集偏好。请始终遵循 [道德采集准则](/zh/blog/ethical-web-scraping-practices)。
+在开工前，查看一下 `robots.txt` 文件（例如 `example.com/robots.txt`）以了解该站点的采集偏好。请始终遵循 [道德采集准则](/en/blog/ethical-web-scraping-practices)。
 
 ## 第三步：编写你的第一个提取脚本
 
@@ -85,9 +85,9 @@ simple_scraper("https://example-blog.com")
 
 ## 总结：下一步是什么？
 
-恭喜你！你已经搭建好了数据工程职业生涯的第一块砖。网页抓取是一个深奥的领域，你会遇到各种 [常见的挑战](/zh/blog/common-web-scraping-challenges)，但从小处着手是成功的关键。
+恭喜你！你已经搭建好了数据工程职业生涯的第一块砖。网页抓取是一个深奥的领域，你会遇到各种 [常见的挑战](/en/blog/common-web-scraping-challenges)，但从小处着手是成功的关键。
 
 **准备好进阶了吗？**
 -   学习如何 [绕过 Cloudflare 与高级反爬系统](/zh/blog/bypass-cloudflare-web-scraping)。
 -   探索如何 [实现大规模数据抓取](/zh/blog/scraping-data-at-scale)。
--   查看 [2026 年最佳网页抓取工具推荐](/zh/blog/best-web-scraping-tools)。
+-   查看 [2026 年最佳网页抓取工具推荐](/en/blog/best-web-scraping-tools)。

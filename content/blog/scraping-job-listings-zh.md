@@ -12,7 +12,7 @@ coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=f
 
 在 2026 年，招聘信息（Job Listings）已不仅仅是为了找工作。它们是 **市场情报 (Market Intelligence)** 的宝库。通过抓取招聘网站，公司可以追踪竞争对手的人才增长、监控行业薪资趋势，并识别技术领域中新兴的关键技能。
 
-然而，招聘平台（如 LinkedIn 或招聘门户）是防御最严密的目标之一。它们利用激进的 [反爬虫系统](/zh/blog/anti-bot-systems-explained) 和复杂的 JavaScript 交互来保护其核心资产。本指南将展示如何构建一套高韌性的招聘数据采集管线。
+然而，招聘平台（如 LinkedIn 或招聘门户）是防御最严密的目标之一。它们利用激进的 [反爬虫系统](/en/blog/anti-bot-systems-explained) 和复杂的 JavaScript 交互来保护其核心资产。本指南将展示如何构建一套高韌性的招聘数据采集管线。
 
 ## 1. 招聘网站的常见结构
 
@@ -33,7 +33,7 @@ coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=f
 
 ### 挑战：地理位置封锁
 某些职位仅对特定国家或地区的访问者可见。
--   **解决方案:** 使用 [具备地理位置定位能力的住宅代理](/zh/blog/geo-targeted-scraping-proxies)。如果你需要采集美国的职位，通过美国 IP 发起请求，才能看到完整的薪资范围和福利说明。
+-   **解决方案:** 使用 [具备地理位置定位能力的住宅代理](/en/blog/geo-targeted-scraping-proxies)。如果你需要采集美国的职位，通过美国 IP 发起请求，才能看到完整的薪资范围和福利说明。
 
 ## 3. 实战代码：抓取职位卡片
 
@@ -80,7 +80,7 @@ scrape_jobs("https://www.target-job-board.com/search?q=developer")
 招聘信息抓取在法律上有较多历史案例：
 -   **公开数据:** 抓取公开可查的事实（职位、描述）通常被视为合法的研究用途。
 -   **PII (个人隐私):** 避免在未经授权的情况下采集 HR 的联系方式或应聘者资料。
--   **控制频率:** 不要拖垮对方服务器，做一个 [道德的爬虫开发者](/zh/blog/ethical-web-scraping-practices)。
+-   **控制频率:** 不要拖垮对方服务器，做一个 [道德的爬虫开发者](/en/blog/ethical-web-scraping-practices)。
 
 ## 总结
 
