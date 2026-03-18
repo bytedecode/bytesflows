@@ -8,97 +8,102 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: When Sync Isn't Fast Enough
 
-This guide covers **Async Python Scraping with aiohttp** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
-
-## Key Concepts
-
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
-
-## Practical Steps
-
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
-
-## Best Practices
-
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
-
-## Summary
-
-**Async Python Scraping with aiohttp** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+You're scraping hundreds of URLs. With `requests` in a loop, each request blocks until the previous one finishes. Your throughput is limited by latency, not CPU. **asyncio** and **aiohttp** let you send many requests concurrently without threads or processes. This guide shows when to use async, how to implement it, and how to pair it with proxies for reliable scraping.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+## When to Use aiohttp vs requests
 
+| Scenario | Use | Reason |
+|----------|-----|--------|
+| Few URLs, simple pages | requests | Simpler. No async complexity. |
+| Many independent URLs, static HTML | aiohttp | High concurrency. Latency-bound. |
+| JS-rendered, Cloudflare | Playwright | aiohttp cannot run JS. |
+| High volume, strict targets | aiohttp + proxy | Concurrency + residential IPs. |
+
+**Key limitation:** aiohttp is an HTTP client. It has a non-browser TLS fingerprint. For Cloudflare and similar, use Playwright. For static or low-protection pages, aiohttp shines.
+
+---
+
+## Basic aiohttp Setup
+
+```python
+import asyncio
+import aiohttp
+
+async def fetch(session, url):
+    async with session.get(url) as resp:
+        return await resp.text()
+
+async def main():
+    urls = ["https://example.com/page1", "https://example.com/page2"]
+    async with aiohttp.ClientSession() as session:
+        tasks = [fetch(session, url) for url in urls]
+        results = await asyncio.gather(*tasks)
+    return results
+
+asyncio.run(main())
+```
+
+Each `fetch` runs concurrently. `asyncio.gather` waits for all. For hundreds of URLs, cap concurrency with a semaphore to avoid overwhelming the target or your proxy.
+
+---
+
+## Adding a Proxy
+
+```python
+proxy = "http://user:pass@p1.example.com:8001"
+async with aiohttp.ClientSession() as session:
+    async with session.get(url, proxy=proxy) as resp:
+        html = await resp.text()
+```
+
+With a rotating residential gateway, each request typically gets a new IP. Use a single session and pass `proxy` per request, or create a new session per batch if the gateway assigns IP per connection.
+
+---
+
+## Concurrency Control
+
+Unbounded concurrency can overload the target or trigger rate limits. Use a semaphore:
+
+```python
+sem = asyncio.Semaphore(10)
+
+async def fetch_limited(session, url):
+    async with sem:
+        async with session.get(url) as resp:
+            return await resp.text()
+```
+
+Start with 5–10 concurrent requests per domain. Increase only if success rate stays high.
+
+---
+
+## Best Practices
+
+1. **Add delays** — Between batches, use `asyncio.sleep(random.uniform(1, 4))`. Fixed timing looks robotic.
+2. **Handle failures** — Wrap `session.get` in try/except. On 403/429, retry with backoff or skip.
+3. **Use proxies for scale** — Rotating residential proxies spread load. Without them, one IP sees all traffic.
+4. **Close sessions** — Use `async with` so sessions close. Avoid connection leaks.
+
+---
+
+## Troubleshooting
+
+**SSL errors** — Ensure aiohttp and aiohttp-socks (if using SOCKS) are up to date. Proxy SSL can require `ssl=False` for HTTP proxies in some setups (use cautiously).
+
+**Connection timeout** — Increase `timeout=aiohttp.ClientTimeout(total=30)`. Residential proxies can be slower than datacenter.
+
+**High block rate** — Reduce concurrency. Add delays. Ensure residential proxies. aiohttp cannot bypass Cloudflare; use Playwright for those targets.
+
+---
+
+## Summary
+
+aiohttp enables high-concurrency HTTP scraping. Use it for static or low-protection pages. Add a semaphore to cap concurrency. Pair with rotating residential proxies. For Cloudflare or JS-heavy sites, use Playwright instead.
+
+---
+
+**Further reading:** [Python Proxy Scraping Guide](/en/blog/python-proxy-scraping-guide) · [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies) · [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked)

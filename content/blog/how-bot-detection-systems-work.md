@@ -1,104 +1,69 @@
 ---
 title: "How Bot Detection Systems Work (2026)"
 slug: "how-bot-detection-systems-work"
-summary: "Peek behind the curtain of modern anti-bot technology. Learn how detection systems analyze IPs, fingerprints, and behavior in 2026, and how to build resilient scrapers that mirror legitimate human sessions."
+summary: "Technical deep dive into bot detection. Understand scoring pipelines, signals, and how anti-bot vendors decide to block or allow traffic."
 category: "Anti-Bot & Security"
-tags: ["Anti-Bot", "Bot Detection", "Detection"]
+tags: ["Anti-Bot", "Bot Detection", "Security"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: The Scoring Pipeline
 
-This guide covers **How Bot Detection Systems Work** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
-
-## Key Concepts
-
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
-
-## Practical Steps
-
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
-
-## Best Practices
-
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
-
-## Summary
-
-**How Bot Detection Systems Work** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+Bot detection systems don't block on a single signal. They **score** your traffic across multiple layers and apply a policy when the score exceeds a threshold. This guide walks through how typical systems work and what you can do about each layer.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+## The Five Signal Layers
 
+1. **IP and network** — IP address, ASN, geo, rate. Datacenter IP → penalty. High rate from one IP → penalty.
+
+2. **TLS** — JA3/JA3S fingerprint. Non-browser TLS → penalty. Browsers have distinct signatures; scripts don't.
+
+3. **HTTP headers** — User-Agent, Accept, order. Default library headers or mismatches → penalty.
+
+4. **Browser fingerprint** — Canvas, WebGL, fonts, `navigator.webdriver`. Automation or inconsistency → penalty.
+
+5. **Behavior** — Request timing, mouse, scroll. Fixed patterns → penalty.
+
+Each layer contributes to a score. Above threshold: block, challenge, or throttle.
+
+---
+
+## How Scoring Typically Works
+
+Vendors (Cloudflare, DataDome, Akamai) use rules and ML models. Rules: "if datacenter IP, add X." ML: trained on labeled traffic, outputs a probability. The final score combines both. Thresholds vary by customer and sensitivity. E-commerce may be stricter than a blog.
+
+---
+
+## What Triggers High Scores
+
+| Signal | High risk |
+|--------|-----------|
+| IP | Datacenter, VPN, known bad ASN |
+| TLS | Python requests, curl, Node https |
+| Headers | python-requests UA, inconsistent set |
+| Fingerprint | navigator.webdriver=true, odd viewport |
+| Behavior | Fixed 1s delay, 100 req/min from one IP |
+
+---
+
+## Defence by Layer
+
+| Layer | Defence |
+|-------|---------|
+| IP | Residential proxies, rotate |
+| TLS | Playwright (real browser) |
+| Headers | Playwright sends browser headers |
+| Fingerprint | Stealth plugin, consistent viewport |
+| Behavior | Random delays, cap concurrency |
+
+---
+
+## Summary
+
+Detection systems score IP, TLS, headers, fingerprint, and behavior. Use residential proxies, a real browser (Playwright), stealth, and randomized delays to minimize the score. No single fix; address all layers for strict targets.
+
+---
+
+**Further reading:** [How Websites Detect Scrapers](/en/blog/how-websites-detect-scrapers) · [Anti-Bot Systems Explained](/en/blog/anti-bot-systems-explained) · [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping)

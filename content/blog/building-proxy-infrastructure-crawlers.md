@@ -1,104 +1,87 @@
 ---
-title: "Building Proxy Infrastructure (2026)"
+title: "Building Proxy Infrastructure for Crawlers (2026)"
 slug: "building-proxy-infrastructure-crawlers"
-summary: "Architecting a professional-grade proxy layer for large-scale crawling. Explore strategies for proxy rotation, pool management, and the integration of dynamic residential proxies to ensure high success rates and link reliability in 2026."
+summary: "Design proxy infrastructure for large crawlers. Gateway vs list, sizing, health checks, and integration patterns."
 category: "Proxy Services"
-tags: ["Proxy", "Residential Proxy", "Web Scraping"]
+tags: ["Proxy", "Infrastructure", "Web Scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: Proxy as a Layer
 
-This guide covers **Building Proxy Infrastructure** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
+Crawlers need many IPs. The proxy layer sits between your workers and the target. You can use a **gateway** (provider manages the pool) or a **proxy list** (you manage assignment). This guide covers design choices, sizing, and integration.
 
-## Key Concepts
+---
 
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
+## Gateway vs Proxy List
 
-## Practical Steps
+| Approach | Pros | Cons |
+|----------|------|------|
+| Gateway | No list to maintain. Auto-rotation. Simple config. | Less control. Provider-dependent. |
+| Proxy list | Full control. Can mix providers. | Need rotation logic. Health checks. Maintenance. |
 
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
+**Recommendation:** Use a rotating residential gateway for most cases. Build list-based infrastructure only when you need to combine multiple providers or need specific control.
 
-## Best Practices
+---
 
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
+## Gateway Integration
+
+Configure your HTTP client or browser with the gateway URL and auth. One endpoint; the provider rotates. Example (Playwright):
+
+```python
+browser = p.chromium.launch(proxy={
+    "server": "http://p1.example.com:8001",
+    "username": os.environ["PROXY_USER"],
+    "password": os.environ["PROXY_PASS"]
+})
+```
+
+Each new browser or request typically gets a new IP. No code for rotation—the gateway handles it.
+
+---
+
+## Proxy List Integration
+
+If you maintain a list:
+
+1. **Selection** — Round-robin or random. Avoid reusing a proxy that just failed.
+2. **Health check** — Periodically request a test URL. Mark bad proxies and retry after cooldown.
+3. **Usage tracking** — Limit requests per proxy per time window. Rotate when limit reached.
+
+```python
+import random
+
+def get_proxy(proxy_list):
+    return random.choice(proxy_list)
+
+# In request
+proxy = get_proxy(PROXY_LIST)
+request.meta['proxy'] = f"http://{proxy}"
+```
+
+---
+
+## Sizing
+
+**Concurrency** — Have at least as many IPs as concurrent workers. With a gateway, ensure provider capacity matches your peak request rate.
+
+**Per-domain limits** — Even with 1000 IPs, cap concurrent requests per domain (e.g. 5–10). Prevents coordinated-looking traffic.
+
+---
+
+## Health and Monitoring
+
+- **Success rate** — Track 2xx vs 403/429. Alert when block rate rises.
+- **Latency** — High P95 may indicate proxy or target issues.
+- **Proxy auth failures** — Check credentials, gateway URL. May indicate quota or config issue.
+
+---
 
 ## Summary
 
-**Building Proxy Infrastructure** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+Prefer a rotating gateway for simplicity. Use a proxy list when you need control or multi-provider setup. Size for concurrency and per-domain limits. Monitor success rate and latency. Store config (especially credentials) in env or secrets.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
+**Further reading:** [Proxy Pools for Web Scraping](/en/blog/proxy-pools-web-scraping) · [Proxy Management for Large Scrapers](/en/blog/proxy-management-large-scrapers) · [How Proxy Rotation Works](/en/blog/how-proxy-rotation-works)

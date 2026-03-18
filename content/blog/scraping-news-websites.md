@@ -19,8 +19,7 @@ However, modern websites deploy sophisticated anti‑bot protections.
 Without the right architecture and proxy infrastructure, scraping
 projects often fail due to IP bans, CAPTCHAs, or fingerprint detection.
 
-This guide explains practical strategies to build reliable scraping
-systems. See the [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026) and [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping).
+This guide explains practical strategies to build reliable news scraping systems.
 
 ## Why Web Scraping Gets Blocked
 
@@ -53,7 +52,7 @@ Benefits include:
 
 Residential proxies are particularly effective because they originate
 from real household IP addresses. Websites treat them as legitimate
-users rather than datacenter traffic. Use [rotating residential proxy](/en/blog/residential-proxies) for news scraping.
+users rather than datacenter traffic. Use rotating residential proxies for news scraping at scale.
 
 ## Example: Using a Proxy in Python
 
@@ -112,3 +111,17 @@ build scalable and resilient scraping systems.
 If you're building a production‑level scraping infrastructure, investing
 in high‑quality rotating residential proxies is often the most important
 factor in long‑term success.
+
+## Troubleshooting
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Empty article content | JS-rendered | Use Playwright |
+| 403 / blocked | IP or rate limit | Rotate residential proxies; reduce concurrency |
+| Paywall / gated content | Subscription required | Check ToS; consider official APIs |
+
+---
+
+**Further reading:**
+- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
+- [Scraping data at scale](/en/blog/scraping-data-at-scale)

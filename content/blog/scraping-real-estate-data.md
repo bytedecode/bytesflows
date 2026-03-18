@@ -10,76 +10,70 @@ coverImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=form
 
 ## Introduction: The Real Estate Data Goldmine
 
-In 2026, data drives the housing market. Hedge funds, PropTech startups, and individual investors rely on real-time property data to predict price movements and calculate rental yields. Whether it's pricing trends on Zillow or historical sales on Rightmove, the ability to harvest this data at scale is a massive competitive advantage.
-
-Real estate portals are notoriously difficult to scrape. They employ sophisticated [anti-scraping technologies](/en/blog/scrape-websites-without-getting-blocked) like Geofencing, Canvas Fingerprinting, and CAPTCHAs. This guide breaks down how to build a reliable real estate scraper.
+In 2026, data drives the housing market. Hedge funds, PropTech startups, and individual investors rely on real-time property data to predict price movements and calculate rental yields. Real estate portals use geofencing, fingerprinting, and CAPTCHAs to block bots. This guide breaks down how to build a reliable real estate scraper.
 
 ## 1. Key Data Points to Extract
 
 A high-quality real estate dataset should include:
--   **Property Details:** Square footage, number of bedrooms/bathrooms, year built.
--   **Pricing:** Current listing price, price history (crucial for market sentiment).
--   **Location Data:** Latitude/Longitude, neighborhood names, and school district ratings.
--   **Agent Info:** Contact details for lead generation.
+- **Property Details:** Square footage, bedrooms/bathrooms, year built.
+- **Pricing:** Current listing price, price history.
+- **Location Data:** Latitude/Longitude, neighborhood, school district ratings.
+- **Agent Info:** Contact details for lead generation.
 
 ## 2. Technical Architecture for Real Estate
 
 ### Handling Dynamic Map Loads
-Most real estate sites load listings on a map. If you scrape the HTML directly, you'll often get an empty page.
--   **Solution:** Use [Playwright](/en/blog/playwright-web-scraping-tutorial) or [headless browsers](/en/blog/headless-browser-scraping-guide) to trigger the map movements and capture the JSON response from the site's internal API.
+Most real estate sites load listings on a map. Scraping HTML directly often returns an empty page.
+- **Solution:** Use Playwright to trigger map movements and capture JSON from the site’s internal API. Inspect network traffic in DevTools to find the API endpoints.
 
 ### Bypassing Geofencing
-Sites like Zillow or REA often show different data (or block you entirely) based on your IP's location.
--   **Solution:** [Geo-targeted residential proxies](/en/blog/geo-targeted-scraping-proxies) are mandatory. If you are scraping NYC listings, use a proxy with a New York City exit node. This makes your scraper look like a local homebuyer, significantly reducing block rates.
+Sites like Zillow or Rightmove show different data (or block you) based on IP location.
+- **Solution:** Geo-targeted residential proxies are essential. For NYC listings, use a proxy with a New York exit node so your scraper looks like a local buyer.
 
 ### Capturing Images and Virtual Tours
-Property images are highly valuable for AI models.
--   **Solution:** Instead of downloading every image (which is heavy on bandwidth), scrape the high-resolution CDN URLs. Ensure your [proxy rotation](/en/blog/proxy-rotation-strategies) is fast enough to handle the high volume of media requests.
+Property images are valuable for AI models. Scrape high-resolution CDN URLs instead of downloading every image; use proxy rotation for high-volume media requests.
 
 ## 3. Python Implementation: The "API Sniffing" Method
 
-Often, the most efficient way to scrape a real estate site is to find its internal "hidden" API.
+Find the site’s internal API via DevTools (Network tab), then request it directly:
 
 ```python
 import requests
 
 def scrape_real_estate_api(api_url):
-    # Use headers that mimic a real browser session
     headers = {
-        "User-Agent": "Mozilla/5.0...",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ...",
         "Referer": "https://www.zillow.com/",
         "X-Requested-With": "XMLHttpRequest"
     }
-    
-    # Crucial: Use Residential Proxies for high-repute requests
-    proxies = {
-        "http": "http://user:pass@p1.bytesflows.com:8001",
-        "https": "http://user:pass@p1.bytesflows.com:8001"
-    }
-
+    proxies = {"http": "http://user:pass@gateway:8001", "https": "http://user:pass@gateway:8001"}
     response = requests.get(api_url, headers=headers, proxies=proxies)
-    
     if response.status_code == 200:
         data = response.json()
-        for house in data['listings']:
-            print(f"Address: {house['address']} | Price: {house['price']}")
+        for house in data.get("listings", []):
+            print(f"Address: {house.get('address')} | Price: {house.get('price')}")
     else:
         print("Blocked or API changed.")
-
-scrape_real_estate_api("https://www.target-real-estate.com/api/v2/search?city=austin")
 ```
 
-## 4. Professional Best Practices
+## 4. Best Practices
 
-1.  **Distributed Crawling:** Use a framework like [Scrapy](/en/blog/best-python-libraries-web-scraping) with a cloud-based queue (Redis/RabbitMQ).
-2.  **Retry Logic:** Real estate sites are flaky. Implement an exponential backoff strategy when a request fails.
-3.  **Data Standardisation:** Different sites use different units (sq ft vs sq meters). Normalize all data into a single schema before saving to your database.
+1. **Distributed crawling:** Use Scrapy or a queue (Redis/RabbitMQ) for large crawls.
+2. **Retry logic:** Implement exponential backoff when requests fail.
+3. **Data standardization:** Normalize units (sq ft vs sq meters) into a single schema.
 
-## Conclusion
+## Troubleshooting
 
-Real estate scraping is a high-reward, high-difficulty task. By combining [advanced residential proxy networks](/en/blog/residential-proxies) with [modern automation frameworks](/en/blog/headless-browser-scraping-guide), you can build a 24/7 window into the global property market.
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Empty map / listings | JS-rendered or geo mismatch | Use Playwright; ensure proxy is in target region |
+| 403 / blocked | Anti-bot or datacenter IP | Use residential proxies in the correct city/region |
+| API returns 401 | Auth or session | Capture cookies from a browser session; set Referer |
+| Schema break | API changed | Inspect response; add null checks and fallbacks |
 
-**Ready to start?**
--   Learn how to [avoid IP bans during large-scale scraping](/en/blog/avoid-ip-bans-web-scraping).
--   Compare the [Best Proxies for Real Estate Data](/en/blog/best-proxies-for-web-scraping).
--   Check out our [Ultimate Guide to Web Scraping in 2026](/en/blog/ultimate-guide-web-scraping-2026).
+---
+
+**Further reading:**
+- [Geo-targeted scraping proxies](/en/blog/geo-targeted-scraping-proxies)
+- [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial)
+- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)

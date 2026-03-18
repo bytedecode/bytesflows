@@ -8,107 +8,81 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## The Problem: Static Tools Fail on SPAs
 
-Web scraping has become a critical technique for developers, data
-engineers, and AI teams. Companies collect large volumes of public web
-data to power analytics, automation systems, and machine learning
-models.
+You try to scrape a product page with Requests: the HTML you get is a shell; the prices and images load only after JavaScript runs. Modern single-page apps (SPAs) render content in the browser. To extract that data, you need a real browser. Playwright gives you a headless Chromium, Firefox, or WebKit with a stable API and built-in waiting for network and DOM.
 
-However, modern websites deploy sophisticated anti‑bot protections.
-Without the right architecture and proxy infrastructure, scraping
-projects often fail due to IP bans, CAPTCHAs, or fingerprint detection.
+## Why Sites Block Scrapers
 
-This guide explains practical strategies to build reliable scraping
-systems. Build on our [Playwright scraping tutorial](/en/blog/playwright-web-scraping-tutorial) and [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping) for protected SPAs.
+Common protection layers:
 
-## Why Web Scraping Gets Blocked
+- Rate limiting
+- IP reputation scoring
+- Browser fingerprinting
+- JavaScript challenges
+- CAPTCHA verification
+- Behavioral detection
 
-Most websites implement multiple layers of bot protection:
+Residential proxies help: they use real ISP IPs that sites treat as normal users, reducing blocks.
 
--   Rate limiting
--   IP reputation scoring
--   Browser fingerprinting
--   JavaScript challenges
--   CAPTCHA verification
--   Behavioral detection
+## Basic Playwright Scraper
 
-When a crawler sends too many requests from a single IP address, the
-website may temporarily or permanently block that address.
+```python
+from playwright.sync_api import sync_playwright
 
-## The Role of Proxies in Scraping
-
-Proxies are a core component of large‑scale scraping infrastructure.
-
-A proxy server acts as an intermediary between the scraper and the
-target website. Instead of sending requests directly from your server
-IP, traffic is routed through a proxy network.
-
-Benefits include:
-
--   IP rotation
--   geographic targeting
--   anonymity
--   reduced block rates
-
-Residential proxies are particularly effective because they originate
-from real household IP addresses. Websites treat them as legitimate
-users rather than datacenter traffic.
-
-## Example: Using a Proxy in Python
-
-``` python
-import requests
-
-proxies = {
-    "http": "http://username:password@p1.bytesflows.com:8001",
-    "https": "http://username:password@p1.bytesflows.com:8001"
-}
-
-response = requests.get("https://example.com", proxies=proxies)
-print(response.status_code)
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    page = browser.new_page()
+    page.goto("https://example.com/products", wait_until="networkidle")
+    items = page.query_selector_all(".product-card")
+    for item in items:
+        title = item.query_selector("h3")
+        print(title.inner_text() if title else "")
+    browser.close()
 ```
 
-## Example: Using a Proxy in Playwright
+## Using a Proxy with Playwright
 
-``` python
+```python
 from playwright.sync_api import sync_playwright
 
 with sync_playwright() as p:
     browser = p.chromium.launch(
+        headless=True,
         proxy={
-            "server": "http://p1.bytesflows.com:8001",
-            "username": "username",
-            "password": "password"
+            "server": "http://gateway.example.com:8001",
+            "username": "user",
+            "password": "pass"
         }
     )
-
     page = browser.new_page()
     page.goto("https://example.com")
     print(page.title())
+    browser.close()
 ```
 
 ## Best Practices for Reliable Scraping
 
-To maintain stable scraping operations, consider these best practices:
+1. **Wait for content:** Use `wait_until="networkidle"` or wait for a specific selector before extraction.
+2. **Rotate IPs:** Use a rotating residential proxy gateway; each session can get a new IP.
+3. **Randomize timing:** Add `page.wait_for_timeout(random.randint(1000, 3000))` between actions.
+4. **Monitor block rates:** Track 403/429 and success rate; adjust concurrency and proxy pool as needed.
 
-1.  Rotate IP addresses frequently
-2.  Use headless browsers for dynamic sites
-3.  Randomize request timing
-4.  Store cookies and session data
-5.  Monitor block rates and errors
-6.  Combine scraping with AI‑driven parsing
+## Verification and Troubleshooting
 
-A well‑designed scraper should include crawler workers, proxy pools, and
-queue‑based task scheduling.
+**Verify:**
+- Take a screenshot with `page.screenshot(path="debug.png")` and inspect what the scraper sees.
+- Compare extracted data with manual browser inspection.
 
-## Conclusion
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Empty selectors | Content not loaded yet | Wait for specific element or `networkidle` |
+| 403 / blocked | Anti-bot or IP ban | Use residential proxies; vary fingerprint |
+| Timeouts | Slow JS or network | Increase timeout; check for infinite loaders |
 
-Web scraping remains one of the most powerful techniques for collecting
-open data on the internet. With the right combination of proxy networks,
-browser automation, and intelligent crawling strategies, developers can
-build scalable and resilient scraping systems.
+---
 
-If you're building a production‑level scraping infrastructure, investing
-in high‑quality rotating residential proxies is often the most important
-factor in long‑term success.
+**Further reading:**
+- [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial)
+- [Bypass Cloudflare web scraping](/en/blog/bypass-cloudflare-web-scraping)
+- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)

@@ -8,97 +8,95 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: The SERP Data Gold Mine
 
-This guide covers **Scraping Search Results with Python** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
-
-## Key Concepts
-
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
-
-## Practical Steps
-
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
-
-## Best Practices
-
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
-
-## Summary
-
-**Scraping Search Results with Python** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+Search engine results pages (SERPs) contain rich data: organic rankings, featured snippets, ads, and local pack. Scraping them helps with SEO, competitor analysis, and market research. But Google and Bing aggressively block automated access. This guide covers the challenges, when to use HTTP vs browser, and how to implement reliable SERP scraping with Python.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+## Why SERP Scraping Is Hard
 
+Search engines use strong anti-bot measures:
+
+- **IP reputation** — Datacenter IPs are often blocked or heavily rate-limited. Residential IPs pass more often.
+- **TLS fingerprint** — Python's `requests` and `httpx` have non-browser signatures. Google can detect them. For strict targets, a real browser (Playwright) is required.
+- **Behavior** — Too many requests from one IP, or fixed timing, triggers blocks. Rotate IPs and add randomized delays.
+
+**Decision:** For small volumes or non-Google (e.g. DuckDuckGo, Bing with low protection), `requests` + proxy may work. For Google at scale, use Playwright + residential proxies.
+
+---
+
+## Option 1: requests + Proxy (Simple SERPs)
+
+For less protected engines or low volume:
+
+```python
+import requests
+proxies = {"http": "http://user:pass@p1.example.com:8001", "https": "http://user:pass@p1.example.com:8001"}
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
+r = requests.get("https://duckduckgo.com/html/?q=web+scraping", proxies=proxies, headers=headers)
+# Parse r.text for results
+```
+
+Use a rotating residential proxy. Add `time.sleep(random.uniform(2, 6))` between requests. Expect blocks on Google with this approach.
+
+---
+
+## Option 2: Playwright + Proxy (Google, Strict Targets)
+
+For Google or high volume, use a real browser:
+
+```python
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(proxy={"server": "http://p1.example.com:8001", "username": "user", "password": "pass"})
+    page = browser.new_page()
+    page.goto("https://www.google.com/search?q=web+scraping", wait_until="networkidle")
+    page.wait_for_timeout(3000)
+    results = page.locator(".g").all_inner_texts()
+    browser.close()
+```
+
+Residential proxy for IP trust. Real browser for TLS and fingerprint. Adjust selectors for current Google markup (they change often).
+
+---
+
+## Parsing SERP Structure
+
+SERP HTML varies by engine. Common patterns:
+
+- **Organic results** — Usually in containers with class like `.g` (Google) or similar. Extract title, URL, snippet.
+- **Featured snippet** — Often in a distinct block. May need different selectors.
+- **Ads** — Top/bottom ads have different markup. Filter or extract separately.
+
+Use BeautifulSoup or lxml for HTML parsing. Prefer resilient selectors; engines update markup frequently.
+
+---
+
+## Best Practices
+
+1. **Residential proxies** — Mandatory for Google at scale. Rotate per request or per session.
+2. **Random delays** — 3–10 seconds between searches. Vary by `random.uniform`.
+3. **Respect robots.txt** — Check Google's robots.txt. Some paths may be disallowed.
+4. **Consider official APIs** — Google Search API, Bing API. Use when budget allows; avoid scraping when possible for ToS compliance.
+
+---
+
+## Troubleshooting
+
+**CAPTCHA or block** — Switch to Playwright. Use residential proxies. Add more delays. Reduce concurrency.
+
+**Empty or wrong results** — Selectors may have changed. Inspect page HTML. Use Playwright's `page.content()` to debug.
+
+**Rate limited** — Too many requests from one IP. Rotate more often. Add longer delays.
+
+---
+
+## Summary
+
+SERP scraping requires residential proxies and often a real browser (Playwright) for Google. Use requests for low-volume or less protected engines. Parse with resilient selectors. Add randomized delays. Consider official APIs when available.
+
+---
+
+**Further reading:** [Scraping SERP Data](/en/blog/scraping-serp-data) · [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies)

@@ -8,70 +8,51 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Why SERP Scraping Is Tricky
 
-**Scraping Google** search results (SERP) is in demand for SEO, rank tracking, and market research. Google’s ToS and technical barriers (rate limits, CAPTCHAs, blocking) make it a sensitive topic. This guide covers legal considerations and technical approaches, including using [residential proxies](/en/blog/residential-proxies) and [best practices](/en/blog/ethical-web-scraping-best-practices-2025) to stay within bounds.
+You need search result data for SEO rank tracking or market research. Google’s Terms of Service and technical barriers (rate limits, CAPTCHAs, IP blocking) make scraping risky and legally sensitive. This guide covers legal limits and technical options so you can decide whether and how to proceed.
 
-For general SERP data use cases, see [scraping SERP data](/en/blog/scraping-serp-data).
+## Legal and Ethical Boundaries
 
-## Legal and ethical boundaries
+- **Respect ToS:** Google prohibits automated scraping in its Terms of Service. Violations can lead to blocks and legal action.
+- **APIs first:** Use Google’s Custom Search JSON API, or third-party SERP APIs that handle compliance.
+- **If you scrape:** Ensure you have a legitimate use, comply with local law, and understand the risks.
 
-- Respect Google’s Terms of Service and robots.txt. Prefer official APIs (e.g. Custom Search JSON API) where they fit.
-- For large or commercial SERP collection, consider [ethical web scraping](/en/blog/ethical-web-scraping-best-practices-2025) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations).
-- Use [rotating residential proxy](/en/blog/residential-proxies) networks only where you have a legitimate use and comply with local law.
+## Technical Approach
 
-## Technical approach
+### Option 1: Official APIs
 
-- **APIs first** — Use Google’s APIs when possible to avoid scraping.
-- **If you scrape** — Use headless browsers (e.g. [Playwright](/en/blog/playwright-web-scraping-tutorial)) and [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping). Rotate IPs and respect rate limits; see [proxy rotation strategies](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping).
-- **Alternatives** — Third-party SERP APIs often handle blocks and compliance.
+Use Google Custom Search JSON API when it fits. Limited free quota; paid tiers for higher volume. No scraping, no blocks.
 
-## Proxies and anti-bot
+### Option 2: Third-Party SERP APIs
 
-Google is strict on datacenter IPs. [Residential proxies](/en/blog/residential-proxies) and careful [proxy rotation](/en/blog/proxy-rotation-strategies) reduce blocks. Use our [Proxy Checker](/en/blog/proxy-checker) to verify IPs and [Scraping Test](/en/blog/scraping-test) to test requests.
+Providers like SerpAPI, Bright Data, or similar handle blocks and compliance. You pay per request; they manage proxies and parsing.
 
-## Conclusion
+### Option 3: DIY Scraping (High Risk)
 
-**How to scrape Google** in practice: prefer APIs; if you scrape, use [residential proxies](/en/blog/residential-proxies), [best proxies for scraping](/en/blog/best-proxies-for-web-scraping), and [ethical and legal](/en/blog/ethical-web-scraping-best-practices-2025) guidelines. For SERP use cases, see [scraping SERP data](/en/blog/scraping-serp-data) and the [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026).
+If you scrape despite ToS:
+
+- Use **Playwright** or similar (Google’s DOM is JS-heavy).
+- Use **residential proxies** and rotate IPs; datacenter IPs are blocked quickly.
+- Limit rate and concurrency; respect robots.txt.
+- Expect CAPTCHAs and blocks; success is not guaranteed.
+
+## Proxies and Anti-Bot
+
+Google blocks datacenter IPs aggressively. Residential proxies and careful rotation reduce blocks but do not eliminate risk. Verify proxy IPs and test requests before scaling.
+
+## Decision Table
+
+| Use case | Recommendation |
+|---------|----------------|
+| Small volume, one-off | Google Custom Search API or third-party SERP API |
+| SEO rank tracking | Dedicated SERP API or rank-tracking SaaS |
+| High volume, commercial | Third-party SERP API (compliance handled by provider) |
+| DIY scraping | High risk; residential proxies, low rate, understand legal exposure |
 
 ---
 
 **Further reading:**
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
+- [Ethical web scraping best practices](/en/blog/ethical-web-scraping-best-practices-2025)
 - [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-- [Proxies](/en/proxies)
-
-**Next steps:** Use [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when scaling. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies).
-
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Using proxies with Playwright](/en/blog/using-proxies-playwright)
-- [Python proxy scraping](/en/blog/python-proxy-scraping-guide)
-- [Browser fingerprinting](/en/blog/browser-fingerprinting-explained)
-- [Handling CAPTCHAs](/en/blog/handling-captchas-in-scraping)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
+- [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial)

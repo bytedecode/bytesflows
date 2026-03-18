@@ -8,97 +8,108 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: From Script to Service
 
-This guide covers **Building a Python Scraping API** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
-
-## Key Concepts
-
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
-
-## Practical Steps
-
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
-
-## Best Practices
-
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
-
-## Summary
-
-**Building a Python Scraping API** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+A scraping script works for ad-hoc tasks. When you need to expose scraping as a service—for internal tools, customers, or data pipelines—you build an API. This guide covers designing a Python scraping API with proxy integration, error handling, and production considerations.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+## Core Design
 
+**Input:** URL (or list of URLs), optional parameters (selector, format).  
+**Output:** Extracted data (JSON, typically), or error (status code, message).  
+**Infrastructure:** FastAPI or Flask for HTTP, background tasks for long scrapes, Redis or queue for job state.
+
+---
+
+## Example: FastAPI Endpoint
+
+```python
+from fastapi import FastAPI, BackgroundTasks
+from pydantic import BaseModel
+import asyncio
+
+app = FastAPI()
+
+class ScrapeRequest(BaseModel):
+    url: str
+
+@app.post("/scrape")
+async def scrape(req: ScrapeRequest, bg: BackgroundTasks):
+    task_id = str(uuid.uuid4())
+    bg.add_task(run_scraper, task_id, req.url)
+    return {"task_id": task_id, "status": "queued"}
+
+async def run_scraper(task_id: str, url: str):
+    # Use Playwright or requests with proxy
+    # Store result in Redis/DB keyed by task_id
+    pass
+```
+
+For long-running scrapes, return a task ID and let clients poll or use webhooks for completion.
+
+---
+
+## Proxy Integration
+
+Pass proxy config via environment variables. Use a single rotating gateway for simplicity:
+
+```python
+import os
+
+PROXY = {
+    "server": os.environ["PROXY_SERVER"],
+    "username": os.environ["PROXY_USER"],
+    "password": os.environ["PROXY_PASS"]
+}
+
+# In Playwright
+browser = await p.chromium.launch(proxy=PROXY)
+```
+
+Each request or browser gets a new IP from the gateway. For high concurrency, ensure the provider's pool can handle your request rate.
+
+---
+
+## Error Handling
+
+Return structured errors instead of generic 500s:
+
+- **403 / 429** — "Target blocked or rate-limited. Retry later."
+- **Timeout** — "Request timed out. Target may be slow."
+- **Parse error** — "Page structure changed. Selector may need update."
+- **Proxy error** — "Proxy unavailable. Check credentials or provider."
+
+Log task_id, URL, error type, and timestamp for debugging.
+
+---
+
+## Rate Limiting and Queues
+
+Protect your API and targets:
+
+- **Rate limit clients** — e.g. 10 requests/minute per API key. Use slowapi or similar.
+- **Queue depth** — Cap concurrent scrapes. Reject or queue when full.
+- **Per-domain limits** — Don't let one client hammer a single domain. Enforce concurrency caps per target.
+
+---
+
+## Production Checklist
+
+| Item | Action |
+|------|--------|
+| Auth | API keys or OAuth. Never expose scraping without auth. |
+| Timeouts | Set request timeouts (e.g. 30s). Avoid hung workers. |
+| Logging | Log task_id, URL, status, duration. No credentials in logs. |
+| Monitoring | Success rate, latency, queue depth. Alert on degradation. |
+| Secrets | Proxy credentials in env or secret manager. Never in code. |
+
+---
+
+## Summary
+
+Design a scraping API with clear input/output. Use background tasks for long scrapes. Integrate proxies via env vars. Return structured errors. Add rate limiting and queues. Monitor and secure in production.
+
+---
+
+**Further reading:** [Python Proxy Scraping Guide](/en/blog/python-proxy-scraping-guide) · [Proxy Management for Large Scrapers](/en/blog/proxy-management-large-scrapers) · [Scraping Data at Scale](/en/blog/scraping-data-at-scale)

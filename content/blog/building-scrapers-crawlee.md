@@ -1,104 +1,95 @@
 ---
 title: "Building Scrapers with Crawlee (2026)"
 slug: "building-scrapers-crawlee"
-summary: "Harness the power of Crawlee for sophisticated web crawling. Discover how to leverage its built-in request management, autoscaling, and proxy rotation capabilities along with residential proxies to build enterprise-grade scrapers."
+summary: "Crawlee for Python and Node: managed browser pool, proxy rotation, and storage. Build production scrapers with less boilerplate."
 category: "Web Scraping"
-tags: ["Framework", "Web Scraping"]
+tags: ["Crawlee", "Web Scraping"]
 language: "en"
-coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
+coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: Crawlee in a Nutshell
 
-This guide covers **Building Scrapers with Crawlee** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
+Crawlee is a library (Node.js and Python) built on Playwright and Puppeteer. It provides managed browser pools, automatic proxy rotation, storage adapters, and request queuing—reducing boilerplate for production scrapers. This guide covers the basics and when to use it.
 
-## Key Concepts
+---
 
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
+## What Crawlee Provides
 
-## Practical Steps
+- **Browser pool** — Manages browser instances. Reuses them. Handles lifecycle.
+- **Proxy rotation** — Integrates with proxy providers. Rotates per request or session.
+- **Storage** — Save results to JSON, CSV, or custom backends. Built-in dataset and key-value store.
+- **Request queue** — URL queue with deduplication. Good for crawling.
+- **Stealth** — Pre-configured stealth settings to reduce detection.
 
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
+---
 
-## Best Practices
+## Basic Example (Node)
 
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
+```javascript
+import { PlaywrightCrawler } from 'crawlee';
+
+const crawler = new PlaywrightCrawler({
+  requestHandler: async ({ page, request }) => {
+    const data = await page.locator('.product').allTextContents();
+    await crawler.pushData({ url: request.url, products: data });
+  },
+});
+
+await crawler.run(['https://example.com/products']);
+```
+
+Crawlee handles browser launch, teardown, and concurrency. Add proxy config in crawler options.
+
+---
+
+## Python ( crawlee )
+
+```python
+from crawlee.playwright_crawler import PlaywrightCrawler
+
+async def handler(context):
+    page = context.page
+    data = await page.locator(".product").all_inner_texts()
+    await context.push_data({"url": context.request.url, "products": data})
+
+crawler = PlaywrightCrawler()
+await crawler.run(["https://example.com/products"])
+```
+
+Similar model: crawler manages lifecycle, handler processes each request.
+
+---
+
+## Proxy Integration
+
+Pass proxy configuration in crawler options:
+
+```javascript
+const crawler = new PlaywrightCrawler({
+  proxyConfiguration: new ProxyConfiguration({
+    proxyUrls: ['http://user:pass@gateway:8001'],
+  }),
+  requestHandler: async ({ page }) => { /* ... */ },
+});
+```
+
+For rotating residential gateways, use the provider's URL. Crawlee rotates per request by default.
+
+---
+
+## When to Use Crawlee
+
+**Use Crawlee when:** You want managed pools, queues, and storage without building them. Good for structured crawling projects.
+
+**Use raw Playwright when:** You need full control, custom pipelines, or Crawlee's abstraction doesn't fit.
+
+---
 
 ## Summary
 
-**Building Scrapers with Crawlee** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+Crawlee adds browser pools, proxy rotation, queues, and storage on top of Playwright. Reduces boilerplate for production scrapers. Use for structured crawling. Use raw Playwright when you need maximum control.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
+**Further reading:** [Crawlee Web Scraping Tutorial](/en/blog/crawlee-web-scraping-tutorial) · [Playwright Web Scraping Tutorial](/en/blog/playwright-web-scraping-tutorial) · [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies)

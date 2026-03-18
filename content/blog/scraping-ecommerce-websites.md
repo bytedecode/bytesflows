@@ -8,107 +8,84 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Extracting Product Data at Scale
 
-Web scraping has become a critical technique for developers, data
-engineers, and AI teams. Companies collect large volumes of public web
-data to power analytics, automation systems, and machine learning
-models.
+You need prices, stock, or reviews from e-commerce sites for competitor tracking, repricing, or market research. Many marketplaces use anti-bot protection: datacenter IPs get blocked, and content is often loaded by JavaScript. This guide covers practical strategies for reliable e-commerce scraping.
 
-However, modern websites deploy sophisticated anti‑bot protections.
-Without the right architecture and proxy infrastructure, scraping
-projects often fail due to IP bans, CAPTCHAs, or fingerprint detection.
+## Why E-Commerce Scraping Gets Blocked
 
-This guide explains practical strategies to build reliable scraping
-systems. Use [residential proxies](/en/blog/residential-proxies) for e‑commerce and read [best proxies for scraping](/en/blog/best-proxies-for-web-scraping).
+Common protections:
 
-## Why Web Scraping Gets Blocked
+- Rate limiting
+- IP reputation scoring
+- Browser fingerprinting
+- JavaScript challenges
+- CAPTCHA verification
+- Behavioral detection
 
-Most websites implement multiple layers of bot protection:
+Too many requests from one IP lead to temporary or permanent blocks.
 
--   Rate limiting
--   IP reputation scoring
--   Browser fingerprinting
--   JavaScript challenges
--   CAPTCHA verification
--   Behavioral detection
+## The Role of Proxies
 
-When a crawler sends too many requests from a single IP address, the
-website may temporarily or permanently block that address.
+Proxies route traffic through an intermediary so the target sees a different IP. Benefits:
 
-## The Role of Proxies in Scraping
+- IP rotation across requests
+- Geographic targeting (prices vary by region)
+- Lower block rates with residential IPs
 
-Proxies are a core component of large‑scale scraping infrastructure.
+Residential proxies use real ISP addresses; sites treat them as normal users more often than datacenter traffic.
 
-A proxy server acts as an intermediary between the scraper and the
-target website. Instead of sending requests directly from your server
-IP, traffic is routed through a proxy network.
+## Basic Setup: Requests + Proxy
 
-Benefits include:
-
--   IP rotation
--   geographic targeting
--   anonymity
--   reduced block rates
-
-Residential proxies are particularly effective because they originate
-from real household IP addresses. Websites treat them as legitimate
-users rather than datacenter traffic. See [residential proxies for scraping](/en/blog/residential-proxies-improve-scraping).
-
-## Example: Using a Proxy in Python
-
-``` python
+```python
 import requests
 
 proxies = {
-    "http": "http://username:password@p1.bytesflows.com:8001",
-    "https": "http://username:password@p1.bytesflows.com:8001"
+    "http": "http://user:pass@gateway.example.com:8080",
+    "https": "http://user:pass@gateway.example.com:8080",
 }
-
-response = requests.get("https://example.com", proxies=proxies)
-print(response.status_code)
+r = requests.get("https://example-store.com/products", proxies=proxies)
 ```
 
-## Example: Using a Proxy in Playwright
+For static HTML, parse with Beautiful Soup. If content is loaded by JavaScript, use Playwright.
 
-``` python
+## Playwright for Dynamic Stores
+
+```python
 from playwright.sync_api import sync_playwright
 
 with sync_playwright() as p:
     browser = p.chromium.launch(
-        proxy={
-            "server": "http://p1.bytesflows.com:8001",
-            "username": "username",
-            "password": "password"
-        }
+        proxy={"server": "http://gateway:8080", "username": "u", "password": "p"}
     )
-
     page = browser.new_page()
-    page.goto("https://example.com")
-    print(page.title())
+    page.goto("https://example-store.com/product/123", wait_until="networkidle")
+    title = page.locator("h1.product-title").inner_text()
+    price = page.locator(".price").inner_text()
+    print(title, price)
+    browser.close()
 ```
 
-## Best Practices for Reliable Scraping
+## Best Practices
 
-To maintain stable scraping operations, consider these best practices:
+1. **Rotate IPs:** Use rotating residential proxies; avoid reusing the same IP for many product pages.
+2. **Headless browsers for JS:** Use Playwright when product data is loaded dynamically.
+3. **Randomize timing:** Add delays between requests to mimic human behavior.
+4. **Monitor block rates:** Track 403/429 and success rate; adjust concurrency and proxy pool.
+5. **Schema validation:** Define a clear schema and validate extracted fields before storage.
 
-1.  Rotate IP addresses frequently
-2.  Use headless browsers for dynamic sites
-3.  Randomize request timing
-4.  Store cookies and session data
-5.  Monitor block rates and errors
-6.  Combine scraping with AI‑driven parsing
+## Verification and Troubleshooting
 
-A well‑designed scraper should include crawler workers, proxy pools, and
-queue‑based task scheduling.
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Empty product list | JS-rendered content | Switch to Playwright |
+| 403 / blocked | IP or fingerprint | Use residential proxies; vary headers |
+| Inconsistent prices | Geo or session | Use correct region; preserve cookies |
+| Selectors break | Site layout change | Inspect live page; update selectors |
 
-## Conclusion
+---
 
-Web scraping remains one of the most powerful techniques for collecting
-open data on the internet. With the right combination of proxy networks,
-browser automation, and intelligent crawling strategies, developers can
-build scalable and resilient scraping systems.
-
-If you're building a production‑level scraping infrastructure, investing
-in high‑quality rotating residential proxies is often the most important
-factor in long‑term success.
+**Further reading:**
+- [Scraping Amazon product data](/en/blog/scraping-amazon-product-data)
+- [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial)
+- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)

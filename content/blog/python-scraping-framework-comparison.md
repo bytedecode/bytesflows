@@ -8,97 +8,105 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: Three Tools, Three Jobs
 
-This guide covers **Python Scraping Framework Comparison** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
-
-## Key Concepts
-
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
-
-## Practical Steps
-
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
-
-## Best Practices
-
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
-
-## Summary
-
-**Python Scraping Framework Comparison** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+Python offers several scraping tools. Choosing the wrong one leads to blocked requests, empty pages, or unnecessary complexity. This guide compares **BeautifulSoup**, **Scrapy**, and **Playwright** so you can pick the right framework for your target and scale.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+## Quick Comparison
 
+| Framework | Type | Best for | JS support | Anti-bot |
+|-----------|------|----------|------------|----------|
+| BeautifulSoup | Parser | Simple HTML, small scale | No | Low |
+| Scrapy | Crawler + parser | High volume, static pages | No | Low–medium |
+| Playwright | Browser automation | JS-rendered, Cloudflare | Yes | High |
+
+---
+
+## BeautifulSoup
+
+**What it is:** An HTML/XML parser. It does not fetch pages—you use `requests` or similar. It parses the response and lets you query with CSS selectors or the tree API.
+
+**Pros:** Simple, lightweight, fast parsing. Easy to learn.
+
+**Cons:** No built-in fetching, no concurrency, no JS execution. You write the request loop yourself.
+
+**When to use:** Small projects, static HTML, low protection. Up to a few hundred URLs.
+
+```python
+import requests
+from bs4 import BeautifulSoup
+r = requests.get("https://example.com", headers={"User-Agent": "Chrome..."})
+soup = BeautifulSoup(r.text, "lxml")
+titles = soup.select(".product-title")
+```
+
+---
+
+## Scrapy
+
+**What it is:** A full crawling framework. Handles URL queues, concurrency, pipelines, and middleware. Built-in for speed and scale.
+
+**Pros:** Async I/O, built-in proxy support, pipelines for storage, middleware for retries and rate limiting. Excellent for large-scale static scraping.
+
+**Cons:** No JS execution. Cannot render SPA or bypass Cloudflare. Steeper learning curve than BeautifulSoup.
+
+**When to use:** Thousands to millions of URLs, static HTML or API-like responses. Product catalogs, news archives, directory sites.
+
+```python
+# Scrapy spider with proxy
+class MySpider(scrapy.Spider):
+    custom_settings = {"ROTATING_PROXY_LIST": ["http://user:pass@gateway:8001"]}
+    def start_requests(self):
+        for url in self.start_urls:
+            yield scrapy.Request(url)
+```
+
+---
+
+## Playwright
+
+**What it is:** Browser automation. Drives real Chromium, Firefox, or WebKit. Executes JavaScript, handles cookies, matches real browser TLS and fingerprint.
+
+**Pros:** Works with SPAs, Cloudflare, and anti-bot sites. Correct TLS fingerprint. Can wait for elements, handle infinite scroll.
+
+**Cons:** Heavy (100MB+ per browser). Slower than HTTP clients. Requires more resources.
+
+**When to use:** JS-rendered pages, Cloudflare, e-commerce with anti-bot, any target where `requests` or Scrapy return empty or blocked content.
+
+```python
+from playwright.sync_api import sync_playwright
+with sync_playwright() as p:
+    browser = p.chromium.launch(proxy={"server": "http://p1.example.com:8001", "username": "user", "password": "pass"})
+    page = browser.new_page()
+    page.goto(url, wait_until="networkidle")
+    data = page.locator(".product").all_inner_texts()
+```
+
+---
+
+## Decision Flow
+
+```
+Static HTML, low protection? → BeautifulSoup or Scrapy
+High volume, static?         → Scrapy
+JS-rendered or Cloudflare?   → Playwright
+Need both?                   → Scrapy for crawl + Playwright for hard pages
+```
+
+---
+
+## Pairing with Proxies
+
+All three benefit from residential proxies for scale or strict targets. BeautifulSoup: pass proxy to `requests.get()`. Scrapy: use proxy middleware or `meta={'proxy': '...'}`. Playwright: pass `proxy` to `chromium.launch()`. For Cloudflare, only Playwright is viable.
+
+---
+
+## Summary
+
+Use **BeautifulSoup** for simple, small-scale parsing. Use **Scrapy** for high-volume static crawling. Use **Playwright** for JS, Cloudflare, and anti-bot. Pair any with residential proxies when scaling or targeting protected sites.
+
+---
+
+**Further reading:** [Playwright Web Scraping Tutorial](/en/blog/playwright-web-scraping-tutorial) · [Python Proxy Scraping Guide](/en/blog/python-proxy-scraping-guide) · [Scraping Dynamic Websites with Python](/en/blog/scraping-dynamic-websites-python)
