@@ -8,73 +8,99 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction: The "Heartbeat" of Large-Scale Scraping
+## Introduction: The Heartbeat of Large-Scale Scraping
 
-If IP addresses are the fuel for web scraping, then **rotation** is the engine. You can have the most sophisticated [Playwright script](/en/blog/playwright-web-scraping-tutorial) in the world, but if you're sending 1,000 requests from a single source, you'll be blocked within seconds.
+If IP addresses are the fuel for web scraping, **rotation** is the engine. You can have the most sophisticated Playwright script, but if you send 1,000 requests from a single IP, you'll be blocked within seconds. Proxy rotation isn't just about switching IPs—it's about knowing when to stay on one IP to maintain a session and when to rotate to avoid detection. This guide covers professional-grade rotation strategies.
 
-Proxy rotation isn't just about switching IPs; it's about intelligence. It’s about knowing when to stay on one IP to maintain a session and when to burn it to avoid detection. In this guide, we’ll explore professional-grade rotation strategies used to scrape the world's most guarded websites.
+---
 
-## Core Concepts: Sticky Sessions vs. Per-Request Rotation
+## Core Concepts: Sticky vs Per-Request
 
-Choosing the wrong rotation logic is the #1 cause of scraping project failure.
+Choosing the wrong rotation logic is a common cause of scraping failure.
 
-1.  **Per-Request Rotation:** Every single HTTP request gets a brand-new IP address.
-    -   **Best for:** Search engine results (SERP), price checks, and simple API endpoints.
-    -   **Pros:** Maximum anonymity; almost impossible to rate-limit.
-2.  **Sticky Sessions (Session Persistence):** You keep the same IP address for a set period (usually 1, 10, or 30 minutes) or until a task is finished.
-    -   **Best for:** E-commerce checkouts, multi-page forms, and [infinite scroll sites](/en/blog/playwright-web-scraping-tutorial).
-    -   **Pros:** Essential for maintaining login states and shopping carts.
+### Per-request rotation
 
-## The Infrastructure: Residential vs. Datacenter
+**What it is:** Every HTTP request gets a new IP. You connect to a gateway; the provider assigns a different exit IP for each request.
+
+**Best for:** SERP scraping, price checks, product catalogs, simple API endpoints. Each request stands alone.
+
+**Pros:** Maximum anonymity. No single IP sees many requests. Hard to rate-limit.
+
+### Sticky sessions (session persistence)
+
+**What it is:** Same IP for a set period (e.g. 5, 10, 30 minutes) or until a task is finished. You pass a session identifier (e.g. in the proxy username) so the gateway keeps you on one IP.
+
+**Best for:** E-commerce checkouts, multi-page forms, infinite-scroll sites, login flows. Anything that depends on cookies or server-side session state.
+
+**Pros:** Essential for maintaining login states and shopping carts. Session breaks if IP changes mid-flow.
+
+---
+
+## Infrastructure: Residential vs Datacenter
 
 Where your IPs come from matters as much as how you rotate them.
 
--   **Datacenter Proxies:** Fast and cheap, but highly predictable. Best for sites with weak anti-bot measures. 
--   **[Residential Proxies](/en/blog/residential-proxies):** These are the gold standard. Since they come from real households, they are nearly indistinguishable from regular users. When paired with [Cloudflare bypass strategies](/en/blog/bypass-cloudflare-web-scraping), they offer the highest success rates.
+- **Datacenter:** Fast and cheap, but highly predictable. Best for sites with weak anti-bot measures.
+- **Residential:** From real households. Nearly indistinguishable from regular users. When paired with a real browser, offer the highest success rates for Cloudflare and similar.
 
-## Practical Implementation: Python with Requests
+For strict targets, use residential. Rotation strategy is irrelevant if the IP type is wrong.
 
-Using an intelligent gateway like Bytesflows simplifies rotation. You connect to a single endpoint, and the gateway handles the pool management.
+---
+
+## Implementation: Python with requests
+
+**Per-request (default):**
 
 ```python
 import requests
-
-# Strategy 1: Per-Request Rotation (The Default)
-def burst_scrape(url_list):
-    # Bytesflows' p1 gateway automatically rotates the IP for every request
-    proxy = {
-        "http": "http://user:pass@p1.bytesflows.com:8001",
-        "https": "http://user:pass@p1.bytesflows.com:8001"
-    }
-    for url in url_list:
-        # Each call gets a fresh IP from the residential pool
-        response = requests.get(url, proxies=proxy)
-        print(f"URL: {url} | Status: {response.status_code}")
-
-# Strategy 2: Sticky Sessions
-def session_scrape(target_url):
-    # By adding a session identifier to the username, 
-    # the gateway keeps you on the same IP for that session
-    session_id = "random_string_123"
-    proxy_url = f"http://user-session-{session_id}:pass@p1.bytesflows.com:8001"
-    
-    with requests.Session() as s:
-        s.proxies = {"http": proxy_url, "https": proxy_url}
-        # All requests in this block will use the same residential IP
-        r1 = s.get(target_url) 
-        r2 = s.get(f"{target_url}/reviews")
-        print(f"Session Work Done. Final Status: {r2.status_code}")
-
-if __name__ == "__main__":
-    burst_scrape(["https://httpbin.org/ip", "https://httpbin.org/ip"])
+proxy = "http://user:pass@p1.example.com:8001"
+proxies = {"http": proxy, "https": proxy}
+for url in url_list:
+    r = requests.get(url, proxies=proxies)
+    print(r.status_code)
 ```
 
-## Best Practices for "Invisible" Rotation
+Each request gets a fresh IP from the pool.
 
-1.  **Manage Your User-Agents:** Never rotate your IP without also [managing your browser fingerprint](/en/blog/browser-fingerprinting-explained). If an IP from the UK suddenly sends a Mac Safari header after previously sending a Windows Chrome header, you'll be flagged.
-2.  **Handle 429 and 403 Errors:** If you hit a rate limit (429) or a block (403), your scraper should automatically trigger a rotation and, if using sticky sessions, release that specific IP back to the pool.
-3.  **Geo-Targeting:** Many sites (like Amazon) show different data based on the IP's location. Ensure your rotation pool is locked to the correct country for data accuracy.
+**Sticky session:**
 
-## Conclusion
+```python
+session_id = "abc123"
+proxy_url = f"http://user-session-{session_id}:pass@p1.example.com:8001"
+with requests.Session() as s:
+    s.proxies = {"http": proxy_url, "https": proxy_url}
+    r1 = s.get("https://target.com/page1")
+    r2 = s.get("https://target.com/page2")
+```
 
-Proxy rotation is the difference between a project that works in development and one that succeeds in production. By combining [high-trust residential networks](/en/blog/residential-proxies-improve-scraping) with intelligent session management, you can build scrapers that are truly [anti-bot resilient](/en/blog/handling-captchas-in-scraping).
+All requests in the session use the same IP. The session ID in the username tells the gateway to stick.
+
+---
+
+## Best Practices
+
+**Match fingerprint to IP.** If an IP from the UK sends a Mac Safari User-Agent, or a US IP sends a Japanese locale, you may be flagged. Keep viewport, User-Agent, and locale consistent with the proxy region.
+
+**Handle 429 and 403.** On rate limit or block, release the IP (close the session) and retry with a new one. Don't hammer the same IP.
+
+**Geo-targeting.** Many sites (e.g. Amazon) show different data by IP location. Lock your rotation pool to the correct country for data accuracy.
+
+**Verify:** Run 50–100 requests. Confirm different exit IPs for per-request mode. For sticky, confirm the same IP across requests in a session.
+
+---
+
+## Troubleshooting
+
+**Session breaks mid-flow** — Sticky duration expired, or IP changed. Shorten the flow or request longer sticky from your provider.
+
+**Still getting blocked** — Ensure residential, not datacenter. Add delays. Reduce concurrency. Per-request rotation doesn't help if each IP still gets too many requests when concurrency is high.
+
+---
+
+## Summary
+
+Use **per-request** for independent pages. Use **sticky** for login, checkout, infinite scroll. Use **residential** for strict targets. Match fingerprint to proxy region. Handle 429/403 with retries on a new IP.
+
+---
+
+**Further reading:** [How Proxy Rotation Works](/en/blog/how-proxy-rotation-works) · [Rotating Proxies for Web Scraping](/en/blog/rotating-proxies-web-scraping) · [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping)

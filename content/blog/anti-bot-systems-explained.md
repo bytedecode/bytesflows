@@ -8,93 +8,110 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## What Are Anti-Bot Systems?
+## Introduction: The Five Layers That Block You
 
-**Anti-bot systems** are technologies that websites use to detect and limit automated traffic. They combine several layers—IP reputation, HTTP headers and TLS fingerprints, JavaScript-based [browser fingerprinting](/en/blog/browser-fingerprinting-explained), behavioral signals, and interactive challenges like CAPTCHA—to tell human users from bots. Understanding how these layers work is the first step to building scrapers that can [scrape without getting blocked](/en/blog/scrape-websites-without-getting-blocked). In practice, that usually means using [residential proxies](/en/blog/residential-proxies) and real or headless browsers such as [Playwright](/en/blog/playwright-web-scraping-tutorial). This guide explains each layer and how to respond. For more on detection in the wild, see [How Websites Detect Web Scrapers](/en/blog/how-websites-detect-scrapers) and [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping).
-
-## Why Sites Deploy Anti-Bot
-
-Websites block or throttle bots to protect against scraping at scale, credential stuffing, inventory hoarding, ad fraud, and spam. They also use anti-bot to enforce rate limits and paywalls. As a scraper operator, you are one of the use cases they try to control. The goal of your architecture—[proxy rotation](/en/blog/proxy-rotation-strategies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), and realistic browsers—is to send traffic that looks and behaves like normal users so you can collect the data you need without overloading the site or triggering bans. For an overview of [web scraping detection methods](/en/blog/how-websites-detect-scrapers) and [avoiding IP bans](/en/blog/avoid-ip-bans-web-scraping), read the linked guides.
-
-## Layer 1: IP and Network Reputation
-
-The first check is often the **IP address** and its **ASN** (autonomous system number). Datacenter IP ranges (cloud providers, hosting) are widely known and frequently flagged or rate-limited. Residential IPs, by contrast, belong to consumer ISPs and look like normal users. That’s why [why residential proxies are best for scraping](/en/blog/why-residential-proxies-best-scraping) and [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) recommendations emphasize residential pools. Use [Proxy Checker](/en/blog/proxy-checker) to verify that your proxy shows a residential IP and the expected country. If you send too many requests from a single IP, you’ll hit rate limits or blocks regardless of type; [how proxy rotation works](/en/blog/proxy-rotation-strategies) and [rotating proxies for web scraping](/en/blog/rotating-proxies-web-scraping) explain how to spread load. [Geo-targeted scraping](/en/blog/best-proxies-for-web-scraping) with [residential proxies](/en/blog/residential-proxies) is common for localised content or compliance. Many anti-bot vendors maintain lists of datacenter ranges and apply stricter limits or blocks to them; [datacenter vs residential](/en/blog/datacenter-vs-residential-proxies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) cover the trade-offs.
-
-## Layer 2: HTTP Headers and TLS Fingerprint
-
-Servers inspect **HTTP request headers**: User-Agent, Accept, Accept-Language, order of headers, and so on. Default values from scripting runtimes (e.g. Python-requests, Node fetch) are easy to fingerprint. Use realistic browser-like headers or drive a real browser. The [User-Agent Generator](/en/blog/user-agent-generator) helps when testing; for production, [headless browser scraping](/en/blog/headless-browser-scraping-guide) and [Playwright](/en/blog/playwright-web-scraping-tutorial) send consistent, browser-like headers. **TLS fingerprinting** (e.g. JA3/JA3S) identifies the TLS stack. Browsers and automation tools have distinct fingerprints; simple HTTP clients are often classified as bots. Use the [HTTP Header Checker](/en/blog/http-header-checker) to see what your client sends and to debug [preventing scraper fingerprinting](/en/blog/headless-browser-scraping-guide). For strict sites like those behind [Cloudflare](/en/blog/bypass-cloudflare-web-scraping), a real browser plus [residential proxies](/en/blog/residential-proxies) is the standard approach.
-
-## Layer 3: JavaScript and Browser Fingerprinting
-
-Many anti-bot systems run **JavaScript** in the page to collect a **browser fingerprint**: canvas and WebGL hashes, font list, screen resolution, timezone, language, and plugin data. These traits differ between real browsers and headless/automation environments. [What is browser fingerprinting](/en/blog/browser-fingerprinting-explained) goes into detail. To reduce detection, use a real or well-configured headless browser ([Playwright](/en/blog/playwright-web-scraping-tutorial), [browser stealth techniques](/en/blog/scrape-websites-without-getting-blocked)) and avoid obvious automation flags. [Avoid detection in Playwright](/en/blog/playwright-web-scraping-tutorial) and [preventing scraper fingerprinting](/en/blog/headless-browser-scraping-guide) cover practical steps. Pair this with [residential proxies](/en/blog/residential-proxies) and [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) so both IP and fingerprint look legitimate.
-
-## Layer 4: Behavioral Signals
-
-Some systems analyse **behaviour**: request timing, mouse movement, scroll speed, click patterns, and session flow. Bots tend to have regular, fast, or scripted patterns. To look more human, add random delays, simulate scroll and interaction where useful, and spread requests over time with [proxy rotation](/en/blog/proxy-rotation-strategies). [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) summarise these practices. For [how bot detection systems work](/en/blog/how-websites-detect-scrapers) in practice, see the detection guide.
-
-## Layer 5: Challenges (CAPTCHA, Cloudflare, DataDome)
-
-When the system is unsure, it may serve a **challenge**: a CAPTCHA, a JavaScript challenge (e.g. Cloudflare), or a full page that must be solved or rendered before access. [Handling CAPTCHAs in scraping](/en/blog/handling-captchas-in-scraping) and [solving CAPTCHAs automatically](/en/blog/handling-captchas-in-scraping) discuss options. [Bypass Cloudflare for web scraping](/en/blog/bypass-cloudflare-web-scraping) and [Cloudflare scraping](/en/blog/cloudflare-scraping) focus on Cloudflare; [handling DataDome bot protection](/en/blog/bypass-cloudflare-web-scraping) follows similar principles: real browser, [residential proxies](/en/blog/residential-proxies), and sometimes third-party solving services. For a full pipeline, combine [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [using proxies with Playwright](/en/blog/using-proxies-playwright), and [ethical web scraping](/en/blog/ethical-web-scraping-best-practices-2025).
-
-## How to Design Your Scraper Around Anti-Bot
-
-1. **Use residential proxies** — Prefer [residential proxies](/en/blog/residential-proxies) over datacenter; see [datacenter vs residential](/en/blog/datacenter-vs-residential-proxies) and [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping).
-2. **Rotate IPs** — [Proxy rotation strategies](/en/blog/proxy-rotation-strategies) and [how proxy rotation works](/en/blog/how-proxy-rotation-works). Use [Proxy Rotator](/en/blog/proxy-rotator) to test.
-3. **Use a real browser when needed** — For JS-heavy and protected sites, use [Playwright](/en/blog/playwright-web-scraping-tutorial) or [headless browser scraping](/en/blog/headless-browser-scraping-guide). [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping) and [browser fingerprinting](/en/blog/browser-fingerprinting-explained).
-4. **Throttle and randomise** — Delays and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) reduce blocks.
-5. **Validate** — [Scraping Test](/en/blog/scraping-test) and [Proxy Checker](/en/blog/proxy-checker) to confirm your setup before scaling.
-
-## Common Anti-Bot Products and What to Expect
-
-- **Cloudflare** — Very common; uses JS challenges, fingerprinting, and sometimes CAPTCHA. [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping) and [cloudflare scraping](/en/blog/cloudflare-scraping).
-- **DataDome, PerimeterX, Akamai Bot Manager** — Similar idea: fingerprinting, behaviour, challenges. [Handling DataDome](/en/blog/bypass-cloudflare-web-scraping) and [anti-bot systems](/en/blog/how-websites-detect-scrapers).
-- **reCAPTCHA, hCaptcha** — CAPTCHA providers; see [handling CAPTCHAs](/en/blog/handling-captchas-in-scraping) and [solving CAPTCHAs automatically](/en/blog/handling-captchas-in-scraping).
-
-In all cases, [residential proxies](/en/blog/residential-proxies) and a real or stealth browser improve success. [Proxies](/en/proxies) and [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) are the foundation; [web scraping detection methods](/en/blog/how-websites-detect-scrapers) and [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026) tie everything together.
-
-## How Detection Layers Combine
-
-Sites rarely rely on a single signal. They score **IP**, **headers**, **TLS**, **JavaScript fingerprint**, and **behaviour**, then apply a policy: allow, throttle, or challenge. A datacenter IP might be allowed at low rate but blocked above a threshold; a residential IP with a suspicious User-Agent might still get a CAPTCHA. Your goal is to minimise the score: use [residential proxies](/en/blog/residential-proxies) so the IP looks good, use [Playwright](/en/blog/playwright-web-scraping-tutorial) or [headless browser](/en/blog/headless-browser-scraping-guide) so headers and fingerprint match a real browser, and add delays and variation so behaviour is not obviously scripted. [How websites detect scrapers](/en/blog/how-websites-detect-scrapers) and [avoid detection in Playwright](/en/blog/avoid-detection-playwright-scraping) go deeper. [Proxy rotation](/en/blog/proxy-rotation-strategies) and [rotating proxies](/en/blog/rotating-proxies-web-scraping) keep any one IP from standing out.
-
-## Checklist: Reducing Anti-Bot Blocks
-
-1. **IP:** Use [residential proxies](/en/blog/residential-proxies), not datacenter. [Why residential](/en/blog/why-residential-proxies-best-scraping), [datacenter vs residential](/en/blog/datacenter-vs-residential-proxies). Verify with [Proxy Checker](/en/blog/proxy-checker).
-2. **Rotation:** [How proxy rotation works](/en/blog/how-proxy-rotation-works), [proxy rotation strategies](/en/blog/proxy-rotation-strategies). Use [Proxy Rotator](/en/blog/proxy-rotator) to test.
-3. **Browser:** For strict sites use [Playwright](/en/blog/playwright-web-scraping-tutorial) or [headless browser](/en/blog/headless-browser-scraping-guide). [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [browser fingerprinting](/en/blog/browser-fingerprinting-explained).
-4. **Behaviour:** Throttle, randomise delays. [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping), [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
-5. **Test:** [Scraping Test](/en/blog/scraping-test) and [Proxy Checker](/en/blog/proxy-checker) before scaling. [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:** [Residential proxies](/en/blog/residential-proxies) · [Proxy rotation](/en/blog/proxy-rotation-strategies) · [Playwright](/en/blog/playwright-web-scraping-tutorial) · [Headless browser](/en/blog/headless-browser-scraping-guide) · [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping) · [How websites detect scrapers](/en/blog/how-websites-detect-scrapers) · [Proxy Checker](/en/blog/proxy-checker) · [Scraping Test](/en/blog/scraping-test) · [Proxy Rotator](/en/blog/proxy-rotator) · [User-Agent Generator](/en/blog/user-agent-generator) · [HTTP Header Checker](/en/blog/http-header-checker) · [Proxies](/en/proxies).
-
-**See also:** [Why residential proxies](/en/blog/why-residential-proxies-best-scraping), [datacenter vs residential](/en/blog/datacenter-vs-residential-proxies), [how proxy rotation works](/en/blog/how-proxy-rotation-works), [rotating proxies](/en/blog/rotating-proxies-web-scraping), [browser fingerprinting](/en/blog/browser-fingerprinting-explained), [avoid detection in Playwright](/en/blog/avoid-detection-playwright-scraping), [handling CAPTCHAs](/en/blog/handling-captchas-in-scraping), [common web scraping challenges](/en/blog/common-web-scraping-challenges), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping).
-
-## What to Do When You Get Blocked
-
-First, confirm you are blocked (403, 429, or a challenge page). Check response body and status with [Scraping Test](/en/blog/scraping-test). Switch to [residential proxies](/en/blog/residential-proxies) if you use datacenter; add [proxy rotation](/en/blog/proxy-rotation-strategies) so no single IP gets too many requests. Verify IP with [Proxy Checker](/en/blog/proxy-checker). [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies) and [why residential](/en/blog/why-residential-proxies-best-scraping) explain the difference. For strict sites, use [Playwright](/en/blog/playwright-web-scraping-tutorial) or [headless browser](/en/blog/headless-browser-scraping-guide) and follow [avoid detection in Playwright](/en/blog/avoid-detection-playwright-scraping). [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping) and [handling CAPTCHAs](/en/blog/handling-captchas-in-scraping) when you hit challenges. [Browser fingerprinting](/en/blog/browser-fingerprinting-explained) and [HTTP Header Checker](/en/blog/http-header-checker) help debug header and fingerprint issues. [User-Agent Generator](/en/blog/user-agent-generator) for testing. Re-test with [Scraping Test](/en/blog/scraping-test) and [Proxy Checker](/en/blog/proxy-checker). [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked) and [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026) have more.
-
-## Summary
-
-**Anti-bot systems** combine IP checks, headers and TLS, [browser fingerprinting](/en/blog/browser-fingerprinting-explained), behaviour, and challenges (CAPTCHA, [Cloudflare](/en/blog/bypass-cloudflare-web-scraping)). To reduce blocks: use [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and a real or stealth browser ([Playwright](/en/blog/playwright-web-scraping-tutorial), [headless browser](/en/blog/headless-browser-scraping-guide)); throttle and randomise behaviour. See [how websites detect scrapers](/en/blog/how-websites-detect-scrapers), [avoid detection in Playwright](/en/blog/avoid-detection-playwright-scraping), and [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test), [Proxy Rotator](/en/blog/proxy-rotator), [User-Agent Generator](/en/blog/user-agent-generator).
-
-## Further Reading (by topic)
-
-- Proxies: [residential proxies](/en/blog/residential-proxies), [why residential](/en/blog/why-residential-proxies-best-scraping), [datacenter vs residential](/en/blog/datacenter-vs-residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [how proxy rotation works](/en/blog/how-proxy-rotation-works), [rotating proxies](/en/blog/rotating-proxies-web-scraping), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies).
-- Browsers: [Playwright](/en/blog/playwright-web-scraping-tutorial), [headless browser](/en/blog/headless-browser-scraping-guide), [browser fingerprinting](/en/blog/browser-fingerprinting-explained), [avoid detection in Playwright](/en/blog/avoid-detection-playwright-scraping).
-- Challenges: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [handling CAPTCHAs](/en/blog/handling-captchas-in-scraping), [how websites detect scrapers](/en/blog/how-websites-detect-scrapers).
-- Behaviour: [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked), [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping), [common web scraping challenges](/en/blog/common-web-scraping-challenges).
-- Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test), [Proxy Rotator](/en/blog/proxy-rotator), [User-Agent Generator](/en/blog/user-agent-generator), [HTTP Header Checker](/en/blog/http-header-checker).
-- Overview: [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [web scraping architecture](/en/blog/web-scraping-architecture-explained), [common web scraping challenges](/en/blog/common-web-scraping-challenges).
-
-Before scaling, run a few requests and confirm you receive real HTML, not a block or challenge page. Use the tools above to verify proxy and headers; adjust [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), or browser ([Playwright](/en/blog/playwright-web-scraping-tutorial)) as needed. [Cloudflare scraping](/en/blog/cloudflare-scraping) and [python scraping proxy](/en/blog/python-scraping-proxy) for specific stacks. [Robots Tester](/en/blog/robots-tester) to check robots.txt before crawling.
-
-Recap: use [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies); use [Playwright](/en/blog/playwright-web-scraping-tutorial) or [headless browser](/en/blog/headless-browser-scraping-guide) for strict sites; throttle and randomise; test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [How websites detect scrapers](/en/blog/how-websites-detect-scrapers) and [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026).
-
-If blocks persist, try a different [residential proxy](/en/blog/residential-proxies) provider or a fresh browser profile. [Avoid detection in Playwright](/en/blog/avoid-detection-playwright-scraping) and [browser fingerprinting](/en/blog/browser-fingerprinting-explained) for deeper tuning.
-
-## Testing Your Setup
-
-Before scaling, test with a few URLs and confirm you get real content, not a block page. Use [Scraping Test](/en/blog/scraping-test) to hit a URL with your proxy and optional User-Agent; check status code and response. Use [Proxy Checker](/en/blog/proxy-checker) to verify the proxy’s IP, country, and latency. If you see 403, 429, or a challenge page, switch to [residential proxies](/en/blog/residential-proxies) or a real browser and try again. [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked) and [common web scraping challenges](/en/blog/common-web-scraping-challenges) list typical fixes. [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies) for production.
+Anti-bot systems detect and limit automated traffic. They combine several layers—IP reputation, HTTP headers and TLS fingerprints, JavaScript-based browser fingerprinting, behavioral signals, and interactive challenges (CAPTCHA, Cloudflare)—to distinguish humans from bots. Understanding each layer helps you fix the right leak. In practice, reducing blocks usually means using residential proxies and a real or headless browser (Playwright). This guide explains each layer and how to respond.
 
 ---
 
-**Related reading:** [How websites detect web scrapers](/en/blog/how-websites-detect-scrapers), [browser fingerprinting](/en/blog/browser-fingerprinting-explained), [handling CAPTCHAs](/en/blog/handling-captchas-in-scraping), [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked), [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping). Tools: [HTTP Header Checker](/en/blog/http-header-checker), [User-Agent Generator](/en/blog/user-agent-generator), [Proxy Rotator](/en/blog/proxy-rotator).
+## Why Sites Deploy Anti-Bot
+
+Sites block or throttle bots to protect against scraping at scale, credential stuffing, inventory hoarding, ad fraud, and spam. They also use anti-bot to enforce rate limits and paywalls. As a scraper operator, you're one of the use cases they try to control. Your goal is to send traffic that looks and behaves like normal users so you can collect the data you need without overloading the site or triggering bans.
+
+---
+
+## Layer 1: IP and Network Reputation
+
+The first check is often the **IP address** and its **ASN** (Autonomous System Number). Datacenter IP ranges (AWS, GCP, DigitalOcean) are widely known and often flagged or rate-limited. Residential IPs belong to consumer ISPs and look like normal users.
+
+**What happens:** Too many requests from one IP triggers rate limits or blocks, regardless of IP type. Datacenter IPs start with a lower "trust score" and get stricter treatment.
+
+**Fix:** Use rotating residential proxies. Spread load across many IPs. For geo-sensitive content, use geo-targeted residential pools so your IP matches the expected region.
+
+---
+
+## Layer 2: HTTP Headers and TLS Fingerprint
+
+Servers inspect **HTTP request headers**: User-Agent, Accept, Accept-Language, and header order. Default values from scripting runtimes (Python-requests, Node fetch) are easy to fingerprint. **TLS fingerprinting** (e.g. JA3/JA3S) identifies the TLS stack. Browsers and simple HTTP clients have distinct fingerprints; non-browser clients are often classified as bots.
+
+**What happens:** A request with `User-Agent: python-requests/2.31.0` or a non-browser TLS handshake is flagged. Cloudflare and similar systems use this to block scripts before they reach the application.
+
+**Fix:** Use a real browser (Playwright, Puppeteer). It sends browser-like headers and has a correct TLS fingerprint. For strict sites, there is no reliable way to bypass this with `requests` alone.
+
+---
+
+## Layer 3: JavaScript and Browser Fingerprinting
+
+Many systems run **JavaScript** in the page to collect a **browser fingerprint**: canvas and WebGL hashes, font list, screen resolution, timezone, and language. These traits differ between real browsers and headless/automation environments. Automation tools often set `navigator.webdriver = true`, which is a direct bot signal.
+
+**What happens:** If your fingerprint doesn't match a real browser, or shows automation flags, the score rises. Above a threshold: challenge or block.
+
+**Fix:** Use Playwright with a realistic viewport (1920×1080) and consistent User-Agent. Add playwright-stealth to patch common automation leaks. Pair with residential proxies so both IP and fingerprint look legitimate.
+
+---
+
+## Layer 4: Behavioral Signals
+
+Some systems analyse **behaviour**: request timing, mouse movement, scroll speed, click patterns, and session flow. Bots tend to have regular, fast, or scripted patterns.
+
+**What happens:** Fixed delays (e.g. exactly 2 seconds between every request) look robotic. Clicking every link instantly, or scrolling to the bottom in one jump, triggers behavioral checks.
+
+**Fix:** Add random delays: `time.sleep(random.uniform(2, 6))`. Vary scroll and interaction timing. Cap concurrency per domain. Rotate IPs so no single address stands out.
+
+---
+
+## Layer 5: Challenges (CAPTCHA, Cloudflare, DataDome)
+
+When the system is unsure, it may serve a **challenge**: a CAPTCHA, a JavaScript challenge (e.g. Cloudflare "Checking your browser"), or a full page that must be solved before access.
+
+**What happens:** Your combined score (IP + headers + TLS + fingerprint + behavior) exceeds the threshold. The site serves a challenge instead of the real page.
+
+**Fix:** Prevent triggers by improving all layers above. Use residential proxies, a real browser, and randomized delays. CAPTCHA solvers are a last resort—aim to never trigger the challenge.
+
+---
+
+## How Detection Layers Combine
+
+Sites rarely rely on a single signal. They score **IP**, **headers**, **TLS**, **fingerprint**, and **behavior**, then apply a policy: allow, throttle, or challenge. A datacenter IP might be allowed at low rate but blocked above a threshold. A residential IP with a suspicious User-Agent might still get a CAPTCHA. Your goal is to minimise the score at every layer.
+
+---
+
+## Checklist: Reducing Anti-Bot Blocks
+
+| Layer | Fix |
+|-------|-----|
+| IP | Use residential proxies, not datacenter. Rotate to spread load. |
+| Headers/TLS | Use Playwright or headless browser. Don't use requests for strict sites. |
+| Fingerprint | Realistic viewport, User-Agent. Add playwright-stealth if needed. |
+| Behavior | Randomize delays. Cap concurrency. Add jitter to scroll/click. |
+| Challenges | Prevent by fixing above layers. Use solver only as last resort. |
+
+---
+
+## Common Anti-Bot Products
+
+- **Cloudflare** — JS challenges, fingerprinting, sometimes CAPTCHA. Requires residential proxy + Playwright.
+- **DataDome, PerimeterX, Akamai Bot Manager** — Similar: fingerprinting, behavior, challenges. Same approach: real browser + residential proxy + delays.
+- **reCAPTCHA, hCaptcha** — CAPTCHA providers. Avoid triggering by improving IP and fingerprint first.
+
+---
+
+## What to Do When You Get Blocked
+
+**403 or 429** — IP or rate. Switch to residential proxies if on datacenter. Add rotation and delays. Reduce concurrency.
+
+**CAPTCHA or "Checking your browser"** — Multiple signals failing. Ensure residential IP + real browser (Playwright) + randomized delays. Add playwright-stealth if automation leaks persist.
+
+**Works sometimes, fails sometimes** — Normal with rotating pools. Some IPs have lower reputation. Retry with new browser/context (new IP). Use exponential backoff.
+
+**Verify:** Run 20–50 test requests. Check success rate. If below 90%, fix IP or add delays before scaling.
+
+---
+
+## Summary
+
+Anti-bot systems combine IP checks, headers and TLS, browser fingerprinting, behavior, and challenges. To reduce blocks: use residential proxies, rotate IPs, use a real or stealth browser (Playwright), and randomize delays. Test at small scale before scaling.
+
+---
+
+**Further reading:** [How Websites Detect Scrapers](/en/blog/how-websites-detect-scrapers) · [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked)

@@ -8,97 +8,92 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: Why Your Scraper Leaves Fingerprints
 
-This guide covers **Preventing Scraper Fingerprinting** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
-
-## Key Concepts
-
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
-
-## Practical Steps
-
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
-
-## Best Practices
-
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
-
-## Summary
-
-**Preventing Scraper Fingerprinting** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+Sites don't just block by IP. They collect a **browser fingerprint**—canvas hashes, WebGL, fonts, screen size, and automation flags—to identify you. Even with a fresh IP, a mismatched or automation-like fingerprint triggers blocks. This guide covers how to prevent fingerprint-based detection and blend in with real user traffic.
 
 ---
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+## What Gets Fingerprinted
 
+- **Canvas/WebGL** — How your GPU renders. Automation often produces distinct hashes.
+- **navigator.webdriver** — Set to `true` in Playwright/Selenium. Direct bot signal.
+- **Screen/viewport** — Unusual dimensions (e.g. 800×600) or mismatches with User-Agent.
+- **Hardware** — CPU cores, memory. Automation may report atypical values.
+- **Timezone, locale, language** — Should match the proxy region. A US IP with `ja-JP` locale is suspicious.
+
+---
+
+## Strategy 1: Use a Real Browser
+
+`requests` and `httpx` have no browser environment. They cannot render canvas or run fingerprinting JS. For pages that run such scripts, you're detected before you extract anything. **Playwright** or **Puppeteer** drive a real Chromium, so canvas, WebGL, and other APIs behave like a normal browser. This is the baseline.
+
+---
+
+## Strategy 2: Patch Automation Leaks
+
+Playwright sets `navigator.webdriver = true`. Anti-bot scripts check this. Use **playwright-stealth** (or equivalent) to patch it and other common leaks:
+
+```python
+from playwright.sync_api import sync_playwright
+# After installing playwright-stealth, apply before page operations
+from playwright_stealth import stealth_sync
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    context = browser.new_context(
+        viewport={"width": 1920, "height": 1080},
+        user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"
+    )
+    page = context.new_page()
+    stealth_sync(page)
+    page.goto("https://target.com")
+```
+
+Stealth plugins override `navigator.webdriver`, tweak permissions, and smooth other automation signatures.
+
+---
+
+## Strategy 3: Keep Fingerprint Consistent
+
+The worst mistake is **mismatch**. If your User-Agent says "Chrome on Windows" but viewport is 375×667 (mobile), or your proxy exits in Japan but locale is `en-US`, you're flagged. Rules:
+
+- **Viewport** — Use a common desktop size (1920×1080, 1366×768). Match the User-Agent's claimed device.
+- **Locale and timezone** — Match the proxy's exit country. US IP → `en-US`, `America/New_York`.
+- **User-Agent** — Keep consistent per session. Don't randomize per request in a way that creates contradictions.
+
+---
+
+## Strategy 4: Pair with Residential Proxies
+
+A perfect fingerprint with a datacenter IP still often fails. Anti-bot systems weight IP reputation heavily. Use rotating residential proxies so both "who" (IP) and "how" (fingerprint) look legitimate.
+
+---
+
+## Checklist: Prevention Steps
+
+| Step | Action |
+|------|--------|
+| 1 | Use Playwright, not requests, for fingerprinting sites |
+| 2 | Add playwright-stealth to patch `navigator.webdriver` |
+| 3 | Set viewport 1920×1080 (or other realistic desktop size) |
+| 4 | Match locale and timezone to proxy region |
+| 5 | Use residential proxies, not datacenter |
+| 6 | Keep User-Agent, viewport, locale consistent per session |
+
+---
+
+## Troubleshooting
+
+**Still detected after stealth** — Check locale and timezone. Ensure they match the proxy. Try a different viewport (e.g. 1366×768). Some sites fingerprint more aggressively; may need a different proxy provider or region.
+
+**Canvas hash differs from real Chrome** — Playwright's Chromium should match. Ensure you're not spoofing in a way that creates inconsistencies.
+
+---
+
+## Summary
+
+Prevent fingerprint detection by: (1) using Playwright, (2) patching automation leaks with stealth plugins, (3) keeping viewport, locale, and User-Agent consistent and matched to the proxy region, and (4) pairing with residential proxies.
+
+---
+
+**Further reading:** [Browser Fingerprinting Explained](/en/blog/browser-fingerprinting-explained) · [How Websites Detect Scrapers](/en/blog/how-websites-detect-scrapers) · [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked)

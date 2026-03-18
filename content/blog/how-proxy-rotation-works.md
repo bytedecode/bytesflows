@@ -8,59 +8,104 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## How Proxy Rotation Works
+## Introduction: Why Rotation Matters
 
-**Proxy rotation** means sending requests through **different proxy IPs** over time so no single IP gets too much traffic. A **rotating residential proxy** provider gives you a gateway: each request (or each session) can get a new IP from their pool. That spreads load and reduces blocks. See [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies) and [Rotating Proxies for Web Scraping](/en/blog/rotating-proxies-web-scraping). Use [Residential Proxies](/en/blog/residential-proxies) and [Proxy Rotator](/en/blog/proxy-rotator) to test.
-
-## Per-Request vs Per-Session
-
-- **Per-request** — New IP for every HTTP request. Best for high volume and many independent pages. [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy pools](/en/blog/best-proxies-for-web-scraping).
-- **Per-session (sticky)** — Same IP for a period or a set of requests. Useful for multi-step flows (e.g. add to cart, checkout). [How proxy rotation works](/en/blog/proxy-rotation-strategies) in practice.
-
-[Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) and [proxy management for large scrapers](/en/blog/proxy-rotation-strategies). [Why residential proxies](/en/blog/why-residential-proxies-best-scraping) and [datacenter vs residential](/en/blog/datacenter-vs-residential-proxies).
-
-## Integrating with Scrapers
-
-Configure your HTTP client or browser to use the provider’s **gateway** (host:port + auth). No need to manage a list of IPs; the gateway rotates. [Using Proxies with Python](/en/blog/python-scraping-proxy), [Using Proxies with Playwright](/en/blog/using-proxies-playwright). [Proxy Checker](/en/blog/proxy-checker) to verify IP and [Scraping Test](/en/blog/scraping-test) to test. [Proxies](/en/proxies) and [Residential Proxies](/en/blog/residential-proxies).
+If you send 1,000 requests from one IP, you'll be blocked. **Proxy rotation** means routing requests through **different IPs** over time so no single IP gets too much traffic. A rotating residential proxy provider gives you a gateway: each request (or session) gets a new IP from their pool. That spreads load and reduces blocks. This guide explains how it works and when to use each mode.
 
 ---
 
-**Further reading:**
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-- [Proxies](/en/proxies)
+## Per-Request vs Per-Session (Sticky)
 
-**Next steps:** Use [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when scaling. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies).
+### Per-request rotation
 
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Using proxies with Playwright](/en/blog/using-proxies-playwright)
-- [Python proxy scraping](/en/blog/python-proxy-scraping-guide)
-- [Browser fingerprinting](/en/blog/browser-fingerprinting-explained)
-- [Handling CAPTCHAs](/en/blog/handling-captchas-in-scraping)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
+**What it is:** Every HTTP request uses a new IP. You connect to the same gateway (host:port); the provider assigns a different exit IP for each request.
+
+**Best for:** Independent requests—SERP, product pages, search results, API calls. Each page or API call stands alone. No session state to preserve.
+
+**Pros:** Maximum distribution. No single IP sees many requests. Hard to rate-limit.
+
+**Cons:** Not suitable for flows that require cookies (login, checkout). Changing IP mid-session can invalidate the session.
+
+### Per-session (sticky) rotation
+
+**What it is:** The same IP is used for a time window (e.g. 5, 10, 30 minutes) or for a set of requests. You typically pass a session identifier (e.g. in the proxy username) so the gateway keeps you on one IP.
+
+**Best for:** Multi-step flows—login, add to cart, checkout. Infinite-scroll pages. Anything that depends on cookies or server-side session state.
+
+**Pros:** Maintains session. Essential when the site expects the same IP across several requests.
+
+**Cons:** That IP sees more traffic. If the flow is long, the IP may still get rate-limited. Use sticky only when necessary.
+
+---
+
+## Decision Table: When to Use Which
+
+| Use case | Rotation mode | Reason |
+|----------|---------------|--------|
+| SERP, product catalog | Per-request | Independent pages, no session |
+| Login + scrape | Sticky | Session cookies |
+| Add to cart, checkout | Sticky | Cart and session state |
+| Infinite scroll | Sticky | Same page, multiple requests |
+| API polling | Per-request or sticky | Depends on API session requirements |
+
+---
+
+## How the Gateway Works
+
+You don't manage a list of IPs. You configure your HTTP client or browser to use the provider's **gateway** (host:port + auth). The gateway sits in front of a pool of residential IPs. For per-request mode, each outgoing request gets a new IP. For sticky mode, the gateway assigns an IP and keeps it for your session (based on username or session ID).
+
+**Example (Python, per-request):**
+
+```python
+import requests
+proxy = "http://user:pass@p1.example.com:8001"
+proxies = {"http": proxy, "https": proxy}
+r1 = requests.get("https://target.com/page1", proxies=proxies)
+r2 = requests.get("https://target.com/page2", proxies=proxies)
+# r1 and r2 typically use different exit IPs
+```
+
+**Example (Playwright, sticky session):**
+
+```python
+from playwright.sync_api import sync_playwright
+with sync_playwright() as p:
+    browser = p.chromium.launch(proxy={
+        "server": "http://p1.example.com:8001",
+        "username": "user-session-abc123",
+        "password": "pass"
+    })
+    page = browser.new_page()
+    page.goto("https://target.com/login")
+    # ... login, then scrape ... all same IP
+```
+
+The `session-abc123` in the username tells the gateway to keep the same IP for this browser session.
+
+---
+
+## Integration with Scrapers
+
+Configure your HTTP client or browser to use the gateway. No need to fetch or manage IP lists. For Playwright, pass `proxy` to `chromium.launch()`. For `requests`, set `proxies` on the request or session. The gateway handles rotation.
+
+---
+
+## Troubleshooting
+
+**All requests still from same IP** — Check if you're using sticky mode (session ID in username). For per-request, ensure you're not reusing a single requests.Session with connection pooling that might pin to one IP. Try a fresh request per URL.
+
+**Session breaks mid-flow** — Sticky duration may have expired. Shorten the flow or request a longer sticky window from your provider.
+
+**High block rate despite rotation** — Each IP may still get too many requests if concurrency is high. Reduce workers or add more proxy capacity. Add delays between requests.
+
+---
+
+## Summary
+
+- **Per-request:** New IP every request. Use for independent pages.
+- **Sticky:** Same IP for a session. Use for login, checkout, multi-step flows.
+- **Gateway:** One endpoint, provider handles the pool. Configure proxy in your client and go.
+
+---
+
+**Further reading:** [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies) · [Rotating Proxies for Web Scraping](/en/blog/rotating-proxies-web-scraping) · [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping)

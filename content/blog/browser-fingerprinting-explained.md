@@ -10,44 +10,80 @@ coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=f
 
 ## Introduction: Beyond the IP Address
 
-In the early days of the web, an IP address was your primary identity. If a website wanted to block a bot, they simply blocked the IP. But in 2026, anti-bot giants like [Cloudflare](/en/blog/bypass-cloudflare-web-scraping) and Akamai have a much more sophisticated weapon: **Browser Fingerprinting**.
+An IP address was once your primary identity online. Today, anti-bot systems have a more sophisticated weapon: **browser fingerprinting**. Fingerprinting collects dozens of details about your software and hardware to create a nearly unique identifier. Even if you switch your IP or clear cookies, your fingerprint can stay the same—or reveal automation. This guide explains how it works and how to reduce detection.
 
-Browser fingerprinting is a technique that collects dozens of minor details about your software and hardware to create a nearly unique identifier. Even if you switch your IP or clear your cookies, your "fingerprint" stays the same, allowing websites to recognize you as the same bot.
+---
 
 ## How Fingerprinting Works: The Components
 
-A fingerprint is a composite of many seemingly harmless data points:
+A fingerprint is a composite of many data points:
 
-1.  **Canvas and WebGL Rendering:** The way your graphics card renders text and 3D shapes is unique. By asking your browser to draw a hidden image, a script can calculate a checksum that identifies your GPU and OS version.
-2.  **Audio Context Fingerprinting:** Similar to Canvas, this measures how your browser processes audio signals, reflecting your sound card's hardware profile.
-3.  **WebRTC Leakage:** This can sometimes reveal your true local IP address, even if you are using a proxy.
-4.  **Hardware Concurrency & Memory:** The number of CPU cores and amount of RAM reported by the browser.
-5.  **Screen Resolution & Viewport:** The exact pixel dimensions of your browser window.
+**Canvas and WebGL rendering.** The way your GPU renders text and 3D shapes is unique. A script draws to a hidden canvas and hashes the result. Different GPUs, drivers, and OS versions produce different hashes. Automation environments often produce distinct patterns.
+
+**Audio context.** Similar to canvas: the browser processes an audio signal; the output reflects your sound stack. Scripts hash this to identify the environment.
+
+**WebRTC leakage.** Can sometimes reveal your true local IP even when using a proxy. Disable WebRTC in automation when possible.
+
+**Hardware concurrency and memory.** The number of CPU cores and RAM reported by the browser. Automation often reports values that differ from real consumer devices.
+
+**Screen resolution and viewport.** Exact pixel dimensions. Mismatches (e.g. User-Agent says "Chrome on Windows" but viewport is 800×600) trigger checks.
+
+---
 
 ## Why Scrapers Fail Fingerprint Tests
 
-Most basic scraping libraries (like `requests` or `axios`) don't have a browser environment at all. They send headers, but they don't support JS execution or rendering. Modern sites detect this instantly.
+**No browser at all.** Libraries like `requests` or `axios` don't run JavaScript. They send headers but have no canvas, WebGL, or audio. Sites detect this instantly.
 
-Even when using [Playwright](/en/blog/playwright-web-scraping-tutorial) or Puppeteer, the default "headless" mode is a dead giveaway. Headless browsers have specific properties (like `navigator.webdriver=true`) that tell websites "I am a robot."
+**Automation flags.** Playwright and Puppeteer set `navigator.webdriver = true`. Headless browsers have specific properties that signal "I am a robot." Default configurations are easy to detect.
 
-## How to Bypass Fingerprinting
+---
 
-### 1. Advanced Stealth Plugins
-Tools like `playwright-stealth` or `puppeteer-extra-plugin-stealth` are essential. They override the standard browser properties that leak bot status.
+## How to Reduce Fingerprint Detection
 
-### 2. Fingerprint Randomization
-Instead of trying to be "invisible," the key is to look like a varied set of real users. 
--   **Randomize Viewports:** Don't always use 1280x720.
--   **Rotate User-Agents:** Use our [User-Agent generator](/en/blog/user-agent-generator) to match your browser version.
--   **Spoof Canvas/WebGL:** Advanced tools can add a tiny bit of "noise" to the rendering process so that Every session looks unique.
+### 1. Use a real browser (Playwright, Puppeteer)
 
-### 3. High-Quality Proxies
-A clean fingerprint is useless if your IP is from a flagged datacenter. Always pair your fingerprint management with [rotating residential proxies](/en/blog/residential-proxies). This ensures that both your "who" (IP) and your "how" (Fingerprint) look human.
+They provide a real Chromium (or Firefox/WebKit) environment. Canvas, WebGL, and other APIs behave like a normal browser. The main remaining leak is `navigator.webdriver`.
 
-## Strategic Tip: Consistency is Key
+### 2. Add stealth plugins
 
-The most common mistake is a "mismatched" fingerprint. If your User-Agent says you're on a Mac, but your Canvas rendering shows a Windows font, you'll be blocked. Your [proxy rotation strategy](/en/blog/proxy-rotation-strategies) should aim to keep the location and device characteristics consistent within a session.
+Tools like `playwright-stealth` or `puppeteer-extra-plugin-stealth` patch automation properties: `navigator.webdriver`, hardware concurrency, language settings, font lists. Use when the default browser still gets flagged.
 
-## Conclusion
+### 3. Keep fingerprint consistent
 
-Browser fingerprinting is the front line of modern web scraping. Understanding how it works is the first step to overcoming it. By combining [stealth automation](/en/blog/playwright-web-scraping-tutorial) with [premium residential networks](/en/blog/residential-proxies-improve-scraping), you can turn your operations into something undetected at massive scale.
+The most common mistake is a **mismatched** fingerprint. If your User-Agent says Mac Safari but canvas rendering suggests Windows, you're blocked. Use a consistent viewport (e.g. 1920×1080), User-Agent, and locale. Match them to your proxy region (e.g. US IP → en-US, US viewport).
+
+### 4. Pair with residential proxies
+
+A clean fingerprint is useless if your IP is from a flagged datacenter. Use rotating residential proxies so both "who" (IP) and "how" (fingerprint) look human.
+
+---
+
+## Decision Table: What to Do
+
+| Situation | Action |
+|-----------|--------|
+| Using requests/httpx | Switch to Playwright for fingerprinting sites |
+| Playwright still detected | Add playwright-stealth |
+| Fingerprint mismatched | Fix viewport, User-Agent, locale consistency |
+| IP is datacenter | Switch to residential |
+| Low protection site | Requests may suffice; no fingerprint needed |
+
+---
+
+## Troubleshooting
+
+**Blocked despite correct User-Agent** — Check viewport and locale. Ensure they match the User-Agent and proxy region. Add playwright-stealth.
+
+**Canvas/WebGL hash differs from real browser** — Playwright's default Chromium should match. If not, ensure you're not overriding or spoofing in a way that creates inconsistencies.
+
+**WebRTC leaks real IP** — Disable WebRTC in the browser context when possible. Some providers offer this as a setting.
+
+---
+
+## Summary
+
+Browser fingerprinting uses canvas, WebGL, audio, hardware info, and viewport to identify you. Use Playwright (real browser), add stealth plugins if needed, keep fingerprint consistent, and pair with residential proxies. Don't use `requests` for sites that run fingerprinting JavaScript.
+
+---
+
+**Further reading:** [How Websites Detect Scrapers](/en/blog/how-websites-detect-scrapers) · [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked) · [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping)

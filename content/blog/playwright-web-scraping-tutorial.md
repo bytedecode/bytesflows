@@ -10,30 +10,37 @@ coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=f
 
 ## Introduction: Why Playwright in 2026?
 
-The era of "simple" scraping is over. Modern web applications built with React, Vue, and Next.js rely heavily on client-side rendering. For developers, this means old-school HTTP libraries like `requests` or `axios` often return nothing but a skeleton HTML file.
+Modern web applications (React, Vue, Next.js) rely on client-side rendering. HTTP libraries like `requests` or `axios` often return only a skeleton HTML file. **Playwright**, developed by Microsoft, drives a real Chromium, Firefox, or WebKit browser. It executes JavaScript, handles dynamic content, and supports multi-context scenarios. This guide moves beyond basics to a production-ready scraper.
 
-**Playwright**. Developed by Microsoft, Playwright has rapidly overtaken Selenium and Puppeteer as the gold standard for browser automation. It’s faster, more reliable (thanks to auto-waiting), and handles complex multi-context scenarios out of the box. In this guide, we’ll move beyond the "Hello World" and build a production-ready scraper.
+---
 
-## Core Concepts: Contexts vs. Pages
+## Core Concepts: Contexts vs Pages
 
-In Playwright, a **BrowserContext** is like an isolated incognito window. Each context has its own cookies, storage, and cache. This is a game-changer for scale:
+A **BrowserContext** is like an isolated incognito window. Each context has its own cookies, storage, and cache.
 
--   **Isolation:** You can run hundreds of parallel scrapers without them leaking data to each other.
--   **Performance:** You only launch the browser instance once but create multiple contexts for different tasks.
+**Benefits:**
+- **Isolation** — Run hundreds of parallel scrapers without data leaking between them.
+- **Performance** — Launch the browser once, create many contexts for different tasks. Contexts are lighter than full browser instances.
+
+```python
+context1 = await browser.new_context()
+context2 = await browser.new_context()
+# context1 and context2 are isolated
+```
+
+---
 
 ## Solving the "Bot" Problem
 
-If you use Playwright "out of the box," you will get caught. Sites use [browser fingerprinting](/en/blog/browser-fingerprinting-explained) to detect the `navigator.webdriver` flag and other automation leaks.
+Playwright out of the box leaves automation signals. Sites check `navigator.webdriver` and other fingerprint traits. To reduce detection:
 
-### The Stealth Requirement
-To stay under the radar, you must use a stealth plugin or manually patch your browser context. This ensures that even advanced systems like [Cloudflare](/en/blog/bypass-cloudflare-web-scraping) or DataDome see you as a legitimate user.
+1. **Use a stealth plugin** — playwright-stealth patches common automation leaks.
+2. **Use residential proxies** — High-trust IPs reduce blocks. Rotating proxies spread load.
+3. **Realistic viewport and User-Agent** — 1920×1080, consistent Chrome UA. Match locale to proxy region.
 
-### The Proxy Necessity
-High-volume scraping requires [rotating residential proxies](/en/blog/residential-proxies). They provide the IP diversity needed to prevent rate-limiting and geo-blocking.
+---
 
-## Real-World Case: Scraping a Dynamic Marketplace
-
-Let's look at a practical script that handles common e-commerce challenges like infinite scroll and lazy loading.
+## Real-World Example: Dynamic Marketplace with Infinite Scroll
 
 ```python
 import asyncio
@@ -41,52 +48,56 @@ from playwright.async_api import async_playwright
 
 async def scrape_dynamic_store():
     async with async_playwright() as p:
-        # 1. Launch with a high-trust residential proxy
         browser = await p.chromium.launch(
             headless=True,
-            proxy={
-                "server": "http://p1.bytesflows.com:8001",
-                "username": "your_user",
-                "password": "your_password"
-            }
+            proxy={"server": "http://p1.example.com:8001",
+                   "username": "user", "password": "pass"}
         )
-
-        # 2. Setup a realistic environment
         context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
-            viewport={'width': 1280, 'height': 800}
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/121.0.0.0 Safari/537.36",
+            viewport={"width": 1920, "height": 1080}
         )
-
         page = await context.new_page()
-        await page.goto("https://example-shop.com/products")
-
-        # 3. Handle Infinite Scroll
+        await page.goto("https://example-shop.com/products", wait_until="networkidle")
         for _ in range(5):
             await page.mouse.wheel(0, 500)
-            await asyncio.sleep(1) # Wait for lazy-loaded images/items
-
-        # 4. Smart Waiting for content
-        # Locators are better than simple selectors because of auto-waiting
+            await asyncio.sleep(1)
         items = page.locator(".product-card")
         count = await items.count()
-
         for i in range(count):
             title = await items.nth(i).locator(".title").inner_text()
             price = await items.nth(i).locator(".price").inner_text()
-            print(f"Product: {title} | Price: {price}")
-
+            print(f"{title} | {price}")
         await browser.close()
-
-if __name__ == "__main__":
-    asyncio.run(scrape_dynamic_store())
 ```
+
+**Key points:** Proxy for IP. Viewport 1920×1080. `locator` auto-waits for dynamic DOM. Scroll + sleep for lazy load.
+
+---
 
 ## Best Practices for Scaling
 
-1.  **Use Locators, not Selectors:** Playwright's `locator` API handles dynamic shifts in the DOM automatically.
-2.  **Monitor Memory:** Browser instances are heavy. Always ensure you close pages and contexts properly to avoid zombie processes. 
-3.  **Handle Challenges Gracefully:** If you hit a [CAPTCHA](/en/blog/handling-captchas-in-scraping), log the occurrence and rotate your proxy immediately.
+1. **Use locators, not raw selectors** — Playwright's `locator` API auto-waits for elements. Handles dynamic shifts.
+2. **Close resources** — Always close pages and contexts. Avoid zombie browser processes.
+3. **Handle challenges** — On CAPTCHA or block, close the session and retry with a new browser (new IP). Don't hammer the same IP.
+4. **Reuse contexts** — One browser, many contexts. Cheaper than one browser per URL.
 
-## Conclusion
+---
 
-Playwright is the most powerful tool in a scraper's arsenal, but it's only half the battle. To truly succeed at scale, you must combine it with [proactive stealth strategies](/en/blog/scrape-websites-without-getting-blocked) and [premium residential proxies](/en/blog/best-proxies-for-web-scraping).
+## Troubleshooting
+
+**Empty content** — Wait for the right moment. Use `wait_until="networkidle"` or `page.wait_for_selector(".product-list")`. Some SPAs need 2–5 seconds after load.
+
+**Blocked despite proxy** — Add playwright-stealth. Ensure viewport and User-Agent match. Add randomized delays between navigations.
+
+**Memory leak** — Close contexts and pages when done. Reuse contexts instead of creating new browsers for every URL.
+
+---
+
+## Summary
+
+Playwright is the standard for JavaScript-rendered scraping. Use contexts for isolation and scale. Pair with residential proxies and stealth. Prefer locators for dynamic content. Handle infinite scroll with wheel + wait. Close resources and retry with new IP on failure.
+
+---
+
+**Further reading:** [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Avoid Detection in Playwright Scraping](/en/blog/avoid-detection-playwright-scraping) · [Using Proxies with Playwright](/en/blog/using-proxies-playwright)

@@ -10,78 +10,98 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 
 ## Introduction: The Evolution of Web Extraction
 
-A few years ago, you could scrape most of the web with simple HTTP requests. Today, the "static" web is dying. Modern platforms like Amazon, LinkedIn, and Twitter are built as Single Page Applications (SPAs) that require JavaScript to render content. 
+A few years ago, you could scrape most of the web with HTTP requests. Today, the "static" web is shrinking. Modern platforms (Amazon, LinkedIn, many dashboards) are Single Page Applications (SPAs) that require JavaScript to render content. If your scraper doesn't execute JavaScript, you see only a blank page or a loading spinner. **Headless browsers** solve this: they're full browsers without a GUI, rendering pages like Chrome or Firefox but controlled by your code.
 
-If your scraper doesn't execute JavaScript, it sees only a blank page or a loading spinner. This is where **headless browsers** come in. A headless browser is a web browser without a graphical user interface (GUI). It runs in the background, rendering pages exactly like Chrome or Firefox, but controlled by your code.
+---
 
-## Headless vs. Headed: The Trade-off
+## Headless vs Headed: The Trade-off
 
 | Feature | Headless | Headed |
-| :--- | :--- | :--- |
+|---------|----------|--------|
 | **Speed** | Faster | Slower (renders UI) |
-| **Resources** | Lower RAM/CPU | High |
-| **Debugging** | Via logs/screenshots | Visual interaction |
-| **Stability** | High | Subject to UI focus issues |
+| **Resources** | Lower RAM/CPU | Higher |
+| **Debugging** | Logs, screenshots | Visual interaction |
+| **Stability** | High | Can have focus issues |
+| **Detection** | Easier to detect | Harder |
 
-While headless mode is faster, it is also easier for [anti-bot systems](/en/blog/bypass-cloudflare-web-scraping) to detect. Websites check for specific properties (like `window.navigator.webdriver`) that are often set to `true` in headless environments.
+Headless mode is faster but easier for anti-bot systems to detect. Sites check for properties like `navigator.webdriver` that are often set in headless environments. Use stealth plugins and residential proxies to reduce detection.
 
-## Choosing Your Weapon: Playwright vs. Puppeteer
+---
 
-In 2026, the choice usually comes down to two main frameworks:
+## Playwright vs Puppeteer
 
-1.  **Playwright:** Developed by Microsoft. It's our top recommendation because it supports Chromium, Firefox, and WebKit with a single API. It also has superior [fingerprint management](/en/blog/browser-fingerprinting-explained) and multi-context support.
-2.  **Puppeteer:** The original powerhouse for Chromium. While solid, it lacks the cross‑browser flexibility of Playwright.
+In 2026, the main choices are:
 
-## Stealth Strategy: Looking Human in a Headless World
+- **Playwright:** Microsoft. Supports Chromium, Firefox, and WebKit with one API. Cross-browser, good fingerprint management, multi-context support. Top recommendation for most scraping.
+- **Puppeteer:** Chromium-only. Solid, but less flexible than Playwright.
 
-To avoid being blocked, your headless browser must "blend in." Simply using a [residential proxy](/en/blog/residential-proxies) is not enough. You must also:
+---
 
-### 1. Implement Stealth Plugins
-Use libraries like `playwright-stealth`. These plugins "patch" the browser properties that anti-bot scripts look for, such as the hardware concurrency, language settings, and font lists.
+## Stealth Strategy: Looking Human
 
-### 2. Randomize Viewports and User-Agents
-Every session should look slightly different. Use our [User-Agent generator](/en/blog/user-agent-generator) and avoid using the same 1280x720 resolution for every request.
+To avoid blocks, your headless browser must blend in. A residential proxy alone isn't enough.
 
-### 3. Integrated Proxy Management
-Always pair your browser with [rotating residential proxies](/en/blog/proxy-rotation-strategies). A browser factory pattern is the best way to manage this:
+### 1. Use stealth plugins
+
+Libraries like `playwright-stealth` patch browser properties that anti-bot scripts check: `navigator.webdriver`, hardware concurrency, language, font lists. Add when the default setup still gets flagged.
+
+### 2. Randomize viewport and User-Agent
+
+Use a realistic viewport (e.g. 1920×1080). Avoid the same 1280×720 for every request. Match User-Agent to the viewport and locale. Don't randomize per request in a way that creates inconsistencies—keep a consistent profile per session.
+
+### 3. Pair with rotating residential proxies
+
+A browser factory that launches with proxy config ensures every session uses a good IP. Example:
 
 ```python
 from playwright.sync_api import sync_playwright
 
 def run_stealth_browser():
     with sync_playwright() as p:
-        # Launch with a high-trust residential proxy
         browser = p.chromium.launch(
             headless=True,
-            proxy={
-                "server": "http://p1.bytesflows.com:8001",
-                "username": "your_user",
-                "password": "your_pass"
-            }
+            proxy={"server": "http://p1.example.com:8001",
+                   "username": "user", "password": "pass"}
         )
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36...",
-            viewport={'width': 1920, 'height': 1080}
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36",
+            viewport={"width": 1920, "height": 1080}
         )
         page = context.new_page()
-        page.goto("https://www.target-site.com")
-        
-        # Take a screenshot to verify rendering
-        page.screenshot(path="debug.png")
+        page.goto("https://target.com", wait_until="networkidle")
+        page.wait_for_timeout(2000)
         print(page.title())
         browser.close()
-
-run_stealth_browser()
 ```
 
-## Scaling: Managing the Resource beast
+---
 
-The biggest challenge with headless browsers is that they are **resource intensive**. Each tab can consume 100MB+ of RAM.
+## Scaling: Managing Resources
 
--   **Context Reuse:** Instead of launching a new browser for every URL, use "Browser Contexts." They are like incognito windows—lightweight and isolated.
--   **Block Unnecessary Assets:** Disable images, CSS, and fonts to save up to 60% of your bandwidth and speed up page loads.
--   **External Browser Grids:** When you need to scale to [millions of requests](/en/blog/scraping-data-at-scale), consider using a browser factory or a grid service that offloads the heavy lifting to external servers.
+Headless browsers are resource-intensive. Each tab can use 100MB+ RAM.
 
-## Conclusion
+**Context reuse.** Instead of a new browser per URL, use **browser contexts**. They're like incognito windows—lightweight and isolated. One browser, many contexts.
 
-Headless browser scraping is no longer optional for professional data extraction. It is the only way to interact with the modern, dynamic web. By combining [advanced automation frameworks](/en/blog/playwright-web-scraping-tutorial) with [premium residential IP networks](/en/blog/residential-proxies-improve-scraping), you can build scrapers that are both powerful and virtually invisible.
+**Block unnecessary assets.** Disable images, fonts, or CSS when you only need HTML. Can save bandwidth and speed up loads.
+
+**External grids.** For millions of requests, use a browser grid (e.g. Browserless, custom Playwright cluster) that offloads browser instances to external servers.
+
+---
+
+## Troubleshooting
+
+**Empty or loading content** — Wait for the right moment. Use `wait_until="networkidle"` or `page.wait_for_selector(".main-content")` before extracting. Some SPAs need 2–5 seconds after load.
+
+**Blocked despite proxy** — Add playwright-stealth. Ensure viewport and User-Agent are consistent. Add randomized delays.
+
+**High memory usage** — Reuse contexts. Close pages when done. Consider blocking images/CSS for non-visual scraping.
+
+---
+
+## Summary
+
+Headless browsers are required for JavaScript-rendered sites. Use Playwright with a realistic viewport and User-Agent. Add playwright-stealth when needed. Pair with rotating residential proxies. Reuse contexts and block unnecessary assets for scale.
+
+---
+
+**Further reading:** [Playwright Proxy Setup](/en/blog/playwright-proxy-setup) · [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked)
