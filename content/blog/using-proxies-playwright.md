@@ -10,7 +10,9 @@ coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=f
 
 ## Using Proxies with Playwright
 
-Playwright supports **HTTP and SOCKS proxies** at launch. You pass a `proxy` object with `server`, and optionally `username` and `password` for authenticated proxies. For scraping at scale, use a [rotating residential proxy](/en/blog/residential-proxies) gateway so each browser (or context) gets a different IP. See [Playwright Web Scraping Tutorial](/en/blog/playwright-web-scraping-tutorial) and [Best Proxies for Web Scraping](/en/blog/best-proxies-for-web-scraping).
+Playwright supports HTTP and SOCKS proxies at launch. You pass a `proxy` object with `server`, and optionally `username` and `password` for authenticated proxies. For scraping at scale, use a rotating residential proxy gateway so each browser (or context) gets a different IP. This guide covers configuration, per-browser vs per-context, and handling failures.
+
+---
 
 ## Basic Proxy Configuration
 
@@ -29,22 +31,31 @@ with sync_playwright() as p:
     page.goto("https://example.com")
 ```
 
-With a **rotating residential proxy** provider, set `server` to the provider’s gateway (e.g. `http://p1.bytesflows.com:8001`). Each new browser or context can get a new IP. Read [Rotating Proxies for Web Scraping](/en/blog/rotating-proxies-web-scraping) and [How Proxy Rotation Works](/en/blog/proxy-rotation-strategies). Use [Proxy Checker](/en/blog/proxy-checker) to verify the IP Playwright is using.
+With a rotating residential proxy provider, set `server` to the provider's gateway (e.g. `http://gateway.bytesflows.com:8001`). Each new browser or context typically gets a new IP from the rotation. Credentials can go in the URL (`http://user:pass@gateway:port`) or as separate `username` and `password` keys.
 
-## Per-Context vs Per-Browser
+**Common mistake:** Don't put credentials inside `server` if you're also passing `username` and `password`. Use one or the other.
 
-- **Per-browser** — One proxy for all pages in that browser. Good for session-like scraping. [Proxy rotation strategies](/en/blog/proxy-rotation-strategies).
-- **Per-context** — In some setups you can create multiple contexts with different proxies for parallel sessions. [Playwright at scale](/en/blog/playwright-web-scraping-tutorial) and [scraping data at scale](/en/blog/scraping-data-at-scale).
+---
 
-For [Cloudflare](/en/blog/bypass-cloudflare-web-scraping) and anti-bot sites, combine [residential proxies](/en/blog/residential-proxies) with Playwright’s real browser. [Handling Cloudflare with Playwright](/en/blog/bypass-cloudflare-web-scraping) and [avoid detection](/en/blog/scrape-websites-without-getting-blocked).
+## Per-Browser vs Per-Context
+
+**Per-browser:** One proxy for all pages in that browser. Simple. Good when you want one IP for a whole session (e.g. a login flow or multi-step scrape).
+
+**Per-context:** Different proxies for different browser contexts. Use when you want parallel scraping with different IPs. In Playwright, you can create multiple contexts; depending on your setup, each can use a different proxy. For most residential gateways, each new browser gets a new IP automatically, so a simple pattern is: one browser per task, each task gets its own IP.
+
+---
 
 ## Best Practices
 
-- **Use residential proxies** — [Residential Proxies](/en/blog/residential-proxies) and [why residential is best](/en/blog/residential-proxies-improve-scraping) for Playwright.
-- **Rotate** — New browser or context for new IP when needed. [Proxy Rotator](/en/blog/proxy-rotator) to test. [Using Proxies with Python](/en/blog/python-scraping-proxy) for Python + proxy patterns.
-- **Handle failures** — Retry with a new proxy on block or CAPTCHA. [Handling CAPTCHAs](/en/blog/handling-captchas-in-scraping) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping).
+**Use residential proxies for strict targets.** Datacenter IPs are often pre-flagged. Residential IPs pass anti-bot checks far more often, especially with Playwright's real browser.
 
-More: [Playwright Proxy Configuration](/en/blog/playwright-web-scraping-tutorial), [Ultimate Web Scraping Guide](/en/blog/ultimate-guide-web-scraping-2026), [Proxies](/en/proxies).
+**Rotate when needed.** For independent requests (product pages, search results), use a new browser per batch so each gets a new IP. For login or session flows, use sticky sessions so the same IP persists.
+
+**Handle failures.** On 403, timeout, or CAPTCHA, close the browser and retry with a new one (new IP). Don't retry the same IP immediately. Implement exponential backoff: wait 1s, then 2s, then 4s before retrying.
+
+**Verify before scaling.** Use an IP check URL (e.g. `https://api.ipify.org`) through your proxy to confirm exit IP and region. Test on a real target URL before increasing concurrency.
+
+---
 
 ## Node.js Example
 
@@ -67,38 +78,44 @@ const { chromium } = require('playwright');
 })();
 ```
 
-With a [rotating residential proxy](/en/blog/residential-proxies) gateway, each new `browser` or `context` can get a new exit IP. See [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial) and [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping). Use [Proxy Checker](/en/blog/proxy-checker) to confirm the IP.
-
-## Handling Proxy Failures
-
-Proxies can be slow, offline, or blocked by the target. In Playwright, a failed request will throw or return an error. Best practice: catch errors, retry with the same or a new proxy (new browser/context if using [rotating proxies](/en/blog/rotating-proxies-web-scraping)), and back off on repeated failure. See [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) and [common proxy mistakes](/en/blog/avoid-ip-bans-web-scraping). For [Cloudflare](/en/blog/bypass-cloudflare-web-scraping) or CAPTCHA, combine [residential proxies](/en/blog/residential-proxies) with [handling CAPTCHAs](/en/blog/handling-captchas-in-scraping). [Scraping test](/en/blog/scraping-test) helps validate before scaling.
-
-## Environment Variables
-
-Some providers support proxy via environment variables (e.g. `HTTP_PROXY`, `HTTPS_PROXY`). Playwright can pick these up depending on version and config. For explicit control and [proxy rotation](/en/blog/proxy-rotation-strategies), passing `proxy` in code is usually better. [How proxy rotation works](/en/blog/proxy-rotation-strategies) and [proxy rotation strategies](/en/blog/proxy-rotation-strategies). [Using proxies with Python](/en/blog/python-scraping-proxy) for Python-side patterns. [Residential proxies](/en/blog/residential-proxies) and [Proxies](/en/proxies) for product options.
+With a rotating residential gateway, each new `browser` or `context` gets a new exit IP. Structure your code so each scrape task uses its own browser when you need rotation.
 
 ---
 
-**Further reading:**
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-- [Proxies](/en/proxies)
+## Handling Proxy Failures
+
+Proxies can be slow, offline, or blocked by the target. In Playwright, a failed request will throw or return an error. Best practice:
+
+1. **Catch errors** — Wrap `page.goto()` and other calls in try/except (Python) or try/catch (Node).
+2. **Retry with new proxy** — Close the browser and launch a new one. With a rotating gateway, that gives you a new IP.
+3. **Back off on repeated failure** — If the same URL fails 3 times with different IPs, pause before retrying. Use exponential backoff.
+4. **For Cloudflare or CAPTCHA** — Ensure you're using residential proxies and a real browser. Add delays and realistic viewports. If blocks persist, reduce concurrency.
+
+---
+
+## Environment Variables
+
+Some providers support proxy via environment variables (e.g. `HTTP_PROXY`, `HTTPS_PROXY`). Playwright can pick these up in some configurations. For explicit control and reproducibility, passing `proxy` in code is usually better. It avoids env conflicts and makes rotation behavior clear. Store credentials in env vars for security, but pass them to `launch()` explicitly:
+
+```python
+import os
+proxy = {
+    "server": os.environ["PROXY_SERVER"],
+    "username": os.environ["PROXY_USER"],
+    "password": os.environ["PROXY_PASS"],
+}
+browser = p.chromium.launch(proxy=proxy)
+```
+
+---
+
+## Summary
+
+- Pass `proxy` with `server` and credentials to `browser.launch()`.
+- Each new browser gets a new IP with a rotating gateway.
+- Use residential proxies for strict targets; handle failures with retry and backoff.
+- Verify exit IP before scaling.
+
+---
+
+**Further reading:** [Playwright Proxy Setup](/en/blog/playwright-proxy-setup) · [Bypass Cloudflare Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping)
