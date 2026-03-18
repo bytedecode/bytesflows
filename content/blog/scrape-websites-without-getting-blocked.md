@@ -10,69 +10,97 @@ coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=f
 
 ## Introduction: The "Cat and Mouse" Game
 
-Web scraping has evolved into a sophisticated game of cat and mouse. On one side, you have developers trying to extract public data; on the other, multi-billion dollar companies using advanced [anti-bot systems](/en/blog/anti-bot-systems-explained) like Cloudflare, PerimeterX, and Akamai.
+Web scraping has evolved into a sophisticated game. On one side, developers extracting public data; on the other, companies using anti-bot systems like Cloudflare, PerimeterX, and Akamai. If you're getting blocked, your crawler is leaving "digital footprints" that identify it as a bot. This guide shows how to reduce those footprints and scrape with minimal blocks.
 
-If you are getting blocked, it's because your crawler is leaving "digital footprints" that scream "I AM A BOT!" This guide will show you how to erase those footprints and scrape completely undetected.
+---
 
-## 1. Respecting the Basics (Don't Be a Greedy Bot)
+## 1. Rate Limiting and Delays
 
-The fastest way to get your [residential proxy](/en/blog/residential-proxies) banned is to hit a server too hard. 
+The fastest way to get blocked is to hit a server too hard. If a human reads 5 pages per minute, don't try 500.
 
--   **Rate Limiting:** If a human can only read 5 pages per minute, don't try to read 500.
--   **Randomized Delays:** Never use a fixed `time.sleep(1)`. Instead, use a Gaussian distribution: `time.sleep(random.uniform(2, 7))`.
--   **Respect Robot.txt:** Even if you plan to bypass it, understanding the site's "rules" helps you identify high-risk areas.
+**Randomized delays:** Never use fixed `time.sleep(1)`. Use `time.sleep(random.uniform(2, 7))` or a Gaussian distribution. Variable timing looks more human. Fixed delays are a red flag.
 
-## 2. Master the Header Layer
+**Respect robots.txt:** Even if you plan to bypass it, understanding the site's rules helps you identify high-risk areas and crawl rates. Some sites specify crawl-delay or restrict certain paths.
 
-Modern bot detectors look beyond the `User-Agent`. They check for consistency across all headers.
+**Concurrency caps:** Don't run 50 parallel workers against the same domain. Start with 3–5. Increase only if success rate stays high.
 
-### Client Hints (The New Standard)
-Traditional `User-Agent` strings are being deprecated. Browsers now use **Client Hints** (`Sec-CH-UA`). If your headers don't match your browser version, you are instantly flagged.
-```http
-Sec-CH-UA: "Google Chrome";v="121", "Not A(Brand";v="99", "Chromium";v="121"
-Sec-CH-UA-Mobile: ?0
-Sec-CH-UA-Platform: "Windows"
-```
+---
 
-### Referral Traffic
-Never land directly on a product page. Start at the homepage or a search engine, and use a `Referer` header to look like a natural visitor.
+## 2. The Header Layer
 
-## 3. Browser Fingerprinting: The Silent Killer
+Modern bot detectors look beyond User-Agent. They check consistency across all headers.
 
-Websites can identify you even if you change your IP. They do this via [browser fingerprinting](/en/blog/browser-fingerprinting-explained), collecting hundreds of tiny details:
--   **Canvas Fingerprinting:** Drawing a hidden image to see how your GPU renders it.
--   **WebGL Info:** Checking your graphics driver details.
--   **Audio Context:** Measuring how your system processes sound.
+**Client Hints:** Browsers use `Sec-CH-UA` and related headers. If your headers don't match your browser version or viewport, you're flagged. When using Playwright, it sends correct headers by default. When using `requests`, ensure User-Agent, Accept-Language, Accept, and other headers are consistent and realistic.
 
-**Solution:** Use [Playwright with Stealth plugins](/en/blog/playwright-web-scraping-tutorial) or frameworks like [Crawlee](/en/blog/crawlee-web-scraping-tutorial) that randomize these values for every session.
+**Referer:** Don't land directly on deep product pages. Use a logical navigation path. Set a realistic Referer (e.g. same-domain homepage or search page) when possible.
 
-## 4. IP Management: Use High-Trust Networks
+**Consistency:** Use the same header set for the whole session. Don't randomize headers per request—sites expect consistency from a "user."
 
-If you are using cheap datacenter proxies, you've already lost. High-trust websites maintain a "reputation score" for every IP range.
+---
 
--   **Rotate Frequently:** Switch IPs every few requests or use [sticky sessions](/en/blog/proxy-rotation-strategies) only when necessary (e.g., during a checkout flow).
--   **Use Residential Proxies:** Because these IPs belong to real homes, websites are terrified of blocking them by mistake. 
--   **Geo-consistency:** Ensure your browser's `timezone_id` and `locale` match the location of your [proxy IP](/en/proxies). A Japanese IP with a "en-US" browser is a major red flag.
+## 3. Browser Fingerprinting
 
-## 5. Behavioral Mimicry (The Human Touch)
+Sites can identify you even if you change your IP. They collect details via JavaScript:
 
-Advanced AI detectors monitor how you interact with the page.
--   **Mouse Movements:** Avoid "warping" the cursor. Use libraries that simulate curved paths and varying speeds.
--   **Scroll Patterns:** Real users don't scroll to the bottom instantly. They scroll, stop, read, and scroll again.
--   **Event Triggers:** Trigger common events like `onmousemove` or `onfocus` to signal activity.
+- **Canvas fingerprinting:** Drawing a hidden image to see how your GPU renders it.
+- **WebGL:** Checking graphics driver details.
+- **Audio context:** Measuring how your system processes sound.
 
-## Summary Checklist for 2026
+**Solution:** Use Playwright or Puppeteer. They run a real browser with realistic fingerprints. For extra hardening, playwright-stealth patches common automation leaks (`navigator.webdriver`, etc.). Crawlee and similar frameworks also help with fingerprint randomization.
+
+---
+
+## 4. IP Management
+
+If you're using cheap datacenter proxies, you've already lost on strict targets. High-trust sites maintain reputation scores for IP ranges.
+
+**Use residential proxies.** These IPs belong to real homes. Sites are reluctant to block them. For Cloudflare, e-commerce, and SERP, residential is the default.
+
+**Rotate frequently.** Switch IPs every few requests with a rotating gateway. Use sticky sessions only when necessary (e.g. checkout flow).
+
+**Geo-consistency.** If your proxy exits in Japan, set `locale="ja-JP"` and a matching timezone. A Japanese IP with "en-US" locale can trigger checks. Match browser signals to proxy location.
+
+---
+
+## 5. Behavioral Mimicry
+
+Advanced detectors monitor how you interact with the page.
+
+**Mouse movements:** Avoid "warping" the cursor. Use curved paths and varying speeds if you need to simulate clicks. For many scraping tasks, you don't need mouse movement—just navigation and extraction.
+
+**Scroll patterns:** Real users don't scroll to the bottom instantly. They scroll, stop, read, scroll again. For pages that load content on scroll, add variable scroll delays.
+
+**Event triggers:** Some sites detect activity. Trigger common events like `onmousemove` or `onfocus` if the target requires it. Playwright's default behavior often suffices.
+
+---
+
+## 6. Decision Flow: When to Use What
+
+**Static HTML, low protection** — `requests` + BeautifulSoup may work. No proxy needed for small volumes. Add delays.
+
+**JS-rendered, low protection** — Playwright or Puppeteer. Maybe no proxy for small volumes. Add delays.
+
+**Cloudflare, anti-bot, or strict target** — Playwright + residential proxies. Rotating. Delays. Realistic viewport and headers. No shortcuts.
+
+---
+
+## Summary Checklist
 
 | Strategy | Impact | Effort |
-| :--- | :--- | :--- |
-| **Residential Proxies** | High | Low (Buy from [Bytesflows](/en/proxies)) |
-| **Stealth Browser** | High | Medium (Use Playwright/Crawlee) |
-| **Header Randomization** | Medium | Low |
-| **Human-like Delays** | Medium | Low |
-| **CAPTCHA Evasion** | Crucial | High (Aim to avoid triggering) |
+|----------|--------|--------|
+| Residential proxies | High | Low |
+| Stealth browser (Playwright) | High | Medium |
+| Randomized delays | Medium | Low |
+| Header consistency | Medium | Low |
+| Cap concurrency | Medium | Low |
+| CAPTCHA evasion | Crucial | High (aim to avoid triggering) |
 
-## Conclusion
+---
 
-Scraping without getting blocked is about **anonymity and authenticity**. By combining a [robust proxy network](/en/blog/residential-proxies-improve-scraping) with intelligent browser automation, you can access the data you need without the frustration of constant bans.
+## Summary
 
-Ready to implement? Read our [Ultimate Guide to Scraping Data at Scale](/en/blog/scraping-data-at-scale) to see how these techniques work in high-volume environments.
+Scraping without getting blocked is about **anonymity and authenticity**. Combine residential proxies with a real browser (Playwright), randomized delays, concurrency caps, and consistent headers. Validate at small scale before scaling. Monitor success and block rates. When blocks rise, slow down or add more proxy capacity.
+
+---
+
+**Further reading:** [Playwright Proxy Setup](/en/blog/playwright-proxy-setup) · [Bypass Cloudflare Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping)

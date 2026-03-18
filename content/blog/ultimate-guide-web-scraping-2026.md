@@ -93,58 +93,27 @@ import random
 import time
 
 def scrape_product_page(url, proxy_config):
-    """
-    Scrape a single product page through a residential proxy.
-    Each call uses a new browser = new IP with rotating gateway.
-    """
     with sync_playwright() as p:
-        # 1. Launch with proxy - each browser gets new IP from rotation
-        browser = p.chromium.launch(
-            headless=True,
-            proxy={
-                "server": proxy_config["server"],
-                "username": proxy_config["username"],
-                "password": proxy_config["password"],
-            }
-        )
-        
-        # 2. Context mimics real desktop user - avoids fingerprint mismatches
+        browser = p.chromium.launch(headless=True, proxy=proxy_config)
         context = browser.new_context(
             viewport={"width": 1920, "height": 1080},
             locale="en-US",
-            timezone_id="America/New_York",
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"
         )
-        
         page = context.new_page()
-        
-        try:
-            # 3. Human-like delay before navigation - reduces pattern detection
-            time.sleep(random.uniform(2, 5))
-            
-            # 4. Navigate and wait for content - Cloudflare may take 2-10s
-            page.goto(url, wait_until="networkidle", timeout=30000)
-            page.wait_for_timeout(random.randint(2000, 4000))  # Buffer for challenges
-            
-            # 5. Extract - adjust selectors for your target
-            title_el = page.query_selector("h1")
-            price_el = page.query_selector(".price")
-            title = title_el.inner_text() if title_el else ""
-            price = price_el.inner_text() if price_el else ""
-            
-            return {"url": url, "title": title, "price": price}
-            
-        except Exception as e:
-            # On failure, caller can retry with new browser (new IP)
-            raise
-        finally:
-            browser.close()
+        time.sleep(random.uniform(2, 5))
+        page.goto(url, wait_until="networkidle", timeout=30000)
+        page.wait_for_timeout(random.randint(2000, 4000))
+        title_el = page.query_selector("h1")
+        price_el = page.query_selector(".price")
+        title = title_el.inner_text() if title_el else ""
+        price = price_el.inner_text() if price_el else ""
+        browser.close()
+        return {"url": url, "title": title, "price": price}
 
-# Usage: one browser per URL = one IP per URL with rotating proxy
-proxy = {"server": "http://gateway.example.com:8001", "username": "user", "password": "pass"}
+proxy = {"server": "http://user:pass@gateway:8001"}
 for url in product_urls:
     result = scrape_product_page(url, proxy)
-    # store result
 ```
 
 **Why each choice matters:**  

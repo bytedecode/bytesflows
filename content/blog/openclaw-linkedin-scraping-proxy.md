@@ -208,5 +208,21 @@ Once you stop thinking in terms of “a one‑off script on a box” and start t
 **long‑running OpenClaw agents with a proper proxy layer**,  
 LinkedIn scraping becomes much easier to treat as infrastructure instead of an experiment.
 
+---
+
+## Troubleshooting
+
+**CAPTCHAs spike after a few hours** — Concurrency or rate too high. Reduce parallel sessions. Add longer pauses between profile opens. Ensure rotation is active (new IP per session or per N requests).
+
+**"Unusual activity" or temporary search limits** — One IP saw too much. Rotate more often. For authenticated flows, use sticky sessions but rotate between campaigns or batches.
+
+**Account restrictions or logouts** — LinkedIn may flag the account, not just the IP. Spread load across accounts. Avoid logging in from many different IPs with the same account in a short window.
+
+**Verify:** Run a small campaign (50–100 profiles). Track CAPTCHA rate, success rate, and any warnings. If stable for 24–48 hours, scale gradually.
+
+---
+
+**Further reading:** [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping) · [Using Proxies with Playwright](/en/blog/using-proxies-playwright) · [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping)
+
 
 

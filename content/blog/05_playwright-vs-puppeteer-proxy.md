@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=f
 
 ## Playwright vs Puppeteer: Proxy Support
 
-Both Playwright and Puppeteer can drive Chromium for browser automation and scraping. Both support proxies. This guide compares how each handles proxy configuration and which might fit better for your use case.
+Both Playwright and Puppeteer drive Chromium for browser automation and scraping. Both support proxies. This guide compares how each configures proxies, when one might fit better than the other, and what to watch for when using either with residential proxies for scraping.
 
 ---
 
@@ -19,7 +19,7 @@ Both Playwright and Puppeteer can drive Chromium for browser automation and scra
 | Aspect | Playwright | Puppeteer |
 |--------|------------|-----------|
 | Proxy config | Native `proxy` object in `launch()` | Via `args: ['--proxy-server=...']` |
-| Per-context proxy | Yes (multiple contexts, different proxies) | Per-browser only |
+| Per-context proxy | Yes (can assign different proxies per context) | Per-browser only |
 | Browsers | Chromium, Firefox, WebKit | Chromium only |
 | Language | Python, Node, Java, .NET | Node.js (Python via pyppeteer, less mature) |
 | HTTP/SOCKS | Both | Both |
@@ -28,7 +28,7 @@ Both Playwright and Puppeteer can drive Chromium for browser automation and scra
 
 ## Playwright: Proxy Configuration
 
-Playwright accepts a `proxy` object directly:
+Playwright accepts a `proxy` object directly. Clean and explicit:
 
 ```python
 from playwright.sync_api import sync_playwright
@@ -41,9 +41,11 @@ with sync_playwright() as p:
             "password": "pass"
         }
     )
+    page = browser.new_page()
+    page.goto("https://example.com")
 ```
 
-Clean, readable. For rotating residential proxies, point `server` to your provider's gateway. Each new browser gets a new IP.
+For rotating residential proxies, point `server` to your provider's gateway. Each new browser gets a new IP. Credentials go in `username` and `password`, or in the URL: `http://user:pass@gateway:8001`.
 
 ---
 
@@ -57,44 +59,78 @@ const puppeteer = require('puppeteer');
 const browser = await puppeteer.launch({
   args: ['--proxy-server=http://user:pass@gateway.example.com:8001']
 });
+
+const page = await browser.newPage();
+await page.goto('https://example.com');
 ```
 
-Credentials can go in the URL (`user:pass@host:port`) or you may need a plugin for authenticated proxies, depending on your setup. Both HTTP and SOCKS proxies work via `--proxy-server`.
+Credentials can go in the URL. For some authenticated proxies, you may need `puppeteer-extra` with a proxy plugin. Both HTTP and SOCKS work via `--proxy-server`. Each new browser gets a new IP with a rotating gateway.
 
 ---
 
-## Per-Context vs Per-Browser: Why It Matters
+## Per-Context vs Per-Browser: Practical Impact
 
-**Playwright** lets you create multiple browser contexts, and (in many setups) you can launch separate browsers with different proxies. So you can run 10 parallel scrapers, each with its own IP, in one process. Useful for high-concurrency scraping with rotation.
+**Playwright** can create multiple browser contexts. In some setups you can assign different proxies per context. That means one process can run 10 parallel scrapers, each with a different IP, without launching 10 separate browser processes. Useful when you need fine-grained control.
 
-**Puppeteer** applies the proxy at browser launch. All pages in that browser share the same proxy. To get a new IP, you need a new browser instance. You can still do that—launch 10 browsers with a rotating gateway, each gets a new IP—but you don’t have built-in per-context proxy switching like Playwright’s model can offer.
+**Puppeteer** applies the proxy at browser launch. All pages in that browser share the same proxy. To get a new IP, you need a new browser. For most scraping workloads, that's fine: each worker launches its own browser, each gets its own IP from the rotating gateway.
 
-For most scraping workloads, both are fine: each worker = one browser = one proxy = one IP. The difference shows up when you want many contexts in one process with different IPs; Playwright’s API supports that more naturally.
-
----
-
-## Multi-Browser and Ecosystem
-
-**Playwright** supports Chromium, Firefox, and WebKit. Useful if you need to test or scrape in different engines. Python support is first-class, which is common in scraping.
-
-**Puppeteer** is Chromium-only. Node.js focused. If you’re in a Node team and only need Chromium, it’s straightforward.
+**Bottom line:** For "one worker = one browser = one IP," both work the same. The difference matters when you want many contexts in one process with different IPs; Playwright supports that more naturally.
 
 ---
 
-## Which to Choose for Scraping with Proxies?
+## Decision: Which to Choose for Scraping with Proxies?
 
-- **Choose Playwright if:** You want Python, multi-browser, or clearer per-context proxy patterns. It’s also well-suited for scaling and modern scraping stacks.
-- **Choose Puppeteer if:** You’re already in Node.js, only need Chromium, and prefer a simpler, single-browser API.
+**Choose Playwright if:**
+- You want Python (first-class support).
+- You need multi-browser (Chromium, Firefox, WebKit) for testing or evasion.
+- You prefer the native `proxy` object and clearer API.
+- You're building a modern scraping stack and want active development and features.
 
-For proxy usage specifically, both work. The proxy setup is slightly cleaner in Playwright (native object vs. args), but once configured, behavior is similar: point to your rotating gateway and each new browser gets a new IP. Pair either with residential proxies for anti-bot targets.
+**Choose Puppeteer if:**
+- You're already in Node.js and only need Chromium.
+- You want a simpler, more established API.
+- Your team is familiar with it and migration cost matters.
+
+**For proxy usage specifically:** Both work. Point to your rotating gateway; each new browser gets a new IP. Pair either with residential proxies for Cloudflare and similar targets. The tool doesn't fix a bad IP—proxy quality matters more than Playwright vs Puppeteer.
 
 ---
 
 ## Common Pitfalls for Both
 
-1. **Credentials in the wrong place.** Playwright: use `username` and `password` keys. Puppeteer: embed in the URL or use an auth plugin.
-2. **Forgetting to close browsers.** Each browser uses memory. Close them when done, or you’ll run out of resources at scale.
-3. **Using datacenter proxies for strict sites.** Both tools benefit from residential proxies for Cloudflare and similar targets. The tool doesn’t fix a bad IP.
+**1. Credentials in the wrong place.** Playwright: use `username` and `password` keys, or a full URL. Puppeteer: embed in the URL or use an auth plugin. Wrong format = connection failures.
+
+**2. Forgetting to close browsers.** Each browser uses 50–200MB+ memory. At scale, not closing them leads to OOM. Always `browser.close()` in a `finally` block or context manager.
+
+**3. Using datacenter proxies for strict sites.** Both tools benefit from residential proxies. Datacenter IPs often fail on Cloudflare and e-commerce regardless of browser choice.
+
+**4. Same proxy for all workers.** With a rotating gateway, each browser should get its own connection. Don't share one browser across workers—each worker needs its own browser (and thus its own IP).
+
+---
+
+## Verification: Is the Proxy Applied?
+
+For both tools, verify before scaling:
+
+```python
+# Playwright
+with sync_playwright() as p:
+    browser = p.chromium.launch(proxy={"server": PROXY})
+    page = browser.new_page()
+    page.goto("https://api.ipify.org?format=json")
+    print(page.content())  # Should show proxy's exit IP
+    browser.close()
+```
+
+```javascript
+// Puppeteer
+const browser = await puppeteer.launch({ args: ['--proxy-server=' + PROXY] });
+const page = await browser.newPage();
+await page.goto('https://api.ipify.org?format=json');
+console.log(await page.content());
+await browser.close();
+```
+
+If you see your server's IP, the proxy isn't applied. Check the proxy URL, credentials, and that the proxy is reachable from your environment.
 
 ---
 
@@ -103,9 +139,7 @@ For proxy usage specifically, both work. The proxy setup is slightly cleaner in 
 - Playwright: native `proxy` object, multi-browser, strong Python support.
 - Puppeteer: `--proxy-server` args, Chromium-only, Node-focused.
 - Both work with rotating residential proxies; each new browser = new IP.
-- Prefer Playwright for Python, multi-browser, or more flexible proxy-per-context patterns.
-
-👉 **Try BytesFlows Residential Proxies** — works with both Playwright and Puppeteer.
+- For scraping, prefer Playwright if you want Python or multi-browser; Puppeteer if you're Node-only and prefer simplicity.
 
 ---
 

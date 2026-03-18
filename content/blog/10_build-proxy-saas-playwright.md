@@ -10,7 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 
 ## Build a Proxy SaaS with Playwright
 
-A proxy SaaS offers scraping or browser automation as a service. Customers send URLs or tasks; your platform runs Playwright (or similar) through proxies and returns the data. This guide covers the core architecture, how to integrate Playwright and proxies, and what to watch as you scale.
+A proxy SaaS offers scraping or browser automation as a service. Customers send URLs or tasks; your platform runs Playwright through proxies and returns the data. This guide covers the architecture, how to integrate Playwright and proxies in workers, proxy allocation strategies, scaling, failure handling, billing, and what to monitor.
 
 ---
 
@@ -18,77 +18,80 @@ A proxy SaaS offers scraping or browser automation as a service. Customers send 
 
 Typical flow:
 
-1. **Customer** submits a job (URL, extraction rules, or high-level task).
-2. **Your API** enqueues the job.
-3. **Worker** picks up the job, launches Playwright with a proxy, performs the scrape.
-4. **Result** is stored or returned to the customer.
+1. **Customer** submits a job via API (URL, extraction rules, or high-level task).
+2. **Your API** validates the request, enqueues the job, returns a job ID.
+3. **Worker** picks up the job from the queue, launches Playwright with a proxy, performs the scrape.
+4. **Result** is stored (DB, object storage) or sent via webhook. Customer polls or receives callback.
 
-You need: a proxy backend (residential proxies or a proxy pool), an automation layer (Playwright), job queue, workers, and billing/limits.
+You need: proxy backend (residential provider), automation layer (Playwright), job queue (Redis, SQS, etc.), workers, API with auth and quotas, and billing/usage tracking.
 
 ---
 
 ## Architecture Overview
 
-**Proxy layer:** Residential proxy provider (or multiple) as backend. Each worker gets proxy credentials; traffic exits through the provider’s IPs. You don’t run proxies yourself—you resell or bundle proxy access with automation.
+**Proxy layer:** Residential proxy provider as backend. Each worker gets proxy credentials. Traffic exits through the provider's IPs. You resell or bundle proxy access with automation. You don't run proxies yourself.
 
-**Automation layer:** Playwright runs in workers. Each job gets its own browser instance (and thus its own proxy session). Playwright handles JS, cookies, and anti-bot targets better than raw HTTP.
+**Automation layer:** Playwright runs in workers. Each job gets its own browser instance and thus its own proxy session. Playwright handles JS, cookies, and anti-bot targets better than raw HTTP.
 
-**API/gateway:** REST or similar. Customers post jobs, poll for results, or receive webhooks. Authenticate with API keys, enforce rate limits and quotas.
+**API/gateway:** REST or similar. Customers post jobs, poll for results, or receive webhooks. Authenticate with API keys. Enforce rate limits and quotas per customer.
 
-**Queue:** Redis, SQS, RabbitMQ, or similar. Decouples API from workers, handles retries and backoff.
+**Queue:** Redis, SQS, RabbitMQ. Decouples API from workers. Handles retries, backoff, and prioritization. Workers pull jobs; failed jobs can be retried or moved to a dead-letter queue.
 
-**Billing:** Track usage (requests, pages, bandwidth, or proxy IP-minutes). Enforce quotas and charge accordingly.
+**Billing:** Track usage (requests, pages, bandwidth). Enforce quotas. Charge per plan or usage.
 
 ---
 
-## Playwright + Proxy in Workers
+## Worker Implementation: Playwright + Proxy
 
 Each worker process runs Playwright. For each job, it launches a browser with the appropriate proxy:
 
 ```python
 def run_scrape_job(job):
-    proxy = get_proxy_for_job(job)  # from your pool or customer's config
+    proxy = get_proxy_for_job(job)  # from pool or customer config
     with sync_playwright() as p:
         browser = p.chromium.launch(
             proxy={"server": proxy["server"], "username": proxy["user"], "password": proxy["pass"]}
         )
         page = browser.new_page()
         page.goto(job["url"])
-        # extract per job["rules"]
-        data = extract_data(page)
+        data = extract_data(page, job.get("rules"))
         browser.close()
     return data
 ```
 
-`get_proxy_for_job` might pull from a shared pool, assign per-customer proxy configs, or use geo parameters from the job. Proxy config is decided by your platform, not the customer.
+`get_proxy_for_job` might pull from a shared pool, assign per-customer configs, or use geo parameters from the job. Proxy config is decided by your platform, not the customer. Each job = one browser = one IP from your pool.
 
 ---
 
 ## Proxy Allocation Strategies
 
-**Shared pool:** All customers share one proxy pool. Simple, but noisy customers can affect others. Use when starting out or when usage is low.
+**Shared pool:** All customers share one proxy pool. Simple. Noisy customers can affect others. Use when starting out or when usage is low.
 
-**Per-customer pools:** Each customer gets a quota of proxy capacity (e.g. X concurrent sessions). Isolates abuse and allows different tiers (e.g. more IPs for enterprise).
+**Per-customer quotas:** Each customer gets a quota (e.g. X concurrent sessions or Y requests/min). Isolates abuse. Allows tiers (enterprise = more capacity).
 
-**Geo assignment:** Jobs specify region (e.g. US, DE). Route to geo-specific proxy configs. Requires your proxy provider to support geo.
+**Geo assignment:** Jobs specify region (US, DE, etc.). Route to geo-specific proxy configs. Requires provider to support geo.
 
-**Sticky vs rotating:** Use rotating for independent scrapes; use sticky when a job needs login or multi-step flow. Pass session ID in proxy config for sticky.
-
----
-
-## Scaling Workers
-
-- **Vertical:** Bigger machines, more CPU/RAM per worker. Playwright is heavy; 4–8 workers per machine is typical.
-- **Horizontal:** More machines, more workers. Queue distributes jobs. Ensure proxy pool size grows with worker count—each worker needs IPs to use.
-- **Concurrency per domain:** Even with many workers, cap how many hit the same domain at once. Otherwise you trigger rate limits regardless of IP count.
+**Sticky vs rotating:** Use rotating for independent scrapes. Use sticky when a job needs login or multi-step flow. Pass session ID in proxy config for sticky.
 
 ---
 
 ## Handling Failures
 
-- **Retry:** On 403, timeout, or CAPTCHA, retry with a new browser (new IP). Use exponential backoff.
-- **Circuit breaker:** If a domain is failing repeatedly, pause jobs for it briefly to avoid wasting proxy budget.
-- **Dead letter queue:** After N retries, move failed jobs to a DLQ for manual inspection or customer notification.
+**Retry with new IP:** On 403, timeout, or CAPTCHA, close the browser and retry with a new one (new IP). Use exponential backoff (1s, 2s, 4s) between retries. Limit retries (e.g. 3) to avoid infinite loops.
+
+**Circuit breaker:** If a domain fails repeatedly (e.g. 10 failures in a row), pause jobs for that domain for 5–10 minutes. Avoids wasting proxy budget on a target that's blocking everyone.
+
+**Dead letter queue (DLQ):** After N retries, move failed jobs to a DLQ. Notify the customer or alert your team. Enables debugging and avoids blocking the main queue.
+
+---
+
+## Scaling Workers
+
+**Vertical:** Bigger machines, more CPU/RAM. Playwright is heavy; 4–8 workers per machine is typical. Use when you need more throughput per machine.
+
+**Horizontal:** More machines, more workers. Queue distributes jobs. Scale by adding worker instances. Ensure proxy pool size grows with total worker count—each worker needs IPs.
+
+**Concurrency per domain:** Even with many workers, cap how many hit the same domain at once. Otherwise you trigger rate limits regardless of IP count. Use a domain-level semaphore or rate limiter.
 
 ---
 
@@ -101,17 +104,17 @@ Common models:
 - **Subscription tiers** — X requests/month per plan.
 - **Proxy usage** — Charge for proxy IP-minutes or concurrent sessions.
 
-Implement quotas in your API: reject or throttle when a customer exceeds their limit. Track usage in a DB or metrics system for invoicing.
+Implement quotas in your API: reject or throttle when a customer exceeds their limit. Track usage in a DB for invoicing. Emit usage events for real-time dashboards.
 
 ---
 
 ## Operational Considerations
 
-**Cost control:** Proxy and compute are the main costs. Optimize browser lifecycle (reuse contexts where safe, close promptly). Use spot/preemptible instances for workers if your workload allows.
+**Cost control:** Proxy and compute are the main costs. Optimize browser lifecycle—close promptly, avoid leaks. Use spot/preemptible instances for workers if workload allows. Monitor cost per request.
 
-**Compliance:** Respect target sites’ terms of service and robots.txt. Consider geographic data residency if you handle EU data. Document acceptable use for your customers.
+**Compliance:** Respect target sites' terms of service and robots.txt. Document acceptable use for customers. Consider data residency (e.g. EU) if you store results.
 
-**Monitoring:** Track job success rate, latency, block rate, and proxy utilization. Alerts on degradation or quota breaches.
+**Monitoring:** Track job success rate, latency (p50, p95), block rate, proxy utilization, queue depth. Alerts on degradation, quota breaches, or queue backlog.
 
 ---
 
@@ -123,8 +126,6 @@ Implement quotas in your API: reject or throttle when a customer exceeds their l
 4. Retry with new IP on failure; use circuit breakers for bad domains.
 5. Enforce quotas and track usage for billing.
 6. Monitor success rate, latency, and cost.
-
-👉 **Try BytesFlows Residential Proxies** — suitable for SaaS workloads with rotation, sticky sessions, and geo support.
 
 ---
 

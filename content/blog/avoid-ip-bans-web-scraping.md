@@ -10,45 +10,90 @@ coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=f
 
 ## Introduction: The Constant War of Attrition
 
-In the web scraping world, getting your IP banned is a "when," not an "if," unless you have the right strategy. Websites use increasingly automated tools to identify and block crawlers. If your scraper behaves like a machine, it will be treated like one.
+In web scraping, getting your IP banned is a "when," not an "if," unless you have the right strategy. Sites use automated tools to identify and block crawlers. If your scraper behaves like a machine, it will be treated like one. This guide covers why sites ban IPs, what actually works to avoid it, and how to implement a survival strategy that keeps your data flowing.
 
-To survive, you need to transition from "brute-force" scraping to "stealth" extraction. This guide covers the essential techniques to avoid IP bans and maintain a 99% success rate.
+---
 
 ## Why Websites Ban Your IP
 
-It’s rarely just about the number of requests. Sites look at a combination of signals:
+It's rarely just request count. Sites look at multiple signals:
 
-1.  **Request Frequency (Rate Limiting):** Too many requests in a short window.
-2.  **IP Reputation:** If your IP belongs to a datacenter (AWS, OVH), it’s already on a "watchlist."
-3.  **Behavioral Inconsistency:** Clicking a link every exactly 2.0 seconds is a dead giveaway.
-4.  **Header and Fingerprint Mismatches:** Using a Chrome User-Agent but lacking a standard [browser fingerprint](/en/blog/browser-fingerprinting-explained).
+**1. Request frequency (rate limiting).** Too many requests in a short window triggers throttling or blocks. One IP making 100 requests per minute looks like a bot. Spread requests over time or across many IPs.
 
-## Proactive Strategies to Stay Unblocked
+**2. IP reputation.** Datacenter IPs (AWS, GCP, OVH, etc.) are widely known. Many sites pre-flag them. Residential IPs—from real ISPs—get more lenient treatment. The same request that gets 403 from a datacenter IP may pass from a residential IP.
 
-### 1. The Power of Residential Proxies
-Datacenter IPs are easily identified and blocked en masse. [Residential proxies](/en/blog/residential-proxies) are the industry standard for anti-ban protection. Because they originate from real home internet connections, websites are extremely hesitant to block them, as they fear banning real customers. Our [residential IP network](/en/proxies) provides the highest trust score available.
+**3. Behavioral consistency.** Clicking a link every exactly 2.0 seconds is a dead giveaway. Fixed delays look robotic. Real users have variable timing. Add jitter: `time.sleep(random.uniform(1.5, 5.0))` instead of `time.sleep(2)`.
 
-### 2. Intelligent Proxy Rotation
-Don't just rotate—rotate with a plan. 
--   **Per-Request Rotation:** Best for simple data extraction.
--   **Sticky Sessions:** Essential for sites like [Amazon](/en/blog/scraping-amazon-product-data) where you need to maintain a session to add items to a cart or view localized pricing. See our [proxy rotation strategies](/en/blog/proxy-rotation-strategies) for more.
+**4. Header and fingerprint mismatches.** Using a Chrome User-Agent with a 800×600 viewport or missing expected headers triggers checks. For strict sites, use a real browser (Playwright, Puppeteer) so headers and fingerprints match.
 
-### 3. Humanizing Your Traffic
--   **Randomized Delays (Jitter):** Instead of `sleep(2)`, use `sleep(random.uniform(1, 5))`.
--   **Header Perfection:** Ensure your `Accept-Language`, `Referer`, and `DNT` headers look natural.
--   **Real Browser Rendering:** Use [Playwright](/en/blog/playwright-web-scraping-tutorial) to handle JavaScript challenges and look like a real user.
+---
 
-## Handling the "Soft Block" (403, 429, and CAPTCHA)
+## Five Strategies That Actually Work
 
-When you see a 429 (Too Many Requests) or a 403 (Forbidden), your current strategy is compromised.
--   **429:** Back off immediately. Your frequency is too high.
--   **403:** Your IP reputation is likely damaged, or your [browser fingerprint](/en/blog/browser-fingerprinting-explained) was detected.
--   **CAPTCHA:** You’ve been flagged as highly suspicious. (Learn how to [handle CAPTCHAs](/en/blog/handling-captchas-in-scraping)).
+### 1. Use Residential Proxies
+
+Datacenter IPs are easily identified and blocked. Residential proxies route through real home connections. Sites hesitate to block them for fear of blocking real customers. For Cloudflare, e-commerce, and SERP targets, residential is the default choice. Rotating residential proxies spread load across many IPs—no single IP gets overused.
+
+### 2. Rotate Intelligently
+
+**Per-request rotation:** Each request gets a new IP. Best for independent scraping—product pages, search results, broad crawling. Minimizes requests per IP.
+
+**Sticky sessions:** Same IP for a time window. Essential for login, checkout, or multi-step flows that depend on session cookies. If the IP changes mid-session, the site may invalidate it. Use sticky only when needed; use rotating for everything else.
+
+### 3. Add Randomized Delays
+
+Instead of `sleep(2)` every time, use `sleep(random.uniform(1.5, 5.0))` or a Gaussian distribution. Variable timing reduces pattern-based detection. Add delays between navigations, not just at the start. For strict targets, 2–5 seconds between requests is a reasonable baseline.
+
+### 4. Use a Real Browser for Strict Targets
+
+For Cloudflare, DataDome, and similar, `requests` usually fails. TLS and HTTP fingerprints give you away. Playwright or Puppeteer drive a real browser—correct fingerprints, JS execution, cookie handling. Pair with residential proxies for the best pass rates.
+
+### 5. Cap Concurrency per Domain
+
+Even with 1000 IPs, 50 parallel browsers against the same domain looks coordinated. Start with 3–5 concurrent workers per domain. Increase only if success rate stays above 90%. If success rate drops when you add workers, reduce concurrency.
+
+---
+
+## Handling the "Soft Block" (403, 429, CAPTCHA)
+
+**429 (Too Many Requests):** Back off immediately. Your frequency is too high. Reduce concurrency, add longer delays, or add more IPs (so each IP handles fewer requests).
+
+**403 (Forbidden):** IP reputation may be damaged, or your fingerprint was detected. Switch to residential proxies if you're on datacenter. Use a real browser if you're on `requests`. Add more delays and reduce concurrency.
+
+**CAPTCHA:** You've been flagged as highly suspicious. Slow down, improve IP quality, and improve fingerprint. CAPTCHA solvers are a last resort—aim to never trigger them by getting the IP and behavior right.
+
+---
 
 ## Scaling Without Getting Caught
 
-As you [scale your data extraction](/en/blog/scraping-data-at-scale), the margin for error shrinks. You need a centralized system to monitor block rates and automatically switch to [high-trust residential proxies](/en/blog/residential-proxies-improve-scraping) when a specific target gets "aggressive."
+As you scale, the margin for error shrinks. Key practices:
 
-## Conclusion
+- **Validate at small scale first.** Run 100–500 requests. Verify success rate and block rate. Fix issues before scaling.
+- **Monitor block rate.** If it rises when you add workers, reduce concurrency or add more proxy capacity. Never scale at the cost of success rate.
+- **Implement retries with new IP.** On failure, close the browser and retry with a new one (new IP). Don't retry the same IP immediately. Use exponential backoff.
+- **Centralize configuration.** Use a single place to tune delays, concurrency, and proxy config. When a target gets more aggressive, you can adjust without touching every scraper.
 
-Avoiding IP bans is a mix of high-quality infrastructure and surgical execution. By combining [rotating residential proxies](/en/blog/residential-proxies) with [stealth browser automation](/en/blog/playwright-web-scraping-tutorial), you can scrape even the most protected websites with ease. Ready to stop being blocked? Explore our [premium proxy solutions](/en/proxies).
+---
+
+## Summary Checklist
+
+| Strategy | Impact | Effort |
+|----------|--------|--------|
+| Residential proxies | High | Low |
+| Proxy rotation | High | Low (use rotating gateway) |
+| Randomized delays | Medium | Low |
+| Real browser (Playwright) | High (for strict targets) | Medium |
+| Cap concurrency | Medium | Low |
+
+---
+
+## Summary
+
+1. Use residential proxies for strict targets. Rotate for independent requests; use sticky for session flows.
+2. Add randomized delays. Cap concurrency per domain.
+3. Use Playwright for Cloudflare and anti-bot targets. Pair with residential proxies.
+4. Retry with new IP on failure. Monitor success and block rates. Scale only when metrics are stable.
+
+---
+
+**Further reading:** [Playwright Proxy Setup](/en/blog/playwright-proxy-setup) · [Bypass Cloudflare Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked)
