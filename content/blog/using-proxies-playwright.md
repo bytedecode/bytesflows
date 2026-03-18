@@ -29,7 +29,7 @@ with sync_playwright() as p:
     page.goto("https://example.com")
 ```
 
-With a **rotating residential proxy** provider, set `server` to the provider’s gateway (e.g. `http://gateway.bytesflows.com:8001`). Each new browser or context can get a new IP. Read [Rotating Proxies for Web Scraping](/en/blog/rotating-proxies-web-scraping) and [How Proxy Rotation Works](/en/blog/proxy-rotation-strategies). Use [Proxy Checker](/en/blog/proxy-checker) to verify the IP Playwright is using.
+With a **rotating residential proxy** provider, set `server` to the provider’s gateway (e.g. `http://p1.bytesflows.com:8001`). Each new browser or context can get a new IP. Read [Rotating Proxies for Web Scraping](/en/blog/rotating-proxies-web-scraping) and [How Proxy Rotation Works](/en/blog/proxy-rotation-strategies). Use [Proxy Checker](/en/blog/proxy-checker) to verify the IP Playwright is using.
 
 ## Per-Context vs Per-Browser
 
