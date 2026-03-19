@@ -46,7 +46,7 @@ Typical OpenClaw workloads include:
 - data extraction
 - workflow automation
 
-OpenClaw is the control plane, while skills/scripts handle browser tasks. In most implementations, that browser layer is powered by frameworks like [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial) or Puppeteer.
+OpenClaw is the control plane, while skills/scripts handle browser tasks. In most implementations, that browser layer is powered by frameworks like Playwright web scraping tutorial or Puppeteer.
 
 ---
 
@@ -59,7 +59,7 @@ When many requests come from one server IP, anti-bot systems can flag automation
 - forced CAPTCHA flows
 - account/session risk flags
 
-Residential proxy networks reduce this risk by routing traffic through ISP-assigned user-like IPs. For a deeper comparison, see [Best Proxies for Web Scraping](/en/blog/best-proxies-for-web-scraping) and [Datacenter vs Residential Proxies](/en/blog/datacenter-vs-residential-proxies).
+Residential proxy networks reduce this risk by routing traffic through ISP-assigned user-like IPs. For a deeper comparison, see Best Proxies for Web Scraping and Datacenter vs Residential Proxies.
 
 ---
 
@@ -76,7 +76,7 @@ Use cases that typically require residential traffic:
 - anti-bot protected websites
 - geo-specific content extraction
 
-You can also review [Why Residential Proxies Are Best for Scraping](/en/blog/why-residential-proxies-best-scraping).
+You can also review Why Residential Proxies Are Best for Scraping.
 
 ---
 
@@ -96,7 +96,7 @@ Benefits:
 - lowers ban probability
 - makes traffic patterns look more natural
 
-This is a core concept in [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies) and [Rotating Proxies for Web Scraping](/en/blog/rotating-proxies-web-scraping).
+This is a core concept in Proxy Rotation Strategies and Rotating Proxies for Web Scraping.
 
 ---
 
@@ -199,7 +199,7 @@ run();
 
 Once configured, all browser traffic will go through the proxy network.
 
-If you need reference patterns, see [Using Proxies with Playwright](/en/blog/using-proxies-playwright).
+If you need reference patterns, see Using Proxies with Playwright.
 
 ---
 
@@ -267,7 +267,7 @@ Modern anti-bot stacks evaluate:
 - JS execution signals
 - network-level behavior
 
-Read more in [How Websites Detect Scrapers](/en/blog/how-websites-detect-scrapers), [Browser Fingerprinting Explained](/en/blog/browser-fingerprinting-explained), [Avoid IP Bans](/en/blog/avoid-ip-bans-web-scraping), and [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked).
+Read more in How Websites Detect Scrapers, Browser Fingerprinting Explained, Avoid IP Bans, and Scrape Websites Without Getting Blocked.
 
 ---
 
@@ -286,7 +286,7 @@ Monitor key dimensions:
 - geo-targeting strategy
 - retry/backoff policy
 
-For architecture-level guidance, see [Scraping Data at Scale](/en/blog/scraping-data-at-scale).
+For architecture-level guidance, see Scraping Data at Scale.
 
 ---
 
@@ -316,7 +316,7 @@ Solutions:
 - tune rotation/sticky mode
 - strengthen browser realism
 
-Related guide: [Bypass Cloudflare Web Scraping](/en/blog/bypass-cloudflare-web-scraping).
+Related guide: Bypass Cloudflare Web Scraping.
 
 ### Slow Performance
 
@@ -340,7 +340,7 @@ For reliable OpenClaw workflows:
 - randomize compatible fingerprints
 - track success, block, and latency metrics
 
-If your use case is OpenClaw-first, you can also compare adjacent workflows in [OpenClaw Web Scraping](/en/blog/openclaw-web-scraping) and [OpenClaw Rotating Proxy](/en/blog/openclaw-rotating-proxy).
+If your use case is OpenClaw-first, you can also compare adjacent workflows in OpenClaw Web Scraping and OpenClaw Rotating Proxy.
 
 ---
 
@@ -361,12 +361,12 @@ With a compliant, well-tuned proxy layer, OpenClaw agents can run large-scale au
 ---
 
 **Further reading:**
-- [Using Proxies with Playwright](/en/blog/using-proxies-playwright)
-- [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies)
-- [Best Proxies for Web Scraping](/en/blog/best-proxies-for-web-scraping)
-- [How Websites Detect Scrapers](/en/blog/how-websites-detect-scrapers)
-- [Browser Fingerprinting Explained](/en/blog/browser-fingerprinting-explained)
-- [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping)
-- [Scrape Websites Without Getting Blocked](/en/blog/scrape-websites-without-getting-blocked)
-- [Scraping Data at Scale](/en/blog/scraping-data-at-scale)
-- [Bypass Cloudflare Web Scraping](/en/blog/bypass-cloudflare-web-scraping)
+- Using Proxies with Playwright
+- Proxy Rotation Strategies
+- Best Proxies for Web Scraping
+- How Websites Detect Scrapers
+- Browser Fingerprinting Explained
+- Avoid IP Bans in Web Scraping
+- Scrape Websites Without Getting Blocked
+- Scraping Data at Scale
+- Bypass Cloudflare Web Scraping

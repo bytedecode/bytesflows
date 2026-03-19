@@ -222,7 +222,7 @@ LinkedIn scraping becomes much easier to treat as infrastructure instead of an e
 
 ---
 
-**Further reading:** [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping) · [Using Proxies with Playwright](/en/blog/using-proxies-playwright) · [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping)
+**Further reading:** Avoid IP Bans in Web Scraping · Using Proxies with Playwright · Bypass Cloudflare for Web Scraping
 
 
 

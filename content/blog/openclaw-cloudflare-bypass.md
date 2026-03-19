@@ -51,5 +51,5 @@ Blocking usually happens because of **IP**:
 ---
 
 **Further reading:**
-- [Bypass Cloudflare for web scraping](/en/blog/bypass-cloudflare-web-scraping)
-- [OpenClaw proxy setup](/en/blog/openclaw-proxy-setup)
+- Bypass Cloudflare for web scraping
+- OpenClaw proxy setup

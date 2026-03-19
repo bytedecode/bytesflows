@@ -54,5 +54,5 @@ When the agent hits many pages or protected sites, a **rotating residential prox
 ---
 
 **Further reading:**
-- [OpenClaw proxy setup](/en/blog/openclaw-proxy-setup)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
+- OpenClaw proxy setup
+- Scraping data at scale

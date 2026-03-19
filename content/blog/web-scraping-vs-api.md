@@ -18,7 +18,7 @@ Use an **API** when the target provides one and it covers your use case: the sch
 
 ## When to Prefer Scraping
 
-Use **scraping** when there is no API, the API is limited or expensive, or you need data the API doesn’t expose (e.g. layout, specific HTML sections, or many sites without a unified API). Scraping is more fragile (sites change) and often requires [anti-bot](/en/blog/bypass-cloudflare-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies). See [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked), [rotating proxies](/en/blog/rotating-proxies-web-scraping), and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping). [Python web scraping guide](/en/blog/python-web-scraping-guide) and [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial) for implementation. [Residential proxies](/en/blog/residential-proxies) and [Proxies](/en/proxies) for production.
+Use **scraping** when there is no API, the API is limited or expensive, or you need data the API doesn’t expose (e.g. layout, specific HTML sections, or many sites without a unified API). Scraping is more fragile (sites change) and often requires anti-bot bypass techniques and proxy rotation. For implementation, use Python (Requests + Beautiful Soup) or Playwright. Residential proxies are essential for production scale.
 
 ## Pros and Cons
 
