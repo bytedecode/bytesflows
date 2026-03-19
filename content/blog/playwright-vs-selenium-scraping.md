@@ -8,97 +8,103 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## When Your Selenium Scraper Keeps Timing Out
 
-This guide covers **Playwright vs Selenium** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
+You are running a Selenium script against a React app. Elements load late, and you add `time.sleep(2)` after each click. Some tests pass, some fail randomly. Flaky scrapers waste time and block pipelines. The usual fix: switch to a framework built for modern, dynamic pages.
 
-## Key Concepts
+**Playwright vs Selenium** in 2026: Playwright has auto-wait, multi-context isolation, and better API design. Selenium remains widely used but requires more manual waiting and driver setup. This guide compares both and shows how to migrate and scale.
 
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
+## Quick Comparison
 
-## Practical Steps
+| Aspect | Playwright | Selenium |
+|--------|------------|----------|
+| **Browser support** | Chromium, Firefox, WebKit | Chrome, Firefox, Edge, Safari (via drivers) |
+| **Auto-wait** | Yes, built-in | No, you add explicit waits |
+| **Context isolation** | One browser, many contexts | Separate driver instances |
+| **Setup** | `pip install playwright` + `playwright install` | Requires browser-specific drivers |
+| **API style** | Async-first, locators auto-wait | Sync or async, manual waits |
+| **Scraping at scale** | Lighter contexts, proxy per context | Heavier; one process per browser |
 
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
+## Why Auto-Wait Matters for Scraping
 
-## Best Practices
+Selenium returns as soon as the DOM is ready. But content often loads via JavaScript after DOMContentLoaded. You must add `WebDriverWait` or sleeps. Playwright's `locator` and `page.goto(..., wait_until="networkidle")` wait for network and visibility by default.
 
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
+**Selenium (manual wait):**
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-## Summary
+driver = webdriver.Chrome()
+driver.get("https://example.com/products")
+wait = WebDriverWait(driver, 10)
+items = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, ".product")))
+for el in items:
+    print(el.find_element(By.CSS_SELECTOR, ".title").text)
+driver.quit()
+```
 
-**Playwright vs Selenium** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+**Playwright (auto-wait):**
+```python
+from playwright.sync_api import sync_playwright
 
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    page = browser.new_page()
+    page.goto("https://example.com/products", wait_until="networkidle")
+    items = page.locator(".product")
+    for i in range(await items.count()):
+        print(items.nth(i).locator(".title").inner_text())
+    browser.close()
+```
 
+## Proxy Configuration: Playwright vs Selenium
 
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
+Both support proxies. Playwright passes proxy at launch; Selenium uses `ChromeOptions`.
 
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+**Playwright:**
+```python
+browser = p.chromium.launch(proxy={"server": "http://gateway:8001", "username": "u", "password": "p"})
+```
 
----
+**Selenium:**
+```python
+from selenium.webdriver.chrome.options import Options
+opts = Options()
+opts.add_argument("--proxy-server=http://user:pass@gateway:8001")
+driver = webdriver.Chrome(options=opts)
+```
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+For rotating residential proxies, use the same gateway URL; the provider rotates the IP. Verify with a Proxy Checker before scaling.
 
+## When to Choose Which
+
+| Scenario | Prefer |
+|----------|--------|
+| New project, dynamic sites | Playwright |
+| Legacy Selenium suite | Keep Selenium or migrate incrementally |
+| Need WebKit (Safari) | Playwright (built-in) |
+| Strict corporate Selenium-only policy | Selenium |
+| Scraping at scale, many parallel sessions | Playwright (lighter contexts) |
+
+## Troubleshooting
+
+| Problem | Cause | Fix |
+|---------|-------|-----|
+| Intermittent `NoSuchElementException` (Selenium) | Element not yet rendered | Use `WebDriverWait` and `expected_conditions` |
+| Playwright `TimeoutError` on `goto` | Page or proxy slow | Increase `timeout`, check proxy with Proxy Checker |
+| High memory with many browsers | One process per Selenium driver | Use Playwright contexts: one browser, many contexts |
+| Both blocked at scale | Same IP, anti-bot | Add rotating residential proxies to either stack |
+
+## Verification
+
+1. Run a simple script against a test URL; confirm elements are found.
+2. Enable proxy and check exit IP via Proxy Checker or `https://api.ipify.org`.
+3. Run 10–20 concurrent sessions; monitor success rate and memory.
+
+## Further Reading
+
+- [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial)
+- [Using proxies with Playwright](/en/blog/using-proxies-playwright)
+- [Proxy rotation strategies](/en/blog/proxy-rotation-strategies)

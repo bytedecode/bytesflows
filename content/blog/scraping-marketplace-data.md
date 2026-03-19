@@ -1,104 +1,94 @@
 ---
 title: "Scraping Marketplace Data (2026)"
 slug: "scraping-marketplace-data"
-summary: "Technical 2026 strategies for harvesting structured data from online marketplaces. Learn to navigate complex layouts and bypass sophisticated anti-bot systems with precision."
+summary: "Technical strategies for scraping online marketplaces. Handle dynamic listings, pagination, and anti-bot protection for reliable product and seller data."
 category: "Web Scraping"
 tags: ["Use-cases", "Web Scraping"]
 language: "en"
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: The Marketplace Data Challenge
 
-This guide covers **Scraping Marketplace Data** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
+You need product listings, prices, and seller info from eBay, Etsy, or similar marketplaces. These sites use JavaScript for search results and infinite scroll, and they aggressively block automated access. Requests alone often return empty or captcha pages. The solution: headless browser automation plus residential proxies.
 
-## Key Concepts
+This guide walks through practical strategies for scraping marketplace data reliably.
 
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
+## Typical Data Points
 
-## Practical Steps
+| Data | Example | Extraction approach |
+|------|---------|---------------------|
+| Product title | "Vintage Lamp 1920s" | DOM selector or `data-*` attribute |
+| Price | $45.99 | Watch for sale vs regular price; normalize currency |
+| Seller | seller_id, feedback score | Often in JSON or `data-` attributes |
+| Images | High-res URL | Prefer CDN URLs over base64 |
+| Listings count | Pagination total | Parse from "Page 1 of N" or API response |
+| Category | Breadcrumb path | CSS or structured data |
 
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
+## Architecture: Discovery vs Detail
 
-## Best Practices
+Many marketplaces have two layers:
 
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
+1. **Discovery** (search, category, browse): Returns lists of product URLs or IDs. Often uses infinite scroll or "Load more."
+2. **Detail** (product page): Full data for one item. May be static HTML or AJAX-loaded.
 
-## Summary
+Use a headless browser for discovery if the results are JS-rendered. For detail pages, try Requests first if the HTML contains the data; fall back to Playwright if it's loaded dynamically.
 
-**Scraping Marketplace Data** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+## Example: Playwright Marketplace Scraper
 
-**Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
+```python
+from playwright.sync_api import sync_playwright
 
+def scrape_listings(url, proxy_url):
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            proxy={"server": proxy_url.split("@")[1].split("/")[0],
+                   "username": "user", "password": "pass"}
+        )
+        page = browser.new_page()
+        page.goto(url, wait_until="networkidle")
+        for _ in range(5):
+            page.mouse.wheel(0, 800)
+            page.wait_for_timeout(1000)
+        items = page.locator(".listing-card").all()
+        for item in items:
+            title = item.locator(".title").inner_text()
+            price = item.locator(".price").inner_text()
+            link = item.locator("a").get_attribute("href")
+            print(f"{title} | {price} | {link}")
+        browser.close()
+```
 
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
+Adjust selectors to match the target site. Use residential proxies to avoid blocks when scaling.
 
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
+## Handling Pagination and Infinite Scroll
 
----
+| Pattern | Strategy |
+|---------|----------|
+| Page numbers (1, 2, 3...) | Loop over `?page=N` or equivalent; stop when no results |
+| "Load more" button | `page.click("button:has-text('Load more')")` then wait for new items |
+| Infinite scroll | Scroll down in a loop; wait for network idle; stop after N scrolls or when no new items |
 
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+Always add small random delays between actions to mimic human behavior and reduce detection risk.
 
+## Troubleshooting
+
+| Symptom | Cause | Fix |
+|---------|-------|-----|
+| Empty listing area | Content loaded by JS | Use Playwright; wait for `.listing-card` or similar before extracting |
+| CAPTCHA after few pages | IP flagged | Use rotating residential proxy; reduce request rate |
+| Selectors break | Site layout changed | Use resilient selectors (e.g. `data-testid`); add fallbacks |
+| Prices in wrong format | Different locales/formats | Normalize: strip currency, parse number, standardize decimals |
+
+## Verification
+
+1. Scrape one category page and confirm at least 10 listings with title, price, link.
+2. Compare a sample of extracted prices with manual browser check.
+3. Run for 50–100 URLs with proxy; monitor success rate and CAPTCHA frequency.
+
+## Further reading
+
+- [Scraping e-commerce websites](/en/blog/scraping-ecommerce-websites)
+- [Scraping infinite scroll pages](/en/blog/scraping-infinite-scroll-pages)
+- [Scraping price comparison data](/en/blog/scraping-price-comparison-data)

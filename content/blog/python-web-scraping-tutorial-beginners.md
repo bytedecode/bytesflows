@@ -8,97 +8,87 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction
+## Introduction: When requests.get() Is Not Enough
 
-This guide covers **Python Web Scraping Tutorial for Beginners** and how it fits into a reliable web scraping pipeline. For large-scale or protected targets you need [residential proxies](/en/blog/residential-proxies), [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping), [proxy rotation](/en/blog/proxy-rotation-strategies), [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026). See [web scraping architecture](/en/blog/web-scraping-architecture-explained) and [scraping data at scale](/en/blog/scraping-data-at-scale).
+You want to pull product prices, job listings, or news headlines from a website. You try `requests.get(url)` and get HTML back—but when you parse it, the data you need isn’t there. This is common: many sites load content via JavaScript after the initial HTML. This tutorial walks you from a first static scraper to knowing when you need a browser and proxies.
 
-## Key Concepts
+## Problem → Cause → Solution
 
-Understanding the basics helps you choose the right tools and [residential proxies](/en/blog/residential-proxies). [How web scraping works](/en/blog/how-web-scraping-works) and [common web scraping challenges](/en/blog/common-web-scraping-challenges). Use [proxy rotation](/en/blog/proxy-rotation-strategies) and [avoid IP bans](/en/blog/avoid-ip-bans-web-scraping) when scaling.
+| Symptom | Likely cause | Next step |
+|---------|--------------|-----------|
+| Empty or minimal HTML | Page is JS-rendered | Use Playwright instead of Requests |
+| 403 or "blocked" | Bot detection (User-Agent, IP) | Set headers, add residential proxy |
+| Selectors fail after site update | HTML structure changed | Use robust selectors, add tests |
+| Slow or rate limited | Too many requests from one IP | Add delays, rotate proxies |
 
-## Practical Steps
+## Step 1: Your First Static Scraper
 
-1. Set up your environment: [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright web scraping tutorial](/en/blog/playwright-web-scraping-tutorial).
-2. Configure [residential proxies](/en/blog/residential-proxies) and test with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test).
-3. For JS or anti-bot: [bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping), [headless browser](/en/blog/headless-browser-scraping-guide).
-4. Scale: [web scraping at scale](/en/blog/web-scraping-at-scale-best-practices), [proxy pools](/en/blog/proxy-pools-web-scraping).
+For pages where the data is in the initial HTML (e.g. many blogs or simple catalogs), use Requests + Beautiful Soup:
 
-## Best Practices
+```python
+import requests
+from bs4 import BeautifulSoup
 
-- Use [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [proxy rotation](/en/blog/proxy-rotation-strategies).
-- Respect [ethical web scraping](/en/blog/ethical-web-scraping-practices) and [web scraping legal considerations](/en/blog/web-scraping-legal-considerations). [Robots Tester](/en/blog/robots-tester).
-- Monitor success rate; [web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked).
+url = "https://example.com/blog"
+headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
+r = requests.get(url, headers=headers)
+r.raise_for_status()
+soup = BeautifulSoup(r.text, "html.parser")
+
+for art in soup.select("article"):
+    title = art.select_one("h2").get_text(strip=True) if art.select_one("h2") else "N/A"
+    link = art.select_one("a")["href"] if art.select_one("a") else ""
+    print(f"{title} | {link}")
+```
+
+**Check:** If `soup` has your target elements but your loop prints nothing, your selectors are wrong. Inspect the HTML and adjust.
+
+## Step 2: When Static Fails—Add Playwright
+
+If the HTML from requests is a skeleton and the real content loads later, you need a browser:
+
+```python
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    browser = p.chromium.launch(headless=True)
+    page = browser.new_page()
+    page.goto("https://example.com/products", wait_until="networkidle")
+    items = page.query_selector_all(".product-card")
+    for item in items:
+        title = item.query_selector(".title")
+        print(title.inner_text() if title else "N/A")
+    browser.close()
+```
+
+**Check:** `wait_until="networkidle"` waits for most network activity to settle. If content still loads late, add `page.wait_for_selector(".product-card")` before querying.
+
+## Step 3: Avoid Blocks
+
+1. **Headers:** Always set a real User-Agent. Many sites block Python-requests defaults.
+2. **Rate:** Add `time.sleep(random.uniform(1, 3))` between requests.
+3. **Proxies:** For more than a few dozen pages, use rotating residential proxies in your HTTP client or Playwright.
+
+## Verification and Troubleshooting
+
+| Error | Possible cause | Action |
+|-------|----------------|--------|
+| `Empty result` | Wrong selectors or JS content | Inspect page, try Playwright |
+| `403 Forbidden` | Bot detection | Add headers and/or proxy |
+| `ConnectionError` | Network or proxy | Verify proxy, retry with backoff |
+| `AttributeError` on `.get_text()` | Element missing | Use optional chaining or `if elem` checks |
+| `Timeout` | Slow page or blocked | Increase timeout, try different IP |
+
+## Decision: Requests vs Playwright
+
+- **Use Requests** when the data is in the initial HTML response.
+- **Use Playwright** when the page loads content dynamically or uses heavy anti-bot.
 
 ## Summary
 
-**Python Web Scraping Tutorial for Beginners** is part of a solid scraping stack. Pair with [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), and the right browser or HTTP stack. See [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [Proxies](/en/proxies). Tools: [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
+Start with Requests + Beautiful Soup for static pages. Set headers and add delays. When content is missing, switch to Playwright. At scale, add rotating residential proxies and robust error handling.
 
 **Further reading:**
-- [residential proxies](/en/blog/residential-proxies)
-- [best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [proxy rotation](/en/blog/proxy-rotation-strategies)
-- [ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Playwright](/en/blog/playwright-web-scraping-tutorial)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxies](/en/proxies)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect scrapers](/en/blog/how-websites-detect-scrapers)
-- [Python web scraping guide](/en/blog/python-web-scraping-guide)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [How proxy rotation works](/en/blog/how-proxy-rotation-works)
-- [Rotating proxies](/en/blog/rotating-proxies-web-scraping)
-- [Datacenter vs residential](/en/blog/datacenter-vs-residential-proxies)
-- [Why residential](/en/blog/why-residential-proxies-best-scraping)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [User-Agent Generator](/en/blog/user-agent-generator)
-- [HTTP Header Checker](/en/blog/http-header-checker)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-- [Common web scraping challenges](/en/blog/common-web-scraping-challenges)
-- [Web scraping without getting blocked](/en/blog/scrape-websites-without-getting-blocked)
-
-
-**Next steps:** Start with a small script using [Python web scraping guide](/en/blog/python-web-scraping-guide) or [Playwright](/en/blog/playwright-web-scraping-tutorial). Add [residential proxies](/en/blog/residential-proxies) and [proxy rotation](/en/blog/proxy-rotation-strategies) when you scale. Validate with [Proxy Checker](/en/blog/proxy-checker) and [Scraping Test](/en/blog/scraping-test). [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping) and [Proxies](/en/proxies).
-
-**Quick links:**
-- [What is web scraping](/en/blog/what-is-web-scraping-beginner-guide)
-- [How web scraping works](/en/blog/how-web-scraping-works)
-- [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026)
-- [Web scraping architecture](/en/blog/web-scraping-architecture-explained)
-- [Scraping data at scale](/en/blog/scraping-data-at-scale)
-- [Web scraping at scale](/en/blog/web-scraping-at-scale-best-practices)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies for web scraping](/en/blog/best-proxies-for-web-scraping)
-- [Proxy rotation](/en/blog/proxy-rotation-strategies)
-- [Proxy pools](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
-- [Bypass Cloudflare](/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright web scraping](/en/blog/playwright-web-scraping-tutorial)
-- [Headless browser](/en/blog/headless-browser-scraping-guide)
-- [Proxy Checker](/en/blog/proxy-checker)
-- [Scraping Test](/en/blog/scraping-test)
-- [Proxy Rotator](/en/blog/proxy-rotator)
-- [Robots Tester](/en/blog/robots-tester)
-- [Ethical web scraping](/en/blog/ethical-web-scraping-practices)
-- [Web scraping legal](/en/blog/web-scraping-legal-considerations)
-- [Proxies](/en/proxies)
-- [Residential proxies](/en/blog/residential-proxies)
-- [Best proxies](/en/blog/best-proxies-for-web-scraping)
-- [Scraping Test](/en/blog/scraping-test)
-
----
-
-**Related reading:** [Ultimate web scraping guide](/en/blog/ultimate-guide-web-scraping-2026), [best proxies](/en/blog/best-proxies-for-web-scraping), [residential proxies](/en/blog/residential-proxies), [proxy rotation](/en/blog/proxy-rotation-strategies), [Proxies](/en/proxies). [Proxy Checker](/en/blog/proxy-checker), [Scraping Test](/en/blog/scraping-test).
-
+- Playwright web scraping tutorial
+- Best proxies for web scraping
+- Web scraping architecture explained
