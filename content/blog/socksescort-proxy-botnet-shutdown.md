@@ -24,7 +24,7 @@ Public reporting and court documents indicate that:
 - At least **thousands of routers and IoT devices** were actively compromised at any given time.  
 - Customers collectively paid **millions of dollars** for access to this infrastructure, which was widely abused for cybercrime and fraud.
 
-The takedown of SocksEscort raises important questions about the proxy ecosystem at a time when [web scraping infrastructure](/en/blog/web-scraping-architecture-explained), data collection, and AI training pipelines are expanding faster than ever.
+The takedown of SocksEscort raises important questions about the proxy ecosystem at a time when web scraping infrastructure, data collection, and AI training pipelines are expanding faster than ever.
 
 ---
 
@@ -39,7 +39,7 @@ Proxy networks like this are commonly used to:
 - perform cybersecurity research and threat monitoring  
 - test applications from multiple geographic locations  
 
-Used responsibly and transparently, residential proxies can absolutely support legitimate use cases, as discussed in [Why Residential Proxies Are Best for Scraping](/en/blog/why-residential-proxies-best-scraping).
+Used responsibly and transparently, residential proxies can absolutely support legitimate use cases, as discussed in Why Residential Proxies Are Best for Scraping.
 
 However, SocksEscort’s infrastructure was fundamentally different from reputable providers:
 
@@ -68,7 +68,7 @@ Once infected, a device would connect back to command-and-control servers contro
 
 When a customer bought access to SocksEscort, their traffic was transparently tunneled through these compromised devices. To the outside world — including targeted websites and fraud-detection systems — the requests appeared to come from ordinary households.
 
-This architecture provided many of the same mechanics explained in normal [proxy pool design](/en/blog/proxy-pools-web-scraping), but for abusive purposes:
+This architecture provided many of the same mechanics explained in normal proxy pool design, but for abusive purposes:
 
 - **a powerful layer of anonymity** for malicious actors  
 - **high IP diversity** spread across many countries  
@@ -88,7 +88,7 @@ This scale made SocksEscort particularly attractive to cybercriminals. Public re
 - identity theft and account takeovers  
 - automated attacks against online services  
 
-Because the malicious traffic came from **real residential IPs**, many security systems initially treated it as legitimate user activity. This mirrors the defensive challenge described in [How Websites Detect Web Scrapers](/en/blog/how-websites-detect-scrapers). In some documented cases, individual victims and organizations lost substantial sums — sometimes hundreds of thousands of dollars — before the activity was traced back to traffic routed through SocksEscort.
+Because the malicious traffic came from **real residential IPs**, many security systems initially treated it as legitimate user activity. This mirrors the defensive challenge described in How Websites Detect Web Scrapers. In some documented cases, individual victims and organizations lost substantial sums — sometimes hundreds of thousands of dollars — before the activity was traced back to traffic routed through SocksEscort.
 
 ---
 
@@ -120,10 +120,10 @@ The SocksEscort case highlights an important nuance:
 
 When implemented correctly, residential proxy networks are essential for many legitimate activities:
 
-- large-scale web scraping of public data (see [Web Scraping vs Web Crawling](/en/blog/web-scraping-vs-web-crawling))  
+- large-scale web scraping of public data (see Web Scraping vs Web Crawling)  
 - price and inventory monitoring for e-commerce  
 - market and competitive research  
-- AI training dataset collection from public sources (and understanding [Web Scraping vs API](/en/blog/web-scraping-vs-api) trade-offs)  
+- AI training dataset collection from public sources (and understanding Web Scraping vs API trade-offs)  
 - advertising and content verification  
 
 The problem arises when networks are built on:
@@ -147,7 +147,7 @@ As demand for web data grows, developers and data teams increasingly rely on pro
 
 - access geo-distributed content  
 - avoid trivial IP-based rate limits  
-- run reliable, large-scale crawlers and scrapers for use cases such as [job listings extraction](/en/blog/scraping-job-listings)  
+- run reliable, large-scale crawlers and scrapers for use cases such as job listings extraction  
 
 The SocksEscort incident underscores why the **origin and governance** of those IPs are now just as important as latency, throughput, or pool size.
 
@@ -170,7 +170,7 @@ For organizations building long-term data pipelines, due diligence around proxy 
 
 ## What This Means for Web Scraping Developers
 
-For engineers working on web scraping, automation, or data platforms (including browser stacks like [Playwright vs Puppeteer](/en/blog/playwright-vs-puppeteer)), the SocksEscort takedown carries several key lessons:
+For engineers working on web scraping, automation, or data platforms (including browser stacks like Playwright vs Puppeteer), the SocksEscort takedown carries several key lessons:
 
 1. **The proxy ecosystem is under growing scrutiny**  
    Law enforcement and regulators are increasingly interested in how residential proxies are sourced and used. “I just rent a proxy” is no longer a sufficient explanation if abuse is discovered.
@@ -233,12 +233,4 @@ Choosing proxy infrastructure that is secure, compliant, and transparent is not 
 
 ---
 
-**Further reading:**
-- [Why Residential Proxies Are Best for Scraping](/en/blog/why-residential-proxies-best-scraping)
-- [How Websites Detect Web Scrapers](/en/blog/how-websites-detect-scrapers)
-- [Proxy Pools for Web Scraping](/en/blog/proxy-pools-web-scraping)
-- [Web Scraping Architecture Explained](/en/blog/web-scraping-architecture-explained)
-- [Web Scraping vs API](/en/blog/web-scraping-vs-api)
-- [Web Scraping vs Web Crawling](/en/blog/web-scraping-vs-web-crawling)
-- [Playwright vs Puppeteer](/en/blog/playwright-vs-puppeteer)
-- [Scraping Job Listings](/en/blog/scraping-job-listings)
+**Further reading:** [Why Residential Proxies Are Best for Scraping](/en/blog/why-residential-proxies-best-scraping) · [How Websites Detect Web Scrapers](/en/blog/how-websites-detect-scrapers) · [Proxy Pools for Web Scraping](/en/blog/proxy-pools-web-scraping)
