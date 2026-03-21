@@ -47,6 +47,23 @@ Sending 10 requests per second from one IP triggers rate limits. Typical safe le
 
 Scale by adding IPs, not by increasing requests per IP.
 
+## Quick Calculator Script
+
+Use this snippet to estimate IPs needed from your target throughput and per-IP limits:
+
+```python
+def estimate_ips_needed(pages_per_hour: int, requests_per_ip_per_hour: int) -> int:
+    """Estimate residential proxy count for a target."""
+    return max(1, (pages_per_hour + requests_per_ip_per_hour - 1) // requests_per_ip_per_hour)
+
+# Example: 1,000 pages/hour from a medium target (30 req/IP/hr)
+print(estimate_ips_needed(1000, 30))  # 34
+# Example: 500 pages/hour from hard target (10 req/IP/hr)
+print(estimate_ips_needed(500, 10))   # 50
+```
+
+Validate by running a small batch with 1 IP at your chosen rate, then multiply.
+
 ## Validation Steps
 
 1. Start with 1 IP, 1 req/min; measure success rate.
@@ -63,8 +80,6 @@ Scale by adding IPs, not by increasing requests per IP.
 | Mixing datacenter and residential | Residential needed for hard sites | Use residential for e-commerce, SERP, etc. |
 | No monitoring | Can't tune | Log success rate and block rate per IP or pool |
 
-## Further Reading
+## Further reading
 
-- [Proxy rotation strategies](/en/blog/proxy-rotation-strategies)
-- [Proxy pools for web scraping](/en/blog/proxy-pools-web-scraping)
-- [Avoid IP bans](/en/blog/avoid-ip-bans-web-scraping)
+**Further reading:** [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies) · [Proxy Pools for Web Scraping](/en/blog/proxy-pools-web-scraping) · [Avoid IP Bans in Web Scraping](/en/blog/avoid-ip-bans-web-scraping)

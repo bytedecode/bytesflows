@@ -8,11 +8,11 @@ language: "en"
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
 ---
 
-## Python + Residential Proxies for Scraping
+## When Your Python Scraper Hits 403 or CAPTCHAs
 
-Python is the most practical language for scraping, but stable results depend on network quality as much as code quality. If your crawler gets 403, 429, or challenge pages, residential proxies are often the fix.
+You write a Python script with `requests` or Scrapy, run it on a target site—and within hours you see 403s, 429s, or "Checking your browser" pages. The cause is rarely your code. It is request density per IP and how the target scores your traffic. The fix: route requests through residential proxies so traffic looks like real users.
 
-This page covers stack selection, proxy setup patterns, scaling strategy, and debugging.
+This guide covers stack selection, proxy setup patterns, scaling strategy, and debugging.
 
 ---
 
@@ -125,4 +125,4 @@ Common causes: unrealistic headers, excessive concurrency, poor retry strategy, 
 
 ---
 
-[Get Proxies for Python Scraping](/en/proxies) · [Blog](/en/blog)
+**Further reading:** [Python Proxy Scraping Guide](/en/blog/python-proxy-scraping-guide) · [Using Proxies with Python Scrapers](/en/blog/using-proxies-python-scrapers) · [Proxy Rotation Strategies](/en/blog/proxy-rotation-strategies)
