@@ -13,8 +13,7 @@ coverImage: "https://bytesflows.com/images/blog/residential-proxy-cover.png"
 If you've ever tried web scraping, SEO monitoring, or running AI agents at scale, you've likely run into **blocks, CAPTCHAs, or IP bans**.
 
 That's where **residential proxies** come in.
-16: 
-17: ![Bypassing blocks with residential proxies - Hero Illustration](https://bytesflows.com/images/blog/hero-residential-proxy.png)
+![Bypassing blocks with residential proxies - Hero Illustration](https://bytesflows.com/images/blog/hero-residential-proxy.png)
 
 In this guide, we'll break down:
 
