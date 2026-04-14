@@ -1,8 +1,8 @@
 # Bytesflows Blog & Content
 
-**Articles, guides, and tool docs** for [Bytesflows](https://bytesflows.com) — dynamic residential proxies and free scraping tools. This repo is the Markdown source for what you see at [bytesflows.com/en/blog](https://bytesflows.com/en/blog).
+**[Bytesflows](https://bytesflows.com)** — **dynamic residential proxies** for web scraping at scale, plus guides and free tools. This repo is the Markdown source behind the site; **start with the product** if you need rotating residential IPs, then use the blog for deep dives.
 
-→ **Read on the site:** [Blog](https://bytesflows.com/en/blog) · [Proxies](https://bytesflows.com/en/proxies) · [Pricing](https://bytesflows.com/en/pricing)
+→ **On the site:** **[Proxies](https://bytesflows.com/en/proxies)** · [Blog](https://bytesflows.com/en/blog) · [Pricing](https://bytesflows.com/en/pricing)
 
 ---
 
@@ -22,10 +22,11 @@ The content in this repo is written to help you **learn web scraping, choose the
 
 | Where | What |
 |-------|------|
-| **Live site** | [bytesflows.com/en/blog](https://bytesflows.com/en/blog) — all articles, landing pages, and tool pages |
+| **Proxies (product)** | [bytesflows.com/en/proxies](https://bytesflows.com/en/proxies) — dynamic residential proxies, geo-targeting, use cases |
+| **Blog & tools (site)** | [bytesflows.com/en/blog](https://bytesflows.com/en/blog) — articles, landing pages, tool pages |
 | **This repo** | `content/` — Markdown source that syncs to the site |
 
-Internal links in the content follow the live sitemap (e.g. `/en/blog/...`, `/en/proxies`). For the best reading experience, use the blog index and categories on the website. Below is a **content map** for this repository.
+Internal links in the content follow the live sitemap (e.g. `/en/blog/...`, `/en/proxies`). Below is a **content map** for this repository.
 
 ---
 
@@ -88,4 +89,5 @@ scripts/
 This repo is the **single source of truth** for Bytesflows blog and tool content in Markdown. Articles are published at [bytesflows.com](https://bytesflows.com) and linked from the sitemap so readers can discover guides on web scraping, proxies, and best practices. The goal is to provide **practical, technical content** that helps you build and run better scrapers — and when you need reliable IPs at scale, [Bytesflows dynamic residential proxies](https://bytesflows.com/en/proxies) are there to help.
 
 - **Reading content:** Visit [bytesflows.com/en/blog](https://bytesflows.com/en/blog) for the full experience.
-- **Contributing or syncing:** Use the structure and scripts above. To set the repo description and topics on GitHub, see [.github/REPO_SETUP.md](.github/REPO_SETUP.md). For more on content and discovery, see [docs/content-and-discovery-tips.md](docs/content-and-discovery-tips.md).
+- **Contributing / syncing:** Use the folder layout and scripts in **Repo structure** above.
+- **Maintainers only (not required for readers):** How to set the [GitHub description, topics, and website link](.github/REPO_SETUP.md). Content planning and linking rules: [docs/README.md](docs/README.md), [docs/content-and-discovery-tips.md](docs/content-and-discovery-tips.md). Optional note for marketing/growth alignment with this repo: [.github/SEO_MARKETING_INDEX.md](.github/SEO_MARKETING_INDEX.md).

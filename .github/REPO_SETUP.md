@@ -9,13 +9,19 @@ Set these on the repo’s **About** section (click the gear next to “About” 
 Copy-paste into the **Description** field (or shorten if needed):
 
 ```
+Dynamic residential proxies for web scraping — guides & tools. bytesflows.com/en/proxies
+```
+
+Alternative (blog-emphasized, use only if a campaign is content-first):
+
+```
 Guides and articles on web scraping and dynamic residential proxies. Published at bytesflows.com
 ```
 
 Shorter option:
 
 ```
-Web scraping guides & dynamic residential proxy docs · bytesflows.com
+Residential proxies & scraping docs · bytesflows.com
 ```
 
 ---
