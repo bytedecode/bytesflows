@@ -1,110 +1,144 @@
 ---
-title: "OpenClaw Playwright Proxy Configuration"
-slug: "openclaw-playwright-proxy"
-summary: "Master OpenClaw Playwright proxy integration in 2026. Learn best practices for browser launch configuration, environment variable management, and residential IP validation."
-category: "AI & Automation"
-tags: ["OpenClaw", "Playwright", "Residential Proxy"]
-language: "en"
+title: OpenClaw Playwright Proxy Configuration
+metaTitle: OpenClaw Playwright Proxy Configuration (2026 Guide)
+metaDescription: Learn how to configure residential proxies in OpenClaw Playwright skills, including browser launch settings, rotating vs sticky sessions, environment variables, and testing.
+slug: openclaw-playwright-proxy
+summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
+category: AI & Automation
+tags: ["openclaw", "Playwright", "residential proxy"]
+language: en
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## OpenClaw Playwright Proxy Configuration
-
-[OpenClaw](https://openclaw.ai/) agents that use **Playwright** for browser automation can send all traffic through a proxy by setting proxy options at **browser launch**. This guide shows how to configure a **residential proxy** (including rotating) for the Playwright instance used by your OpenClaw skill so your agent’s browsing and scraping go through residential IPs.
-
----
-
-## Where Proxy Is Set in OpenClaw
-
-OpenClaw doesn’t configure the proxy itself; the **skill** or **agent code** that starts the browser does. So you need to:
-
-- Find the place where Playwright’s `chromium.launch()` (or similar) is called.
-- Add the `proxy` option to that call.
-
-If you use a community skill, check its config or docs for proxy support. If you write a custom skill, use the same pattern as in Playwright Proxy Configuration Guide and Using Proxies with Playwright.
-
----
-
-## Playwright Proxy Options
-
-In Node.js with Playwright:
-
+## The Proxy Is Configured in the Browser Layer, Not in OpenClaw Itself
+One of the easiest mistakes in OpenClaw setups is looking for a global “proxy setting” inside OpenClaw and assuming that is where browser traffic is controlled. In practice, the important configuration usually lives lower in the stack: inside the Playwright launch logic used by a skill or agent.
+That distinction matters because OpenClaw coordinates the workflow, but Playwright controls the browser process that actually sends traffic to the target website. If the browser launches without a proxy, your agent still exposes its origin IP no matter how well the rest of the system is designed.
+This guide explains how Playwright proxy configuration works inside OpenClaw, where to place the settings, how rotating and sticky sessions differ, and how to validate the setup before you scale. It pairs naturally with [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), and [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy).
+## Where the Proxy Setting Actually Belongs
+OpenClaw usually does not fetch pages directly. A skill launches a browser, most often through Playwright, and that browser handles the request.
+So the proxy belongs where the browser is created, typically in code paths such as:
+- `chromium.launch(...)`
+- `firefox.launch(...)`
+- a shared browser factory used by multiple skills
+This is the layer that determines how traffic exits the machine. If your goal is to route OpenClaw browsing through residential IPs, this is the setting that matters most.
+## The Basic Playwright Pattern
+In Node.js, the common pattern looks like this:
 ```javascript
-const { chromium } = require('playwright');
+const { chromium } = require("playwright");
 
 const browser = await chromium.launch({
   headless: true,
   proxy: {
-    server: 'http://p1.bytesflows.com:8001',
-    username: 'your-username',
-    password: 'your-password'
+    server: "http://p1.bytesflows.com:8001",
+    username: "your-username",
+    password: "your-password"
   }
 });
 ```
-
-- **server** — Proxy URL (host:port). Use `http://` or `https://` as required by the provider.
-- **username** / **password** — Auth for the proxy gateway. Prefer environment variables so credentials aren’t in code. OpenClaw Proxy Setup.
-
-All pages and requests from that browser instance then use the proxy. If the provider uses **rotating** residential IPs, each new request (or session) can get a new IP. How Proxy Rotation Works and Rotating Proxies for Web Scraping.
-
----
-
-## Using Environment Variables
-
-Store credentials in env vars and read them in your skill:
-
+Once the browser launches with that configuration, browser traffic goes through the proxy gateway. That means page loads, browser requests, and navigation all inherit the same transport layer.
+This is the key point: if the browser instance is not launched with the proxy, the rest of the skill cannot “fix” that later.
+## Why This Matters for OpenClaw Skills
+In an OpenClaw workflow, one skill may handle browser automation while another handles extraction or summarization. Proxy control belongs to the browser skill because that is where network behavior begins.
+That is why proxy integration should usually be treated as part of skill design rather than an environment-level afterthought.
+A practical architecture looks like this:
+```mermaid
+flowchart LR
+    A["OpenClaw task"] --> B["Playwright skill"]
+    B --> C["Proxy-configured browser"]
+    C --> D["Target website"]
+    D --> E["Extraction or response"]
+```
+## Using Environment Variables Instead of Hardcoding
+Hardcoding proxy credentials inside the skill works for a quick test, but it is the wrong pattern for real use.
+A cleaner approach is to use environment variables:
 ```javascript
 const browser = await chromium.launch({
-  proxy: process.env.PROXY_SERVER ? {
-    server: process.env.PROXY_SERVER,
-    username: process.env.PROXY_USER,
-    password: process.env.PROXY_PASS
-  } : undefined
+  proxy: process.env.PROXY_SERVER
+    ? {
+        server: process.env.PROXY_SERVER,
+        username: process.env.PROXY_USER,
+        password: process.env.PROXY_PASS,
+      }
+    : undefined,
 });
 ```
-
-Set in the environment where OpenClaw runs (e.g. `export PROXY_SERVER=...`). This keeps secrets out of the repo and makes it easy to switch proxies per environment. OpenClaw Proxy Setup.
-
----
-
-## Sticky vs Rotating in Playwright
-
-From Playwright’s perspective you always pass **one** proxy endpoint. The provider decides whether that endpoint **rotates** (new IP per request) or is **sticky** (same IP for a session). Configure that in the provider’s dashboard or via gateway parameters. Playwright just sends traffic to the gateway. Proxy Rotation Strategies and Why OpenClaw Agents Need Residential Proxies.
-
----
-
-## Testing the Setup
-
-1. Run an OpenClaw task that uses the browser (e.g. open a few pages).
-2. Confirm the target (or a “what’s my IP” page) sees a **residential** IP and, if rotating, that the IP changes across requests.
-3. Use Proxy Checker with the same gateway to validate connectivity and Scraping Test to confirm your target allows the proxy.
-
-If you get CAPTCHA or 403, see Bypassing Cloudflare with OpenClaw and Avoiding Blocks When Using OpenClaw.
-
----
-
-## FAQ
-
-**Where do I set the proxy in OpenClaw?** In the skill or agent code that calls `chromium.launch()` (or equivalent). Add `proxy: { server, username, password }` to the launch options. OpenClaw Proxy Setup and Playwright Proxy Configuration Guide.
-
-**Does Playwright support rotating proxies?** Playwright sends traffic to one proxy URL; the **provider** decides rotation. Use a residential proxy gateway that rotates; no extra config in Playwright. OpenClaw Rotating Proxy and How Proxy Rotation Works.
-
-**How do I test that the proxy works?** Run a task that opens a “what’s my IP” page or your target; check the IP is residential. Use Proxy Checker and Scraping Test with the same gateway. OpenClaw AI Agent Anti-Bot.
-
----
-
-## Related reading
-
-- OpenClaw Proxy Setup — full setup
-- Why OpenClaw Agents Need Residential Proxies — why proxies
-- OpenClaw Rotating Proxy — rotation
-- Playwright Proxy Configuration Guide — Playwright details
-- Using Proxies with Playwright — general Playwright + proxy
-- Residential Proxies — product
-- Proxy Checker, Scraping Test — validate
-
----
-
-## Summary
-
-**OpenClaw Playwright proxy configuration** is done in the **browser launch** call: add `proxy: { server, username, password }` to `chromium.launch()`. Use env vars for credentials. The proxy provider controls rotation vs sticky. For full setup, see OpenClaw Proxy Setup and Playwright Proxy Configuration Guide. For residential proxies, Residential Proxies and Best Proxies for Web Scraping.
+You can then set those values in the environment where OpenClaw runs:
+```bash
+export PROXY_SERVER="http://p1.bytesflows.com:8001"
+export PROXY_USER="username"
+export PROXY_PASS="password"
+```
+This approach is better because it:
+- keeps secrets out of code
+- makes environment switching easier
+- lets multiple deployments use different gateways cleanly
+- reduces accidental credential leaks in repos or logs
+## Rotating vs Sticky Sessions in Playwright
+This is another common source of confusion.
+From Playwright’s perspective, you usually provide one proxy gateway. The provider decides whether that endpoint behaves as a rotating or sticky session.
+### Rotating mode
+Use this when requests are mostly independent.
+Best for:
+- public crawling
+- search result collection
+- discovery workflows
+- large-scale browsing where session continuity is not important
+### Sticky mode
+Use this when the site expects continuity across several steps.
+Best for:
+- login flows
+- account areas
+- cart or checkout simulation
+- session-sensitive browsing
+The important point is that Playwright does not create rotation by itself. It forwards traffic to the configured gateway, and the provider handles how IPs are assigned. Related guides such as [proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies) and [rotating residential proxies for OpenClaw agents](https://bytesflows.com/en/blog/openclaw-rotating-proxy) go deeper on that behavior.
+## How to Test That the Proxy Is Really Working
+A proxy integration should be validated before you scale or trust the results.
+A simple testing process looks like this:
+1. launch the OpenClaw task that uses the browser skill
+1. open an IP-check page through the browser
+1. confirm the visible IP differs from the host machine
+1. verify country or geo-targeting if that matters
+1. run a real target test, not only a generic IP endpoint
+Useful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+That last step matters. A configuration can appear valid on a generic IP page while still failing against the actual target because the target evaluates browser behavior more aggressively.
+## Common Failure Modes
+### The browser launches, but traffic is not proxied
+This usually means the proxy block was not applied to the launch call that actually creates the browser instance.
+### The proxy works on test pages but fails on real targets
+In that case, the problem is often not syntax. It is more likely session behavior, challenge handling, or weak browser realism.
+### The session breaks mid-workflow
+That often means rotating mode is being used where sticky session behavior is needed.
+### CAPTCHA or 403 pages still appear
+A working proxy configuration is necessary, but not sufficient. Request pacing, browser fingerprinting, and target difficulty still matter. This is why [avoiding blocks when using OpenClaw for scraping](https://bytesflows.com/en/blog/openclaw-ai-agent-anti-bot) and [bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/en/blog/openclaw-cloudflare-bypass) remain relevant even after proxy setup is complete.
+## Best Practices for OpenClaw + Playwright Proxy Setup
+### Keep proxy config close to browser launch
+Do not hide it in unrelated settings or assume another layer will inherit it.
+### Use environment variables by default
+This makes deployment safer and easier to maintain.
+### Match session mode to workflow design
+Rotating for stateless collection, sticky for multi-step or logged-in flows.
+### Validate on real target pages
+A passing IP check is helpful, but it is not the same as target success.
+### Treat proxy quality and browser behavior as one system
+Reliable browsing depends on both network routing and browser realism.
+## When This Setup Is Most Useful
+OpenClaw Playwright proxy configuration matters most when:
+- the workflow uses browser automation regularly
+- the target site is sensitive to datacenter IPs
+- geo-targeting matters
+- the tasks involve repeated browsing or extraction
+- the goal is to scale OpenClaw workflows beyond one-off tests
+In those cases, proxy setup is not just a performance enhancement. It is part of whether the workflow works at all.
+## Conclusion
+OpenClaw Playwright proxy configuration is really about controlling the browser’s network path at launch time. The important setting is not in OpenClaw globally but in the Playwright code that creates the browser instance.
+Once that is configured correctly, the rest of the workflow—browsing, extraction, and response—can run on top of a more reliable transport layer. For serious OpenClaw usage, especially on protected or large-scale targets, residential proxy support should be treated as a core part of the skill architecture.
+If you are building a fuller internal reading path from here, continue with [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), and [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide).
+## Further reading
+- [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup)
+- [Why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy)
+- [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping)
+- [Rotating residential proxies for OpenClaw agents](https://bytesflows.com/en/blog/openclaw-rotating-proxy)
+- [Playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide)
+- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)

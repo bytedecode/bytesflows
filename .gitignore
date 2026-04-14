@@ -4,3 +4,4 @@
 .env*
 /scripts
 /notion-sync
+/bak/export

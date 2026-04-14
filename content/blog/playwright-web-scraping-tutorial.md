@@ -1,103 +1,131 @@
 ---
 title: "Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery"
-slug: "playwright-web-scraping-tutorial"
-summary: "2026 Playwright web scraping tutorial for modern apps. Learn to capture React/Next.js content, manage infinite scrolls, and master stealth techniques with residential proxies."
-category: "AI & Automation"
-tags: ["Automation", "Playwright", "Tutorial", "Web Scraping", "Web scraping tutorial"]
-language: "en"
+metaTitle: "Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery"
+metaDescription: Learn Playwright web scraping step by step, including contexts, dynamic rendering, infinite scroll, residential proxies, and practical anti-block habits.
+slug: playwright-web-scraping-tutorial
+summary: A practical Playwright web scraping tutorial covering contexts, dynamic pages, infinite scroll, browser realism, proxy use, and the first steps toward production reliability.
+category: AI & Automation
+tags: ["automation", "Playwright", "tutorial", "Web Scraping", "Web scraping tutorial"]
+language: en
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## Introduction: Why Playwright in 2026?
-
-Modern web applications (React, Vue, Next.js) rely on client-side rendering. HTTP libraries like `requests` or `axios` often return only a skeleton HTML file. **Playwright**, developed by Microsoft, drives a real Chromium, Firefox, or WebKit browser. It executes JavaScript, handles dynamic content, and supports multi-context scenarios. This guide moves beyond basics to a production-ready scraper.
-
----
-
-## Core Concepts: Contexts vs Pages
-
-A **BrowserContext** is like an isolated incognito window. Each context has its own cookies, storage, and cache.
-
-**Benefits:**
-- **Isolation** — Run hundreds of parallel scrapers without data leaking between them.
-- **Performance** — Launch the browser once, create many contexts for different tasks. Contexts are lighter than full browser instances.
-
-```python
-context1 = await browser.new_context()
-context2 = await browser.new_context()
-# context1 and context2 are isolated
+## Playwright Is Useful Because Modern Scraping Often Needs a Real Browser, Not Just a Request Library
+A beginner scraper can get surprisingly far with simple HTTP requests. But once a site relies on JavaScript rendering, infinite scroll, interaction, or browser-aware defenses, a request library alone often stops being enough. That is where Playwright becomes valuable.
+Playwright gives you browser automation that feels close to how real modern sites actually behave.
+This tutorial explains how to think about Playwright for scraping, from core concepts like browser contexts and pages to real-world patterns such as infinite scroll, proxy routing, and the first habits that make browser automation more production-ready. It pairs naturally with [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), [playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale), and [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide).
+## Why Playwright Is Different from Simple HTTP Scraping
+A request client downloads a response. A browser automation tool runs the page.
+That means Playwright can:
+- execute JavaScript
+- wait for dynamic content
+- interact with buttons, forms, and filters
+- preserve browser session state
+- expose the rendered DOM after the page actually loads
+This makes it especially useful for modern SPAs, dynamic marketplaces, and browser-sensitive scraping targets.
+## The Core Mental Model: Browser, Context, Page
+One of the most important Playwright concepts is understanding the difference between:
+- the browser
+- the browser context
+- the page
+### Browser
+The main browser process.
+### Context
+An isolated session container, similar to an incognito profile.
+### Page
+A tab or page inside that context.
+This matters because contexts let you run multiple isolated scraping flows without launching a full new browser every time.
+## Why Contexts Matter So Much
+Contexts are one of the most practical scaling and organization features in Playwright.
+They let you:
+- isolate cookies and storage
+- run separate sessions in one browser
+- reduce total browser-launch overhead
+- test multiple identities or tasks more cleanly
+This is why many Playwright scraping systems reuse browsers but create separate contexts for parallel tasks.
+## The First Practical Use Case: Dynamic Content
+Playwright becomes especially useful when the page:
+- renders product cards after load
+- updates content after interaction
+- uses infinite scroll
+- depends on client-side routing
+- returns incomplete HTML to simple HTTP clients
+Instead of scraping the original response body, you scrape the browser’s rendered state.
+## Waiting Correctly Is a Core Skill
+A lot of Playwright reliability comes from waiting for the right moment.
+In practice, that often means:
+- waiting for a selector that proves the content is present
+- waiting for rendering to settle enough to extract safely
+- avoiding arbitrary sleeps as the main logic
+This is where Playwright often feels cleaner than older browser automation stacks: the waiting model is better aligned with modern pages.
+## Infinite Scroll and Dynamic Discovery
+A common real-world pattern is scraping discovery pages that reveal more results as the user scrolls.
+Playwright helps here because it can:
+- scroll programmatically
+- wait between scroll actions
+- inspect whether more content appeared
+- stop when the page stops revealing useful new items
+This is one of the clearest examples of why browser automation is sometimes necessary rather than optional.
+## Why Proxy Use Matters in Playwright
+A browser is still judged by its visible network identity.
+That means Playwright scraping often needs proxies when:
+- the target is anti-bot sensitive
+- the scraper runs from cloud infrastructure
+- region-specific data matters
+- repeated browsing creates too much pressure on one IP
+Residential proxies are often the better fit because Playwright is commonly used exactly where identity quality matters most.
+Related background from [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [how residential proxies improve scraping success](https://bytesflows.com/en/blog/residential-proxies-improve-scraping), and [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide) fits directly here.
+## Browser Realism Matters Too
+If the target is sensitive, browser automation should also think about:
+- realistic viewport
+- coherent locale and geography
+- session continuity
+- navigation pacing
+This is not about pretending to be magic. It is about avoiding obviously inconsistent automation signals.
+## A Practical Playwright Workflow
+A useful browser-scraping flow often looks like this:
+```mermaid
+flowchart LR
+    A["Launch browser"] --> B["Create context"]
+    B --> C["Open page"]
+    C --> D["Wait for rendered content"]
+    D --> E["Extract fields"]
+    E --> F["Close page or reuse context"]
 ```
-
----
-
-## Solving the "Bot" Problem
-
-Playwright out of the box leaves automation signals. Sites check `navigator.webdriver` and other fingerprint traits. To reduce detection:
-
-1. **Use a stealth plugin** — playwright-stealth patches common automation leaks.
-2. **Use residential proxies** — High-trust IPs reduce blocks. Rotating proxies spread load.
-3. **Realistic viewport and User-Agent** — 1920×1080, consistent Chrome UA. Match locale to proxy region.
-
----
-
-## Real-World Example: Dynamic Marketplace with Infinite Scroll
-
-```python
-import asyncio
-from playwright.async_api import async_playwright
-
-async def scrape_dynamic_store():
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=True,
-            proxy={"server": "http://p1.example.com:8001",
-                   "username": "user", "password": "pass"}
-        )
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/121.0.0.0 Safari/537.36",
-            viewport={"width": 1920, "height": 1080}
-        )
-        page = await context.new_page()
-        await page.goto("https://example-shop.com/products", wait_until="networkidle")
-        for _ in range(5):
-            await page.mouse.wheel(0, 500)
-            await asyncio.sleep(1)
-        items = page.locator(".product-card")
-        count = await items.count()
-        for i in range(count):
-            title = await items.nth(i).locator(".title").inner_text()
-            price = await items.nth(i).locator(".price").inner_text()
-            print(f"{title} | {price}")
-        await browser.close()
-```
-
-**Key points:** Proxy for IP. Viewport 1920×1080. `locator` auto-waits for dynamic DOM. Scroll + sleep for lazy load.
-
----
-
-## Best Practices for Scaling
-
-1. **Use locators, not raw selectors** — Playwright's `locator` API auto-waits for elements. Handles dynamic shifts.
-2. **Close resources** — Always close pages and contexts. Avoid zombie browser processes.
-3. **Handle challenges** — On CAPTCHA or block, close the session and retry with a new browser (new IP). Don't hammer the same IP.
-4. **Reuse contexts** — One browser, many contexts. Cheaper than one browser per URL.
-
----
-
-## Troubleshooting
-
-**Empty content** — Wait for the right moment. Use `wait_until="networkidle"` or `page.wait_for_selector(".product-list")`. Some SPAs need 2–5 seconds after load.
-
-**Blocked despite proxy** — Add playwright-stealth. Ensure viewport and User-Agent match. Add randomized delays between navigations.
-
-**Memory leak** — Close contexts and pages when done. Reuse contexts instead of creating new browsers for every URL.
-
----
-
-## Summary
-
-Playwright is the standard for JavaScript-rendered scraping. Use contexts for isolation and scale. Pair with residential proxies and stealth. Prefer locators for dynamic content. Handle infinite scroll with wheel + wait. Close resources and retry with new IP on failure.
-
----
-
-**Further reading:** [Bypass Cloudflare for Web Scraping](/en/blog/bypass-cloudflare-web-scraping) · [Avoid Detection in Playwright Scraping](/en/blog/avoid-detection-playwright-scraping) · [Using Proxies with Playwright](/en/blog/using-proxies-playwright)
+This model helps make Playwright feel less mysterious. It is just browser state managed deliberately.
+## Common Mistakes
+### Launching a new browser for every small task
+This raises cost and slows throughput unnecessarily.
+### Using fixed sleeps instead of waiting for page state
+That makes the workflow more brittle.
+### Treating proxy setup as optional on strict targets
+Browser realism alone is often not enough.
+### Forgetting to close pages or contexts
+This can create memory and stability issues over time.
+### Assuming one successful run means the workflow is production-ready
+Real reliability only appears under repetition.
+## Best Practices for Playwright Scraping
+### Use contexts for isolation
+They are lighter and cleaner than launching many full browsers.
+### Wait for actual content signals
+Let the page tell you when it is ready.
+### Use proxies when identity matters
+Especially on protected or geo-sensitive targets.
+### Keep browser settings coherent with the routing strategy
+Viewport, locale, and region should make sense together.
+### Build toward production gradually
+Start simple, then add scaling, retries, and better session handling as needed.
+Helpful related reading includes [playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale), [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), and [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide).
+## Conclusion
+Playwright web scraping is useful because many modern sites no longer expose their real content cleanly to simple HTTP clients. A real browser can render, wait, interact, and preserve session state in ways that match how the target actually works.
+The key to using Playwright well is understanding the browser-context-page model, waiting for real page signals, and treating identity and proxy routing as part of the browser workflow rather than as separate concerns. Once those pieces click, Playwright becomes a practical and powerful scraping tool rather than just a heavy fallback.
+If you want the strongest next reading path from here, continue with [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), [playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale), [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide), and [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping).
+## Further reading
+- [Browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping)
+- [Playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale)
+- [Playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide)
+- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
+- [Playwright vs Selenium](https://bytesflows.com/en/blog/playwright-vs-selenium-scraping)
+- [Playwright vs Crawlee for web scraping](https://bytesflows.com/en/blog/playwright-vs-crawlee-comparison)

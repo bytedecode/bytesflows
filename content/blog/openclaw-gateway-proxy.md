@@ -1,100 +1,134 @@
 ---
 title: "OpenClaw Gateway and Proxy: Traffic and Browser Proxy"
-slug: "openclaw-gateway-proxy"
-summary: "Clarifying OpenClaw's proxy architecture. Understand the critical difference between incoming gateway proxies and outgoing browser proxies for web scraping in 2026."
-category: "AI & Automation"
-tags: ["OpenClaw", "Openclaw gateway", "Proxy", "Residential Proxy"]
-language: "en"
+metaTitle: "OpenClaw Gateway and Proxy: Traffic vs Browser Proxy (2026 Guide)"
+metaDescription: Learn the difference between OpenClaw gateway proxies and browser proxies, and where to configure residential proxies for scraping, browser automation, and agent workflows.
+slug: openclaw-gateway-proxy
+summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
+category: AI & Automation
+tags: ["openclaw", "openclaw gateway", "proxy", "residential proxy"]
+language: en
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
 ---
 
-## OpenClaw Gateway and Proxy: Traffic and Browser Proxy
-
-[OpenClaw](https://openclaw.ai/) has two places where “proxy” can appear: (1) **Gateway-level** — e.g. trusted proxy for incoming requests (load balancer, reverse proxy). (2) **Browser-level** — the proxy used when an **agent** drives a browser for scraping or browsing. For **residential proxies for web scraping**, you care about **(2)**. This guide clarifies the difference and how to set the **browser proxy** for your agents.
-
----
-
-## Gateway vs Browser Proxy
-
-- **Gateway** — The OpenClaw Gateway is the process that receives messages from WhatsApp, Telegram, Discord, etc., and routes them to agents. It may sit behind a **reverse proxy** (e.g. Nginx, Cloudflare Tunnel) for HTTPS or auth. OpenClaw docs mention [trusted proxy auth](https://docs.openclaw.ai/gateway/trusted-proxy-auth) for that. This is **not** the proxy used for outbound scraping.
-- **Browser proxy** — When an agent uses Playwright (or similar) to open web pages, that **browser** can be configured with an **outbound proxy** (e.g. residential proxy gateway). That’s where you set Bytesflows or any other residential proxy so the **agent’s web traffic** goes through rotating residential IPs.
-
-So: **Gateway proxy** = incoming traffic to OpenClaw. **Browser proxy** = outgoing traffic from the agent’s browser. For scraping and avoiding blocks, you configure the **browser proxy**. Why OpenClaw Agents Need Residential Proxies and OpenClaw Proxy Setup.
-
----
-
-## Where to Configure the Browser Proxy
-
-The proxy is set **where the browser is launched** — in the skill or agent code that calls Playwright’s `launch()`, not in the Gateway config file. Add:
-
+## “Proxy” Means Two Different Things in OpenClaw—and Confusing Them Breaks Scraping Setups
+One of the most common mistakes in OpenClaw deployments is treating every mention of “proxy” as if it refers to the same thing. It does not.
+In practice, OpenClaw environments often involve two very different proxy concepts:
+- the **gateway or reverse proxy** that sits in front of OpenClaw for incoming traffic
+- the **browser proxy** that controls outbound web traffic from browser automation
+Only one of those helps with scraping, browsing identity, and anti-block reliability. That is the browser proxy.
+This guide explains the difference between gateway proxying and browser proxying in OpenClaw, where each one belongs, and why residential proxy configuration for scraping should always live in the browser layer rather than being confused with reverse-proxy infrastructure. It pairs naturally with [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), and [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy).
+## The Two Proxy Layers
+A simple way to understand the distinction is this:
+### Gateway proxy
+This is the infrastructure that handles traffic coming into OpenClaw itself.
+Examples include:
+- Nginx in front of OpenClaw
+- Cloudflare Tunnel for inbound access
+- a reverse proxy that manages SSL or routing
+- trusted proxy headers used by the OpenClaw gateway
+This layer is about inbound requests reaching OpenClaw safely.
+### Browser proxy
+This is the proxy used by the browser launched inside a skill or agent workflow.
+Examples include:
+- a residential proxy gateway in Playwright launch options
+- rotating outbound browser traffic through residential IPs
+- controlling geo-targeting or session identity for scraping
+This layer is about outbound traffic leaving OpenClaw and reaching target websites.
+## Why This Distinction Matters
+If your goal is scraping, browsing protected sites, or reducing blocks, the proxy that matters is the browser proxy.
+A reverse proxy in front of OpenClaw does not change the IP that target websites see when your browser skill opens pages. It only affects how traffic reaches OpenClaw itself.
+This is why some teams believe they “configured a proxy” and still get blocked: the inbound layer was configured, but the outbound browser traffic was still leaving from the raw server IP.
+## The Gateway Layer: What It Is For
+The gateway layer is useful for:
+- HTTPS termination
+- request routing
+- auth or access control
+- trusted headers like `X-Forwarded-*`
+- exposing OpenClaw safely behind another service
+This is an infrastructure and deployment concern. It matters operationally, especially on VPS or production deployments, but it does not solve scraping identity or outbound anti-bot issues by itself.
+## The Browser Layer: What It Is For
+The browser layer is where web automation actually happens.
+When an OpenClaw skill launches Playwright, that browser is what target sites see. If it is not configured with a proxy, its requests usually come from the machine where OpenClaw is running.
+That is why browser proxying is the correct place to configure:
+- residential proxies
+- geo-targeting for browser tasks
+- rotating or sticky session behavior
+- outbound browsing identity for scraping workflows
+This is the layer that matters for articles like [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy), and [large-scale data collection with OpenClaw and proxies](https://bytesflows.com/en/blog/openclaw-data-collection-scale).
+## Where Residential Proxies Belong
+Residential proxies should be configured where the browser is launched.
+That usually means code paths such as:
+- `chromium.launch(...)`
+- a Playwright wrapper inside the skill
+- a shared browser helper used by multiple skills
+A typical pattern looks like this:
 ```javascript
-proxy: {
-  server: 'http://p1.bytesflows.com:8001',
-  username: 'user',
-  password: 'pass'
-}
+const browser = await chromium.launch({
+  proxy: {
+    server: "http://p1.bytesflows.com:8001",
+    username: "user",
+    password: "pass"
+  }
+});
 ```
-
-to the launch options. Full steps: OpenClaw Proxy Setup and OpenClaw Playwright Proxy. Playwright Proxy Configuration Guide has more examples.
-
----
-
-## Running the Gateway Behind a Reverse Proxy
-
-If you run OpenClaw on a VPS and put Nginx (or similar) in front for SSL or routing, that’s the **Gateway** side. The Gateway may need to trust `X-Forwarded-*` headers; see OpenClaw’s [trusted proxy](https://docs.openclaw.ai/gateway/trusted-proxy-auth) docs. That setup does **not** change the IP that your **agent’s browser** uses for outbound requests. For outbound scraping traffic, you still configure the **browser proxy** (residential proxy) in the Playwright launch options. OpenClaw Browser Automation with Proxies.
-
----
-
-## FAQ
-
-**Where do I set the proxy for scraping?** In the **browser** launch options (Playwright) used by your OpenClaw skill, not in the Gateway config. Add `proxy: { server, username, password }` to `chromium.launch()`. OpenClaw Proxy Setup and OpenClaw Playwright Proxy.
-
-**Does the Gateway need a proxy?** Only if you put the Gateway behind a reverse proxy (e.g. Nginx) for HTTPS or auth; then you may need to configure trusted proxy headers. That’s separate from outbound browser traffic. [OpenClaw docs](https://docs.openclaw.ai/gateway/trusted-proxy-auth).
-
-**One proxy for all agents?** Yes. Point every browser-based skill to the same residential proxy gateway; the provider’s rotation will assign different IPs. OpenClaw Multi-Agent and Proxy and OpenClaw Rotating Proxy.
-
----
-
-## Related reading
-
-- OpenClaw Proxy Setup — browser proxy setup
-- OpenClaw Playwright Proxy — Playwright config
-- OpenClaw Browser Automation with Proxies — browser + proxy
-- Why OpenClaw Agents Need Residential Proxies — why use proxies
-- OpenClaw Multi-Agent and Proxy — multiple agents
-- Residential Proxies — product
-- Playwright Proxy Configuration Guide — Playwright proxy
-
----
-
-## Key takeaways
-
-- **Gateway proxy** = incoming (reverse proxy, trusted headers); **browser proxy** = outbound scraping traffic. Don’t confuse them. OpenClaw Proxy Setup.
-- **Scraping proxy** goes in the **browser** launch (Playwright): `proxy: { server, username, password }`. OpenClaw Playwright Proxy.
-- **One residential gateway** can serve all agents; provider handles rotation. OpenClaw Rotating Proxy and Residential Proxies.
-- **Validate** with Proxy Checker and Scraping Test.
-
----
-
-## Before you start
-
-- **Gateway** = incoming traffic (reverse proxy, trusted headers); **browser proxy** = outbound scraping. Don’t mix. OpenClaw Proxy Setup.
-- **Residential proxy** gateway URL and credentials; add to Playwright launch in your OpenClaw skill. OpenClaw Playwright Proxy.
-- **One gateway** can serve all agents; provider rotates IPs. OpenClaw Rotating Proxy and Residential Proxies.
-- **Validate** with Proxy Checker and Scraping Test.
-
----
-
-## When to use this guide
-
-Use this when you need to **distinguish Gateway proxy** (incoming, reverse proxy) from **browser proxy** (outbound scraping). Set the scraping proxy in the **browser** (Playwright) used by your OpenClaw skill, not in the Gateway. OpenClaw Proxy Setup and OpenClaw Playwright Proxy.
-
-**Quick tip:** One residential proxy gateway can serve all agents; the provider rotates IPs. Validate with Proxy Checker and Scraping Test. Residential Proxies. For Playwright config, OpenClaw Playwright Proxy. See also OpenClaw Multi-Agent and Proxy, OpenClaw Rotating Proxy. For trusted proxy headers (incoming), see [OpenClaw docs](https://docs.openclaw.ai/gateway/trusted-proxy-auth). The browser proxy is set per skill or agent in the Playwright launch options. Use env vars for proxy credentials. OpenClaw Proxy Setup.
-
-**See also:** OpenClaw Playwright Proxy · OpenClaw Multi-Agent and Proxy · OpenClaw Rotating Proxy · Residential Proxies · Proxy Checker, Scraping Test.
-
----
-
-## Summary
-
-**OpenClaw Gateway** can sit behind a reverse proxy for incoming traffic; that’s separate from **outbound browser traffic**. For **web scraping and browsing**, set a **residential proxy** on the **browser** (Playwright launch options) used by your OpenClaw skill. See OpenClaw Proxy Setup, OpenClaw Playwright Proxy, and Residential Proxies.
+That one change affects the browsing identity of the automation workflow. A gateway reverse proxy does not do that.
+## A Practical Architecture
+A useful way to visualize the difference is this:
+```mermaid
+flowchart LR
+    A["User or channel"] --> B["Gateway / reverse proxy"]
+    B --> C["OpenClaw"]
+    C --> D["Browser skill"]
+    D --> E["Residential browser proxy"]
+    E --> F["Target website"]
+```
+This makes the separation very clear:
+- inbound traffic reaches OpenClaw through the gateway layer
+- outbound traffic reaches target sites through the browser proxy layer
+Those are different parts of the system with different purposes.
+## Why Teams Mix Them Up
+This confusion happens because both are called “proxy,” but they solve different problems.
+The gateway proxy solves:
+- how OpenClaw is exposed
+- how inbound traffic is secured or routed
+The browser proxy solves:
+- how scraping traffic exits
+- what IP identity the target sees
+- how browser tasks handle geo and anti-bot pressure
+The words sound similar, but operationally they are not interchangeable.
+## Common Mistakes
+### Configuring only the reverse proxy and assuming scraping is covered
+This leaves browser traffic exposed on the raw host IP.
+### Looking for a single global proxy setting inside OpenClaw
+In most cases, browser proxying lives in skill code, not in one global gateway switch.
+### Mixing deployment and traffic-identity concerns
+These should be designed separately so they remain debuggable.
+### Assuming inbound trusted proxy headers affect outbound browsing
+They do not.
+### Forgetting that browser traffic is what targets evaluate
+Target sites care about the browser session, not how OpenClaw received the original user message.
+## Best Practices
+### Treat gateway and browser proxying as separate layers
+This keeps the system easier to reason about.
+### Configure residential transport at browser launch
+That is where outbound identity is actually determined.
+### Use environment variables for browser proxy credentials
+This is safer and easier to manage across deployments.
+### Document the separation clearly in multi-skill systems
+That prevents future confusion when more agents or browser tasks are added.
+### Validate browser traffic on the real target
+A correct gateway setup says nothing about outbound browsing reliability.
+Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+## Conclusion
+OpenClaw gateway proxying and browser proxying solve two different problems. Gateway proxies manage how traffic reaches OpenClaw. Browser proxies manage how automated browsing leaves OpenClaw.
+If your goal is web scraping, browser automation, geo-targeting, or anti-block reliability, the browser proxy is the layer that matters. That is where residential proxy configuration belongs. Keeping that distinction clear makes OpenClaw deployments easier to build, easier to debug, and much less likely to fail because the wrong proxy layer was configured.
+If you want the strongest next reading path from here, continue with [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy), [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), and [multi-agent OpenClaw and proxy routing](https://bytesflows.com/en/blog/openclaw-multi-agent-proxy).
+## Further reading
+- [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy)
+- [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy)
+- [Why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy)
+- [Multi-agent OpenClaw and proxy routing](https://bytesflows.com/en/blog/openclaw-multi-agent-proxy)
+- [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup)
+- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
+- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
