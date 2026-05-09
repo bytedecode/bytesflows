@@ -49,14 +49,14 @@ A cheap route is not cheap if it produces noisy data.
 
 Use this model:
 
-~~~text
+```text
 cost per useful output =
   proxy traffic cost
   + retry traffic cost
   + browser/runtime cost
   + engineering time for failures
   + cost of bad downstream decisions
-~~~
+```
 
 Useful output means the result can be used by the business workflow. For example:
 
@@ -153,7 +153,7 @@ Do not choose from theory. Choose from a representative sample.
 
 Run both proxy types against the same small workload if possible.
 
-~~~yaml
+```yaml
 proxy_type_test:
   targets:
     - 50_product_pages
@@ -173,7 +173,7 @@ proxy_type_test:
     - blocked_or_access_page_rate
   decision:
     choose_proxy_type_by: cost_per_useful_output
-~~~
+```
 
 This test does not need to be large. It needs to be representative. Include the pages and markets that actually matter to the business.
 
@@ -231,10 +231,10 @@ Broad discovery can start with datacenter routes if the targets are tolerant and
 
 This mixed model can be sensible:
 
-~~~text
+```text
 datacenter = cheap discovery
 residential = market-sensitive validation and production evidence
-~~~
+```
 
 The split should be explicit. Otherwise teams may mix data sources and forget which records are suitable for reporting.
 
