@@ -4,7 +4,7 @@ metaTitle: Bypassing Cloudflare with OpenClaw and Residential Proxies (2026 Guid
 metaDescription: Learn how OpenClaw workflows handle Cloudflare more reliably with browser automation, residential proxies, pacing, and better session behavior.
 slug: openclaw-cloudflare-bypass
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["Cloudflare", "openclaw", "residential proxy"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: proxy-rotation-strategies
 summary: 2026 代理轮换深度解析：从粘性会话到单请求轮换。掌握智能代理管理艺术，配合住宅网络构建具备反爬弹性的生产级基础设施。
-category: 代理
+category: "Proxy Guides & Benchmark"
 tags: ["web-scraping", "proxy", "automation", "rotation", "devops"]
 language: zh
 status: Draft

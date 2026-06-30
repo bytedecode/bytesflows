@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: browser-fingerprinting-explained
 summary: 深入剖析现代反爬系统如何利用浏览器硬件细节、Canvas/WebGL 渲染及音频上下文创建唯一 ID。学习如何通过 Stealth 插件、指纹随机化和高质量住宅代理应对浏览器指纹识别，降低机器行为被检测的风险。
-category: anti-bot
+category: "AI Agents & Automation"
 tags: ["web-scraping", "automation", "browser-fingerprinting", "Privacy", "Security"]
 language: zh
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Ethical Web Scraping Practices (2026 Guide)
 metaDescription: Learn ethical web scraping practices in 2026, including responsible rate limiting, robots.txt review, privacy safeguards, and sustainable collection design.
 slug: ethical-web-scraping-practices
 summary: A practical guide to ethical web scraping practices in 2026, covering responsible rate limiting, robots.txt, privacy, and sustainable collection design.
-category: Legal & Compliance
+category: "Proxy Guides & Benchmark"
 tags: ["best practices", "ethical", "legal", "robots.txt", "Web Scraping"]
 language: en
 status: Draft

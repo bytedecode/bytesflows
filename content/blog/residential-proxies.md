@@ -4,7 +4,7 @@ metaTitle: Residential Proxies for Web Scraping | Rotating Residential IPs
 metaDescription: Use residential proxies for web scraping to reduce blocks, improve geo access, and choose between rotating or sticky routing based on your workflow.
 slug: residential-proxies
 summary: A practical residential proxies landing page explaining when residential routing changes scraping outcomes, how rotating and sticky modes differ, and how to validate proxy quality before scaling.
-category: landing
+category: "Proxy Guides & Benchmark"
 tags: ["Residential Proxies", "rotating proxy", "Web Scraping", "proxy for scraping"]
 language: en
 status: Published

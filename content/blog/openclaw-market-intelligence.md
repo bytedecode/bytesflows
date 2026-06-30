@@ -4,10 +4,10 @@ metaTitle: OpenClaw for Market Intelligence and Competitor Monitoring (2026 Guid
 metaDescription: Learn how to use OpenClaw for competitor monitoring, price tracking, review analysis, and market intelligence with residential proxies, throttling, and browser automation.
 slug: openclaw-market-intelligence
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["competitor", "market intelligence", "openclaw", "residential proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 

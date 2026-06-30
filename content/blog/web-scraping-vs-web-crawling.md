@@ -4,7 +4,7 @@ metaTitle: Web Scraping vs Web Crawling - What's the Difference (2026)
 metaDescription: Learn the difference between web scraping and web crawling in 2026, when to use each, and how discovery and extraction work together in real data pipelines.
 slug: web-scraping-vs-web-crawling
 summary: A practical guide to web scraping versus web crawling in 2026, covering the difference between discovery and extraction and how both fit into real pipelines.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["crawler", "scraper", "Web Scraping", "web crawling"]
 language: en
 status: Draft

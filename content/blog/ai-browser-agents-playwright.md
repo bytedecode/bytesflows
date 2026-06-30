@@ -4,10 +4,10 @@ metaTitle: "AI Browser Agents with Playwright: Architecture Guide"
 metaDescription: Learn how to design AI browser agents with Playwright using task envelopes, browser contexts, action guards, observation schemas, evidence bundles, residential proxies, and reliable execution metrics.
 slug: ai-browser-agents-playwright
 summary: "A practical architecture guide for building AI browser agents with Playwright: separate planning from execution, isolate browser contexts, control proxy sessions, capture evidence, and measure useful task completion."
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["AI browser agents", "Playwright", "browser automation", "Residential Proxies", "AI data collection"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2000"
 ---
 

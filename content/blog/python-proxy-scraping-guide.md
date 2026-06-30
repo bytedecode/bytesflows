@@ -4,7 +4,7 @@ metaTitle: Python Proxy Scraping Guide (2026)
 metaDescription: Learn how to use proxies in Python scraping with Requests, Scrapy, and Playwright, including routing strategy, sticky vs rotating sessions, and common failure patterns.
 slug: python-proxy-scraping-guide
 summary: A practical Python proxy scraping guide covering how proxy use changes across Requests, Scrapy, and Playwright, and how to match routing strategy to the target and workflow.
-category: Proxy Services
+category: "Web Scraping & Engineering"
 tags: ["Python", "residential proxy", "Web Scraping"]
 language: en
 status: Published

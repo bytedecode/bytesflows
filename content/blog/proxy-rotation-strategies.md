@@ -4,7 +4,7 @@ metaTitle: "Proxy Rotation Strategies: Why Your Scraper Lives or Dies by the IP"
 metaDescription: Learn practical proxy rotation strategies for scraping, including per-request vs sticky sessions, target-aware routing, retries, and how rotation affects success rates.
 slug: proxy-rotation-strategies
 summary: A practical guide to proxy rotation strategies, covering when to rotate, when to stay sticky, how rotation interacts with target behavior, and why route logic determines scraper stability.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "rotation", "Web Scraping"]
 language: en
 status: Draft

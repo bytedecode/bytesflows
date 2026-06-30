@@ -4,7 +4,7 @@ metaTitle: Python Scraping Framework Comparison (2026 Guide)
 metaDescription: Compare BeautifulSoup, Scrapy, and Playwright for Python scraping by use case, scale, browser needs, and how each framework fits static or dynamic targets.
 slug: python-scraping-framework-comparison
 summary: A practical comparison of Python scraping frameworks, covering when BeautifulSoup, Scrapy, or Playwright is the right fit and how each maps to real scraping workloads.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["framework", "Python", "Web Scraping"]
 language: en
 status: Draft

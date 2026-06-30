@@ -4,7 +4,7 @@ metaTitle: Robots.txt Tester & Validator (Free Tool) | BytesFlows
 metaDescription: Test and validate any robots.txt file. Check Allow/Disallow rules by user-agent and path to stay compliant while crawling.
 slug: robots-txt-tester-validator
 summary: Free robots.txt tester and validator. Check Allow/Disallow rules for any User-Agent and path.
-category: tools
+category: "Proxy Guides & Benchmark"
 tags: ["robots.txt tester", "robots validator", "robots.txt checker"]
 language: en
 status: Draft

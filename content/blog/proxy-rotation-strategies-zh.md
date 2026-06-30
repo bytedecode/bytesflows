@@ -4,7 +4,7 @@ metaTitle: 代理轮换策略：决定爬虫生死的关键
 metaDescription: 系统讲清代理轮换策略如何影响爬虫稳定性，包括 Rotating、Sticky、会话管理、异常切换与规模化实践。
 slug: proxy-rotation-strategies
 summary: 一篇系统解析代理轮换策略的文章，涵盖 Rotating、Sticky、会话管理、异常切换与规模化实践。
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "rotation", "Web Scraping"]
 language: zh
 status: Draft

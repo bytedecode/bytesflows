@@ -4,7 +4,7 @@ metaTitle: Playwright vs Selenium (2026 Guide)
 metaDescription: Compare Playwright and Selenium for web scraping by waiting model, setup, browser control, scaling cost, and proxy handling so you can choose the right stack.
 slug: playwright-vs-selenium-scraping
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["browser", "Playwright", "Selenium"]
 language: en
 status: Draft

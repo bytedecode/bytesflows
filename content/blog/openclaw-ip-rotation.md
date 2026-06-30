@@ -4,7 +4,7 @@ metaTitle: Why AI Agents Like OpenClaw Need IP Rotation (2026 Guide)
 metaDescription: Learn why AI agents need IP rotation, how residential proxy pools reduce blocks, and when rotating vs sticky sessions make sense for browser-based workflows.
 slug: openclaw-ip-rotation
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["openclaw", "residential proxy", "rotating proxy"]
 language: en
 status: Draft

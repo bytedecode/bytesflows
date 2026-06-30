@@ -4,7 +4,7 @@ metaTitle: BytesFlows 正式发布：重新定义住宅代理 | BytesFlows
 metaDescription: BytesFlows 正式发布：面向规模化数据采集与隐私保护的下一代住宅代理网络。了解核心优势与使用场景。
 slug: bytesflows-launch-residential-proxies-zh
 summary: 我们很高兴宣布 BytesFlows 正式发布。这是专为规模化、速度和隐私设计的下一代代理服务。
-category: 公告
+category: "Proxy Guides & Benchmark"
 tags: ["公告", "产品"]
 language: zh
 status: Draft

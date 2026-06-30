@@ -4,7 +4,7 @@ metaTitle: Async Python Scraping with aiohttp (2026 Guide)
 metaDescription: Learn how to use aiohttp for high-concurrency Python scraping, including async design, proxy-aware request control, concurrency limits, and when to switch to browsers.
 slug: async-python-scraping-aiohttp
 summary: A practical guide to async Python scraping with aiohttp, covering when async beats requests, how concurrency changes risk, and when browser-based tools are still necessary.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["Python", "Web Scraping"]
 language: en
 status: Draft

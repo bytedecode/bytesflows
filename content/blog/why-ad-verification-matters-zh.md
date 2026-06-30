@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: why-ad-verification-matters-zh
 summary: 停止在欺诈流量上浪费预算。确保您的广告在正确的语境中被真实用户看到。
-category: 市场营销
+category: "Proxy Guides & Benchmark"
 tags: ["安全", "广告", "验证"]
 language: zh
 status: Draft

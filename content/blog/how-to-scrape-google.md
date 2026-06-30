@@ -4,10 +4,10 @@ metaTitle: How to Scrape Google - SERP Scraping Guide (Legal & Technical)
 metaDescription: Learn how to scrape Google SERPs responsibly by comparing APIs, third-party SERP providers, and DIY browser-plus-proxy workflows with realistic legal and technical tradeoffs.
 slug: how-to-scrape-google
 summary: A practical guide to scraping Google SERPs, covering API alternatives, legal and technical risk, residential routing, and realistic expectations for Google data collection.
-category: Proxy Services
+category: "Proxy Guides & Benchmark"
 tags: ["proxy", "residential proxy", "scrape google", "search results", "SERP scraping"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000"
 ---
 

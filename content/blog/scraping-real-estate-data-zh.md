@@ -4,7 +4,7 @@ metaTitle: 2026 年房地产数据抓取全指南
 metaDescription: 系统讲清房地产数据抓取的核心价值、页面结构、地图与地域限制、代理策略、数据标准化与规模化建设方法。
 slug: scraping-real-estate-data
 summary: 一篇系统化的房地产数据抓取指南，涵盖核心价值、页面结构、地图与地域限制、代理策略、数据标准化与规模化建设方法。
-category: Proxy Services
+category: "Proxy Guides & Benchmark"
 tags: ["investment-analysis", "property-scraping", "real-estate-data", "residential-proxies", "zillow-scraping"]
 language: zh
 status: Draft

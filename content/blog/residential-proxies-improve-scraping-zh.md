@@ -4,7 +4,7 @@ metaTitle: 住宅代理如何提升爬虫成功率：信任的科学
 metaDescription: 系统讲清住宅代理为什么能提升爬虫成功率，包括信任度、地域能力、反爬压力、轮换策略与实际使用边界。
 slug: residential-proxies-improve-scraping
 summary: 一篇系统解释住宅代理如何提升爬虫成功率的文章，涵盖信任度、地域能力、反爬压力、轮换策略与实际使用边界。
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "residential-proxies", "Web Scraping"]
 language: zh
 status: Draft

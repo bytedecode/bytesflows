@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: handling-captchas-in-scraping
 summary: 深入探讨 2026 年现代验证码的防御机制，从指纹分析到行为轨迹。学习如何利用高质量动态住宅代理和 Playwright 隐身技术，构建‘不触发验证码’的高信任度爬虫架构，攻克反爬防御的最后一公里。
-category: anti-bot
+category: "Anti-Bot & Security"
 tags: ["web-scraping", "proxy", "automation", "anti-bot", "captcha"]
 language: zh
 status: Draft

@@ -4,10 +4,10 @@ metaTitle: Rotating Residential Proxies for OpenClaw Agents (2026 Guide)
 metaDescription: Learn how rotating residential proxies work with OpenClaw agents, when to use rotating vs sticky sessions, and how to validate, scale, and avoid blocks.
 slug: openclaw-rotating-proxy
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["openclaw", "residential proxy", "rotating proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=2000"
 ---
 

@@ -4,7 +4,7 @@ metaTitle: Scraping Search Results with Python (2026 Guide)
 metaDescription: Learn how to scrape search results with Python using the right mix of requests, browser automation, proxy routing, pacing, and SERP-specific extraction design.
 slug: scraping-search-results-python
 summary: A practical guide to scraping search results with Python, covering SERP structure, requests versus browser choice, route quality, anti-bot risk, and reliable SERP collection workflows.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["Python", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: "Handling CAPTCHAs in Scraping: A Developer's Guide to Anti-Bot Resil
 metaDescription: Learn how to handle CAPTCHAs in scraping by reducing trigger rates with better proxies, browser realism, pacing, retries, and anti-bot-aware workflow design.
 slug: handling-captchas-in-scraping
 summary: A practical guide to handling CAPTCHAs in scraping, focusing on avoiding triggers through better identity, browser realism, pacing, and challenge-aware retry design.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "captcha", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

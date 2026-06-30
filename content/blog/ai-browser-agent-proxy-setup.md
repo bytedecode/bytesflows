@@ -4,10 +4,10 @@ metaTitle: AI Browser Agent Proxy Setup with Residential Proxies
 metaDescription: Set up residential proxies for AI browser agents with task boundaries, sticky sessions, route metadata, browser evidence, failure classification, and traffic cost controls.
 slug: ai-browser-agent-proxy-setup
 summary: "A practical operating guide for AI browser agent proxy setup: define task envelopes, assign residential proxy routes, preserve browser sessions, capture evidence, classify failures, and estimate traffic before scaling autonomous web workflows."
-category: AI Data Collection
+category: "AI Agents & Automation"
 tags: ["AI browser agent proxy setup", "browser automation proxies", "AI data collection", "Residential Proxies", "browser agents"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://bytesflows.com/images/blog/ai-browser-agent-proxy-setup.png"
 ---
 

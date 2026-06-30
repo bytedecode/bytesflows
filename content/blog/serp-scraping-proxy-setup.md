@@ -4,7 +4,7 @@ metaTitle: SERP Scraping Proxy Setup for Reliable Search Data
 metaDescription: Set up residential proxies for SERP scraping with market metadata, location control, query parameters, browser rendering, retries, evidence capture, and quality gates.
 slug: serp-scraping-proxy-setup
 summary: "A practical SERP scraping proxy setup guide for SEO data teams: define market metadata, route residential proxies, control language and device assumptions, store reliable SERP records, and measure useful output before scaling."
-category: SEO Monitoring
+category: "Proxy Guides & Benchmark"
 tags: ["SERP scraping proxy setup", "SERP scraping proxies", "rank tracking proxies", "SEO monitoring", "Residential Proxies"]
 language: en
 status: Published

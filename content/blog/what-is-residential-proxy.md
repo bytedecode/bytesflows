@@ -4,7 +4,7 @@ metaTitle: What Is a Residential Proxy? 2026 Guide for Scraping & SEO
 metaDescription: Learn what residential proxies are, how they work, when to use rotating or sticky residential IPs, and how to choose a proxy setup for scraping, SEO, and AI agents.
 slug: what-is-residential-proxy
 summary: Learn what residential proxies are, how they work, and why they are essential for web scraping, SEO, and AI agents. Includes real use cases and setup tips.
-category: Proxy & Networking
+category: "Proxy Guides & Benchmark"
 tags: ["residential proxy", "proxy server", "Web Scraping", "SEO tools", "AI agents", "anonymity"]
 language: en
 status: Published

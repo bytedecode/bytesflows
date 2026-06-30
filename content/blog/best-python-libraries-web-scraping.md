@@ -4,7 +4,7 @@ metaTitle: 2026 年 7 个最佳 Python 网页抓取库
 metaDescription: 系统对比 2026 年常用 Python 网页抓取库，包括 Requests、HTTPX、BeautifulSoup、Selectolax、Scrapy 与 Playwright。
 slug: best-python-libraries-web-scraping
 summary: 一篇系统对比 Python 网页抓取库的文章，涵盖 Requests、HTTPX、BeautifulSoup、Selectolax、Scrapy 与 Playwright。
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["libraries", "Playwright", "Python", "Scrapy", "Web Scraping"]
 language: zh
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Building an AI Scraping Agent (2026 Guide)
 metaDescription: Learn how to build an AI scraping agent using browser automation, agent loops, proxy routing, and task design for variable websites and multi-step workflows.
 slug: building-ai-scraping-agent
 summary: A practical guide to building an AI scraping agent, covering agent loops, browser execution, when agents outperform fixed scrapers, and how proxies affect reliability.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["AI", "Agent", "Web Scraping"]
 language: en
 status: Draft

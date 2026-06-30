@@ -4,7 +4,7 @@ metaTitle: Scaling Scraping with Playwright (2026 Guide)
 metaDescription: Learn how to scale scraping with Playwright in 2026 using context reuse, proxy planning, concurrency control, retries, and distributed architecture.
 slug: scaling-scraping-playwright
 summary: A practical guide to scaling scraping with Playwright in 2026, covering context reuse, proxy planning, concurrency control, retries, and distributed architecture.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["Playwright", "scaling", "Web Scraping", "proxy", "Distributed scraping"]
 language: en
 status: Draft

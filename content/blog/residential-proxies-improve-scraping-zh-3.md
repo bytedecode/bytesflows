@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: residential-proxies-improve-scraping
 summary: 住宅代理如何彻底改变您的爬虫效率。深入探讨 2026 年住宅 IP 的优势，教你如何避开数据中心黑名单并模拟真实���户行为。
-category: 代理
+category: "Proxy Guides & Benchmark"
 tags: ["web-scraping", "proxy", "automation", "residential-proxies", "business-intelligence"]
 language: zh
 status: Draft

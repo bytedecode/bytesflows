@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: proxy-rotation-best-practices
 summary: 通过实施智能代理轮换策略，有效规避 IP 封禁和速率限制，确保数据采集任务的连续性。
-category: 代理
+category: "Proxy Guides & Benchmark"
 tags: ["代理轮换", "基础设施", "防封禁"]
 language: zh
 status: Draft

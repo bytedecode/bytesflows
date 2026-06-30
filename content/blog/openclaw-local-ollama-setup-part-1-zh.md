@@ -4,10 +4,10 @@ metaTitle: Ubuntu 安装 Ollama：本地运行 OpenClaw 的第一步
 metaDescription: 一步步讲清如何在 Ubuntu 安装 Ollama、启动本地服务、拉取模型并完成验证，为后续接入 OpenClaw 做准备。
 slug: openclaw-local-ollama-setup-part-1
 summary: 一篇实用的 Ubuntu 安装 Ollama 指南，涵盖本地服务启动、模型拉取、验证方法与常见排查思路。
-category: artificial-intelligence
+category: "AI Agents & Automation"
 tags: []
 language: zh
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 

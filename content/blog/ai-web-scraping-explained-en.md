@@ -4,7 +4,7 @@ metaTitle: "AI Web Scraping Explained (2026): Agents, LLMs & Data Extraction"
 metaDescription: Understand how AI web scraping works with LLMs, agents, browser automation, and proxies, and when it makes sense compared with traditional scraping.
 slug: ai-web-scraping-explained
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["agents", "data extraction", "LLM", "Web Scraping"]
 language: en
 status: Draft

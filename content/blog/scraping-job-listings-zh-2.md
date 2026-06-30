@@ -4,7 +4,7 @@ metaTitle: 2026 年招聘信息抓取全指南
 metaDescription: 系统讲清招聘信息抓取的商业价值、页面结构、反爬难点、代理策略、数据清洗与规模化建设方法。
 slug: scraping-job-listings
 summary: 一篇系统化的招聘信息抓取指南，涵盖商业价值、页面结构、反爬难点、代理策略、数据清洗与规模化建设方法。
-category: use-cases
+category: "Proxy Guides & Benchmark"
 tags: ["job-listings", "recruitment-data", "market-intelligence", "Scraping", "proxy"]
 language: zh
 status: Draft

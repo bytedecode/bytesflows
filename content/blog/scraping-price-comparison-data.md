@@ -4,7 +4,7 @@ metaTitle: Scraping Price Comparison Data (2026 Guide)
 metaDescription: Learn how to scrape price comparison data in 2026 with geo-targeted proxies, browser automation, normalization workflows, and reliable multi-site price monitoring.
 slug: scraping-price-comparison-data
 summary: A practical guide to scraping price comparison data in 2026, covering multi-site extraction, geo-sensitive pricing, product matching, normalization, and proxy-backed monitoring.
-category: Web Scraping
+category: "Proxy Guides & Benchmark"
 tags: ["E-commerce", "price monitoring", "Web Scraping"]
 language: en
 status: Draft

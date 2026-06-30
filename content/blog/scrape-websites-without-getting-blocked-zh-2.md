@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: scrape-websites-without-getting-blocked
 summary: 2026 防止爬虫被封的实战指南。掌握请求头优化、智能延迟和住宅代理轮换技术，让你的桌面和服务器爬虫隐身运行。
-category: web-scraping
+category: "Proxy Guides & Benchmark"
 tags: ["web-scraping", "anti-bot", "stealth-scraping", "proxy-rotation", "browser-fingerprinting"]
 language: zh
 status: Draft

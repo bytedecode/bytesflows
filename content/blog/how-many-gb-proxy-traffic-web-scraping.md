@@ -4,10 +4,10 @@ metaTitle: How Many GB of Proxy Traffic Do You Need for Web Scraping?
 metaDescription: Estimate proxy traffic for web scraping using page weight, URL count, market count, cadence, screenshots, retries, and browser automation overhead.
 slug: how-many-gb-proxy-traffic-web-scraping
 summary: A practical traffic estimation guide for web scraping teams calculating proxy bandwidth, retries, page weight, screenshots, browser automation, and recurring collection costs.
-category: Proxy Buying Guides
+category: "Proxy Guides & Benchmark"
 tags: ["proxy bandwidth calculator", "scraping traffic estimate", "residential proxy pricing", "Web Scraping"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://bytesflows.com/images/blog/how-many-gb-proxy-traffic-web-scraping.png"
 ---
 

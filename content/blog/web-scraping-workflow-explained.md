@@ -4,10 +4,10 @@ metaTitle: Web Scraping Workflow Explained (2026 Guide)
 metaDescription: Learn the full web scraping workflow in 2026, from URL discovery and fetching to parsing, validation, storage, retries, and monitoring.
 slug: web-scraping-workflow-explained
 summary: A practical guide to the web scraping workflow in 2026, covering URL discovery, fetching, parsing, validation, storage, retries, and monitoring.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["architecture", "pipeline", "Web Scraping", "workflow"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---
 

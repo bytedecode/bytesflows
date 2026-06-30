@@ -4,10 +4,10 @@ metaTitle: ""
 metaDescription: ""
 slug: how-ai-is-transforming-cross-border-ecommerce-in-2026
 summary: 到了 2026 年，人工智能（AI）已经不再是“效率工具”，而是跨境电商的核心基础设施。\n\n从选品分析、广告投放、客服自动化，到风控识别与动态定价，AI 正在系统性改变全球卖家的竞争方式。如果你的跨境业务还停留在人工操作和半自动阶段，那么你正在失去效率优势与利润空间。
-category: 技术
+category: "AI Agents & Automation"
 tags: ["技术", "人工智能"]
 language: zh
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 

@@ -4,7 +4,7 @@ metaTitle: "Proxy Rotation: Best Practices for High Success Rates"
 metaDescription: Learn proxy rotation best practices for scraping, including sticky vs rotating sessions, failure handling, cooldown logic, and how to reduce bans over time.
 slug: proxy-rotation-best-practices-2026
 summary: A practical guide to proxy rotation best practices, covering how to match rotation behavior to task type, reduce bans, and improve long-run scraper success rates.
-category: Proxies
+category: "Proxy Guides & Benchmark"
 tags: ["Proxy Rotation", "Infrastructure", "Anti-Ban"]
 language: en
 status: Draft

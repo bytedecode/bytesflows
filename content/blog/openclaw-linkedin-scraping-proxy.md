@@ -4,10 +4,10 @@ metaTitle: "Scrapling on OpenClaw: Running LinkedIn Agents at Scale (2026 Guide)
 metaDescription: Learn how LinkedIn-oriented OpenClaw workflows use residential proxies, session design, and careful pacing to support more reliable long-running lead-research operations.
 slug: openclaw-linkedin-scraping-proxy
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["linkedin scraping", "openclaw", "residential proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&q=80&w=2000"
 ---
 

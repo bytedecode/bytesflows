@@ -4,10 +4,10 @@ metaTitle: Proxies and Crawling in RAG Knowledge Base Construction
 metaDescription: Learn how proxies fit into RAG knowledge base construction, including scheduled crawling, deduplication, proxy-aware collection, chunking, vectorization, and storage design.
 slug: rag-crawler-with-proxy-technical-implementation
 summary: A practical technical guide to using proxies and controlled crawling in RAG knowledge base construction, from scheduled collection and deduplication to chunking, vectorization, and storage.
-category: artificial-intelligence
+category: "AI Agents & Automation"
 tags: ["Technical", "AI"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1693496481581-04d4ca819560?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 

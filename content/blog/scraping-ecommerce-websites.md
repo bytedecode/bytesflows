@@ -4,7 +4,7 @@ metaTitle: Scraping E-commerce Websites (2026 Guide)
 metaDescription: Learn how to scrape e-commerce websites in 2026 using browser automation, residential proxies, geo-targeted routing, and stable extraction workflows for product data.
 slug: scraping-ecommerce-websites
 summary: A practical guide to scraping e-commerce websites in 2026, covering product data extraction, anti-bot challenges, browser automation, proxy strategy, and production monitoring.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: scraping-real-estate-data
 summary: 2026 年房地产数据抓取权威指南。探索绕过地理围栏和动态地图的技术，利用地理定位住宅代理精准获取全球房产市场数据。
-category: use-cases
+category: "Proxy Guides & Benchmark"
 tags: ["real-estate-data", "property-scraping", "investment-analysis", "zillow-scraping", "residential-proxies"]
 language: zh
 status: Draft

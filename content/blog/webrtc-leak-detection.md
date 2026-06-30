@@ -4,10 +4,10 @@ metaTitle: WebRTC Leak Detection for Browser Proxy Workflows
 metaDescription: "Learn WebRTC leak detection for browser proxy workflows: local IP exposure, public IP signals, mDNS behavior, Puppeteer and Playwright checks, and residential proxy validation."
 slug: webrtc-leak-detection
 summary: "A practical WebRTC leak detection guide for browser proxy workflows: what WebRTC can expose, how to test local and public IP signals, how to avoid VPN-style overclaims, and how to log proxy consistency before scaling browser automation."
-category: Browser Automation
+category: "AI Agents & Automation"
 tags: ["WebRTC leak detection", "browser proxy", "Residential Proxies", "proxy validation", "browser automation"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://bytesflows.com/images/blog/webrtc-leak-detection.png"
 ---
 

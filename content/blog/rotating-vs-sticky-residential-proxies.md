@@ -4,7 +4,7 @@ metaTitle: "Rotating vs Sticky Residential Proxies: Which Session Type Should Yo
 metaDescription: Compare rotating and sticky residential proxies for scraping, browser automation, forms, carts, and session-based workflows.
 slug: rotating-vs-sticky-residential-proxies
 summary: A buying and implementation guide for choosing rotating residential proxies or sticky sessions for scraping, SERP monitoring, forms, carts, and browser automation.
-category: Proxy Buying Guides
+category: "Proxy Guides & Benchmark"
 tags: ["Rotating proxies", "sticky residential proxies", "session control", "browser automation"]
 language: en
 status: Published

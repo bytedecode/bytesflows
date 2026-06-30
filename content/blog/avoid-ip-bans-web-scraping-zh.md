@@ -4,7 +4,7 @@ metaTitle: 如何避免爬虫 IP 被封：终极生存指南
 metaDescription: 系统讲清爬虫 IP 为什么会被封，以及如何通过代理、节奏、指纹、会话与重试策略降低封禁风险。
 slug: avoid-ip-bans-web-scraping
 summary: 一篇系统化的防 IP 封禁指南，涵盖代理、节奏、指纹、会话与重试策略。
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["anti-bot", "automation", "proxy", "residential proxy", "Web Scraping"]
 language: zh
 status: Draft

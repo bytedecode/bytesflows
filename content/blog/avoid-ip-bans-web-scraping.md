@@ -4,7 +4,7 @@ metaTitle: "Avoid IP Bans in Web Scraping: The Ultimate Survival Guide"
 metaDescription: Learn how to avoid IP bans in web scraping with better proxy choice, rotation, pacing, browser strategy, retries, and scalable traffic design.
 slug: avoid-ip-bans-web-scraping
 summary: A practical guide to avoiding IP bans in web scraping, covering identity quality, rotation, pacing, browser use, retries, and how scaling changes ban risk.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["anti-bot", "automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

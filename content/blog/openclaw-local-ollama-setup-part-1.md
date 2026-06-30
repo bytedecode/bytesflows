@@ -4,10 +4,10 @@ metaTitle: "Install Ollama on Ubuntu: Step 1 for Local OpenClaw"
 metaDescription: Learn how to install Ollama on Ubuntu, start the local service, pull a model, and verify local inference before connecting OpenClaw.
 slug: openclaw-local-ollama-setup-part-1
 summary: A practical guide to installing Ollama on Ubuntu, covering local service setup, model download, validation, and preparation for OpenClaw integration.
-category: artificial-intelligence
+category: "AI Agents & Automation"
 tags: []
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 

@@ -4,10 +4,10 @@ metaTitle: Using Requests for Web Scraping (2026 Guide)
 metaDescription: Learn how to use Python Requests for web scraping with sessions, headers, proxies, and practical guidance on when Requests is enough and when a browser is required.
 slug: using-requests-web-scraping
 summary: A practical guide to using Python Requests for scraping, covering when Requests is the right tool, session handling, headers, proxies, and when to switch to browser automation.
-category: Proxy Services
+category: "Web Scraping & Engineering"
 tags: ["HTTP", "Python", "Requests", "residential proxy", "Web Scraping"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 

@@ -4,7 +4,7 @@ metaTitle: 爬虫开发者的验证码绕过全攻略
 metaDescription: 系统讲清验证码为何被触发、如何降低触发率，以及住宅代理、浏览器自动化、行为设计与排障思路。
 slug: handling-captchas-in-scraping
 summary: 一篇系统化的验证码绕过指南，涵盖触发原理、降低触发率的方法、住宅代理、浏览器自动化与排障思路。
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "captcha", "proxy", "residential proxy", "Web Scraping"]
 language: zh
 status: Draft

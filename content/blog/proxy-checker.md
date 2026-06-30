@@ -4,7 +4,7 @@ metaTitle: Proxy Checker - Check Proxy IP, Latency, Country & ASN
 metaDescription: Use this proxy checker to verify exit IP, latency, country, and ASN before scraping, and learn how to interpret proxy validation results for routing and rotation decisions.
 slug: proxy-checker
 summary: A practical proxy checker guide explaining how to validate exit IP, latency, country, and ASN before scraping, and how to interpret those signals in real routing decisions.
-category: tools
+category: "Proxy Guides & Benchmark"
 tags: ["proxy checker", "check proxy ip", "proxy tester", "proxy validation"]
 language: en
 status: Draft

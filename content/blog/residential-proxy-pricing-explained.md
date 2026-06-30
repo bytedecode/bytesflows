@@ -4,10 +4,10 @@ metaTitle: "Residential Proxy Pricing Explained: How Much Traffic Do You Need?"
 metaDescription: Learn how residential proxy pricing works, how to estimate GB usage, and when to scale from a free trial to paid proxy traffic.
 slug: residential-proxy-pricing-explained
 summary: A practical guide to residential proxy pricing, traffic estimation, per-GB plans, retries, page weight, and when to move from a free trial to paid traffic.
-category: Proxy Buying Guides
+category: "AI Agents & Automation"
 tags: ["residential proxy pricing", "proxy pricing per GB", "proxy traffic estimate", "Web Scraping"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://bytesflows.com/images/blog/residential-proxy-pricing-explained.png"
 ---
 

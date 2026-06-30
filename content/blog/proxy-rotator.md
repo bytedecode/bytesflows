@@ -4,7 +4,7 @@ metaTitle: Proxy Rotator Playground - Simulate IP Rotation
 metaDescription: Use this proxy rotator playground to test rotating versus sticky behavior, inspect IP diversity and geo consistency, and validate whether a proxy setup fits your scraping workflow.
 slug: proxy-rotator
 summary: A practical proxy rotator guide explaining how to test rotating versus sticky behavior, evaluate IP diversity and geo consistency, and match rotation to the right scraping workflow.
-category: tools
+category: "Proxy Guides & Benchmark"
 tags: ["proxy rotator", "IP rotation", "rotate proxy", "Proxy Rotation"]
 language: en
 status: Draft

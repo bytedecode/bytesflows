@@ -4,7 +4,7 @@ metaTitle: "Scraping Real Estate Data: Strategies for Market Prediction"
 metaDescription: Learn how to scrape real estate data in 2026 using geo-targeted proxies, browser workflows, API discovery, and structured collection for listings, pricing, and market analysis.
 slug: scraping-real-estate-data
 summary: A practical guide to scraping real estate data in 2026, covering map-based sites, geo-targeted proxies, API discovery, browser workflows, and structured property data collection.
-category: Proxy Services
+category: "Proxy Guides & Benchmark"
 tags: ["investment-analysis", "property-scraping", "real-estate-data", "residential-proxies", "zillow-scraping"]
 language: en
 status: Draft

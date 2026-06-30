@@ -4,10 +4,10 @@ metaTitle: How Proxy Rotation Works for Web Scraping (2026 Guide)
 metaDescription: Learn how proxy rotation works for web scraping, when to use per-request vs sticky sessions, and how gateway-based rotation affects stability and anti-block performance.
 slug: how-proxy-rotation-works
 summary: A practical guide to how proxy rotation works, covering per-request vs sticky sessions, gateway behavior, workload fit, and how identity strategy shapes scraper reliability.
-category: Proxy Services
+category: "Proxy Guides & Benchmark"
 tags: ["IP rotation", "Proxy Rotation", "residential proxy", "rotating proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---
 

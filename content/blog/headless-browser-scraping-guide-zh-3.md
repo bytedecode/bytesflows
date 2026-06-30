@@ -4,7 +4,7 @@ metaTitle: 2026 年无头浏览器爬虫终极指南
 metaDescription: 系统讲清无头浏览器爬虫为什么重要，包括 Headless 与 Headed 区别、Playwright 选择、Stealth 策略与资源管理。
 slug: headless-browser-scraping-guide
 summary: 一篇系统化的无头浏览器爬虫指南，涵盖 Headless 与 Headed 区别、Playwright 选择、Stealth 策略与资源管理。
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["browser automation", "Playwright", "residential proxy"]
 language: zh
 status: Draft

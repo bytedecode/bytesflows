@@ -4,7 +4,7 @@ metaTitle: AI Data Extraction vs Traditional Scraping (2026)
 metaDescription: Compare AI data extraction and traditional scraping in 2026. Learn when to use selectors, when to use LLMs, and when a hybrid workflow works best.
 slug: ai-data-extraction-vs-traditional-scraping
 summary: A practical comparison of AI data extraction and traditional scraping in 2026, including selectors, LLM-based extraction, and hybrid workflows.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["AI", "data extraction", "Web Scraping"]
 language: en
 status: Draft

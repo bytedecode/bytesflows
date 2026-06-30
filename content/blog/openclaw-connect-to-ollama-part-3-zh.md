@@ -4,7 +4,7 @@ metaTitle: 连接 OpenClaw 与 Ollama：本地 AI Agent 链路实战
 metaDescription: 一步步讲清如何把 OpenClaw 接入本地 Ollama，包括 Provider 配置、默认模型设置、端到端测试与常见问题排查。
 slug: openclaw-connect-to-ollama-part-3
 summary: 一篇实战型中文指南，讲清如何把 OpenClaw 接入本地 Ollama，包括 Provider 配置、默认模型设置、端到端测试与常见问题排查。
-category: artificial-intelligence
+category: "AI Agents & Automation"
 tags: []
 language: zh
 status: Draft

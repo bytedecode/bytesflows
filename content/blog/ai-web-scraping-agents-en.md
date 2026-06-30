@@ -4,7 +4,7 @@ metaTitle: "AI Web Scraping with Agents: Proxies, Automation & Anti-Bot Strategi
 metaDescription: Learn how AI web scraping agents combine browser automation, proxy rotation, and intelligent parsing to build scalable, resilient web data pipelines.
 slug: ai-web-scraping-agents
 summary: A practical guide to AI web scraping agents, covering proxy infrastructure, browser automation, anti-bot challenges, and internal strategies for building scalable data pipelines.
-category: ai-scraping
+category: "AI Agents & Automation"
 tags: ["web-scraping", "proxy", "automation"]
 language: en
 status: Draft

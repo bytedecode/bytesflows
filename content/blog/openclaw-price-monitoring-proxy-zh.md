@@ -4,10 +4,10 @@ metaTitle: OpenClaw 做电商价格监控：如何绕过反爬与地区差价
 metaDescription: 系统讲清如何用 OpenClaw 做电商价格监控，包括住宅代理、地区差价、动态报价、Playwright 接入与监控调优方法。
 slug: openclaw-price-monitoring-proxy
 summary: 一篇系统化的 OpenClaw 电商价格监控指南，涵盖住宅代理、地区差价、动态报价、Playwright 接入与调优方法。
-category: Web Scraping
+category: "AI Agents & Automation"
 tags: []
 language: zh
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=2000"
 ---
 

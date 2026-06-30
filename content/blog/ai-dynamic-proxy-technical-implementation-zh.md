@@ -4,10 +4,10 @@ metaTitle: ""
 metaDescription: ""
 slug: ai-dynamic-proxy-technical-implementation
 summary: 大模型训练、RAG 知识库与实时数据注入都依赖大规模、多地域的网页与 API 数据。采集过程中，站点风控与反爬会识别高频、同 IP 的自动化流量，导致封禁与失败率上升。动态代理（按请求或按会话轮换 IP）能在不牺牲规模的前提下，显著提高成功率和可观测性。本文先做结合分析（为什么 AI 需要动态代理），再给出一套技术实现（架构与 Python 示例），便于在现有 AI 数据管线中接入动态代理。
-category: 技术
+category: "AI Agents & Automation"
 tags: ["人工智能", "技术", "代理轮换", "代理"]
 language: zh
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 

@@ -4,7 +4,7 @@ metaTitle: Strategies for Scraping Single Page Applications
 metaDescription: Learn practical strategies for scraping single page applications, including browser automation, API interception, waiting logic, state handling, and anti-bot considerations.
 slug: scraping-spa-rendering-strategies
 summary: A practical guide to scraping single page applications with browser automation, API interception, waiting logic, state handling, and anti-bot considerations.
-category: Technical
+category: "Proxy Guides & Benchmark"
 tags: ["Scraping", "JavaScript", "Headless Browser"]
 language: en
 status: Draft

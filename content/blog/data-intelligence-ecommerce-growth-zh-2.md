@@ -4,10 +4,10 @@ metaTitle: ""
 metaDescription: ""
 slug: data-intelligence-ecommerce-growth
 summary: 顶级零售商如何利用实时市场数据优化定价、库存和客户体验。
-category: 商业
+category: "AI Agents & Automation"
 tags: ["电商", "大数据", "策略"]
 language: zh
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000"
 ---
 

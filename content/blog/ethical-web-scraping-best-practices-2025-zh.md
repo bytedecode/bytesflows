@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: ethical-web-scraping-best-practices-2025
 summary: 学习如何在保持高成功率的同时负责任地采集数据。我们要涵盖速率限制、robots.txt 合规性和请求头管理。
-category: 开发
+category: "Proxy Guides & Benchmark"
 tags: ["网络爬虫", "合规", "Python"]
 language: zh
 status: Draft

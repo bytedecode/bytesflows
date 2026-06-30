@@ -4,7 +4,7 @@ metaTitle: 2026 年网页抓取终极指南：从脚本到 AI Agent
 metaDescription: 系统讲清 2026 年网页抓取的技术栈变化，包括浏览器自动化、代理、反爬系统、AI Agent 与规模化数据基础设施。
 slug: ultimate-guide-web-scraping-2026
 summary: 一篇系统化的网页抓取终极指南，涵盖浏览器自动化、代理、反爬系统、AI Agent 与规模化数据基础设施。
-category: web-scraping
+category: "Proxy Guides & Benchmark"
 tags: ["web-scraping", "data-extraction", "ai-scraping", "proxy-networks", "automation", "2026-trends"]
 language: zh
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: "Residential Proxy vs Datacenter Proxy: Which Should You Use?"
 metaDescription: Compare residential proxies and datacenter proxies by route realism, cost, speed, geo accuracy, retry rate, target sensitivity, browser workflows, and useful output.
 slug: residential-proxy-vs-datacenter-proxy
 summary: A practical decision memo comparing residential proxies and datacenter proxies for web scraping, SERP monitoring, price intelligence, browser automation, cost modeling, geo accuracy, and useful-output reliability.
-category: Proxy Buying Guides
+category: "Proxy Guides & Benchmark"
 tags: ["residential proxy vs datacenter proxy", "Residential Proxies", "datacenter proxies", "proxy comparison", "web scraping proxies"]
 language: en
 status: Published

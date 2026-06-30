@@ -4,7 +4,7 @@ metaTitle: Scraping Test - Test Scraping & Detect Blocks
 metaDescription: Use this scraping test to check URLs with custom user-agents and proxies, detect blocks early, and validate whether a target is ready for scaling.
 slug: scraping-test-tool-detect-blocks
 summary: A practical scraping test guide explaining how to test URLs with different user-agents and proxies, detect blocks early, and decide whether the next step is better headers, better routes, or a real browser.
-category: tools
+category: "Proxy Guides & Benchmark"
 tags: ["scraping test", "test scraping", "scrape tester", "scraping playground"]
 language: en
 status: Draft

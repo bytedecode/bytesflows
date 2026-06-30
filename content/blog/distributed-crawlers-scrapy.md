@@ -4,7 +4,7 @@ metaTitle: Distributed Crawlers with Scrapy (2026 Guide)
 metaDescription: Learn how to scale Scrapy across multiple workers with shared queues, deduplication, proxy routing, and distributed crawl coordination.
 slug: distributed-crawlers-scrapy
 summary: A practical guide to distributed crawlers with Scrapy, covering queues, worker coordination, proxy routing, deduplication, and what changes when a crawl leaves one machine.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["Scrapy", "Distributed", "Web Scraping"]
 language: en
 status: Draft

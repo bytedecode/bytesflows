@@ -4,7 +4,7 @@ metaTitle: Headless Browser Frameworks (2026 Guide)
 metaDescription: Compare headless browser frameworks like Playwright, Puppeteer, and Selenium for scraping by browser realism, scaling tradeoffs, and workflow fit.
 slug: headless-browser-frameworks
 summary: A practical comparison of headless browser frameworks, covering Playwright, Puppeteer, Selenium, browser use cases, scaling tradeoffs, and when headless automation is actually necessary.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["framework", "Web Scraping"]
 language: en
 status: Draft

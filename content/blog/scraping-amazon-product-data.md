@@ -4,7 +4,7 @@ metaTitle: Scraping Amazon Product Data (2026 Guide)
 metaDescription: Learn how to scrape Amazon product data in 2026 using browser automation, residential proxies, ASIN-based workflows, and reliable extraction of price, reviews, and stock signals.
 slug: scraping-amazon-product-data
 summary: A practical guide to scraping Amazon product data in 2026, covering ASIN workflows, browser automation, anti-bot defenses, proxy routing, and reliable extraction of price and review data.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["Amazon", "E-commerce", "product data", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

@@ -4,10 +4,10 @@ metaTitle: Playwright Proxy Configuration Guide (2026 Guide)
 metaDescription: Learn how to configure proxies in Playwright, verify the browser is using them correctly, and choose the right residential routing strategy for browser-based scraping.
 slug: playwright-proxy-configuration-guide
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: Proxy Services
+category: "Web Scraping & Engineering"
 tags: ["browser", "Playwright", "residential proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2000"
 ---
 

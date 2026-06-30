@@ -4,7 +4,7 @@ metaTitle: Scraping APIs vs Websites (2026 Guide)
 metaDescription: Learn when to use APIs versus web scraping in 2026, how to compare access methods, and where browser automation and proxy routing fit in real-world data collection.
 slug: scraping-apis-vs-websites
 summary: A practical guide to APIs versus web scraping in 2026, covering tradeoffs in coverage, reliability, legality, browser needs, and proxy-backed collection strategies.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Playwright Web Scraping at Scale (2026 Guide)
 metaDescription: Learn how to scale Playwright web scraping with worker architecture, browser contexts, residential proxies, concurrency control, and safer rendering workflows.
 slug: playwright-web-scraping-scale
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["browser", "Playwright"]
 language: en
 status: Draft

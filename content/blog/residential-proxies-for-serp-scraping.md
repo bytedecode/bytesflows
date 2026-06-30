@@ -4,10 +4,10 @@ metaTitle: Residential Proxies for SERP Scraping and Rank Tracking
 metaDescription: Learn how residential proxies support localized SERP scraping, rank tracking, search snapshots, and recurring SEO monitoring workflows.
 slug: residential-proxies-for-serp-scraping
 summary: A guide to using residential proxies for localized SERP scraping, rank tracking, search evidence capture, and recurring SEO monitoring workflows.
-category: SEO Monitoring
+category: "Proxy Guides & Benchmark"
 tags: ["SERP scraping proxies", "rank tracking proxies", "SEO monitoring", "localized SERP"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://bytesflows.com/images/blog/residential-proxies-for-serp-scraping.png"
 ---
 

@@ -4,7 +4,7 @@ metaTitle: Random User-Agent Generator for Scraping
 metaDescription: Generate realistic browser user-agents for scraping and testing, and learn when user-agent changes help, when consistency matters more, and why UA alone is not enough.
 slug: user-agent-generator
 summary: A practical user-agent generator guide explaining when browser-like user-agents help, when session consistency matters more than randomization, and why UA alone is not enough.
-category: tools
+category: "AI Agents & Automation"
 tags: ["random user agent generator", "user agent generator", "fake user agent"]
 language: en
 status: Draft

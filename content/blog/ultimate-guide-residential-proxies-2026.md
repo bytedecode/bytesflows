@@ -4,7 +4,7 @@ metaTitle: Ultimate Guide to Residential Proxies (2026) | BytesFlows
 metaDescription: Learn what residential proxies are, how they work, and how to choose a provider. Use cases, risks, and best practices for 2026.
 slug: ultimate-guide-residential-proxies-2026
 summary: Discover how residential proxies work, why they are essential for data gathering, and how to choose the right provider for your business.
-category: Technology
+category: "Proxy Guides & Benchmark"
 tags: ["Proxies", "Data Collection", "Guide"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: How Many Proxies Do You Need for Web Scraping? (2026 Guide)
 metaDescription: Learn how to calculate the number of proxies you need for scraping based on target difficulty, request rate, concurrency, sticky sessions, and scaling strategy.
 slug: how-many-proxies-need-scraping
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: Proxy Services
+category: "Proxy Guides & Benchmark"
 tags: ["proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Published

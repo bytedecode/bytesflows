@@ -4,7 +4,7 @@ metaTitle: Playwright vs Puppeteer for Web Scraping in 2026
 metaDescription: Compare Playwright vs Puppeteer for web scraping by browser support, API style, scaling tradeoffs, anti-bot fit, and when each framework makes sense.
 slug: playwright-vs-puppeteer
 summary: A practical comparison of Playwright vs Puppeteer for scraping, covering browser support, workflow fit, scaling tradeoffs, and when each framework is the better choice.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["browser automation", "Headless Browser", "Playwright", "puppeteer", "Web Scraping"]
 language: en
 status: Draft

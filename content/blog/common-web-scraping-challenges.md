@@ -4,7 +4,7 @@ metaTitle: Common Web Scraping Challenges and How to Solve Them (2026 Guide)
 metaDescription: Learn how to solve common web scraping challenges including IP blocks, JS rendering, CAPTCHAs, selector breakage, and scaling problems.
 slug: common-web-scraping-challenges
 summary: A practical guide to common web scraping challenges, covering IP blocks, JavaScript rendering, CAPTCHAs, selector breakage, and scale-related instability with concrete mitigation patterns.
-category: Web Scraping
+category: "Proxy Guides & Benchmark"
 tags: ["blocks", "challenges", "JavaScript", "solutions", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Web Scraping Architecture Design (2026 Guide)
 metaDescription: Learn web scraping architecture design in 2026, including queues, workers, proxy layers, browser usage, validation, storage, and observability.
 slug: web-scraping-architecture-design
 summary: A practical guide to web scraping architecture design in 2026, covering queues, workers, proxy layers, browser usage, validation, storage, and observability.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

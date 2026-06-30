@@ -4,7 +4,7 @@ metaTitle: Scraping Job Listings (2026 Guide)
 metaDescription: Learn how to scrape job listings in 2026 using browser automation, geo-targeted proxies, public job-page workflows, and reliable extraction for recruitment and market intelligence.
 slug: scraping-job-listings
 summary: A practical guide to scraping job listings in 2026, covering public job data collection, discovery-versus-detail workflows, browser automation, geo-aware routing, and market intelligence use cases.
-category: Proxy Services
+category: "Proxy Guides & Benchmark"
 tags: ["job-listings", "market-intelligence", "recruitment-data", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

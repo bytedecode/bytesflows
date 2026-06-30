@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: scraping-data-at-scale
 summary: 2026 大规模数据采集蓝图。从分布式架构到海量住宅 IP 池管理，教你如何构建每分钟处理百万级请求的工业级爬虫系统。
-category: architecture
+category: "Proxy Guides & Benchmark"
 tags: ["web-scraping", "architecture", "scaling", "proxy", "big-data"]
 language: zh
 status: Draft

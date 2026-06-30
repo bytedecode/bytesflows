@@ -4,10 +4,10 @@ metaTitle: ""
 metaDescription: ""
 slug: rag-crawler-with-proxy-technical-implementation
 summary: 针对 RAG 场景，说明为何垂直站定时抓取需要代理与去重，并给出从调度、代理请求、解析到向量化落库的完整架构与 Python 实现。
-category: artificial-intelligence
+category: "AI Agents & Automation"
 tags: []
 language: zh
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1693496481581-04d4ca819560?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 

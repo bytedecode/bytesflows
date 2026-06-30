@@ -4,7 +4,7 @@ metaTitle: The Comprehensive Python Web Scraping Guide for 2026
 metaDescription: Learn the modern Python web scraping stack in 2026, including HTTP clients, parsers, browser tools, concurrency, proxies, and how to build reliable scraping workflows.
 slug: python-web-scraping-guide
 summary: A practical 2026 guide to Python web scraping, covering the modern Python stack, tool choice, concurrency, anti-bot realities, and when Python is the right environment.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["httpx", "Playwright", "Python", "Scrapy", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Ultimate Guide to Web Scraping in 2026
 metaDescription: Learn how web scraping works in 2026, including browsers, proxies, AI-assisted extraction, anti-bot systems, validation, and scalable architecture.
 slug: ultimate-guide-web-scraping-2026
 summary: A practical 2026 guide to modern web scraping, covering browsers, proxies, AI-assisted extraction, anti-bot systems, validation, and scale.
-category: web-scraping
+category: "Proxy Guides & Benchmark"
 tags: ["web-scraping", "data-extraction", "ai-scraping", "proxy-networks", "automation", "2026-trends"]
 language: en
 status: Draft

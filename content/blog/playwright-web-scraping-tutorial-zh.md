@@ -4,7 +4,7 @@ metaTitle: Playwright 爬虫实战教程：从入门到反爬精通
 metaDescription: 系统讲清 Playwright 爬虫的核心能力，包括 BrowserContext、动态页面处理、无限滚动、代理接入与反爬实战思路。
 slug: playwright-web-scraping-tutorial
 summary: 一篇系统化的 Playwright 爬虫实战教程，涵盖 BrowserContext、动态页面处理、无限滚动、代理接入与反爬实战思路。
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "JavaScript", "Playwright", "tutorial", "Web Scraping"]
 language: zh
 status: Draft

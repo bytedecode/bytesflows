@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: scraping-spa-rendering-strategies
 summary: 掌握使用无头浏览器和 API 拦截技术，高效应对 JavaScript 动态渲染的 SPA 网站数据抓取难题。
-category: 技术
+category: "Proxy Guides & Benchmark"
 tags: ["爬虫", "JavaScript", "无头浏览器"]
 language: zh
 status: Draft

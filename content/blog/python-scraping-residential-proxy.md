@@ -4,10 +4,10 @@ metaTitle: Python Scraping with Residential Proxies
 metaDescription: Use Python with residential proxies for Requests, Scrapy, and Playwright, and learn how rotating or sticky routing improves Python scraping reliability.
 slug: python-scraping-residential-proxy
 summary: A practical landing page for Python scraping with residential proxies, explaining how Requests, Scrapy, and Playwright use proxies differently and why residential routing matters as targets get stricter.
-category: landing
+category: "Web Scraping & Engineering"
 tags: ["python scraping", "python proxy", "residential proxy python", "scraping with python"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
 ---
 

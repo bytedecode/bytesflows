@@ -4,7 +4,7 @@ metaTitle: "The Ultimate Guide to Web Scraping in 2026: From Scripts to AI Agent
 metaDescription: A practical 2026 guide to web scraping covering static vs dynamic targets, tools, browser automation, proxies, anti-bot systems, scaling, and AI agents.
 slug: ultimate-guide-web-scraping-2026
 summary: A clearer high-level guide to web scraping in 2026, covering target types, tool selection, proxy identity, anti-bot realities, scaling, and when AI agents fit.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["ai-scraping", "data-extraction", "proxy-networks", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

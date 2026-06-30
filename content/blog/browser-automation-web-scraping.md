@@ -4,7 +4,7 @@ metaTitle: Browser Automation for Web Scraping (2026 Guide)
 metaDescription: Learn when to use browser automation for web scraping, how Playwright fits into modern pipelines, and why proxies, pacing, and browser realism matter at scale.
 slug: browser-automation-web-scraping
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["browser", "browser automation", "Playwright"]
 language: en
 status: Draft

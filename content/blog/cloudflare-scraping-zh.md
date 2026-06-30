@@ -4,7 +4,7 @@ metaTitle: Cloudflare 抓取代理方案：住宅 IP + 浏览器自动化
 metaDescription: Cloudflare 抓取实战指南，讲清住宅代理、浏览器自动化、指纹一致性、并发控制与挑战页排障方法。
 slug: cloudflare-scraping
 summary: 一篇实战型 Cloudflare 抓取指南，覆盖住宅代理、浏览器自动化、指纹一致性、并发控制与挑战页排障方法。
-category: landing
+category: "Anti-Bot & Security"
 tags: ["Cloudflare 绕过", "Cloudflare 抓取", "住宅代理", "反爬", "浏览器自动化"]
 language: zh
 status: Draft

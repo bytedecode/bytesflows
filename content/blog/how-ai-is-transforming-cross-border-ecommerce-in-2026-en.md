@@ -4,10 +4,10 @@ metaTitle: How AI Is Transforming Cross-Border E-commerce in 2026
 metaDescription: Learn how AI is reshaping cross-border e-commerce in 2026 through pricing, localization, customer support, forecasting, fraud control, and data intelligence.
 slug: how-ai-is-transforming-cross-border-ecommerce-in-2026
 summary: A practical guide to how AI is transforming cross-border e-commerce in 2026 through pricing, localization, customer support, forecasting, fraud control, and data intelligence.
-category: Technology
+category: "AI Agents & Automation"
 tags: ["Technical", "AI"]
 language: en
-status: Published
+status: Draft
 coverImage: ""
 ---
 

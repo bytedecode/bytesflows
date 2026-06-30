@@ -4,10 +4,10 @@ metaTitle: ""
 metaDescription: ""
 slug: how-to-rotate-ips
 summary: 了解轮换 IP 的最佳实践，以保持匿名并避免在大批量抓取过程中出现阻塞。
-category: Tutorials
+category: "Proxy Guides & Benchmark"
 tags: ["指南", "技术"]
 language: zh
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1676282824852-4c4d70f76cfe?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 

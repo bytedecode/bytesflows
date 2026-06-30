@@ -4,7 +4,7 @@ metaTitle: Using Proxies with Python Scrapers (2026 Guide)
 metaDescription: Learn how to use proxies with Python scrapers across Requests, Scrapy, and Playwright, including residential rotation, troubleshooting, and stack-specific best practices.
 slug: using-proxies-python-scrapers
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: Proxy Services
+category: "Web Scraping & Engineering"
 tags: ["proxy", "Python", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

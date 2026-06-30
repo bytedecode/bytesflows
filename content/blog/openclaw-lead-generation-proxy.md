@@ -4,10 +4,10 @@ metaTitle: OpenClaw for Lead Gen, Research, and Outreach (2026 Guide)
 metaDescription: Learn how to use OpenClaw for lead research, qualification, and draft outreach with residential proxies, browser automation, human review, and safer multi-site browsing.
 slug: openclaw-lead-generation-proxy
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["lead generation", "openclaw", "residential proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000"
 ---
 

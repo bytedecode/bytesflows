@@ -4,7 +4,7 @@ metaTitle: Web Scraping Architecture Explained (2026 Guide)
 metaDescription: Understand modern web scraping architecture, including queues, workers, browsers, proxy layers, storage, retries, and monitoring for reliable large-scale collection.
 slug: web-scraping-architecture-explained
 summary: A practical guide to web scraping architecture, covering queues, workers, browser layers, proxy routing, storage, monitoring, and how to scale without sacrificing reliability.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["architecture", "proxy", "residential proxy", "scale", "Web Scraping"]
 language: en
 status: Draft

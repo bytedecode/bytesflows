@@ -4,7 +4,7 @@ metaTitle: "How to Build Your First Web Scraper in 2026: A Step-by-Step Guide"
 metaDescription: Learn how to build your first web scraper in Python, choose beginner-friendly targets, handle static vs dynamic pages, and avoid common first-project mistakes.
 slug: how-to-build-first-web-scraper
 summary: A practical beginner guide to building a first web scraper, covering target selection, static vs dynamic pages, extraction basics, and when to move beyond simple scripts.
-category: Web Scraping
+category: "Proxy Guides & Benchmark"
 tags: ["beginner-guide", "first-scraper", "Playwright", "Python", "tutorial"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: scraping-amazon-product-data
 summary: 2026 亚马逊产品数据抓取手册。攻克 Amazon 复杂的反爬机制，利用住宅代理稳定获取价格、评论和库存信息的专业策略。
-category: use-cases
+category: "Proxy Guides & Benchmark"
 tags: ["Amazon", "E-commerce", "product data", "Scraping", "proxy", "automation"]
 language: zh
 status: Draft

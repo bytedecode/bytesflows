@@ -4,7 +4,7 @@ metaTitle: Web Scraping Tools for Beginners (2026 Guide)
 metaDescription: Learn the best web scraping tools for beginners in 2026, from browser extensions to Python, Playwright, Scrapy, and proxy-backed workflows for real projects.
 slug: web-scraping-tools-beginners
 summary: A practical beginner guide to web scraping tools in 2026, covering no-code options, Python stacks, browser automation, frameworks, and when to add proxies.
-category: Web Scraping
+category: "Proxy Guides & Benchmark"
 tags: ["beginners", "tools", "tutorial", "Web Scraping"]
 language: en
 status: Draft

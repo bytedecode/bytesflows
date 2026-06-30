@@ -4,7 +4,7 @@ metaTitle: Playwright vs Crawlee for Web Scraping (2026 Guide)
 metaDescription: Compare Playwright and Crawlee for web scraping by browser control, queues, storage, retries, proxy handling, and when to choose one or combine both.
 slug: playwright-vs-crawlee-comparison
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["Comparison", "Crawlee", "framework", "Playwright", "Web Scraping"]
 language: en
 status: Draft

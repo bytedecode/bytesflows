@@ -4,7 +4,7 @@ metaTitle: "Connect OpenClaw to Ollama: Local AI Agent in Practice"
 metaDescription: Learn how to connect OpenClaw to Ollama locally, configure the provider correctly, test the model path, and verify an end-to-end local AI workflow.
 slug: openclaw-connect-to-ollama-part-3
 summary: A practical guide to connecting OpenClaw to Ollama locally, covering provider configuration, model setup, validation, and troubleshooting.
-category: artificial-intelligence
+category: "AI Agents & Automation"
 tags: []
 language: en
 status: Draft

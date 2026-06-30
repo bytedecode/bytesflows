@@ -4,10 +4,10 @@ metaTitle: "Python Scraping Proxy Guide (2026): Residential Proxies for Requests
 metaDescription: Learn how to set up residential proxies in Python scraping workflows using Requests, Scrapy, aiohttp, and Playwright, with tips for rotation, scaling, and avoiding blocks.
 slug: python-scraping-proxy
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: landing
+category: "Web Scraping & Engineering"
 tags: ["python scraping", "python proxy", "residential proxy python", "scraping with python"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
 ---
 

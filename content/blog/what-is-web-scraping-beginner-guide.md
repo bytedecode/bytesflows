@@ -4,7 +4,7 @@ metaTitle: What Is Web Scraping? Complete Beginner Guide (2026)
 metaDescription: Learn what web scraping is in 2026, how it works, common use cases, legal considerations, beginner tools, and when proxies and browser automation are needed.
 slug: what-is-web-scraping-beginner-guide
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["beginner", "data extraction", "tutorial", "Web Scraping"]
 language: en
 status: Draft

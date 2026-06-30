@@ -4,7 +4,7 @@ metaTitle: Scraping Competitor Pricing Data (2026 Guide)
 metaDescription: Learn how to scrape competitor pricing data in 2026 using browser automation, geo-targeted residential proxies, change detection workflows, and reliable price normalization.
 slug: scraping-competitor-pricing-data
 summary: A practical guide to scraping competitor pricing data in 2026, covering monitoring workflows, product matching, change detection, geo-aware extraction, and proxy-backed reliability.
-category: Web Scraping
+category: "Proxy Guides & Benchmark"
 tags: ["competitor", "Pricing", "Web Scraping"]
 language: en
 status: Draft

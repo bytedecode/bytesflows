@@ -4,10 +4,10 @@ metaTitle: 2026 年最佳网页抓取代理：深度对比与选型指南
 metaDescription: 系统对比机房代理、住宅代理、移动代理和 ISP 代理，帮助你按成本、速度、稳定性和场景选择合适方案。
 slug: best-proxies-for-web-scraping
 summary: 一篇系统化的网页抓取代理选型指南，涵盖机房代理、住宅代理、移动代理和 ISP 代理的差异与适用场景。
-category: Proxy Services
+category: "Proxy Guides & Benchmark"
 tags: ["mobile-proxies", "proxy-networks", "residential proxy", "residential-proxies", "Web Scraping"]
 language: zh
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 

@@ -4,7 +4,7 @@ metaTitle: 7 Best Python Libraries for Web Scraping in 2026
 metaDescription: Compare the best Python libraries for web scraping in 2026, including Requests, HTTPX, BeautifulSoup, Selectolax, Scrapy, and Playwright.
 slug: best-python-libraries-web-scraping
 summary: A practical comparison of the best Python libraries for web scraping in 2026, including Requests, HTTPX, BeautifulSoup, Selectolax, Scrapy, and Playwright.
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["libraries", "Playwright", "Python", "Scrapy", "Web Scraping"]
 language: en
 status: Draft

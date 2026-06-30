@@ -4,7 +4,7 @@ metaTitle: Autonomous Web Crawlers (2026 Guide)
 metaDescription: Learn how autonomous web crawlers work, including URL discovery, prioritization, policy control, proxy-aware scaling, and when AI-assisted crawling is worth using.
 slug: autonomous-web-crawlers
 summary: A practical guide to autonomous web crawlers, covering discovery, prioritization, scope control, proxy-aware crawling, and when autonomy becomes useful or dangerous.
-category: Web Scraping
+category: "Proxy Guides & Benchmark"
 tags: ["crawler", "Autonomous", "Web Scraping"]
 language: en
 status: Draft

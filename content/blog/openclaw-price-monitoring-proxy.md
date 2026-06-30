@@ -4,10 +4,10 @@ metaTitle: Price Intelligence on OpenClaw for E-commerce, Flights, Hotels
 metaDescription: Learn how to build price intelligence workflows with OpenClaw in 2026 for e-commerce, flights, and hotels using browser automation and region-aware routing.
 slug: openclaw-price-monitoring-proxy
 summary: A practical guide to building price intelligence workflows with OpenClaw across e-commerce, flights, and hotels using browser automation and region-aware routing.
-category: Proxy Services
+category: "AI Agents & Automation"
 tags: ["Ecommerce", "openclaw", "residential proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=2000"
 ---
 

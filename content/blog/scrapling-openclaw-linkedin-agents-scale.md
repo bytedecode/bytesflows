@@ -4,10 +4,10 @@ metaTitle: "Scrapling on OpenClaw: Scaling LinkedIn Agents | BytesFlows"
 metaDescription: How Scrapling runs long‑lived LinkedIn lead-gen agents on OpenClaw—and why rotating residential proxies improve reliability at scale.
 slug: scrapling-openclaw-linkedin-agents-scale
 summary: How the Scrapling service builds long‑running LinkedIn lead‑gen agents on top of OpenClaw, and where residential proxies like Bytesflows come into the picture.
-category: openclaw
+category: "AI Agents & Automation"
 tags: ["openclaw", "linkedin scraping", "residential proxy", "bytesflows", "b2b leads", "anguage: \"en"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2000"
 ---
 

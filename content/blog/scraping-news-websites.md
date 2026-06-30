@@ -4,7 +4,7 @@ metaTitle: "Scraping News Websites: Practical Guide"
 metaDescription: Learn how to scrape news websites with reliable discovery, freshness handling, proxy routing, anti-bot awareness, and scalable news collection workflow design.
 slug: scraping-news-websites
 summary: A practical guide to scraping news websites, covering article discovery, freshness, paywalls, anti-bot pressure, proxy routing, and how to build reliable news collection pipelines.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

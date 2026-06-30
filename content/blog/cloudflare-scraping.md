@@ -4,7 +4,7 @@ metaTitle: Cloudflare Bypass Proxy for Web Scraping | Residential + Browser
 metaDescription: Understand how Cloudflare bypass proxy strategy works with residential IPs, real browsers, coherent identity, and controlled behavior for protected scraping targets.
 slug: cloudflare-scraping
 summary: A practical Cloudflare bypass proxy landing page explaining why residential routing, real browsers, coherent identity, and controlled behavior work together on protected targets.
-category: landing
+category: "Anti-Bot & Security"
 tags: ["cloudflare bypass", "cloudflare scraping", "cloudflare proxy", "bypass cloudflare"]
 language: en
 status: Draft

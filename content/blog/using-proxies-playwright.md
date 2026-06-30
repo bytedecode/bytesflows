@@ -4,10 +4,10 @@ metaTitle: How to Use Proxies with Playwright (2026 Practical Guide)
 metaDescription: Learn how to configure a Playwright proxy, when to use rotating or sticky sessions, and how to choose residential proxies for scraping and browser automation.
 slug: using-proxies-playwright
 summary: A practical guide to using proxies with Playwright, including setup examples, session strategy, troubleshooting, and how to choose the right proxy type for browser automation.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["browser automation", "Playwright", "residential proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://bytesflows.com/images/blog/playwright-proxy-cover.png"
 ---
 

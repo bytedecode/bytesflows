@@ -4,10 +4,10 @@ metaTitle: How to Rotate IPs (Proxy Rotation) | BytesFlows
 metaDescription: Learn proxy rotation best practices to reduce blocks and stay anonymous. Step-by-step IP rotation strategies with BytesFlows.
 slug: how-to-rotate-ips
 summary: Learn the best practices for rotating IPs to maintain anonymity and avoid blocks during high-volume scraping.
-category: Tutorials
+category: "Proxy Guides & Benchmark"
 tags: ["Guide", "Technical"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1676282824852-4c4d70f76cfe?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 

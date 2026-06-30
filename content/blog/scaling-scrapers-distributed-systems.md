@@ -4,7 +4,7 @@ metaTitle: Scaling Scrapers with Distributed Systems (2026 Guide)
 metaDescription: Learn how to scale scrapers with distributed systems in 2026 using queues, worker pools, proxy capacity planning, and resilient architecture.
 slug: scaling-scrapers-distributed-systems
 summary: A practical guide to scaling scrapers with distributed systems in 2026, covering queues, worker pools, proxy capacity planning, and resilient architecture.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

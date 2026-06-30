@@ -4,7 +4,7 @@ metaTitle: OpenClaw for SERP and Search Data Extraction (2026 Guide)
 metaDescription: Learn how to use OpenClaw for SERP scraping with browser automation, rotating residential proxies, geo-targeting, throttling, and safer search data collection.
 slug: openclaw-serp-scraping
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["data extraction", "openclaw", "residential proxy"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: How Web Scraping Works Behind the Scenes (2026 Guide)
 metaDescription: Learn how web scraping works step by step, from requests and HTML parsing to browser rendering, proxy routing, retries, and production data pipelines.
 slug: how-web-scraping-works
 summary: A practical explanation of how web scraping works, covering requests, responses, parsing, browser rendering, proxy routing, and how data moves through a scraping pipeline.
-category: Web Scraping
+category: "Proxy Guides & Benchmark"
 tags: ["architecture", "how it works", "HTTP", "parsing", "Web Scraping"]
 language: en
 status: Draft

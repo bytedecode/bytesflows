@@ -4,7 +4,7 @@ metaTitle: Why Ad Verification Matters in Digital Marketing
 metaDescription: Learn why ad verification matters in digital marketing, including fraud detection, geo validation, brand safety, viewability checks, and campaign quality control.
 slug: why-ad-verification-matters
 summary: A practical guide to why ad verification matters in digital marketing, including fraud detection, geo validation, brand safety, viewability, and campaign quality control.
-category: Marketing
+category: "Proxy Guides & Benchmark"
 tags: ["Security", "Ads", "Verification"]
 language: en
 status: Draft

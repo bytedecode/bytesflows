@@ -4,7 +4,7 @@ metaTitle: 2026 年 Python 网页抓取全指南
 metaDescription: 系统讲清 2026 年 Python 网页抓取的技术栈选择、并发模型、反爬对抗、代理接入与 AI 集成思路。
 slug: python-web-scraping-guide
 summary: 一篇系统化的 Python 网页抓取全指南，涵盖技术栈选择、并发模型、反爬对抗、代理接入与 AI 集成思路。
-category: Web Scraping
+category: "Web Scraping & Engineering"
 tags: ["httpx", "Playwright", "Python", "Scrapy", "Web Scraping"]
 language: zh
 status: Draft

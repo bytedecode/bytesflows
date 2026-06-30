@@ -4,10 +4,10 @@ metaTitle: "OpenClaw Gateway and Proxy: Traffic vs Browser Proxy (2026 Guide)"
 metaDescription: Learn the difference between OpenClaw gateway proxies and browser proxies, and where to configure residential proxies for scraping, browser automation, and agent workflows.
 slug: openclaw-gateway-proxy
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: AI & Automation
+category: "AI Agents & Automation"
 tags: ["openclaw", "openclaw gateway", "proxy", "residential proxy"]
 language: en
-status: Published
+status: Draft
 coverImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=2000"
 ---
 
