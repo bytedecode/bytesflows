@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=f
 ## AI Data Collection Starts Long Before the Model Sees the Page
 When people talk about AI data collection from the web, they often jump straight to LLM prompts, extraction schemas, or agent behavior. But the real pipeline starts much earlier. Before the model can interpret anything, the system has to fetch the right page, at the right time, through a reliable transport layer.
 That is why AI data collection is not only an LLM problem. It is a pipeline problem.
-This guide explains how AI data collection from the web works across fetching, proxy infrastructure, extraction, validation, and agent-driven planning. It also shows when AI is the right choice over traditional scraping and how to design a system that stays useful beyond small experiments. It pairs naturally with [AI web scraping explained](https://bytesflows.com/en/blog/ai-web-scraping-explained), [AI web scraping with agents](https://bytesflows.com/en/blog/ai-web-scraping-agents), and [using LLMs to extract web data](https://bytesflows.com/en/blog/using-llms-extract-web-data).
+This guide explains how AI data collection from the web works across fetching, proxy infrastructure, extraction, validation, and agent-driven planning. It also shows when AI is the right choice over traditional scraping and how to design a system that stays useful beyond small experiments. It pairs naturally with [AI web scraping explained](https://bytesflows.com/blog/ai-web-scraping-explained), [AI web scraping with agents](https://bytesflows.com/blog/ai-web-scraping-agents), and [using LLMs to extract web data](https://bytesflows.com/blog/using-llms-extract-web-data).
 ## What AI Data Collection from the Web Actually Means
 AI data collection usually means combining web fetching with model-based interpretation.
 In practice, that often includes:
@@ -55,9 +55,9 @@ This layered view is important because it shows why AI data collection is not ju
 One of the most common mistakes is assuming the model is the hardest part. In reality, the fetch layer is often where the pipeline fails first.
 If the system cannot reliably access the target pages, the best extraction logic in the world does not help. That is why serious AI data collection often depends on:
 - browser automation for JavaScript-heavy sites
-- [residential proxies](https://bytesflows.com/en/blog/residential-proxies) for stricter targets
-- [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping) when scale matters
-- [proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies) to reduce repeated IP pressure
+- [residential proxies](https://bytesflows.com/blog/residential-proxies) for stricter targets
+- [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping) when scale matters
+- [proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies) to reduce repeated IP pressure
 This is especially important when the same pipeline feeds a RAG system, agent workflow, or continuous refresh job.
 ## Extraction with LLMs and Structured Prompts
 Once the content is fetched, the model can be used to turn messy input into structured output.
@@ -83,7 +83,7 @@ An agent can decide:
 - whether to retry or switch strategy
 - how to combine browsing, extraction, and summarization
 This is why AI data collection increasingly overlaps with agent-based workflows rather than just extraction prompts. Once the system can plan navigation and react to results, it becomes a data collection workflow engine rather than a simple parser.
-That connection is why [AI web scraping with agents](https://bytesflows.com/en/blog/ai-web-scraping-agents), [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), and [AI web scraping explained](https://bytesflows.com/en/blog/ai-web-scraping-explained) form a natural cluster around this topic.
+That connection is why [AI web scraping with agents](https://bytesflows.com/blog/ai-web-scraping-agents), [OpenClaw for web scraping and data extraction](https://bytesflows.com/blog/openclaw-web-scraping), and [AI web scraping explained](https://bytesflows.com/blog/ai-web-scraping-explained) form a natural cluster around this topic.
 ## AI Data Collection for RAG and Knowledge Systems
 One of the strongest use cases is feeding RAG and retrieval systems.
 In that context, AI data collection helps by:
@@ -141,12 +141,12 @@ That mental model is much more accurate than imagining one model call somehow re
 ## Conclusion
 AI data collection from the web is most powerful when it is treated as a full pipeline rather than a single extraction trick. The fetch layer, proxy strategy, browser behavior, model extraction, and validation logic all work together.
 The reason teams adopt AI here is not only to collect data, but to collect more adaptable, semantically useful data from messy and changing sources. When done well, this supports better RAG pipelines, stronger analytics, more useful agents, and more flexible web intelligence systems.
-If you want the strongest next reading path from here, continue with [AI web scraping explained](https://bytesflows.com/en/blog/ai-web-scraping-explained), [AI web scraping with agents](https://bytesflows.com/en/blog/ai-web-scraping-agents), [using LLMs to extract web data](https://bytesflows.com/en/blog/using-llms-extract-web-data), and [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping).
+If you want the strongest next reading path from here, continue with [AI web scraping explained](https://bytesflows.com/blog/ai-web-scraping-explained), [AI web scraping with agents](https://bytesflows.com/blog/ai-web-scraping-agents), [using LLMs to extract web data](https://bytesflows.com/blog/using-llms-extract-web-data), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## Further reading
-- [AI web scraping explained](https://bytesflows.com/en/blog/ai-web-scraping-explained)
-- [AI web scraping with agents](https://bytesflows.com/en/blog/ai-web-scraping-agents)
-- [Using LLMs to extract web data](https://bytesflows.com/en/blog/using-llms-extract-web-data)
-- [AI data extraction vs traditional scraping](https://bytesflows.com/en/blog/ai-data-extraction-vs-traditional-scraping)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping)
+- [AI web scraping explained](https://bytesflows.com/blog/ai-web-scraping-explained)
+- [AI web scraping with agents](https://bytesflows.com/blog/ai-web-scraping-agents)
+- [Using LLMs to extract web data](https://bytesflows.com/blog/using-llms-extract-web-data)
+- [AI data extraction vs traditional scraping](https://bytesflows.com/blog/ai-data-extraction-vs-traditional-scraping)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [OpenClaw for web scraping and data extraction](https://bytesflows.com/blog/openclaw-web-scraping)

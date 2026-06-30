@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 ## Why Job Listing Data Is Valuable
 Job listings reveal hiring demand, salary signals, geographic expansion, skill trends, and competitor movement. That makes them useful for recruitment tools, labor-market research, talent intelligence, and broader market analysis.
 The challenge is that many job sites are dynamic, session-aware, and protected by strong anti-bot controls. Some also vary results by geography or push users toward login walls after repeated browsing.
-This guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright), [Scraping Infinite Scroll Pages](https://bytesflows.com/en/blog/scraping-infinite-scroll-pages), and [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale).
+This guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright), [Scraping Infinite Scroll Pages](https://bytesflows.com/blog/scraping-infinite-scroll-pages), and [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale).
 ## What Teams Usually Want to Extract
 A job-data pipeline often needs more than a title and company name. Common fields include:
 - job title and posting URL
@@ -70,7 +70,7 @@ Job data loses value quickly without time context.
 ### Deduplicate reposted or syndicated listings
 The same role may appear on multiple job surfaces.
 ### Validate challenge behavior before scaling up
-Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker) to understand whether pages are loading fully and consistently.
+Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to understand whether pages are loading fully and consistently.
 ## Common Mistakes
 - scraping behind login when a public listing page exists
 - mixing discovery and detail logic into one brittle workflow
@@ -81,8 +81,8 @@ Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checke
 Scraping job listings reliably requires a workflow that respects the difference between discovery and detail, handles dynamic job-board interfaces, and normalizes messy recruitment data into usable signals.
 When browser automation, geo-aware routing, and structured extraction work together, job listing data becomes far more useful for recruitment intelligence and market analysis.
 ## Further reading
-- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright)
-- [Scraping Infinite Scroll Pages](https://bytesflows.com/en/blog/scraping-infinite-scroll-pages)
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Geo-Targeted Scraping Proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies)
+- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright)
+- [Scraping Infinite Scroll Pages](https://bytesflows.com/blog/scraping-infinite-scroll-pages)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies)

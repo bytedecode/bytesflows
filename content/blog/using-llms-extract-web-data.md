@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=f
 ## LLM Extraction Works Best When the Problem Is Variability, Not Just Parsing
 The appeal of using LLMs to extract web data is obvious: instead of writing and maintaining selectors for every layout, you let a model interpret meaning across different pages and return structured output.
 That can be powerful, but it only works well when you understand where LLMs actually create leverage. They are not a universal replacement for every scraper. They are best used where the page structure varies, the content is messy, or the output needs semantic interpretation rather than strict DOM matching.
-This guide explains when LLM-based web extraction makes sense, what a practical pipeline looks like, how to keep cost under control, and why fetch quality and validation still matter just as much as the model call itself. It pairs naturally with [AI data collection from the web](https://bytesflows.com/en/blog/ai-data-collection-web), [AI web scraping explained](https://bytesflows.com/en/blog/ai-web-scraping-explained), and [AI data extraction vs traditional scraping](https://bytesflows.com/en/blog/ai-data-extraction-vs-traditional-scraping).
+This guide explains when LLM-based web extraction makes sense, what a practical pipeline looks like, how to keep cost under control, and why fetch quality and validation still matter just as much as the model call itself. It pairs naturally with [AI data collection from the web](https://bytesflows.com/blog/ai-data-collection-web), [AI web scraping explained](https://bytesflows.com/blog/ai-web-scraping-explained), and [AI data extraction vs traditional scraping](https://bytesflows.com/blog/ai-data-extraction-vs-traditional-scraping).
 ## Why Teams Reach for LLMs in Web Extraction
 Traditional selectors are great when the structure is stable. They become expensive when the layout changes often or when one system needs to handle many different sites.
 LLMs become useful because they can:
@@ -55,7 +55,7 @@ flowchart LR
     D --> E["Store output"]
 ```
 This matters because if the fetch layer is weak—blocked pages, incomplete rendering, challenge responses, wrong geography—then the LLM is being asked to interpret bad input. No prompt can fully rescue that.
-That is why related infrastructure like [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [residential proxies](https://bytesflows.com/en/blog/residential-proxies), and [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping) still matters even in model-heavy extraction pipelines.
+That is why related infrastructure like [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [residential proxies](https://bytesflows.com/blog/residential-proxies), and [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping) still matters even in model-heavy extraction pipelines.
 ## Content Preparation Is Where Cost Control Starts
 Sending raw HTML directly to a model is often the fastest way to waste tokens.
 A better approach is usually to:
@@ -125,16 +125,16 @@ The model performs better when the target shape is explicit.
 Especially if the result feeds analytics, RAG, or automation.
 ### Combine with strong fetch infrastructure
 Good input quality improves extraction quality more than many prompt tweaks do.
-Helpful related tools and workflows include [AI data collection from the web](https://bytesflows.com/en/blog/ai-data-collection-web), [using proxies with Python scrapers](https://bytesflows.com/en/blog/using-proxies-python-scrapers), and [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping).
+Helpful related tools and workflows include [AI data collection from the web](https://bytesflows.com/blog/ai-data-collection-web), [using proxies with Python scrapers](https://bytesflows.com/blog/using-proxies-python-scrapers), and [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping).
 ## Conclusion
 Using LLMs to extract web data is most useful when the extraction problem is fundamentally about variability, ambiguity, or semantic interpretation. In those cases, models can reduce brittle parser maintenance and make multi-site extraction far more flexible.
 But the model call is only one part of the system. The fetch layer, content preparation, schema design, and validation logic determine whether the output is actually reliable and cost-effective. When those layers work together, LLM-based extraction becomes a practical part of a modern scraping pipeline rather than just an expensive experiment.
-If you want the strongest next reading path from here, continue with [AI data collection from the web](https://bytesflows.com/en/blog/ai-data-collection-web), [AI web scraping explained](https://bytesflows.com/en/blog/ai-web-scraping-explained), [AI data extraction vs traditional scraping](https://bytesflows.com/en/blog/ai-data-extraction-vs-traditional-scraping), and [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping).
+If you want the strongest next reading path from here, continue with [AI data collection from the web](https://bytesflows.com/blog/ai-data-collection-web), [AI web scraping explained](https://bytesflows.com/blog/ai-web-scraping-explained), [AI data extraction vs traditional scraping](https://bytesflows.com/blog/ai-data-extraction-vs-traditional-scraping), and [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping).
 ## Further reading
-- [AI data collection from the web](https://bytesflows.com/en/blog/ai-data-collection-web)
-- [AI web scraping explained](https://bytesflows.com/en/blog/ai-web-scraping-explained)
-- [AI data extraction vs traditional scraping](https://bytesflows.com/en/blog/ai-data-extraction-vs-traditional-scraping)
-- [Browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Using proxies with Python scrapers](https://bytesflows.com/en/blog/using-proxies-python-scrapers)
+- [AI data collection from the web](https://bytesflows.com/blog/ai-data-collection-web)
+- [AI web scraping explained](https://bytesflows.com/blog/ai-web-scraping-explained)
+- [AI data extraction vs traditional scraping](https://bytesflows.com/blog/ai-data-extraction-vs-traditional-scraping)
+- [Browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Using proxies with Python scrapers](https://bytesflows.com/blog/using-proxies-python-scrapers)

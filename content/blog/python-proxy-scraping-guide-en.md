@@ -101,15 +101,15 @@ A working route can still be the wrong route.
 Do not let weak identity patterns repeat blindly.
 ### Scale only when pass rate stays stable under real workload
 Proxy quality should be proven under repetition.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/en/blog/scraping-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
 ## Conclusion
 Python proxy scraping becomes much easier to manage once proxies are treated as part of workflow design rather than as optional network decoration. The right routing model depends on whether you are using a simple HTTP client, a structured crawler, or a real browser, and whether the workflow needs distribution or continuity.
 The practical lesson is simple: good proxies do not replace good architecture. They support it. When route choice, Python stack, retries, and session behavior all reinforce each other, Python scraping becomes much more stable and much easier to scale on real targets.
 ## Further reading
-- [Using requests for web scraping](https://bytesflows.com/en/blog/using-requests-web-scraping)
-- [Scrapy framework guide](https://bytesflows.com/en/blog/scrapy-framework-guide)
-- [Using proxies with Playwright](https://bytesflows.com/en/blog/using-proxies-playwright)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/proxies)
-- [Proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [Python web scraping guide](https://bytesflows.com/en/blog/python-web-scraping-guide)
+- [Using requests for web scraping](https://bytesflows.com/blog/using-requests-web-scraping)
+- [Scrapy framework guide](https://bytesflows.com/blog/scrapy-framework-guide)
+- [Using proxies with Playwright](https://bytesflows.com/blog/using-proxies-playwright)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/proxies)
+- [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Python web scraping guide](https://bytesflows.com/blog/python-web-scraping-guide)

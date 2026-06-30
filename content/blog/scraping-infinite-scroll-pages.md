@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=f
 ## Why Infinite Scroll Changes the Scraping Problem
 Infinite scroll pages do not expose the full dataset in the first response. Instead, the page keeps loading more cards, posts, or listings as the browser reaches certain scroll thresholds.
 That means the scraper has to do more than parse HTML. It has to manage browser state, loading signals, and stopping logic without collecting duplicates or missing later content.
-This guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright), [Scraping Dynamic Websites with Python](https://bytesflows.com/en/blog/scraping-dynamic-websites-python), and [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies).
+This guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright), [Scraping Dynamic Websites with Python](https://bytesflows.com/blog/scraping-dynamic-websites-python), and [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies).
 ## Common Infinite Scroll Targets
 Infinite scroll is common on:
 - social feeds
@@ -71,7 +71,7 @@ This avoids endless loops on noisy pages.
 ### Stop based on repeated no-growth cycles
 One stagnant scroll may not mean the dataset is finished.
 ### Validate what the browser really loaded
-Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker) when pages seem to stall or degrade unexpectedly.
+Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) when pages seem to stall or degrade unexpectedly.
 ## Common Mistakes
 - using fixed sleep alone as the stopping strategy
 - rotating IPs in the middle of the same scroll session
@@ -82,8 +82,8 @@ Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [HTTP Header 
 Scraping infinite scroll pages reliably requires browser automation, growth detection, and stable session handling. The goal is not just to scroll until the page feels finished. The goal is to know when the result set has actually stopped expanding.
 When controlled scrolling, sticky sessions, and good stopping logic work together, infinite scroll pages become much easier to scrape without missing data or wasting requests.
 ## Further reading
-- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright)
-- [Scraping Dynamic Websites with Python](https://bytesflows.com/en/blog/scraping-dynamic-websites-python)
-- [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [Playwright Web Scraping Tutorial](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright)
+- [Scraping Dynamic Websites with Python](https://bytesflows.com/blog/scraping-dynamic-websites-python)
+- [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Playwright Web Scraping Tutorial](https://bytesflows.com/blog/playwright-web-scraping-tutorial)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

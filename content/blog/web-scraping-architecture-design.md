@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 
 ## Architecture Determines Whether Scraping Scales Cleanly
 A scraper can work as a script at small size and still fail as a system once throughput, target diversity, and anti-bot pressure increase. Architecture is the layer that decides whether the workflow remains reliable when complexity grows.
-Good architecture separates concerns so fetching, routing, extraction, retries, and storage can evolve without collapsing into one fragile process. This guide pairs well with [Web Scraping Workflow Explained](https://bytesflows.com/en/blog/web-scraping-workflow-explained), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices), and [Scaling Scrapers with Distributed Systems](https://bytesflows.com/en/blog/scaling-scrapers-distributed-systems).
+Good architecture separates concerns so fetching, routing, extraction, retries, and storage can evolve without collapsing into one fragile process. This guide pairs well with [Web Scraping Workflow Explained](https://bytesflows.com/blog/web-scraping-workflow-explained), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices), and [Scaling Scrapers with Distributed Systems](https://bytesflows.com/blog/scaling-scrapers-distributed-systems).
 ## The Core Layers of a Scraping Architecture
 A practical scraping architecture usually includes:
 - target discovery or URL intake
@@ -87,8 +87,8 @@ This model is not the only valid architecture, but it captures the layers most p
 Web scraping architecture design is about creating a system that stays reliable as load, target complexity, and anti-bot pressure increase. The strongest designs separate control, fetching, routing, validation, and storage so each layer can be improved without destabilizing the whole workflow.
 When those layers are designed together, scraping systems become much easier to scale, maintain, and trust.
 ## Further reading
-- [Web Scraping Workflow Explained](https://bytesflows.com/en/blog/web-scraping-workflow-explained)
-- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices)
-- [Scaling Scrapers with Distributed Systems](https://bytesflows.com/en/blog/scaling-scrapers-distributed-systems)
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
+- [Web Scraping Workflow Explained](https://bytesflows.com/blog/web-scraping-workflow-explained)
+- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)
+- [Scaling Scrapers with Distributed Systems](https://bytesflows.com/blog/scaling-scrapers-distributed-systems)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)

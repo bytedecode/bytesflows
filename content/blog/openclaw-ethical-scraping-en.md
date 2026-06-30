@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=f
 
 OpenClaw makes it much easier to build browsing and extraction workflows, but easier automation also makes it easier to create unnecessary legal, operational, and reputational risk.
 That is why ethical scraping has to be part of the design from the beginning. The goal is not just to avoid getting blocked. It is to collect useful public data in a way that is proportionate, reviewable, and respectful of site boundaries.
-This guide works well alongside [Web Scraping Legal Considerations](https://bytesflows.com/en/blog/web-scraping-legal-considerations), [Ethical Web Scraping Practices (2026)](https://bytesflows.com/en/blog/ethical-web-scraping-practices), and [Avoid IP Bans in Automation](https://bytesflows.com/en/blog/avoid-ip-bans-automation).
+This guide works well alongside [Web Scraping Legal Considerations](https://bytesflows.com/blog/web-scraping-legal-considerations), [Ethical Web Scraping Practices (2026)](https://bytesflows.com/blog/ethical-web-scraping-practices), and [Avoid IP Bans in Automation](https://bytesflows.com/blog/avoid-ip-bans-automation).
 ## What Ethical Scraping Means in Practice
 In a real engineering workflow, ethical scraping usually means:
 - collecting only data you actually need
@@ -76,8 +76,8 @@ That matters even when the content is publicly visible.
 Ethical scraping with OpenClaw is about restraint, clarity, and reviewability. The best teams do not ask only whether an agent can extract the data. They ask whether the workflow is narrow enough, paced responsibly, and aligned with the standards they would be comfortable defending publicly.
 That mindset usually produces better systems as well as safer ones.
 ## Further reading
-- [Web Scraping Legal Considerations](https://bytesflows.com/en/blog/web-scraping-legal-considerations)
-- [Ethical Web Scraping Practices (2026)](https://bytesflows.com/en/blog/ethical-web-scraping-practices)
-- [Avoid IP Bans in Automation](https://bytesflows.com/en/blog/avoid-ip-bans-automation)
-- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxies)
-- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/en/blog/why-openclaw-agents-need-residential-proxies)
+- [Web Scraping Legal Considerations](https://bytesflows.com/blog/web-scraping-legal-considerations)
+- [Ethical Web Scraping Practices (2026)](https://bytesflows.com/blog/ethical-web-scraping-practices)
+- [Avoid IP Bans in Automation](https://bytesflows.com/blog/avoid-ip-bans-automation)
+- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxies)
+- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/why-openclaw-agents-need-residential-proxies)

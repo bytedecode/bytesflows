@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=f
 ## Why LinkedIn-Focused Agent Workflows Become an Infrastructure Problem Very Quickly
 Anyone doing B2B lead research already knows the tension: LinkedIn is one of the most useful sources for role, company, and org-chart signals, but it is also one of the quickest places for automation to attract friction.
 That is why LinkedIn-oriented OpenClaw workflows are not just about extraction logic. They are really about infrastructure discipline—browser behavior, session design, IP quality, and pacing.
-This case-study style guide explains how a LinkedIn-focused OpenClaw workflow behaves when it moves beyond one-off experiments, why residential proxies become operationally important, and how to think about scale without treating the task as a reckless scraping race. It pairs naturally with [OpenClaw for lead gen, research, and outreach](https://bytesflows.com/en/blog/openclaw-lead-generation-proxy), [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy), and [avoiding blocks when using OpenClaw for scraping](https://bytesflows.com/en/blog/openclaw-ai-agent-anti-bot).
+This case-study style guide explains how a LinkedIn-focused OpenClaw workflow behaves when it moves beyond one-off experiments, why residential proxies become operationally important, and how to think about scale without treating the task as a reckless scraping race. It pairs naturally with [OpenClaw for lead gen, research, and outreach](https://bytesflows.com/blog/openclaw-lead-generation-proxy), [OpenClaw browser automation with residential proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy), and [avoiding blocks when using OpenClaw for scraping](https://bytesflows.com/blog/openclaw-ai-agent-anti-bot).
 ## The Problem with a Single-IP LinkedIn Workflow
 A LinkedIn-oriented workflow may look simple at first:
 - search for relevant people or companies
@@ -38,7 +38,7 @@ They help by:
 - improving survivability for long-running profile or company workflows
 - giving session design more room to work
 This is especially important when the system is browsing through real browser automation rather than raw HTTP requests, because the target can evaluate both the browser and the IP context together.
-Related background from [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), [rotating residential proxies for OpenClaw agents](https://bytesflows.com/en/blog/openclaw-rotating-proxy), and [running OpenClaw on a VPS with residential proxies](https://bytesflows.com/en/blog/openclaw-vps-proxy) fits directly into this kind of workflow.
+Related background from [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy), [rotating residential proxies for OpenClaw agents](https://bytesflows.com/blog/openclaw-rotating-proxy), and [running OpenClaw on a VPS with residential proxies](https://bytesflows.com/blog/openclaw-vps-proxy) fits directly into this kind of workflow.
 ## A Practical LinkedIn-Oriented OpenClaw Flow
 A realistic workflow often looks something like this:
 1. an agent receives a research brief
@@ -117,23 +117,23 @@ Sticky for continuity-heavy flows, rotation for broader distributed browsing.
 Long-term reliability usually beats short-term speed.
 ### Keep humans in the review loop
 Especially when the downstream use is lead qualification or outreach preparation.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
 ## Compliance and Risk Considerations
 LinkedIn-oriented workflows deserve extra caution because they often intersect with:
 - platform terms and enforcement
 - personal data handling
 - sales and outreach use cases
 - reputational risk if the workflow becomes too aggressive
-That is why articles such as [is web scraping legal](https://bytesflows.com/en/blog/is-web-scraping-legal), [web scraping legal considerations](https://bytesflows.com/en/blog/web-scraping-legal-considerations), and [ethical scraping with OpenClaw](https://bytesflows.com/en/blog/openclaw-ethical-scraping) are especially relevant here.
+That is why articles such as [is web scraping legal](https://bytesflows.com/blog/is-web-scraping-legal), [web scraping legal considerations](https://bytesflows.com/blog/web-scraping-legal-considerations), and [ethical scraping with OpenClaw](https://bytesflows.com/blog/openclaw-ethical-scraping) are especially relevant here.
 ## Conclusion
 Running LinkedIn-oriented OpenClaw agents at scale is less about clever selectors and more about disciplined workflow design. The core challenge is managing repeated browser activity in a way that remains stable over time.
 Residential proxies help by improving origin identity and distributing load. Sticky versus rotating sessions shape continuity and scale. Pacing keeps the workflow from behaving like an obvious stress test. And human review keeps the business use of the output more grounded and defensible.
-If you want the strongest next reading path from here, continue with [OpenClaw for lead gen, research, and outreach](https://bytesflows.com/en/blog/openclaw-lead-generation-proxy), [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy), [avoiding blocks when using OpenClaw for scraping](https://bytesflows.com/en/blog/openclaw-ai-agent-anti-bot), and [ethical scraping with OpenClaw](https://bytesflows.com/en/blog/openclaw-ethical-scraping).
+If you want the strongest next reading path from here, continue with [OpenClaw for lead gen, research, and outreach](https://bytesflows.com/blog/openclaw-lead-generation-proxy), [OpenClaw browser automation with residential proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy), [avoiding blocks when using OpenClaw for scraping](https://bytesflows.com/blog/openclaw-ai-agent-anti-bot), and [ethical scraping with OpenClaw](https://bytesflows.com/blog/openclaw-ethical-scraping).
 ## Further reading
-- [OpenClaw for lead gen, research, and outreach](https://bytesflows.com/en/blog/openclaw-lead-generation-proxy)
-- [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy)
-- [Avoiding blocks when using OpenClaw for scraping](https://bytesflows.com/en/blog/openclaw-ai-agent-anti-bot)
-- [Ethical scraping with OpenClaw](https://bytesflows.com/en/blog/openclaw-ethical-scraping)
-- [Why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [OpenClaw for lead gen, research, and outreach](https://bytesflows.com/blog/openclaw-lead-generation-proxy)
+- [OpenClaw browser automation with residential proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
+- [Avoiding blocks when using OpenClaw for scraping](https://bytesflows.com/blog/openclaw-ai-agent-anti-bot)
+- [Ethical scraping with OpenClaw](https://bytesflows.com/blog/openclaw-ethical-scraping)
+- [Why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

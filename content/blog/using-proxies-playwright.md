@@ -104,8 +104,8 @@ Residential proxies are usually worth the extra cost when you need:
 - stronger results for recurring data collection
 Datacenter routes can still be fine for internal tools, lower-risk targets, or early testing. But once you start running real browser workloads against stricter public websites, route quality becomes a product decision, not a minor configuration detail.
 ![image](https://bytesflows.com/images/blog/playwright-residential-trust.png)
-If your team is evaluating [residential proxies for Playwright](https://bytesflows.com/en/proxies), the most important buying questions are session control, geo coverage, protocol support, and whether the network stays stable under repeated browser traffic.
-For a broader background on why this matters, see [What Is a Residential Proxy?](https://bytesflows.com/en/blog/what-is-residential-proxy).
+If your team is evaluating [residential proxies for Playwright](https://bytesflows.com/proxies), the most important buying questions are session control, geo coverage, protocol support, and whether the network stays stable under repeated browser traffic.
+For a broader background on why this matters, see [What Is a Residential Proxy?](https://bytesflows.com/blog/what-is-residential-proxy).
 ## Common Playwright Proxy Errors and Fixes
 ### 407 Proxy Authentication Required
 This usually means the browser reached the proxy server, but the credentials or auth format were wrong.
@@ -156,4 +156,4 @@ The real question is whether your proxy setup gives you:
 - the right session behavior
 - the right reliability for repeated runs
 - the right economics when the job scales
-That is the point where teams usually compare a generic proxy gateway against a network built for browser automation and data collection. If that is where you are now, review the [BytesFlows proxies page](https://bytesflows.com/en/proxies), compare options on [pricing](https://bytesflows.com/pricing), or [talk to the team](https://bytesflows.com/contact) about your Playwright use case.
+That is the point where teams usually compare a generic proxy gateway against a network built for browser automation and data collection. If that is where you are now, review the [BytesFlows proxies page](https://bytesflows.com/proxies), compare options on [pricing](https://bytesflows.com/pricing), or [talk to the team](https://bytesflows.com/contact) about your Playwright use case.

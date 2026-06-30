@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=f
 
 ## A Scraping Workflow Is More Than a Script
 A professional scraping workflow is an end-to-end system that moves from target discovery to validated stored data. Many failures happen because teams focus only on extraction code and ignore queueing, retries, validation, and monitoring.
-This guide breaks the workflow into the main stages so it is easier to design reliable systems. It pairs well with [Web Scraping Architecture Explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices), and [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/en/blog/web-scraping-vs-web-crawling).
+This guide breaks the workflow into the main stages so it is easier to design reliable systems. It pairs well with [Web Scraping Architecture Explained](https://bytesflows.com/blog/web-scraping-architecture-explained), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices), and [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/blog/web-scraping-vs-web-crawling).
 ## Stage 1: Target Discovery
 Some projects start with a fixed URL list. Others need discovery through category pages, search results, or link following.
 At this stage, the system decides:
@@ -94,8 +94,8 @@ This is the backbone behind most real scraping systems, even when the technology
 A web scraping workflow is not just about downloading pages and parsing fields. It is the complete path from discovery to trusted stored data. The more clearly each stage is separated, the easier the workflow becomes to scale, debug, and improve.
 When queueing, fetching, extraction, validation, and monitoring are designed together, scraping systems become much more reliable.
 ## Further reading
-- [Web Scraping Architecture Explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained)
-- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices)
-- [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/en/blog/web-scraping-vs-web-crawling)
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
+- [Web Scraping Architecture Explained](https://bytesflows.com/blog/web-scraping-architecture-explained)
+- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)
+- [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/blog/web-scraping-vs-web-crawling)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)

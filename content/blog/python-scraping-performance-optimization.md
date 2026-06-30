@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=form
 
 ## Performance Optimization Is About Useful Throughput
 Many teams try to optimize Python scrapers by simply increasing concurrency. That often produces the wrong result: more timeouts, more blocks, and more unstable output.
-Real performance optimization is about increasing useful throughput while preserving success rate and data quality. This guide pairs well with [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices), and [Async Python Scraping with aiohttp](https://bytesflows.com/en/blog/async-python-scraping-aiohttp).
+Real performance optimization is about increasing useful throughput while preserving success rate and data quality. This guide pairs well with [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices), and [Async Python Scraping with aiohttp](https://bytesflows.com/blog/async-python-scraping-aiohttp).
 ## Start With the Right Bottleneck Model
 Most scraping workloads are dominated by waiting on networks, not CPU. That means optimization often depends on:
 - overlapping I/O efficiently
@@ -90,8 +90,8 @@ A scraper can look healthy on average while still degrading under load.
 Python scraping performance optimization works best when the goal is useful throughput, not raw speed. Async I/O, connection reuse, memory discipline, careful concurrency tuning, and healthier proxy strategy all work together to increase real output.
 When those layers are measured and improved systematically, Python scrapers become both faster and more reliable.
 ## Further reading
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices)
-- [Async Python Scraping with aiohttp](https://bytesflows.com/en/blog/async-python-scraping-aiohttp)
-- [Proxy Pools for Web Scraping](https://bytesflows.com/en/blog/proxy-pools-web-scraping)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)
+- [Async Python Scraping with aiohttp](https://bytesflows.com/blog/async-python-scraping-aiohttp)
+- [Proxy Pools for Web Scraping](https://bytesflows.com/blog/proxy-pools-web-scraping)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

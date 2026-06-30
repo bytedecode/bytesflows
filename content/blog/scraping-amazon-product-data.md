@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 ## Why Amazon Product Data Matters
 Amazon product pages contain some of the most commercially valuable public data on the web. Teams use them for pricing intelligence, assortment tracking, stock monitoring, seller analysis, and market research.
 That value comes with strong defensive pressure. Amazon changes layouts frequently, varies content by region and session context, and reacts quickly to repetitive or low-trust traffic.
-If you are building in this area, this guide pairs well with [Scraping E-commerce Websites](https://bytesflows.com/en/blog/scraping-ecommerce-websites), [Scraping Marketplace Data](https://bytesflows.com/en/blog/scraping-marketplace-data), and [Playwright Web Scraping Tutorial](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial).
+If you are building in this area, this guide pairs well with [Scraping E-commerce Websites](https://bytesflows.com/blog/scraping-ecommerce-websites), [Scraping Marketplace Data](https://bytesflows.com/blog/scraping-marketplace-data), and [Playwright Web Scraping Tutorial](https://bytesflows.com/blog/playwright-web-scraping-tutorial).
 ## What Teams Usually Want to Extract From Amazon
 A production workflow normally targets more than a single headline price. Common fields include:
 - ASIN and canonical product URL
@@ -98,7 +98,7 @@ This makes layout changes much easier to diagnose.
 ### Keep geo and marketplace settings explicit
 US Amazon and other regional Amazon properties can produce different outputs for the same product.
 ### Measure challenge rates continuously
-Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker) to validate route quality and request presentation.
+Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to validate route quality and request presentation.
 ## Common Mistakes
 - using datacenter-heavy traffic on a defended commercial target
 - treating every visible price as the canonical price
@@ -109,8 +109,8 @@ Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checke
 Scraping Amazon product data reliably requires more than loading a product page and reading a few selectors. You need an ASIN-centered workflow, a browser strategy that preserves session quality, residential proxy routing that matches the target market, and normalization rules that handle real commercial complexity.
 When those layers are designed together, Amazon data becomes much more useful for pricing intelligence, assortment tracking, and seller monitoring.
 ## Further reading
-- [Scraping E-commerce Websites](https://bytesflows.com/en/blog/scraping-ecommerce-websites)
-- [Scraping Marketplace Data](https://bytesflows.com/en/blog/scraping-marketplace-data)
-- [Playwright Web Scraping Tutorial](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential Proxies](https://bytesflows.com/en/blog/residential-proxies)
+- [Scraping E-commerce Websites](https://bytesflows.com/blog/scraping-ecommerce-websites)
+- [Scraping Marketplace Data](https://bytesflows.com/blog/scraping-marketplace-data)
+- [Playwright Web Scraping Tutorial](https://bytesflows.com/blog/playwright-web-scraping-tutorial)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential Proxies](https://bytesflows.com/blog/residential-proxies)

@@ -69,8 +69,8 @@ A clean OpenClaw install is important because many later configuration problems 
 ## Wrap-up
 At this point, OpenClaw should be installed and reachable on Ubuntu with a working local UI. Once that is confirmed, the next step is connecting it to your local Ollama model endpoint and validating the full local AI loop.
 ## Further reading
-- [Install Ollama on Ubuntu: Step 1 for Local OpenClaw](https://bytesflows.com/en/blog/openclaw-local-ollama-setup-part-1)
-- [Connect OpenClaw to Ollama: Local AI Agent in Practice](https://bytesflows.com/en/blog/openclaw-connect-to-ollama-part-3)
-- [OpenClaw Proxy Setup (2026 Complete Guide)](https://bytesflows.com/en/blog/openclaw-proxy-setup)
-- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxies)
-- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/en/blog/why-openclaw-agents-need-residential-proxies)
+- [Install Ollama on Ubuntu: Step 1 for Local OpenClaw](https://bytesflows.com/blog/openclaw-local-ollama-setup-part-1)
+- [Connect OpenClaw to Ollama: Local AI Agent in Practice](https://bytesflows.com/blog/openclaw-connect-to-ollama-part-3)
+- [OpenClaw Proxy Setup (2026 Complete Guide)](https://bytesflows.com/blog/openclaw-proxy-setup)
+- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxies)
+- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/why-openclaw-agents-need-residential-proxies)

@@ -17,7 +17,7 @@ That is why “how to scrape Google” is not really one question. It is several
 - do you truly need direct SERP collection?
 - should you use an API or a provider instead?
 - if you build it yourself, what technical and legal risk are you accepting?
-This guide explains the realistic options for Google SERP data collection, from official APIs to third-party SERP providers to DIY scraping, and why the right choice depends as much on risk tolerance as on code. It pairs naturally with [is web scraping legal](https://bytesflows.com/en/blog/is-web-scraping-legal), [bypass Cloudflare for web scraping](https://bytesflows.com/en/blog/bypass-cloudflare-web-scraping), and [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping).
+This guide explains the realistic options for Google SERP data collection, from official APIs to third-party SERP providers to DIY scraping, and why the right choice depends as much on risk tolerance as on code. It pairs naturally with [is web scraping legal](https://bytesflows.com/blog/is-web-scraping-legal), [bypass Cloudflare for web scraping](https://bytesflows.com/blog/bypass-cloudflare-web-scraping), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## Why Google SERP Scraping Is Especially Sensitive
 Google is not an ordinary public website target.
 SERP scraping is sensitive because:
@@ -75,7 +75,7 @@ Residential proxies often perform better on SERP scraping because they:
 - support country-specific result collection
 - make traffic identity more credible on consumer-facing search surfaces
 - work better with browser-based sessions where needed
-Related background from [datacenter vs residential proxies](https://bytesflows.com/en/blog/datacenter-vs-residential-proxies), [how residential proxies improve scraping success](https://bytesflows.com/en/blog/residential-proxies-improve-scraping), and [geo-targeted scraping with proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies) fits directly here.
+Related background from [datacenter vs residential proxies](https://bytesflows.com/blog/datacenter-vs-residential-proxies), [how residential proxies improve scraping success](https://bytesflows.com/blog/residential-proxies-improve-scraping), and [geo-targeted scraping with proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies) fits directly here.
 ## Geography Is Part of the Data, Not Just the Transport
 Google results vary by:
 - country
@@ -120,16 +120,16 @@ Wrong region means wrong output.
 Do not build on lucky pass-throughs.
 ### Include legal and policy review early for commercial workflows
 This is especially important for recurring or monetized use cases.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
 ## Conclusion
 Scraping Google SERPs is possible, but it is rarely the simplest or safest path. The real question is not only whether Google results can be collected, but whether direct scraping is the right tradeoff compared with APIs or dedicated SERP providers.
 For many teams, APIs or third-party providers are the more rational choice because they reduce technical fragility and policy exposure. For teams that do build direct SERP collection, success depends on strong traffic identity, disciplined pacing, accurate geo targeting, and a clear understanding that Google is one of the strictest scraping environments on the web.
-If you want the strongest next reading path from here, continue with [is web scraping legal](https://bytesflows.com/en/blog/is-web-scraping-legal), [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [geo-targeted scraping with proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies), and [how to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked).
+If you want the strongest next reading path from here, continue with [is web scraping legal](https://bytesflows.com/blog/is-web-scraping-legal), [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [geo-targeted scraping with proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies), and [how to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked).
 ## Further reading
-- [Is web scraping legal](https://bytesflows.com/en/blog/is-web-scraping-legal)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Geo-targeted scraping with proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies)
-- [How to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Bypass Cloudflare for web scraping](https://bytesflows.com/en/blog/bypass-cloudflare-web-scraping)
-- [How websites detect web scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers)
+- [Is web scraping legal](https://bytesflows.com/blog/is-web-scraping-legal)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Geo-targeted scraping with proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies)
+- [How to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Bypass Cloudflare for web scraping](https://bytesflows.com/blog/bypass-cloudflare-web-scraping)
+- [How websites detect web scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers)

@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=f
 ## Scraping Architecture Is Really About Reliability Under Repetition
 A scraper that works on ten pages is not necessarily a good scraping system. Architecture becomes important when the work repeats: hundreds of URLs, multiple domains, browser-based tasks, proxy coordination, retries, and data pipelines that need to remain stable over time.
 That is what web scraping architecture is really about. It is not just a diagram of components. It is the design of how those components behave together when the workload grows.
-This guide explains the core layers of modern scraping architecture, how queues, workers, browsers, proxies, storage, and monitoring fit together, and why scaling the system means more than simply adding more workers. It pairs naturally with [scraping data at scale](https://bytesflows.com/en/blog/scraping-data-at-scale), [proxy pools for web scraping](https://bytesflows.com/en/blog/proxy-pools-web-scraping), and [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping).
+This guide explains the core layers of modern scraping architecture, how queues, workers, browsers, proxies, storage, and monitoring fit together, and why scaling the system means more than simply adding more workers. It pairs naturally with [scraping data at scale](https://bytesflows.com/blog/scraping-data-at-scale), [proxy pools for web scraping](https://bytesflows.com/blog/proxy-pools-web-scraping), and [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping).
 ## What Web Scraping Architecture Actually Means
 Web scraping architecture is the design of the full collection system, not just the fetch code.
 That usually includes:
@@ -101,7 +101,7 @@ The proxy layer affects:
 - retry outcomes
 - overall success rate under load
 That is why proxy design belongs in the architecture from the beginning, especially for systems that browse repeatedly or operate on stricter targets.
-Related background from [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [residential proxies](https://bytesflows.com/en/blog/residential-proxies), and [proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies) fits directly into this layer.
+Related background from [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [residential proxies](https://bytesflows.com/blog/residential-proxies), and [proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies) fits directly into this layer.
 ## Storage Is Not the End of the Pipeline
 Storage is where the data becomes useful, but it is also where quality problems start to matter more.
 A strong architecture thinks about:
@@ -153,16 +153,16 @@ Reliable scale depends on identity as much as on code.
 Architecture should prevent workers from amplifying failure.
 ### Monitor output quality, not just request count
 The goal is usable data, not just more activity.
-Helpful supporting tools and related pieces include [proxy checker](https://bytesflows.com/en/blog/proxy-checker), [scraping test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [scraping data at scale](https://bytesflows.com/en/blog/scraping-data-at-scale).
+Helpful supporting tools and related pieces include [proxy checker](https://bytesflows.com/blog/proxy-checker), [scraping test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [scraping data at scale](https://bytesflows.com/blog/scraping-data-at-scale).
 ## Conclusion
 Web scraping architecture is the design of how collection systems stay reliable when the workload becomes large, repeated, and varied. Queues manage work. Workers execute tasks. Browsers or HTTP clients fetch content. Proxy layers protect traffic identity. Storage preserves usable output. Monitoring tells you whether the system is actually healthy.
 The strongest architectures do not only move data quickly. They move it predictably, observably, and with enough control to keep scaling without collapsing into blocks, retries, or unusable output. That is what makes architecture the difference between a script and a real scraping system.
-If you want the strongest next reading path from here, continue with [scraping data at scale](https://bytesflows.com/en/blog/scraping-data-at-scale), [proxy pools for web scraping](https://bytesflows.com/en/blog/proxy-pools-web-scraping), [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), and [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping).
+If you want the strongest next reading path from here, continue with [scraping data at scale](https://bytesflows.com/blog/scraping-data-at-scale), [proxy pools for web scraping](https://bytesflows.com/blog/proxy-pools-web-scraping), [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## Further reading
-- [Scraping data at scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Proxy pools for web scraping](https://bytesflows.com/en/blog/proxy-pools-web-scraping)
-- [Browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [How many proxies do you need](https://bytesflows.com/en/blog/how-many-proxies-need-scraping)
+- [Scraping data at scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Proxy pools for web scraping](https://bytesflows.com/blog/proxy-pools-web-scraping)
+- [Browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [How many proxies do you need](https://bytesflows.com/blog/how-many-proxies-need-scraping)

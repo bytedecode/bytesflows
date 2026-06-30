@@ -13,7 +13,7 @@ coverImage: "https://prod-files-secure.s3.us-west-2.amazonaws.com/1b86c8d6-c558-
 
 Cross-border e-commerce has become too complex to manage well with manual decision-making alone. Between regional demand shifts, pricing volatility, multilingual operations, and changing traffic quality, teams now need systems that can interpret fast-moving signals and act on them quickly.
 That is why AI is becoming part of the operating layer for modern global commerce. This guide explores where it is creating real leverage in 2026 and where the supporting data infrastructure still matters most.
-This guide pairs well with [Leveraging Data Intelligence for E-commerce Growth](https://bytesflows.com/en/blog/data-intelligence-ecommerce-growth), [Scrapling Price Intelligence on OpenClaw: E‑commerce, Flights and Hotels](https://bytesflows.com/en/blog/openclaw-price-monitoring-proxy), and [How Companies Use Web Scraping](https://bytesflows.com/en/blog/how-companies-use-web-scraping).
+This guide pairs well with [Leveraging Data Intelligence for E-commerce Growth](https://bytesflows.com/blog/data-intelligence-ecommerce-growth), [Scrapling Price Intelligence on OpenClaw: E‑commerce, Flights and Hotels](https://bytesflows.com/blog/openclaw-price-monitoring-proxy), and [How Companies Use Web Scraping](https://bytesflows.com/blog/how-companies-use-web-scraping).
 ## Why Cross-Border E-commerce Is a Strong AI Use Case
 Global commerce creates constant variation across:
 - region
@@ -76,8 +76,8 @@ Without reliable data collection and normalization, AI recommendations become no
 AI is transforming cross-border e-commerce in 2026 because it helps teams make faster decisions across pricing, forecasting, localization, customer support, and risk control. But the real advantage does not come from adding AI superficially. It comes from combining model-driven decisions with strong operational data.
 When those layers work together, cross-border growth becomes less reactive and much easier to scale intelligently.
 ## Further reading
-- [Leveraging Data Intelligence for E-commerce Growth](https://bytesflows.com/en/blog/data-intelligence-ecommerce-growth)
-- [Scrapling Price Intelligence on OpenClaw: E‑commerce, Flights and Hotels](https://bytesflows.com/en/blog/openclaw-price-monitoring-proxy)
-- [How Companies Use Web Scraping](https://bytesflows.com/en/blog/how-companies-use-web-scraping)
-- [Scraping Marketplace Data (2026)](https://bytesflows.com/en/blog/scraping-marketplace-data)
-- [Scraping E-commerce Websites](https://bytesflows.com/en/blog/scraping-ecommerce-websites)
+- [Leveraging Data Intelligence for E-commerce Growth](https://bytesflows.com/blog/data-intelligence-ecommerce-growth)
+- [Scrapling Price Intelligence on OpenClaw: E‑commerce, Flights and Hotels](https://bytesflows.com/blog/openclaw-price-monitoring-proxy)
+- [How Companies Use Web Scraping](https://bytesflows.com/blog/how-companies-use-web-scraping)
+- [Scraping Marketplace Data (2026)](https://bytesflows.com/blog/scraping-marketplace-data)
+- [Scraping E-commerce Websites](https://bytesflows.com/blog/scraping-ecommerce-websites)

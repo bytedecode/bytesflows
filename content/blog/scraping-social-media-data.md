@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=f
 ## Why Social Media Data Is Valuable
 Social media platforms expose fast-moving public signals about audiences, trends, competitors, creators, and brand perception. Teams collect this data for market research, lead generation, competitive monitoring, content analysis, and AI training workflows.
 But social platforms are among the most operationally sensitive targets on the web. Feeds are dynamic, rate limits are aggressive, and many platforms combine login friction, fingerprinting, and behavioral analysis to slow automated access.
-If you are working in this area, this guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright), [Browser Fingerprinting Explained](https://bytesflows.com/en/blog/browser-fingerprinting-explained), and [How Websites Detect Web Scrapers](https://bytesflows.com/en/blog/how-websites-detect-web-scrapers).
+If you are working in this area, this guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright), [Browser Fingerprinting Explained](https://bytesflows.com/blog/browser-fingerprinting-explained), and [How Websites Detect Web Scrapers](https://bytesflows.com/blog/how-websites-detect-web-scrapers).
 ## What Teams Usually Want to Extract
 The right fields depend on the platform and use case, but common targets include:
 - profile names, bios, and follower signals
@@ -98,7 +98,7 @@ A page that loads but yields no usable posts is still a failure.
 ### Keep platform-specific extractors isolated
 Do not assume one platform's layout logic maps cleanly to another.
 ### Validate request presentation regularly
-Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker), and [Random User-Agent Generator](https://bytesflows.com/en/blog/user-agent-generator) to test whether your requests still look credible.
+Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Random User-Agent Generator](https://bytesflows.com/blog/user-agent-generator) to test whether your requests still look credible.
 ## Common Mistakes
 - treating social platforms like static websites
 - scraping far more fields than the use case actually needs
@@ -109,8 +109,8 @@ Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [HTTP Header 
 Scraping social media data reliably requires a workflow built around public-surface selection, browser automation, session quality, and deliberate normalization. The key is not just accessing a profile or feed once. It is building a repeatable system that can observe public content over time without collapsing under dynamic rendering and anti-bot pressure.
 When session-aware browser automation and residential proxy routing are combined well, social media data becomes much more useful for research, trend monitoring, and competitive intelligence.
 ## Further reading
-- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright)
-- [Browser Fingerprinting Explained](https://bytesflows.com/en/blog/browser-fingerprinting-explained)
-- [How Websites Detect Web Scrapers](https://bytesflows.com/en/blog/how-websites-detect-web-scrapers)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Avoid IP Bans in Web Scraping](https://bytesflows.com/en/blog/avoid-ip-bans-web-scraping)
+- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright)
+- [Browser Fingerprinting Explained](https://bytesflows.com/blog/browser-fingerprinting-explained)
+- [How Websites Detect Web Scrapers](https://bytesflows.com/blog/how-websites-detect-web-scrapers)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Avoid IP Bans in Web Scraping](https://bytesflows.com/blog/avoid-ip-bans-web-scraping)

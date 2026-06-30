@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=f
 ## Playwright Is Useful Because Modern Scraping Often Needs a Real Browser, Not Just a Request Library
 A beginner scraper can get surprisingly far with simple HTTP requests. But once a site relies on JavaScript rendering, infinite scroll, interaction, or browser-aware defenses, a request library alone often stops being enough. That is where Playwright becomes valuable.
 Playwright gives you browser automation that feels close to how real modern sites actually behave.
-This tutorial explains how to think about Playwright for scraping, from core concepts like browser contexts and pages to real-world patterns such as infinite scroll, proxy routing, and the first habits that make browser automation more production-ready. It pairs naturally with [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), [playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale), and [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide).
+This tutorial explains how to think about Playwright for scraping, from core concepts like browser contexts and pages to real-world patterns such as infinite scroll, proxy routing, and the first habits that make browser automation more production-ready. It pairs naturally with [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), [playwright web scraping at scale](https://bytesflows.com/blog/playwright-web-scraping-scale), and [playwright proxy configuration guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide).
 ## Why Playwright Is Different from Simple HTTP Scraping
 A request client downloads a response. A browser automation tool runs the page.
 That means Playwright can:
@@ -75,7 +75,7 @@ That means Playwright scraping often needs proxies when:
 - region-specific data matters
 - repeated browsing creates too much pressure on one IP
 Residential proxies are often the better fit because Playwright is commonly used exactly where identity quality matters most.
-Related background from [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [how residential proxies improve scraping success](https://bytesflows.com/en/blog/residential-proxies-improve-scraping), and [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide) fits directly here.
+Related background from [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [how residential proxies improve scraping success](https://bytesflows.com/blog/residential-proxies-improve-scraping), and [playwright proxy configuration guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide) fits directly here.
 ## Browser Realism Matters Too
 If the target is sensitive, browser automation should also think about:
 - realistic viewport
@@ -116,16 +116,16 @@ Especially on protected or geo-sensitive targets.
 Viewport, locale, and region should make sense together.
 ### Build toward production gradually
 Start simple, then add scaling, retries, and better session handling as needed.
-Helpful related reading includes [playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale), [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), and [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide).
+Helpful related reading includes [playwright web scraping at scale](https://bytesflows.com/blog/playwright-web-scraping-scale), [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), and [playwright proxy configuration guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide).
 ## Conclusion
 Playwright web scraping is useful because many modern sites no longer expose their real content cleanly to simple HTTP clients. A real browser can render, wait, interact, and preserve session state in ways that match how the target actually works.
 The key to using Playwright well is understanding the browser-context-page model, waiting for real page signals, and treating identity and proxy routing as part of the browser workflow rather than as separate concerns. Once those pieces click, Playwright becomes a practical and powerful scraping tool rather than just a heavy fallback.
-If you want the strongest next reading path from here, continue with [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), [playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale), [playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide), and [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping).
+If you want the strongest next reading path from here, continue with [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), [playwright web scraping at scale](https://bytesflows.com/blog/playwright-web-scraping-scale), [playwright proxy configuration guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## Further reading
-- [Browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping)
-- [Playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale)
-- [Playwright proxy configuration guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Playwright vs Selenium](https://bytesflows.com/en/blog/playwright-vs-selenium-scraping)
-- [Playwright vs Crawlee for web scraping](https://bytesflows.com/en/blog/playwright-vs-crawlee-comparison)
+- [Browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping)
+- [Playwright web scraping at scale](https://bytesflows.com/blog/playwright-web-scraping-scale)
+- [Playwright proxy configuration guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Playwright vs Selenium](https://bytesflows.com/blog/playwright-vs-selenium-scraping)
+- [Playwright vs Crawlee for web scraping](https://bytesflows.com/blog/playwright-vs-crawlee-comparison)

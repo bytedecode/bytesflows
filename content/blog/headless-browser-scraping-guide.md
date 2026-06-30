@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 ## Headless Browsers Changed What Scraping Can Reach
 Many modern websites no longer expose useful data in the first HTML response. JavaScript-heavy pages, interactive flows, and session-dependent interfaces often require a real browser environment to render the page correctly.
 That is where headless browser scraping becomes valuable. Instead of pretending a website is static, a headless browser collects the page the way a browser actually experiences it.
-This guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright), [Browser Automation for Web Scraping (2026)](https://bytesflows.com/en/blog/browser-automation-web-scraping), and [Scaling Scraping with Playwright](https://bytesflows.com/en/blog/scaling-scraping-playwright).
+This guide pairs well with [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright), [Browser Automation for Web Scraping (2026)](https://bytesflows.com/blog/browser-automation-web-scraping), and [Scaling Scraping with Playwright](https://bytesflows.com/blog/scaling-scraping-playwright).
 ## What “Headless” Really Means
 A headless browser is a full browser that runs without a visible graphical window. It still:
 - executes JavaScript
@@ -73,8 +73,8 @@ This is especially important in distributed or high-throughput environments.
 Headless browser scraping matters because much of the modern web is no longer static. When the page depends on JavaScript, interaction, and session state, a browser-aware workflow is often the most reliable way to get accurate data.
 When Playwright, stronger route quality, and careful resource management are combined well, headless scraping becomes a practical foundation for dynamic web extraction.
 ## Further reading
-- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright)
-- [Browser Automation for Web Scraping (2026)](https://bytesflows.com/en/blog/browser-automation-web-scraping)
-- [Scaling Scraping with Playwright](https://bytesflows.com/en/blog/scaling-scraping-playwright)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [How to Scrape Websites Without Getting Blocked: The 2026 Stealth Playbook](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked)
+- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright)
+- [Browser Automation for Web Scraping (2026)](https://bytesflows.com/blog/browser-automation-web-scraping)
+- [Scaling Scraping with Playwright](https://bytesflows.com/blog/scaling-scraping-playwright)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [How to Scrape Websites Without Getting Blocked: The 2026 Stealth Playbook](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)

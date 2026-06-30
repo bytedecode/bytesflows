@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=f
 ## Web Scraping Works by Turning Web Pages into Structured Inputs for Software
 At a high level, web scraping sounds simple: request a page, parse the response, extract the data. That description is accurate, but incomplete. In real workflows, scraping is a chain of steps that starts before the parser and often continues long after the HTML is received.
 That is why understanding how web scraping works behind the scenes is useful. It helps explain why some pages scrape easily, why others need browsers or proxies, and why scraping becomes an infrastructure problem once it scales.
-This guide walks through the actual mechanics of web scraping, from requests and responses to parsing, browser rendering, retries, proxies, and production pipelines. It pairs naturally with [web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained), [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), and [how proxy rotation works](https://bytesflows.com/en/blog/how-proxy-rotation-works).
+This guide walks through the actual mechanics of web scraping, from requests and responses to parsing, browser rendering, retries, proxies, and production pipelines. It pairs naturally with [web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained), [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), and [how proxy rotation works](https://bytesflows.com/blog/how-proxy-rotation-works).
 ## The Core Loop: Request, Receive, Parse, Extract
 Most scraping systems revolve around a simple loop:
 - send a request
@@ -90,7 +90,7 @@ Without proxies, the site may see:
 - suspiciously concentrated traffic
 - wrong geography for the content being requested
 Proxies change the visible source of the request, while rotation changes how that identity is distributed over time.
-Related background from [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [how residential proxies improve scraping success](https://bytesflows.com/en/blog/residential-proxies-improve-scraping), and [web scraping proxy architecture](https://bytesflows.com/en/blog/web-scraping-proxy-architecture) fits directly into this layer.
+Related background from [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [how residential proxies improve scraping success](https://bytesflows.com/blog/residential-proxies-improve-scraping), and [web scraping proxy architecture](https://bytesflows.com/blog/web-scraping-proxy-architecture) fits directly into this layer.
 ## What Happens When the Request Fails
 Real scraping systems also need to handle failure states such as:
 - 403 or 429 responses
@@ -149,12 +149,12 @@ A successful request is not the same as a successful extraction.
 ## Conclusion
 Web scraping works by turning web responses into structured data, but the real process is broader than “download HTML and parse it.” A scraper sends requests, manages identity, receives sometimes-incomplete content, optionally renders the page in a browser, extracts fields, handles failures, and stores validated output.
 Once you understand those layers, many common scraping problems become easier to diagnose. Empty HTML usually means rendering. 403s usually mean identity or rate pressure. Flaky pipelines often mean the system needs better retries, validation, or architecture. That is what makes scraping less mysterious: behind the scenes, it is a sequence of well-defined steps that become more complex only as the web and the workload become more demanding.
-If you want the strongest next reading path from here, continue with [web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained), [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), [how proxy rotation works](https://bytesflows.com/en/blog/how-proxy-rotation-works), and [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping).
+If you want the strongest next reading path from here, continue with [web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained), [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), [how proxy rotation works](https://bytesflows.com/blog/how-proxy-rotation-works), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## Further reading
-- [Web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained)
-- [Browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping)
-- [How proxy rotation works](https://bytesflows.com/en/blog/how-proxy-rotation-works)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale)
-- [Using LLMs to extract web data](https://bytesflows.com/en/blog/using-llms-extract-web-data)
+- [Web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained)
+- [Browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping)
+- [How proxy rotation works](https://bytesflows.com/blog/how-proxy-rotation-works)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Playwright web scraping at scale](https://bytesflows.com/blog/playwright-web-scraping-scale)
+- [Using LLMs to extract web data](https://bytesflows.com/blog/using-llms-extract-web-data)

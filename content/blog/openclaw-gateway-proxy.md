@@ -17,7 +17,7 @@ In practice, OpenClaw environments often involve two very different proxy concep
 - the **gateway or reverse proxy** that sits in front of OpenClaw for incoming traffic
 - the **browser proxy** that controls outbound web traffic from browser automation
 Only one of those helps with scraping, browsing identity, and anti-block reliability. That is the browser proxy.
-This guide explains the difference between gateway proxying and browser proxying in OpenClaw, where each one belongs, and why residential proxy configuration for scraping should always live in the browser layer rather than being confused with reverse-proxy infrastructure. It pairs naturally with [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), and [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy).
+This guide explains the difference between gateway proxying and browser proxying in OpenClaw, where each one belongs, and why residential proxy configuration for scraping should always live in the browser layer rather than being confused with reverse-proxy infrastructure. It pairs naturally with [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup), [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy), and [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy).
 ## The Two Proxy Layers
 A simple way to understand the distinction is this:
 ### Gateway proxy
@@ -55,7 +55,7 @@ That is why browser proxying is the correct place to configure:
 - geo-targeting for browser tasks
 - rotating or sticky session behavior
 - outbound browsing identity for scraping workflows
-This is the layer that matters for articles like [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy), and [large-scale data collection with OpenClaw and proxies](https://bytesflows.com/en/blog/openclaw-data-collection-scale).
+This is the layer that matters for articles like [OpenClaw for web scraping and data extraction](https://bytesflows.com/blog/openclaw-web-scraping), [OpenClaw browser automation with residential proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy), and [large-scale data collection with OpenClaw and proxies](https://bytesflows.com/blog/openclaw-data-collection-scale).
 ## Where Residential Proxies Belong
 Residential proxies should be configured where the browser is launched.
 That usually means code paths such as:
@@ -119,16 +119,16 @@ This is safer and easier to manage across deployments.
 That prevents future confusion when more agents or browser tasks are added.
 ### Validate browser traffic on the real target
 A correct gateway setup says nothing about outbound browsing reliability.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
 ## Conclusion
 OpenClaw gateway proxying and browser proxying solve two different problems. Gateway proxies manage how traffic reaches OpenClaw. Browser proxies manage how automated browsing leaves OpenClaw.
 If your goal is web scraping, browser automation, geo-targeting, or anti-block reliability, the browser proxy is the layer that matters. That is where residential proxy configuration belongs. Keeping that distinction clear makes OpenClaw deployments easier to build, easier to debug, and much less likely to fail because the wrong proxy layer was configured.
-If you want the strongest next reading path from here, continue with [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy), [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), and [multi-agent OpenClaw and proxy routing](https://bytesflows.com/en/blog/openclaw-multi-agent-proxy).
+If you want the strongest next reading path from here, continue with [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy), [OpenClaw browser automation with residential proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy), [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy), and [multi-agent OpenClaw and proxy routing](https://bytesflows.com/blog/openclaw-multi-agent-proxy).
 ## Further reading
-- [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy)
-- [OpenClaw browser automation with residential proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxy)
-- [Why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy)
-- [Multi-agent OpenClaw and proxy routing](https://bytesflows.com/en/blog/openclaw-multi-agent-proxy)
-- [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy)
+- [OpenClaw browser automation with residential proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
+- [Why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [Multi-agent OpenClaw and proxy routing](https://bytesflows.com/blog/openclaw-multi-agent-proxy)
+- [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

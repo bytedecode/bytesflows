@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=f
 ## Scraping Data at Scale Stops Being About Code Quality Alone and Starts Becoming a Systems Problem
 A script that can scrape a few hundred pages proves that extraction works. It does not prove that the workflow can survive millions of requests, many target domains, repeated refresh cycles, or browser-heavy anti-bot environments. At that point, scraping becomes a data-pipeline problem rather than a single-program problem.
 That is why large-scale scraping needs architecture. Without clear queueing, proxy control, worker isolation, observability, and recovery logic, scale usually turns into bans, unstable workers, and rising infrastructure cost.
-This guide explains how modern large-scale scraping systems are structured, where the main bottlenecks appear, and how to build a workflow that can scale without collapsing under its own complexity. It pairs naturally with [web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained), [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers), and [building proxy infrastructure for crawlers](https://bytesflows.com/en/blog/building-proxy-infrastructure-crawlers).
+This guide explains how modern large-scale scraping systems are structured, where the main bottlenecks appear, and how to build a workflow that can scale without collapsing under its own complexity. It pairs naturally with [web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), and [building proxy infrastructure for crawlers](https://bytesflows.com/blog/building-proxy-infrastructure-crawlers).
 ## What Changes When Scraping Reaches Real Scale
 Once scraping becomes large, the main problems shift.
 You start dealing with:
@@ -112,15 +112,15 @@ Route quality determines whether scale survives contact with the target.
 Stable throughput is usually better than aggressive churn.
 ### Store enough raw output to debug failures without re-running everything
 That reduces cost and speeds up diagnosis.
-Helpful companion reading includes [web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained), [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers), [designing proxy pool systems](https://bytesflows.com/en/blog/proxy-pool-design), and [scraping test](https://bytesflows.com/en/blog/scraping-test).
+Helpful companion reading includes [web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), [designing proxy pool systems](https://bytesflows.com/blog/proxy-pool-design), and [scraping test](https://bytesflows.com/blog/scraping-test).
 ## Conclusion
 Scraping data at scale is really the work of building a stable data pipeline around collection. Queueing, routing, browser control, observability, validation, and storage all matter because each one can become the failure point long before extraction logic itself stops working.
 The practical lesson is simple: once scraping reaches real volume, architecture decides reliability. When the system is designed deliberately, scale becomes something you can manage rather than something you survive.
 ## Further reading
-- [Web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained)
-- [Proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers)
-- [Building proxy infrastructure for crawlers](https://bytesflows.com/en/blog/building-proxy-infrastructure-crawlers)
-- [Designing proxy pool systems](https://bytesflows.com/en/blog/proxy-pool-design)
-- [Scraping test](https://bytesflows.com/en/blog/scraping-test)
-- [How to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked)
-- [Residential proxies](https://bytesflows.com/en/proxies)
+- [Web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained)
+- [Proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers)
+- [Building proxy infrastructure for crawlers](https://bytesflows.com/blog/building-proxy-infrastructure-crawlers)
+- [Designing proxy pool systems](https://bytesflows.com/blog/proxy-pool-design)
+- [Scraping test](https://bytesflows.com/blog/scraping-test)
+- [How to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)
+- [Residential proxies](https://bytesflows.com/proxies)

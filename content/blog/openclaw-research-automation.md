@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 ## Research Automation Becomes a Web-Access Problem Faster Than Most People Expect
 OpenClaw is well suited to research and drafting because it can browse sources, compare findings, summarize content, and turn that material into a draft in one workflow. That is exactly what makes it valuable.
 It is also what creates the first operational problem. Once research workflows move from visiting a few pages to browsing many pages across many sites, the system starts to look like automation from the perspective of the web.
-This guide explains how OpenClaw supports research and drafting workflows, when proxies help, how to think about browsing load, and how to keep multi-source research from collapsing into rate limits, challenge pages, or unstable sessions. It pairs naturally with [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), [OpenClaw for market intelligence and competitor monitoring](https://bytesflows.com/en/blog/openclaw-market-intelligence), and [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup).
+This guide explains how OpenClaw supports research and drafting workflows, when proxies help, how to think about browsing load, and how to keep multi-source research from collapsing into rate limits, challenge pages, or unstable sessions. It pairs naturally with [OpenClaw for web scraping and data extraction](https://bytesflows.com/blog/openclaw-web-scraping), [OpenClaw for market intelligence and competitor monitoring](https://bytesflows.com/blog/openclaw-market-intelligence), and [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup).
 ## Why OpenClaw Works Well for Research and Drafting
 OpenClaw is useful here because research is rarely a single fixed action.
 A typical workflow may include:
@@ -57,7 +57,7 @@ Residential proxies become the practical choice when:
 - the work depends on specific locations
 - the browser is running from a VPS or datacenter IP
 - challenge pages or rate limits are already appearing
-This is why articles such as [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), [running OpenClaw on a VPS with residential proxies](https://bytesflows.com/en/blog/openclaw-vps-proxy), and [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy) connect directly to research workflows, not just scraping-heavy ones.
+This is why articles such as [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy), [running OpenClaw on a VPS with residential proxies](https://bytesflows.com/blog/openclaw-vps-proxy), and [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy) connect directly to research workflows, not just scraping-heavy ones.
 ## A Practical Research Workflow Architecture
 A useful pattern often looks like this:
 ```mermaid
@@ -112,23 +112,23 @@ That makes access problems easier to diagnose.
 A strong draft starts with strong collection.
 ### Keep a human in the loop where judgment matters
 Especially for final decisions, publishing, or outreach.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
 ## Legal and Ethical Considerations
 Research workflows still need to respect the same boundaries as other forms of automated browsing:
 - terms of service
 - robots.txt
 - privacy and personal data handling
 - reasonable access patterns
-This matters especially when research spans many domains or runs repeatedly. Related reading from [is web scraping legal](https://bytesflows.com/en/blog/is-web-scraping-legal) and [web scraping legal considerations](https://bytesflows.com/en/blog/web-scraping-legal-considerations) helps frame that risk.
+This matters especially when research spans many domains or runs repeatedly. Related reading from [is web scraping legal](https://bytesflows.com/blog/is-web-scraping-legal) and [web scraping legal considerations](https://bytesflows.com/blog/web-scraping-legal-considerations) helps frame that risk.
 ## Conclusion
 OpenClaw is a strong tool for research and drafting because it can turn multi-source browsing into usable written output. But once those workflows become repeated, scheduled, or broader in scope, the browsing layer becomes a core part of whether the system keeps working.
 That is why residential proxies, careful pacing, and explicit browser skill design matter even for research-oriented automation. When those pieces are in place, OpenClaw can support much richer research workflows without forcing every task back into manual browsing.
-If you want the strongest next reading path from here, continue with [OpenClaw for market intelligence and competitor monitoring](https://bytesflows.com/en/blog/openclaw-market-intelligence), [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), and [OpenClaw for SERP and search data extraction](https://bytesflows.com/en/blog/openclaw-serp-scraping).
+If you want the strongest next reading path from here, continue with [OpenClaw for market intelligence and competitor monitoring](https://bytesflows.com/blog/openclaw-market-intelligence), [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup), [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy), and [OpenClaw for SERP and search data extraction](https://bytesflows.com/blog/openclaw-serp-scraping).
 ## Further reading
-- [OpenClaw for market intelligence and competitor monitoring](https://bytesflows.com/en/blog/openclaw-market-intelligence)
-- [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup)
-- [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy)
-- [OpenClaw for SERP and search data extraction](https://bytesflows.com/en/blog/openclaw-serp-scraping)
-- [Why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [OpenClaw for market intelligence and competitor monitoring](https://bytesflows.com/blog/openclaw-market-intelligence)
+- [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup)
+- [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy)
+- [OpenClaw for SERP and search data extraction](https://bytesflows.com/blog/openclaw-serp-scraping)
+- [Why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

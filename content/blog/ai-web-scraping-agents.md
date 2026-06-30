@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=f
 
 AI agents are changing scraping workflows because they can combine browsing, extraction, decision-making, and retry logic in one loop. The important shift is not that they magically solve scraping. It is that they make workflows more adaptive when targets are dynamic, inconsistent, or multi-step.
 This guide explains what AI web scraping with agents actually means in practice, where it helps, and what still needs careful engineering around it.
-This guide pairs well with [AI Web Scraping Explained - Agents, LLMs & Data Extraction (2026)](https://bytesflows.com/en/blog/ai-web-scraping-explained), [Future of AI Web Scraping](https://bytesflows.com/en/blog/future-of-ai-web-scraping), and [Building an AI Scraping Agent (2026)](https://bytesflows.com/en/blog/building-ai-scraping-agent).
+This guide pairs well with [AI Web Scraping Explained - Agents, LLMs & Data Extraction (2026)](https://bytesflows.com/blog/ai-web-scraping-explained), [Future of AI Web Scraping](https://bytesflows.com/blog/future-of-ai-web-scraping), and [Building an AI Scraping Agent (2026)](https://bytesflows.com/blog/building-ai-scraping-agent).
 ## What Makes an Agent Different
 A normal scraper follows predefined rules. An agent-based workflow can do more, such as:
 - decide which page to inspect next
@@ -79,8 +79,8 @@ They are less necessary when the target is simple, stable, and highly structured
 AI web scraping with agents is useful because it adds adaptability to workflows that traditional scraping often handles poorly. The value comes from combining browsing, extraction, and decision-making in one system without pretending that routing, validation, and anti-bot realities no longer matter.
 When those layers work together, agents become genuinely useful instead of just interesting demos.
 ## Further reading
-- [AI Web Scraping Explained - Agents, LLMs & Data Extraction (2026)](https://bytesflows.com/en/blog/ai-web-scraping-explained)
-- [Future of AI Web Scraping](https://bytesflows.com/en/blog/future-of-ai-web-scraping)
-- [Building an AI Scraping Agent (2026)](https://bytesflows.com/en/blog/building-ai-scraping-agent)
-- [Structured Data Extraction with AI (2026)](https://bytesflows.com/en/blog/structured-data-extraction-ai)
-- [How Websites Detect Web Scrapers (2026)](https://bytesflows.com/en/blog/how-websites-detect-web-scrapers)
+- [AI Web Scraping Explained - Agents, LLMs & Data Extraction (2026)](https://bytesflows.com/blog/ai-web-scraping-explained)
+- [Future of AI Web Scraping](https://bytesflows.com/blog/future-of-ai-web-scraping)
+- [Building an AI Scraping Agent (2026)](https://bytesflows.com/blog/building-ai-scraping-agent)
+- [Structured Data Extraction with AI (2026)](https://bytesflows.com/blog/structured-data-extraction-ai)
+- [How Websites Detect Web Scrapers (2026)](https://bytesflows.com/blog/how-websites-detect-web-scrapers)

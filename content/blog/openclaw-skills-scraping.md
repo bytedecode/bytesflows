@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=f
 ## Scraping Skills Are Where OpenClaw Becomes Operational
 OpenClaw becomes useful for scraping not because the gateway itself scrapes, but because skills give the agent controlled ways to browse, extract, and act on the web. That means if you want reliable OpenClaw scraping, the quality of the skill design matters just as much as the model or the prompt.
 For many users, the most important part of that design is proxy awareness. A scraping skill that launches a browser without the right proxy setup may work in light testing but fail quickly once the workload becomes repeated, remote, or production-like.
-This guide explains how OpenClaw scraping skills work, where proxy integration belongs, how to design browser-aware skills cleanly, and what best practices help those skills stay reliable over time. It pairs naturally with [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), and [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup).
+This guide explains how OpenClaw scraping skills work, where proxy integration belongs, how to design browser-aware skills cleanly, and what best practices help those skills stay reliable over time. It pairs naturally with [OpenClaw for web scraping and data extraction](https://bytesflows.com/blog/openclaw-web-scraping), [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy), and [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup).
 ## What OpenClaw Skills Actually Do
 Skills are the execution modules that give OpenClaw access to external actions.
 In scraping workflows, that often means a skill is responsible for one or more of the following:
@@ -120,7 +120,7 @@ Not every skill needs residential transport, but many scraping skills benefit fr
 - need geo-specific results
 - use browser automation heavily
 - operate through a VPS or cloud environment
-In those cases, related pieces such as [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), [rotating residential proxies for OpenClaw agents](https://bytesflows.com/en/blog/openclaw-rotating-proxy), and [running OpenClaw on a VPS with residential proxies](https://bytesflows.com/en/blog/openclaw-vps-proxy) become part of the same design path.
+In those cases, related pieces such as [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy), [rotating residential proxies for OpenClaw agents](https://bytesflows.com/blog/openclaw-rotating-proxy), and [running OpenClaw on a VPS with residential proxies](https://bytesflows.com/blog/openclaw-vps-proxy) become part of the same design path.
 ## Common Mistakes in Skill Design
 ### Hiding browser launch logic too deeply
 That makes it harder to understand whether proxy configuration is actually being applied.
@@ -139,7 +139,7 @@ A good validation flow includes:
 1. confirming the target content actually loads
 1. checking extraction quality on real pages
 1. monitoring failures before increasing throughput
-Helpful tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+Helpful tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
 ## Best Practices for OpenClaw Scraping Skills
 ### Keep the skill small and explicit
 Clarity beats cleverness in scraping modules.
@@ -154,12 +154,12 @@ A scraping skill should return structured output that other tools or steps can a
 ## Conclusion
 OpenClaw scraping skills are where browser automation becomes practical, reusable, and production-capable. They are also where proxy support becomes operationally critical for many real-world workflows.
 The strongest skills are not the biggest ones. They are the ones that keep execution logic clear, configure the browser correctly, handle proxy-aware transport, and return outputs that the rest of the system can trust. When those pieces are aligned, OpenClaw becomes much more than a chat interface—it becomes a workable orchestration layer for real web data workflows.
-If you want the strongest next reading path from here, continue with [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping), [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), and [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy).
+If you want the strongest next reading path from here, continue with [OpenClaw for web scraping and data extraction](https://bytesflows.com/blog/openclaw-web-scraping), [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup), [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy), and [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy).
 ## Further reading
-- [OpenClaw for web scraping and data extraction](https://bytesflows.com/en/blog/openclaw-web-scraping)
-- [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup)
-- [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy)
-- [Why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy)
-- [Rotating residential proxies for OpenClaw agents](https://bytesflows.com/en/blog/openclaw-rotating-proxy)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [OpenClaw for web scraping and data extraction](https://bytesflows.com/blog/openclaw-web-scraping)
+- [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup)
+- [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy)
+- [Why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [Rotating residential proxies for OpenClaw agents](https://bytesflows.com/blog/openclaw-rotating-proxy)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

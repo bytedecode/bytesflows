@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=f
 
 ## Scaling Scraping Changes the Whole System
 A scraper that works for hundreds of pages often fails when pushed to hundreds of thousands. At scale, the bottleneck is rarely a single selector. It is the system around the selector: queues, proxy strategy, retries, concurrency, storage, and monitoring.
-This guide explains the practices that make large-scale scraping stable rather than merely fast. It pairs well with [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale), [Web Scraping Architecture Explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained), and [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies).
+This guide explains the practices that make large-scale scraping stable rather than merely fast. It pairs well with [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale), [Web Scraping Architecture Explained](https://bytesflows.com/blog/web-scraping-architecture-explained), and [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies).
 ## What Changes at Scale
 At small volume, one process can often fetch, parse, and store everything. At larger volume, you need to separate concerns:
 - URL scheduling
@@ -89,8 +89,8 @@ Without these signals, scaling problems often remain invisible until data qualit
 Web scraping at scale works best when the system is designed around controlled distribution, healthy route strategy, clear retry policy, and strong observability. The challenge is not just to make more requests. It is to sustain reliable collection as load increases and targets respond unpredictably.
 When queues, proxy strategy, concurrency controls, and validation are designed together, large-scale scraping becomes much easier to operate and much easier to trust.
 ## Further reading
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Web Scraping Architecture Explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained)
-- [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/en/blog/playwright-web-scraping-scale)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Web Scraping Architecture Explained](https://bytesflows.com/blog/web-scraping-architecture-explained)
+- [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/blog/playwright-web-scraping-scale)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

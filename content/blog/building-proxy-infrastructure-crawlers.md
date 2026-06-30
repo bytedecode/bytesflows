@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=form
 ## Proxy Infrastructure for Crawlers Is About Routing Reliability, Not Just Access to More IPs
 Large crawlers do not need proxies only because websites block them. They need proxy infrastructure because repeated crawling becomes a routing problem: which identity should handle which request, how failures should be detected, and how the system keeps working when volume rises or routes degrade.
 That is why proxy infrastructure is not just “a proxy list” or “a gateway URL.” It is the layer that decides how crawler traffic moves through the network.
-This guide explains how to think about proxy infrastructure for crawlers, including gateway vs list-based designs, health checks, routing logic, capacity planning, and the operational tradeoffs between simplicity and control. It pairs naturally with [proxy pools for web scraping](https://bytesflows.com/en/blog/proxy-pools-web-scraping), [web scraping proxy architecture](https://bytesflows.com/en/blog/web-scraping-proxy-architecture), and [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers).
+This guide explains how to think about proxy infrastructure for crawlers, including gateway vs list-based designs, health checks, routing logic, capacity planning, and the operational tradeoffs between simplicity and control. It pairs naturally with [proxy pools for web scraping](https://bytesflows.com/blog/proxy-pools-web-scraping), [web scraping proxy architecture](https://bytesflows.com/blog/web-scraping-proxy-architecture), and [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers).
 ## Why Crawlers Need More Than One Proxy Setting
 A crawler is not just one browser or one script. It is usually a repeated request system that runs across many URLs, workers, or domains.
 That means proxy infrastructure needs to account for:
@@ -113,16 +113,16 @@ Know how identities are assigned and reused.
 That is what prevents hidden degradation.
 ### Revisit the architecture as scale and domain diversity increase
 Proxy infrastructure should evolve with the crawler, not stay frozen.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks).
 ## Conclusion
 Building proxy infrastructure for crawlers is about making repeated network access reliable under real workload conditions. The key questions are not only how many IPs you have, but how routes are assigned, how failure is detected, how worker traffic is segmented, and how the crawler avoids turning weak routing into repeated downtime.
 For many teams, a gateway-based model is the right first answer. For more complex systems, list-based or multi-provider routing becomes valuable. The right infrastructure is the one that fits the crawler’s real shape—its concurrency, domain mix, retry behavior, and target sensitivity—not the one with the most theoretical control.
-If you want the strongest next reading path from here, continue with [proxy pools for web scraping](https://bytesflows.com/en/blog/proxy-pools-web-scraping), [web scraping proxy architecture](https://bytesflows.com/en/blog/web-scraping-proxy-architecture), [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers), and [how proxy rotation works](https://bytesflows.com/en/blog/how-proxy-rotation-works).
+If you want the strongest next reading path from here, continue with [proxy pools for web scraping](https://bytesflows.com/blog/proxy-pools-web-scraping), [web scraping proxy architecture](https://bytesflows.com/blog/web-scraping-proxy-architecture), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), and [how proxy rotation works](https://bytesflows.com/blog/how-proxy-rotation-works).
 ## Further reading
-- [Proxy pools for web scraping](https://bytesflows.com/en/blog/proxy-pools-web-scraping)
-- [Web scraping proxy architecture](https://bytesflows.com/en/blog/web-scraping-proxy-architecture)
-- [Proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers)
-- [How proxy rotation works](https://bytesflows.com/en/blog/how-proxy-rotation-works)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Playwright web scraping at scale](https://bytesflows.com/en/blog/playwright-web-scraping-scale)
+- [Proxy pools for web scraping](https://bytesflows.com/blog/proxy-pools-web-scraping)
+- [Web scraping proxy architecture](https://bytesflows.com/blog/web-scraping-proxy-architecture)
+- [Proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers)
+- [How proxy rotation works](https://bytesflows.com/blog/how-proxy-rotation-works)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Playwright web scraping at scale](https://bytesflows.com/blog/playwright-web-scraping-scale)

@@ -85,15 +85,15 @@ That is where the premium is usually justified.
 The site decides what “good enough” trust looks like.
 ### Revisit the decision as the scraper scales
 A route model that works at 100 requests may fail at 100,000.
-Helpful related pages include [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [why residential proxies are best for scraping](https://bytesflows.com/en/blog/why-residential-proxies-best-scraping), and [residential proxies](https://bytesflows.com/en/proxies).
+Helpful related pages include [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [why residential proxies are best for scraping](https://bytesflows.com/blog/why-residential-proxies-best-scraping), and [residential proxies](https://bytesflows.com/proxies).
 ## Conclusion
 Residential vs datacenter proxies is not a theoretical comparison. It is a practical decision about what kind of route trust your workflow actually needs. Datacenter routes are often best when speed and cost dominate. Residential routes are often best when trust, geo realism, and protected-target access matter more.
 The practical lesson is to choose from the target backward. If the site does not care much about route trust, datacenter may be enough. If the site does, residential is often the route class that makes the scraper viable at all.
 ## Further reading
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Why residential proxies are best for scraping](https://bytesflows.com/en/blog/why-residential-proxies-best-scraping)
-- [Residential proxies](https://bytesflows.com/en/proxies)
-- [Proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [Cloudflare bypass proxy for web scraping](https://bytesflows.com/en/blog/cloudflare-scraping)
-- [Proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers)
-- [How to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Why residential proxies are best for scraping](https://bytesflows.com/blog/why-residential-proxies-best-scraping)
+- [Residential proxies](https://bytesflows.com/proxies)
+- [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Cloudflare bypass proxy for web scraping](https://bytesflows.com/blog/cloudflare-scraping)
+- [Proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers)
+- [How to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)

@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 ## Why E-commerce Data Is Worth Collecting
 E-commerce sites are one of the most important sources of public commercial data on the web. Teams scrape them for competitor monitoring, catalog research, stock tracking, pricing intelligence, and assortment analysis.
 The challenge is that modern stores are also among the most protected targets. Product pages may rely on client-side rendering, prices may vary by geography, and repeated access patterns are often scored quickly.
-If you are building in this area, this guide pairs well with [Scraping Marketplace Data](https://bytesflows.com/en/blog/scraping-marketplace-data), [Scraping Amazon Product Data](https://bytesflows.com/en/blog/scraping-amazon-product-data), and [Playwright Web Scraping Tutorial](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial).
+If you are building in this area, this guide pairs well with [Scraping Marketplace Data](https://bytesflows.com/blog/scraping-marketplace-data), [Scraping Amazon Product Data](https://bytesflows.com/blog/scraping-amazon-product-data), and [Playwright Web Scraping Tutorial](https://bytesflows.com/blog/playwright-web-scraping-tutorial).
 ## What Teams Usually Want From E-commerce Sites
 A useful e-commerce scraper normally extracts more than a headline price. Common target fields include:
 - product title and canonical URL
@@ -59,7 +59,7 @@ They are especially useful when you need:
 - geo-specific views of prices and stock
 - safer repeated monitoring over time
 - session continuity for carts, localized content, or shipping context
-Foundational reading includes [Residential Proxies](https://bytesflows.com/en/blog/residential-proxies), [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), and [Web Scraping Proxy Architecture](https://bytesflows.com/en/blog/web-scraping-proxy-architecture).
+Foundational reading includes [Residential Proxies](https://bytesflows.com/blog/residential-proxies), [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), and [Web Scraping Proxy Architecture](https://bytesflows.com/blog/web-scraping-proxy-architecture).
 ## Geo Context Changes the Data You See
 Many stores localize pricing, taxes, availability, currency, and even product assortment. That means the same URL can produce different commercial data depending on region.
 A robust workflow should therefore:
@@ -67,7 +67,7 @@ A robust workflow should therefore:
 - keep region choice consistent for repeated comparisons
 - store the observed geo context alongside the record
 - retest when a target changes how it localizes content
-For region-sensitive work, [Geo-Targeted Scraping Proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies) is a useful companion.
+For region-sensitive work, [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies) is a useful companion.
 ## What Good Extraction Looks Like
 A reliable e-commerce extractor does more than parse visible text. It should:
 - capture raw values as observed on the page
@@ -85,7 +85,7 @@ Track signals such as:
 - selector break frequency
 - region mismatches
 - extraction completeness per domain
-Support tools such as [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker) help verify whether requests are reaching targets in the way you expect.
+Support tools such as [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) help verify whether requests are reaching targets in the way you expect.
 ## Common Mistakes
 ### Reusing one IP too aggressively
 That creates obvious pressure on the target.
@@ -101,8 +101,8 @@ You need operational feedback before increasing concurrency.
 Scraping e-commerce websites reliably requires more than just selectors. You need the right fetch strategy, a stable proxy layer, careful normalization, and monitoring that tells you when the target experience has changed.
 When browser automation, residential proxy routing, and validation rules are combined well, e-commerce scraping becomes much more dependable for pricing, catalog, and inventory intelligence.
 ## Further reading
-- [Scraping Marketplace Data](https://bytesflows.com/en/blog/scraping-marketplace-data)
-- [Scraping Amazon Product Data](https://bytesflows.com/en/blog/scraping-amazon-product-data)
-- [Playwright Web Scraping Tutorial](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial)
-- [Geo-Targeted Scraping Proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Scraping Marketplace Data](https://bytesflows.com/blog/scraping-marketplace-data)
+- [Scraping Amazon Product Data](https://bytesflows.com/blog/scraping-amazon-product-data)
+- [Playwright Web Scraping Tutorial](https://bytesflows.com/blog/playwright-web-scraping-tutorial)
+- [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

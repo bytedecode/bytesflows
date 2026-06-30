@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 ## Blocking Is Usually a System Problem, Not a Single Setting Problem
 When OpenClaw scraping starts getting blocked, the first instinct is often to blame one thing: the proxy, the browser, or the target website. In practice, blocking usually comes from the combination of IP reputation, request timing, browser behavior, and repeated workflow patterns.
 That is why avoiding blocks is not about one trick. It is about making the browsing workflow look less suspicious across several layers at once.
-This guide explains why OpenClaw scraping workflows get blocked, what changes have the biggest impact, and how to reduce block rate with residential proxies, throttling, browser discipline, and better retry behavior. It pairs naturally with [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), and [bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/en/blog/openclaw-cloudflare-bypass).
+This guide explains why OpenClaw scraping workflows get blocked, what changes have the biggest impact, and how to reduce block rate with residential proxies, throttling, browser discipline, and better retry behavior. It pairs naturally with [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy), [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup), and [bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/blog/openclaw-cloudflare-bypass).
 ## Why OpenClaw Workflows Get Blocked
 OpenClaw often uses real browsers through Playwright-based skills, which gives it a stronger baseline than a raw HTTP script on many targets. But a real browser alone does not make the traffic trustworthy.
 Sites still evaluate signals such as:
@@ -28,7 +28,7 @@ That is why the browser may be technically correct while the overall workflow st
 ## The First Problem Is Usually IP Reputation
 If OpenClaw is running from a VPS, cloud server, or exposed datacenter IP, that identity can get scored harshly before the browser even has a chance to behave like a normal user.
 This is why residential proxies are often the single biggest improvement. They make the browsing origin look more like normal user traffic and reduce the visibility of one server identity making repeated requests.
-Related foundations include [residential proxies](https://bytesflows.com/en/blog/residential-proxies), [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), and [rotating residential proxies for OpenClaw agents](https://bytesflows.com/en/blog/openclaw-rotating-proxy).
+Related foundations include [residential proxies](https://bytesflows.com/blog/residential-proxies), [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), and [rotating residential proxies for OpenClaw agents](https://bytesflows.com/blog/openclaw-rotating-proxy).
 ## The Second Problem Is Usually Request Density
 Even good IPs can get blocked if the workflow is too aggressive.
 Common examples include:
@@ -102,7 +102,7 @@ Avoid unnecessary fingerprint changes unless you have a strong reason.
 Use rotation for stateless workloads and sticky behavior where continuity matters.
 ### Validate against the real target
 A passing IP test is not enough. The actual page behavior matters.
-Helpful tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+Helpful tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
 ## Common Mistakes
 ### Assuming a real browser alone is enough
 It helps, but IP and pacing still matter.
@@ -121,16 +121,16 @@ If a workflow still gets blocked after adding proxies and pacing, the next likel
 - unrealistic browser workflow design
 - geo mismatch
 - extraction tasks that revisit the same pages too aggressively
-This is when related articles like [bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/en/blog/openclaw-cloudflare-bypass), [OpenClaw Playwright proxy configuration](https://bytesflows.com/en/blog/openclaw-playwright-proxy), and [large-scale data collection with OpenClaw and proxies](https://bytesflows.com/en/blog/openclaw-data-collection-scale) become especially relevant.
+This is when related articles like [bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/blog/openclaw-cloudflare-bypass), [OpenClaw Playwright proxy configuration](https://bytesflows.com/blog/openclaw-playwright-proxy), and [large-scale data collection with OpenClaw and proxies](https://bytesflows.com/blog/openclaw-data-collection-scale) become especially relevant.
 ## Conclusion
 Avoiding blocks when using OpenClaw for scraping is not about finding one secret switch. It is about aligning the browsing workflow across identity, pacing, browser realism, and recovery behavior.
 Residential proxies usually improve the transport layer the most. Throttling reduces unnecessary pressure. Better retry logic prevents self-inflicted failures. And keeping the browser workflow realistic makes all of those improvements more effective. When those pieces work together, OpenClaw scraping becomes much more stable and predictable.
-If you want the strongest next reading path from here, continue with [why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy), [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup), [bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/en/blog/openclaw-cloudflare-bypass), and [large-scale data collection with OpenClaw and proxies](https://bytesflows.com/en/blog/openclaw-data-collection-scale).
+If you want the strongest next reading path from here, continue with [why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy), [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup), [bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/blog/openclaw-cloudflare-bypass), and [large-scale data collection with OpenClaw and proxies](https://bytesflows.com/blog/openclaw-data-collection-scale).
 ## Further reading
-- [Why OpenClaw agents need residential proxies](https://bytesflows.com/en/blog/openclaw-residential-proxy)
-- [OpenClaw proxy setup](https://bytesflows.com/en/blog/openclaw-proxy-setup)
-- [Bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/en/blog/openclaw-cloudflare-bypass)
-- [Large-scale data collection with OpenClaw and proxies](https://bytesflows.com/en/blog/openclaw-data-collection-scale)
-- [Residential proxies](https://bytesflows.com/en/blog/residential-proxies)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Rotating residential proxies for OpenClaw agents](https://bytesflows.com/en/blog/openclaw-rotating-proxy)
+- [Why OpenClaw agents need residential proxies](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [OpenClaw proxy setup](https://bytesflows.com/blog/openclaw-proxy-setup)
+- [Bypassing Cloudflare with OpenClaw and residential proxies](https://bytesflows.com/blog/openclaw-cloudflare-bypass)
+- [Large-scale data collection with OpenClaw and proxies](https://bytesflows.com/blog/openclaw-data-collection-scale)
+- [Residential proxies](https://bytesflows.com/blog/residential-proxies)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Rotating residential proxies for OpenClaw agents](https://bytesflows.com/blog/openclaw-rotating-proxy)

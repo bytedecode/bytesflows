@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=form
 
 ## Why Competitor Pricing Data Matters
 Competitor pricing data helps teams track market movement, react to promotions, understand margin pressure, and improve catalog strategy. The goal is not just to collect prices. It is to collect trustworthy commercial signals that can be compared across merchants and over time.
-That means a competitor pricing system must handle page structure differences, regional pricing, product matching, and changing stock states. This article pairs naturally with [Scraping Price Comparison Data](https://bytesflows.com/en/blog/scraping-price-comparison-data), [Scraping E-commerce Websites](https://bytesflows.com/en/blog/scraping-ecommerce-websites), and [Geo-Targeted Scraping Proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies).
+That means a competitor pricing system must handle page structure differences, regional pricing, product matching, and changing stock states. This article pairs naturally with [Scraping Price Comparison Data](https://bytesflows.com/blog/scraping-price-comparison-data), [Scraping E-commerce Websites](https://bytesflows.com/blog/scraping-ecommerce-websites), and [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies).
 ## What a Competitor Pricing Pipeline Should Capture
 A usable monitoring system should collect more than a single observed number. Common fields include:
 - merchant or competitor identity
@@ -87,7 +87,7 @@ A lower price is not always a directly comparable price.
 ### Separate merchant-specific logic cleanly
 Each site will evolve differently over time.
 ### Validate challenge behavior before scaling monitoring frequency
-Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker) to confirm that pricing pages are being served correctly.
+Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to confirm that pricing pages are being served correctly.
 ## Common Mistakes
 - comparing products before confirming they are true matches
 - ignoring geography, tax, or delivery context
@@ -98,8 +98,8 @@ Use [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checke
 Scraping competitor pricing data reliably is about much more than extracting a number from a page. It requires accurate product matching, geo-aware collection, browser workflows that can survive dynamic storefronts, and normalization rules that preserve commercial meaning.
 When those layers are designed together, competitor pricing data becomes much more useful for alerting, market analysis, and pricing strategy.
 ## Further reading
-- [Scraping Price Comparison Data](https://bytesflows.com/en/blog/scraping-price-comparison-data)
-- [Scraping E-commerce Websites](https://bytesflows.com/en/blog/scraping-ecommerce-websites)
-- [Geo-Targeted Scraping Proxies](https://bytesflows.com/en/blog/geo-targeted-scraping-proxies)
-- [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Scraping Price Comparison Data](https://bytesflows.com/blog/scraping-price-comparison-data)
+- [Scraping E-commerce Websites](https://bytesflows.com/blog/scraping-ecommerce-websites)
+- [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies)
+- [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)

@@ -12,7 +12,7 @@ coverImage: "https://prod-files-secure.s3.us-west-2.amazonaws.com/1b86c8d6-c558-
 ---
 
 After installing both Ollama and OpenClaw, the next step is wiring them together cleanly so OpenClaw can use your local model endpoint as its working provider.
-This guide shows a practical local setup flow: configure the provider, point OpenClaw at the correct Ollama endpoint, test a simple model path, and verify the end-to-end local loop. It works well as Part 3 after [Install Ollama on Ubuntu: Step 1 for Local OpenClaw](https://bytesflows.com/en/blog/openclaw-local-ollama-setup-part-1) and [Install OpenClaw on Ubuntu: Step 2 of Local AI Workflow](https://bytesflows.com/en/blog/openclaw-installation-on-ubuntu-part-2).
+This guide shows a practical local setup flow: configure the provider, point OpenClaw at the correct Ollama endpoint, test a simple model path, and verify the end-to-end local loop. It works well as Part 3 after [Install Ollama on Ubuntu: Step 1 for Local OpenClaw](https://bytesflows.com/blog/openclaw-local-ollama-setup-part-1) and [Install OpenClaw on Ubuntu: Step 2 of Local AI Workflow](https://bytesflows.com/blog/openclaw-installation-on-ubuntu-part-2).
 ## What You Should Have Before Starting
 Before editing configuration, confirm that:
 - Ollama is running and reachable
@@ -78,8 +78,8 @@ Re-check the provider path, model ID, and endpoint formatting. Small mismatches 
 ## Wrap-up
 Once OpenClaw can successfully call Ollama and return a normal response, the local AI loop is working end to end. From there, you can move on to prompt design, tool usage, and more advanced local automation workflows.
 ## Further reading
-- [Install Ollama on Ubuntu: Step 1 for Local OpenClaw](https://bytesflows.com/en/blog/openclaw-local-ollama-setup-part-1)
-- [Install OpenClaw on Ubuntu: Step 2 of Local AI Workflow](https://bytesflows.com/en/blog/openclaw-installation-on-ubuntu-part-2)
-- [OpenClaw Proxy Setup (2026 Complete Guide)](https://bytesflows.com/en/blog/openclaw-proxy-setup)
-- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/en/blog/openclaw-browser-automation-proxies)
-- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/en/blog/why-openclaw-agents-need-residential-proxies)
+- [Install Ollama on Ubuntu: Step 1 for Local OpenClaw](https://bytesflows.com/blog/openclaw-local-ollama-setup-part-1)
+- [Install OpenClaw on Ubuntu: Step 2 of Local AI Workflow](https://bytesflows.com/blog/openclaw-installation-on-ubuntu-part-2)
+- [OpenClaw Proxy Setup (2026 Complete Guide)](https://bytesflows.com/blog/openclaw-proxy-setup)
+- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxies)
+- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/why-openclaw-agents-need-residential-proxies)

@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=f
 ## What Web Scraping Actually Means
 Web scraping is the process of collecting data from websites in a structured way. Instead of copying information by hand, a scraper requests or loads a page, identifies the useful fields, and stores them as structured records such as JSON, CSV, or database rows.
 At a high level, scraping is about turning web pages into reusable data.
-This guide pairs naturally with [Web Scraping Workflow Explained](https://bytesflows.com/en/blog/web-scraping-workflow-explained), [How to Build Your First Web Scraper](https://bytesflows.com/en/blog/how-to-build-first-web-scraper), and [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/en/blog/web-scraping-vs-web-crawling).
+This guide pairs naturally with [Web Scraping Workflow Explained](https://bytesflows.com/blog/web-scraping-workflow-explained), [How to Build Your First Web Scraper](https://bytesflows.com/blog/how-to-build-first-web-scraper), and [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/blog/web-scraping-vs-web-crawling).
 ## Why People Use Web Scraping
 Teams scrape websites for many different reasons:
 - price and competitor monitoring
@@ -85,8 +85,8 @@ The exact legal answer depends on jurisdiction and use case, so real commercial 
 Web scraping is the practice of turning website content into structured data. Once that basic idea is clear, the rest of the learning path becomes much easier: understand the page type, choose the lightest tool that works, add browser automation only when needed, and add proxies when scale or protection makes them necessary.
 That is the foundation behind almost every professional scraping workflow.
 ## Further reading
-- [Web Scraping Workflow Explained](https://bytesflows.com/en/blog/web-scraping-workflow-explained)
-- [How to Build Your First Web Scraper](https://bytesflows.com/en/blog/how-to-build-first-web-scraper)
-- [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/en/blog/web-scraping-vs-web-crawling)
-- [Best Web Scraping Tools in 2026 - Comparison & Guide](https://bytesflows.com/en/blog/best-web-scraping-tools)
-- [How to Scrape Websites Without Getting Blocked: The 2026 Stealth Playbook](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked)
+- [Web Scraping Workflow Explained](https://bytesflows.com/blog/web-scraping-workflow-explained)
+- [How to Build Your First Web Scraper](https://bytesflows.com/blog/how-to-build-first-web-scraper)
+- [Web Scraping vs Web Crawling - What's the Difference (2026)](https://bytesflows.com/blog/web-scraping-vs-web-crawling)
+- [Best Web Scraping Tools in 2026 - Comparison & Guide](https://bytesflows.com/blog/best-web-scraping-tools)
+- [How to Scrape Websites Without Getting Blocked: The 2026 Stealth Playbook](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)

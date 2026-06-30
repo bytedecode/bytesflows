@@ -101,7 +101,7 @@ A working route can still be the wrong route.
 Trust works best when the full session is coherent.
 ### Scale carefully and monitor pass rate, not just throughput
 Residential quality should be preserved, not burned quickly.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/en/blog/scraping-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
 ## Key Takeaways
 - Residential proxies improve scraping reliability when IP trust is the real bottleneck.
 - Rotating mode fits stateless work; sticky mode fits session-dependent workflows.
@@ -109,8 +109,8 @@ Helpful companion tools include [Proxy Checker](https://bytesflows.com/en/blog/p
 - Good route quality still needs good behavior and reasonable pacing.
 - Residential proxies are strongest when matched deliberately to the target’s strictness.
 ## Explore the next step
-- [Get Residential Proxies](https://bytesflows.com/en/proxies)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Python proxy scraping guide](https://bytesflows.com/en/blog/python-proxy-scraping-guide)
-- [Playwright proxy setup guide](https://bytesflows.com/en/blog/playwright-proxy-setup)
-- [Proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
+- [Get Residential Proxies](https://bytesflows.com/proxies)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Python proxy scraping guide](https://bytesflows.com/blog/python-proxy-scraping-guide)
+- [Playwright proxy setup guide](https://bytesflows.com/blog/playwright-proxy-setup)
+- [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies)

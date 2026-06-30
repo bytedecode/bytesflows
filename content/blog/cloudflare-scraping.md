@@ -93,8 +93,8 @@ Once those layers reinforce each other, Cloudflare proxy strategy becomes much m
 - Test pass rate before scaling.
 - Treat the setup as infrastructure, not as a one-line trick.
 ## Explore the next step
-- [Get Residential Proxies](https://bytesflows.com/en/proxies)
-- [Bypass Cloudflare Guide](https://bytesflows.com/en/blog/bypass-cloudflare-web-scraping)
-- [Playwright Proxy Configuration Guide](https://bytesflows.com/en/blog/playwright-proxy-configuration-guide)
-- [How to Avoid Detection in Playwright Scraping](https://bytesflows.com/en/blog/avoid-detection-playwright-scraping)
-- [Browser Fingerprinting Explained](https://bytesflows.com/en/blog/browser-fingerprinting-explained)
+- [Get Residential Proxies](https://bytesflows.com/proxies)
+- [Bypass Cloudflare Guide](https://bytesflows.com/blog/bypass-cloudflare-web-scraping)
+- [Playwright Proxy Configuration Guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide)
+- [How to Avoid Detection in Playwright Scraping](https://bytesflows.com/blog/avoid-detection-playwright-scraping)
+- [Browser Fingerprinting Explained](https://bytesflows.com/blog/browser-fingerprinting-explained)

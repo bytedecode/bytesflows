@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=f
 
 Crawlee has become one of the most practical frameworks for teams that want more structure than ad-hoc scripts but do not want to rebuild crawler infrastructure from scratch.
 It is especially useful when a scraping system needs queues, retries, browser automation, and operational control in one place. This guide explains how Crawlee fits modern scraping in 2026 and how to use it without overcomplicating the stack.
-This guide pairs well with [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial), [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale), and [Scaling Scrapers with Distributed Systems](https://bytesflows.com/en/blog/scaling-scrapers-distributed-systems).
+This guide pairs well with [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/blog/playwright-web-scraping-tutorial), [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale), and [Scaling Scrapers with Distributed Systems](https://bytesflows.com/blog/scaling-scrapers-distributed-systems).
 ## Why Teams Reach for Crawlee
 Crawlee is appealing because it solves several problems that appear early in real projects:
 - request queueing
@@ -78,8 +78,8 @@ It may be less necessary for very small, one-off scripts.
 Mastering Crawlee in 2026 is really about understanding where it saves engineering time. It gives teams a strong structure for queues, retries, and browser crawling while still leaving room to choose the right extraction approach for each target.
 Used well, it becomes a durable foundation for modern scraping rather than just another layer of abstraction.
 ## Further reading
-- [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial)
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Scaling Scrapers with Distributed Systems](https://bytesflows.com/en/blog/scaling-scrapers-distributed-systems)
-- [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/en/blog/headless-browser-scraping-guide)
-- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices)
+- [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/blog/playwright-web-scraping-tutorial)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Scaling Scrapers with Distributed Systems](https://bytesflows.com/blog/scaling-scrapers-distributed-systems)
+- [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/blog/headless-browser-scraping-guide)
+- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)

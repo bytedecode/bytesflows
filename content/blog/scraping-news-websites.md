@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=f
 ## Scraping News Websites Means Balancing Freshness, Coverage, and Anti-Bot Pressure at the Same Time
 News data is valuable because it powers media monitoring, trend detection, competitive intelligence, alerting systems, and AI knowledge feeds. But news scraping is rarely just a matter of extracting article text. The hard part is collecting new content fast enough, avoiding repeated pressure on publisher infrastructure, and handling the differences between article pages, section pages, feeds, and dynamic front pages.
 That is why scraping news websites works best as a refresh-oriented pipeline rather than as a one-off crawl.
-This guide explains how news scraping systems are typically structured, what makes publishers operationally tricky targets, and how to combine discovery, routing, and parsing into a stable workflow. It pairs naturally with [scraping data at scale](https://bytesflows.com/en/blog/scraping-data-at-scale), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [How Websites Detect Web Scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers).
+This guide explains how news scraping systems are typically structured, what makes publishers operationally tricky targets, and how to combine discovery, routing, and parsing into a stable workflow. It pairs naturally with [scraping data at scale](https://bytesflows.com/blog/scraping-data-at-scale), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [How Websites Detect Web Scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers).
 ## Why News Scraping Has Different Priorities
 News scraping is often shaped by three competing goals:
 - **freshness** because the value of an article can drop quickly
@@ -112,15 +112,15 @@ Freshness should be targeted.
 News sites are often legally and operationally sensitive.
 ### Measure success by freshness and usable article coverage, not only fetch count
 A high request count does not mean a good news pipeline.
-Helpful companion reading includes [scraping data at scale](https://bytesflows.com/en/blog/scraping-data-at-scale), [How Websites Detect Web Scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained).
+Helpful companion reading includes [scraping data at scale](https://bytesflows.com/blog/scraping-data-at-scale), [How Websites Detect Web Scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained).
 ## Conclusion
 Scraping news websites is really the work of building a collection pipeline that keeps up with publication speed without creating unnecessary pressure or instability. Discovery, deduplication, freshness rules, routing quality, and article parsing all matter because the value of news data depends on timing just as much as extraction.
 The practical lesson is simple: news scraping works best when it is treated as a refresh system, not a one-off crawler. When freshness strategy and scraping architecture support each other, the output becomes much more useful for monitoring, research, and downstream AI workflows.
 ## Further reading
-- [Scraping data at scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [How Websites Detect Web Scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers)
-- [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker)
-- [Web scraping architecture explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained)
-- [Scraping Test](https://bytesflows.com/en/blog/scraping-test)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Residential proxies](https://bytesflows.com/en/proxies)
+- [Scraping data at scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [How Websites Detect Web Scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers)
+- [Proxy Checker](https://bytesflows.com/blog/proxy-checker)
+- [Web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained)
+- [Scraping Test](https://bytesflows.com/blog/scraping-test)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Residential proxies](https://bytesflows.com/proxies)

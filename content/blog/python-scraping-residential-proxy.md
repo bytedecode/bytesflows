@@ -103,15 +103,15 @@ A working proxy can still be the wrong route.
 It becomes more valuable when planned early.
 ### Use stronger browser-based stacks when the target is both dynamic and protected
 Residential routing helps most when the rest of the session is also credible.
-Helpful related pages include [Python Proxy Scraping Guide](https://bytesflows.com/en/blog/python-proxy-scraping-guide), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/en/blog/scraping-test).
+Helpful related pages include [Python Proxy Scraping Guide](https://bytesflows.com/blog/python-proxy-scraping-guide), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
 ## Summary
 Python scraping with residential proxies works because it gives Python workflows a more credible network identity, especially when targets get stricter, more region-sensitive, or more repetitive. The strongest results come when the proxy model fits both the Python tool and the task: rotating for stateless collection, sticky for continuity-heavy workflows, and stronger browser-based execution when the page requires it.
 The main lesson is simple: residential proxies are not only an add-on for Python scraping. They are often the routing layer that determines whether an otherwise good scraper stays stable long enough to be useful.
 ## More resources
-- [Get Residential Proxies](https://bytesflows.com/en/proxies)
-- [Python Proxy Scraping Guide](https://bytesflows.com/en/blog/python-proxy-scraping-guide)
-- [Using Requests for Web Scraping](https://bytesflows.com/en/blog/using-requests-web-scraping)
-- [Scrapy Framework Guide](https://bytesflows.com/en/blog/scrapy-framework-guide)
-- [Playwright Proxy Setup Guide](https://bytesflows.com/en/blog/playwright-proxy-setup)
-- [Python Web Scraping Best Practices](https://bytesflows.com/en/blog/python-web-scraping-best-practices)
-- [Scraping Dynamic Websites with Python](https://bytesflows.com/en/blog/scraping-dynamic-websites-python)
+- [Get Residential Proxies](https://bytesflows.com/proxies)
+- [Python Proxy Scraping Guide](https://bytesflows.com/blog/python-proxy-scraping-guide)
+- [Using Requests for Web Scraping](https://bytesflows.com/blog/using-requests-web-scraping)
+- [Scrapy Framework Guide](https://bytesflows.com/blog/scrapy-framework-guide)
+- [Playwright Proxy Setup Guide](https://bytesflows.com/blog/playwright-proxy-setup)
+- [Python Web Scraping Best Practices](https://bytesflows.com/blog/python-web-scraping-best-practices)
+- [Scraping Dynamic Websites with Python](https://bytesflows.com/blog/scraping-dynamic-websites-python)

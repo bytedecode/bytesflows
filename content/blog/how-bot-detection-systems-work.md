@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 ## Bot Detection Systems Work by Scoring Suspicion Across Layers, Not by Catching One Obvious Mistake
 A lot of developers imagine bot detection as a blacklist problem: bad user-agent, too many requests, instant block. Modern bot detection systems are usually more nuanced. They gather signals from network identity, protocol behavior, browser environment, and timing, then combine those signals into a risk judgment about whether the session looks automated or believable.
 That is why a scraper can fail even when no single mistake looks fatal. Several moderate signals can combine into one strong detection outcome.
-This guide explains how bot detection systems work in practice, what layers usually feed the score, how thresholds shape outcomes, and why reducing detection means improving the whole session profile rather than one isolated setting. It pairs naturally with [anti-bot systems explained](https://bytesflows.com/en/blog/anti-bot-systems-explained), [how websites detect web scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers), and [browser fingerprinting explained](https://bytesflows.com/en/blog/browser-fingerprinting-explained).
+This guide explains how bot detection systems work in practice, what layers usually feed the score, how thresholds shape outcomes, and why reducing detection means improving the whole session profile rather than one isolated setting. It pairs naturally with [anti-bot systems explained](https://bytesflows.com/blog/anti-bot-systems-explained), [how websites detect web scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers), and [browser fingerprinting explained](https://bytesflows.com/blog/browser-fingerprinting-explained).
 ## The Core Idea: Detection Is Usually a Scoring Pipeline
 Most modern bot detection systems do not make a decision from one signal alone.
 Instead, they often:
@@ -128,16 +128,16 @@ Do not fight runtime-sensitive checks with request-only tools.
 The score often changes with scale.
 ### Treat challenge frequency as a signal about system health
 Do not only treat it as a nuisance to bypass.
-Helpful support tools include [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks).
+Helpful support tools include [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks).
 ## Conclusion
 Bot detection systems work by combining many signals into a broader judgment about whether a session looks automated or believable. That is why detection often feels subtle: the system is not only looking for one obvious fingerprint. It is looking for the accumulation of small clues that point in the same direction.
 The practical lesson is that reducing detection pressure means improving the whole session: better route quality, better browser realism, coherent headers and locale, saner timing, and smarter retry behavior. Once you understand detection as a scoring pipeline, blocks become easier to diagnose and much less mysterious.
-If you want the strongest next reading path from here, continue with [anti-bot systems explained](https://bytesflows.com/en/blog/anti-bot-systems-explained), [how websites detect web scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers), [browser fingerprinting explained](https://bytesflows.com/en/blog/browser-fingerprinting-explained), and [how to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked).
+If you want the strongest next reading path from here, continue with [anti-bot systems explained](https://bytesflows.com/blog/anti-bot-systems-explained), [how websites detect web scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers), [browser fingerprinting explained](https://bytesflows.com/blog/browser-fingerprinting-explained), and [how to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked).
 ## Further reading
-- [Anti-bot systems explained](https://bytesflows.com/en/blog/anti-bot-systems-explained)
-- [How websites detect web scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers)
-- [Browser fingerprinting explained](https://bytesflows.com/en/blog/browser-fingerprinting-explained)
-- [How to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked)
-- [Bypass Cloudflare for web scraping](https://bytesflows.com/en/blog/bypass-cloudflare-web-scraping)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Handling CAPTCHAs in scraping](https://bytesflows.com/en/blog/handling-captchas-in-scraping)
+- [Anti-bot systems explained](https://bytesflows.com/blog/anti-bot-systems-explained)
+- [How websites detect web scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers)
+- [Browser fingerprinting explained](https://bytesflows.com/blog/browser-fingerprinting-explained)
+- [How to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)
+- [Bypass Cloudflare for web scraping](https://bytesflows.com/blog/bypass-cloudflare-web-scraping)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Handling CAPTCHAs in scraping](https://bytesflows.com/blog/handling-captchas-in-scraping)

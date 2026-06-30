@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 ## Crawlee Is Useful When Your Scraper Is Becoming a System, Not Just a Script
 A lot of scraping projects start with raw browser automation or a simple HTTP client. That works well at first. But once the project grows, the boilerplate grows with it: queue management, retries, browser lifecycle, storage, proxy routing, and concurrency control. Crawlee is useful because it packages much of that operational work into a framework designed for crawling and scraping workflows.
 That is why Crawlee is not just “Playwright with extra features.” It is a system-oriented framework for running scraping workloads with less repetitive infrastructure code.
-This guide explains what Crawlee does, when it is worth using, how it relates to Playwright and Puppeteer, and what tradeoffs to expect when adopting it for production scraping. It pairs naturally with [Crawlee web scraping tutorial](https://bytesflows.com/en/blog/crawlee-web-scraping-tutorial), [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), and [playwright vs Crawlee for web scraping](https://bytesflows.com/en/blog/playwright-vs-crawlee-comparison).
+This guide explains what Crawlee does, when it is worth using, how it relates to Playwright and Puppeteer, and what tradeoffs to expect when adopting it for production scraping. It pairs naturally with [Crawlee web scraping tutorial](https://bytesflows.com/blog/crawlee-web-scraping-tutorial), [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), and [playwright vs Crawlee for web scraping](https://bytesflows.com/blog/playwright-vs-crawlee-comparison).
 ## What Crawlee Actually Adds
 Crawlee helps when a scraping workflow needs more than page automation.
 It typically adds structure around:
@@ -58,7 +58,7 @@ The same issues still matter:
 - domain-level concurrency limits
 - challenge-aware retry behavior
 This is why Crawlee works best when paired with a deliberate proxy strategy rather than treated as self-protecting automation.
-Related reading from [best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers), and [playwright proxy setup guide](https://bytesflows.com/en/blog/playwright-proxy-setup) fits directly here.
+Related reading from [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), and [playwright proxy setup guide](https://bytesflows.com/blog/playwright-proxy-setup) fits directly here.
 ## When to Prefer Crawlee Over Raw Playwright
 Crawlee often makes more sense when:
 - the workload is crawl-shaped rather than page-shaped
@@ -113,16 +113,16 @@ Operational identity is still a system concern.
 Framework convenience does not replace crawl discipline.
 ### Prefer raw browser code only when the workflow truly benefits from staying minimal
 Simplicity is contextual.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
 ## Conclusion
 Building scrapers with Crawlee makes sense when the project is large enough to need a framework around execution, not just browser automation alone. Its value comes from turning common crawling concerns—queues, browser pools, handlers, and storage—into a more structured development model.
 The best use of Crawlee is not as a magical shortcut, but as a way to reduce repetitive scraping infrastructure work where that infrastructure is genuinely needed. When the workload is crawl-heavy and repeatable, Crawlee can speed up production readiness. When the workflow is tiny or highly custom, raw browser code may still be the cleaner answer.
-If you want the strongest next reading path from here, continue with [Crawlee web scraping tutorial](https://bytesflows.com/en/blog/crawlee-web-scraping-tutorial), [playwright vs Crawlee for web scraping](https://bytesflows.com/en/blog/playwright-vs-crawlee-comparison), [browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping), and [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers).
+If you want the strongest next reading path from here, continue with [Crawlee web scraping tutorial](https://bytesflows.com/blog/crawlee-web-scraping-tutorial), [playwright vs Crawlee for web scraping](https://bytesflows.com/blog/playwright-vs-crawlee-comparison), [browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping), and [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers).
 ## Further reading
-- [Crawlee web scraping tutorial](https://bytesflows.com/en/blog/crawlee-web-scraping-tutorial)
-- [Playwright vs Crawlee for web scraping](https://bytesflows.com/en/blog/playwright-vs-crawlee-comparison)
-- [Browser automation for web scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping)
-- [Proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers)
-- [Playwright web scraping tutorial](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [The ultimate guide to web scraping in 2026](https://bytesflows.com/en/blog/ultimate-guide-web-scraping-2026)
+- [Crawlee web scraping tutorial](https://bytesflows.com/blog/crawlee-web-scraping-tutorial)
+- [Playwright vs Crawlee for web scraping](https://bytesflows.com/blog/playwright-vs-crawlee-comparison)
+- [Browser automation for web scraping](https://bytesflows.com/blog/browser-automation-web-scraping)
+- [Proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers)
+- [Playwright web scraping tutorial](https://bytesflows.com/blog/playwright-web-scraping-tutorial)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [The ultimate guide to web scraping in 2026](https://bytesflows.com/blog/ultimate-guide-web-scraping-2026)

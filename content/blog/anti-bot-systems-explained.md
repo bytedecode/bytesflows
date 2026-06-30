@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 ## Anti-Bot Systems Work by Judging the Whole Session, Not Just One Request
 Anti-bot systems often feel mysterious because the target does not always tell you exactly why it blocked or challenged the traffic. One request may work, the next may fail, and the same scraper may behave differently in development and production. That happens because modern anti-bot systems usually do not rely on one simple rule. They evaluate many signals together and decide whether the session looks trustworthy enough to allow.
 That is why understanding anti-bot systems is less about memorizing one vendor feature and more about understanding how the scoring layers combine.
-This guide explains the main layers used by anti-bot systems, why websites deploy them, how those layers interact, and what practical changes reduce the likelihood that scraping traffic gets challenged or blocked. It pairs naturally with [how websites detect web scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers), [how bot detection systems work](https://bytesflows.com/en/blog/how-bot-detection-systems-work), and [bypass Cloudflare for web scraping](https://bytesflows.com/en/blog/bypass-cloudflare-web-scraping).
+This guide explains the main layers used by anti-bot systems, why websites deploy them, how those layers interact, and what practical changes reduce the likelihood that scraping traffic gets challenged or blocked. It pairs naturally with [how websites detect web scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers), [how bot detection systems work](https://bytesflows.com/blog/how-bot-detection-systems-work), and [bypass Cloudflare for web scraping](https://bytesflows.com/blog/bypass-cloudflare-web-scraping).
 ## Why Websites Deploy Anti-Bot Systems
 Websites deploy anti-bot systems because repeated automated traffic can create business, security, and operational risk.
 Common motivations include:
@@ -117,16 +117,16 @@ Locale, viewport, route, and session behavior should fit together.
 A good session can still fail under bad traffic rhythm.
 ### Diagnose blocks as multi-layer problems
 The cause is often combined weakness, not one missing header.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker), and [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks).
 ## Conclusion
 Anti-bot systems work by evaluating the whole session: where the traffic comes from, how the request looks, what the browser environment exposes, and how the session behaves over time. That is why blocking often feels unpredictable from the scraper side. The site is not only judging one request. It is judging whether the total pattern looks believable.
 The practical lesson is to stop treating anti-bot resistance as one technical trick. It is a systems problem. Stronger identity, better browser realism, coherent session design, and disciplined pacing all work together to lower the score that anti-bot platforms assign to your traffic. That is what makes the difference between occasional lucky access and a stable scraping workflow.
-If you want the strongest next reading path from here, continue with [how websites detect web scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers), [how bot detection systems work](https://bytesflows.com/en/blog/how-bot-detection-systems-work), [bypass Cloudflare for web scraping](https://bytesflows.com/en/blog/bypass-cloudflare-web-scraping), and [how to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked).
+If you want the strongest next reading path from here, continue with [how websites detect web scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers), [how bot detection systems work](https://bytesflows.com/blog/how-bot-detection-systems-work), [bypass Cloudflare for web scraping](https://bytesflows.com/blog/bypass-cloudflare-web-scraping), and [how to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked).
 ## Further reading
-- [How websites detect web scrapers](https://bytesflows.com/en/blog/how-websites-detect-scrapers)
-- [How bot detection systems work](https://bytesflows.com/en/blog/how-bot-detection-systems-work)
-- [Bypass Cloudflare for web scraping](https://bytesflows.com/en/blog/bypass-cloudflare-web-scraping)
-- [How to scrape websites without getting blocked](https://bytesflows.com/en/blog/scrape-websites-without-getting-blocked)
-- [Browser fingerprinting explained](https://bytesflows.com/en/blog/browser-fingerprinting-explained)
-- [Best proxies for web scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Handling CAPTCHAs in scraping](https://bytesflows.com/en/blog/handling-captchas-in-scraping)
+- [How websites detect web scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers)
+- [How bot detection systems work](https://bytesflows.com/blog/how-bot-detection-systems-work)
+- [Bypass Cloudflare for web scraping](https://bytesflows.com/blog/bypass-cloudflare-web-scraping)
+- [How to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)
+- [Browser fingerprinting explained](https://bytesflows.com/blog/browser-fingerprinting-explained)
+- [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Handling CAPTCHAs in scraping](https://bytesflows.com/blog/handling-captchas-in-scraping)

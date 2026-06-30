@@ -15,7 +15,7 @@ coverImage: "https://images.unsplash.com/photo-1693496481581-04d4ca819560?ixlib=
 ## Proxies and Controlled Crawling Matter in RAG Because Knowledge Bases Decay Without Stable Refresh Pipelines
 RAG systems depend on knowledge that can be refreshed reliably. Help centers change, product docs evolve, blog content expands, and community sources drift over time. If the collection layer cannot keep up, retrieval quality degrades even when embeddings, prompts, and ranking logic remain unchanged. For many teams, the bottleneck is not vectorization itself. It is the crawling pipeline that keeps the knowledge base current.
 That is why proxies and controlled crawling matter so much in RAG knowledge base construction. They turn refresh from an ad hoc scrape into a maintainable ingestion workflow.
-This guide explains how proxies fit into scheduled RAG crawling, why deduplication and change detection matter, and how the full path from collection to vectorized storage should be organized. It pairs naturally with [dynamic proxy in AI data pipelines](https://bytesflows.com/en/blog/ai-dynamic-proxy-technical-implementation), [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers), and [extracting structured data with Python](https://bytesflows.com/en/blog/extracting-structured-data-python).
+This guide explains how proxies fit into scheduled RAG crawling, why deduplication and change detection matter, and how the full path from collection to vectorized storage should be organized. It pairs naturally with [dynamic proxy in AI data pipelines](https://bytesflows.com/blog/ai-dynamic-proxy-technical-implementation), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), and [extracting structured data with Python](https://bytesflows.com/blog/extracting-structured-data-python).
 ## Why RAG Collection Has Different Requirements from One-Time Scraping
 RAG knowledge bases usually need:
 - recurring refresh instead of one-time extraction
@@ -105,15 +105,15 @@ That protects both quality and cost.
 Not every source deserves the same crawl pattern.
 ### Let chunking and vectorization operate on clean, stable collection output
 Downstream quality starts with good upstream fetches.
-Helpful related reading includes [dynamic proxy in AI data pipelines](https://bytesflows.com/en/blog/ai-dynamic-proxy-technical-implementation), [proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers), and [building a Python scraping API](https://bytesflows.com/en/blog/building-python-scraping-api).
+Helpful related reading includes [dynamic proxy in AI data pipelines](https://bytesflows.com/blog/ai-dynamic-proxy-technical-implementation), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), and [building a Python scraping API](https://bytesflows.com/blog/building-python-scraping-api).
 ## Conclusion
 Proxies and controlled crawling matter in RAG because retrieval quality depends on a knowledge base that stays current without turning refresh into chaos. A strong RAG pipeline uses scheduling, proxy-aware collection, deduplication, chunking, and vectorization as one connected system rather than as isolated tools.
 The practical lesson is simple: RAG quality starts upstream. If the crawling layer is unstable, stale, or wasteful, the retrieval system inherits those problems. When the refresh pipeline is designed deliberately, the knowledge base becomes fresher, cheaper to maintain, and much more reliable over time.
 ## Further reading
-- [Dynamic proxy in AI data pipelines](https://bytesflows.com/en/blog/ai-dynamic-proxy-technical-implementation)
-- [Proxy management for large scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers)
-- [Building proxy infrastructure for crawlers](https://bytesflows.com/en/blog/building-proxy-infrastructure-crawlers)
-- [Extracting structured data with Python](https://bytesflows.com/en/blog/extracting-structured-data-python)
-- [Building a Python scraping API](https://bytesflows.com/en/blog/building-python-scraping-api)
-- [Proxy rotation strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [The ultimate guide to web scraping in 2026](https://bytesflows.com/en/blog/ultimate-guide-web-scraping-2026)
+- [Dynamic proxy in AI data pipelines](https://bytesflows.com/blog/ai-dynamic-proxy-technical-implementation)
+- [Proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers)
+- [Building proxy infrastructure for crawlers](https://bytesflows.com/blog/building-proxy-infrastructure-crawlers)
+- [Extracting structured data with Python](https://bytesflows.com/blog/extracting-structured-data-python)
+- [Building a Python scraping API](https://bytesflows.com/blog/building-python-scraping-api)
+- [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [The ultimate guide to web scraping in 2026](https://bytesflows.com/blog/ultimate-guide-web-scraping-2026)

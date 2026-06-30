@@ -79,10 +79,10 @@ That is why modern residential proxies need to behave less like disposable acces
 ## Start Exploring BytesFlows
 BytesFlows is built for teams that want residential proxies to behave like infrastructure: cleaner routing, stronger operational reliability, and a product that fits long-term system design rather than short-lived hacks.
 If that is the kind of proxy layer your workflows need, start here:
-- [Explore Residential Proxies](https://bytesflows.com/en/proxies)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
-- [Proxy Management for Large Scrapers](https://bytesflows.com/en/blog/proxy-management-large-scrapers)
-- [Building Proxy Infrastructure for Crawlers](https://bytesflows.com/en/blog/building-proxy-infrastructure-crawlers)
+- [Explore Residential Proxies](https://bytesflows.com/proxies)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Proxy Management for Large Scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers)
+- [Building Proxy Infrastructure for Crawlers](https://bytesflows.com/blog/building-proxy-infrastructure-crawlers)
 ## Conclusion
 BytesFlows was built around a simple belief: residential proxies should feel like dependable infrastructure, not like temporary hacks held together by marketing language. The future of proxy services belongs to platforms that emphasize routing quality, usable control, and long-term reliability under real workloads.
 That is the standard BytesFlows is built to support.

@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=f
 ## Distributed Scraping Starts When One Machine Stops Being Enough
 A scraper can outgrow a single server for two reasons. The workload may become too large, or the target may require more careful distribution of sessions, routes, and retries than one process can handle cleanly.
 That is where distributed design becomes useful. The goal is not just to add more machines. It is to separate concerns so the system can scale without becoming fragile.
-This guide pairs well with [Web Scraping Architecture Design](https://bytesflows.com/en/blog/web-scraping-architecture-design), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices), and [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale).
+This guide pairs well with [Web Scraping Architecture Design](https://bytesflows.com/blog/web-scraping-architecture-design), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices), and [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale).
 ## What Distribution Actually Solves
 A distributed scraping system usually helps with:
 - larger URL throughput
@@ -79,8 +79,8 @@ These signals show whether distribution is actually improving throughput or simp
 Scaling scrapers with distributed systems is about more than horizontal expansion. It is about creating a design where queues, workers, routes, retries, and storage cooperate cleanly under load.
 When those layers are separated well, distributed scraping becomes far more reliable and far easier to operate at industrial scale.
 ## Further reading
-- [Web Scraping Architecture Design](https://bytesflows.com/en/blog/web-scraping-architecture-design)
-- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices)
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/en/blog/playwright-web-scraping-scale)
+- [Web Scraping Architecture Design](https://bytesflows.com/blog/web-scraping-architecture-design)
+- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/blog/playwright-web-scraping-scale)

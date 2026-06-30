@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=20
 
 Single page applications are difficult to scrape because the page URL often tells only part of the story. The visible content may load after multiple API calls, client-side routing can change state without a full refresh, and the DOM may be incomplete or unstable at first render.
 That is why SPA scraping needs a different approach than simple static-page scraping. This guide explains the main strategies and when each one works best.
-This guide pairs well with [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/en/blog/headless-browser-scraping-guide), [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial), and [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright).
+This guide pairs well with [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/blog/headless-browser-scraping-guide), [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/blog/playwright-web-scraping-tutorial), and [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright).
 ## Why SPAs Break Traditional Scrapers
 Many SPAs present one or more of these problems:
 - empty or near-empty initial HTML
@@ -75,8 +75,8 @@ Good SPA scraping is not only about rendering. It is also about cost and surviva
 Strategies for scraping single page applications work best when the team first understands how the app actually loads data. Browser automation is often the easiest entry point. API interception is often the most efficient production path. Hybrid workflows usually offer the strongest long-term balance.
 When waiting logic, state handling, and route quality are all designed carefully, SPA scraping becomes much more predictable.
 ## Further reading
-- [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/en/blog/headless-browser-scraping-guide)
-- [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial)
-- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/en/blog/scraping-dynamic-websites-playwright)
-- [Scraping JavaScript Websites with Python (2026)](https://bytesflows.com/en/blog/scraping-javascript-websites-python)
-- [How Websites Detect Web Scrapers (2026)](https://bytesflows.com/en/blog/how-websites-detect-web-scrapers)
+- [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/blog/headless-browser-scraping-guide)
+- [Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery](https://bytesflows.com/blog/playwright-web-scraping-tutorial)
+- [Scraping Dynamic Websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright)
+- [Scraping JavaScript Websites with Python (2026)](https://bytesflows.com/blog/scraping-javascript-websites-python)
+- [How Websites Detect Web Scrapers (2026)](https://bytesflows.com/blog/how-websites-detect-web-scrapers)
