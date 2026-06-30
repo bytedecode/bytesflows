@@ -12,7 +12,6 @@ coverImage: "https://images.unsplash.com/photo-1676282824852-4c4d70f76cfe?ixlib=
 ---
 
 ![image](https://images.unsplash.com/photo-1676282827740-7360534b7e75?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb)
-
 ## Introduction
 IP rotation is a foundational capability in modern proxy infrastructure.
 Without proper IP rotation, traffic quickly becomes predictable, traceable, and vulnerable to bans.

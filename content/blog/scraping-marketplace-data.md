@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=f
 ## Why Marketplace Data Is Worth Scraping
 Marketplace data combines catalog coverage, price movement, seller behavior, and demand signals in one environment. That makes it useful for pricing intelligence, seller monitoring, assortment analysis, lead generation, and market research.
 What makes it valuable also makes it difficult. Marketplace pages are often dynamic, heavily paginated, location-aware, and much more defensive than ordinary content sites.
-If you are building pipelines in this space, this article pairs well with [Scraping E-commerce Websites](https://bytesflows.com/blog/scraping-ecommerce-websites), [Scraping Price Comparison Data](https://bytesflows.com/blog/scraping-price-comparison-data), and [Browser Automation for Web Scraping](https://bytesflows.com/blog/browser-automation-web-scraping).
+If you are building pipelines in this space, this article pairs well with [Scraping E-commerce Websites](https://bytesflows.com/en/blog/scraping-ecommerce-websites), [Scraping Price Comparison Data](https://bytesflows.com/en/blog/scraping-price-comparison-data), and [Browser Automation for Web Scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping).
 ## What Marketplace Teams Usually Need to Extract
 A marketplace scraper usually needs more than a product title and a single price. Common targets include:
 - listing URLs and product IDs
@@ -91,7 +91,7 @@ Useful when URLs or parameters are predictable and pages can be revisited direct
 Require interaction and clear post-click waiting conditions.
 ### Infinite scroll
 Need repeated scrolling plus a rule for detecting when no meaningful new cards are appearing.
-This is exactly why [Scraping Infinite Scroll Pages](https://bytesflows.com/blog/scraping-infinite-scroll-pages) is often part of the same implementation stack.
+This is exactly why [Scraping Infinite Scroll Pages](https://bytesflows.com/en/blog/scraping-infinite-scroll-pages) is often part of the same implementation stack.
 ## A Practical Marketplace Architecture
 ```mermaid
 flowchart LR
@@ -108,7 +108,7 @@ Marketplace domains are commercially valuable and usually defended accordingly. 
 - improve geo-specific realism
 - lower concentration on any single visible IP
 - improve session stability on stricter flows
-Foundational reading here includes [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping), [Residential Proxies](https://bytesflows.com/blog/residential-proxies), and [Web Scraping Proxy Architecture](https://bytesflows.com/blog/web-scraping-proxy-architecture).
+Foundational reading here includes [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping), [Residential Proxies](https://bytesflows.com/en/blog/residential-proxies), and [Web Scraping Proxy Architecture](https://bytesflows.com/en/blog/web-scraping-proxy-architecture).
 ## Operational Best Practices
 ### Separate discovery from detail extraction
 This makes the system easier to reason about and easier to scale.
@@ -119,7 +119,7 @@ Do not wait until instability becomes the default.
 ### Validate price and seller fields with schema rules
 Raw strings are not enough for downstream analytics.
 ### Monitor challenge behavior before scaling up
-Use support tools such as [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to verify how a target is responding.
+Use support tools such as [Scraping Test](https://bytesflows.com/en/blog/scraping-test), [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/en/blog/http-header-checker) to verify how a target is responding.
 ## Common Mistakes
 - treating discovery and detail as the same job
 - extracting price without normalization
@@ -130,8 +130,8 @@ Use support tools such as [Scraping Test](https://bytesflows.com/blog/scraping-t
 Scraping marketplace data is valuable because marketplaces compress product, seller, and pricing signals into one environment. But that value comes with technical complexity: dynamic discovery, ambiguous pricing, seller context, and strong anti-bot pressure.
 The most reliable design is usually a two-layer workflow supported by browser automation where the interface demands it, residential proxies for traffic identity, and careful normalization before storage. When those layers are designed together, marketplace data becomes far more stable and far more useful.
 ## Further reading
-- [Scraping E-commerce Websites](https://bytesflows.com/blog/scraping-ecommerce-websites)
-- [Scraping Price Comparison Data](https://bytesflows.com/blog/scraping-price-comparison-data)
-- [Browser Automation for Web Scraping](https://bytesflows.com/blog/browser-automation-web-scraping)
-- [Scraping Infinite Scroll Pages](https://bytesflows.com/blog/scraping-infinite-scroll-pages)
-- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
+- [Scraping E-commerce Websites](https://bytesflows.com/en/blog/scraping-ecommerce-websites)
+- [Scraping Price Comparison Data](https://bytesflows.com/en/blog/scraping-price-comparison-data)
+- [Browser Automation for Web Scraping](https://bytesflows.com/en/blog/browser-automation-web-scraping)
+- [Scraping Infinite Scroll Pages](https://bytesflows.com/en/blog/scraping-infinite-scroll-pages)
+- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)

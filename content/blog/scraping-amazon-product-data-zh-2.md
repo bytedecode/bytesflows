@@ -18,14 +18,14 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 亚马逊不仅仅是封锁你的 IP，它使用的是多层防御体系：
 1.  **“抱歉，我们很忙”错误：** 这是封锁的最常见信号。通常由来自单一 IP 的高频请求触发。
 1.  **狗狗页面 (404/503)：** 如果亚马逊怀疑你是机器人，它有时会展示一张“狗狗宠物”页面，而不是商品数据。
-1.  **动态验证码：** 如果你的 [浏览器指纹](https://bytesflows.com/blog/browser-fingerprinting-explained) 存在异常，亚马逊会弹出复杂的验证码（参见我们的 [验证码处理指南](https://bytesflows.com/blog/handling-captchas-in-scraping)）。
+1.  **动态验证码：** 如果你的 [浏览器指纹](https://bytesflows.com/en/blog/browser-fingerprinting-explained) 存在异常，亚马逊会弹出复杂的验证码（参见我们的 [验证码处理指南](https://bytesflows.com/en/blog/handling-captchas-in-scraping)）。
 ## 成功的实战策略
 ### 1. 住宅代理：绝对的标配
-亚马逊对机房 IP（如 AWS, Azure 等）的打击极其严厉。要成功，你**必须**使用 [动态住宅代理](https://bytesflows.com/blog/residential-proxies)。因为这些 IP 看起来就像在家浏览的普通购物者，亚马逊更有可能向你展示“真实”的价格和库存状态。
+亚马逊对机房 IP（如 AWS, Azure 等）的打击极其严厉。要成功，你**必须**使用 [动态住宅代理](https://bytesflows.com/en/blog/residential-proxies)。因为这些 IP 看起来就像在家浏览的普通购物者，亚马逊更有可能向你展示“真实”的价格和库存状态。
 ### 2. 标头与 Cookie 管理
-亚马逊通过复杂的 Cookie 集来追踪用户会话。如果你发送的请求缺少 `session-id`，你很可能会碰壁。使用像 [Playwright 这样的自动化工具](https://bytesflows.com/blog/playwright-web-scraping-tutorial) 可以帮助你自动处理这些复杂的会话逻辑。
+亚马逊通过复杂的 Cookie 集来追踪用户会话。如果你发送的请求缺少 `session-id`，你很可能会碰壁。使用像 [Playwright 这样的自动化工具](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial) 可以帮助你自动处理这些复杂的会话逻辑。
 ### 3. 地区锁定（地理定位）
-亚马逊会根据 IP 所在地展示不同的价格和库存。如果你需要美国站的数据，你必须使用美国住宅 IP。我们的 [代理轮换策略](https://bytesflows.com/blog/proxy-rotation-strategies) 可以帮助你精确锁定目标区域。
+亚马逊会根据 IP 所在地展示不同的价格和库存。如果你需要美国站的数据，你必须使用美国住宅 IP。我们的 [代理轮换策略](https://bytesflows.com/en/blog/proxy-rotation-strategies) 可以帮助你精确锁定目标区域。
 ## 实战：使用 Playwright 抓取商品详情页
 为了应对亚马逊动态变化的 HTML 结构，我们使用更具弹性的 Locators。
 ```python
@@ -78,4 +78,4 @@ if __name__ == "__main__":
 -   **智能退避 (Backoff)：** 如果某个特定地区的 IP 开始报错，自动放慢频率。
 -   **指纹随机化：** 结合 [浏览器指纹指南](https://bytesflows.com/zh/blog/browser-fingerprinting-explained) 保持真实性。
 ## 总结
-抓取亚马逊的核心不在于如何“打破”规则，而在于如何“融入”其正常的流量中。通过结合 [高信任���的住宅代理](https://bytesflows.com/zh/blog/residential-proxies-improve-scraping) 与 [先进的浏览器自动化技术](https://bytesflows.com/zh/blog/playwright-web-scraping-tutorial)，你可以将亚马逊变成你私属的高级数据接口。
+抓取亚马逊���核心不在于如何“打破”规则，而在于如何“融入”其正常的流量中。通过结合 [高信任度的住宅代理](https://bytesflows.com/zh/blog/residential-proxies-improve-scraping) 与 [先进的浏览器自动化技术](https://bytesflows.com/zh/blog/playwright-web-scraping-tutorial)，你可以将亚马逊变成你私属的高级数据接口。

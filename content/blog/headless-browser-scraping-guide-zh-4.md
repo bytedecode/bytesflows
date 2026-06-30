@@ -31,7 +31,7 @@ coverImage: "https://images.unsplash.com/photo-1550439062-609e1531270e?auto=form
 ### 1. 实施 Stealth 插件
 使用 `playwright-stealth` 等库。这些插件会“修补”反爬脚本监测的浏览器属性，例如硬件并发量、语言设置和字体列表。
 ### 2. 随机化视口 (Viewport) 与 User-Agent
-每一个会话都应该看起来有所不同。使用我们的 [UA 生成器](https://bytesflows.com/blog/user-agent-generator)，避免所有请求都使用相同的 1280x720 分辨率。
+每一个会话都应该看起来有所不同。使用我们的 [UA 生成器](https://bytesflows.com/en/blog/user-agent-generator)，避免所有请求都使用相同的 1280x720 分辨率。
 ### 3. 集成代理管理
 始终将你的浏览器与 [动态住宅代理轮换](https://bytesflows.com/zh/blog/proxy-rotation-strategies) 结合使用。采用“浏览器工厂”模式是管理此类逻辑的最佳实践：
 ```python

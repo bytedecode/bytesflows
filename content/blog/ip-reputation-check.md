@@ -247,5 +247,4 @@ If this checklist is not in place, scaling traffic will create more noise, not m
 ## Final Takeaway
 An IP reputation check is useful only when it leads to a better workflow decision.
 Do not stop at a generic score. Measure route identity, target response, market accuracy, retry cost, and useful output rate. The route that matters is the one that produces correct data at a predictable cost for the target you actually care about.
-
 <!-- notion block: bookmark -->

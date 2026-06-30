@@ -65,7 +65,7 @@ scrape_real_estate_api("https://www.target-real-estate.com/api/v2/search?city=sh
 1.  **重试逻辑:** 房产网站非常敏感。当请求失败时，实施指数退避 (Exponential Backoff) 策略。
 1.  **数据标准化:** 不同站点使用的单位不同（平方英尺 vs 平方米）。在存入数据库前，请将所有数据统一到同一 Schema 下。
 ## 总结
-房地产抓取是一项高收益、高难度的任务。通过将 [先进的住宅代理网络](https://bytesflows.com/zh/blog/residential-proxies) 与 [现代自动化框架](https://bytesflows.com/zh/blog/headless-browser-scraping-guide) 相结合，你可以建立起一个 24/7 透视全球物业市场的窗口。
+房地产抓取是一项高收益、高难度的���务。通过将 [先进的住宅代理网络](https://bytesflows.com/zh/blog/residential-proxies) 与 [现代自动化框架](https://bytesflows.com/zh/blog/headless-browser-scraping-guide) 相结合，你可以建立起一个 24/7 透视全球物业市场的窗口。
 **准备好开始了么？**
 -   学习如何 [在大规模抓取中避免 IP 封禁](https://bytesflows.com/zh/blog/avoid-ip-bans-web-scraping)。
 -   对比 [房地产数据采集的最佳代理方案](https://bytesflows.com/zh/blog/best-proxies-for-web-scraping)。

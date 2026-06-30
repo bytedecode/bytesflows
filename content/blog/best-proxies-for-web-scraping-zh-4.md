@@ -35,7 +35,7 @@ coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=form
 也被称为“静态住宅代理”。这些 IP 托管在数据中心，但使用的是在 ISP 名下注册的地址。
 -   **优点:** 兼具机房的极速与住宅的高信任度。它们不轮换，非常适合需要 [粘性会话 (Sticky Sessions)](https://bytesflows.com/zh/blog/proxy-rotation-strategies) 的场景。
 -   **缺点:** 单个 IP 成本较高，池子规模较小。
--   **最佳用途:** 电商抢购机器人、维护长期的登录状态，以及 SEO 审计。
+-   **最佳用途:** 电商抢购机器��、维护长期的登录状态，以及 SEO 审计。
 ## 5. 快速对比表
 | 代理类型 | 信任评分 | 平均速度 | 被封概率 | 最佳场景 |
 | --- | --- | --- | --- | --- |
@@ -43,7 +43,7 @@ coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=form
 | **住宅代理** | 高 | 中等 | 极低 | [大规模抓取](https://bytesflows.com/zh/blog/scraping-data-at-scale) |
 | **移动代理** | 极高 | 波动大 | 最低 | 处理重度反爬系统 |
 | **静态 ISP** | 高 | 快 | 低 | 账号管理与登录 |
-## 快速集成：��理管理基础
+## 快速集成：代理管理基础
 无论选择哪种代理，你都需要一种管理它们的方法。像 [Crawlee](https://bytesflows.com/zh/blog/crawlee-web-scraping-tutorial) 或 [Playwright](https://bytesflows.com/zh/blog/playwright-web-scraping-tutorial) 这样的专业框架允许你轻松注入代理 URL。
 ```python
 # 使用 Bytesflows 动态住宅代理通道的示例
