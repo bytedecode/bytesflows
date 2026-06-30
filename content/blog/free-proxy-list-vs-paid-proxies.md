@@ -4,7 +4,7 @@ metaTitle: "Free Proxy List vs Paid Proxies: When to Use Each (2026 Guide)"
 metaDescription: Compare free proxy lists and paid residential proxies by reliability, scale, security, and real scraping use cases so you know when each makes sense.
 slug: free-proxy-list-vs-paid-proxies
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["free proxy", "proxy list", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

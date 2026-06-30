@@ -4,7 +4,7 @@ metaTitle: Ubuntu 安装 OpenClaw：本地 AI 工作流第二步
 metaDescription: 一步步讲清如何在 Ubuntu 安装 OpenClaw，包括 Node.js 准备、CLI 安装、本地控制台启动、Token 验证与常见问题排查。
 slug: openclaw-installation-on-ubuntu-part-2
 summary: 一篇实用的 Ubuntu 安装 OpenClaw 指南，涵盖 Node.js 准备、CLI 安装、本地控制台启动、Token 验证与常见问题排查。
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: []
 language: zh
 status: Draft

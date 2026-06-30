@@ -4,7 +4,7 @@ metaTitle: Scraping Dynamic Websites with Playwright (2026 Guide)
 metaDescription: Learn how to scrape dynamic websites with Playwright by handling rendered content, waits, browser sessions, proxies, and anti-block concerns on JavaScript-heavy pages.
 slug: scraping-dynamic-websites-playwright
 summary: A practical guide to scraping dynamic websites with Playwright, covering rendered content, wait strategy, browser-session design, and why dynamic targets need more than static HTTP clients.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "Playwright", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

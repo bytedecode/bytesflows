@@ -4,7 +4,7 @@ metaTitle: Web Scraping with Node.js (2026 Guide)
 metaDescription: Learn how to approach web scraping with Node.js using HTTP clients, browser automation, proxies, and concurrency patterns for real-world scraping workflows.
 slug: web-scraping-nodejs
 summary: A practical guide to web scraping with Node.js, covering when Node is a strong fit, how browser and HTTP tooling differ, and how proxies and concurrency shape real scraping systems.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

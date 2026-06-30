@@ -4,7 +4,7 @@ metaTitle: "The SocksEscort Proxy Botnet Shutdown: What It Means"
 metaDescription: Learn what the SocksEscort proxy botnet shutdown means for scraping, cybersecurity, and why transparent, consent-based proxy infrastructure matters for data teams.
 slug: socksescort-proxy-botnet-shutdown
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Anti-Bot & Security"
+category: Anti-Bot & Security
 tags: ["socksescort", "proxy botnet", "cybersecurity", "residential proxy", "Web Scraping", "proxy infrastructure", "internet security", "data infrastructure"]
 language: en
 status: Draft

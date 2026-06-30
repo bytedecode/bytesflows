@@ -4,7 +4,7 @@ metaTitle: Avoid IP Bans in Automation (2026 Guide)
 metaDescription: Learn how to avoid IP bans in automation in 2026 using route planning, proxy rotation, session design, realistic browser behavior, and domain-aware concurrency.
 slug: avoid-ip-bans-automation
 summary: A practical guide to avoiding IP bans in automation in 2026, covering route planning, proxy rotation, session design, realistic browser behavior, and concurrency control.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["IP bans", "automation", "proxy", "Web Scraping", "Anti-detection"]
 language: en
 status: Draft

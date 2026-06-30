@@ -4,7 +4,7 @@ metaTitle: Google Search Scraping Limitations for SEO Data Teams
 metaDescription: Understand Google search scraping limitations around localization, personalization, SERP volatility, acceptable use, residential proxy setup, evidence capture, and rank data quality.
 slug: google-search-scraping-limitations
 summary: "A practical risk memo for teams collecting Google search data: localization, personalization, SERP volatility, policy constraints, proxy routing, evidence quality, and when residential proxies help or do not help."
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Google search scraping limitations", "SERP scraping", "rank tracking proxies", "SEO data collection", "Residential Proxies"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Web Scraping vs API Data Collection (2026 Guide)
 metaDescription: Compare web scraping and API data collection across reliability, coverage, cost, legal risk, and infrastructure to choose the right data strategy.
 slug: web-scraping-vs-api
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["API", "Comparison", "Data Collection", "Web Scraping"]
 language: en
 status: Draft

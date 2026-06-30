@@ -4,7 +4,7 @@ metaTitle: "Web Scraping at Scale: Best Practices (2026 Guide)"
 metaDescription: Learn web scraping at scale best practices in 2026, including distributed queues, proxy strategy, concurrency control, retries, browser usage, and observability.
 slug: web-scraping-at-scale-best-practices
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["architecture", "proxy", "residential proxy", "scale", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: "AI Web Scraping Explained: Agents, LLMs, Data Extraction"
 metaDescription: Learn how AI web scraping works in 2026 with agents, LLMs, browser automation, validation, and the tradeoffs versus traditional scraping.
 slug: ai-web-scraping-explained
 summary: A practical explanation of AI web scraping in 2026, covering agents, LLMs, browser automation, validation, and tradeoffs versus traditional scraping.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["agents", "data extraction", "LLM", "Web Scraping"]
 language: en
 status: Draft

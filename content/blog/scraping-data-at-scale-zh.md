@@ -4,7 +4,7 @@ metaTitle: 规模化数据抓取：构建现代数据流水线
 metaDescription: 系统讲清规模化数据抓取如何从脚本升级为数据流水线，包括队列、代理编排、浏览器开销、数据存储与扩容策略。
 slug: scraping-data-at-scale
 summary: 一篇系统化的规模化数据抓取指南，涵盖队列、代理编排、浏览器开销、数据存储与扩容策略。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["architecture", "proxy", "residential proxy", "scaling", "Web Scraping"]
 language: zh
 status: Draft

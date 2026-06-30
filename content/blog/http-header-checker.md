@@ -4,7 +4,7 @@ metaTitle: HTTP Header Checker - Request Headers & TLS Fingerprint
 metaDescription: Inspect request headers and TLS clues to understand why sites block your scraper, compare client profiles, and decide when headers are enough or a real browser is needed.
 slug: http-header-checker
 summary: A practical HTTP header checker guide explaining what request headers and TLS clues reveal, how to diagnose mismatches, and when header fixes are not enough.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["http header checker", "tls fingerprint", "request headers", "browser fingerprint"]
 language: en
 status: Draft

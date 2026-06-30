@@ -4,7 +4,7 @@ metaTitle: Scraping Social Media Data (2026 Guide)
 metaDescription: Learn how to scrape social media data in 2026 using browser automation, session-aware proxy routing, and reliable workflows for profiles, posts, trends, and public engagement signals.
 slug: scraping-social-media-data
 summary: A practical guide to scraping social media data in 2026, covering public data collection, platform differences, session-aware scraping, browser automation, and proxy-backed reliability.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Published

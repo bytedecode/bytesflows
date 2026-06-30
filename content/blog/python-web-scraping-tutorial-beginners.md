@@ -4,7 +4,7 @@ metaTitle: Python Web Scraping Tutorial for Beginners (2026 Guide)
 metaDescription: Learn Python web scraping fundamentals with Requests, BeautifulSoup, Playwright, and beginner-friendly guidance on selectors, blocking, and when to use proxies.
 slug: python-web-scraping-tutorial-beginners
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Python", "Web Scraping", "Web scraping tutorial"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: AI-Powered Scraping Pipelines (2026 Guide)
 metaDescription: Learn how to build AI-powered scraping pipelines in 2026 using LLMs for extraction, schema inference, classification, and hybrid selector workflows.
 slug: ai-powered-scraping-pipelines
 summary: A practical guide to AI-powered scraping pipelines in 2026, covering LLM extraction, schema inference, page classification, hybrid workflows, and validation.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["AI", "pipeline", "Web Scraping"]
 language: en
 status: Draft

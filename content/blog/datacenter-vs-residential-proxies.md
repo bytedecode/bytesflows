@@ -4,7 +4,7 @@ metaTitle: Datacenter vs Residential Proxies (2026 Guide)
 metaDescription: Compare datacenter and residential proxies by trust, speed, cost, block rate, and target type so you can choose the right proxy for scraping.
 slug: datacenter-vs-residential-proxies
 summary: A practical comparison of datacenter and residential proxies, covering trust signals, cost, speed, block rates, and when each proxy type actually makes sense.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

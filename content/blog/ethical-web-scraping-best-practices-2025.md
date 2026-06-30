@@ -4,7 +4,7 @@ metaTitle: Ethical Web Scraping Best Practices (2025 Guide)
 metaDescription: Learn ethical web scraping best practices in 2025, including robots.txt, rate limiting, privacy, ToS review, and responsible collection design.
 slug: ethical-web-scraping-best-practices-2025
 summary: A practical guide to ethical web scraping best practices in 2025, covering robots.txt, rate limits, privacy, and responsible data collection.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Ethics", "best practices", "Web Scraping"]
 language: en
 status: Draft

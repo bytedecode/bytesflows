@@ -4,7 +4,7 @@ metaTitle: "Residential vs. Datacenter Proxies: Which Do You Need?"
 metaDescription: Compare residential and datacenter proxies by trust, speed, cost, and workflow fit, and learn which proxy type you actually need for scraping.
 slug: residential-vs-datacenter-proxies
 summary: A practical comparison of residential and datacenter proxies, covering trust, speed, cost, geo realism, and how to choose the right proxy type for your scraping workflow.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Residential Proxies", "Datacenter", "Comparison"]
 language: en
 status: Draft

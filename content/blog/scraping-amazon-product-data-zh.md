@@ -4,7 +4,7 @@ metaTitle: 抓取亚马逊商品数据：开发者权威指南
 metaDescription: 系统讲清亚马逊商品数据抓取的核心难点，包括价格、评论、库存、住宅代理、浏览器自动化与规模化策略。
 slug: scraping-amazon-product-data
 summary: 一篇系统化的亚马逊商品数据抓取指南，涵盖价格、评论、库存、住宅代理、浏览器自动化与规模化策略。
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Amazon", "E-commerce", "product data", "residential proxy", "Web Scraping"]
 language: zh
 status: Draft

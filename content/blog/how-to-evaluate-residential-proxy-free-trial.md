@@ -4,7 +4,7 @@ metaTitle: How to Evaluate a Residential Proxy Free Trial Before You Buy
 metaDescription: Use this residential proxy free trial checklist to evaluate success rate, geo accuracy, session stability, pricing clarity, support quality, and production readiness before buying.
 slug: how-to-evaluate-residential-proxy-free-trial
 summary: A buyer-focused guide for evaluating a residential proxy free trial with real workloads, success metrics, session checks, geo validation, pricing review, and production-readiness criteria.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["residential proxy free trial", "proxy buying guide", "residential proxy evaluation", "proxy pricing", "proxy trial"]
 language: en
 status: Draft

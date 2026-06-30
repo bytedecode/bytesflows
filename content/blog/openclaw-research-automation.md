@@ -4,7 +4,7 @@ metaTitle: OpenClaw for Research and Drafting with Proxies (2026 Guide)
 metaDescription: Learn how to use OpenClaw for multi-source research and drafting workflows with residential proxies, browser automation, throttling, and more reliable web access.
 slug: openclaw-research-automation
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["drafting", "openclaw", "research", "residential proxy"]
 language: en
 status: Draft

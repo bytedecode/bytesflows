@@ -4,7 +4,7 @@ metaTitle: Rotating Proxies for Web Scraping
 metaDescription: Learn how rotating proxies work for web scraping, when to rotate versus stay sticky, and how to reduce blocks without breaking session-dependent workflows.
 slug: rotating-proxies-web-scraping
 summary: A practical guide to rotating proxies for web scraping, covering why rotation reduces pressure, when sticky sessions are better, and how to use rotation without creating new failure patterns.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

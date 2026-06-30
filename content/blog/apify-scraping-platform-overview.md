@@ -4,7 +4,7 @@ metaTitle: Apify Scraping Platform Overview (2026 Guide)
 metaDescription: Learn how Apify works as a scraping platform, including actors, managed infrastructure, storage, proxy support, and when it is better than self-hosted scrapers.
 slug: apify-scraping-platform-overview
 summary: A practical overview of Apify as a scraping platform, covering when managed actors and infrastructure help, where self-hosting still wins, and how to evaluate platform fit.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Apify", "Platform", "Web Scraping"]
 language: en
 status: Draft

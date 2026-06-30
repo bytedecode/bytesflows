@@ -4,7 +4,7 @@ metaTitle: Python 抓取代理指南：住宅代理配置与实战
 metaDescription: 面向 Requests、Scrapy、Playwright 的 Python 抓取代理指南，讲清住宅代理配置、轮换策略、扩容方法与排障思路。
 slug: python-scraping-proxy
 summary: 一篇实用的 Python 抓取代理指南，涵盖 Requests、Scrapy、Playwright 的住宅代理配置、轮换策略、扩容方法与排障思路。
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Python 抓取", "Python 代理", "住宅代理", "爬虫代理", "Playwright 代理"]
 language: zh
 status: Draft

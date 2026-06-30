@@ -4,7 +4,7 @@ metaTitle: "Mastering Crawlee: Web Scraping Tutorial for 2026"
 metaDescription: Learn how to use Crawlee for web scraping in 2026 with queues, crawler types, browser automation, proxy strategy, and scaling best practices.
 slug: crawlee-web-scraping-tutorial
 summary: A practical Crawlee tutorial for 2026 covering crawler types, queues, browser automation, proxy strategy, and scaling best practices.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Playwright", "residential proxy", "Web scraping tutorial"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: SOCKS5 Residential Proxies Guide for Scrapers and Browsers
 metaDescription: Learn when SOCKS5 residential proxies matter for crawlers, browser automation, desktop tools, and proxy testing workflows.
 slug: socks5-residential-proxies-guide
 summary: A practical guide to SOCKS5 residential proxies, when SOCKS5 is useful, how it differs from HTTP proxy settings, and how to test protocol support.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["SOCKS5 residential proxies", "proxy protocols", "browser automation", "proxy test"]
 language: en
 status: Published

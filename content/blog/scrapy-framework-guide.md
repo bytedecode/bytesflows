@@ -4,7 +4,7 @@ metaTitle: Scrapy Framework Guide for Web Scraping (2026)
 metaDescription: Learn how Scrapy works for web scraping with spiders, pipelines, concurrency, proxies, and practical guidance on when Scrapy is the right framework.
 slug: scrapy-framework-guide
 summary: A practical Scrapy framework guide covering spiders, item pipelines, request scheduling, proxy-aware crawling, and when Scrapy is better than browser-based tools.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["crawler", "framework", "Python", "Scrapy", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Proxy Pools for Web Scraping (2026 Guide)
 metaDescription: Learn how proxy pools work for web scraping, including gateway vs list models, pool sizing, concurrency control, rotation strategy, and production reliability.
 slug: proxy-pools-web-scraping
 summary: A practical guide to proxy pools for web scraping, covering gateway vs list models, pool sizing, concurrency, workload segmentation, and how proxy pools affect reliability.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy pool", "residential proxy", "rotation", "Web Scraping"]
 language: en
 status: Published

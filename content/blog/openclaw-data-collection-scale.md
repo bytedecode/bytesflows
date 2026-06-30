@@ -4,7 +4,7 @@ metaTitle: Large-Scale Data Collection with OpenClaw and Proxies (2026 Guide)
 metaDescription: Learn how to run large-scale data collection with OpenClaw using rotating residential proxies, throttling, retries, and proxy-aware browser workflows.
 slug: openclaw-data-collection-scale
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Data Collection", "openclaw", "residential proxy", "scale"]
 language: en
 status: Draft

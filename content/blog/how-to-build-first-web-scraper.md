@@ -4,7 +4,7 @@ metaTitle: 2026 年新手教程：如何构建你的第一个网页爬虫
 metaDescription: 面向新手系统讲清如何构建第一个网页爬虫，包括环境准备、目标选择、基础提取、动态页面处理与防封禁入门。
 slug: how-to-build-first-web-scraper
 summary: 一篇面向新手的网页爬虫入门教程，涵盖环境准备、目标选择、基础提取、动态页面处理与防封禁入门。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["beginner-guide", "first-scraper", "Playwright", "Python", "tutorial"]
 language: zh
 status: Draft

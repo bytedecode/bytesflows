@@ -4,7 +4,7 @@ metaTitle: Scraping JavaScript Websites with Python (2026 Guide)
 metaDescription: Learn how to scrape JavaScript websites with Python in 2026 using Playwright, Selenium, wait strategies, and browser automation for client-rendered pages.
 slug: scraping-javascript-websites-python
 summary: A practical guide to scraping JavaScript websites with Python in 2026, covering browser automation, wait strategy, Playwright versus Selenium, and reliable JS-rendered extraction.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Python", "JavaScript", "Web Scraping"]
 language: en
 status: Draft

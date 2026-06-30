@@ -4,7 +4,7 @@ metaTitle: Scraping Travel Websites (2026 Guide)
 metaDescription: Learn how to scrape travel websites with geo-aware routing, browser sessions, multi-step search handling, and reliable collection of flight and hotel data.
 slug: scraping-travel-websites
 summary: A practical guide to scraping travel websites, covering geo-sensitive pricing, multi-step search flows, session continuity, proxy routing, and reliable collection of travel data.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["use-cases", "Web Scraping"]
 language: en
 status: Draft

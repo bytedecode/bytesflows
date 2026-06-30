@@ -4,7 +4,7 @@ metaTitle: "Introducing BytesFlows: The Future of Residential Proxies"
 metaDescription: Meet BytesFlows, a residential proxy platform built around routing quality, operational reliability, and infrastructure-grade support for scraping, geo-testing, and monitoring.
 slug: introducing-bytesflows-residential-proxies
 summary: An announcement introducing BytesFlows as an engineering-first residential proxy platform focused on reliability, routing quality, and long-term infrastructure use cases.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Launch", "Product"]
 language: en
 status: Draft

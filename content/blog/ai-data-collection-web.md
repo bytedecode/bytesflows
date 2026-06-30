@@ -4,7 +4,7 @@ metaTitle: AI Data Collection from the Web (2026 Guide)
 metaDescription: Learn how AI data collection works across fetching, LLM extraction, agents, proxies, and validation to build scalable web data pipelines for RAG, analytics, and automation.
 slug: ai-data-collection-web
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["agents", "Data Collection", "LLM", "web"]
 language: en
 status: Draft

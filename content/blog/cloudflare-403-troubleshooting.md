@@ -4,7 +4,7 @@ metaTitle: Cloudflare 403 Troubleshooting for Scraping and Browser Workflows
 metaDescription: Diagnose Cloudflare 403 responses safely with response classification, route validation, browser evidence, retry limits, acceptable-use checks, and residential proxy workflow guidance.
 slug: cloudflare-403-troubleshooting
 summary: "A safe troubleshooting playbook for Cloudflare 403 responses in scraping and browser automation workflows: classify target responses, validate route assumptions, reduce noisy retries, define stop conditions, and decide when residential proxies are appropriate."
-category: "Anti-Bot & Security"
+category: Anti-Bot & Security
 tags: ["Cloudflare 403 troubleshooting", "proxy troubleshooting", "browser automation", "web scraping proxies", "Residential Proxies"]
 language: en
 status: Published

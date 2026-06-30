@@ -4,7 +4,7 @@ metaTitle: Python Scraping Performance Optimization (2026 Guide)
 metaDescription: Learn how to optimize Python scraping performance in 2026 using async I/O, connection reuse, memory control, concurrency tuning, and proxy-aware scaling.
 slug: python-scraping-performance-optimization
 summary: A practical guide to Python scraping performance optimization in 2026, covering async I/O, connection reuse, memory control, concurrency tuning, and proxy-aware scaling.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Python", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Geo-Targeted Scraping with Proxies (2026 Guide)
 metaDescription: Learn how geo-targeted scraping works with proxies, including country and city routing, verification, regional session design, and anti-block considerations.
 slug: geo-targeted-scraping-proxies
 summary: A practical guide to geo-targeted scraping with proxies, covering why geography matters, provider models, verification, regional routing, and common data-quality mistakes.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

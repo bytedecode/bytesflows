@@ -4,7 +4,7 @@ metaTitle: Avoiding Blocks When Using OpenClaw for Scraping (2026 Guide)
 metaDescription: Learn how to reduce blocks in OpenClaw scraping workflows with rotating residential proxies, throttling, browser best practices, retries, and anti-bot-aware design.
 slug: openclaw-ai-agent-anti-bot
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["anti-bot", "openclaw", "openclaw scraping", "residential proxy"]
 language: en
 status: Draft

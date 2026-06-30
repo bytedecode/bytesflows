@@ -4,7 +4,7 @@ metaTitle: "Install OpenClaw on Ubuntu: Step 2 of Local AI Workflow"
 metaDescription: Learn how to install OpenClaw on Ubuntu, verify the runtime, access the local UI, use the auth token correctly, and prepare for Ollama integration.
 slug: openclaw-installation-on-ubuntu-part-2
 summary: A practical guide to installing OpenClaw on Ubuntu, covering runtime setup, UI access, auth token handling, and preparation for local Ollama integration.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: []
 language: en
 status: Draft

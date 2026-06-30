@@ -4,7 +4,7 @@ metaTitle: Residential Proxies for Web Scraping (Rotating IPs) | BytesFlows
 metaDescription: Use rotating residential proxies to reduce blocks and improve scraping success. Geo-targeting, sessions, and best practices.
 slug: residential-proxies-web-scraping-rotating-ips
 summary: Use rotating residential proxies for web scraping. Real IPs, lower blocks, better success rates.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Residential Proxies", "rotating proxy", "Web Scraping", "proxy for scraping"]
 language: en
 status: Draft

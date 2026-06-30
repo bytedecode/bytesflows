@@ -4,7 +4,7 @@ metaTitle: Building a Python Scraping API (2026 Guide)
 metaDescription: Learn how to build a Python scraping API with background jobs, proxy integration, structured errors, rate limits, and production-safe service design.
 slug: building-python-scraping-api
 summary: A practical guide to building a Python scraping API, covering async service design, task queues, proxy routing, structured errors, and production safeguards.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Python", "Web Scraping"]
 language: en
 status: Draft

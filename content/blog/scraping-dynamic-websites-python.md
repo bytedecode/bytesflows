@@ -4,7 +4,7 @@ metaTitle: Scraping Dynamic Websites with Python (2026 Guide)
 metaDescription: Learn how to scrape dynamic websites with Python using browser automation, wait strategy, proxies, and the right tool choice for JavaScript-heavy targets.
 slug: scraping-dynamic-websites-python
 summary: A practical guide to scraping dynamic websites with Python, covering when a browser is necessary, how Playwright differs from Selenium, and how to keep dynamic extraction reliable.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Python", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Web Scraping Proxy Architecture (2026 Guide)
 metaDescription: Learn how web scraping proxy architecture works across gateways, rotation logic, failover, health checks, and large-scale routing design.
 slug: web-scraping-proxy-architecture
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

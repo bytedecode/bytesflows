@@ -4,7 +4,7 @@ metaTitle: Geo Targeting with Playwright (2026 Guide)
 metaDescription: Learn how to use geo-targeted proxies with Playwright for regional scraping, including verification, locale alignment, session design, and location-accurate data collection.
 slug: geo-targeting-playwright
 summary: A practical guide to geo targeting with Playwright, covering regional proxy routing, browser context alignment, verification, and how to preserve location accuracy in browser workflows.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Geo targeting", "Playwright", "residential proxy", "Web Scraping", "Location-based"]
 language: en
 status: Draft

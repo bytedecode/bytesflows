@@ -4,7 +4,7 @@ metaTitle: Anti-Bot Systems Explained - How Sites Block Scrapers (2026)
 metaDescription: Learn how anti-bot systems work across IP reputation, TLS, headers, browser fingerprinting, behavior, and challenge logic, and why scraping gets blocked.
 slug: anti-bot-systems-explained
 summary: A practical guide to anti-bot systems, covering network identity, TLS, browser fingerprinting, behavior scoring, and how these layers combine into block decisions.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["anti-bot", "bot detection", "Cloudflare", "fingerprinting"]
 language: en
 status: Draft

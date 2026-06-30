@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: residential-vs-datacenter-proxies
 summary: 深度对比两种主流代理类型的性能、成本及应用场景，助您做出明智的技术选型。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["住宅代理", "数据中心", "对比"]
 language: zh
 status: Draft

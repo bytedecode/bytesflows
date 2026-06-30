@@ -4,7 +4,7 @@ metaTitle: Structured Data Extraction with AI (2026 Guide)
 metaDescription: Learn how to use AI for structured data extraction in 2026, including schema design, validation, chunking, selector fallbacks, and hybrid extraction workflows.
 slug: structured-data-extraction-ai
 summary: A practical guide to structured data extraction with AI in 2026, covering schema-driven prompts, validation, chunking, hybrid selector workflows, and when AI is the right choice.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["AI", "Extraction", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: "Puppeteer Proxy Authentication: Fix 407 Errors and Login Prompts"
 metaDescription: Debug Puppeteer proxy authentication with --proxy-server, page.authenticate, context proxy settings, curl checks, 407 diagnosis, credential handling, and residential proxy workflow rules.
 slug: puppeteer-proxy-authentication
 summary: "A practical guide to Puppeteer proxy authentication: how to separate proxy server config from credentials, fix 407 errors, avoid login prompts, validate routes, and choose residential proxy settings before scaling browser jobs."
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Puppeteer proxy authentication", "Puppeteer proxy", "407 proxy authentication", "browser automation", "Residential Proxies"]
 language: en
 status: Draft

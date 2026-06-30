@@ -4,7 +4,7 @@ metaTitle: "IP Reputation Check for Residential Proxies: What to Measure"
 metaDescription: Learn how to run IP reputation checks for residential proxy workflows by measuring route quality, ASN, geo accuracy, target response, retries, soft blocks, and useful output rate.
 slug: ip-reputation-check
 summary: "A practical IP reputation check guide for residential proxy users: how to judge route quality, ASN, geo accuracy, target response, soft blocks, retry cost, and useful output before scaling scraping or browser automation."
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["IP reputation check", "proxy quality", "Residential Proxies", "proxy validation", "web scraping proxies"]
 language: en
 status: Draft

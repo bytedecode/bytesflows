@@ -4,14 +4,14 @@ metaTitle: Proxies and Crawling in RAG Knowledge Base Construction
 metaDescription: Learn how proxies fit into RAG knowledge base construction, including scheduled crawling, deduplication, proxy-aware collection, chunking, vectorization, and storage design.
 slug: rag-crawler-with-proxy-technical-implementation
 summary: A practical technical guide to using proxies and controlled crawling in RAG knowledge base construction, from scheduled collection and deduplication to chunking, vectorization, and storage.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Technical", "AI"]
 language: en
 status: Draft
 coverImage: "https://images.unsplash.com/photo-1693496481581-04d4ca819560?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
 ---
 
-![RAG crawling with proxy architecture](https://images.unsplash.com/photo-1693496481581-04d4ca819560?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb)
+![image](https://images.unsplash.com/photo-1693496481581-04d4ca819560?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb)
 ## Proxies and Controlled Crawling Matter in RAG Because Knowledge Bases Decay Without Stable Refresh Pipelines
 RAG systems depend on knowledge that can be refreshed reliably. Help centers change, product docs evolve, blog content expands, and community sources drift over time. If the collection layer cannot keep up, retrieval quality degrades even when embeddings, prompts, and ranking logic remain unchanged. For many teams, the bottleneck is not vectorization itself. It is the crawling pipeline that keeps the knowledge base current.
 That is why proxies and controlled crawling matter so much in RAG knowledge base construction. They turn refresh from an ad hoc scrape into a maintainable ingestion workflow.

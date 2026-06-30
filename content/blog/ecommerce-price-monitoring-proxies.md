@@ -4,7 +4,7 @@ metaTitle: E-commerce Price Monitoring with Residential Proxies
 metaDescription: Learn how residential proxies support e-commerce price monitoring, stock checks, currency validation, regional storefront intelligence, and reliable pricing operations.
 slug: ecommerce-price-monitoring-proxies
 summary: A practical guide for e-commerce and revenue teams using residential proxies to monitor prices, stock, promotions, currency, delivery region, and marketplace visibility without confusing collection errors with business signals.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["price monitoring proxies", "ecommerce scraping", "catalog monitoring", "marketplace intelligence", "Residential Proxies"]
 language: en
 status: Published

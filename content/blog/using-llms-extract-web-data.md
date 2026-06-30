@@ -4,7 +4,7 @@ metaTitle: Using LLMs to Extract Web Data (2026 Guide)
 metaDescription: Learn when to use LLMs to extract web data, how to build hybrid scraping pipelines, and how to control cost, validation, and fetch reliability.
 slug: using-llms-extract-web-data
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["AI Scraping", "Web Scraping"]
 language: en
 status: Draft

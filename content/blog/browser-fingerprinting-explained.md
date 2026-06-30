@@ -4,7 +4,7 @@ metaTitle: "Browser Fingerprinting Explained: The Hidden Tracker"
 metaDescription: Learn how browser fingerprinting works, what sites measure, and why fingerprint consistency, browser realism, and route quality matter for scraping detection.
 slug: browser-fingerprinting-explained
 summary: A practical explanation of browser fingerprinting, covering what sites measure, why fingerprint consistency matters, and how browser identity affects scraping detection.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "browser-fingerprinting", "Privacy", "Security", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: The Ultimate Guide to Headless Browser Scraping in 2026
 metaDescription: Learn headless browser scraping in 2026, including Playwright, headless versus headed tradeoffs, stealth strategy, resource control, and proxy-backed scaling.
 slug: headless-browser-scraping-guide
 summary: A practical guide to headless browser scraping in 2026, covering Playwright, stealth strategy, browser tradeoffs, and proxy-backed scaling.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["browser automation", "Playwright", "residential proxy"]
 language: en
 status: Draft

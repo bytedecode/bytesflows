@@ -4,7 +4,7 @@ metaTitle: Proxy Management for Large Scrapers (2026 Guide)
 metaDescription: Learn how to manage proxies for large scrapers with better pool sizing, routing modes, failover design, monitoring, and proxy-aware scaling.
 slug: proxy-management-large-scrapers
 summary: A practical guide to proxy management for large scrapers, covering capacity planning, routing strategy, failover logic, monitoring, and when proxy infrastructure starts to fail.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

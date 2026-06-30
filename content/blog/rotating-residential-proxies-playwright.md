@@ -4,7 +4,7 @@ metaTitle: Rotating Residential Proxies with Playwright
 metaDescription: Learn how to use rotating residential proxies with Playwright, including new-browser rotation, sticky-session tradeoffs, retry design, and anti-detection basics.
 slug: rotating-residential-proxies-playwright
 summary: A practical guide to rotating residential proxies with Playwright, covering when browser-level rotation helps, when sticky sessions are safer, and how to keep rotation aligned with real browser workflows.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Rotating proxies", "residential proxy", "Playwright", "Web Scraping", "Proxy Rotation"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Multi-Agent OpenClaw and Proxy Routing (2026 Guide)
 metaDescription: Learn how to route multi-agent OpenClaw browser traffic through residential proxies with shared gateways, per-skill configuration, and safer parallel scaling.
 slug: openclaw-multi-agent-proxy
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["multi-agent", "openclaw", "proxy", "residential proxy"]
 language: en
 status: Draft

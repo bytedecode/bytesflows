@@ -4,7 +4,7 @@ metaTitle: Scraping Infinite Scroll Pages (2026 Guide)
 metaDescription: Learn how to scrape infinite scroll pages in 2026 using Playwright, sticky sessions, scroll-state detection, and reliable extraction without missing dynamically loaded items.
 slug: scraping-infinite-scroll-pages
 summary: A practical guide to scraping infinite scroll pages in 2026, covering scroll-state logic, sticky sessions, wait strategy, and reliable extraction on dynamic feeds.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Infinite Scroll", "Playwright", "Web Scraping"]
 language: en
 status: Draft

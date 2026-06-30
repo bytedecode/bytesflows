@@ -4,7 +4,7 @@ metaTitle: 精通 Crawlee：2026 年最全的网页抓取实战教程
 metaDescription: 系统讲清 Crawlee 为什么适合生产级抓取，包括统一爬虫接口、请求队列、代理配置、自动伸缩与反爬实践。
 slug: crawlee-web-scraping-tutorial
 summary: 一篇系统化的 Crawlee 实战教程，涵盖统一接口、请求队列、代理配置、自动伸缩与反爬实践。
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Crawlee", "Playwright", "residential proxy", "typescript", "Web Scraping"]
 language: zh
 status: Draft

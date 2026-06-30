@@ -4,7 +4,7 @@ metaTitle: BeautifulSoup vs Scrapy vs Playwright for Web Scraping (2026 Guide)
 metaDescription: Compare BeautifulSoup, Scrapy, and Playwright for web scraping by target type, scale, cost, and architecture so you can choose the right tool or hybrid stack.
 slug: beautifulsoup-vs-scrapy-vs-playwright
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["BeautifulSoup", "Comparison", "Playwright", "Python", "Scrapy"]
 language: en
 status: Draft

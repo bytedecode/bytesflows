@@ -4,7 +4,7 @@ metaTitle: How Residential Proxies Improve Scraping Success (2026 Guide)
 metaDescription: Learn why residential proxies improve scraping success through stronger trust signals, better geo realism, and lower block rates on modern anti-bot-protected targets.
 slug: residential-proxies-improve-scraping
 summary: A practical guide to why residential proxies improve scraping success, covering trust signals, datacenter disadvantages, geo realism, browser workflows, and when residential IPs matter most.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "residential-proxies", "Web Scraping"]
 language: en
 status: Draft

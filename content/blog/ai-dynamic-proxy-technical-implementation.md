@@ -4,7 +4,7 @@ metaTitle: "Dynamic Proxy in AI Data Pipelines: Analysis and Technical Implement
 metaDescription: Learn how dynamic proxies fit into AI data pipelines for RAG, training, and ingestion, including architecture, rotation models, retries, observability, and Python integration.
 slug: ai-dynamic-proxy-technical-implementation
 summary: A practical guide to dynamic proxies in AI data pipelines, covering why AI collection systems need rotating or sticky routing and how to integrate proxy-aware collection into production data workflows.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Technical", "Proxies", "AI", "Proxy Rotation"]
 language: en
 status: Draft

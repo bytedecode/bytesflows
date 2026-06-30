@@ -4,7 +4,7 @@ metaTitle: Extracting Structured Data with Python (2026 Guide)
 metaDescription: Learn how to extract structured data with Python using durable selectors, parser choices, validation rules, and browser-based extraction when HTML alone is not enough.
 slug: extracting-structured-data-python
 summary: A practical guide to extracting structured data with Python, covering parser choice, selector durability, validation, and how to keep extracted fields reliable over time.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Python", "Extraction", "Web Scraping"]
 language: en
 status: Draft

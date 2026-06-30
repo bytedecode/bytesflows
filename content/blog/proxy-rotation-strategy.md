@@ -4,7 +4,7 @@ metaTitle: "Proxy Rotation Strategy: Rotating vs Sticky Sessions and Retries"
 metaDescription: "Design a proxy rotation strategy for residential proxies: request rotation, sticky sessions, retry rules, geo targeting, browser contexts, SERP monitoring, and production logging."
 slug: proxy-rotation-strategy
 summary: "A practical proxy rotation strategy guide for scraping, browser automation, SERP monitoring, and market data workflows: when to rotate, when to keep sticky sessions, how to retry, and what to log before scaling residential proxy traffic."
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy rotation strategy", "rotating residential proxies", "sticky residential proxies", "proxy retries", "Residential Proxies"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: best-proxies-for-web-scraping
 summary: 并非所有代理都是平等的。对比机房代理、住宅代理、移动代理和 ISP 代理，为你的抓取项目在成本、速度和成功率之间找到完美平衡。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["web-scraping", "proxy-networks", "residential-proxies", "mobile-proxies", "data-extraction"]
 language: zh
 status: Published

@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: future-internet-privacy-proxy-technology
 summary: 探索高效、合规和人工智能驱动的代理网络的演变。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["隐私", "人工智能", "未来"]
 language: zh
 status: Draft

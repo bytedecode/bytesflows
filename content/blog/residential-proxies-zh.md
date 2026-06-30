@@ -4,7 +4,7 @@ metaTitle: 网页抓取住宅代理：动态轮换住宅 IP
 metaDescription: 面向网页抓取的住宅代理指南，讲清动态轮换、Sticky 会话、使用场景、上线清单、成本评估与常见误区。
 slug: residential-proxies
 summary: 一篇面向网页抓取的住宅代理实战指南，涵盖动态轮换、Sticky 会话、适用场景、上线清单、成本评估与常见误区。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["住宅代理", "动态代理", "网页抓取", "抓取代理", "轮换 IP"]
 language: zh
 status: Published

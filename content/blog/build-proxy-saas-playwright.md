@@ -4,7 +4,7 @@ metaTitle: Build a Proxy SaaS with Playwright (2026 Guide)
 metaDescription: Learn how to build a proxy SaaS with Playwright using job queues, browser workers, proxy allocation, usage tracking, retries, and operational safeguards.
 slug: build-proxy-saas-playwright
 summary: A practical guide to building a proxy SaaS with Playwright, covering job architecture, worker design, proxy allocation, billing logic, and what makes the platform operationally viable.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Proxy SaaS", "Playwright", "Web Scraping", "SaaS", "Proxy business"]
 language: en
 status: Draft

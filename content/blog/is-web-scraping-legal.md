@@ -4,7 +4,7 @@ metaTitle: Is Web Scraping Legal? What Developers Need to Know (2026 Guide)
 metaDescription: Learn how developers should think about web scraping legality across public data, ToS, privacy law, access controls, and practical risk management.
 slug: is-web-scraping-legal
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["compliance", "GDPR", "legal", "ToS", "Web Scraping"]
 language: en
 status: Draft

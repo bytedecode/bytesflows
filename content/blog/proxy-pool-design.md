@@ -4,7 +4,7 @@ metaTitle: Designing Proxy Pool Systems for Scraping
 metaDescription: Learn how to design proxy pool systems for scraping with better identity allocation, health management, segmentation, cooldown logic, and routing control.
 slug: proxy-pool-design
 summary: A practical guide to designing proxy pool systems, covering identity allocation, cooldown logic, health management, segmentation, and when managed versus self-built control makes sense.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy pool", "Proxy design", "Web Scraping", "Infrastructure", "scaling"]
 language: en
 status: Draft

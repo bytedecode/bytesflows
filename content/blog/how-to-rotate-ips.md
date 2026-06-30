@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: how-to-rotate-ips
 summary: 了解轮换 IP 的最佳实践，以保持匿名并避免在大批量抓取过程中出现阻塞。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["指南", "技术"]
 language: zh
 status: Draft
@@ -80,7 +80,7 @@ IP 轮换应当融入整体流量架构。
 BytesFlows 面向的是**长期、稳定的代理与流量系统**。
 你将获得：
 - 稳定、干净的出口节点
-- 可预测的轮换行为
+- 可预��的轮换行为
 - 控制台级精细化配置
 - 面向生产环境的基础设施
 ---

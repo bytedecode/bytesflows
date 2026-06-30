@@ -4,7 +4,7 @@ metaTitle: Building Proxy Infrastructure for Crawlers (2026 Guide)
 metaDescription: Learn how to build proxy infrastructure for crawlers with gateways or proxy lists, including health checks, routing logic, capacity planning, and worker design.
 slug: building-proxy-infrastructure-crawlers
 summary: A practical guide to building proxy infrastructure for crawlers, covering gateway vs list models, routing control, health logic, capacity planning, and worker integration.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy", "Infrastructure", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: SocksEscort 代理僵尸网络被关停：意味着什么
 metaDescription: 解析 SocksEscort 代理僵尸网络被关停事件，说明其对网页抓取、住宅代理合规性与网络基础设施选型的影响。
 slug: socksescort-proxy-botnet-shutdown
 summary: 一篇解析 SocksEscort 代理僵尸网络被关停事件的文章，重点说明其对网页抓取、住宅代理合规性与基础设施选型的启示。
-category: "Anti-Bot & Security"
+category: Anti-Bot & Security
 tags: ["socksescort", "proxy botnet", "cybersecurity", "residential proxy", "Web Scraping", "proxy infrastructure"]
 language: zh
 status: Draft

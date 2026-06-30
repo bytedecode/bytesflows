@@ -4,7 +4,7 @@ metaTitle: Building Scrapers with Crawlee (2026 Guide)
 metaDescription: Learn how to build scrapers with Crawlee using browser pools, queues, storage, and proxy routing, and when Crawlee is better than raw Playwright or Puppeteer.
 slug: building-scrapers-crawlee
 summary: A practical guide to building scrapers with Crawlee, covering what the framework abstracts, when it beats raw browser code, and how queues, proxies, and browser pools fit together.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["Crawlee", "Web Scraping"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: "Social Listening on OpenClaw: Twitter, Reddit, TikTok"
 metaDescription: Learn how to build social listening workflows with OpenClaw in 2026 for Twitter, Reddit, and TikTok using browser automation, proxy routing, and event pipelines.
 slug: openclaw-social-media-scraping-proxy
 summary: A practical guide to building social listening workflows with OpenClaw across Twitter, Reddit, and TikTok using browser automation and proxy routing.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["openclaw", "residential proxy", "social media scraping", "twitter scraping"]
 language: en
 status: Draft

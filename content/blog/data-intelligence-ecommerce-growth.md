@@ -4,7 +4,7 @@ metaTitle: Leveraging Data Intelligence for E-commerce Growth
 metaDescription: Learn how e-commerce teams use data intelligence for growth through pricing, inventory, reviews, trend detection, and market monitoring.
 slug: data-intelligence-ecommerce-growth
 summary: A practical guide to using data intelligence for e-commerce growth through pricing, inventory, reviews, trend detection, and market monitoring.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["E-commerce", "Big Data", "Strategy"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: Scraping Marketplace Data (2026 Guide)
 metaDescription: Learn how to scrape marketplace data in 2026 with discovery-detail pipelines, browser automation, residential proxies, and reliable extraction of price and seller data.
 slug: scraping-marketplace-data
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["use-cases", "Web Scraping"]
 language: en
 status: Draft

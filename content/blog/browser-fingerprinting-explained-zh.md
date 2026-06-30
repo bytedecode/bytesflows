@@ -4,7 +4,7 @@ metaTitle: 浏览器指纹深度解析：隐藏的追踪器
 metaDescription: 系统讲清浏览器指纹如何工作，以及 Canvas、WebGL、音频、视口、硬件信息和 Stealth 策略如何影响抓取检测。
 slug: browser-fingerprinting-explained
 summary: 一篇系统化的浏览器指纹解析文章，涵盖 Canvas、WebGL、音频、视口、硬件信息和 Stealth 策略。
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "browser-fingerprinting", "Privacy", "Security", "Web Scraping"]
 language: zh
 status: Draft

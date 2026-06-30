@@ -4,7 +4,7 @@ metaTitle: "Playwright Proxy Errors: 407, Tunnel Failures, Timeouts, Wrong Geo"
 metaDescription: Debug Playwright proxy errors with curl checks, launch and context proxy examples, 407 fixes, tunnel failure diagnosis, sticky session rules, and wrong-geo troubleshooting.
 slug: playwright-proxy-errors
 summary: "A field guide to debugging Playwright proxy errors: 407 authentication failures, tunnel errors, timeouts, wrong-country output, sticky sessions, and when to blame the target instead of the proxy."
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Playwright proxy errors", "Playwright proxy", "407 proxy authentication", "browser automation", "Residential Proxies"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: "Ethical Scraping with OpenClaw: Best Practices"
 metaDescription: Learn ethical scraping best practices with OpenClaw in 2026, including robots.txt, rate limits, residential proxies, personal data, and human review.
 slug: openclaw-ethical-scraping
 summary: A practical guide to ethical scraping with OpenClaw, covering robots.txt, rate limits, proxies, privacy, and responsible workflow design.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["AI agent", "ethical scraping", "openclaw", "robots.txt"]
 language: en
 status: Draft

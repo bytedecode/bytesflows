@@ -4,7 +4,7 @@ metaTitle: OpenClaw Skills for Scraping and Proxy Integration (2026 Guide)
 metaDescription: Learn how to build OpenClaw scraping skills with Playwright and residential proxies, including browser launch setup, environment variables, throttling, and validation.
 slug: openclaw-skills-scraping
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["openclaw", "openclaw skills", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

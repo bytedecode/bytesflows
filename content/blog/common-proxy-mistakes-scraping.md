@@ -4,7 +4,7 @@ metaTitle: Common Proxy Mistakes in Scraping (2026)
 metaDescription: Learn the most common proxy mistakes in scraping, from weak route selection to bad rotation and retry logic, and how to avoid them in production.
 slug: common-proxy-mistakes-scraping
 summary: A practical guide to common proxy mistakes in scraping, covering weak route choice, bad rotation logic, poor retries, and the operational habits that prevent avoidable blocks.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

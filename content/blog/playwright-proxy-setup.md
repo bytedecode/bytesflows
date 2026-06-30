@@ -4,7 +4,7 @@ metaTitle: Playwright Proxy Setup Guide (2026)
 metaDescription: Learn how to configure proxies in Playwright, choose rotating vs sticky sessions, verify exit identity, and improve browser-based scraping reliability.
 slug: playwright-proxy-setup
 summary: A practical Playwright proxy setup guide covering launch configuration, rotation vs sticky sessions, browser identity, verification, and anti-block behavior.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Playwright", "Proxy setup", "residential proxy", "Web Scraping", "browser automation"]
 language: en
 status: Published

@@ -4,7 +4,7 @@ metaTitle: ""
 metaDescription: ""
 slug: headless-browser-scraping-guide
 summary: 掌握 2026 年浏览器自动化的核心艺术。深入了解为什么无头浏览器是现代动态网页提取的必然选择，以及如何利用 Stealth 策略和动态住宅代理实现大规模、无感知的隐身抓取。
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["web-scraping", "headless-browser", "automation", "Playwright", "puppeteer", "proxy"]
 language: zh
 status: Draft

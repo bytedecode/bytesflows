@@ -4,7 +4,7 @@ metaTitle: "Scraping Data at Scale: Building the Modern Data Pipeline"
 metaDescription: Learn how to scrape data at scale with queue-based architecture, proxy orchestration, browser control, observability, and resilient scraping workflow design.
 slug: scraping-data-at-scale
 summary: A practical guide to scraping data at scale, covering queue-based architecture, proxy orchestration, browser workload control, observability, and how to keep large crawls reliable.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["architecture", "proxy", "residential proxy", "scaling", "Web Scraping"]
 language: en
 status: Draft

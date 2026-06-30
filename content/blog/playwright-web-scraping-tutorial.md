@@ -4,7 +4,7 @@ metaTitle: "Playwright Web Scraping Tutorial: From Basics to Anti-Bot Mastery"
 metaDescription: Learn Playwright web scraping step by step, including contexts, dynamic rendering, infinite scroll, residential proxies, and practical anti-block habits.
 slug: playwright-web-scraping-tutorial
 summary: A practical Playwright web scraping tutorial covering contexts, dynamic pages, infinite scroll, browser realism, proxy use, and the first steps toward production reliability.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "Playwright", "tutorial", "Web Scraping", "Web scraping tutorial"]
 language: en
 status: Draft

@@ -4,7 +4,7 @@ metaTitle: "Future of AI Web Scraping: What Changes Next"
 metaDescription: Explore the future of AI web scraping in 2026, including agents, browser automation, adaptive extraction, anti-bot pressure, and human review.
 slug: future-of-ai-web-scraping
 summary: A practical guide to the future of AI web scraping in 2026, covering agents, browser automation, adaptive extraction, anti-bot pressure, and human review.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

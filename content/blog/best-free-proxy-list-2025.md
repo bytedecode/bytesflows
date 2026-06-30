@@ -4,7 +4,7 @@ metaTitle: Best Free Proxy List for Developers (2026 Guide)
 metaDescription: Learn how to use free proxy lists for testing and development, how to validate proxy nodes, and when paid residential proxies are the better long-term choice.
 slug: best-free-proxy-list-2025
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["free proxy", "iprobe", "proxy list", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

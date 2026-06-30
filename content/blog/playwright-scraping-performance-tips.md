@@ -4,7 +4,7 @@ metaTitle: Playwright Scraping Performance Tips (2026 Guide)
 metaDescription: Learn how to improve Playwright scraping performance through browser reuse, lighter waits, asset blocking, concurrency control, and proxy-aware efficiency.
 slug: playwright-scraping-performance-tips
 summary: A practical guide to Playwright scraping performance, covering browser reuse, wait strategy, asset control, concurrency, and how to speed up automation without collapsing reliability.
-category: "Web Scraping & Engineering"
+category: Web Scraping & Engineering
 tags: ["Playwright", "Performance", "Web Scraping"]
 language: en
 status: Draft

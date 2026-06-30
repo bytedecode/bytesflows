@@ -4,7 +4,7 @@ metaTitle: How to Test a Proxy Before Scaling a Scraping Job
 metaDescription: Learn how to test proxy connectivity, target reachability, protocol support, sessions, and output quality before scaling scraping traffic.
 slug: how-to-test-a-proxy
 summary: A practical checklist for testing proxy connectivity, location, protocol support, target reachability, session behavior, and output quality before scaling a scraping job.
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["proxy test", "proxy checker", "proxy troubleshooting", "scraping QA"]
 language: en
 status: Draft

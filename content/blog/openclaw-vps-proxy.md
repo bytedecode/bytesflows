@@ -4,7 +4,7 @@ metaTitle: Running OpenClaw on a VPS with Residential Proxies (2026 Guide)
 metaDescription: Learn how to run OpenClaw on a VPS while routing browser traffic through residential proxies for better reliability, safer scaling, and fewer datacenter-IP blocks.
 slug: openclaw-vps-proxy
 summary: A practical guide to estimating how many proxies you need for web scraping, based on request volume, target difficulty, concurrency, rotation mode, and acceptable block rates.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["openclaw", "residential proxy", "VPS"]
 language: en
 status: Draft

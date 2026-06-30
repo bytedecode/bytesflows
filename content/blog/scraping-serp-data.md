@@ -4,7 +4,7 @@ metaTitle: Scraping Search Engine Results (2026 Guide)
 metaDescription: Learn how to scrape search engine results in 2026 using browser-aware workflows, proxy routing, localization controls, and reliable SERP extraction for rankings and SEO research.
 slug: scraping-serp-data
 summary: A practical guide to scraping search engine results in 2026, covering SERP structure, localization, browser-aware extraction, anti-bot pressure, and reliable ranking data collection.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

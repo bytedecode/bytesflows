@@ -4,7 +4,7 @@ metaTitle: "Proxy Provider Red Flags: Residential Proxy Buyer Checklist"
 metaDescription: "Learn the proxy provider red flags buyers should check before choosing residential proxies: sourcing transparency, pricing, trials, geo coverage, sessions, support, and output reliability."
 slug: proxy-provider-red-flags
 summary: "A practical proxy provider red flags checklist for teams buying residential proxies: suspicious pricing, unclear sourcing, vague geo claims, weak trial data, poor session controls, missing support, and risky provider promises."
-category: "Anti-Bot & Security"
+category: Anti-Bot & Security
 tags: ["proxy provider red flags", "residential proxy provider", "proxy buying guide", "ethical residential proxies", "proxy comparison"]
 language: en
 status: Draft

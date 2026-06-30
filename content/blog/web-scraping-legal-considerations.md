@@ -4,7 +4,7 @@ metaTitle: Web Scraping Legal Considerations (2026 Guide)
 metaDescription: Learn the main legal considerations for web scraping in 2026, including public data, ToS, privacy, access controls, and practical compliance questions.
 slug: web-scraping-legal-considerations
 summary: A practical guide to web scraping legal considerations in 2026, covering public data, ToS, privacy, access controls, and compliance questions.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["automation", "proxy", "residential proxy", "Web Scraping"]
 language: en
 status: Draft

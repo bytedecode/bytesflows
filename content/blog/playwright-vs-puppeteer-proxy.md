@@ -4,7 +4,7 @@ metaTitle: "Playwright vs Puppeteer: Proxy Support Comparison"
 metaDescription: Compare Playwright vs Puppeteer for proxy support by configuration model, session flexibility, rotation workflows, and what each framework handles best in scraping.
 slug: playwright-vs-puppeteer-proxy
 summary: A practical comparison of Playwright vs Puppeteer for proxy support, covering configuration style, session design, rotation limits, and what proxy workflows each framework fits best.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["Playwright", "puppeteer", "proxy", "browser automation", "Web Scraping"]
 language: en
 status: Draft

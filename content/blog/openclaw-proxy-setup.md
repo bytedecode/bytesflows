@@ -4,7 +4,7 @@ metaTitle: "OpenClaw Proxy Setup: A Practical Field Guide (2026)"
 metaDescription: "A hands-on OpenClaw proxy setup guide: where proxy settings should live, how browser tasks inherit them, and how to choose rotating or sticky residential sessions."
 slug: openclaw-proxy-setup
 summary: OpenClaw is the orchestration layer, not the network layer. This guide walks through implementation details, validation steps, and production troubleshooting for proxy-backed browser workflows.
-category: "AI Agents & Automation"
+category: AI Agents & Automation
 tags: ["openclaw", "openclaw proxy setup", "residential proxy", "AI agents", "browser automation", "Playwright proxy"]
 language: en
 status: Published

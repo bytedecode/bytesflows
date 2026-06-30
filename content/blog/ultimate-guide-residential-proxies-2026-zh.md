@@ -4,7 +4,7 @@ metaTitle: 住宅代理终极指南（2026）：原理、场景与选型 | Bytes
 metaDescription: 住宅代理是什么、如何工作、适合哪些数据采集场景？本文从原理到选型要点，帮你在 2026 做出正确选择。
 slug: ultimate-guide-residential-proxies-2026-zh
 summary: 深入了解住宅代理的工作原理，为什么它们对数据采集至关重要，以及如何为您的业务选择合适的提供商。
-category: "Proxy Guides & Benchmark"
+category: Proxy Guides & Benchmark
 tags: ["代理", "数据采集", "指南"]
 language: zh
 status: Draft
