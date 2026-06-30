@@ -30,7 +30,7 @@ coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=f
 ### 2. 指纹随机化
 关键不是要变得“不可见”，而是要看起来像一组多变且真实的真实用户。
 -   **随机化视口：** 不要总是使用 1280x720。
--   **轮换 User-Agent：** 使用我们的 [UA 生成器](https://bytesflows.com/en/blog/user-agent-generator) 来匹配你的浏览器版本。
+-   **轮换 User-Agent：** 使用我们的 [UA 生成器](https://bytesflows.com/blog/user-agent-generator) 来匹配你的浏览器版本。
 -   **伪造 Canvas/WebGL：** 高级工具可以在渲染过程中添加微小的“噪声”，使每一个会话看起来都是唯一的。
 ### 3. 高质量代理
 如果你的 IP 来自被标记的机房，干净的指纹也无济于事。务必将指纹管理与 [动态住宅代理](https://bytesflows.com/zh/blog/residential-proxies) 结合使用。这确保了你的“身份”(IP) 和“行为”(指纹) 看起来都像人类。

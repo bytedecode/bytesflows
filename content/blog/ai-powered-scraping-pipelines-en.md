@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=f
 
 ## AI Changes Pipelines Most When It Improves Decisions
 AI-powered scraping is not only about replacing selectors with LLM prompts. Its biggest impact often comes from helping a pipeline make better decisions: what kind of page is this, which extractor should run, what schema fits, and when a record looks wrong.
-That is why the best AI-powered scraping systems are usually hybrid systems rather than all-AI systems. This guide pairs well with [Structured Data Extraction with AI (2026)](https://bytesflows.com/en/blog/structured-data-extraction-ai), [AI Data Extraction vs Traditional Scraping (2026)](https://bytesflows.com/en/blog/ai-data-extraction-vs-traditional-scraping), and [Using LLMs to Extract Web Data (2026)](https://bytesflows.com/en/blog/using-llms-extract-web-data).
+That is why the best AI-powered scraping systems are usually hybrid systems rather than all-AI systems. This guide pairs well with [Structured Data Extraction with AI (2026)](https://bytesflows.com/blog/structured-data-extraction-ai), [AI Data Extraction vs Traditional Scraping (2026)](https://bytesflows.com/blog/ai-data-extraction-vs-traditional-scraping), and [Using LLMs to Extract Web Data (2026)](https://bytesflows.com/blog/using-llms-extract-web-data).
 ## Where AI Fits Best in a Scraping Pipeline
 AI can add value in several stages:
 - page classification and routing
@@ -75,8 +75,8 @@ A cheaper deterministic extractor is often the right default for stable data pat
 AI-powered scraping pipelines work best when AI is used deliberately: for routing, flexible extraction, schema support, normalization, and fallback handling where deterministic logic becomes expensive or brittle.
 When AI is paired with selectors, validation, and careful orchestration, pipelines become more adaptable without losing reliability.
 ## Further reading
-- [Structured Data Extraction with AI (2026)](https://bytesflows.com/en/blog/structured-data-extraction-ai)
-- [AI Data Extraction vs Traditional Scraping (2026)](https://bytesflows.com/en/blog/ai-data-extraction-vs-traditional-scraping)
-- [Using LLMs to Extract Web Data (2026)](https://bytesflows.com/en/blog/using-llms-extract-web-data)
-- [Web Scraping Workflow Explained](https://bytesflows.com/en/blog/web-scraping-workflow-explained)
-- [Extracting Structured Data with Python (2026)](https://bytesflows.com/en/blog/extracting-structured-data-python)
+- [Structured Data Extraction with AI (2026)](https://bytesflows.com/blog/structured-data-extraction-ai)
+- [AI Data Extraction vs Traditional Scraping (2026)](https://bytesflows.com/blog/ai-data-extraction-vs-traditional-scraping)
+- [Using LLMs to Extract Web Data (2026)](https://bytesflows.com/blog/using-llms-extract-web-data)
+- [Web Scraping Workflow Explained](https://bytesflows.com/blog/web-scraping-workflow-explained)
+- [Extracting Structured Data with Python (2026)](https://bytesflows.com/blog/extracting-structured-data-python)

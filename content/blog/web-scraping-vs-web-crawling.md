@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=f
 
 ## Why People Confuse Scraping and Crawling
 Web scraping and web crawling are closely related, so they are often treated as the same thing. But they solve different problems. Crawling is mainly about discovering pages. Scraping is mainly about extracting structured data from those pages.
-That distinction matters because it affects tool choice, system design, and performance expectations. This guide pairs well with [Web Scraping Workflow Explained](https://bytesflows.com/en/blog/web-scraping-workflow-explained), [How Web Scraping Works Behind the Scenes (2026)](https://bytesflows.com/en/blog/how-web-scraping-works), and [Web Scraping Architecture Explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained).
+That distinction matters because it affects tool choice, system design, and performance expectations. This guide pairs well with [Web Scraping Workflow Explained](https://bytesflows.com/blog/web-scraping-workflow-explained), [How Web Scraping Works Behind the Scenes (2026)](https://bytesflows.com/blog/how-web-scraping-works), and [Web Scraping Architecture Explained](https://bytesflows.com/blog/web-scraping-architecture-explained).
 ## What Web Crawling Means
 Crawling is the process of discovering URLs and deciding which ones should be visited next. A crawler may:
 - follow links
@@ -85,8 +85,8 @@ The overlap is real, but the design priorities are different.
 Web crawling and web scraping are not interchangeable. Crawling is about finding the pages that matter. Scraping is about extracting the information from those pages. Once that difference is clear, it becomes much easier to design the right workflow and choose the right tools.
 Most strong data pipelines use both, but they do so with clearly separated responsibilities.
 ## Further reading
-- [Web Scraping Workflow Explained](https://bytesflows.com/en/blog/web-scraping-workflow-explained)
-- [How Web Scraping Works Behind the Scenes (2026)](https://bytesflows.com/en/blog/how-web-scraping-works)
-- [Web Scraping Architecture Explained](https://bytesflows.com/en/blog/web-scraping-architecture-explained)
-- [Scraping Data at Scale](https://bytesflows.com/en/blog/scraping-data-at-scale)
-- [How to Build Your First Web Scraper](https://bytesflows.com/en/blog/how-to-build-first-web-scraper)
+- [Web Scraping Workflow Explained](https://bytesflows.com/blog/web-scraping-workflow-explained)
+- [How Web Scraping Works Behind the Scenes (2026)](https://bytesflows.com/blog/how-web-scraping-works)
+- [Web Scraping Architecture Explained](https://bytesflows.com/blog/web-scraping-architecture-explained)
+- [Scraping Data at Scale](https://bytesflows.com/blog/scraping-data-at-scale)
+- [How to Build Your First Web Scraper](https://bytesflows.com/blog/how-to-build-first-web-scraper)

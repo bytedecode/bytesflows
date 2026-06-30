@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=form
 ## Scaling Playwright Means Balancing Browsers, Routes, and Targets
 Playwright is powerful for dynamic sites, but scaling it is very different from scaling lightweight HTTP requests. Browsers consume more memory, targets react more strongly to repeated sessions, and proxy quality becomes part of throughput planning.
 That means successful scaling is not only about adding more workers. It is about balancing browser resources, concurrency, and route capacity in a way that keeps success rate stable.
-This guide pairs well with [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/en/blog/playwright-web-scraping-scale), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices), and [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/en/blog/headless-browser-scraping-guide).
+This guide pairs well with [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/blog/playwright-web-scraping-scale), [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices), and [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/blog/headless-browser-scraping-guide).
 ## The Main Bottlenecks
 At scale, Playwright workflows usually run into four constraints:
 - browser CPU and memory usage
@@ -79,8 +79,8 @@ Throughput without these signals can be misleading because resource exhaustion a
 Scaling scraping with Playwright works best when browsers, routes, and target behavior are treated as one system. The goal is not just to run more browser instances. It is to keep rendered extraction reliable while managing resource cost and anti-bot pressure.
 When context reuse, route planning, concurrency control, and good monitoring are combined well, Playwright becomes much easier to scale safely.
 ## Further reading
-- [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/en/blog/playwright-web-scraping-scale)
-- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/en/blog/web-scraping-at-scale-best-practices)
-- [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/en/blog/headless-browser-scraping-guide)
-- [Proxy Rotation Strategies](https://bytesflows.com/en/blog/proxy-rotation-strategies)
-- [Best Proxies for Web Scraping](https://bytesflows.com/en/blog/best-proxies-for-web-scraping)
+- [Playwright Web Scraping at Scale (2026)](https://bytesflows.com/blog/playwright-web-scraping-scale)
+- [Web Scraping at Scale: Best Practices (2026)](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)
+- [The Ultimate Guide to Headless Browser Scraping in 2026](https://bytesflows.com/blog/headless-browser-scraping-guide)
+- [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
