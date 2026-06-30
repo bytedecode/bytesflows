@@ -7,7 +7,7 @@ summary: A practical guide to estimating how many proxies you need for web scrap
 category: Proxy Services
 tags: ["proxy", "residential proxy", "Web Scraping"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 

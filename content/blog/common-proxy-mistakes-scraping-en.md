@@ -7,7 +7,7 @@ summary: A practical guide to common proxy mistakes in scraping, covering weak r
 category: Proxy Services
 tags: ["proxy", "residential proxy", "Web Scraping"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&q=80&w=2000"
 ---
 

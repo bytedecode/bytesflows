@@ -7,7 +7,7 @@ summary: A practical guide to how proxy rotation works, covering per-request vs 
 category: Proxy Services
 tags: ["IP rotation", "Proxy Rotation", "residential proxy", "rotating proxy"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=2000"
 ---
 

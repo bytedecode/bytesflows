@@ -7,7 +7,7 @@ summary: A practical Playwright proxy setup guide covering launch configuration,
 category: AI & Automation
 tags: ["Playwright", "Proxy setup", "residential proxy", "Web Scraping", "browser automation"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=2000"
 ---
 

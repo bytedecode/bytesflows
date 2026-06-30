@@ -7,7 +7,7 @@ summary: A practical guide to building price intelligence workflows with OpenCla
 category: Proxy Services
 tags: ["Ecommerce", "openclaw", "residential proxy"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80&w=2000"
 ---
 

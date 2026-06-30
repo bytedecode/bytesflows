@@ -7,7 +7,7 @@ summary: A practical guide to scraping Google SERPs, covering API alternatives, 
 category: Proxy Services
 tags: ["proxy", "residential proxy", "scrape google", "search results", "SERP scraping"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=2000"
 ---
 

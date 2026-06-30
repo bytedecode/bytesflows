@@ -7,7 +7,7 @@ summary: A practical guide to estimating how many proxies you need for web scrap
 category: AI & Automation
 tags: ["multi-agent", "openclaw", "proxy", "residential proxy"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=2000"
 ---
 

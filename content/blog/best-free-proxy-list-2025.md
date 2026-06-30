@@ -46,7 +46,7 @@ Before using any free node, you should validate:
 - which country or region it exits through
 - how much latency it adds
 - whether the target site accepts the route at all
-This is why validation tools matter so much in free-proxy workflows. A list entry may exist, but the real question is whether it is usable for your target right now.
+This is why validation discipline matters so much in free-proxy workflows. A list entry may exist, but the real question is whether it is usable for your target right now.
 Helpful support tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks).
 ## Why Free Proxy Lists Usually Fail Beyond Testing
 The biggest issue with free proxy lists is not only speed. It is unpredictability.

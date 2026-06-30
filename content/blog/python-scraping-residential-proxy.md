@@ -7,7 +7,7 @@ summary: A practical landing page for Python scraping with residential proxies, 
 category: landing
 tags: ["python scraping", "python proxy", "residential proxy python", "scraping with python"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2000"
 ---
 

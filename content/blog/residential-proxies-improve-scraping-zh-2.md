@@ -25,7 +25,7 @@ coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=form
 现代网站不仅仅使用 IP 黑名单，它们还会发起行为挑战。然而，如果你的 IP 拥有极高的信任评分，网站触发 [验证码 (CAPTCHA)](https://bytesflows.com/en/blog/handling-captchas-in-scraping) 或 JS 挑战的几率会大大降低。这为你节省了时间、资源和验证码识别成本。
 ### 2. 获取真实的本地化内容
 想知道从伦敦看到的机票价格与从纽约看到的有何不同？住宅代理允许你以极高的精度定位你的请求。这对于[本地化价格监控](https://bytesflows.com/en/blog/scraping-amazon-product-data)和广告验证至关重要。
-### 3. 降低浏览器自动化的���红旗”指标
+### 3. 降低浏览器自动化的“红旗”指标
 当你使用 [Playwright 进行抓取](https://bytesflows.com/en/blog/playwright-web-scraping-tutorial) 时，干净的住宅 IP 与隐形的浏览器配置相结合，会让你的机器人几乎与真实的人类浏览行为完全一致。
 ## 战略对比：住宅代理 vs. 数据中心代理
 | 特性 | 数据中心代理 (Datacenter) | 住宅代理 (Residential) |

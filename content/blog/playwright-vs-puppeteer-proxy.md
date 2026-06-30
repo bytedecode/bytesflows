@@ -7,7 +7,7 @@ summary: A practical comparison of Playwright vs Puppeteer for proxy support, co
 category: AI & Automation
 tags: ["Playwright", "puppeteer", "proxy", "browser automation", "Web Scraping"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=2000"
 ---
 

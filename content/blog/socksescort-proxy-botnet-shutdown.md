@@ -7,7 +7,7 @@ summary: A practical guide to estimating how many proxies you need for web scrap
 category: Cybersecurity
 tags: ["socksescort", "proxy botnet", "cybersecurity", "residential proxy", "Web Scraping", "proxy infrastructure", "internet security", "data infrastructure"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=2000"
 ---
 

@@ -7,7 +7,7 @@ summary: A practical guide to building social listening workflows with OpenClaw 
 category: Proxy Services
 tags: ["openclaw", "residential proxy", "social media scraping", "twitter scraping"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=2000"
 ---
 

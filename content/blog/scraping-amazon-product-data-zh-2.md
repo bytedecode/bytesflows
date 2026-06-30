@@ -78,4 +78,4 @@ if __name__ == "__main__":
 -   **智能退避 (Backoff)：** 如果某个特定地区的 IP 开始报错，自动放慢频率。
 -   **指纹随机化：** 结合 [浏览器指纹指南](https://bytesflows.com/zh/blog/browser-fingerprinting-explained) 保持真实性。
 ## 总结
-抓取亚马逊的核心不在于如何“打破”规则，而在于如何“融入”其正常的流量中。通过结合 [高信任度的住宅代理](https://bytesflows.com/zh/blog/residential-proxies-improve-scraping) 与 [先进的浏览器自动化技术](https://bytesflows.com/zh/blog/playwright-web-scraping-tutorial)，你可以将亚马逊变成你私属的高级数据接口。
+抓取亚马逊的核心不在于如何“打破”规则，而在于如何“融入”其正常的流量中。通过结合 [高信任���的住宅代理](https://bytesflows.com/zh/blog/residential-proxies-improve-scraping) 与 [先进的浏览器自动化技术](https://bytesflows.com/zh/blog/playwright-web-scraping-tutorial)，你可以将亚马逊变成你私属的高级数据接口。

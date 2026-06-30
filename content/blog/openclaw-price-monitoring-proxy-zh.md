@@ -7,7 +7,7 @@ summary: 一篇系统化的 OpenClaw 电商价格监控指南，涵盖住宅代�
 category: Web Scraping
 tags: []
 language: zh
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=2000"
 ---
 

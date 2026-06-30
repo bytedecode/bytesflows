@@ -7,7 +7,7 @@ summary: A practical guide to common proxy mistakes in scraping, covering wrong 
 category: Proxy Services
 tags: ["proxy", "Mistakes", "Web Scraping"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=2000"
 ---
 

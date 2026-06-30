@@ -7,7 +7,7 @@ summary: A practical guide to building a proxy SaaS with Playwright, covering jo
 category: AI & Automation
 tags: ["Proxy SaaS", "Playwright", "Web Scraping", "SaaS", "Proxy business"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000"
 ---
 

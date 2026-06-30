@@ -107,7 +107,7 @@ Rotation is stronger when requests are still well-behaved.
 A rotation setup should be judged by target success rate, not only by whether the IP changes.
 ### Size the pool to the workload
 Rotation quality depends on volume, concurrency, and target strictness.
-Helpful validation tools include [Proxy Checker](https://bytesflows.com/en/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/en/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/en/blog/scraping-test-tool-detect-blocks).
+For validation, document route, session, target response, and output quality before scaling traffic.
 ## Common Mistakes
 ### Assuming one IP can support “just a bit more” scale
 This usually works until it fails all at once.
