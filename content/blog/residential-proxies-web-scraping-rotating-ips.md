@@ -29,7 +29,7 @@ Compared to datacenter proxies, residential IPs are harder for sites to blacklis
 - **Rotating (per-request):** Each HTTP request gets a new IP. Best for high-volume scraping where you don’t need to maintain session state (e.g. product listings, search results). Reduces correlation and spreads load across many IPs.
 - **Sticky (session-based):** Same IP for a period (e.g. 10–30 minutes). Use when you need to stay “logged in” or complete multi-step flows (checkout, forms). See [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies) and [Rotating Proxies for Web Scraping](https://bytesflows.com/blog/rotating-proxies-web-scraping) for best practices.
 ### Best practices for scraping with residential proxies
-1. **Validate before production** — Use a [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to confirm IP, latency, and country. Test with a [Scraping Test](https://bytesflows.com/blog/scraping-test) tool to see if your target blocks you.
+1. **Validate before production** — Use a [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to confirm IP, latency, and country. Test with a [Scraping Test](https://bytesflows.com/tools/proxy-test) tool to see if your target blocks you.
 1. **Respect rate and concurrency** — Even with residential IPs, aggressive concurrency can trigger anti-bot. Start with moderate concurrency and increase gradually; see [How Many Proxies You Need for Scraping](https://bytesflows.com/blog/how-many-proxies-need-scraping).
 1. **Use realistic headers and browsers** — Pair proxies with proper User-Agent and headers, or use headless browsers. Read [Browser Fingerprinting Explained](https://bytesflows.com/blog/browser-fingerprinting-explained) and [Scrape Websites Without Getting Blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked).
 1. **Choose the right geo** — Use country or city targeting when the site varies content by location (e.g. prices, availability). [Geo-Targeted Scraping with Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies) covers this in detail.
@@ -42,13 +42,13 @@ Most residential proxy providers charge by bandwidth (GB) or by number of IPs/se
 ### FAQ
 **Do I need residential proxies for every site?** No. For many public, low-protection sites, datacenter proxies or no proxy may be enough. Use residential when you hit blocks, rate limits, or geo-restrictions, or when building a production pipeline where reliability matters. See [Datacenter vs Residential Proxies](https://bytesflows.com/blog/datacenter-vs-residential-proxies).
 **Can I use residential proxies with Scrapy or Playwright?** Yes. Scrapy supports proxies via middleware; Playwright accepts a proxy in launch options. Guides: [Using Proxies in Python Scrapers](https://bytesflows.com/blog/using-proxies-python-scrapers), [Using Proxies with Playwright](https://bytesflows.com/blog/using-proxies-playwright), [Playwright Proxy Configuration Guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide).
-**How do I test if my proxy is working?** Use our [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to see exit IP, latency, and country. Then run a [Scraping Test](https://bytesflows.com/blog/scraping-test) against a real target URL to confirm you’re not blocked.
+**How do I test if my proxy is working?** Use our [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to see exit IP, latency, and country. Then run a [Scraping Test](https://bytesflows.com/tools/proxy-test) against a real target URL to confirm you’re not blocked.
 **What’s the difference between rotating and sticky?** Rotating gives a new IP per request; sticky keeps the same IP for a time window (e.g. 10–30 min). Use rotating for high-volume, stateless scraping; use sticky when you need cookies or multi-step flows. [How Proxy Rotation Works](https://bytesflows.com/blog/how-proxy-rotation-works) and [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies) explain in detail.
 **Are residential proxies legal?** Using proxies to access public web content is generally legal in many jurisdictions, but you must comply with the target site’s terms of service and applicable law (e.g. CFAA in the US, GDPR for personal data). [Web Scraping Legal Considerations](https://bytesflows.com/blog/web-scraping-legal-considerations) and [Ethical Web Scraping Best Practices 2025](https://bytesflows.com/blog/ethical-web-scraping-best-practices-2025) cover this.
 ### Key takeaways
 - Residential proxies use real consumer IPs and reduce blocks compared to datacenter IPs. Use them when you hit rate limits, geo-blocks, or anti-bot.
 - Choose rotating (per-request) for high-volume stateless scraping and sticky (session) when you need cookies or multi-step flows.
-- Always validate with a [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/blog/scraping-test) before production. Pair proxies with realistic headers or a real browser for the best success rate.
+- Always validate with a [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/tools/proxy-test) before production. Pair proxies with realistic headers or a real browser for the best success rate.
 - Size your proxy pool and concurrency based on target strictness and rate limits; see [How Many Proxies You Need for Scraping](https://bytesflows.com/blog/how-many-proxies-need-scraping).
 ### Further reading
 - [Why Residential Proxies Are Best for Scraping](https://bytesflows.com/blog/why-residential-proxies-best-scraping) — benefits and comparison.
@@ -61,12 +61,12 @@ Most residential proxy providers charge by bandwidth (GB) or by number of IPs/se
 - [Scrape Websites Without Getting Blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked) — tactics.
 ### Quick start
 1. Sign up for [Residential Proxies](https://bytesflows.com/proxies) and get your gateway URL and credentials.
-1. Validate with [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and run [Scraping Test](https://bytesflows.com/blog/scraping-test) on a target URL.
+1. Validate with [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and run [Scraping Test](https://bytesflows.com/tools/proxy-test) on a target URL.
 1. Integrate the proxy into your scraper (Requests, Scrapy, or Playwright) using [Using Proxies in Python Scrapers](https://bytesflows.com/blog/using-proxies-python-scrapers) or [Playwright Proxy Configuration Guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide).
 1. Monitor success rate and adjust concurrency and rotation; see [Proxy Management for Large Scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers).
 ### Get started
-- Read the [Ultimate Guide to Residential Proxies](https://bytesflows.com/blog/ultimate-guide-residential-proxies) and [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
-- Compare [Residential vs Datacenter Proxies](https://bytesflows.com/blog/datacenter-vs-residential-proxies) and [Proxy Rotation Best Practices](https://bytesflows.com/blog/proxy-rotation-best-practices).
+- Read the [Ultimate Guide to Residential Proxies](https://bytesflows.com/blog/ultimate-guide-residential-proxies-2026) and [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
+- Compare [Residential vs Datacenter Proxies](https://bytesflows.com/blog/datacenter-vs-residential-proxies) and [Proxy Rotation Best Practices](https://bytesflows.com/zh/blog/proxy-rotation-best-practices).
 - Try our [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to validate IPs, then use our [Residential Proxies](https://bytesflows.com/proxies) for production.
 ---
 [Get Residential Proxies](https://bytesflows.com/proxies) · [Proxy Checker](https://bytesflows.com/blog/proxy-checker) · [Blog](https://bytesflows.com/blog)

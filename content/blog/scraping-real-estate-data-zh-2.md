@@ -26,7 +26,7 @@ coverImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=form
 -   **解决方案:** 使用 [Playwright](https://bytesflows.com/zh/blog/playwright-web-scraping-tutorial) 或 [无头浏览器](https://bytesflows.com/zh/blog/headless-browser-scraping-guide) 模拟地图移动，并拦截网站内部 API 返回的 JSON 响应。
 ### 绕过地理围栏 (Geofencing)
 像 Zillow 这样的站点会根据你的 IP 地理位置展示不同的数据，甚至直接封锁非本地流量。
--   **解决方案:** [具备地理位置定位能力的住宅代理](https://bytesflows.com/zh/blog/geo-targeted-scraping-proxies) 是必须的。如果你在抓取纽约的房源，请使用纽约市出口节点的代理。这能让你看起来像是一个本地的潜在买家，显著降低被封风险。
+-   **解决方案:** [具备地理位置定位能力的住宅代理](https://bytesflows.com/blog/geo-targeted-scraping-proxies) 是必须的。如果你在抓取纽约的房源，请使用纽约市出口节点的代理。这能让你看起来像是一个本地的潜在买家，显著降低被封风险。
 ### 图片与虚拟看房数据的采集
 房产图片对于 AI 视觉模型非常有价值。
 -   **解决方案:** 不要直接下载所有图片（这会消耗海量带宽），而是抓取高清 CDN 链接。确保你的 [代理轮换速度](https://bytesflows.com/zh/blog/proxy-rotation-strategies) 足以支撑高并发的媒体资源请求。

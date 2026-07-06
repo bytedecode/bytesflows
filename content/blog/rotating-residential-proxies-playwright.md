@@ -112,7 +112,7 @@ New browser decisions often mean new route decisions.
 Rotation should help failures recover.
 ### Validate rotation behavior through repeated browser launches before scaling the crawler
 Observed behavior matters more than assumptions.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
 ## Conclusion
 Rotating residential proxies with Playwright can be one of the most reliable combinations for protected scraping because they pair browser realism with stronger and more distributed network identity. But the combination only works well when the rotation model matches the browser workflow. Stateless tasks benefit from fresh identity. Session-dependent tasks often need stability instead.
 The practical lesson is that rotating residential proxies should be treated as part of browser architecture, not only as a launch option. Once browser lifecycle, retry logic, route behavior, and task shape all support each other, Playwright becomes much more stable on targets that would otherwise burn through weaker identities quickly.

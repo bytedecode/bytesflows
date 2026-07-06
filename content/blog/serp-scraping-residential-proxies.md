@@ -17,7 +17,7 @@ For SEO teams, the goal is not to "beat" a search engine. The goal is to build a
 
 This guide shows a practical setup for localized SERP monitoring with residential proxies. It focuses on data quality, geo validation, request logging, retry classification, and cost control. It also calls out when official SEO data sources are a better fit than scraping.
 
-Start with a small target set, verify one country at a time with [Proxy Test](/tools/proxy-test), then scale only after your logs prove that the route, language, and extracted results are stable.
+Start with a small target set, verify one country at a time with [Proxy Test](https://bytesflows.com/tools/proxy-test), then scale only after your logs prove that the route, language, and extracted results are stable.
 
 ---
 
@@ -68,10 +68,10 @@ Use a simple alignment table before you scale:
 
 | Market | Proxy route | `gl` | `hl` | `Accept-Language` | Internal link for route check |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| United States | `-loc-us` | `us` | `en` | `en-US,en;q=0.9` | [US residential proxies](/locations/united-states) |
-| United Kingdom | `-loc-gb` | `gb` | `en` | `en-GB,en;q=0.9` | [UK residential proxies](/locations/united-kingdom) |
-| Germany | `-loc-de` | `de` | `de` | `de-DE,de;q=0.9,en;q=0.6` | [Germany residential proxies](/locations/germany) |
-| Japan | `-loc-jp` | `jp` | `ja` | `ja-JP,ja;q=0.9,en;q=0.5` | [Japan residential proxies](/locations/japan) |
+| United States | `-loc-us` | `us` | `en` | `en-US,en;q=0.9` | [US residential proxies](https://bytesflows.com/locations/united-states) |
+| United Kingdom | `-loc-gb` | `gb` | `en` | `en-GB,en;q=0.9` | [UK residential proxies](https://bytesflows.com/locations/united-kingdom) |
+| Germany | `-loc-de` | `de` | `de` | `de-DE,de;q=0.9,en;q=0.6` | [Germany residential proxies](https://bytesflows.com/locations/germany) |
+| Japan | `-loc-jp` | `jp` | `ja` | `ja-JP,ja;q=0.9,en;q=0.5` | [Japan residential proxies](https://bytesflows.com/locations/japan) |
 
 This alignment is not a ranking trick. It is a data-quality control. If the route, query parameter, and language header disagree, the SERP can drift into hybrid results that are difficult to compare over time.
 
@@ -288,7 +288,7 @@ await context.close();
 await browser.close();
 ```
 
-For browser jobs, estimate traffic with [Residential Proxy Cost Calculator](/blog/residential-proxy-cost-calculator). Browser-based SERP evidence can be 5x-20x heavier than raw HTML.
+For browser jobs, estimate traffic with [Residential Proxy Cost Calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator). Browser-based SERP evidence can be 5x-20x heavier than raw HTML.
 
 ---
 
@@ -299,9 +299,9 @@ Do not store all failures as "proxy failed." That hides the true fix.
 | Class | Example | Action |
 | :--- | :--- | :--- |
 | Credential error | HTTP 407 | Verify residential proxy sub-user credentials. |
-| Route mismatch | Requested US, observed DE | Test route in [Proxy Test](/tools/proxy-test), then rerun one keyword. |
+| Route mismatch | Requested US, observed DE | Test route in [Proxy Test](https://bytesflows.com/tools/proxy-test), then rerun one keyword. |
 | Target rate response | HTTP 429 or unusual consent page | Reduce concurrency, rotate per keyword, log response type. |
-| Timeout | Client read timeout | Compare p95 by country with [speed test](/blog/residential-proxy-speed-test). |
+| Timeout | Client read timeout | Compare p95 by country with [speed test](https://bytesflows.com/blog/residential-proxy-speed-test). |
 | Parser drift | HTML downloaded but no result parsed | Save raw HTML and update selectors. |
 | Business-data drift | Wrong language or market | Recheck `gl`, `hl`, `Accept-Language`, and route. |
 
@@ -346,7 +346,7 @@ Do not use residential proxy bandwidth when:
 4. the target terms are not market-sensitive;
 5. your workflow cannot comply with target-site policies or legal review.
 
-For business use cases where localized external observation is needed, start with [US](/locations/united-states), [UK](/locations/united-kingdom), [Germany](/locations/germany), and [Japan](/locations/japan) route tests, then connect the pipeline to [SEO solution workflows](/solutions/seo).
+For business use cases where localized external observation is needed, start with [US](https://bytesflows.com/locations/united-states), [UK](https://bytesflows.com/locations/united-kingdom), [Germany](https://bytesflows.com/locations/germany), and [Japan](https://bytesflows.com/locations/japan) route tests, then connect the pipeline to [SEO solution workflows](https://bytesflows.com/solutions/seo).
 
 ---
 
@@ -374,4 +374,4 @@ Track bytes per successful snapshot, use compression, separate raw HTML from scr
 
 ### Where should I validate a route before a SERP run?
 
-Use [Proxy Test](/tools/proxy-test) and a small cURL or HTTPX diagnostic request. Then run a single keyword in the target country before launching the full job.
+Use [Proxy Test](https://bytesflows.com/tools/proxy-test) and a small cURL or HTTPX diagnostic request. Then run a single keyword in the target country before launching the full job.

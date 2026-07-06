@@ -79,5 +79,5 @@ That mindset usually produces better systems as well as safer ones.
 - [Web Scraping Legal Considerations](https://bytesflows.com/blog/web-scraping-legal-considerations)
 - [Ethical Web Scraping Practices (2026)](https://bytesflows.com/blog/ethical-web-scraping-practices)
 - [Avoid IP Bans in Automation](https://bytesflows.com/blog/avoid-ip-bans-automation)
-- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxies)
-- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/why-openclaw-agents-need-residential-proxies)
+- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
+- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/openclaw-residential-proxy)

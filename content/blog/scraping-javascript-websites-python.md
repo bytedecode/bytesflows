@@ -71,7 +71,7 @@ Session continuity often changes what content appears.
 ### Capture raw and normalized values
 JavaScript pages often produce edge cases that are easier to debug with raw source values.
 ### Validate rendered output during development
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) when a page looks loaded but returns incomplete data.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) when a page looks loaded but returns incomplete data.
 ## Common Mistakes
 - assuming `requests` failed because selectors were wrong
 - waiting for network idle when the real signal is a rendered element

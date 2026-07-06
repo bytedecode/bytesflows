@@ -17,7 +17,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 - 为什么很多爬虫明明能请求成功，仍然很快被封
 - 现代反爬通常会重点看哪些信号
 - 实战中如何通过节奏、Header、指纹和代理策略降低风险
-可配合阅读：[反爬系统解析](https://bytesflows.com/zh/blog/anti-bot-systems-explained)、[浏览器指纹详解](https://bytesflows.com/zh/blog/browser-fingerprinting-explained)、[住宅代理如何提升爬虫成功率](https://bytesflows.com/zh/blog/residential-proxies-improve-scraping)。
+可配合阅读：[反爬系统解析](https://bytesflows.com/blog/anti-bot-systems-explained)、[浏览器指纹详解](https://bytesflows.com/zh/blog/browser-fingerprinting-explained)、[住宅代理如何提升爬虫成功率](https://bytesflows.com/zh/blog/residential-proxies-improve-scraping)。
 ## 第一步：先接受一个现实
 很多爬虫被封，不是因为代码写错了，而是因为访问行为太像脚本。最典型的表现包括：
 - 请求间隔完全固定
@@ -79,7 +79,7 @@ coverImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=form
 实现网页抓取而不被封禁，核心不是“隐身技巧”，而是让你的访问方式在多个层面都尽量接近正常用户：节奏合理、Header 成体系、浏览器特征自然、IP 策略合适、行为不过度机械。
 它本质上是一套系统化设计，而不是某个单点参数。
 ## 延伸阅读
-- [反爬系统解析](https://bytesflows.com/zh/blog/anti-bot-systems-explained)
+- [反爬系统解析](https://bytesflows.com/blog/anti-bot-systems-explained)
 - [浏览器指纹详解](https://bytesflows.com/zh/blog/browser-fingerprinting-explained)
 - [住宅代理如何提升爬虫成功率](https://bytesflows.com/zh/blog/residential-proxies-improve-scraping)
 - [代理轮换策略详解](https://bytesflows.com/zh/blog/proxy-rotation-strategies)

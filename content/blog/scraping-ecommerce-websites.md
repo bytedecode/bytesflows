@@ -85,7 +85,7 @@ Track signals such as:
 - selector break frequency
 - region mismatches
 - extraction completeness per domain
-Support tools such as [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) help verify whether requests are reaching targets in the way you expect.
+Support tools such as [Scraping Test](https://bytesflows.com/tools/proxy-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) help verify whether requests are reaching targets in the way you expect.
 ## Common Mistakes
 ### Reusing one IP too aggressively
 That creates obvious pressure on the target.

@@ -72,5 +72,5 @@ At this point, OpenClaw should be installed and reachable on Ubuntu with a worki
 - [Install Ollama on Ubuntu: Step 1 for Local OpenClaw](https://bytesflows.com/blog/openclaw-local-ollama-setup-part-1)
 - [Connect OpenClaw to Ollama: Local AI Agent in Practice](https://bytesflows.com/blog/openclaw-connect-to-ollama-part-3)
 - [OpenClaw Proxy Setup (2026 Complete Guide)](https://bytesflows.com/blog/openclaw-proxy-setup)
-- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxies)
-- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/why-openclaw-agents-need-residential-proxies)
+- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
+- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/openclaw-residential-proxy)

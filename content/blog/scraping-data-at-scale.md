@@ -112,7 +112,7 @@ Route quality determines whether scale survives contact with the target.
 Stable throughput is usually better than aggressive churn.
 ### Store enough raw output to debug failures without re-running everything
 That reduces cost and speeds up diagnosis.
-Helpful companion reading includes [web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), [designing proxy pool systems](https://bytesflows.com/blog/proxy-pool-design), and [scraping test](https://bytesflows.com/blog/scraping-test).
+Helpful companion reading includes [web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained), [proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers), [designing proxy pool systems](https://bytesflows.com/blog/proxy-pool-design), and [scraping test](https://bytesflows.com/tools/proxy-test).
 ## Conclusion
 Scraping data at scale is really the work of building a stable data pipeline around collection. Queueing, routing, browser control, observability, validation, and storage all matter because each one can become the failure point long before extraction logic itself stops working.
 The practical lesson is simple: once scraping reaches real volume, architecture decides reliability. When the system is designed deliberately, scale becomes something you can manage rather than something you survive.
@@ -121,6 +121,6 @@ The practical lesson is simple: once scraping reaches real volume, architecture 
 - [Proxy management for large scrapers](https://bytesflows.com/blog/proxy-management-large-scrapers)
 - [Building proxy infrastructure for crawlers](https://bytesflows.com/blog/building-proxy-infrastructure-crawlers)
 - [Designing proxy pool systems](https://bytesflows.com/blog/proxy-pool-design)
-- [Scraping test](https://bytesflows.com/blog/scraping-test)
+- [Scraping test](https://bytesflows.com/tools/proxy-test)
 - [How to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)
 - [Residential proxies](https://bytesflows.com/proxies)

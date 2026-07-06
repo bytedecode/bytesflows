@@ -90,7 +90,7 @@ One successful request does not prove session behavior.
 Validation is necessary, but target behavior is still the final test.
 ### Keep notes by provider, region, or gateway
 That makes future routing decisions faster and less guess-based.
-Helpful companion pages include [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
+Helpful companion pages include [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), [Scraping Test](https://bytesflows.com/tools/proxy-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## FAQ
 ### If the proxy connects, is it automatically good enough?
 No. Connectivity only proves that the route exists. It does not prove that the geo, ASN, latency, or identity profile match the workload.

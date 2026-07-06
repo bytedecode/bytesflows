@@ -121,6 +121,6 @@ The practical lesson is simple: news scraping works best when it is treated as a
 - [How Websites Detect Web Scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers)
 - [Proxy Checker](https://bytesflows.com/blog/proxy-checker)
 - [Web scraping architecture explained](https://bytesflows.com/blog/web-scraping-architecture-explained)
-- [Scraping Test](https://bytesflows.com/blog/scraping-test)
+- [Scraping Test](https://bytesflows.com/tools/proxy-test)
 - [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
 - [Residential proxies](https://bytesflows.com/proxies)

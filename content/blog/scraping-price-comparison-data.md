@@ -102,7 +102,7 @@ This is essential when auditing comparison errors.
 ### Re-check product matching on variant-heavy catalogs
 Bundles and multi-pack listings can easily distort price intelligence.
 ### Validate challenge behavior regularly
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to understand whether your setup is still being served correctly.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to understand whether your setup is still being served correctly.
 ## Common Mistakes
 - comparing products before validating they are true matches
 - ignoring region or currency context

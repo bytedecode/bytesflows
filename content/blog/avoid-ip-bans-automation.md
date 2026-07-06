@@ -65,7 +65,7 @@ Perfectly repeated delays and identical session flows are easier to score.
 ### Measure ban rate by domain and route pool
 Not all failures have the same cause.
 ### Test before scaling
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to understand whether the request stack looks credible before you raise volume.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to understand whether the request stack looks credible before you raise volume.
 ## Common Mistakes
 - treating IP bans as a pure proxy problem
 - rotating IPs inside workflows that require continuity

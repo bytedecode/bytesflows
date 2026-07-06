@@ -101,7 +101,7 @@ A working route can still be the wrong route.
 Trust works best when the full session is coherent.
 ### Scale carefully and monitor pass rate, not just throughput
 Residential quality should be preserved, not burned quickly.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
 ## Key Takeaways
 - Residential proxies improve scraping reliability when IP trust is the real bottleneck.
 - Rotating mode fits stateless work; sticky mode fits session-dependent workflows.

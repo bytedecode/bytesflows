@@ -98,7 +98,7 @@ This makes layout changes much easier to diagnose.
 ### Keep geo and marketplace settings explicit
 US Amazon and other regional Amazon properties can produce different outputs for the same product.
 ### Measure challenge rates continuously
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to validate route quality and request presentation.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to validate route quality and request presentation.
 ## Common Mistakes
 - using datacenter-heavy traffic on a defended commercial target
 - treating every visible price as the canonical price

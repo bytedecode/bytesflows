@@ -15,7 +15,7 @@ Most web scraping teams should start with HTTP residential proxies. SOCKS5 is us
 
 The right choice depends on the client protocol, DNS behavior, browser support, and whether the workload is normal web traffic or a custom socket workflow. This guide gives you a practical decision matrix, benchmark method, and code templates for cURL, Python, and Playwright.
 
-For a quick route check, test your credentials in [Proxy Test](/tools/proxy-test). For pricing, see [BytesFlows pricing](/pricing).
+For a quick route check, test your credentials in [Proxy Test](https://bytesflows.com/tools/proxy-test). For pricing, see [BytesFlows pricing](https://bytesflows.com/pricing).
 
 ---
 
@@ -102,7 +102,7 @@ Example result format:
 | HTTP | 300 | 99.0% | 510 ms | 940 ms | Best for SERP/HTML collection. |
 | SOCKS5 | 300 | 98.7% | 575 ms | 1,080 ms | Useful for custom socket workflows. |
 
-These numbers are illustrative. Run the same test against your own target and route. For route-level expectations, compare with [Residential Proxy Speed Test 2026](/blog/residential-proxy-speed-test).
+These numbers are illustrative. Run the same test against your own target and route. For route-level expectations, compare with [Residential Proxy Speed Test 2026](https://bytesflows.com/blog/residential-proxy-speed-test).
 
 ---
 
@@ -132,7 +132,7 @@ curl -sS \
   "https://httpbin.org/ip"
 ```
 
-Use the correct port and scheme for your account. Test one route in [Proxy Test](/tools/proxy-test) before moving credentials into application code.
+Use the correct port and scheme for your account. Test one route in [Proxy Test](https://bytesflows.com/tools/proxy-test) before moving credentials into application code.
 
 ---
 
@@ -194,7 +194,7 @@ console.log(await page.textContent("body"));
 await browser.close();
 ```
 
-For most browser automation, choose HTTP first. It is easier to debug with browser context isolation, route interception, and status logging. See [Playwright Proxy Guide](/blog/playwright-residential-proxy-guide) for session-level examples.
+For most browser automation, choose HTTP first. It is easier to debug with browser context isolation, route interception, and status logging. See [Playwright Proxy Guide](https://bytesflows.com/blog/playwright-residential-proxy-guide) for session-level examples.
 
 ---
 
@@ -220,8 +220,8 @@ For normal HTTPS web scraping, HTTP proxy behavior is usually sufficient. For DN
 | Browser auth prompt appears | Proxy credentials not passed in structured fields | Use Playwright `proxy.server`, `username`, and `password`. |
 | 407 with HTTP proxy | Wrong credentials or bad password parsing | Avoid raw URL credentials if password has special characters. |
 | SOCKS5 is slower | Extra negotiation and client library overhead | Use HTTP for web workloads. |
-| Target country mismatch | Route token or IP database mismatch | Validate with [Proxy Test](/tools/proxy-test) and a diagnostic endpoint. |
-| Cost higher than expected | Browser or protocol test downloads too much data | Measure bytes and use [cost calculator](/blog/residential-proxy-cost-calculator). |
+| Target country mismatch | Route token or IP database mismatch | Validate with [Proxy Test](https://bytesflows.com/tools/proxy-test) and a diagnostic endpoint. |
+| Cost higher than expected | Browser or protocol test downloads too much data | Measure bytes and use [cost calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator). |
 
 ---
 
@@ -238,9 +238,9 @@ Use HTTP residential proxies for:
 
 Helpful next reads:
 
-- [SERP Scraping with Residential Proxies](/blog/serp-scraping-residential-proxies)
-- [E-commerce Price Monitoring with Residential Proxies](/blog/ecommerce-price-monitoring-residential-proxies)
-- [Residential Proxy Cost Calculator](/blog/residential-proxy-cost-calculator)
+- [SERP Scraping with Residential Proxies](https://bytesflows.com/blog/serp-scraping-residential-proxies)
+- [E-commerce Price Monitoring with Residential Proxies](https://bytesflows.com/blog/ecommerce-price-monitoring-residential-proxies)
+- [Residential Proxy Cost Calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator)
 
 ---
 
@@ -282,4 +282,4 @@ The client may not have SOCKS support installed, the proxy scheme may be wrong, 
 
 ### Can I switch protocols on BytesFlows?
 
-Use the protocol and port enabled for your residential proxy account. Start with [Proxy Test](/tools/proxy-test), then validate the exact client you will use in production.
+Use the protocol and port enabled for your residential proxy account. Start with [Proxy Test](https://bytesflows.com/tools/proxy-test), then validate the exact client you will use in production.

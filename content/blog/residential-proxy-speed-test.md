@@ -53,7 +53,7 @@ for i in 1 2 3 4 5; do
 done
 ```
 
-For a no-code check, start with the [BytesFlows proxy test tool](/tools/proxy-test). For pricing assumptions, keep the [residential proxy pricing page](/pricing) open while you calculate cost per successful result.
+For a no-code check, start with the [BytesFlows proxy test tool](https://bytesflows.com/tools/proxy-test). For pricing assumptions, keep the [residential proxy pricing page](https://bytesflows.com/pricing) open while you calculate cost per successful result.
 
 ---
 
@@ -104,7 +104,7 @@ It does not prove that every target site will accept every request. Target behav
 | India | 500 | 96.7% | 806 ms | 1,610 ms | 1.8% | 1.07x | $0.49 |
 | Brazil | 500 | 96.2% | 836 ms | 1,740 ms | 2.1% | 1.08x | $0.50 |
 
-The cost column assumes a 150 KB compressed diagnostic response and BytesFlows' public pay-as-you-go reference price. For browser automation, use the cost calculator in [Residential Proxy Cost Calculator](/blog/residential-proxy-cost-calculator), because one Chromium page can transfer 20x more data than a diagnostic request.
+The cost column assumes a 150 KB compressed diagnostic response and BytesFlows' public pay-as-you-go reference price. For browser automation, use the cost calculator in [Residential Proxy Cost Calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator), because one Chromium page can transfer 20x more data than a diagnostic request.
 
 ### What the Table Means
 
@@ -213,7 +213,7 @@ console.log({ proxyUrl, target });
 console.log(await Promise.all(Array.from({ length: 5 }, (_, i) => runCurlStyleProbe(i + 1))));
 ```
 
-Node's native `fetch` proxy behavior depends on runtime and agent configuration. For browser automation, use the Playwright setup in [Playwright Proxy Guide](/blog/playwright-residential-proxy-guide).
+Node's native `fetch` proxy behavior depends on runtime and agent configuration. For browser automation, use the Playwright setup in [Playwright Proxy Guide](https://bytesflows.com/blog/playwright-residential-proxy-guide).
 
 ---
 
@@ -221,11 +221,11 @@ Node's native `fetch` proxy behavior depends on runtime and agent configuration.
 
 | Symptom | Likely cause | What to test next |
 | :--- | :--- | :--- |
-| `407 Proxy Authentication Required` | Username/password parse issue, wrong sub-user, or unsupported location token | Use structured auth fields where possible; verify credentials in [Proxy Test](/tools/proxy-test). MDN documents the status at [HTTP 407](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/407). |
+| `407 Proxy Authentication Required` | Username/password parse issue, wrong sub-user, or unsupported location token | Use structured auth fields where possible; verify credentials in [Proxy Test](https://bytesflows.com/tools/proxy-test). MDN documents the status at [HTTP 407](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/407). |
 | Good average latency, poor p95 | A small number of slow residential routes dominate the tail | Lower concurrency, shorten timeout, and compare sticky vs rotating sessions. |
-| Country mismatch | IP database disagreement or unsupported location syntax | Compare the same IP across two diagnostic sources and test the relevant [location page](/locations/united-states). |
-| High success in cURL, low success in browser | Browser downloads more assets and triggers more target-side checks | Block media/fonts, use `domcontentloaded`, and review the [Playwright guide](/blog/playwright-residential-proxy-guide). |
-| Cost higher than expected | Retries or full-page rendering inflate bandwidth | Use the [cost calculator](/blog/residential-proxy-cost-calculator) and log response byte size. |
+| Country mismatch | IP database disagreement or unsupported location syntax | Compare the same IP across two diagnostic sources and test the relevant [location page](https://bytesflows.com/locations/united-states). |
+| High success in cURL, low success in browser | Browser downloads more assets and triggers more target-side checks | Block media/fonts, use `domcontentloaded`, and review the [Playwright guide](https://bytesflows.com/blog/playwright-residential-proxy-guide). |
+| Cost higher than expected | Retries or full-page rendering inflate bandwidth | Use the [cost calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator) and log response byte size. |
 
 ---
 
@@ -241,7 +241,7 @@ They are usually the wrong choice for:
 4. CI pipelines where a datacenter IP is accepted;
 5. workloads where one fixed IP allowlist is required.
 
-For those cases, compare the tradeoffs in [Residential vs Datacenter Proxies](/compare/residential-vs-datacenter) before buying residential bandwidth.
+For those cases, compare the tradeoffs in [Residential vs Datacenter Proxies](https://bytesflows.com/compare/residential-vs-datacenter) before buying residential bandwidth.
 
 ---
 
@@ -258,7 +258,7 @@ Before you scale a proxy workload, collect these six fields from your own run:
 | P95 latency | Shows whether scheduled jobs will complete in time. |
 | Bytes per successful result | Converts network quality into budget. |
 
-Then map the result to [BytesFlows pricing](/pricing), test one or two critical countries such as [United States](/locations/united-states), [United Kingdom](/locations/united-kingdom), [Germany](/locations/germany), and [Japan](/locations/japan), and only then increase concurrency.
+Then map the result to [BytesFlows pricing](https://bytesflows.com/pricing), test one or two critical countries such as [United States](https://bytesflows.com/locations/united-states), [United Kingdom](https://bytesflows.com/locations/united-kingdom), [Germany](https://bytesflows.com/locations/germany), and [Japan](https://bytesflows.com/locations/japan), and only then increase concurrency.
 
 ---
 
@@ -286,4 +286,4 @@ Start with 20-50 requests per country to catch configuration problems. For a buy
 
 ### Where should I test BytesFlows before scaling?
 
-Use [Proxy Test](/tools/proxy-test) for a fast diagnostic, then run your own cURL or Python probe against the real target. If the workload is browser-based, follow the [Playwright residential proxy guide](/blog/playwright-residential-proxy-guide).
+Use [Proxy Test](https://bytesflows.com/tools/proxy-test) for a fast diagnostic, then run your own cURL or Python probe against the real target. If the workload is browser-based, follow the [Playwright residential proxy guide](https://bytesflows.com/blog/playwright-residential-proxy-guide).

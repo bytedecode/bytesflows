@@ -73,6 +73,6 @@ Ubuntu 安装 OpenClaw 的重点，不只是安装成功，而是要确认本地
 ## 延伸阅读
 - [Ubuntu 安装 Ollama：本地运行 OpenClaw 的第一步](https://bytesflows.com/zh/blog/openclaw-local-ollama-setup-part-1)
 - [连接 OpenClaw 与 Ollama：本地 AI Agent 链路实战](https://bytesflows.com/zh/blog/openclaw-connect-to-ollama-part-3)
-- [OpenClaw 代理配置完整指南](https://bytesflows.com/zh/blog/openclaw-proxy-setup)
-- [OpenClaw 浏览器自动化与代理实践](https://bytesflows.com/zh/blog/openclaw-browser-automation-proxies)
-- [为什么 OpenClaw Agent 需要住宅代理](https://bytesflows.com/zh/blog/openclaw-residential-proxy)
+- [OpenClaw 代理配置完整指南](https://bytesflows.com/blog/openclaw-proxy-setup)
+- [OpenClaw 浏览器自动化与代理实践](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
+- [为什么 OpenClaw Agent 需要住宅代理](https://bytesflows.com/blog/openclaw-residential-proxy)

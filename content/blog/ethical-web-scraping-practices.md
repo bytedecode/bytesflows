@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=f
 
 ## Ethical Scraping Is Part of System Design
 Ethical web scraping is often discussed as a policy issue, but in practice it is also an engineering issue. Decisions about rate limits, scope, storage, privacy, and target impact are built into the workflow itself.
-A scraper can be legally risky, operationally harmful, or simply irresponsible long before it fails technically. This guide explains how to build more sustainable collection practices. It pairs well with [Ethical Web Scraping Best Practices (2025)](https://bytesflows.com/blog/ethical-web-scraping-best-practices-2025), [Is Web Scraping Legal? What Developers Need to Know (2026)](https://bytesflows.com/blog/is-web-scraping-legal), and [Web Scraping vs API Data Collection (2026)](https://bytesflows.com/blog/web-scraping-vs-api-data-collection).
+A scraper can be legally risky, operationally harmful, or simply irresponsible long before it fails technically. This guide explains how to build more sustainable collection practices. It pairs well with [Ethical Web Scraping Best Practices (2025)](https://bytesflows.com/blog/ethical-web-scraping-best-practices-2025), [Is Web Scraping Legal? What Developers Need to Know (2026)](https://bytesflows.com/blog/is-web-scraping-legal), and [Web Scraping vs API Data Collection (2026)](https://bytesflows.com/blog/web-scraping-vs-api).
 ## Responsible Scope Comes First
 One of the clearest ethical questions is whether the system is collecting more than it needs. A good workflow defines:
 - the exact fields required
@@ -67,6 +67,6 @@ When ethics is built into the workflow itself, scraping systems become easier to
 ## Further reading
 - [Ethical Web Scraping Best Practices (2025)](https://bytesflows.com/blog/ethical-web-scraping-best-practices-2025)
 - [Is Web Scraping Legal? What Developers Need to Know (2026)](https://bytesflows.com/blog/is-web-scraping-legal)
-- [Web Scraping vs API Data Collection (2026)](https://bytesflows.com/blog/web-scraping-vs-api-data-collection)
+- [Web Scraping vs API Data Collection (2026)](https://bytesflows.com/blog/web-scraping-vs-api)
 - [Avoid IP Bans in Web Scraping: The Ultimate Survival Guide](https://bytesflows.com/blog/avoid-ip-bans-web-scraping)
 - [How to Scrape Websites Without Getting Blocked: The 2026 Stealth Playbook](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)

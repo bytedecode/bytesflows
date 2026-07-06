@@ -70,7 +70,7 @@ Job data loses value quickly without time context.
 ### Deduplicate reposted or syndicated listings
 The same role may appear on multiple job surfaces.
 ### Validate challenge behavior before scaling up
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to understand whether pages are loading fully and consistently.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to understand whether pages are loading fully and consistently.
 ## Common Mistakes
 - scraping behind login when a public listing page exists
 - mixing discovery and detail logic into one brittle workflow

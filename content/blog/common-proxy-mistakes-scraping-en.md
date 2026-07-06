@@ -88,7 +88,7 @@ A working route can still be the wrong route.
 Do not let the scraper repeat weak identity patterns blindly.
 ### Increase concurrency only when pass rate stays stable
 Pool quality must be proven under repetition.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
 ## Conclusion
 Common proxy mistakes in scraping usually come from treating proxies as a minor configuration detail instead of as part of the scraper’s core architecture. Wrong route type, bad rotation logic, weak validation, and non-proxy-aware retries can all make a technically correct scraper behave unreliably.
 The practical lesson is simple: proxy design deserves the same care as parser logic and browser automation. Once route choice, identity model, retries, and concurrency support each other, many avoidable scraping failures disappear before they start.

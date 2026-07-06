@@ -71,7 +71,7 @@ This avoids endless loops on noisy pages.
 ### Stop based on repeated no-growth cycles
 One stagnant scroll may not mean the dataset is finished.
 ### Validate what the browser really loaded
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) when pages seem to stall or degrade unexpectedly.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) when pages seem to stall or degrade unexpectedly.
 ## Common Mistakes
 - using fixed sleep alone as the stopping strategy
 - rotating IPs in the middle of the same scroll session

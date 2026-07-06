@@ -119,7 +119,7 @@ Do not wait until instability becomes the default.
 ### Validate price and seller fields with schema rules
 Raw strings are not enough for downstream analytics.
 ### Monitor challenge behavior before scaling up
-Use support tools such as [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to verify how a target is responding.
+Use support tools such as [Scraping Test](https://bytesflows.com/tools/proxy-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to verify how a target is responding.
 ## Common Mistakes
 - treating discovery and detail as the same job
 - extracting price without normalization

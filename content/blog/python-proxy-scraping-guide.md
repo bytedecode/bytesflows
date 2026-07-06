@@ -113,7 +113,7 @@ Protected sites punish weak identity faster.
 Requests, Scrapy, and Playwright fail differently.
 ### Treat proxy behavior as part of scraper architecture, not only network configuration
 That is what makes scaling easier later.
-Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
+Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
 ## Conclusion
 Python proxy scraping becomes much easier to reason about once you stop treating proxies as a universal plug-in. The right proxy setup depends on whether you are running simple HTTP requests, a structured crawler, or a real browser session. Each of those models creates different identity, continuity, and failure needs.
 The practical lesson is that good proxy use follows the execution model. When routing style, route quality, and tool choice support each other, Python scrapers become more stable, more believable to the target, and much easier to scale without avoidable blocking.

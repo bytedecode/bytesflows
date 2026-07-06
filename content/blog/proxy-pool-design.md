@@ -122,7 +122,7 @@ Preventive control beats reactive cleanup.
 One pool should not always serve every job.
 ### Stay with managed behavior until a real routing limitation appears
 Do not build complexity for prestige.
-Helpful companion pages include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), [Scraping Test](https://bytesflows.com/blog/scraping-test), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
+Helpful companion pages include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), [Scraping Test](https://bytesflows.com/tools/proxy-test), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## Conclusion
 Designing proxy pool systems is really the work of managing identity as a shared resource across scraping workloads. The pool decides how routes are assigned, when they are cooled down, and how failures are contained before they spread across the wider system.
 The strongest pool designs do not rely only on having many proxies. They rely on sensible allocation, route health awareness, workload segmentation, and cooldown behavior that preserves route usefulness over time. Once those controls are in place, the pool stops being just a list of IPs and becomes one of the most important reliability systems in scraping infrastructure.

@@ -87,7 +87,7 @@ A lower price is not always a directly comparable price.
 ### Separate merchant-specific logic cleanly
 Each site will evolve differently over time.
 ### Validate challenge behavior before scaling monitoring frequency
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to confirm that pricing pages are being served correctly.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [Proxy Checker](https://bytesflows.com/blog/proxy-checker), and [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker) to confirm that pricing pages are being served correctly.
 ## Common Mistakes
 - comparing products before confirming they are true matches
 - ignoring geography, tax, or delivery context

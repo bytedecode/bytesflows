@@ -129,5 +129,5 @@ If you want the strongest next reading path from here, continue with [python web
 - [Scraping dynamic websites with Playwright](https://bytesflows.com/blog/scraping-dynamic-websites-playwright)
 - [The ultimate guide to web scraping in 2026](https://bytesflows.com/blog/ultimate-guide-web-scraping-2026)
 - [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
-- [Python scraping proxy guide](https://bytesflows.com/blog/python-scraping-proxy-guide)
+- [Python scraping proxy guide](https://bytesflows.com/blog/python-scraping-proxy)
 - [How to scrape websites without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)

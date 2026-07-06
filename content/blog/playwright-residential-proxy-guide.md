@@ -25,7 +25,7 @@ username pattern: sub-user-loc-us-session-worker01-time-30
 password: residential proxy sub-user password
 ```
 
-For a quick connectivity check before running browser code, use [Proxy Test](/tools/proxy-test). For plan sizing, keep [Pricing](/pricing) and [Residential Proxy Cost Calculator](/blog/residential-proxy-cost-calculator) open.
+For a quick connectivity check before running browser code, use [Proxy Test](https://bytesflows.com/tools/proxy-test). For plan sizing, keep [Pricing](https://bytesflows.com/pricing) and [Residential Proxy Cost Calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator) open.
 
 ---
 
@@ -56,7 +56,7 @@ Use rotating sessions when each page is independent. Use sticky sessions when th
 | Country-targeted route | Route is filtered to a country | Local SERP and marketplace data | Smaller pool, often higher p95 latency. |
 | City-targeted route | Route is filtered to a city | Local ads, shipping estimates, regional QA | Smaller pool and stricter fallback behavior. |
 
-For country-specific checks, validate the final route on the relevant location page such as [United States](/locations/united-states), [United Kingdom](/locations/united-kingdom), [Germany](/locations/germany), or [Japan](/locations/japan).
+For country-specific checks, validate the final route on the relevant location page such as [United States](https://bytesflows.com/locations/united-states), [United Kingdom](https://bytesflows.com/locations/united-kingdom), [Germany](https://bytesflows.com/locations/germany), or [Japan](https://bytesflows.com/locations/japan).
 
 ---
 
@@ -310,7 +310,7 @@ await page.goto(targetUrl, { waitUntil: "domcontentloaded" });
 console.log({ estimatedBytes: bytes, estimatedMB: (bytes / 1024 / 1024).toFixed(2) });
 ```
 
-Use the result in the [cost calculator](/blog/residential-proxy-cost-calculator).
+Use the result in the [cost calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator).
 
 ---
 
@@ -323,7 +323,7 @@ Use the result in the [cost calculator](/blog/residential-proxy-cost-calculator)
 | Same IP across workers | Proxy configured at browser level instead of context/session level | Build unique sticky usernames per context. |
 | Sticky session changes mid-flow | Session window too short or context recreated | Increase `time`, keep the same context for the whole workflow. |
 | Browser cost is much higher than expected | Assets and background APIs are loaded through the proxy | Block media/fonts, shorten waits, and measure bytes. |
-| Target country is wrong | Location token or target IP database mismatch | Start with country route, verify with [Proxy Test](/tools/proxy-test), then add city. |
+| Target country is wrong | Location token or target IP database mismatch | Start with country route, verify with [Proxy Test](https://bytesflows.com/tools/proxy-test), then add city. |
 
 ---
 
@@ -331,7 +331,7 @@ Use the result in the [cost calculator](/blog/residential-proxy-cost-calculator)
 
 This setup is a good fit for:
 
-1. SEO teams capturing localized SERP evidence for [rank tracking](/solutions/seo);
+1. SEO teams capturing localized SERP evidence for [rank tracking](https://bytesflows.com/solutions/seo);
 2. marketplace monitoring teams checking region-specific price and availability;
 3. QA teams validating country-specific user journeys;
 4. AI browser agents that need screenshots, DOM state, and traceable evidence;
@@ -345,7 +345,7 @@ It is not the right fit for:
 4. workflows that require one permanent allowlisted IP;
 5. teams that cannot log and monitor retry cost.
 
-For network choice, compare [Residential vs Datacenter Proxies](/compare/residential-vs-datacenter). For trial sizing, start with [1GB free traffic on Pricing](/pricing).
+For network choice, compare [Residential vs Datacenter Proxies](https://bytesflows.com/compare/residential-vs-datacenter). For trial sizing, start with [1GB free traffic on Pricing](https://bytesflows.com/pricing).
 
 ---
 
@@ -373,4 +373,4 @@ Sometimes. Blocking CSS reduces transfer size, but it can break layout-dependent
 
 ### Where should I test a session before production?
 
-Start with [Proxy Test](/tools/proxy-test), run a cURL credential check, then run one Playwright context against your actual target. After the session is stable, scale to a bounded worker pool.
+Start with [Proxy Test](https://bytesflows.com/tools/proxy-test), run a cURL credential check, then run one Playwright context against your actual target. After the session is stable, scale to a bounded worker pool.

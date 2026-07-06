@@ -142,13 +142,13 @@ your-sub-user-loc-gb-session-serp-london-001-time-10:your-password@p1.bytesflows
 
 Internal links that fit here:
 
-- [Residential Proxies](/proxies/residential)
-- [United States Proxies](/locations/united-states)
-- [United Kingdom Proxies](/locations/united-kingdom)
-- [Germany Proxies](/locations/germany)
-- [Japan Proxies](/locations/japan)
-- [Pricing](/pricing)
-- [Proxy Test Tool](/tools/proxy-test)
+- [Residential Proxies](https://bytesflows.com/proxies/rotating-residential-proxies)
+- [United States Proxies](https://bytesflows.com/locations/united-states)
+- [United Kingdom Proxies](https://bytesflows.com/locations/united-kingdom)
+- [Germany Proxies](https://bytesflows.com/locations/germany)
+- [Japan Proxies](https://bytesflows.com/locations/japan)
+- [Pricing](https://bytesflows.com/pricing)
+- [Proxy Test Tool](https://bytesflows.com/tools/proxy-test)
 
 ## Quick cURL checks before running workers
 
@@ -373,7 +373,7 @@ A crawler can look busy while producing bad economics. For example:
 | Status-aware retry cap | 5,500 | 1,150 | Medium | Better unit cost |
 | Sticky pagination only where needed | 4,800 | 1,140 | Lower | Best balance |
 
-Do not publish fake benchmark numbers. Run your own measurement and paste the actual table into the article. If you are using BytesFlows, you can link readers to the [Residential Proxy Cost Calculator](/blog/residential-proxy-cost-calculator) and [Pricing](/pricing) so they can estimate their own workload.
+Do not publish fake benchmark numbers. Run your own measurement and paste the actual table into the article. If you are using BytesFlows, you can link readers to the [Residential Proxy Cost Calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator) and [Pricing](https://bytesflows.com/pricing) so they can estimate their own workload.
 
 ## Production runbook
 

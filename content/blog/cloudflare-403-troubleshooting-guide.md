@@ -106,9 +106,9 @@ If this fails with 407, do not change browser fingerprints, user agents, or sess
 
 Internal links to add near this section:
 
-- [Online Proxy Test Tool](/tools/proxy-test)
-- [Residential Proxy Plans](/pricing)
-- [Residential Proxies](/proxies/residential)
+- [Online Proxy Test Tool](https://bytesflows.com/tools/proxy-test)
+- [Residential Proxy Plans](https://bytesflows.com/pricing)
+- [Residential Proxies](https://bytesflows.com/proxies/rotating-residential-proxies)
 
 ## Step 2: Verify geo alignment before debugging Cloudflare
 
@@ -140,7 +140,7 @@ What I check in the response:
 | 403 only on one country | Country-specific rule, legal restriction, or local rate limit |
 | 403 disappears after clearing cookies | Session drift, stale consent state, or repeated failed requests |
 
-For country-sensitive monitoring, keep the request identity consistent. If you use [United States proxies](/locations/united-states), send `Accept-Language: en-US`. If you test [Germany proxies](/locations/germany), record whether the page expects `de-DE` or English content.
+For country-sensitive monitoring, keep the request identity consistent. If you use [United States proxies](https://bytesflows.com/locations/united-states), send `Accept-Language: en-US`. If you test [Germany proxies](https://bytesflows.com/locations/germany), record whether the page expects `de-DE` or English content.
 
 ## Step 3: Separate Cloudflare edge responses from origin responses
 
@@ -226,7 +226,7 @@ run().catch((err) => {
 });
 ```
 
-For a deeper browser setup, link to your own [Playwright Residential Proxy Guide](/blog/playwright-residential-proxy-guide).
+For a deeper browser setup, link to your own [Playwright Residential Proxy Guide](https://bytesflows.com/blog/playwright-residential-proxy-guide).
 
 ## Step 5: Stop blind retries and classify the failure
 
@@ -352,7 +352,7 @@ your-sub-user-loc-us-session-serp-us-001-time-10
 
 | Symptom | Most likely layer | What I check first | What I do next |
 | :--- | :--- | :--- | :--- |
-| `407 Proxy Authentication Required` | Proxy gateway | username/password, plan limit, env proxy vars | Test in [Proxy Test Tool](/tools/proxy-test), then reduce concurrency |
+| `407 Proxy Authentication Required` | Proxy gateway | username/password, plan limit, env proxy vars | Test in [Proxy Test Tool](https://bytesflows.com/tools/proxy-test), then reduce concurrency |
 | `403` with `server: cloudflare` on first request | Edge/security policy | country, language, target permission, challenge headers | Do not rotate blindly; classify body and headers |
 | `403` after 20–100 requests | Target rate pattern | per-host QPS, session TTL, retry loop | Add backoff, lower concurrency, split jobs by country |
 | Same URL works in browser but not HTTP client | Browser rendering / cookies | JS content, consent, cookies | Use Playwright for approved workflows |
@@ -382,13 +382,13 @@ A good proxy setup should make authorized data workflows more reliable. It shoul
 
 Use these links naturally in the article body, not as a footer dump:
 
-- [Residential Proxies](/proxies/residential) — explain the product category.
-- [Proxy Test Tool](/tools/proxy-test) — verify IP, country, and connectivity.
-- [Pricing](/pricing) — estimate retry cost before scaling.
-- [United States Proxies](/locations/united-states) — country-specific examples.
-- [Germany Proxies](/locations/germany) — EU/consent examples.
-- [Playwright Proxy Guide](/blog/playwright-residential-proxy-guide) — browser-rendered workflows.
-- [Proxy Rotation Strategy](/blog/proxy-rotation-strategy) — when to rotate versus stick.
+- [Residential Proxies](https://bytesflows.com/proxies/rotating-residential-proxies) — explain the product category.
+- [Proxy Test Tool](https://bytesflows.com/tools/proxy-test) — verify IP, country, and connectivity.
+- [Pricing](https://bytesflows.com/pricing) — estimate retry cost before scaling.
+- [United States Proxies](https://bytesflows.com/locations/united-states) — country-specific examples.
+- [Germany Proxies](https://bytesflows.com/locations/germany) — EU/consent examples.
+- [Playwright Proxy Guide](https://bytesflows.com/blog/playwright-residential-proxy-guide) — browser-rendered workflows.
+- [Proxy Rotation Strategy](https://bytesflows.com/blog/proxy-rotation-strategy) — when to rotate versus stick.
 
 ## External references worth citing
 

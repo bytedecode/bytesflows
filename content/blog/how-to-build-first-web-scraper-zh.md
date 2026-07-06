@@ -30,7 +30,7 @@ pip install requests beautifulsoup4
 作为初学者，一定要避开像亚马逊或 Instagram 这样防御极其严密的站点。反之，选择一个简单的静态站点。
 -   **糟糕的目标:** Twitter (由于需要登录、强 JS 加载和极其激进的封锁)。
 -   **理想的目标:** 新闻网站、公共分类目录或静态的商品展示页。
-在开工前，查看一下 `robots.txt` 文件（例如 `example.com/robots.txt`）以了解该站点的采集偏好。请始终遵循 [道德采集准则](https://bytesflows.com/zh/blog/ethical-web-scraping-practices)。
+在开工前，查看一下 `robots.txt` 文件（例如 `example.com/robots.txt`）以了解该站点的采集偏好。请始终遵循 [道德采集准则](https://bytesflows.com/blog/ethical-web-scraping-practices)。
 ## 第三步：编写你的第一个提取脚本
 让我们写一个简单的脚本，从一个博客中抓取文章标题。
 ```python
@@ -69,8 +69,8 @@ simple_scraper("https://example-blog.com")
 1.  **Header 管理:** 始终随机化 User-Agent，并包含真实的 HTTP Header（如 `Accept-Language`）。
 1.  **控制节奏:** 不要抓取太快。在请求之间加入 `time.sleep(random.uniform(1, 3))`，模拟人类的阅读速度。
 ## 总结：下一步是什么？
-恭喜你！你已经搭建好了数据工程职业生涯的第一块砖。网页抓取是一个深奥的领域，你会遇到各种 [常见的挑战](https://bytesflows.com/zh/blog/common-web-scraping-challenges)，但从小处着手是成功的关键。
+恭喜你！你已经搭建好了数据工程职业生涯的第一块砖。网页抓取是一个深奥的领域，你会遇到各种 [常见的挑战](https://bytesflows.com/blog/common-web-scraping-challenges)，但从小处着手是成功的关键。
 **准备好进阶了吗？**
 -   学习如何 [绕过 Cloudflare 与高级反爬系统](https://bytesflows.com/zh/blog/bypass-cloudflare-web-scraping)。
 -   探索如何 [实现大规模数据抓取](https://bytesflows.com/zh/blog/scraping-data-at-scale)。
--   查看 [2026 年最佳网页抓取工具推荐](https://bytesflows.com/zh/blog/best-web-scraping-tools)。
+-   查看 [2026 年最佳网页抓取工具推荐](https://bytesflows.com/blog/best-web-scraping-tools)。

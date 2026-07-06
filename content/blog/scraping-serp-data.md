@@ -14,7 +14,7 @@ coverImage: "https://images.unsplash.com/photo-1542435503-956c469947f6?auto=form
 ## Why Search Engine Results Data Matters
 Search engine result pages are valuable because they reveal rankings, intent patterns, SERP features, local results, ads, and competitor visibility. Teams collect this data for SEO research, brand monitoring, market analysis, and search-product intelligence.
 But SERP scraping is also one of the most sensitive forms of web collection. Search engines are highly defended, results vary by geography and query context, and repeated request patterns are scored quickly.
-This guide pairs naturally with [Scraping Search Results with Python](https://bytesflows.com/blog/scraping-search-results-python), [How to Scrape Google - SERP Scraping Guide](https://bytesflows.com/blog/how-to-scrape-google-serp), and [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies).
+This guide pairs naturally with [Scraping Search Results with Python](https://bytesflows.com/blog/scraping-search-results-python), [How to Scrape Google - SERP Scraping Guide](https://bytesflows.com/blog/how-to-scrape-google), and [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies).
 ## What Teams Usually Need From SERPs
 SERP data collection often targets fields such as:
 - query and timestamp
@@ -81,7 +81,7 @@ Bursting too many similar requests can degrade result quality fast.
 ### Validate what the page actually returned
 A technically successful response may still be a challenge page or degraded result set.
 ### Test routes and headers regularly
-Use [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to verify that SERP requests are reaching the engine cleanly.
+Use [Scraping Test](https://bytesflows.com/tools/proxy-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [Proxy Checker](https://bytesflows.com/blog/proxy-checker) to verify that SERP requests are reaching the engine cleanly.
 ## Common Mistakes
 - storing rankings without location or device context
 - treating ads and organic results as the same type of record
@@ -93,7 +93,7 @@ Scraping search engine results reliably requires more than extracting links from
 When routing, extraction, and normalization are designed together, SERP data becomes much more useful for SEO monitoring, market intelligence, and search analytics.
 ## Further reading
 - [Scraping Search Results with Python](https://bytesflows.com/blog/scraping-search-results-python)
-- [How to Scrape Google - SERP Scraping Guide](https://bytesflows.com/blog/how-to-scrape-google-serp)
+- [How to Scrape Google - SERP Scraping Guide](https://bytesflows.com/blog/how-to-scrape-google)
 - [Geo-Targeted Scraping Proxies](https://bytesflows.com/blog/geo-targeted-scraping-proxies)
 - [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
 - [Proxy Rotation Strategies](https://bytesflows.com/blog/proxy-rotation-strategies)

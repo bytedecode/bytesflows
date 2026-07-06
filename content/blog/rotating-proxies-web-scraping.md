@@ -97,7 +97,7 @@ The proxy type still matters.
 Identity changes should help, not randomize blindly.
 ### Monitor pass rate under repeated real workload, not only on a few test requests
 Rotation quality is proven under repetition.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
 ## Conclusion
 Rotating proxies are useful because they reduce identity concentration—the same problem that causes many scrapers to get blocked long before the extraction logic itself fails. When used on stateless tasks with sensible pacing and adequate route quality, rotation can significantly improve block resistance and scale.
 The practical lesson is that rotation should be used deliberately, not automatically. The right strategy is to rotate when the workflow needs distribution and stay sticky when the workflow needs continuity. Once that distinction is respected, rotating proxies become one of the most effective layers in a resilient scraping setup.

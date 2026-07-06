@@ -15,7 +15,7 @@ Residential proxy cost is rarely ruined by the price per GB alone. It is usually
 
 A Python scraper that downloads 180 KB of HTML for each product page can be cheap. The same target opened in Playwright may transfer 3-6 MB after scripts, images, fonts, tracking pixels, and background APIs load through the residential route. If 8% of requests need retries, the bill grows again.
 
-This calculator gives you a practical way to estimate monthly traffic before you buy, test a target with [Proxy Test](/tools/proxy-test), and choose the right [BytesFlows pricing](/pricing) tier.
+This calculator gives you a practical way to estimate monthly traffic before you buy, test a target with [Proxy Test](https://bytesflows.com/tools/proxy-test), and choose the right [BytesFlows pricing](https://bytesflows.com/pricing) tier.
 
 ---
 
@@ -90,11 +90,11 @@ Formula:
 Recommended action:
 
 1. test the top 500 keywords first;
-2. compare [United States](/locations/united-states) and [United Kingdom](/locations/united-kingdom) p95 latency;
+2. compare [United States](https://bytesflows.com/locations/united-states) and [United Kingdom](https://bytesflows.com/locations/united-kingdom) p95 latency;
 3. log status codes and empty-result pages separately;
-4. map the final GB estimate to [Pricing](/pricing).
+4. map the final GB estimate to [Pricing](https://bytesflows.com/pricing).
 
-For the network-quality side of this workflow, read [Residential Proxy Speed Test 2026](/blog/residential-proxy-speed-test).
+For the network-quality side of this workflow, read [Residential Proxy Speed Test 2026](https://bytesflows.com/blog/residential-proxy-speed-test).
 
 ---
 
@@ -120,9 +120,9 @@ This is where cost control matters. If the target page exposes price data in HTM
 
 Relevant internal checks:
 
-- [Germany residential proxies](/locations/germany)
-- [Japan residential proxies](/locations/japan)
-- [Residential vs Datacenter Proxies](/compare/residential-vs-datacenter)
+- [Germany residential proxies](https://bytesflows.com/locations/germany)
+- [Japan residential proxies](https://bytesflows.com/locations/japan)
+- [Residential vs Datacenter Proxies](https://bytesflows.com/compare/residential-vs-datacenter)
 
 ---
 
@@ -149,7 +149,7 @@ If the same job loads full media at 3,500 KB per page, the estimate becomes:
 3,500 KB x 12,000 x 30 x 1.15 / 1,048,576 = 1,382 GB
 ```
 
-That is why Playwright cost work starts with request interception. See [Playwright Proxy Guide](/blog/playwright-residential-proxy-guide) for context-level proxy setup and bandwidth controls.
+That is why Playwright cost work starts with request interception. See [Playwright Proxy Guide](https://bytesflows.com/blog/playwright-residential-proxy-guide) for context-level proxy setup and bandwidth controls.
 
 ---
 
@@ -308,7 +308,7 @@ Cost optimization should not destroy data quality. After every change, compare e
 | 50-100 GB | Growth usage | Daily SERP or marketplace monitoring with controlled retries. |
 | 500 GB+ | Scale tier | High-volume collection, browser agents, or multi-country monitoring. |
 
-Use [BytesFlows pricing](/pricing) for current package details. If you are still comparing network types, start with [Residential vs Datacenter Proxies](/compare/residential-vs-datacenter) and [Proxy Test](/tools/proxy-test).
+Use [BytesFlows pricing](https://bytesflows.com/pricing) for current package details. If you are still comparing network types, start with [Residential vs Datacenter Proxies](https://bytesflows.com/compare/residential-vs-datacenter) and [Proxy Test](https://bytesflows.com/tools/proxy-test).
 
 ---
 
@@ -336,4 +336,4 @@ No. A lower per-GB rate can lose if success rate is lower, p95 latency is high, 
 
 ### Where should I start if I do not know page size?
 
-Run the cURL measurement in this guide, then test the same URL with [Proxy Test](/tools/proxy-test). If you need browser rendering, run the Playwright byte estimate before buying a larger plan.
+Run the cURL measurement in this guide, then test the same URL with [Proxy Test](https://bytesflows.com/tools/proxy-test). If you need browser rendering, run the Playwright byte estimate before buying a larger plan.

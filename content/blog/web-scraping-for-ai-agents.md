@@ -134,12 +134,12 @@ your-sub-user-loc-jp-session-qa-landing-001-time-10:your-password@p1.bytesflows.
 
 Natural internal links for this section:
 
-- [Residential Proxies](/proxies/residential)
-- [United States Proxies](/locations/united-states)
-- [Germany Proxies](/locations/germany)
-- [Japan Proxies](/locations/japan)
-- [Proxy Test Tool](/tools/proxy-test)
-- [Pricing](/pricing)
+- [Residential Proxies](https://bytesflows.com/proxies/rotating-residential-proxies)
+- [United States Proxies](https://bytesflows.com/locations/united-states)
+- [Germany Proxies](https://bytesflows.com/locations/germany)
+- [Japan Proxies](https://bytesflows.com/locations/japan)
+- [Proxy Test Tool](https://bytesflows.com/tools/proxy-test)
+- [Pricing](https://bytesflows.com/pricing)
 
 ## Python: HTTP fetch + distillation + evidence record
 
@@ -412,13 +412,13 @@ It is not appropriate for:
 
 ## Internal linking suggestions
 
-- [Residential Proxies](/proxies/residential) — explain the network layer.
-- [Proxy Test Tool](/tools/proxy-test) — verify country and connectivity before agent runs.
-- [Pricing](/pricing) — budget GB before browser-scale crawling.
-- [Proxy Rotation Strategy](/blog/proxy-rotation-strategy) — session logic for grouped tasks.
-- [Cloudflare 403 Troubleshooting](/blog/cloudflare-403-proxy-troubleshooting) — diagnose blocked retrieval.
-- [SEO Solutions](/solutions/seo) — localized search and landing-page evidence.
-- [United States Proxies](/locations/united-states) and [Japan Proxies](/locations/japan) — examples of regional evidence capture.
+- [Residential Proxies](https://bytesflows.com/proxies/rotating-residential-proxies) — explain the network layer.
+- [Proxy Test Tool](https://bytesflows.com/tools/proxy-test) — verify country and connectivity before agent runs.
+- [Pricing](https://bytesflows.com/pricing) — budget GB before browser-scale crawling.
+- [Proxy Rotation Strategy](https://bytesflows.com/blog/proxy-rotation-strategy) — session logic for grouped tasks.
+- [Cloudflare 403 Troubleshooting](https://bytesflows.com/blog/cloudflare-403-proxy-troubleshooting) — diagnose blocked retrieval.
+- [SEO Solutions](https://bytesflows.com/solutions/seo) — localized search and landing-page evidence.
+- [United States Proxies](https://bytesflows.com/locations/united-states) and [Japan Proxies](https://bytesflows.com/locations/japan) — examples of regional evidence capture.
 
 ## FAQ
 

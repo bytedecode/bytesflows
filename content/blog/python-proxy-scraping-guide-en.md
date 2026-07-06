@@ -101,7 +101,7 @@ A working route can still be the wrong route.
 Do not let weak identity patterns repeat blindly.
 ### Scale only when pass rate stays stable under real workload
 Proxy quality should be proven under repetition.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/blog/scraping-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
 ## Conclusion
 Python proxy scraping becomes much easier to manage once proxies are treated as part of workflow design rather than as optional network decoration. The right routing model depends on whether you are using a simple HTTP client, a structured crawler, or a real browser, and whether the workflow needs distribution or continuity.
 The practical lesson is simple: good proxies do not replace good architecture. They support it. When route choice, Python stack, retries, and session behavior all reinforce each other, Python scraping becomes much more stable and much easier to scale on real targets.

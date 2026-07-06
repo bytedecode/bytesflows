@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=f
 
 Social listening sounds simple until the workflow has to run every day across multiple platforms, markets, and keywords. The challenge is usually not collecting one page. It is collecting a steady stream of public signals without turning the system into a brittle mess.
 That is where OpenClaw helps. It gives teams a way to orchestrate browser-driven monitoring flows while still keeping extraction logic, scheduling, and downstream alerting manageable.
-This guide pairs well with [AI Web Scraping with Agents](https://bytesflows.com/blog/ai-web-scraping-agents), [Future of AI Web Scraping](https://bytesflows.com/blog/future-of-ai-web-scraping), and [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxies).
+This guide pairs well with [AI Web Scraping with Agents](https://bytesflows.com/blog/ai-web-scraping-agents), [Future of AI Web Scraping](https://bytesflows.com/blog/future-of-ai-web-scraping), and [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy).
 ## What Social Listening Actually Needs
 Most teams do not want a raw scraper. They want a system that can:
 - monitor brand mentions and product terms
@@ -74,6 +74,6 @@ When those layers are in place, the result is far more useful than a simple scra
 ## Further reading
 - [AI Web Scraping with Agents](https://bytesflows.com/blog/ai-web-scraping-agents)
 - [Future of AI Web Scraping](https://bytesflows.com/blog/future-of-ai-web-scraping)
-- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxies)
-- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/why-openclaw-agents-need-residential-proxies)
-- [How Websites Detect Web Scrapers (2026)](https://bytesflows.com/blog/how-websites-detect-web-scrapers)
+- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
+- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [How Websites Detect Web Scrapers (2026)](https://bytesflows.com/blog/how-websites-detect-scrapers)

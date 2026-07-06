@@ -51,10 +51,10 @@ Start with country-level routes. Add city-level targeting only when the page out
 
 Route starting points:
 
-- [United States residential proxies](/locations/united-states)
-- [United Kingdom residential proxies](/locations/united-kingdom)
-- [Germany residential proxies](/locations/germany)
-- [Japan residential proxies](/locations/japan)
+- [United States residential proxies](https://bytesflows.com/locations/united-states)
+- [United Kingdom residential proxies](https://bytesflows.com/locations/united-kingdom)
+- [Germany residential proxies](https://bytesflows.com/locations/germany)
+- [Japan residential proxies](https://bytesflows.com/locations/japan)
 
 ---
 
@@ -256,7 +256,7 @@ await context.close();
 await browser.close();
 ```
 
-If images are part of the evidence, do not block them. Instead, run a separate evidence job and account for higher bandwidth in [Residential Proxy Cost Calculator](/blog/residential-proxy-cost-calculator).
+If images are part of the evidence, do not block them. Instead, run a separate evidence job and account for higher bandwidth in [Residential Proxy Cost Calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator).
 
 ---
 
@@ -293,7 +293,7 @@ Assume Playwright with media/fonts blocked:
 
 At $3/GB, that is about $8,652/month.
 
-The cost gap explains why the production collector should start with HTTP and reserve Playwright for evidence, JavaScript-rendered fields, and shipping workflows. Use [Pricing](/pricing) for current plan economics and run a small benchmark before committing to volume.
+The cost gap explains why the production collector should start with HTTP and reserve Playwright for evidence, JavaScript-rendered fields, and shipping workflows. Use [Pricing](https://bytesflows.com/pricing) for current plan economics and run a small benchmark before committing to volume.
 
 ---
 
@@ -306,7 +306,7 @@ The cost gap explains why the production collector should start with HTTP and re
 | HTML exists but parser returns null | DOM changed or consent page returned | Archive HTML sample and version parsers. |
 | Cost spikes after adding screenshots | Browser evidence job loads assets | Separate evidence jobs and block nonessential resources when possible. |
 | High retry multiplier | Timeout, route mismatch, or target response changes | Classify failures before increasing volume. |
-| Credential errors | Wrong proxy sub-user or password formatting | Test in [Proxy Test](/tools/proxy-test), then retry one SKU. |
+| Credential errors | Wrong proxy sub-user or password formatting | Test in [Proxy Test](https://bytesflows.com/tools/proxy-test), then retry one SKU. |
 
 ---
 
@@ -320,7 +320,7 @@ Do not spend residential traffic when:
 4. the job requires account-level private data;
 5. your legal or compliance review has not approved the collection workflow.
 
-Use [Residential vs Datacenter Proxies](/compare/residential-vs-datacenter) if you are unsure whether consumer-market routing is needed.
+Use [Residential vs Datacenter Proxies](https://bytesflows.com/compare/residential-vs-datacenter) if you are unsure whether consumer-market routing is needed.
 
 ---
 
@@ -340,12 +340,12 @@ No. Start with raw HTTP collection. Use Playwright only when the price is render
 
 ### How do I estimate monthly proxy bandwidth?
 
-Measure average bytes per successful SKU, multiply by SKU count, run frequency, days per month, and retry multiplier. The [cost calculator](/blog/residential-proxy-cost-calculator) walks through the formula.
+Measure average bytes per successful SKU, multiply by SKU count, run frequency, days per month, and retry multiplier. The [cost calculator](https://bytesflows.com/blog/residential-proxy-cost-calculator) walks through the formula.
 
 ### Can I test before buying a larger plan?
 
-Yes. Use [Proxy Test](/tools/proxy-test), run 20-100 representative SKUs, compare [Pricing](/pricing), then scale the country routes that match your actual market needs.
+Yes. Use [Proxy Test](https://bytesflows.com/tools/proxy-test), run 20-100 representative SKUs, compare [Pricing](https://bytesflows.com/pricing), then scale the country routes that match your actual market needs.
 
 ### Which markets should I validate first?
 
-Start with the markets that drive revenue or compliance risk. Common first tests are [United States](/locations/united-states), [United Kingdom](/locations/united-kingdom), [Germany](/locations/germany), and [Japan](/locations/japan).
+Start with the markets that drive revenue or compliance risk. Common first tests are [United States](https://bytesflows.com/locations/united-states), [United Kingdom](https://bytesflows.com/locations/united-kingdom), [Germany](https://bytesflows.com/locations/germany), and [Japan](https://bytesflows.com/locations/japan).

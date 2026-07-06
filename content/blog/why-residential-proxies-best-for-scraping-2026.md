@@ -29,7 +29,7 @@ Use [residential proxies](https://bytesflows.com/blog/residential-proxies) when:
 - Targets use **anti-bot** ([Cloudflare](https://bytesflows.com/blog/cloudflare-scraping), fingerprinting). [Bypass Cloudflare](https://bytesflows.com/blog/bypass-cloudflare-web-scraping) and [browser fingerprinting](https://bytesflows.com/blog/browser-fingerprinting-explained) are easier with residential IPs.
 - You need **geo-specific** data (local SERP, prices). [Best Proxies for Web Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping) and [Geo-Targeted Scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping) cover this.
 - You run **browser automation** ([Playwright](https://bytesflows.com/blog/playwright-web-scraping-tutorial), [headless](https://bytesflows.com/blog/headless-browser-scraping-guide)) and want to avoid detection. [Avoid detection in Playwright](https://bytesflows.com/blog/scrape-websites-without-getting-blocked) and [best practices](https://bytesflows.com/blog/avoid-ip-bans-web-scraping) apply.
-[Common proxy mistakes](https://bytesflows.com/blog/avoid-ip-bans-web-scraping) include using only datacenter IPs for strict sites or under-rotating. Use [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/blog/scraping-test) to validate. For product options, see [Proxies](https://bytesflows.com/proxies) and [Residential Proxies](https://bytesflows.com/blog/residential-proxies).
+[Common proxy mistakes](https://bytesflows.com/blog/avoid-ip-bans-web-scraping) include using only datacenter IPs for strict sites or under-rotating. Use [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/tools/proxy-test) to validate. For product options, see [Proxies](https://bytesflows.com/proxies) and [Residential Proxies](https://bytesflows.com/blog/residential-proxies).
 ## How Residential Proxies Are Sourced
 Residential proxy networks route your traffic through IPs that belong to real ISP subscribers (with consent, via apps or partnerships). The target site sees a normal home or mobile IP, not a datacenter range. That’s why [how websites detect scrapers](https://bytesflows.com/blog/how-websites-detect-scrapers) often focuses on ASN and IP reputation: datacenter blocks are well known, residential are not. When you use [rotating residential proxies](https://bytesflows.com/blog/residential-proxies), the provider’s gateway assigns a new IP from the pool per request or per session. See [how proxy rotation works](https://bytesflows.com/blog/proxy-rotation-strategies) and [proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies). [Proxy Rotator](https://bytesflows.com/blog/proxy-rotator) lets you test rotation behaviour. [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping) and [residential proxies improve scraping](https://bytesflows.com/blog/residential-proxies-improve-scraping) explain why this improves success rates.
 ## Use Cases Where Residential Wins
@@ -55,15 +55,15 @@ Residential proxies cost more per GB or per IP than datacenter. The benefit is *
 - [Python web scraping guide](https://bytesflows.com/blog/python-web-scraping-guide)
 - [Proxy pools](https://bytesflows.com/blog/proxy-pools-web-scraping)
 - [Proxy Checker](https://bytesflows.com/blog/proxy-checker)
-- [Scraping Test](https://bytesflows.com/blog/scraping-test)
+- [Scraping Test](https://bytesflows.com/tools/proxy-test)
 - [Proxy Rotator](https://bytesflows.com/blog/proxy-rotator)
-- [Robots Tester](https://bytesflows.com/blog/robots-tester)
+- [Robots Tester](https://bytesflows.com/blog/robots-txt-tester-validator)
 - [Ethical web scraping](https://bytesflows.com/blog/ethical-web-scraping-practices)
 - [Web scraping legal](https://bytesflows.com/blog/web-scraping-legal-considerations)
 - [Common web scraping challenges](https://bytesflows.com/blog/common-web-scraping-challenges)
 - [Web scraping without getting blocked](https://bytesflows.com/blog/scrape-websites-without-getting-blocked)
 - [Proxies](https://bytesflows.com/proxies)
-**Next steps:** Use [residential proxies](https://bytesflows.com/blog/residential-proxies) and [proxy rotation](https://bytesflows.com/blog/proxy-rotation-strategies) when scaling. Validate with [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/blog/scraping-test). See [ultimate web scraping guide](https://bytesflows.com/blog/ultimate-guide-web-scraping-2026), [best proxies](https://bytesflows.com/blog/best-proxies-for-web-scraping), [Proxies](https://bytesflows.com/proxies).
+**Next steps:** Use [residential proxies](https://bytesflows.com/blog/residential-proxies) and [proxy rotation](https://bytesflows.com/blog/proxy-rotation-strategies) when scaling. Validate with [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/tools/proxy-test). See [ultimate web scraping guide](https://bytesflows.com/blog/ultimate-guide-web-scraping-2026), [best proxies](https://bytesflows.com/blog/best-proxies-for-web-scraping), [Proxies](https://bytesflows.com/proxies).
 - [What is web scraping](https://bytesflows.com/blog/what-is-web-scraping-beginner-guide)
 - [How web scraping works](https://bytesflows.com/blog/how-web-scraping-works)
 - [Web scraping at scale](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)
@@ -77,7 +77,7 @@ Residential proxies cost more per GB or per IP than datacenter. The benefit is *
 - [Handling CAPTCHAs](https://bytesflows.com/blog/handling-captchas-in-scraping)
 - [User-Agent Generator](https://bytesflows.com/blog/user-agent-generator)
 - [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker)
-**Next steps:** Use [residential proxies](https://bytesflows.com/blog/residential-proxies) and [proxy rotation](https://bytesflows.com/blog/proxy-rotation-strategies) when scaling. Validate with [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/blog/scraping-test). See [ultimate web scraping guide](https://bytesflows.com/blog/ultimate-guide-web-scraping-2026), [best proxies](https://bytesflows.com/blog/best-proxies-for-web-scraping), [Proxies](https://bytesflows.com/proxies).
+**Next steps:** Use [residential proxies](https://bytesflows.com/blog/residential-proxies) and [proxy rotation](https://bytesflows.com/blog/proxy-rotation-strategies) when scaling. Validate with [Proxy Checker](https://bytesflows.com/blog/proxy-checker) and [Scraping Test](https://bytesflows.com/tools/proxy-test). See [ultimate web scraping guide](https://bytesflows.com/blog/ultimate-guide-web-scraping-2026), [best proxies](https://bytesflows.com/blog/best-proxies-for-web-scraping), [Proxies](https://bytesflows.com/proxies).
 - [What is web scraping](https://bytesflows.com/blog/what-is-web-scraping-beginner-guide)
 - [How web scraping works](https://bytesflows.com/blog/how-web-scraping-works)
 - [Web scraping at scale](https://bytesflows.com/blog/web-scraping-at-scale-best-practices)

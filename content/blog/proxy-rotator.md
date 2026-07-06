@@ -99,7 +99,7 @@ A changing IP is not enough if the identity still drifts in the wrong way.
 Each tool answers a different layer of the problem.
 ### Keep notes by provider, session mode, and region
 That makes future routing choices more deliberate.
-Helpful companion pages include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
+Helpful companion pages include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/tools/proxy-test), [HTTP Header Checker](https://bytesflows.com/blog/http-header-checker), and [best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping).
 ## FAQ
 ### Why do I keep seeing the same IP?
 The gateway may be sticky, the session setting may be fixed, or the provider may not rotate as often as expected.
