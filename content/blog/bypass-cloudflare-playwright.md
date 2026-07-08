@@ -105,21 +105,21 @@ Locale, viewport, and region should make sense together.
 ### Retry with fresh identity when needed
 Do not let the retry path reinforce the original failure.
 Helpful support tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Scraping Test](https://bytesflows.com/blog/scraping-test-tool-detect-blocks), and [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator).
-## 下一步技术排查路径 (Troubleshooting Step Paths)
+## Troubleshooting & Engineering Checklist
 
-在处理与优化 Playwright 绕过 Cloudflare 5秒盾（Turnstile）、WAF 挑战与 403 拦截时，建议按以下标准工程排查规范进行定位与调优：
+When handling Cloudflare Turnstile (5-second challenge), WAF challenges, HTTP 403 blocks, or proxy authentication errors in Playwright automation, we recommend following this structured engineering checklist:
 
-1. **第一步：环境与指纹层校验 (Fingerprint & TLS Audit)**
-   - 检查 Playwright 自动化上下文中的 TLS JA3/JA4 指纹、HTTP/2 Header 顺序以及 `navigator.webdriver` 标记是否完全符合现代主流真机浏览器规范。
-   - 访问在线工具 [Proxy Test Tool](https://bytesflows.com/tools/proxy-test) 即时校验当前网络路由的 HTTP 状态码、连接协议与出口可用性，确认报错是发生在代理网关认证层（407）还是目标源站层（403）。
+1. **Step 1: Fingerprint & TLS Audit**
+   - Verify that your Playwright browser context's TLS JA3/JA4 fingerprints, HTTP/2 header ordering, and `navigator.webdriver` flags strictly match modern real-browser specifications.
+   - Use our online [Proxy Test Tool](https://bytesflows.com/tools/proxy-test) to instantly verify your current routing exit node, HTTP status codes, and connection protocols to determine whether errors originate at the proxy gateway (HTTP 407) or target origin (HTTP 403).
 
-2. **第二步：网络路由与代理信誉度隔离 (IP Reputation & Routing Choice)**
-   - 当自动化浏览器频繁触发 Cloudflare 验证墙或直接返回 HTTP 403 时，需排查当前网络路由是否为高频复用的数据中心（Datacenter）节点。
-   - 建议将 Playwright 抓取链路切换至高纯净度的**住宅代理（Residential Proxies）**，利用真实家庭宽带 ASN 与原生地理位置绕过风控检测。可参考 [对比方案与选型指南](https://bytesflows.com/compare) 评估不同路由模式对通过率的影响。
+2. **Step 2: IP Reputation & Routing Isolation**
+   - If your automated browser frequently triggers Cloudflare verification walls or immediate 403 Forbidden responses, check whether your routing infrastructure relies on heavily-used datacenter IP pools.
+   - Switch your Playwright scraping pipelines to high-purity **Residential Proxies**, leveraging authentic household ISP ASNs and native geographic locations to bypass risk-scoring engines. Review our [Proxy Comparison Guides](https://bytesflows.com/compare) to evaluate how different routing architectures impact pass rates across major target domains.
 
-3. **第三步：并发与重试策略优化 (Backoff & Session Strategy)**
-   - 检查高并发作业在 Cloudflare 边缘防线下的速率限制（Rate Limiting）阈值，在任务队列中强制配置**指数退避（Exponential Backoff）与全抖动（Full Jitter）**重试算法，避免短时流量剧增引发整段 ASN 封杀。
-   - 针对不同自动化场景，在 [通用解决方案库](https://bytesflows.com/solutions) 中检索对应的分布式会话配置：对无状态抓取采取单次请求随机轮换（`time-0`），对涉及登录鉴权、会话维持或挑战通过的流程开启短时粘性路由（Sticky Sessions）。
+3. **Step 3: Concurrency & Retry Strategy Optimization**
+   - Check rate limiting thresholds under Cloudflare's edge protection and enforce **Exponential Backoff with Full Jitter** retry logic in your worker queue to avoid short-term traffic spikes from triggering ASN-wide bans.
+   - For different automation workflows, check our [Solutions Library](https://bytesflows.com/solutions) for session best practices: use random per-request rotation (`time-0`) for stateless scraping, and short-term sticky sessions for login flows and challenge resolution.
 ## Further reading
 - [Playwright proxy configuration guide](https://bytesflows.com/blog/playwright-proxy-configuration-guide)
 - [Bypass Cloudflare for web scraping](https://bytesflows.com/blog/bypass-cloudflare-web-scraping)

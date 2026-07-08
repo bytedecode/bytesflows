@@ -324,18 +324,18 @@ Prioritize geographic markets that represent your highest revenue volume or stri
 
 ---
 
-## 下一步技术排查路径 (Troubleshooting Step Paths)
+## Troubleshooting & Engineering Checklist
 
-在构建与扩展跨国电商价格监控（Price Monitoring）、库存追踪或防串货系统时，如遭遇高频封锁、CAPTCHA 或数据异化，建议按以下标准工程排查规范进行定位：
+When building and scaling cross-border e-commerce price monitoring, inventory tracking, or MAP compliance systems, if you encounter frequent blocks, CAPTCHAs, or data anomalies, follow this structured engineering checklist:
 
-1. **第一步：环境与指纹层校验 (Fingerprint & TLS Audit)**
-   - 检查高并发 HTTP 客户端（如 `httpx`、`aiohttp` 或 Node `undici`）发起的 TLS JA3/JA4 指纹及 HTTP/2 协议栈是否合法，确认 `Accept-Language` 与网络节点地区（如美国 `en-US` / 德国 `de-DE`）保持一致。
-   - 访问在线工具 [Proxy Test Tool](https://bytesflows.com/tools/proxy-test) 即时校验目标电商域名的连通性与网络归属地，确认异常是发生在代理鉴权层（407）还是目标源站反爬防线（403/503）。
+1. **Step 1: Fingerprint & TLS Audit**
+   - Verify that high-concurrency HTTP clients (such as `httpx`, `aiohttp`, or Node `undici`) emit legitimate TLS JA3/JA4 fingerprints and HTTP/2 stacks, ensuring `Accept-Language` matches the proxy location (e.g., `en-US` for US nodes, `de-DE` for Germany).
+   - Use our online [Proxy Test Tool](https://bytesflows.com/tools/proxy-test) to instantly verify target e-commerce domain connectivity and IP geolocation, confirming whether errors occur at the proxy auth layer (407) or origin WAF layer (403/503).
 
-2. **第二步：网络路由与代理信誉度隔离 (IP Reputation & Routing Choice)**
-   - 若电商站点（如 Amazon、Walmrat 或 Shopify 独立站）对数据中心 IP 实施了严格的区域隔离或直接屏蔽，需及时隔离被污染的节点。
-   - 建议将监控链路切换至高纯净度的**住宅代理（Residential Proxies）**，利用真实家庭宽带 ASN 与原生城市级定位（City-level Targeting）获取真实区域定价值。可参考 [对比方案与选型指南](https://bytesflows.com/compare) 评估不同路由协议在电商采集场景下的吞吐率与通过率。
+2. **Step 2: IP Reputation & Routing Isolation**
+   - If e-commerce platforms (such as Amazon, Walmart, or Shopify stores) enforce strict subnet filtering or block datacenter IPs, isolate flagged nodes immediately.
+   - Switch your monitoring pipelines to high-purity **Residential Proxies**, utilizing real household broadband ASNs and city-level targeting to retrieve accurate local pricing. Review our [Proxy Comparison Guides](https://bytesflows.com/compare) to evaluate throughput and success rates across e-commerce targets.
 
-3. **第三步：并发与重试策略优化 (Backoff & Session Strategy)**
-   - 检查高并发采集作业在目标电商站点防线下的速率限制（Rate Limiting）阈值，在任务队列中强制配置**指数退避（Exponential Backoff）与全抖动（Full Jitter）**重试算法，避免短时突发流量触发目标商户的区域反爬策略。
-   - 针对不同采集深度，在 [通用解决方案库](https://bytesflows.com/solutions) 中检索对应的分布式会话配置：对大规模列表页探测采用单次请求随机轮换（`time-0`），对涉及区域邮编（ZIP Code）定位或购物车比价的流程开启短时粘性维持（Sticky Sessions）。
+3. **Step 3: Concurrency & Retry Strategy Optimization**
+   - Review rate limiting thresholds under the e-commerce site's defense layer and configure **Exponential Backoff with Full Jitter** retry logic in your worker queue to avoid triggering regional anti-bot rules.
+   - For different scraping depths, consult our [Solutions Library](https://bytesflows.com/solutions) for distributed session configurations: use random per-request rotation (`time-0`) for broad catalog discovery, and sticky sessions for ZIP-code localization or cart price checks.
