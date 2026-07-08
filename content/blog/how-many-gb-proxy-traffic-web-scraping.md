@@ -7,7 +7,7 @@ summary: A practical traffic estimation guide for web scraping teams calculating
 category: Proxy Guides & Benchmark
 tags: ["proxy bandwidth calculator", "scraping traffic estimate", "residential proxy pricing", "Web Scraping"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://bytesflows.com/images/blog/how-many-gb-proxy-traffic-web-scraping.png"
 ---
 

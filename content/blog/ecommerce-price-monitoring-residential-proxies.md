@@ -321,3 +321,21 @@ Yes. Test your target domain connectivity instantly using our online [Proxy Test
 
 ### Which markets should I validate first?
 Prioritize geographic markets that represent your highest revenue volume or strict compliance boundaries. Start by validating route fidelity across the [United States](https://bytesflows.com/locations/united-states), [United Kingdom](https://bytesflows.com/locations/united-kingdom), [Germany](https://bytesflows.com/locations/germany), and [Japan](https://bytesflows.com/locations/japan).
+
+---
+
+## 下一步技术排查路径 (Troubleshooting Step Paths)
+
+在构建与扩展跨国电商价格监控（Price Monitoring）、库存追踪或防串货系统时，如遭遇高频封锁、CAPTCHA 或数据异化，建议按以下标准工程排查规范进行定位：
+
+1. **第一步：环境与指纹层校验 (Fingerprint & TLS Audit)**
+   - 检查高并发 HTTP 客户端（如 `httpx`、`aiohttp` 或 Node `undici`）发起的 TLS JA3/JA4 指纹及 HTTP/2 协议栈是否合法，确认 `Accept-Language` 与网络节点地区（如美国 `en-US` / 德国 `de-DE`）保持一致。
+   - 访问在线工具 [Proxy Test Tool](https://bytesflows.com/tools/proxy-test) 即时校验目标电商域名的连通性与网络归属地，确认异常是发生在代理鉴权层（407）还是目标源站反爬防线（403/503）。
+
+2. **第二步：网络路由与代理信誉度隔离 (IP Reputation & Routing Choice)**
+   - 若电商站点（如 Amazon、Walmrat 或 Shopify 独立站）对数据中心 IP 实施了严格的区域隔离或直接屏蔽，需及时隔离被污染的节点。
+   - 建议将监控链路切换至高纯净度的**住宅代理（Residential Proxies）**，利用真实家庭宽带 ASN 与原生城市级定位（City-level Targeting）获取真实区域定价值。可参考 [对比方案与选型指南](https://bytesflows.com/compare) 评估不同路由协议在电商采集场景下的吞吐率与通过率。
+
+3. **第三步：并发与重试策略优化 (Backoff & Session Strategy)**
+   - 检查高并发采集作业在目标电商站点防线下的速率限制（Rate Limiting）阈值，在任务队列中强制配置**指数退避（Exponential Backoff）与全抖动（Full Jitter）**重试算法，避免短时突发流量触发目标商户的区域反爬策略。
+   - 针对不同采集深度，在 [通用解决方案库](https://bytesflows.com/solutions) 中检索对应的分布式会话配置：对大规模列表页探测采用单次请求随机轮换（`time-0`），对涉及区域邮编（ZIP Code）定位或购物车比价的流程开启短时粘性维持（Sticky Sessions）。

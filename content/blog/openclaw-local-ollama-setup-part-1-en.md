@@ -7,7 +7,7 @@ summary: A practical guide to installing Ollama on Ubuntu, covering local servic
 category: AI Agents & Automation
 tags: []
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2000"
 ---
 

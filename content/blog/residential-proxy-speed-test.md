@@ -67,6 +67,21 @@ For a no-code check, start with the [BytesFlows proxy test tool](https://bytesfl
 
 The benchmark is intentionally rigorous and controlled. A proxy speed test should remove as many variables as possible before it makes any technical claim.
 
+### Benchmark Evaluation Workflow (Decision Tree)
+
+```mermaid
+graph TD
+    A[Start Proxy Benchmark] --> B[Phase 1: Lightweight Diagnostic Probe]
+    B -->|Check HTTP 2xx/3xx & Geo Match| C{Success Rate >= 98%?}
+    C -->|No| D[Check Authentication, ISP Routing & Target Bans]
+    C -->|Yes| E[Phase 2: Target Domain HTML Probe]
+    E -->|Measure p95 Latency & DOM Response| F{p95 Latency <= 1.5s?}
+    F -->|No| G[Increase Timeout Budget or Switch Region]
+    F -->|Yes| H[Phase 3: Production Concurrency Ramp-Up]
+    H -->|Test 10 to 50 Parallel Threads| I[Calculate Real Cost per 1k Successful Results]
+    I --> J[Ready for Production Scaling]
+```
+
 ### Environment & Assumptions
 
 | Layer | Configuration |

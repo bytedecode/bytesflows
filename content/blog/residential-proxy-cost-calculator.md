@@ -56,6 +56,21 @@ The second formula is the definitive buying metric. A plan that looks cheap per 
 | **`retry_multiplier`** | 1.03 to 1.35 | Attempts divided by successful outputs. |
 | **`successful_results`** | Business output count | Parsed SERPs, prices, screenshots, or records delivered. |
 
+### Total Cost of Ownership (TCO) Calculation Workflow
+
+```mermaid
+graph TD
+    A[Start Proxy Cost Calculation] --> B[Step 1: Determine Page Weight & Protocol]
+    B -->|Lightweight HTML vs Headless Chromium| C[Calculate Raw Monthly GB Demand]
+    C --> D[Step 2: Apply Retry Multiplier & Idle Overhead]
+    D -->|Add 5% to 20% for CAPTCHAs & Timeouts| E[Calculate Total Bandwidth Needed]
+    E --> F{Vendor Requires Monthly Minimum Spend?}
+    F -->|Yes - Minimum Spend > Bandwidth Cost| G[True Cost = Minimum Commitment Trap]
+    F -->|No - Pure Pay-As-You-Go| H[True Cost = Actual Bandwidth Consumed]
+    G --> I[Calculate Final Cost per 1k Successful Results]
+    H --> I
+```
+
 ---
 
 ## What I Check Before Scaling (Test Methodology)

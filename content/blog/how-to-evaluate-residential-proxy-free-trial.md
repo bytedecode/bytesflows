@@ -7,7 +7,7 @@ summary: A buyer-focused guide for evaluating a residential proxy free trial wit
 category: Proxy Guides & Benchmark
 tags: ["residential proxy free trial", "proxy buying guide", "residential proxy evaluation", "proxy pricing", "proxy trial"]
 language: en
-status: Draft
+status: Published
 coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=2000"
 ---
 
@@ -46,6 +46,23 @@ Use this format:
 This framing matters because a proxy provider can look good or bad depending on the workload. A lightweight HTTP job, a JavaScript-heavy browser job, and a stateful workflow can produce very different results with the same provider.
 If your team has not defined the workload, start with the core product page for [residential proxies](https://bytesflows.com/proxies) and choose the closest fit: rotating residential sessions, sticky sessions, SOCKS5 residential proxies, or a geo-targeted workflow.
 ## Build a Trial Scorecard
+
+### 72-Hour Free Trial Evaluation Workflow (Decision Tree)
+
+```mermaid
+graph TD
+    A[Start 72-Hour Free Trial] --> B[Hour 1-4: Baseline & Protocol Check]
+    B -->|Test HTTP/SOCKS5 & City Targeting| C{Geo Match & Auth OK?}
+    C -->|No| D[Flag as No-Go: Route Drift or Protocol Mismatch]
+    C -->|Yes| E[Hour 4-24: 100-Request Target Sample]
+    E -->|Measure Usable Output & Sticky Session Continuity| F{Success Rate >= 90%?}
+    F -->|No| G[Flag as No-Go: High Retry Overhead]
+    F -->|Yes| H[Hour 24-72: Production Concurrency & Support Test]
+    H -->|Test 30-50 Workers & Contact Technical Support| I{Support Reply < 12h?}
+    I -->|No| J[Caution: Slow Production Support]
+    I -->|Yes| K[Go Decision: Calculate Real Cost per 1k Records]
+```
+
 Do not evaluate a residential proxy free trial from memory. Use a scorecard.
 The scorecard does not need to be complex. It should separate technical quality from commercial fit. A provider can connect successfully and still be a poor buying decision if the pricing is unclear, the trial cannot represent production, or the support team cannot answer operational questions.
 Use this scorecard as a starting point:
