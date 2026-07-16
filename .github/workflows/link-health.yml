@@ -1,0 +1,39 @@
+name: Link Health
+
+on:
+  push:
+    branches:
+      - fix/link-health-audit-2026-07
+    paths:
+      - 'content/**'
+      - 'scripts/check-link-health.mjs'
+      - 'docs/link-health-workflow.md'
+      - 'README.md'
+      - '.github/workflows/link-health.yml'
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'scripts/check-link-health.mjs'
+      - 'docs/link-health-workflow.md'
+      - 'README.md'
+      - '.github/workflows/link-health.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-link-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate content slugs and internal links
+        run: node scripts/check-link-health.mjs
