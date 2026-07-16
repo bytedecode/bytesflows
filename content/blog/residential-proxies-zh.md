@@ -77,3 +77,11 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=20
 - [大规模数据采集架构](https://bytesflows.com/zh/blog/ai-dynamic-proxy-technical-implementation)
 ## 转化 CTA
 如果你想把抓取任务从“偶尔可用”升级到“稳定生产”，建议先从 [住宅代理](https://bytesflows.com/zh/proxies) 做小规模验证，确认通过率与地域效果后，再逐步扩容。
+
+<!-- link-health:curated-related-guides -->
+## 相关实战指南
+
+- [适合小团队的住宅代理服务商选购指南](/zh/blog/best-residential-proxy-providers-for-small-teams) — 评估低于 50 GB/月场景的价格、最低消费和技术适配度。
+- [如何评估住宅代理免费试用](/zh/blog/how-to-evaluate-residential-proxy-free-trial) — 用统一指标测试成功率、地域准确度、会话和支持质量。
+- [住宅代理速度测试](/zh/blog/residential-proxy-speed-test) — 用延迟、吞吐、成功率和稳定性验证真实可用性。
+

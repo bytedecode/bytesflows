@@ -114,3 +114,18 @@ Helpful companion tools include [Proxy Checker](https://bytesflows.com/tools/pro
 - [Python proxy scraping guide](https://bytesflows.com/blog/python-proxy-scraping-guide)
 - [Playwright proxy setup guide](https://bytesflows.com/blog/playwright-proxy-setup)
 - [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategy)
+
+<!-- link-health:curated-related-guides -->
+## Related Field Guides
+
+Use these focused guides after the residential proxy fundamentals:
+
+- [Best residential proxy providers for small teams](/blog/best-residential-proxy-providers-for-small-teams) — compare sub-50 GB plans, minimum commitments, and operational fit.
+- [BytesFlows proxy setup guide](/blog/bytesflows-proxy-setup-guide) — move from credentials to a verified first request.
+- [How many GB of proxy traffic web scraping needs](/blog/how-many-gb-proxy-traffic-web-scraping) — estimate bandwidth before choosing a plan.
+- [How to evaluate a residential proxy free trial](/blog/how-to-evaluate-residential-proxy-free-trial) — test success rate, geo accuracy, sessions, and support with a repeatable scorecard.
+- [E-commerce price monitoring proxies](/blog/ecommerce-price-monitoring-proxies) — design a recurring price and stock collection workflow.
+- [Residential proxies for e-commerce price monitoring](/blog/ecommerce-price-monitoring-residential-proxies) — choose route, session, and retry policies for retail data.
+- [Playwright proxy errors](/blog/playwright-proxy-errors) — diagnose 407 responses, tunnel failures, and browser-context mistakes.
+- [Social media data collection](/blog/scraping-social-media-data) — plan compliant collection, evidence, and traffic budgets for public social data.
+

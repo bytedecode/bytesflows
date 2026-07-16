@@ -115,3 +115,9 @@ def fetch_with_dynamic_proxy(url: str) -> requests.Response | None:
 - **结合分析**：AI 语料、RAG、多地域数据采集具有高请求量、多站点、多地域的特点，固定 IP 易触发风控；动态代理通过 IP 轮换与地域能力，提升成功率和可扩展性。
 - **技术实现**：动态代理作为“出口层”接入现有爬虫或采集服务即可；按请求轮换实现简单，按会话保持则需代理网关支持。文中给出的 Python 示例可直接用于请求级轮换，并可按需改为异步或接入具体代理 API（如 [BytesFlows](https://bytesflows.com/zh) 等），便于在 AI 数据管线中落地。
 后续可进一步展开：住宅代理与机房代理在 AI 场景的选型、与 Scrapy/Playwright 的集成方式、以及面向 RAG 的定时抓取与去重策略。
+
+<!-- link-health:curated-related-guides -->
+## 相关 AI Agent 实现
+
+- [在 Ubuntu 安装 Ollama：本地 OpenClaw 第一步](/zh/blog/openclaw-local-ollama-setup-part-1) — 先验证本地模型服务，再接入代理路由与浏览器 Agent。
+
