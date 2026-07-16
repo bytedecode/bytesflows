@@ -7,6 +7,10 @@ on:
     paths:
       - 'scripts/export-content-inventory.mjs'
       - '.github/workflows/content-inventory.yml'
+  pull_request:
+    paths:
+      - 'scripts/export-content-inventory.mjs'
+      - '.github/workflows/content-inventory.yml'
   workflow_dispatch:
 
 permissions:
