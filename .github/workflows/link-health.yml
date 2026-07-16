@@ -7,6 +7,7 @@ on:
     paths:
       - 'content/**'
       - 'scripts/check-link-health.mjs'
+      - 'scripts/fix-dead-internal-links.mjs'
       - 'docs/link-health-workflow.md'
       - 'README.md'
       - '.github/workflows/link-health.yml'
@@ -14,15 +15,52 @@ on:
     paths:
       - 'content/**'
       - 'scripts/check-link-health.mjs'
+      - 'scripts/fix-dead-internal-links.mjs'
       - 'docs/link-health-workflow.md'
       - 'README.md'
       - '.github/workflows/link-health.yml'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: read
 
 jobs:
+  apply-reviewed-migrations:
+    if: github.event_name == 'pull_request' && github.head_ref == 'fix/link-health-audit-2026-07'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout iteration branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/link-health-audit-2026-07
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Apply reviewed link migrations
+        run: node scripts/fix-dead-internal-links.mjs --write
+
+      - name: Validate migrated content before commit
+        run: node scripts/check-link-health.mjs
+
+      - name: Commit content fixes to iteration branch
+        shell: bash
+        run: |
+          if git diff --quiet -- content; then
+            echo 'No content migrations remain.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content
+          git commit -m 'fix(content): migrate obsolete internal links'
+          git push origin HEAD:fix/link-health-audit-2026-07
+
   source-link-health:
     runs-on: ubuntu-latest
     timeout-minutes: 5
