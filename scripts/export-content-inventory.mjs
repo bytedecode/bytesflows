@@ -54,5 +54,27 @@ for (const file of files) {
   });
 }
 
+const countBy = (field) => Object.fromEntries(
+  [...new Set(rows.map((row) => row[field] || '(empty)'))]
+    .sort()
+    .map((value) => [value, rows.filter((row) => (row[field] || '(empty)') === value).length]),
+);
+
+const summary = {
+  total: rows.length,
+  byLanguage: countBy('language'),
+  byStatus: countBy('status'),
+  byCategory: countBy('category'),
+  byLanguageAndStatus: Object.fromEntries(
+    [...new Set(rows.map((row) => `${row.language}:${row.status}`))]
+      .sort()
+      .map((key) => {
+        const [language, status] = key.split(':');
+        return [key, rows.filter((row) => row.language === language && row.status === status).length];
+      }),
+  ),
+};
+
 await writeFile('content-inventory.json', JSON.stringify(rows, null, 2));
+await writeFile('content-inventory-summary.json', JSON.stringify(summary, null, 2));
 console.log(`Exported ${rows.length} content records.`);
