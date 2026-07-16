@@ -1,0 +1,41 @@
+old_path,new_path,action,reason,reviewed_at
+/zh/blog/scrape-websites-without-getting-blocked,/zh/blog/ai-dynamic-proxy-technical-implementation,replace,Nearest maintained Chinese technical guide,2026-07-16
+/zh/blog/bypass-cloudflare-web-scraping,/zh/blog/ai-dynamic-proxy-technical-implementation,replace,Nearest maintained Chinese technical guide,2026-07-16
+/zh/blog/scraping-data-at-scale,/zh/blog/ai-dynamic-proxy-technical-implementation,replace,Nearest maintained Chinese technical guide,2026-07-16
+/zh/blog/proxy-rotation-strategies,/zh/proxies,replace,No equivalent maintained Chinese article,2026-07-16
+/zh/blog/crawlee-web-scraping-tutorial,/zh/blog/ai-dynamic-proxy-technical-implementation,replace,Nearest maintained Chinese technical guide,2026-07-16
+/zh/blog/playwright-web-scraping-tutorial,/zh/blog/ai-dynamic-proxy-technical-implementation,replace,Nearest maintained Chinese technical guide,2026-07-16
+/zh/blog/residential-proxies-improve-scraping,/zh/blog/residential-proxies,replace,Consolidated into maintained residential proxy guide,2026-07-16
+/zh/blog/avoid-ip-bans-web-scraping,/zh/proxies,replace,No equivalent maintained Chinese article,2026-07-16
+/blog/anti-bot-systems-explained,/blog/cloudflare-403-troubleshooting,replace,Consolidated anti-bot troubleshooting intent,2026-07-16
+/blog/playwright-proxy-configuration-guide,/blog/playwright-proxy-setup,replace,Canonical Playwright setup guide,2026-07-16
+/blog/bypass-cloudflare-web-scraping,/blog/cloudflare-403-proxy-troubleshooting,replace,Canonical Cloudflare troubleshooting guide,2026-07-16
+/blog/avoid-detection-playwright-scraping,/blog/playwright-residential-proxy-guide,replace,Canonical Playwright residential proxy guide,2026-07-16
+/blog/datacenter-vs-residential-proxies,/blog/residential-proxy-vs-datacenter-proxy,replace,Canonical comparison slug,2026-07-16
+/blog/residential-proxies-improve-scraping,/blog/what-is-residential-proxy,replace,Consolidated residential proxy fundamentals,2026-07-16
+/blog/proxy-checker,/tools/proxy-test,replace,Tool moved out of blog namespace,2026-07-16
+/blog/scraping-test-tool-detect-blocks,/tools/proxy-test,replace,Tool moved out of blog namespace,2026-07-16
+/blog/proxy-rotator,/blog/proxy-rotation-strategy,replace,Canonical rotation strategy guide,2026-07-16
+/blog/playwright-web-scraping-tutorial,/blog/playwright-residential-proxy-guide,replace,Canonical Playwright guide,2026-07-16
+/blog/common-web-scraping-challenges,/blog/cloudflare-403-troubleshooting,replace,Nearest maintained troubleshooting guide,2026-07-16
+/blog/proxy-rotation-strategies,/blog/proxy-rotation-strategy,replace,Canonical rotation strategy slug,2026-07-16
+/blog/avoid-ip-bans-web-scraping,/blog/proxy-rotation-strategy,replace,Consolidated rotation and retry guidance,2026-07-16
+/blog/why-residential-proxies-best-for-scraping-2026,/blog/what-is-residential-proxy,replace,Consolidated residential proxy fundamentals,2026-07-16
+/blog/ai-web-scraping-agents,/blog/ai-browser-agents-playwright,replace,Canonical AI browser agent guide,2026-07-16
+/blog/ai-data-extraction-vs-traditional-scraping,/blog/ai-data-collection-web,replace,Canonical AI data collection guide,2026-07-16
+/blog/scraping-data-at-scale,/blog/web-scraping-architecture-design,replace,Canonical architecture guide,2026-07-16
+/blog/openclaw-browser-automation-proxy,/ai/openclaw,replace,Content consolidated into OpenClaw hub,2026-07-16
+/blog/openclaw-residential-proxy,/ai/openclaw,replace,Content consolidated into OpenClaw hub,2026-07-16
+/blog/using-proxies-playwright,/blog/playwright-proxy-setup,replace,Canonical Playwright setup guide,2026-07-16
+/blog/how-proxy-rotation-works,/blog/proxy-rotation-strategy,replace,Canonical rotation strategy guide,2026-07-16
+/blog/web-scraping-proxy-architecture,/blog/web-scraping-architecture-design,replace,Canonical architecture guide,2026-07-16
+/blog/playwright-web-scraping-scale,/blog/playwright-residential-proxy-guide,replace,Canonical Playwright guide,2026-07-16
+/blog/serp-scraping-residential-proxies,/solutions/serp-scraping,replace,Content consolidated into SERP solution page,2026-07-16
+/blog/web-scraping-workflow-explained,/blog/proxy-pools-web-scraping,replace,Canonical proxy pool workflow guide,2026-07-16
+/blog/web-scraping-at-scale-best-practices,/blog/proxy-pools-web-scraping,replace,Canonical proxy pool workflow guide,2026-07-16
+/blog/scaling-scrapers-distributed-systems,/blog/proxy-pools-web-scraping,replace,Canonical proxy pool workflow guide,2026-07-16
+/blog/rotating-residential-proxies-guide,/blog/proxy-rotation-strategy,replace,Canonical rotation strategy guide,2026-07-16
+/blog/openclaw-installation-on-ubuntu-part-2,,unlink,Series page is not published,2026-07-16
+/blog/openclaw-connect-to-ollama-part-3,,unlink,Series page is not published,2026-07-16
+/zh/blog/openclaw-installation-on-ubuntu-part-2,,unlink,Series page is not published,2026-07-16
+/zh/blog/openclaw-connect-to-ollama-part-3,,unlink,Series page is not published,2026-07-16
