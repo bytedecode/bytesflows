@@ -9,39 +9,8 @@ const contentRoot = path.join(repoRoot, 'content');
 const writeChanges = process.argv.includes('--write');
 
 const PATH_REPLACEMENTS = new Map([
-  // English article consolidations.
-  ['/blog/anti-bot-systems-explained', '/blog/cloudflare-403-troubleshooting'],
-  ['/blog/playwright-proxy-configuration-guide', '/blog/playwright-proxy-setup'],
-  ['/blog/bypass-cloudflare-web-scraping', '/blog/cloudflare-403-troubleshooting-guide'],
-  ['/blog/avoid-detection-playwright-scraping', '/blog/playwright-residential-proxy-guide'],
-  ['/blog/datacenter-vs-residential-proxies', '/blog/residential-proxy-vs-datacenter-proxy'],
-  ['/blog/residential-proxies-improve-scraping', '/blog/what-is-residential-proxy'],
-  ['/blog/proxy-checker', '/tools/proxy-test'],
-  ['/blog/scraping-test-tool-detect-blocks', '/tools/proxy-test'],
-  ['/blog/proxy-rotator', '/blog/residential-proxy-rotation-strategies'],
-  ['/blog/playwright-web-scraping-tutorial', '/blog/playwright-residential-proxy-guide'],
-  ['/blog/common-web-scraping-challenges', '/blog/cloudflare-403-troubleshooting'],
-  ['/blog/proxy-rotation-strategies', '/blog/residential-proxy-rotation-strategies'],
-  ['/blog/avoid-ip-bans-web-scraping', '/blog/residential-proxy-rotation-strategies'],
-  ['/blog/why-residential-proxies-best-for-scraping-2026', '/blog/what-is-residential-proxy'],
-  ['/blog/ai-web-scraping-agents', '/blog/ai-browser-agents-playwright'],
-  ['/blog/ai-data-extraction-vs-traditional-scraping', '/blog/ai-data-collection-web'],
-  ['/blog/scraping-data-at-scale', '/blog/web-scraping-architecture-design'],
-  ['/blog/openclaw-browser-automation-proxy', '/ai/openclaw'],
-  ['/blog/openclaw-residential-proxy', '/ai/openclaw'],
-  ['/blog/using-proxies-playwright', '/blog/playwright-proxy-setup'],
-  ['/blog/how-proxy-rotation-works', '/blog/residential-proxy-rotation-strategies'],
-  ['/blog/web-scraping-proxy-architecture', '/blog/web-scraping-architecture-design'],
-  ['/blog/playwright-web-scraping-scale', '/blog/playwright-residential-proxy-guide'],
-  ['/blog/serp-scraping-residential-proxies', '/solutions/serp-scraping'],
-  ['/blog/web-scraping-workflow-explained', '/blog/proxy-pools-web-scraping'],
-  ['/blog/web-scraping-at-scale-best-practices', '/blog/proxy-pools-web-scraping'],
-  ['/blog/scaling-scrapers-distributed-systems', '/blog/proxy-pools-web-scraping'],
-  ['/blog/rotating-residential-proxies-guide', '/blog/residential-proxy-rotation-strategies'],
-
-  // Chinese content consolidations. Some old tutorials no longer have a direct
-  // one-to-one Chinese replacement, so use the nearest maintained technical or
-  // product page rather than a missing article or generic blog index.
+  // Chinese replacements must be evaluated before English /blog paths. The
+  // replacement helper also guards against matching /blog inside /zh/blog.
   ['/zh/blog/scrape-websites-without-getting-blocked', '/zh/blog/ai-dynamic-proxy-technical-implementation'],
   ['/zh/blog/bypass-cloudflare-web-scraping', '/zh/blog/ai-dynamic-proxy-technical-implementation'],
   ['/zh/blog/scraping-data-at-scale', '/zh/blog/ai-dynamic-proxy-technical-implementation'],
@@ -50,6 +19,37 @@ const PATH_REPLACEMENTS = new Map([
   ['/zh/blog/playwright-web-scraping-tutorial', '/zh/blog/ai-dynamic-proxy-technical-implementation'],
   ['/zh/blog/residential-proxies-improve-scraping', '/zh/blog/residential-proxies'],
   ['/zh/blog/avoid-ip-bans-web-scraping', '/zh/proxies'],
+
+  // English article consolidations use the actual frontmatter slug, not the
+  // Markdown filename, because the site route is generated from frontmatter.
+  ['/blog/anti-bot-systems-explained', '/blog/cloudflare-403-troubleshooting'],
+  ['/blog/playwright-proxy-configuration-guide', '/blog/playwright-proxy-setup'],
+  ['/blog/bypass-cloudflare-web-scraping', '/blog/cloudflare-403-proxy-troubleshooting'],
+  ['/blog/avoid-detection-playwright-scraping', '/blog/playwright-residential-proxy-guide'],
+  ['/blog/datacenter-vs-residential-proxies', '/blog/residential-proxy-vs-datacenter-proxy'],
+  ['/blog/residential-proxies-improve-scraping', '/blog/what-is-residential-proxy'],
+  ['/blog/proxy-checker', '/tools/proxy-test'],
+  ['/blog/scraping-test-tool-detect-blocks', '/tools/proxy-test'],
+  ['/blog/proxy-rotator', '/blog/proxy-rotation-strategy'],
+  ['/blog/playwright-web-scraping-tutorial', '/blog/playwright-residential-proxy-guide'],
+  ['/blog/common-web-scraping-challenges', '/blog/cloudflare-403-troubleshooting'],
+  ['/blog/proxy-rotation-strategies', '/blog/proxy-rotation-strategy'],
+  ['/blog/avoid-ip-bans-web-scraping', '/blog/proxy-rotation-strategy'],
+  ['/blog/why-residential-proxies-best-for-scraping-2026', '/blog/what-is-residential-proxy'],
+  ['/blog/ai-web-scraping-agents', '/blog/ai-browser-agents-playwright'],
+  ['/blog/ai-data-extraction-vs-traditional-scraping', '/blog/ai-data-collection-web'],
+  ['/blog/scraping-data-at-scale', '/blog/web-scraping-architecture-design'],
+  ['/blog/openclaw-browser-automation-proxy', '/ai/openclaw'],
+  ['/blog/openclaw-residential-proxy', '/ai/openclaw'],
+  ['/blog/using-proxies-playwright', '/blog/playwright-proxy-setup'],
+  ['/blog/how-proxy-rotation-works', '/blog/proxy-rotation-strategy'],
+  ['/blog/web-scraping-proxy-architecture', '/blog/web-scraping-architecture-design'],
+  ['/blog/playwright-web-scraping-scale', '/blog/playwright-residential-proxy-guide'],
+  ['/blog/serp-scraping-residential-proxies', '/solutions/serp-scraping'],
+  ['/blog/web-scraping-workflow-explained', '/blog/proxy-pools-web-scraping'],
+  ['/blog/web-scraping-at-scale-best-practices', '/blog/proxy-pools-web-scraping'],
+  ['/blog/scaling-scrapers-distributed-systems', '/blog/proxy-pools-web-scraping'],
+  ['/blog/rotating-residential-proxies-guide', '/blog/proxy-rotation-strategy'],
 ]);
 
 const UNPUBLISHED_SERIES_PATHS = new Set([
@@ -90,19 +90,16 @@ function removeUnpublishedSeriesLinks(source) {
   return output;
 }
 
-function replacePathVariants(source, oldPath, newPath) {
-  let output = source;
-  const variants = [
-    [oldPath, newPath],
-    [`https://bytesflows.com${oldPath}`, `https://bytesflows.com${newPath}`],
-    [`https://www.bytesflows.com${oldPath}`, `https://bytesflows.com${newPath}`],
-  ];
-
-  for (const [from, to] of variants) {
-    output = output.replaceAll(from, to);
+function replacePath(source, oldPath, newPath) {
+  // Avoid treating /blog/foo as a substring of /zh/blog/foo.
+  if (oldPath.startsWith('/blog/')) {
+    return source.replace(
+      new RegExp(`(?<!/zh)${escapeRegExp(oldPath)}`, 'g'),
+      newPath,
+    );
   }
 
-  return output;
+  return source.replaceAll(oldPath, newPath);
 }
 
 const files = await walk(contentRoot);
@@ -115,7 +112,7 @@ for (const file of files) {
 
   for (const [oldPath, newPath] of PATH_REPLACEMENTS) {
     const before = next;
-    next = replacePathVariants(next, oldPath, newPath);
+    next = replacePath(next, oldPath, newPath);
     if (next !== before) {
       replacementCounts.set(oldPath, (replacementCounts.get(oldPath) || 0) + 1);
     }
