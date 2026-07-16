@@ -81,10 +81,15 @@ function toInternalPath(rawLink) {
 function blogTarget(pathname) {
   const match = pathname.match(/^\/(zh\/)?blog\/([^/]+)\/?$/);
   if (!match) return null;
-  return {
-    language: match[1] ? 'zh' : 'en',
-    slug: decodeURIComponent(match[2]).trim().toLowerCase(),
-  };
+
+  try {
+    return {
+      language: match[1] ? 'zh' : 'en',
+      slug: decodeURIComponent(match[2]).trim().toLowerCase(),
+    };
+  } catch {
+    return null;
+  }
 }
 
 function sourceLabel(file) {
@@ -118,8 +123,8 @@ for (const file of files) {
   if (slug && ['en', 'zh'].includes(language)) {
     const key = `${language}:${slug}`;
     const previous = slugOwners.get(key);
-    if (previous) hardErrors.push(`${label}: duplicate ${language} slug "${slug}" also used by ${previous}`);
-    else slugOwners.set(key, label);
+    if (previous) hardErrors.push(`${label}: duplicate ${language} slug "${slug}" also used by ${previous.label}`);
+    else slugOwners.set(key, { label, status });
   }
 
   documents.push({ file, label, slug, language, status, links: extractLinks(body) });
@@ -144,12 +149,20 @@ for (const document of documents) {
     if (!target) continue;
 
     const targetKey = `${target.language}:${target.slug}`;
-    if (!slugOwners.has(targetKey)) {
+    const targetOwner = slugOwners.get(targetKey);
+    if (!targetOwner) {
       hardErrors.push(`${document.label}: internal blog link "${pathname}" has no matching ${target.language} content slug`);
       continue;
     }
 
-    if (targetKey !== sourceKey) inbound.get(targetKey)?.add(document.label);
+    if (document.status === 'published' && targetOwner.status !== 'published') {
+      hardErrors.push(`${document.label}: published content links to non-published target "${pathname}"`);
+      continue;
+    }
+
+    if (document.status === 'published' && targetOwner.status === 'published' && targetKey !== sourceKey) {
+      inbound.get(targetKey)?.add(document.label);
+    }
   }
 }
 
@@ -157,7 +170,7 @@ for (const document of documents) {
   if (document.status !== 'published' || !document.slug || !['en', 'zh'].includes(document.language)) continue;
   const key = `${document.language}:${document.slug}`;
   if ((inbound.get(key)?.size || 0) === 0) {
-    warnings.push(`${document.label}: published page has no inbound link from another content file`);
+    warnings.push(`${document.label}: published page has no inbound link from another published content file`);
   }
 }
 
