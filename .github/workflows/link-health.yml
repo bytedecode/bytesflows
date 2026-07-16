@@ -8,6 +8,7 @@ on:
       - 'content/**'
       - 'scripts/check-link-health.mjs'
       - 'scripts/fix-dead-internal-links.mjs'
+      - 'scripts/add-curated-inbound-links.mjs'
       - 'docs/link-health-workflow.md'
       - 'README.md'
       - '.github/workflows/link-health.yml'
@@ -16,15 +17,52 @@ on:
       - 'content/**'
       - 'scripts/check-link-health.mjs'
       - 'scripts/fix-dead-internal-links.mjs'
+      - 'scripts/add-curated-inbound-links.mjs'
       - 'docs/link-health-workflow.md'
       - 'README.md'
       - '.github/workflows/link-health.yml'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+  pull-requests: read
 
 jobs:
+  apply-curated-topic-links:
+    if: github.event_name == 'pull_request' && github.head_ref == 'fix/link-health-audit-2026-07'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout iteration branch
+        uses: actions/checkout@v4
+        with:
+          ref: fix/link-health-audit-2026-07
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Add curated topic-cluster links
+        run: node scripts/add-curated-inbound-links.mjs --write
+
+      - name: Require zero source-level orphan candidates
+        run: node scripts/check-link-health.mjs --strict-orphans
+
+      - name: Commit curated links to iteration branch
+        shell: bash
+        run: |
+          if git diff --quiet -- content; then
+            echo 'No curated links remain to add.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content
+          git commit -m 'fix(content): connect orphan candidates to topic hubs'
+          git push origin HEAD:fix/link-health-audit-2026-07
+
   source-link-health:
     runs-on: ubuntu-latest
     timeout-minutes: 5
