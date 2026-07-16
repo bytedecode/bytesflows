@@ -16,7 +16,7 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=20
 - 什么场景下住宅代理最值得上
 - 动态轮换和 Sticky 会话该怎么选
 - 如何在上线前验证方案，而不是一开始就盲目扩量
-可配合阅读：[最佳网页抓取代理](https://bytesflows.com/zh/blog/best-proxies-for-web-scraping)、[代理轮换策略详解](https://bytesflows.com/zh/blog/proxy-rotation-strategies)、[如何在不被封的情况下抓取](https://bytesflows.com/zh/blog/scrape-websites-without-getting-blocked)。
+可配合阅读：[最佳网页抓取代理](https://bytesflows.com/zh/blog/best-proxies-for-web-scraping)、[代理轮换策略详解](https://bytesflows.com/zh/proxies)、[如何在不被封的情况下抓取](https://bytesflows.com/zh/blog/ai-dynamic-proxy-technical-implementation)。
 ## 住宅代理到底解决什么问题
 对抓取团队来说，住宅代理最常见的价值包括：
 - 降低高防目标上的封禁概率
@@ -71,9 +71,9 @@ coverImage: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=20
 如果你把出口质量、轮换策略、并发节奏一起设计，住宅代理才会真正成为生产级抓取能力的一部分。
 ## 延伸阅读
 - [最佳网页抓取代理](https://bytesflows.com/zh/blog/best-proxies-for-web-scraping)
-- [代理轮换策略详解](https://bytesflows.com/zh/blog/proxy-rotation-strategies)
-- [如何在不被封的情况下抓取](https://bytesflows.com/zh/blog/scrape-websites-without-getting-blocked)
-- [如何避免 IP 封禁](https://bytesflows.com/zh/blog/avoid-ip-bans-web-scraping)
-- [大规模数据采集架构](https://bytesflows.com/zh/blog/scraping-data-at-scale)
+- [代理轮换策略详解](https://bytesflows.com/zh/proxies)
+- [如何在不被封的情况下抓取](https://bytesflows.com/zh/blog/ai-dynamic-proxy-technical-implementation)
+- [如何避免 IP 封禁](https://bytesflows.com/zh/proxies)
+- [大规模数据采集架构](https://bytesflows.com/zh/blog/ai-dynamic-proxy-technical-implementation)
 ## 转化 CTA
 如果你想把抓取任务从“偶尔可用”升级到“稳定生产”，建议先从 [住宅代理](https://bytesflows.com/zh/proxies) 做小规模验证，确认通过率与地域效果后，再逐步扩容。
