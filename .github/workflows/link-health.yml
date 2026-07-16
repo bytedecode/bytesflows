@@ -36,4 +36,16 @@ jobs:
           node-version: '22'
 
       - name: Validate content slugs and internal links
-        run: node scripts/check-link-health.mjs
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/check-link-health.mjs 2>&1 | tee link-health.log
+
+      - name: Upload link-health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-health-report
+          path: link-health.log
+          if-no-files-found: error
+          retention-days: 7
