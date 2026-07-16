@@ -1,0 +1,37 @@
+name: Content Inventory
+
+on:
+  push:
+    branches:
+      - fix/link-health-audit-2026-07
+    paths:
+      - 'scripts/export-content-inventory.mjs'
+      - '.github/workflows/content-inventory.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Export content inventory
+        run: node scripts/export-content-inventory.mjs
+
+      - name: Upload content inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-inventory
+          path: content-inventory.json
+          if-no-files-found: error
+          retention-days: 3
