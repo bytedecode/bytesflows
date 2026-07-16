@@ -22,62 +22,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: read
+  contents: read
 
 jobs:
-  apply-reviewed-migrations:
-    if: github.event_name == 'pull_request' && github.head_ref == 'fix/link-health-audit-2026-07'
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - name: Checkout iteration branch
-        uses: actions/checkout@v4
-        with:
-          ref: fix/link-health-audit-2026-07
-          fetch-depth: 0
-
-      - name: Use Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Apply reviewed link migrations
-        shell: bash
-        run: |
-          set -o pipefail
-          node scripts/fix-dead-internal-links.mjs --write 2>&1 | tee migration.log
-
-      - name: Validate migrated content before commit
-        shell: bash
-        run: |
-          set -o pipefail
-          node scripts/check-link-health.mjs 2>&1 | tee migration-validation.log
-
-      - name: Commit content fixes to iteration branch
-        shell: bash
-        run: |
-          if git diff --quiet -- content; then
-            echo 'No content migrations remain.'
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content
-          git commit -m 'fix(content): migrate obsolete internal links'
-          git push origin HEAD:fix/link-health-audit-2026-07
-
-      - name: Upload migration validation report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: migration-validation-report
-          path: |
-            migration.log
-            migration-validation.log
-          if-no-files-found: warn
-          retention-days: 7
-
   source-link-health:
     runs-on: ubuntu-latest
     timeout-minutes: 5
