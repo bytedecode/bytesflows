@@ -1,0 +1,21 @@
+{
+  "total": 45,
+  "byLanguage": {
+    "en": 37,
+    "zh": 8
+  },
+  "byStatus": {
+    "published": 45
+  },
+  "byCategory": {
+    "AI Agents & Automation": 13,
+    "Anti-Bot & Security": 2,
+    "Proxy Guides & Benchmark": 22,
+    "SEO Monitoring": 3,
+    "Web Scraping & Engineering": 5
+  },
+  "byLanguageAndStatus": {
+    "en:published": 37,
+    "zh:published": 8
+  }
+}
