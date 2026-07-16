@@ -7,18 +7,16 @@ on:
     paths:
       - 'content/**'
       - 'scripts/check-link-health.mjs'
-      - 'scripts/fix-dead-internal-links.mjs'
-      - 'scripts/add-curated-inbound-links.mjs'
       - 'docs/link-health-workflow.md'
+      - 'docs/link-migrations-2026-07.csv'
       - 'README.md'
       - '.github/workflows/link-health.yml'
   pull_request:
     paths:
       - 'content/**'
       - 'scripts/check-link-health.mjs'
-      - 'scripts/fix-dead-internal-links.mjs'
-      - 'scripts/add-curated-inbound-links.mjs'
       - 'docs/link-health-workflow.md'
+      - 'docs/link-migrations-2026-07.csv'
       - 'README.md'
       - '.github/workflows/link-health.yml'
   workflow_dispatch:
