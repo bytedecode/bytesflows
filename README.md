@@ -124,11 +124,12 @@ content/
   landing/    # Topic and campaign content
   tools/      # Tool-supporting content
 scripts/
-  upload-blog-to-notion.js   # Publishing/synchronization pipeline, when present
   check-link-health.mjs      # Offline slug and internal-link validation
 docs/
   link-health-workflow.md    # Production and source audit process
 ```
+
+The CMS synchronization job is maintained outside this content repository. Do not document a local upload command unless the corresponding executable file is committed and tested here.
 
 ### Adding or updating an article
 
@@ -136,7 +137,7 @@ docs/
 2. Set frontmatter fields including `title`, `slug`, `summary`, `category`, `tags`, `language` and `status`.
 3. Use canonical internal paths without `/en/` for English.
 4. Run `node scripts/check-link-health.mjs`.
-5. Synchronize the source through the normal publishing pipeline.
+5. Synchronize the source through the maintained CMS publishing pipeline.
 6. Confirm the live article returns `200`, has a self-referencing canonical and appears in the intended index/sitemap.
 
 ---
@@ -148,4 +149,4 @@ This repository is the content source of truth for Bytesflows blog materials. Ar
 - **Reading content:** Visit [bytesflows.com/blog](https://bytesflows.com/blog).
 - **Product:** Visit [bytesflows.com/proxies](https://bytesflows.com/proxies).
 - **Contributing and syncing:** Follow the repository structure and link-health workflow above.
-- **Maintainer notes:** See [.github/REPO_SETUP.md](.github/REPO_SETUP.md), [docs/README.md](docs/README.md), [docs/content-and-discovery-tips.md](docs/content-and-discovery-tips.md) and [.github/SEO_MARKETING_INDEX.md](.github/SEO_MARKETING_INDEX.md) where applicable.
+- **Maintainer notes:** See [.github/REPO_SETUP.md](.github/REPO_SETUP.md), [.github/SEO_MARKETING_INDEX.md](.github/SEO_MARKETING_INDEX.md) and [docs/link-health-workflow.md](docs/link-health-workflow.md).
