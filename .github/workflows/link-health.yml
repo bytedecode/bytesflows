@@ -43,10 +43,16 @@ jobs:
           node-version: '22'
 
       - name: Apply reviewed link migrations
-        run: node scripts/fix-dead-internal-links.mjs --write
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/fix-dead-internal-links.mjs --write 2>&1 | tee migration.log
 
       - name: Validate migrated content before commit
-        run: node scripts/check-link-health.mjs
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/check-link-health.mjs 2>&1 | tee migration-validation.log
 
       - name: Commit content fixes to iteration branch
         shell: bash
@@ -60,6 +66,17 @@ jobs:
           git add content
           git commit -m 'fix(content): migrate obsolete internal links'
           git push origin HEAD:fix/link-health-audit-2026-07
+
+      - name: Upload migration validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: migration-validation-report
+          path: |
+            migration.log
+            migration-validation.log
+          if-no-files-found: warn
+          retention-days: 7
 
   source-link-health:
     runs-on: ubuntu-latest
