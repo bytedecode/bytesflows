@@ -1,0 +1,51 @@
+name: Publishing Consistency
+
+on:
+  pull_request:
+    paths:
+      - 'content/blog/**'
+      - 'scripts/audit-publishing-consistency.mjs'
+      - '.github/workflows/publishing-consistency.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Audit source, live detail routes, listings, canonical, and sitemap
+        env:
+          AUDIT_BASE_URL: https://bytesflows.com
+          AUDIT_CONCURRENCY: '4'
+          AUDIT_TIMEOUT_MS: '20000'
+        run: node scripts/audit-publishing-consistency.mjs
+
+      - name: Add report summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f artifacts/publishing-consistency.md ]; then
+            cat artifacts/publishing-consistency.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload publishing consistency report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: publishing-consistency-report
+          path: |
+            artifacts/publishing-consistency.json
+            artifacts/publishing-consistency.md
+          if-no-files-found: error
+          retention-days: 14

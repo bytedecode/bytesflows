@@ -267,7 +267,7 @@ Before increasing concurrency:
 1. output is judged by business usefulness, not status code alone
 That last point is where many teams waste money. A page can return 200 and still be useless if it is the wrong country, wrong currency, wrong search market, or a soft block.
 ## Related BytesFlows Pages
-- [How to use proxies with Playwright](https://bytesflows.com/blog/using-proxies-playwright)
+- [How to use proxies with Playwright](https://bytesflows.com/blog/playwright-proxy-setup)
 - [Browser automation proxies](https://bytesflows.com/solutions/browser-automation)
 - [Sticky residential proxies](https://bytesflows.com/proxies/sticky-residential-proxies)
 - [SOCKS5 residential proxies](https://bytesflows.com/proxies/socks5-residential-proxies)

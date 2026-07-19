@@ -1,0 +1,53 @@
+name: Link Health
+
+on:
+  push:
+    branches:
+      - fix/link-health-audit-2026-07
+    paths:
+      - 'content/**'
+      - 'scripts/check-link-health.mjs'
+      - 'docs/link-health-workflow.md'
+      - 'docs/link-migrations-2026-07.csv'
+      - 'README.md'
+      - '.github/workflows/link-health.yml'
+  pull_request:
+    paths:
+      - 'content/**'
+      - 'scripts/check-link-health.mjs'
+      - 'docs/link-health-workflow.md'
+      - 'docs/link-migrations-2026-07.csv'
+      - 'README.md'
+      - '.github/workflows/link-health.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-link-health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validate slugs, links, and orphan-page coverage
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/check-link-health.mjs --strict-orphans 2>&1 | tee link-health.log
+
+      - name: Upload link-health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: link-health-report
+          path: link-health.log
+          if-no-files-found: error
+          retention-days: 7

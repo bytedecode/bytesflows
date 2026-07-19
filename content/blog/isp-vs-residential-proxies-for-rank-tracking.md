@@ -74,7 +74,7 @@ That is the pattern: **one market, one decision**.
 | Rank time series risk if misused | Geo drift if profiles sloppy | False confidence if you over-generalize one pilot |
 | Pricing lens | Higher $/GB, fewer surprises | Mid $/GB, wins only if retries drop enough |
 
-Broader proxy primer: [ISP vs Residential Proxies](https://bytesflows.com/compare/isp-vs-residential).
+Broader proxy primer: [What Is a Residential Proxy?](/blog/what-is-residential-proxy).
 
 ---
 
@@ -95,7 +95,7 @@ We rarely see rank trackers that legitimately need 24h sticky ISP sessions. When
 5. Compare cost per successful SERP, not vendor slogans.
 6. Keep separate time series labels (`route_class=residential|isp`).
 
-If you are shopping providers at the same time, compare onboarding friction too—[Bright Data rank tracking alternative](https://bytesflows.com/compare/bright-data-rank-tracking-alternative), [Oxylabs](https://bytesflows.com/compare/oxylabs-rank-tracking-alternative), [IPRoyal](https://bytesflows.com/compare/iproyal-rank-tracking-alternative)—but route QA beats brand names.
+If you are shopping providers at the same time, compare onboarding friction, geo coverage, retry cost, and support quality against the [rank tracking workflow](https://bytesflows.com/solutions/rank-tracking) and [current pricing](https://bytesflows.com/pricing)—but route QA beats brand names.
 
 ---
 

@@ -17,7 +17,7 @@ Nobody lied in standup. The proxy "worked." Parsers returned integers. The wareh
 
 That week we stopped treating HTML as the product. The product is a **verified SERP record**—or nothing in the analytics database.
 
-This article is what we now hand engineering when someone asks for a SERP scraping proxy setup. It is not the concurrency/retry guide—that lives in [SERP Scraping with Residential Proxies](/blog/serp-scraping-residential-proxies). This is the **data-quality contract**: what must be true before a row is allowed into production storage.
+This article is what we now hand engineering when someone asks for a SERP scraping proxy setup. It is not the concurrency/retry guide—that lives in [SERP Scraping with Residential Proxies](/solutions/serp-scraping). This is the **data-quality contract**: what must be true before a row is allowed into production storage.
 
 If your goal is recurring position monitoring instead of raw SERP archives, use [rank tracking proxies](https://bytesflows.com/solutions/rank-tracking) and [Proxies for Rank Tracking](/blog/proxies-for-rank-tracking).
 

@@ -71,8 +71,8 @@ Many later OpenClaw configuration problems are actually Ollama runtime issues. I
 ## Wrap-up
 At this point, Ollama should be installed, serving locally, and able to answer a simple prompt with the model you plan to use. That means the local model layer is ready, and you can move on to installing OpenClaw and connecting the two systems.
 ## Further reading
-- [Install OpenClaw on Ubuntu: Step 2 of Local AI Workflow](https://bytesflows.com/blog/openclaw-installation-on-ubuntu-part-2)
-- [Connect OpenClaw to Ollama: Local AI Agent in Practice](https://bytesflows.com/blog/openclaw-connect-to-ollama-part-3)
+- Install OpenClaw on Ubuntu: Step 2 of Local AI Workflow
+- Connect OpenClaw to Ollama: Local AI Agent in Practice
 - [OpenClaw Proxy Setup (2026 Complete Guide)](https://bytesflows.com/blog/openclaw-proxy-setup)
-- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
-- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [OpenClaw Browser Automation with Residential Proxies](https://bytesflows.com/ai/openclaw)
+- [Why OpenClaw Agents Need Residential Proxies (Complete Guide)](https://bytesflows.com/ai/openclaw)

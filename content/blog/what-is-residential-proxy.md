@@ -59,7 +59,7 @@ As your automation requirements mature, dive into our specialized engineering gu
 - **Session Lifecycle**: Master the economics and technical trade-offs of per-request rotation versus timed sessions in [Rotating vs Sticky Residential Proxies](/blog/rotating-vs-sticky-residential-proxies).
 - **Search Engine Scraping**: Implement JSON Schema validation and geo-aligned SERP harvesting in [SERP Scraping & Data Quality Contracts](/blog/serp-scraping-proxy-setup).
 - **Transport Layer Debugging**: Diagnose TCP handshakes, DNS leaks, and PySocks socket failures in [SOCKS5 Residential Proxies Guide](/blog/socks5-residential-proxies-guide).
-- **High-Concurrency Rotation**: Optimize stateless scraping pools and retry ladders in [Rotating Residential Proxies Guide](/blog/rotating-residential-proxies-guide).
+- **High-Concurrency Rotation**: Optimize stateless scraping pools and retry ladders in [Rotating Residential Proxies Guide](/blog/proxy-rotation-strategy).
 - **AI Automation Hub**: Explore multi-tab browser context isolation and action guards in [AI Browser Agents with Playwright](/blog/ai-browser-agents-playwright).
 
 ---

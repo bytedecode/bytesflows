@@ -101,7 +101,7 @@ A working route can still be the wrong route.
 Trust works best when the full session is coherent.
 ### Scale carefully and monitor pass rate, not just throughput
 Residential quality should be preserved, not burned quickly.
-Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/proxy-checker), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotator), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
+Helpful companion tools include [Proxy Checker](https://bytesflows.com/tools/proxy-test), [Proxy Rotator Playground](https://bytesflows.com/blog/proxy-rotation-strategy), and [Scraping Test](https://bytesflows.com/tools/proxy-test).
 ## Key Takeaways
 - Residential proxies improve scraping reliability when IP trust is the real bottleneck.
 - Rotating mode fits stateless work; sticky mode fits session-dependent workflows.
@@ -113,4 +113,19 @@ Helpful companion tools include [Proxy Checker](https://bytesflows.com/blog/prox
 - [Best proxies for web scraping](https://bytesflows.com/blog/best-proxies-for-web-scraping)
 - [Python proxy scraping guide](https://bytesflows.com/blog/python-proxy-scraping-guide)
 - [Playwright proxy setup guide](https://bytesflows.com/blog/playwright-proxy-setup)
-- [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategies)
+- [Proxy rotation strategies](https://bytesflows.com/blog/proxy-rotation-strategy)
+
+<!-- link-health:curated-related-guides -->
+## Related Field Guides
+
+Use these focused guides after the residential proxy fundamentals:
+
+- [Best residential proxy providers for small teams](/blog/best-residential-proxy-providers-for-small-teams) — compare sub-50 GB plans, minimum commitments, and operational fit.
+- [BytesFlows proxy setup guide](/blog/bytesflows-proxy-setup-guide) — move from credentials to a verified first request.
+- [How many GB of proxy traffic web scraping needs](/blog/how-many-gb-proxy-traffic-web-scraping) — estimate bandwidth before choosing a plan.
+- [How to evaluate a residential proxy free trial](/blog/how-to-evaluate-residential-proxy-free-trial) — test success rate, geo accuracy, sessions, and support with a repeatable scorecard.
+- [E-commerce price monitoring proxies](/blog/ecommerce-price-monitoring-proxies) — design a recurring price and stock collection workflow.
+- [Residential proxies for e-commerce price monitoring](/blog/ecommerce-price-monitoring-residential-proxies) — choose route, session, and retry policies for retail data.
+- [Playwright proxy errors](/blog/playwright-proxy-errors) — diagnose 407 responses, tunnel failures, and browser-context mistakes.
+- [Social media data collection](/blog/scraping-social-media-data) — plan compliant collection, evidence, and traffic budgets for public social data.
+

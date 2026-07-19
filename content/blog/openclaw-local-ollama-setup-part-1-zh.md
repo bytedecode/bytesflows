@@ -13,7 +13,7 @@ coverImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w
 
 如果你想在本地跑通 OpenClaw + 大模型，第一步通常不是先配置 Agent，而是先把本地模型服务稳定起来。对大多数用户来说，Ollama 就是这条链路的起点。
 这篇文章聚焦最实用的一条路径：在 Ubuntu 安装 Ollama、启动本地服务、拉取模型，并完成一次最小可用验证。先把本地推理层跑通，后续连接 OpenClaw 会顺畅很多。
-建议配合阅读：[Ubuntu 安装 OpenClaw：本地 AI 工作流第二步](https://bytesflows.com/zh/blog/openclaw-installation-on-ubuntu-part-2)、[连接 OpenClaw 与 Ollama：本地 AI Agent 链路实战](https://bytesflows.com/zh/blog/openclaw-connect-to-ollama-part-3)。
+建议配合阅读：Ubuntu 安装 OpenClaw：本地 AI 工作流第二步、连接 OpenClaw 与 Ollama：本地 AI Agent 链路实战。
 ## 为什么先装 Ollama
 在这套本地工作流里，Ollama 承担的是模型服务层。把它装好之后，你会得到：
 - 一个可访问的本地推理地址
@@ -74,8 +74,8 @@ ollama run qwen2.5:14b
 Ubuntu 安装 Ollama 的重点，不只是把命令装上，而是要确认本地服务真的在运行、模型真的已经拉好、最小验证确实能成功。只要这三步都完成，后面接入 OpenClaw 时会轻松很多。
 先把本地模型层跑稳，再进入 Agent 和自动化配置，是最省时间的顺序。
 ## 延伸阅读
-- [Ubuntu 安装 OpenClaw：本地 AI 工作流第二步](https://bytesflows.com/zh/blog/openclaw-installation-on-ubuntu-part-2)
-- [连接 OpenClaw 与 Ollama：本地 AI Agent 链路实战](https://bytesflows.com/zh/blog/openclaw-connect-to-ollama-part-3)
+- Ubuntu 安装 OpenClaw：本地 AI 工作流第二步
+- 连接 OpenClaw 与 Ollama：本地 AI Agent 链路实战
 - [OpenClaw 代理配置完整指南](https://bytesflows.com/blog/openclaw-proxy-setup)
-- [OpenClaw 浏览器自动化与代理实践](https://bytesflows.com/blog/openclaw-browser-automation-proxy)
-- [为什么 OpenClaw Agent 需要住宅代理](https://bytesflows.com/blog/openclaw-residential-proxy)
+- [OpenClaw 浏览器自动化与代理实践](https://bytesflows.com/ai/openclaw)
+- [为什么 OpenClaw Agent 需要住宅代理](https://bytesflows.com/ai/openclaw)
